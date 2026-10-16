@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.pt
+*.zip
+*.tar.gz
+runs/
+logs/
+tmp/
+data/official/
+data/latent_decoder/corpus.jsonl
+data/latent_decoder/proteins.fasta
+data/latent_decoder_clustered/
+data/latent_clusters/

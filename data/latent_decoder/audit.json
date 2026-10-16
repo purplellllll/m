@@ -1,0 +1,81 @@
+{
+  "source_verified": true,
+  "homology_certified": false,
+  "split_status": "not-homology-certified",
+  "source_zip": "data\\official\\dataset_for_translation_model.zip",
+  "source_md5": "9e73fdb5b25aa063a8152b541ac302d5",
+  "source_member": "human_coding_transcript_sequences.csv",
+  "source_rows": 97824,
+  "author_major_isoforms": 87205,
+  "reference_verified_stop_restorations": 47631,
+  "stop_reference": {
+    "path": "data\\reference\\gencode_v28\\gencode.v28.pc_transcripts.fa.gz",
+    "sha256": "63b7abb26cfd8408635f83311774265a644fdc33154b6ef3097c46897306c857"
+  },
+  "official_gene_counts": {
+    "train": 10552,
+    "test": 1173
+  },
+  "counts": {
+    "train": 26764,
+    "test": 3288,
+    "val": 2744
+  },
+  "unique_cds": 32796,
+  "unique_proteins": 32746,
+  "components": 11376,
+  "excluded_rows": {
+    "not_in_official_gene_split": 26501,
+    "missing_terminal_stop": 3906,
+    "incomplete_codon": 12760,
+    "non_atg_start": 3265,
+    "length_out_of_range": 1565,
+    "not_author_major_isoform": 10619,
+    "internal_stop": 45
+  },
+  "min_codons": 30,
+  "max_codons": 1500,
+  "n_codons_includes_stop": true,
+  "protected_genes": [
+    "ENSG00000177868"
+  ],
+  "protected_wt_sources": [
+    {
+      "path": "data\\gluc_cds\\train_data.txt",
+      "sha256": "597cc6608845291e7a510a6618613804a29ca029a8cd07758bae7626df95e2bd"
+    },
+    {
+      "path": "data\\svbp_cds\\train_data.txt",
+      "sha256": "d2d7ce531f58da3d48ea53a8ad2dacb90d1f0d7ba03c1f4f6f6c17bff0fd3de3"
+    },
+    {
+      "path": "data\\NGF_cds\\train_data.txt",
+      "sha256": "f5e3c19852976e7d26b9780830c1560571f0d3116c15e121c994dbb8fa30dfc8"
+    },
+    {
+      "path": "data\\H1N1_cds\\train_data.txt",
+      "sha256": "d4caaf347e31e7db680194cf56d2c0c8a17336d04b8e398ae23eb9a1a59df0e0"
+    }
+  ],
+  "protected_gene_annotation": {
+    "path": "data\\reference\\gencode_v28\\gencode.v28.pc_transcripts.cds_index.tsv",
+    "sha256": "cafdd61dd140a3d2a065c03dda332b7373e38a9763e55a1dc31d4027417ce6b2"
+  },
+  "holdout_components": {
+    "official_test_components": 1138,
+    "protected_wt_components": 2
+  },
+  "clusters_sha256": null,
+  "cluster_note": "Without clusters, exact-AA/gene separation only. Supplied cluster methodology/identity/coverage must be recorded and checked separately.",
+  "corpus_sha256": "29ec4ab16cef559e7733cfa3d310a9a9c288bffe4c0ab52a3df6bc00bc472222",
+  "proteins_sha256": "f3354284ac59d744a8b68ef9d9b938304a4f50c6e28d1008198479df4e756e33",
+  "no_expression_selection": true,
+  "optimization_sequences_used_for_training": false,
+  "accepted_transcript_rows": 39163,
+  "collapsed_duplicate_cds_rows": 6367,
+  "length_nt": {
+    "min": 90,
+    "median": 1032,
+    "max": 4500
+  }
+}
