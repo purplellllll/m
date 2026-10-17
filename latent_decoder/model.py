@@ -5,28 +5,10 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-# Preserve dataset.py's existing 0..63 codon order without importing its I/O side effects.
-CODONS = ("TTT TTC TTA TTG CTT CTC CTA CTG ATT ATC ATA ATG GTT GTC GTA GTG "
-          "TAT TAC TAA TAG CAT CAC CAA CAG AAT AAC AAA AAG GAT GAC GAA GAG "
-          "TCT TCC TCA TCG CCT CCC CCA CCG ACT ACC ACA ACG GCT GCC GCA GCG "
-          "TGT TGC TGA TGG CGT CGC CGA CGG AGT AGC AGA AGG GGT GGC GGA GGG").split()
-AA = list("FFLLLLLLIIIMVVVVYY**HHQQNNKKDDEESSSSPPPPTTTTAAAACC*WRRRRSSRRGGGG")
-PAD, MASK = 64, 65
-TOKEN = {codon: i for i, codon in enumerate(CODONS)}
+from .tokenizer import AA, CODONS, MASK, PAD, TOKEN, encode_cds
 AA_ALPHABET = "ACDEFGHIKLMNPQRSTVWY*"
 AA_IDS = torch.tensor([AA_ALPHABET.index(a) for a in AA] + [21, 21])
 SYNONYMS = torch.tensor([[a == b for b in AA] for a in AA] + [[True]*64, [True]*64])
-
-
-def encode_cds(sequence):
-    sequence = sequence.upper().replace("U", "T")
-    if len(sequence) % 3 or not sequence or set(sequence) - set("ACGT"):
-        raise ValueError("CDS must contain complete unambiguous codons")
-    ids = [TOKEN[sequence[i:i+3]] for i in range(0, len(sequence), 3)]
-    protein = "".join(AA[i] for i in ids)
-    if not sequence.startswith("ATG") or protein[-1] != "*" or "*" in protein[:-1]:
-        raise ValueError("CDS must start with ATG and contain only one terminal stop")
-    return ids
 
 
 def collate_records(records):

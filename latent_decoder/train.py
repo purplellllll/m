@@ -26,6 +26,14 @@ def sha256(path):
 
 def load_data(directory, allow_development=False):
     directory = Path(directory)
+    if (directory / "manifest.json").exists():
+        from .prepare_combined import verify
+        manifest = json.loads((directory / "manifest.json").read_text(encoding="utf-8"))
+        if not manifest.get("source_verified"):
+            raise ValueError("Source is not verified; inspect manifest.json")
+        if not manifest.get("homology_certified") and not allow_development:
+            raise ValueError("Run protein clustering first, or explicitly use --allow-development-split")
+        return verify(directory)
     audit = json.loads((directory / "audit.json").read_text(encoding="utf-8"))
     if not audit.get("source_verified"):
         raise ValueError("Source is not verified; inspect audit.json")
@@ -223,7 +231,8 @@ def main():
     random.seed(training["seed"])
     torch.manual_seed(training["seed"])
     splits, audit = load_data(args.data, args.allow_development_split)
-    data_hash = sha256(Path(args.data) / "corpus.jsonl")
+    data_directory = Path(args.data)
+    data_hash = sha256(data_directory / ("manifest.json" if (data_directory / "manifest.json").exists() else "corpus.jsonl"))
     if max(r["n_codons"] for rows in splits.values() for r in rows) > config["model"]["max_codons"]:
         raise ValueError("Dataset exceeds model length; do not silently truncate")
     checkpoint = None
