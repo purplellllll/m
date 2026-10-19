@@ -1,0 +1,62 @@
+{
+  "files": {
+    "last.pt": {
+      "source": "runs/vmae_lsco_lr_20ep_20261018/last.pt",
+      "sha256": "8009efdc3fc3ee61c82925b02feba600be3d6409f923838a612c26eb4af3d673",
+      "bytes": 459838914
+    },
+    "best.pt": {
+      "source": "runs/vmae_lsco_lr_20ep_20261018/best.pt",
+      "sha256": "071cf82d5e20c99e14921b0d21432aa4560776bd45618e87ffaf1ffba2e534f5",
+      "bytes": 459838850
+    },
+    "config.json": {
+      "source": "runs/vmae_lsco_lr_20ep_20261018/config.json",
+      "sha256": "4a70a03b44c4b1dd82b805f9992feb8c63857b2d34faead720f64afb39deb692",
+      "bytes": 718
+    },
+    "metrics.jsonl": {
+      "source": "runs/vmae_lsco_lr_20ep_20261018/metrics.jsonl",
+      "sha256": "7e37ad00e377a66db53d3a60a54ecadc75c686d7f2deda83b698000bf260a0a6",
+      "bytes": 55534
+    },
+    "steps.jsonl": {
+      "source": "runs/vmae_lsco_lr_20ep_20261018/steps.jsonl",
+      "sha256": "2e7372c9e95a16a9df036d7ecafc5197e89fd06921bc2599fdd1c6a2b77cb433",
+      "bytes": 2691666
+    },
+    "model.py": {
+      "source": "latent_decoder/model.py",
+      "sha256": "eba3d6be91cd205714afdd2c20074d202b445717b4a8622da84dec358a3c8853",
+      "bytes": 9306
+    },
+    "train.py": {
+      "source": "latent_decoder/train.py",
+      "sha256": "3ebaa6f229be4526a90846199d42e693faa16bfca79344817cc685b40b499128",
+      "bytes": 27137
+    },
+    "config_lsco_lr_50ep.json": {
+      "source": "latent_decoder/config_lsco_lr_50ep.json",
+      "sha256": "3475968d9f3d8fbc1d3019088b16c137cb2221f12257a7ed264be7505aef50ce",
+      "bytes": 752
+    },
+    "vmae_lsco_lr_50ep.log": {
+      "source": "vmae_lsco_lr_50ep.log",
+      "sha256": "85811a271ed1931d7fd03d941fb112377f313f9e6d69dc2674f1310084df5e58",
+      "bytes": 1700483
+    }
+  },
+  "checkpoints": {
+    "best.pt": {
+      "epoch": 37,
+      "step": 41292,
+      "lr": 2.8460679524005e-07
+    },
+    "last.pt": {
+      "epoch": 50,
+      "step": 55800,
+      "lr": 0.0
+    }
+  },
+  "purpose": "Preserve original 50-epoch result before isolated single-record replay."
+}

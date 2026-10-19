@@ -1,0 +1,183 @@
+{
+  "checkpoint_epoch": 1,
+  "checkpoint_step": 1116,
+  "modules": {
+    "embedding": {
+      "changed_tensors": 1,
+      "tensors": 1,
+      "delta_l2": 59.70478589269613,
+      "relative_delta_l2": 0.3272280223861148
+    },
+    "aa_embedding": {
+      "changed_tensors": 1,
+      "tensors": 1,
+      "delta_l2": 33.71404170539485,
+      "relative_delta_l2": 0.32845027509354924
+    },
+    "encoder": {
+      "changed_tensors": 74,
+      "tensors": 74,
+      "delta_l2": 578.9059029937036,
+      "relative_delta_l2": 3.7227710121223647
+    },
+    "mu": {
+      "changed_tensors": 2,
+      "tensors": 2,
+      "delta_l2": 22.68265006123332,
+      "relative_delta_l2": 2.4545684008888475
+    },
+    "logvar": {
+      "changed_tensors": 2,
+      "tensors": 2,
+      "delta_l2": 57.72167434945065,
+      "relative_delta_l2": 6.240842908362391
+    },
+    "from_latent": {
+      "changed_tensors": 2,
+      "tensors": 2,
+      "delta_l2": 92.55323600360717,
+      "relative_delta_l2": 7.059269256943727
+    },
+    "decoder": {
+      "changed_tensors": 74,
+      "tensors": 74,
+      "delta_l2": 422.8491603856633,
+      "relative_delta_l2": 2.7192577484492624
+    },
+    "output": {
+      "changed_tensors": 2,
+      "tensors": 2,
+      "delta_l2": 6.1123057336369575,
+      "relative_delta_l2": 1.3240933837131452
+    }
+  },
+  "optimizer": {
+    "state_tensors": 158,
+    "min_step": 1116,
+    "max_step": 1116,
+    "nonzero_first_moments": 158,
+    "nonzero_second_moments": 158
+  },
+  "cpu_checkpoint_probe": {
+    "loss": 1.964730978012085,
+    "terms": {
+      "reconstruction_ce": 0.9697466492652893,
+      "masked_ce": 0.9885613322257996,
+      "kl_per_token": 6.422985076904297,
+      "kl_per_dimension": 0.02508978545665741
+    },
+    "total_gradient_by_module": {
+      "encoder": {
+        "tensors": 74,
+        "all_finite": true,
+        "norm": 0.05962115601468043
+      },
+      "mu": {
+        "tensors": 2,
+        "all_finite": true,
+        "norm": 0.003946267870150097
+      },
+      "logvar": {
+        "tensors": 2,
+        "all_finite": true,
+        "norm": 0.003503401116691975
+      },
+      "decoder": {
+        "tensors": 74,
+        "all_finite": true,
+        "norm": 0.3407927369869518
+      },
+      "output": {
+        "tensors": 2,
+        "all_finite": true,
+        "norm": 0.5948874158504553
+      }
+    },
+    "reconstruction_only_gradient_norm": {
+      "encoder": 0.01705125196173379,
+      "mu": 0.003443761965558334,
+      "decoder": 0.3407927369869518,
+      "output": 0.5948874158504553
+    }
+  },
+  "logged_loss_blocks": [
+    {
+      "first_step": 1,
+      "last_step": 240,
+      "mean_loss": 2.198683857361475,
+      "grad_norm_mean": 17.14427359700203
+    },
+    {
+      "first_step": 250,
+      "last_step": 490,
+      "mean_loss": 1.9864563791155816,
+      "grad_norm_mean": 0.15838351488113403
+    },
+    {
+      "first_step": 500,
+      "last_step": 740,
+      "mean_loss": 1.9841901742815968,
+      "grad_norm_mean": 0.19127701729536056
+    },
+    {
+      "first_step": 750,
+      "last_step": 990,
+      "mean_loss": 1.9809629430770876,
+      "grad_norm_mean": 0.13489227503538131
+    },
+    {
+      "first_step": 1000,
+      "last_step": 1230,
+      "mean_loss": 1.9793303406834601,
+      "grad_norm_mean": 0.11179256901144981
+    },
+    {
+      "first_step": 1240,
+      "last_step": 1480,
+      "mean_loss": 1.9664631196260456,
+      "grad_norm_mean": 0.11724360108375549
+    },
+    {
+      "first_step": 1490,
+      "last_step": 1490,
+      "mean_loss": 1.9412992209196092,
+      "grad_norm_mean": 0.060694918036460876
+    }
+  ],
+  "epoch_metrics": [
+    {
+      "clean_mutable_accuracy": 0.4299576748183326,
+      "clean_mutable_ce": 1.1451311847998134,
+      "masked_mutable_accuracy": 0.4294496678334441,
+      "masked_mutable_ce": 1.1457445671059294,
+      "frequency_masked_ce": 1.1442295579784483,
+      "frequency_masked_accuracy": 0.4306753605034946,
+      "zero_latent_ce": 1.1452224335283436,
+      "shuffled_latent_ce": 1.1451540672005676,
+      "protein_error_rate": 0.0,
+      "exact_sequence_rate": 0.0,
+      "kl_per_dimension": 0.024353913785315727,
+      "kl_per_token": 6.234601929040826,
+      "masked_input_full_ce": 1.1047194964631413,
+      "masked_input_kl_per_token": 6.261909552373603,
+      "sequences": 3949,
+      "masked_sites": 260261,
+      "active_latent_dimensions": 0,
+      "masked_ce_relative_gain": -0.001324042992000507,
+      "decoder_pilot_gate": false,
+      "epoch": 1,
+      "step": 1116,
+      "train_loss": 2.0274093224663674,
+      "train_full_ce": 1.1221494729293504,
+      "train_masked_ce": 0.8674864297245352,
+      "train_kl_per_token": 490.85774397743216,
+      "learning_rate": 0.01,
+      "beta": 0.001,
+      "epoch_seconds": 738.8743732832372,
+      "selection_loss": 2.2908757519057428,
+      "peak_cuda_bytes": 11447088640,
+      "val_loss_fixed_beta": 2.2567259731214446
+    }
+  ],
+  "train_source_sha256": "760443e9b15374ba802af88793b75ef094451091f001c2e15efd349e03aa8390"
+}

@@ -1,0 +1,83 @@
+{
+  "train_records": 35710,
+  "train_tokens": 16157116,
+  "sources": {
+    "GENCODE_v28;RiboDecode_figshare_v3": 22283,
+    "GENCODE_v28": 13427
+  },
+  "distinct_proteins": 35631,
+  "proteins_with_multiple_cds": 59,
+  "same_protein_pairs": 150,
+  "codon_difference_histogram_5_means_at_least_5": {
+    "1": 37,
+    "5": 100,
+    "2": 12,
+    "4": 1
+  },
+  "examples": [
+    {
+      "a": "cds_03b5413f9c40606e997092e36421a05d59b5be61ed5e6c1d5ce7eac7b05667fd",
+      "b": "cds_44f054084829058c65771f3a842ab8755cc11960f0f0477804dcc25ac5a63a21",
+      "codon_position_zero_based": 244,
+      "codon_a": "GCG",
+      "codon_b": "GCC",
+      "identical_after_masking": true
+    },
+    {
+      "a": "cds_042bd6e9dc4b60029797b61108d5875fdcaf0a24f5edd5c6296fa9caa917b2cc",
+      "b": "cds_a7afe602d4afa629a576d01e159716798ee23230ad80dfa4c068a373ded8bc14",
+      "codon_position_zero_based": 395,
+      "codon_a": "AGA",
+      "codon_b": "AGG",
+      "identical_after_masking": true
+    },
+    {
+      "a": "cds_0b71dd7c7e3beaa7888cbbc5730b93bc88569ca115c4653f770a3b20fb74a0d1",
+      "b": "cds_854521a41bf6254ef3cc0883f483964c24e6cbc4dba86710e66cc5f8250b9e49",
+      "codon_position_zero_based": 149,
+      "codon_a": "AGT",
+      "codon_b": "AGC",
+      "identical_after_masking": true
+    },
+    {
+      "a": "cds_0e6c7a59c436bba4933f87a5adf241a90591fa6601c3337b4a3e4c9d124ce4bd",
+      "b": "cds_0ff0eba7868f03b2f5add4b2eea01db9d0ee08b5bf0dd5185fbf2fe45c3d9ce9",
+      "codon_position_zero_based": 244,
+      "codon_a": "GCG",
+      "codon_b": "GCC",
+      "identical_after_masking": true
+    },
+    {
+      "a": "cds_0ed0d6e9099a2c31e49d9a00b1711a42be68816b798e3616fb072625d7d96f0f",
+      "b": "cds_50e1708c5c59c65e558ef4718def6b2742b4bd785a829a7387a7a4d4263f40a2",
+      "codon_position_zero_based": 232,
+      "codon_a": "TAC",
+      "codon_b": "TAT",
+      "identical_after_masking": true
+    },
+    {
+      "a": "cds_0f0a6c5ec75db674fa711335ed21dab57999fb6903aba5bda75c0cb62fb060f0",
+      "b": "cds_fa26624e5efa8ac2c3d6b659249f80e8d03d1ff85a733a0cf9c44d3a154021a0",
+      "codon_position_zero_based": 374,
+      "codon_a": "TCC",
+      "codon_b": "TCT",
+      "identical_after_masking": true
+    },
+    {
+      "a": "cds_13b53f465f098f45428d05288c1421cf86055112a93c798b2c2744fb652918d7",
+      "b": "cds_bf3f2662abcc3bd00d85d0b9e0ec2fa2fc981d9fca2694910959d9727094fa10",
+      "codon_position_zero_based": 277,
+      "codon_a": "GCG",
+      "codon_b": "GCA",
+      "identical_after_masking": true
+    },
+    {
+      "a": "cds_bf3f2662abcc3bd00d85d0b9e0ec2fa2fc981d9fca2694910959d9727094fa10",
+      "b": "cds_c6e96395cdb913e0e6fdda8771c08684d0b94890bb8e2b7cd7a40a120c1f4379",
+      "codon_position_zero_based": 232,
+      "codon_a": "CCG",
+      "codon_b": "CCA",
+      "identical_after_masking": true
+    }
+  ]
+}

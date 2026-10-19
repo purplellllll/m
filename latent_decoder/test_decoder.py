@@ -3,6 +3,7 @@ import ast
 import contextlib
 import io
 import json
+import shutil
 import tempfile
 import unittest
 from pathlib import Path
@@ -175,10 +176,55 @@ class DecoderChecks(unittest.TestCase):
             for key in reference["model"]:
                 self.assertTrue(torch.equal(reference["model"][key], resumed["model"][key]), key)
             self.assertEqual(len((root/"resumed"/"metrics.jsonl").read_text().splitlines()), 2)
+            reference_metrics = [json.loads(line) for line in (root/"reference"/"metrics.jsonl").read_text().splitlines()]
+            resumed_metrics = [json.loads(line) for line in (root/"resumed"/"metrics.jsonl").read_text().splitlines()]
+            for a, b in zip(reference_metrics, resumed_metrics):
+                for key in ("train_loss", "train_full_ce", "train_masked_ce", "train_kl_per_token", "val_loss_fixed_beta"):
+                    self.assertEqual(a[key], b[key], key)
+            self.assertEqual((root/"reference"/"steps.jsonl").read_text(), (root/"resumed"/"steps.jsonl").read_text())
             run("test.json", "--evaluate", str(root/"resumed"/"best.pt"), "--split", "test")
             self.assertEqual(json.loads((root/"test.json").read_text())["split"], "test")
             with self.assertRaises(FileExistsError):
                 run("resumed")
+            calls = 0
+            with patch.object(train, "evaluate", side_effect=interrupted):
+                with self.assertRaises(KeyboardInterrupt):
+                    run("extended")
+            first = torch.load(root/"extended"/"last.pt", weights_only=False)
+            shutil.copytree(root/"extended", root/"extension_reference")
+            run("extension_reference", "--resume", str(root/"extension_reference"/"last.pt"), "--extend-epochs", "4")
+            calls = 0
+            with patch.object(train, "evaluate", side_effect=interrupted):
+                with self.assertRaises(KeyboardInterrupt):
+                    run("extended", "--resume", str(root/"extended"/"last.pt"), "--extend-epochs", "4")
+            run("extended", "--config", str(root/"extended"/"config.json"),
+                "--resume", str(root/"extended"/"last.pt"))
+            expected = torch.load(root/"extension_reference"/"last.pt", weights_only=False)
+            extended = torch.load(root/"extended"/"last.pt", weights_only=False)
+            self.assertEqual(extended["config"]["training"]["epochs"], 4)
+            self.assertEqual(extended["next_epoch"], 4)
+            self.assertEqual(extended["step"], 4)
+            self.assertEqual(extended["lr_extension"]["start_step"], first["step"])
+            self.assertEqual(extended["kl_warmup_steps"], 0.4)
+            for key in expected["model"]:
+                self.assertTrue(torch.equal(expected["model"][key], extended["model"][key]), key)
+            steps = [json.loads(s) for s in (root/"extended"/"steps.jsonl").read_text().splitlines()]
+            self.assertEqual(steps[1]["lr"], first["optimizer"]["param_groups"][0]["lr"])
+            self.assertGreater(steps[1]["lr"], steps[-1]["lr"])
+            self.assertEqual(len((root/"extended"/"metrics.jsonl").read_text().splitlines()), 4)
+            self.assertEqual((root/"extended"/"steps.jsonl").read_text(), (root/"extension_reference"/"steps.jsonl").read_text())
+            previous_config = (root/"resumed"/"config.json").read_text()
+            with self.assertRaisesRegex(ValueError, "reached zero"):
+                run("resumed", "--resume", str(root/"resumed"/"last.pt"), "--extend-epochs", "4")
+            self.assertEqual((root/"resumed"/"config.json").read_text(), previous_config)
+
+    def test_extended_schedule_continuity(self):
+        factor = train.learning_rate_factor
+        extension = dict(start_step=200, end_step=500, start_factor=0.03)
+        self.assertEqual(factor(200, "warmup_cosine", 50, 500, extension), 0.03)
+        self.assertEqual(factor(500, "warmup_cosine", 50, 500, extension), 0.)
+        values = [factor(s, "warmup_cosine", 50, 500, extension) for s in range(200, 501)]
+        self.assertTrue(all(a >= b >= 0 for a, b in zip(values, values[1:])))
 
 
 if __name__ == "__main__":

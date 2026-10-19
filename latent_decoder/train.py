@@ -94,6 +94,19 @@ def codon_frequency(train_records):
     return counts
 
 
+def learning_rate_factor(step, schedule, warmup, total_steps, extension=None):
+    if extension and step >= extension["start_step"]:
+        progress = min(1., (step - extension["start_step"]) /
+                       (extension["end_step"] - extension["start_step"]))
+        return extension["start_factor"] * 0.5 * (1 + math.cos(math.pi * progress))
+    if schedule == "constant":
+        return 1.0
+    if step < warmup:
+        return (step + 1) / warmup
+    progress = min(1., (step - warmup) / max(1, total_steps - warmup))
+    return 0.5 * (1 + math.cos(math.pi * progress))
+
+
 def preflight(model, records, device, batch_size, mask_probability):
     """Check the longest training batch in FP32 without updating weights or RNG state."""
     gpu_devices = [device.index if device.index is not None else torch.cuda.current_device()] if device.type == "cuda" else []
@@ -130,7 +143,7 @@ def evaluate(model, records, counts, device, batch_size, mask_probability=0.15):
     totals = {k: 0.0 for k in ("sites", "masked_sites", "clean_ce", "clean_correct",
                                "masked_ce", "masked_correct", "frequency_ce", "frequency_correct",
                                "zero_latent_ce", "shuffled_latent_ce", "invalid", "valid_tokens",
-                               "kl", "sequences", "exact_sequences")}
+                               "kl", "masked_full_ce", "masked_kl", "sequences", "exact_sequences")}
     latent_sum = latent_sq = None
     latent_count = 0
     counts = counts.to(device)
@@ -173,9 +186,12 @@ def evaluate(model, records, counts, device, batch_size, mask_probability=0.15):
         totals["shuffled_latent_ce"] += shuf_ce[mutable].sum().item()
 
         corrupted, selected = corrupt(tokens, mask_probability, generator)
-        masked_logits, _, _ = model(corrupted, tokens, sample=False)
+        masked_logits, masked_mu, masked_logvar = model(corrupted, tokens, sample=False)
         masked_logits = synonymous_logits(masked_logits, tokens)
         mce = F.cross_entropy(masked_logits.transpose(1, 2), targets, reduction="none")
+        totals["masked_full_ce"] += mce[valid].sum().item()
+        masked_kl = -0.5 * (1 + masked_logvar - masked_mu.square() - masked_logvar.exp()).sum(-1)
+        totals["masked_kl"] += masked_kl[valid].sum().item()
         prior_logits = counts.log().expand(*tokens.shape, 64)
         prior_logits = synonymous_logits(prior_logits, tokens)
         pce = F.cross_entropy(prior_logits.transpose(1, 2), targets, reduction="none")
@@ -198,6 +214,9 @@ def evaluate(model, records, counts, device, batch_size, mask_probability=0.15):
               "protein_error_rate": totals["invalid"] / totals["valid_tokens"],
               "exact_sequence_rate": totals["exact_sequences"] / totals["sequences"],
               "kl_per_dimension": totals["kl"] / totals["valid_tokens"],
+              "kl_per_token": totals["kl"] / totals["valid_tokens"] * model.latent_dim,
+              "masked_input_full_ce": totals["masked_full_ce"] / totals["valid_tokens"],
+              "masked_input_kl_per_token": totals["masked_kl"] / totals["valid_tokens"],
               "sequences": int(totals["sequences"]), "masked_sites": int(nm)}
     variance = latent_sq / latent_count - (latent_sum / latent_count).square()
     result["active_latent_dimensions"] = int((variance > 0.01).sum().item())
@@ -218,16 +237,22 @@ def main():
     parser.add_argument("--config", default="latent_decoder/config.json")
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--allow-development-split", action="store_true")
+    parser.add_argument("--extend-epochs", type=int, help="Extend this resumed run to a larger cumulative epoch target")
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument("--resume")
     mode.add_argument("--evaluate", metavar="CHECKPOINT")
     parser.add_argument("--split", choices=["val", "test"], default="val")
     args = parser.parse_args()
+    if args.extend_epochs is not None and not args.resume:
+        raise ValueError("--extend-epochs requires --resume")
     device = torch.device(args.device)
     if device.type == "cuda" and not torch.cuda.is_available():
         raise RuntimeError("CUDA is unavailable. Install a matching CUDA PyTorch build on the server.")
     config = json.loads(Path(args.config).read_text(encoding="utf-8"))
     training = config["training"]
+    lr_schedule = training.get("lr_schedule", "warmup_cosine")
+    if lr_schedule not in ("constant", "warmup_cosine"):
+        raise ValueError("Unknown lr_schedule")
     random.seed(training["seed"])
     torch.manual_seed(training["seed"])
     splits, audit = load_data(args.data, args.allow_development_split)
@@ -242,6 +267,12 @@ def main():
             raise ValueError("Checkpoint data/vocabulary mismatch")
         if checkpoint["config"] != config:
             raise ValueError("Checkpoint configuration mismatch; use its config.json")
+        if args.extend_epochs is not None:
+            if args.extend_epochs <= training["epochs"]:
+                raise ValueError("Extension target must exceed the checkpoint epoch target")
+            if checkpoint["optimizer"]["param_groups"][0]["lr"] <= 0:
+                raise ValueError("Checkpoint LR reached zero; a new nonzero continuation schedule must be chosen")
+            training["epochs"] = args.extend_epochs
     model = CodonVMAE(**config["model"]).to(device)
     if checkpoint:
         model.load_state_dict(checkpoint["model"])
@@ -273,12 +304,20 @@ def main():
     steps_per_epoch = math.ceil(n_batches / accum)
     total_steps = steps_per_epoch * training["epochs"]
     warmup = max(1, int(total_steps * training["warmup_fraction"]))
+    extension = checkpoint.get("lr_extension") if checkpoint else None
+    kl_warmup_steps = (checkpoint.get("kl_warmup_steps", total_steps * training["kl_warmup_fraction"])
+                       if checkpoint else total_steps * training["kl_warmup_fraction"])
+    if args.extend_epochs is not None:
+        current_lr = checkpoint["optimizer"]["param_groups"][0]["lr"]
+        if current_lr <= 0:
+            raise ValueError("Checkpoint LR reached zero; a new nonzero continuation schedule must be chosen")
+        extension = dict(start_step=checkpoint["step"], end_step=total_steps,
+                         start_factor=current_lr / training["learning_rate"])
+        kl_warmup_steps = checkpoint.get("kl_warmup_steps",
+            steps_per_epoch * checkpoint["config"]["training"]["epochs"] * training["kl_warmup_fraction"])
 
     def schedule(step):
-        if step < warmup:
-            return (step + 1) / warmup
-        progress = min(1., (step - warmup) / max(1, total_steps - warmup))
-        return 0.5 * (1 + math.cos(math.pi * progress))
+        return learning_rate_factor(step, lr_schedule, warmup, total_steps, extension)
 
     scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, schedule)
     use_amp = bool(training["amp"] and device.type == "cuda")
@@ -293,6 +332,18 @@ def main():
         torch.set_rng_state(checkpoint["torch_rng"])
         if device.type == "cuda" and checkpoint["cuda_rng"]:
             torch.cuda.set_rng_state_all(checkpoint["cuda_rng"])
+        # Discard logs from an interrupted epoch that will be replayed from last.pt.
+        for name in ("metrics.jsonl", "steps.jsonl"):
+            path = output / name
+            if path.exists():
+                kept = [line for line in path.read_text(encoding="utf-8").splitlines()
+                        if json.loads(line)["epoch"] <= start_epoch]
+                path.write_text("".join(line + "\n" for line in kept), encoding="utf-8")
+    if args.extend_epochs is not None:
+        print(json.dumps({"event": "epochs_extended", "from_epochs": checkpoint["config"]["training"]["epochs"],
+                          "to_epochs": training["epochs"], "resume_epoch": start_epoch + 1,
+                          "resume_step": step, "resume_lr": optimizer.param_groups[0]["lr"],
+                          "lr_extension": extension, "kl_warmup_steps": kl_warmup_steps}), flush=True)
     print(json.dumps({"parameters": sum(p.numel() for p in model.parameters()), "device": str(device),
                       "train": len(splits["train"]), "val": len(splits["val"]),
                       "epochs": training["epochs"], "early_stopping": training["patience"] > 0,
@@ -304,19 +355,38 @@ def main():
         model.train()
         optimizer.zero_grad(set_to_none=True)
         running_loss, count = 0., 0
+        term_totals = dict(reconstruction_ce=0., masked_ce=0., kl_per_token=0.)
+        window_loss, window_count = 0., 0
+        window_terms = dict.fromkeys(term_totals, 0.)
+        window_kl_loss = 0.
+        mode_counts, mode_losses = [0, 0], [0., 0.]
+        epoch_lr = optimizer.param_groups[0]["lr"]
         for index, tokens in enumerate(batches(splits["train"], training["batch_size"], shuffle=True)):
             tokens = tokens.to(device)
             probability = 0. if random.random() < training["clean_batch_probability"] else training["mask_probability"]
             corrupted, selected = corrupt(tokens, probability)
-            beta = training["beta_kl"] * min(1., (step + 1) / max(1, total_steps * training["kl_warmup_fraction"]))
+            beta = training["beta_kl"] * min(1., (step + 1) / max(1, kl_warmup_steps))
             with torch.autocast("cuda", dtype=torch.float16) if use_amp else nullcontext():
                 logits, mu, logvar = model(corrupted, tokens)
-                loss, _ = vae_loss(logits, tokens, mu, logvar, selected, beta, training["masked_loss_weight"])
+                loss, terms = vae_loss(logits, tokens, mu, logvar, selected, beta,
+                                   training["masked_loss_weight"], training.get("full_loss_weight", 1.0))
             if not torch.isfinite(loss):
                 raise FloatingPointError("Nonfinite loss; inspect before resuming")
             group_size = min(accum, n_batches - (index // accum) * accum)
             scaler.scale(loss / group_size).backward()
-            running_loss += loss.detach().item()
+            loss_value = loss.detach().item()
+            running_loss += loss_value
+            window_loss += loss_value
+            window_count += 1
+            mode = int(probability > 0)
+            mode_counts[mode] += 1
+            mode_losses[mode] += loss_value
+            for name in term_totals:
+                value = terms[name].item()
+                term_totals[name] += value
+                window_terms[name] += value
+                if name == "kl_per_token":
+                    window_kl_loss += beta * value
             count += 1
             if (index + 1) % accum == 0 or index + 1 == n_batches:
                 scaler.unscale_(optimizer)
@@ -328,23 +398,50 @@ def main():
                     scheduler.step()
                     step += 1
                 optimizer.zero_grad(set_to_none=True)
-            if count % 100 == 0:
-                print(json.dumps({"epoch": epoch + 1, "batch": count, "batches": n_batches,
-                                  "loss": running_loss / count, "beta": beta}), flush=True)
+                if step == 1 or step % training.get("log_every_steps", 10) == 0 or index + 1 == n_batches:
+                    progress = {"epoch": epoch + 1, "step": step, "batch": count, "batches": n_batches,
+                                "loss": window_loss / window_count, "epoch_mean_loss": running_loss / count,
+                                "beta": beta, "lr": epoch_lr, "grad_norm": norm.item(),
+                                "full_ce": window_terms["reconstruction_ce"] / window_count,
+                                "masked_ce": window_terms["masked_ce"] / window_count,
+                                "kl_per_token": window_terms["kl_per_token"] / window_count,
+                                "weighted_kl": window_kl_loss / window_count,
+                                "clean_batches": mode_counts[0], "masked_batches": mode_counts[1],
+                                "masked_batch_fraction": mode_counts[1] / window_count,
+                                "clean_mode_loss": mode_losses[0] / mode_counts[0] if mode_counts[0] else None,
+                                "masked_mode_loss": mode_losses[1] / mode_counts[1] if mode_counts[1] else None}
+                    with (output / "steps.jsonl").open("a", encoding="utf-8") as handle:
+                        handle.write(json.dumps(progress) + "\n")
+                    print(json.dumps(progress), flush=True)
+                    window_loss, window_count = 0., 0
+                    window_terms = dict.fromkeys(term_totals, 0.)
+                    window_kl_loss = 0.
+                    mode_counts, mode_losses = [0, 0], [0., 0.]
+                epoch_lr = optimizer.param_groups[0]["lr"]
         metrics = evaluate(model, splits["val"], counts, device, training["batch_size"], training["mask_probability"])
         # Selection uses validation only; test is a separate explicit command.
         selection = metrics["clean_mutable_ce"] + metrics["masked_mutable_ce"]
         improved = selection < best
         best, stale = (selection, 0) if improved else (best, stale + 1)
         metrics.update(epoch=epoch + 1, step=step, train_loss=running_loss/count,
+                       train_full_ce=term_totals["reconstruction_ce"]/count,
+                       train_masked_ce=term_totals["masked_ce"]/count,
+                       train_kl_per_token=term_totals["kl_per_token"]/count,
+                       learning_rate=epoch_lr, beta=beta,
                        epoch_seconds=time.perf_counter()-begin, selection_loss=selection,
                        peak_cuda_bytes=torch.cuda.max_memory_allocated(device) if device.type == "cuda" else None)
+        metrics["val_loss_fixed_beta"] = (training.get("full_loss_weight", 1.0) * metrics["masked_input_full_ce"]
+            + training["masked_loss_weight"] * metrics["masked_mutable_ce"]
+            + training["beta_kl"] * metrics["masked_input_kl_per_token"])
+        if any(isinstance(value, (int, float)) and not math.isfinite(value) for value in metrics.values()):
+            raise FloatingPointError("Nonfinite validation/training metrics; inspect before resuming")
         with (output / "metrics.jsonl").open("a", encoding="utf-8") as handle:
             handle.write(json.dumps(metrics) + "\n")
         state = {"model": model.state_dict(), "optimizer": optimizer.state_dict(),
                  "scheduler": scheduler.state_dict(), "scaler": scaler.state_dict(), "config": config,
                  "corpus_sha256": data_hash, "codons": CODONS, "next_epoch": epoch + 1,
                  "step": step, "best": best, "stale": stale, "python_rng": random.getstate(),
+                 "lr_extension": extension, "kl_warmup_steps": kl_warmup_steps,
                  "torch_rng": torch.get_rng_state(),
                  "cuda_rng": torch.cuda.get_rng_state_all() if device.type == "cuda" else None}
         temporary = output / "checkpoint.tmp"

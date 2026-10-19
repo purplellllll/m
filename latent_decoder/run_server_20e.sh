@@ -13,8 +13,8 @@ config = json.loads(Path('latent_decoder/config.json').read_text(encoding='utf-8
 assert config['training']['epochs'] == 20, 'This launcher requires exactly 20 epochs'
 assert config['training']['patience'] == 0, 'Early stopping must be disabled for this run'
 PY
-run_dir="runs/vmae_ribodecode_20ep"
-command=(python -u -m latent_decoder.train --data data/latent_decoder
+run_dir="runs/vmae_rope_6x512_20ep"
+command=(python -u -m latent_decoder.train --data dataset
   --config latent_decoder/config.json --allow-development-split --output "$run_dir")
 if [[ "$mode" == resume ]]; then
   [[ -s "$run_dir/last.pt" ]] || { echo "No checkpoint to resume." >&2; exit 1; }

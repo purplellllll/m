@@ -1,0 +1,291 @@
+{
+  "audit": {
+    "reconstruction_only_gradient_groups": {
+      "embedding": 0.007608064915984869,
+      "aa_embedding": 0.018619881942868233,
+      "encoder": 0.42040228843688965,
+      "mu": 0.6790153384208679,
+      "logvar": 0.09290657937526703,
+      "from_latent": 0.19831052422523499,
+      "decoder": 0.5014693737030029,
+      "output": 1.9046703577041626
+    },
+    "missing_gradients": [],
+    "checkpoint_epoch": 50,
+    "checkpoint_lr": 0.0,
+    "codons": 261,
+    "selected_sites_per_record": 40,
+    "batch_size": 4,
+    "gradient_accumulation": 8
+  },
+  "arms": {
+    "zero_lr": {
+      "lr": 0.0,
+      "dynamic": false,
+      "updates": 3,
+      "initial_probe": {
+        "loss": 0.725193977355957,
+        "masked_ce": 0.6248170733451843,
+        "masked_accuracy": 0.7750000357627869
+      },
+      "final_probe": {
+        "loss": 0.725193977355957,
+        "masked_ce": 0.6248170733451843,
+        "masked_accuracy": 0.7750000357627869
+      },
+      "initial_optimizer_step_range": [
+        55800.0,
+        55800.0
+      ],
+      "final_optimizer_step_range": [
+        55803.0,
+        55803.0
+      ],
+      "total_parameter_changes": {
+        "embedding": {
+          "changed_elements": 0,
+          "delta_l2": 0.0,
+          "relative_delta_l2": 0.0
+        },
+        "aa_embedding": {
+          "changed_elements": 0,
+          "delta_l2": 0.0,
+          "relative_delta_l2": 0.0
+        },
+        "encoder": {
+          "changed_elements": 0,
+          "delta_l2": 0.0,
+          "relative_delta_l2": 0.0
+        },
+        "mu": {
+          "changed_elements": 0,
+          "delta_l2": 0.0,
+          "relative_delta_l2": 0.0
+        },
+        "logvar": {
+          "changed_elements": 0,
+          "delta_l2": 0.0,
+          "relative_delta_l2": 0.0
+        },
+        "from_latent": {
+          "changed_elements": 0,
+          "delta_l2": 0.0,
+          "relative_delta_l2": 0.0
+        },
+        "decoder": {
+          "changed_elements": 0,
+          "delta_l2": 0.0,
+          "relative_delta_l2": 0.0
+        },
+        "output": {
+          "changed_elements": 0,
+          "delta_l2": 0.0,
+          "relative_delta_l2": 0.0
+        }
+      },
+      "first_train_loss": 0.7447195649147034,
+      "final_train_loss": 0.7447195649147034
+    },
+    "tail_lr": {
+      "lr": 7.596123493895991e-07,
+      "dynamic": false,
+      "updates": 60,
+      "initial_probe": {
+        "loss": 0.725193977355957,
+        "masked_ce": 0.6248170733451843,
+        "masked_accuracy": 0.7750000357627869
+      },
+      "final_probe": {
+        "loss": 0.573268473148346,
+        "masked_ce": 0.4929964244365692,
+        "masked_accuracy": 0.8500000238418579
+      },
+      "initial_optimizer_step_range": [
+        55800.0,
+        55800.0
+      ],
+      "final_optimizer_step_range": [
+        55860.0,
+        55860.0
+      ],
+      "total_parameter_changes": {
+        "embedding": {
+          "changed_elements": 32250,
+          "delta_l2": 0.009297620110845822,
+          "relative_delta_l2": 5.140250944825909e-05
+        },
+        "aa_embedding": {
+          "changed_elements": 10733,
+          "delta_l2": 0.005968118559657356,
+          "relative_delta_l2": 5.885282807859872e-05
+        },
+        "encoder": {
+          "changed_elements": 18914996,
+          "delta_l2": 0.23730150071504286,
+          "relative_delta_l2": 0.0015126924550758045
+        },
+        "mu": {
+          "changed_elements": 131327,
+          "delta_l2": 0.020535366813842017,
+          "relative_delta_l2": 0.002575674979154442
+        },
+        "logvar": {
+          "changed_elements": 131324,
+          "delta_l2": 0.0062241710429432945,
+          "relative_delta_l2": 0.0008472921730100215
+        },
+        "from_latent": {
+          "changed_elements": 131577,
+          "delta_l2": 0.006675185590862173,
+          "relative_delta_l2": 0.0005031068748244387
+        },
+        "decoder": {
+          "changed_elements": 18915040,
+          "delta_l2": 0.2472552560979487,
+          "relative_delta_l2": 0.0015674364279521882
+        },
+        "output": {
+          "changed_elements": 31794,
+          "delta_l2": 0.009822134344045124,
+          "relative_delta_l2": 0.0020330831502395254
+        }
+      },
+      "first_train_loss": 0.7447195649147034,
+      "final_train_loss": 0.5950965285301208
+    },
+    "reset_lr": {
+      "lr": 0.0001,
+      "dynamic": false,
+      "updates": 60,
+      "initial_probe": {
+        "loss": 0.725193977355957,
+        "masked_ce": 0.6248170733451843,
+        "masked_accuracy": 0.7750000357627869
+      },
+      "final_probe": {
+        "loss": 0.0034894791897386312,
+        "masked_ce": 5.000303644919768e-05,
+        "masked_accuracy": 1.0
+      },
+      "initial_optimizer_step_range": [
+        55800.0,
+        55800.0
+      ],
+      "final_optimizer_step_range": [
+        55860.0,
+        55860.0
+      ],
+      "total_parameter_changes": {
+        "embedding": {
+          "changed_elements": 33273,
+          "delta_l2": 0.15656552048204164,
+          "relative_delta_l2": 0.0008655828642064855
+        },
+        "aa_embedding": {
+          "changed_elements": 10752,
+          "delta_l2": 0.09776236490853159,
+          "relative_delta_l2": 0.0009640545168474952
+        },
+        "encoder": {
+          "changed_elements": 18915314,
+          "delta_l2": 4.116373926377172,
+          "relative_delta_l2": 0.026240069118563258
+        },
+        "mu": {
+          "changed_elements": 131327,
+          "delta_l2": 0.3323136082742494,
+          "relative_delta_l2": 0.041680864716162135
+        },
+        "logvar": {
+          "changed_elements": 131328,
+          "delta_l2": 0.1494739574483902,
+          "relative_delta_l2": 0.020347788218069998
+        },
+        "from_latent": {
+          "changed_elements": 131584,
+          "delta_l2": 0.17068594119352953,
+          "relative_delta_l2": 0.0128645517463812
+        },
+        "decoder": {
+          "changed_elements": 18915314,
+          "delta_l2": 4.9558121284547365,
+          "relative_delta_l2": 0.03141660396958358
+        },
+        "output": {
+          "changed_elements": 32832,
+          "delta_l2": 0.18169790820834492,
+          "relative_delta_l2": 0.03760964192432521
+        }
+      },
+      "first_train_loss": 0.7447195649147034,
+      "final_train_loss": 0.004210730956401676
+    },
+    "random_mask_lr": {
+      "lr": 0.0001,
+      "dynamic": true,
+      "updates": 60,
+      "initial_probe": {
+        "loss": 0.725193977355957,
+        "masked_ce": 0.6248170733451843,
+        "masked_accuracy": 0.7750000357627869
+      },
+      "final_probe": {
+        "loss": 0.0074991267174482346,
+        "masked_ce": 0.0008418198558501899,
+        "masked_accuracy": 1.0
+      },
+      "initial_optimizer_step_range": [
+        55800.0,
+        55800.0
+      ],
+      "final_optimizer_step_range": [
+        55860.0,
+        55860.0
+      ],
+      "total_parameter_changes": {
+        "embedding": {
+          "changed_elements": 33277,
+          "delta_l2": 0.3506572937670666,
+          "relative_delta_l2": 0.0019386321059661868
+        },
+        "aa_embedding": {
+          "changed_elements": 10752,
+          "delta_l2": 0.17017516627398152,
+          "relative_delta_l2": 0.0016781318440404083
+        },
+        "encoder": {
+          "changed_elements": 18915316,
+          "delta_l2": 7.798376393675892,
+          "relative_delta_l2": 0.0497112116737953
+        },
+        "mu": {
+          "changed_elements": 131328,
+          "delta_l2": 0.4199255832242246,
+          "relative_delta_l2": 0.05266971014554346
+        },
+        "logvar": {
+          "changed_elements": 131328,
+          "delta_l2": 0.2777247699519918,
+          "relative_delta_l2": 0.0378064841418715
+        },
+        "from_latent": {
+          "changed_elements": 131584,
+          "delta_l2": 0.318050632665443,
+          "relative_delta_l2": 0.02397138741060518
+        },
+        "decoder": {
+          "changed_elements": 18915316,
+          "delta_l2": 7.363006667625665,
+          "relative_delta_l2": 0.04667664118541286
+        },
+        "output": {
+          "changed_elements": 32832,
+          "delta_l2": 0.29105552297433085,
+          "relative_delta_l2": 0.06024556973220593
+        }
+      },
+      "first_train_loss": 0.9191305711865425,
+      "final_train_loss": 0.009389815444592386
+    }
+  }
+}

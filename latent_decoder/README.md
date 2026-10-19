@@ -1,100 +1,109 @@
-# RiboDecode CDS-VMAE：V100 32 GB，20 epochs
+# Protein-Conditioned Codon-level β-VMAE
 
-本轮训练encoder＋decoder，使用RiboDecode官方数据派生的CDS，固定20 epochs，关闭早停。不扩展GENCODE/MANE/OAS语料；GENCODE v28只用于核对原CDS的真实终止密码子。
+按 `DS_RiboDecode_VMAE_Architecture_Acceptance.docx`（v1.0，2026-10-17）实现的架构。当前默认是正式研究版；“正式”指配置规模，不代表通过全部科研表现验收。本实现是 DS-RiboDecode 的研究设计，不是 LSCO 原架构的严格复现。
 
-## 1. 下载与环境
+2026-10-19 状态：已完成 50 轮 GPU 训练、独立参数更新回放和 masked loss 平台诊断。参见[完成记录](../docs/VGPU_west_LSCO_lr_50ep_completion_2026-10-19.md)及[生成先验联合评估](../docs/VMAE_prior_joint_assessment_2026-10-19.md)。`evaluate_prior.py` 额外在相同掩码位置比较模型、频率基线和潜变量置换；`shuffled_masked_ce` 与历史 clean-input 的 `shuffled_latent_ce` 含义不同。下方 2026-10-17 验收表保留当日检查范围，后续进展以这些报告为准。
 
-[服务器包：代码＋清洗数据](https://github.com/purplellllll/m/releases/download/vmae-20ep-20261016/ds_ribodecode_20ep_v100_2026-10-16.tar.gz)
+学习率选择实验使用独立配置：0.01、0.1、0.001 各 5 epochs，见 [启动与曲线说明](LR_SWEEP.md)。
 
-```bash
-wget -c https://github.com/purplellllll/m/releases/download/vmae-20ep-20261016/ds_ribodecode_20ep_v100_2026-10-16.tar.gz
-tar -xzf ds_ribodecode_20ep_v100_2026-10-16.tar.gz
-cd ds_ribodecode_20ep_v100_2026-10-16
-sha256sum -c SHA256SUMS
-conda create -n ds-ribodecode python=3.10 pip -y
-conda activate ds-ribodecode
-python -m pip install numpy==1.24.4
-python -m pip install torch==2.0.1 --index-url https://download.pytorch.org/whl/cu118
-nvidia-smi
-python -c "import torch; print(torch.__version__, torch.version.cuda, torch.cuda.is_available()); print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'NO CUDA')"
-python -m unittest latent_decoder.test_decoder latent_decoder.test_repartition -v
+## 架构与配置
+
+| 项目 | 正式版 `config.json` | 缩小版 `config_mvp.json` |
+|---|---:|---:|
+| Encoder / Decoder 层数 | 6 / 6 | 4 / 4 |
+| hidden / heads / FFN | 512 / 8 / 2048 | 384 / 6 / 1536 |
+| 每密码子 latent 维度 | 256 | 128 |
+| 参数量 | 38,302,784 | 14,403,776 |
+| 位置机制 | RoPE | RoPE |
+| 注意力 | 双向、非自回归 | 双向、非自回归 |
+| 最大 CDS / 位置容量 | 1500 / 1536 | 1500 / 1536 |
+| 输出类别 | 64 个原始 codon logits | 64 个原始 codon logits |
+
+```text
+CDS tokens [B,L] ── Codon Embedding ─┐
+                                   + → Encoder → μ、logσ² [B,L,d_z]
+目标蛋白 a [B,L] ── AA Embedding ───┘                 ↓ 重参数采样
+                                            z [B,L,d_z]
+                                                   ↓ Linear
+目标蛋白 a [B,L] ── AA Embedding ──── + → Decoder → D(z,a) [B,L,64]
+                                                        ↓ + αΔ
+                                               同义硬掩码 → softmax / argmax
 ```
 
-包内直接包含`data/latent_decoder/corpus.jsonl`、`proteins.fasta`、`audit.json`和框架，不需要重新下载官方122 MB原始zip。Git仓库保存代码、说明与数据审计，语料在Release附件中。
+Encoder 与 Decoder 共用 AA embedding。RoPE 作用于每层注意力的 Q/K，不再叠加绝对位置 embedding。每个 block 为 Pre-LN、双向 self-attention、残差与 GELU FFN。无原 CDS 绕过 z 的连接。PAD 不参与注意力 key、损失或概率输出；输出 head 不含 PAD/MASK 类别。CDS 上限含末端 STOP；1536 是 RoPE 容量预留，当前 tokenizer 不额外添加 BOS/EOS，超过 1500 时拒绝，不截断。
 
-使用独立环境，保留原RiboDecode环境。安装来源：[PyTorch官方历史版本](https://pytorch.org/get-started/previous-versions/)。本轮不要求MMseqs2、RNAfold、ModernBERT或性质预测器权重。默认FP32；V100不使用BF16，本地CPU测试不等同于Linux/CUDA实测。
+为了兼容训练入口，`encode(tokens, target_tokens)`、`decode(z, target_tokens)` 接口保留。`target_tokens` 必须是有效 codon ID 或 PAD；模型内部仅由其查表得到对齐 AA（含末端 STOP）和 PAD mask。Decoder 不读取其 codon embedding；同义替换 target 不改变固定 z 的原始输出。数据入口仍由统一 tokenizer 检查起始/终止和内部 STOP。
 
-## 2. 启动20轮
+## 双空间接口
 
-```bash
-nohup bash latent_decoder/run_server_20e.sh > launcher_20ep.log 2>&1 &
-tail -f launcher_20ep.log
+```python
+model.eval().requires_grad_(False)
+z = model.encode(tokens, tokens)[0].detach().requires_grad_(True)
+delta = torch.zeros(*tokens.shape, 64, device=tokens.device, requires_grad=True)
+logits = model.decode(z, tokens)  # 连续原始 logits；不在此处 hard mask / argmax
+probs = codon_probabilities(logits, tokens, temperature=1.0, delta=delta, alpha=0.5)
+# probs: [B,L,64]；再传给可微性质预测器，候选优化器只更新 z、delta。
 ```
 
-也可在tmux内前台执行`bash latent_decoder/run_server_20e.sh`，两种方式选择一种。脚本另外保存带时间和PID的`logs/vmae_20ep_*.log`。Ctrl+C退出tail不会结束后台训练。
+`codon_probabilities` 执行 `softmax((D(z,a)+alpha*delta+M(a))/temperature)`；非法 codon 为 `-inf`，PAD 输出全零。Δ 支持 `[B,L,64]` 或单目标/共享 `[L,64]`。`alpha=0` 或 `delta=0` 退化为纯潜在分支；以零 latent logits 加 Δ 可做直接空间对照。原始 decode logits 为有限值，硬掩码后的 `-inf` 是有意的合法性约束。
 
-入口要求config的`epochs=20`、`patience=0`。验证指标暂时不改善也继续至第20轮，同时保存验证集最佳checkpoint。异常、OOM或手动停止不会自动重试。
+当前仅提供融合和可微概率映射。完整性质预测器接线、搜索优化器、离散后重评分和 RNAfold 评估尚未实现于此模块。最终生成时须移除 PAD，并复核离散 CDS 的翻译结果；测试中的蛋白保真不代表全量优化候选已验收。
 
-启动时验证哈希、划分和CUDA，然后用最长的4条训练CDS做一次FP32前向/反向。该检查不执行optimizer更新，不改变参数或随机状态；通过会记录`preflight_pass`和显存，失败不创建新的训练目录。它不能保证整次GPU任务绝无错误。
+## 损失与训练
 
-| 配置 | 值 |
-|---|---:|
-| epochs / early stopping | 20 / 关闭 |
-| encoder / decoder | 各4层双向Transformer |
-| hidden / latent | 256 / 64 |
-| 参数量 | 6,407,616 |
-| microbatch / 累积 | 4 / 8，近似32条/更新 |
-| Optimizer / lr | AdamW / 1e-4 |
-| 长度 / 精度 | 最多1,500 codons（含stop）/ FP32 |
-| KL β | 最终.001，前20%优化步数升温 |
-| 输出 | `runs/vmae_ribodecode_20ep` |
+`loss = full_loss_weight * CE_full + masked_loss_weight * CE_mask + beta(t) * KL_per_token`。
 
-mask为15%可变sense codons，25%训练batch保持完整输入。不同长度microbatch均权，不严格等于合并后token均权的大batch。首次GPU检查尚未执行，不预报20轮小时数；第一轮的`epoch_seconds`包含验证，可用于估算。
+CE 在目标 AA 的同义集合内归一化，full 项覆盖所有有效位置，masked 项只覆盖被遮挡的有效位置。KL 对每个位置的 latent 维度求和，再按有效位置数平均。日志同时报告 `kl_per_token` 和 `kl_per_dimension`。
 
-如OOM，停止后将batch降为2、累积升为16并从新run开始；不要截断序列或混用不同配置。已有输出目录会拒绝重新开始，以免覆盖结果。
+**旧版 KL 先对 latent 维度取平均，新版改为求和；相同 μ/logσ² 下，新口径等于旧口径乘 latent_dim。** 默认 β 暂沿用 0.001、前 20% 优化步 warm-up，需在验证集重新标定，不能直接比较旧版 loss 或认定 β 已调优。
 
-## 3. 本轮数据与结论边界
+其余默认：20 epochs、关闭早停、batch 4、累积 8、AdamW lr=1e-4、FP32、25% batch 不遮挡，其余以 15% 概率遮挡可变 sense codon。25–30% mask 留作单独鲁棒性实验。MVP 保留相同长度上限便于兼容已有冻结数据；先做短/中长 CDS 预实验时应另建有记录的数据子集，不能静默过滤冻结版。
 
-| split | CDS | gene | 来源 |
-|---|---:|---:|---|
-| train | 26,764 | 9,291 | 全部属于官方10,552个训练基因 |
-| val | 2,744 | 965 | 从官方训练基因中留出 |
-| test | 3,288 | 1,148 | 1,138个官方测试基因＋10个保护/组件迁移的训练基因 |
-
-train/val中官方测试基因数为0。共有32,796条唯一CDS，gene及exact-AA跨split无重叠。来源与校验和见[数据卡](../data/latent_decoder/DATA_CARD.md)。
-
-本轮为**开发训练**，保留`homology_certified=false`，启动脚本显式加入`--allow-development-split`。近同源聚类尚未执行，不能用结果宣称未见同源蛋白的正式泛化。20轮期间test不参与训练或checkpoint选择。
-
-## 4. 续训和评估
+正式版入口读取 [联合数据集](../dataset/README.md)，44,001 条 CDS，train/val/test = 35,710/3,949/4,342。数据与 tokenizer 未因本次架构改动重新划分。近同源隔离尚未认证，因此入口保留 `--allow-development-split`，不据此宣称正式泛化通过。
 
 ```bash
-nohup bash latent_decoder/run_server_20e.sh resume > launcher_20ep_resume.log 2>&1 &
+# 在当前项目代码目录执行；不要使用旧 Release 包代替新代码。
+python -m unittest latent_decoder.test_architecture latent_decoder.test_decoder latent_decoder.test_combined latent_decoder.test_repartition -v
+
+# 正式版：输出 runs/vmae_rope_6x512_20ep
+bash latent_decoder/run_server_20e.sh
+# 仅恢复该新版 run，累计至 20 轮
+bash latent_decoder/run_server_20e.sh resume
+
+# MVP 使用独立输出目录
+python -m latent_decoder.train --data dataset --allow-development-split \
+  --config latent_decoder/config_mvp.json --output runs/vmae_rope_mvp_20ep
 ```
 
-从本run的`last.pt`恢复，数据和配置须一致。目标为**累计20轮**，不是再加20轮。每个完整epoch保存一次，中途停止会重跑未完成的epoch。旧40轮配置的checkpoint不能直接混用。
+启动会核对数据/配置，并对最长训练 batch 做前向、反向预检；不更新权重，恢复随机状态。新版在 V100 上的显存和速度尚未实测；如 OOM，应另存配置降低 batch，并从新目录开始，不截断 CDS。现有环境是否可用以服务器预检为准，不要求覆盖原 RiboDecode 环境。
 
-`best.pt`与`last.pt`均含encoder、decoder及训练状态；`metrics.jsonl`记录每epoch验证CE、准确率、KL、latent诊断、耗时和峰值CUDA分配显存。
+延长正在运行的实验时，先在完整轮次保存后停止进程并备份 run，再使用 checkpoint 的原配置、原输出目录和 `--resume <run>/last.pt --extend-epochs 50`，将目标改为累计 50 轮。模型、优化器和随机状态接续；学习率从 checkpoint 当前值平滑 cosine 衰减到新终点，KL warm-up 保持原步数。已衰减到零的 checkpoint 会拒绝此操作。首次延长后，后续普通恢复使用 run 中更新后的 `config.json`，不再传 `--extend-epochs`；若尚未保存首个延长后的 checkpoint，应仍使用原配置重做延长命令。该策略与从头按 50 轮规划学习率不同。
 
-配置及验收规则冻结后显式评估test：
+排查参数是否更新时，可使用独立回放：`python -m latent_decoder.replay_single --data dataset --checkpoint <备份的last.pt> --output <新的诊断目录> --steps 60`。该诊断选取一条训练 CDS，复制为原 batch 大小并保留原梯度累积、AdamW 状态与损失配置；分别对比零学习率、7.596e-7、1e-4，以及 1e-4 下动态 mask。固定组复用相同掩码和 dropout/z 随机数，逐步记录真实参数差与梯度，并用 eval/μ 模式的固定探针比较。它会有意覆盖诊断副本中的学习率，不使用 scheduler；不写入原 run，输出权重仅用于诊断，不能当作完整续训 checkpoint。单样本拟合不代表全量数据泛化。软件自检：`python -m unittest latent_decoder.test_replay_single -v`。
+
+评估在验收规则锁定后单独运行，训练期间 test 不参与模型选择：
 
 ```bash
-python -m latent_decoder.train \
-  --data data/latent_decoder --allow-development-split \
-  --config runs/vmae_ribodecode_20ep/config.json \
-  --evaluate runs/vmae_ribodecode_20ep/best.pt --split test \
-  --output runs/vmae_ribodecode_20ep/test_metrics.json
+python -m latent_decoder.train --data dataset --allow-development-split \
+  --config runs/vmae_rope_6x512_20ep/config.json \
+  --evaluate runs/vmae_rope_6x512_20ep/best.pt --split test \
+  --output runs/vmae_rope_6x512_20ep/test_metrics.json
 ```
 
-初步验收：硬mask保真100%、clean可变位点accuracy≥95%、masked CE比训练频率基线低≥5%、zero-z及同AA内部shuffle-z使CE恶化≥0.10 nats。以上是提案门槛，尚无训练结果；接入性质预测器仍需latent连续性、梯度和公平优化对照验证。
+旧 4×256 / latent 64 的 checkpoint 和 `vmae-20ep-20261016` Release 属于历史实验，不能用于本架构续训。恢复旧实验须配套旧代码、旧配置、旧数据；本次没有修改旧权重或 Release。
 
-## 5. 可选同源划分
+## 本次检查与剩余验收
 
-本步骤不属于当前默认启动。安装MMseqs2后，可执行`bash latent_decoder/server_cluster.sh`，从相同清洗库聚类并调用`latent_decoder.repartition`；不引入新序列，不再要求原始zip、v28参考或WT文件。所有旧test及其新关联组件保持test，另写`data/latent_decoder_clustered`。
+2026-10-17，本地 PyTorch 2.14.0+cpu，22 项测试通过；正式版与 MVP 均完成最大 1500 codons 前向和短序列 padding 检查。新梯度及断点续训测试使用小型合成模型；未执行正式规模完整训练。
 
-输出train/val/test蛋白FASTA供跨split敏感搜索审计。`homology_certified=true`仅表示已用完整cluster TSV划分，`homology_search_audited=false`明确保留；不能把它称作零同源证明。有跨split命中时先合并组件、重划分，再从零训练新run。
+| 文档项目 | 当前证据与边界 |
+|---|---|
+| G1 | 已有联合数据全量校验、token roundtrip、固定 split 测试通过；近同源泄漏审计未完成 |
+| G2 | 正式/MVP 最大长度、隐层/潜变量/输出形状、padding、越界拒绝测试通过 |
+| G3 | 合成样本及大幅随机残差下同义 hard mask 保真；尚无全量训练后生成/优化结果 |
+| G4 / G5 | 冻结参数时 z/Δ 梯度有限且可变位非零；PAD 梯度零；纯潜在/直接空间退化检查通过 |
+| G6 | 合成前后向、clean loss、KL、非法 token/all-PAD 行拒绝、序列化和断点恢复测试通过；GPU 长训练未验证 |
+| Q1–Q6 | 未完成新版训练、基线比较、Top-k/长度分层/置信区间、多样性与潜在连续性报告 |
+| I1–I5 | 未完成预测器集成、soft/discrete gap、公平消融和独立评估 |
 
-## 范围与来源
-
-数据：Yupeng Li，[RiboDecode Figshare v3](https://doi.org/10.6084/m9.figshare.28916288.v3)，[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。数据卡注明本项目派生处理。方法参考[RiboDecode](https://doi.org/10.1038/s41467-025-64894-x)和[LSCO](https://arxiv.org/html/2610.03098v1)；本实现为小型条件VMAE，有明确结构和损失差异。
-
-本轮只完成VMAE预训练准备，尚无训练完成权重或经过验证的双空间优化器。原方案40轮建议由本轮20轮配置取代；完整GENCODE/MANE扩展不在本轮范围。
+`evaluate` 中已有的 `decoder_pilot_gate` 仅是早期诊断，不能替代文档完整 Q/I 验收，也不能据此声称表达量改善。

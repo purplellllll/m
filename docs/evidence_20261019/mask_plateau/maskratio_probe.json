@@ -1,0 +1,14 @@
+{
+  "validation_records": 128,
+  "common_target_sites": 1909,
+  "target_mask_probability": 0.05,
+  "stochastic_draws": 3,
+  "ce_on_identical_targets": {
+    "visible": 0.0012028653598100245,
+    "mask_005": 0.9762464316494494,
+    "mask_015": 0.9778918270792494,
+    "mask_030": 0.9845526781676639,
+    "eval_z_sample": 0.9780632160254041,
+    "train_dropout_z_sample": 0.9811238001961138
+  }
+}
