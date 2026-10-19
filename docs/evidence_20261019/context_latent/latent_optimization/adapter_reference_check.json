@@ -1,0 +1,8 @@
+{
+  "records": 4,
+  "max_abs_score_error": 0.0,
+  "input_exact_match": true,
+  "required_weights_strict_match": true,
+  "unused_training_keys": 95,
+  "stop_policy": "both paths receive CDS without terminal stop"
+}

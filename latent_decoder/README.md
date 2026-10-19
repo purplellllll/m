@@ -6,6 +6,8 @@
 
 学习率选择实验使用独立配置：0.01、0.1、0.001 各 5 epochs，见 [启动与曲线说明](LR_SWEEP.md)。
 
+2026-10-19 已追加上下文消融、潜在空间优化和标准正态先验采样诊断。代码入口为 `context_ablation.py`、`latent_optimization.py` 和 `prior_sampling_audit.py`；结果与边界见 [测试报告](../docs/VMAE_context_latent_tests_2026-10-19.md)。这些实验冻结模型和评分器，支持候选先验原型判断，不等于独立表达验证。
+
 ## 架构与配置
 
 | 项目 | 正式版 `config.json` | 缩小版 `config_mvp.json` |

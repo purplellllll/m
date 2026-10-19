@@ -1,0 +1,97 @@
+{
+  "summary": {
+    "original": {
+      "samples": 16,
+      "median_unique": 1.0,
+      "unique_per_cds": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mean_gc": 0.5143853561766263,
+      "gc_range": [
+        0.34994462901439644,
+        0.6544117647058824
+      ],
+      "mean_frequency_nll": 1.1420598849654198,
+      "mean_mutable_hamming": 0.0
+    },
+    "posterior": {
+      "samples": 128,
+      "median_unique": 1.0,
+      "unique_per_cds": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "mean_gc": 0.51440450446094,
+      "gc_range": [
+        0.34994462901439644,
+        0.6556372549019608
+      ],
+      "mean_frequency_nll": 1.141991389915347,
+      "mean_mutable_hamming": 8.1172483987757e-05
+    },
+    "standard_normal": {
+      "samples": 128,
+      "median_unique": 8.0,
+      "unique_per_cds": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "mean_gc": 0.5298523283093712,
+      "gc_range": [
+        0.4337899543378995,
+        0.6593137254901961
+      ],
+      "mean_frequency_nll": 1.1161354389041662,
+      "mean_mutable_hamming": 0.6280898130498827
+    }
+  },
+  "checkpoint_sha256": "8009efdc3fc3ee61c82925b02feba600be3d6409f923838a612c26eb4af3d673",
+  "source_unchanged": true,
+  "seed": 56173,
+  "records": 16,
+  "samples_per_distribution": 8,
+  "device": "cpu"
+}

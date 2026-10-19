@@ -17,6 +17,7 @@
 4. [完整数据 masked loss 平台诊断](docs/VGPU_mask_plateau_diagnosis_2026-10-19.md)
 5. [生成先验联合评估](docs/VMAE_prior_joint_assessment_2026-10-19.md)
 6. [权重校验清单](deliverables/vmae_50ep_preserved_manifest_20261019.json)
+7. [上下文消融与潜在空间优化测试](docs/VMAE_context_latent_tests_2026-10-19.md)
 
 研究阶段不同，配置也不同。已完成的 50 轮 run 对应 `config_lsco_lr_20ep.json` 起训及 `config_lsco_lr_50ep.json` 延长；`config.json` 是架构默认配置，不等于本次运行配置。请按对应报告复现，不覆盖已有 run。
 

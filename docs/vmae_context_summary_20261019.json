@@ -1,0 +1,33 @@
+{
+  "metrics": {
+    "normal": {
+      "ce": 0.9639712339128452,
+      "accuracy": 0.5590442110123514
+    },
+    "shuffled_visible": {
+      "ce": 0.9958599668637332,
+      "accuracy": 0.5386124898995729
+    },
+    "frequency_mode_visible": {
+      "ce": 1.7864372106893611,
+      "accuracy": 0.42456423871638
+    },
+    "no_mutable_context": {
+      "ce": 1.1298239334865599,
+      "accuracy": 0.49047674015929815
+    },
+    "frequency_baseline": {
+      "ce": 1.1490185330952478,
+      "accuracy": 0.4182153988225788
+    }
+  },
+  "sequences": 128,
+  "masked_sites": 8663,
+  "checkpoint_sha256": "8009efdc3fc3ee61c82925b02feba600be3d6409f923838a612c26eb4af3d673",
+  "source_unchanged": true,
+  "mask_seed": 20261019,
+  "shuffle_seed": 38173,
+  "length_stratified": true,
+  "device": "cpu",
+  "torch_version": "2.14.0+cpu"
+}
