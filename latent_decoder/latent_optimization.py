@@ -83,7 +83,8 @@ def snapshot(probs,tokens,scorer,counts,reference_probs):
     predicted=probs.argmax(-1)
     valid=tokens<PAD
     active=mutable_positions(tokens)
-    assert torch.equal(AA_IDS[predicted][valid],AA_IDS[tokens][valid])
+    aa_ids=AA_IDS.to(tokens.device)
+    assert torch.equal(aa_ids[predicted][valid],aa_ids[tokens][valid])
     assert torch.equal(predicted[valid & ~active],tokens[valid & ~active])
     hard=F.one_hot(predicted,64).float()*valid[...,None]
     hard_score=scorer(hard,tokens)
@@ -91,7 +92,7 @@ def snapshot(probs,tokens,scorer,counts,reference_probs):
     mean=.5*(probs+reference_probs)
     js=.5*((probs*(probs.clamp_min(1e-12).log()-mean.clamp_min(1e-12).log())).sum(-1)
            +(reference_probs*(reference_probs.clamp_min(1e-12).log()-mean.clamp_min(1e-12).log())).sum(-1))
-    prior=counts[None,None,:]*SYNONYMS[tokens]
+    prior=counts.to(tokens.device)[None,None,:]*SYNONYMS.to(tokens.device)[tokens]
     prior=prior/prior.sum(-1,keepdim=True)
     prior_nll=-prior.gather(-1,predicted[...,None]).squeeze(-1).clamp_min(1e-12).log()
     rows=[]

@@ -1,0 +1,60 @@
+{
+  "grid": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "selected": {
+    "B1": 0.5,
+    "B2": 0.25,
+    "B3": 0.25,
+    "B4": 0.25,
+    "B5": 0.25
+  },
+  "mean_best_feasible_gains": {
+    "0.25": {
+      "B1": 0.18573901057243347,
+      "B2": 0.09196895360946655,
+      "B3": 0.19839677214622498,
+      "B4": 0.19492003321647644,
+      "B5": 0.2852901220321655
+    },
+    "0.5": {
+      "B1": 0.22360733151435852,
+      "B2": 0.07995244860649109,
+      "B3": 0.18619981408119202,
+      "B4": 0.27800923585891724,
+      "B5": 0.26630422472953796
+    },
+    "1.0": {
+      "B1": 0.19210568070411682,
+      "B2": 0.07245895266532898,
+      "B3": 0.168043315410614,
+      "B4": 0.22518333792686462,
+      "B5": 0.22769016027450562
+    }
+  },
+  "training_ids": [
+    "cds_000020f9f72d99505f6ea599d9dd311c2ecb7c4ed5c9618ce2bab33a72601cac",
+    "cds_000248f6a55f8c3d922771e9b71d00a6c6cf1550e810b7b436ce88b2b090ddd0",
+    "cds_001046b12978366c2dd8bab5e3bf1377abb8611491264587ff43cee96e3212ec",
+    "cds_0014dfdfe683ef5cb28d4dbfe76e345c496cf981c609d3828f2cae78b5fa615b",
+    "cds_0017177d8f56d194a844ee9fe415fb53c19a4269eebdec12a8c65413e3f6c13d",
+    "cds_001ebbf126d2eb506c29f2211f00053e55a180bd6e327133882046949144791c",
+    "cds_001ec14a036082f73c967b42d2fdc53d1f48b4697060c8c47b85cb661c701702",
+    "cds_002594c74cbca1cd58febe7cefbcaf319fafaa6b62a5050e5d5106b687235cc3"
+  ],
+  "steps_per_trial": 80,
+  "scorer_forward_sequences_per_arm": 5760,
+  "backward_sequence_evaluations_per_arm": 1920,
+  "criterion": "mean best feasible hard-score gain from shared decoded train starting CDS; ties choose smaller multiplier",
+  "evaluation_data_used": false,
+  "independent_grid_maxima": {
+    "B1": 0.5,
+    "B2": 0.25,
+    "B3": 0.25,
+    "B4": 0.5,
+    "B5": 0.25
+  },
+  "shared_dual_rate_rule": "B4 and B5 use B3 selected LR to isolate scheduling and regularization; all train trials retained"
+}

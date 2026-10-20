@@ -1,0 +1,438 @@
+{
+  "arms": {
+    "B0": {
+      "name": "Original CDS",
+      "records": 16,
+      "mean_best_gain": 0.0,
+      "mean_final_gain": 0.0,
+      "improved": 0,
+      "final_feasible": 16,
+      "mean_hamming": 0.0,
+      "mean_gc_change": 0.0,
+      "feasible_candidate_fraction": 1.0,
+      "scorer_forward_sequences": 0,
+      "backward_sequence_evaluations": 0,
+      "decoder_sequence_evaluations": 0,
+      "elapsed_seconds": 0.0,
+      "best_gain_95": [
+        0.0,
+        0.0
+      ],
+      "mean_soft_hard_gap": 0.0,
+      "max_absolute_soft_hard_gap": 0.0,
+      "mean_js": 0.0002872712384487386,
+      "mean_abs_gc_change": 0.0,
+      "mean_frequency_nll_change": 0.0,
+      "mean_mfe_per_nt_change": 0.0,
+      "mean_decoder_kl": 0.0,
+      "mean_latent_l2": 0.0,
+      "mean_direct_l2": 0.0
+    },
+    "B1": {
+      "name": "Latent-only",
+      "records": 16,
+      "mean_best_gain": 0.16803468763828278,
+      "mean_final_gain": 0.7704174965620041,
+      "improved": 15,
+      "final_feasible": 0,
+      "mean_hamming": 0.041361527488334104,
+      "mean_gc_change": -0.005513491976892177,
+      "feasible_candidate_fraction": 0.421875,
+      "scorer_forward_sequences": 3840,
+      "backward_sequence_evaluations": 1280,
+      "decoder_sequence_evaluations": 2560,
+      "elapsed_seconds": 14.018181093037128,
+      "best_gain_95": [
+        0.11627697870135308,
+        0.22357271276414395
+      ],
+      "mean_soft_hard_gap": 0.17304010689258575,
+      "max_absolute_soft_hard_gap": 0.3737020492553711,
+      "mean_js": 0.04092045727884397,
+      "mean_abs_gc_change": 0.006278494947777494,
+      "mean_frequency_nll_change": -0.006521277129650116,
+      "mean_mfe_per_nt_change": 0.002776319510509974,
+      "mean_decoder_kl": 0.0,
+      "mean_latent_l2": 0.8295541796833277,
+      "mean_direct_l2": 0.0
+    },
+    "B2": {
+      "name": "Direct-only",
+      "records": 16,
+      "mean_best_gain": 0.11342908442020416,
+      "mean_final_gain": 1.0638462752103806,
+      "improved": 16,
+      "final_feasible": 0,
+      "mean_hamming": 0.03487242525443435,
+      "mean_gc_change": -0.005612236340119502,
+      "feasible_candidate_fraction": 0.67890625,
+      "scorer_forward_sequences": 3840,
+      "backward_sequence_evaluations": 1280,
+      "decoder_sequence_evaluations": 0,
+      "elapsed_seconds": 5.598478982690722,
+      "best_gain_95": [
+        0.0861336637288332,
+        0.14236274324357506
+      ],
+      "mean_soft_hard_gap": 0.30688372254371643,
+      "max_absolute_soft_hard_gap": 0.4755876064300537,
+      "mean_js": 0.04370249039493501,
+      "mean_abs_gc_change": 0.005736986839121501,
+      "mean_frequency_nll_change": 0.004444591701030731,
+      "mean_mfe_per_nt_change": 0.001852499819166173,
+      "mean_decoder_kl": 0.5718191433697939,
+      "mean_latent_l2": 0.0,
+      "mean_direct_l2": 3.5223631113767624
+    },
+    "B3": {
+      "name": "Latent + Direct",
+      "records": 16,
+      "mean_best_gain": 0.2522578835487366,
+      "mean_final_gain": 1.22821144759655,
+      "improved": 16,
+      "final_feasible": 0,
+      "mean_hamming": 0.0776620430406183,
+      "mean_gc_change": -0.012245265709789736,
+      "feasible_candidate_fraction": 0.4359375,
+      "scorer_forward_sequences": 3840,
+      "backward_sequence_evaluations": 1280,
+      "decoder_sequence_evaluations": 2560,
+      "elapsed_seconds": 13.874095763545483,
+      "best_gain_95": [
+        0.20096819736063481,
+        0.3028099164366722
+      ],
+      "mean_soft_hard_gap": 0.1365438550710678,
+      "max_absolute_soft_hard_gap": 0.254239559173584,
+      "mean_js": 0.04666649526916444,
+      "mean_abs_gc_change": 0.012579490308720218,
+      "mean_frequency_nll_change": -0.002040807157754898,
+      "mean_mfe_per_nt_change": 0.006740497550142574,
+      "mean_decoder_kl": 0.09351080050691962,
+      "mean_latent_l2": 0.20487711299210787,
+      "mean_direct_l2": 0.6370872519910336
+    },
+    "B4": {
+      "name": "Latent -> Direct",
+      "records": 16,
+      "mean_best_gain": 0.2891801446676254,
+      "mean_final_gain": 0.3010357916355133,
+      "improved": 16,
+      "final_feasible": 11,
+      "mean_hamming": 0.07354145077988505,
+      "mean_gc_change": -0.012925469886831357,
+      "feasible_candidate_fraction": 0.9609375,
+      "scorer_forward_sequences": 3840,
+      "backward_sequence_evaluations": 1280,
+      "decoder_sequence_evaluations": 1296,
+      "elapsed_seconds": 9.616621187888086,
+      "best_gain_95": [
+        0.24067831821739674,
+        0.3411202199757099
+      ],
+      "mean_soft_hard_gap": 0.08398626744747162,
+      "max_absolute_soft_hard_gap": 0.24161148071289062,
+      "mean_js": 0.04191265255212784,
+      "mean_abs_gc_change": 0.01325969448576184,
+      "mean_frequency_nll_change": 0.0037841275334358215,
+      "mean_mfe_per_nt_change": 0.008303942327616666,
+      "mean_decoder_kl": 0.07411369145847857,
+      "mean_latent_l2": 0.28808436915278435,
+      "mean_direct_l2": 0.5860887989401817
+    },
+    "B5": {
+      "name": "Latent + Direct + Regularization",
+      "records": 16,
+      "mean_best_gain": 0.3027442544698715,
+      "mean_final_gain": 0.8567902445793152,
+      "improved": 16,
+      "final_feasible": 0,
+      "mean_hamming": 0.08396674157120287,
+      "mean_gc_change": -0.013651712491810332,
+      "feasible_candidate_fraction": 0.51953125,
+      "scorer_forward_sequences": 3840,
+      "backward_sequence_evaluations": 1280,
+      "decoder_sequence_evaluations": 2560,
+      "elapsed_seconds": 14.886436860077083,
+      "best_gain_95": [
+        0.26062128581106664,
+        0.3451513297855854
+      ],
+      "mean_soft_hard_gap": 0.07082715630531311,
+      "max_absolute_soft_hard_gap": 0.1554734706878662,
+      "mean_js": 0.04599034832790494,
+      "mean_abs_gc_change": 0.013651712491810332,
+      "mean_frequency_nll_change": 0.0005976557731628418,
+      "mean_mfe_per_nt_change": 0.007728930280607149,
+      "mean_decoder_kl": 0.06738046021200716,
+      "mean_latent_l2": 0.2188389664515853,
+      "mean_direct_l2": 0.12258972181007266
+    }
+  },
+  "contrasts": {
+    "B3_minus_B1": {
+      "mean": 0.0842231959104538,
+      "median": 0.06520390510559082,
+      "interval_95": [
+        0.0353054266422987,
+        0.13431832939386365
+      ],
+      "bonferroni_98_75": [
+        0.021591660659760238,
+        0.1469821633771062
+      ],
+      "wins": 13,
+      "ties": 0,
+      "losses": 3,
+      "per_cds": {
+        "cds_001278c00e9fb2b443808484fa78ec4374bef3e7b3d5349faad0cabf773a19dd": 0.15153741836547852,
+        "cds_0038331962cedb7e497aa00787c7185f3153febbf7f0b9a773e544816406f0ff": 0.27062487602233887,
+        "cds_0079c337c2f984acfd22170f1bb9acae48866f6fc01382d8df77f3f41e441066": -0.09965896606445312,
+        "cds_00bd9acaac0c02daa50022644f91aa9d2ac19ad76e4005273ea929d66bc14fd3": -0.01686716079711914,
+        "cds_00dc67a1827a29c4b7b36b7213153234c864065c45aaaf906ccef4d02c567587": 0.15064454078674316,
+        "cds_0101986e5357c5960650031dd6aaa58bb424b3041f3be89e7b96a3cdb94d5e94": 0.07658934593200684,
+        "cds_018f0ae991113d9b62124681441ddc3a24da4154bb10797794353634720bfb90": 0.27506566047668457,
+        "cds_01965ffbabbcb136cabc2a8f10ebf0b2ef7628e4c6a6538247411cdbf4bf2e45": 0.15828752517700195,
+        "cds_01cbacc3dc7491a73370a1a9301bc5e99b58aafe9276d849602502614b7e1a87": 0.0350804328918457,
+        "cds_01cd4c59c8c7080fd0391809b0b8d1ddc07b3cc0430fceda9f92d24d6000df19": 0.03486132621765137,
+        "cds_01f36b8cbd78c63276b8fa686c0554488514baf06df97f9754a3a1a13e4f0093": 0.053818464279174805,
+        "cds_023065037a831689a1eb7903ed3d4332c840997303b9ce6bf67af99ee2138336": 0.05348706245422363,
+        "cds_025cc19b1e63630c1b4bbba0adafed6f1922700ff7ff922a87b342d26e2bb325": 0.11873364448547363,
+        "cds_027df70441a2358feb9951205b2015e6a366c27144e9120734c38de9239aad0b": 0.04328727722167969,
+        "cds_027fd89ba8ce27cf3e9c49d4189181bc93f320c1984cdad8586e3274ba588f80": -0.07734322547912598,
+        "cds_02d6a74e0e2f7ff828843929a2eb93c61c7e4217a4682cca0f5c9318d740d5e1": 0.11942291259765625
+      }
+    },
+    "B3_minus_B2": {
+      "mean": 0.1388287991285324,
+      "median": 0.14636731147766113,
+      "interval_95": [
+        0.09167135544121266,
+        0.18620185181498525
+      ],
+      "bonferroni_98_75": [
+        0.07662469130009412,
+        0.1998681996017695
+      ],
+      "wins": 15,
+      "ties": 0,
+      "losses": 1,
+      "per_cds": {
+        "cds_001278c00e9fb2b443808484fa78ec4374bef3e7b3d5349faad0cabf773a19dd": 0.03589463233947754,
+        "cds_0038331962cedb7e497aa00787c7185f3153febbf7f0b9a773e544816406f0ff": 0.3242943286895752,
+        "cds_0079c337c2f984acfd22170f1bb9acae48866f6fc01382d8df77f3f41e441066": 0.16114234924316406,
+        "cds_00bd9acaac0c02daa50022644f91aa9d2ac19ad76e4005273ea929d66bc14fd3": 0.026232242584228516,
+        "cds_00dc67a1827a29c4b7b36b7213153234c864065c45aaaf906ccef4d02c567587": 0.17507195472717285,
+        "cds_0101986e5357c5960650031dd6aaa58bb424b3041f3be89e7b96a3cdb94d5e94": 0.12629222869873047,
+        "cds_018f0ae991113d9b62124681441ddc3a24da4154bb10797794353634720bfb90": 0.28574395179748535,
+        "cds_01965ffbabbcb136cabc2a8f10ebf0b2ef7628e4c6a6538247411cdbf4bf2e45": 0.137115478515625,
+        "cds_01cbacc3dc7491a73370a1a9301bc5e99b58aafe9276d849602502614b7e1a87": -0.059424400329589844,
+        "cds_01cd4c59c8c7080fd0391809b0b8d1ddc07b3cc0430fceda9f92d24d6000df19": 0.2126479148864746,
+        "cds_01f36b8cbd78c63276b8fa686c0554488514baf06df97f9754a3a1a13e4f0093": 0.1378624439239502,
+        "cds_023065037a831689a1eb7903ed3d4332c840997303b9ce6bf67af99ee2138336": 0.15487217903137207,
+        "cds_025cc19b1e63630c1b4bbba0adafed6f1922700ff7ff922a87b342d26e2bb325": 0.16127896308898926,
+        "cds_027df70441a2358feb9951205b2015e6a366c27144e9120734c38de9239aad0b": 0.0381927490234375,
+        "cds_027fd89ba8ce27cf3e9c49d4189181bc93f320c1984cdad8586e3274ba588f80": 0.06268310546875,
+        "cds_02d6a74e0e2f7ff828843929a2eb93c61c7e4217a4682cca0f5c9318d740d5e1": 0.24136066436767578
+      }
+    },
+    "B3_minus_B4": {
+      "mean": -0.036922261118888855,
+      "median": -0.033339858055114746,
+      "interval_95": [
+        -0.06303577050566674,
+        -0.011873357743024832
+      ],
+      "bonferroni_98_75": [
+        -0.07079578274860979,
+        -0.003560335841029879
+      ],
+      "wins": 4,
+      "ties": 0,
+      "losses": 12,
+      "per_cds": {
+        "cds_001278c00e9fb2b443808484fa78ec4374bef3e7b3d5349faad0cabf773a19dd": -0.04137086868286133,
+        "cds_0038331962cedb7e497aa00787c7185f3153febbf7f0b9a773e544816406f0ff": 0.05257415771484375,
+        "cds_0079c337c2f984acfd22170f1bb9acae48866f6fc01382d8df77f3f41e441066": -0.06782388687133789,
+        "cds_00bd9acaac0c02daa50022644f91aa9d2ac19ad76e4005273ea929d66bc14fd3": -0.1265876293182373,
+        "cds_00dc67a1827a29c4b7b36b7213153234c864065c45aaaf906ccef4d02c567587": 0.0543363094329834,
+        "cds_0101986e5357c5960650031dd6aaa58bb424b3041f3be89e7b96a3cdb94d5e94": -0.021979570388793945,
+        "cds_018f0ae991113d9b62124681441ddc3a24da4154bb10797794353634720bfb90": -0.12066960334777832,
+        "cds_01965ffbabbcb136cabc2a8f10ebf0b2ef7628e4c6a6538247411cdbf4bf2e45": -0.03893709182739258,
+        "cds_01cbacc3dc7491a73370a1a9301bc5e99b58aafe9276d849602502614b7e1a87": -0.11158275604248047,
+        "cds_01cd4c59c8c7080fd0391809b0b8d1ddc07b3cc0430fceda9f92d24d6000df19": -0.0653834342956543,
+        "cds_01f36b8cbd78c63276b8fa686c0554488514baf06df97f9754a3a1a13e4f0093": -0.006763458251953125,
+        "cds_023065037a831689a1eb7903ed3d4332c840997303b9ce6bf67af99ee2138336": -0.027742624282836914,
+        "cds_025cc19b1e63630c1b4bbba0adafed6f1922700ff7ff922a87b342d26e2bb325": -0.023814678192138672,
+        "cds_027df70441a2358feb9951205b2015e6a366c27144e9120734c38de9239aad0b": 0.008895158767700195,
+        "cds_027fd89ba8ce27cf3e9c49d4189181bc93f320c1984cdad8586e3274ba588f80": 0.0018646717071533203,
+        "cds_02d6a74e0e2f7ff828843929a2eb93c61c7e4217a4682cca0f5c9318d740d5e1": -0.0557708740234375
+      }
+    },
+    "B5_minus_B3": {
+      "mean": 0.05048637092113495,
+      "median": 0.040678977966308594,
+      "interval_95": [
+        0.029085494205355646,
+        0.07284735105931757
+      ],
+      "bonferroni_98_75": [
+        0.02422099430114031,
+        0.07902321992442017
+      ],
+      "wins": 13,
+      "ties": 0,
+      "losses": 3,
+      "per_cds": {
+        "cds_001278c00e9fb2b443808484fa78ec4374bef3e7b3d5349faad0cabf773a19dd": 0.014661073684692383,
+        "cds_0038331962cedb7e497aa00787c7185f3153febbf7f0b9a773e544816406f0ff": -0.0020499229431152344,
+        "cds_0079c337c2f984acfd22170f1bb9acae48866f6fc01382d8df77f3f41e441066": 0.10106539726257324,
+        "cds_00bd9acaac0c02daa50022644f91aa9d2ac19ad76e4005273ea929d66bc14fd3": 0.11454939842224121,
+        "cds_00dc67a1827a29c4b7b36b7213153234c864065c45aaaf906ccef4d02c567587": -0.00465083122253418,
+        "cds_0101986e5357c5960650031dd6aaa58bb424b3041f3be89e7b96a3cdb94d5e94": 0.10591340065002441,
+        "cds_018f0ae991113d9b62124681441ddc3a24da4154bb10797794353634720bfb90": 0.036247968673706055,
+        "cds_01965ffbabbcb136cabc2a8f10ebf0b2ef7628e4c6a6538247411cdbf4bf2e45": 0.007668972015380859,
+        "cds_01cbacc3dc7491a73370a1a9301bc5e99b58aafe9276d849602502614b7e1a87": 0.1290884017944336,
+        "cds_01cd4c59c8c7080fd0391809b0b8d1ddc07b3cc0430fceda9f92d24d6000df19": 0.02586197853088379,
+        "cds_01f36b8cbd78c63276b8fa686c0554488514baf06df97f9754a3a1a13e4f0093": 0.09017324447631836,
+        "cds_023065037a831689a1eb7903ed3d4332c840997303b9ce6bf67af99ee2138336": -0.009063959121704102,
+        "cds_025cc19b1e63630c1b4bbba0adafed6f1922700ff7ff922a87b342d26e2bb325": 0.018217802047729492,
+        "cds_027df70441a2358feb9951205b2015e6a366c27144e9120734c38de9239aad0b": 0.06601762771606445,
+        "cds_027fd89ba8ce27cf3e9c49d4189181bc93f320c1984cdad8586e3274ba588f80": 0.06897139549255371,
+        "cds_02d6a74e0e2f7ff828843929a2eb93c61c7e4217a4682cca0f5c9318d740d5e1": 0.04510998725891113
+      }
+    }
+  },
+  "bootstrap_components": 16,
+  "bootstrap_draws": 5000,
+  "bootstrap_seed": 63917,
+  "budgets": {
+    "B1": [
+      3840,
+      1280
+    ],
+    "B2": [
+      3840,
+      1280
+    ],
+    "B3": [
+      3840,
+      1280
+    ],
+    "B4": [
+      3840,
+      1280
+    ],
+    "B5": [
+      3840,
+      1280
+    ]
+  },
+  "source_checkpoint_sha256": "8009efdc3fc3ee61c82925b02feba600be3d6409f923838a612c26eb4af3d673",
+  "source_scorer_sha256": "3c6322ea417b68e13a520928a1d55fe7b4bc993e92c512e7c1acec121a35b2a6",
+  "source_unchanged": true,
+  "tuning": {
+    "grid": [
+      0.25,
+      0.5,
+      1.0
+    ],
+    "selected": {
+      "B1": 0.5,
+      "B2": 0.25,
+      "B3": 0.25,
+      "B4": 0.25,
+      "B5": 0.25
+    },
+    "mean_best_feasible_gains": {
+      "0.25": {
+        "B1": 0.18573901057243347,
+        "B2": 0.09196895360946655,
+        "B3": 0.19839677214622498,
+        "B4": 0.19492003321647644,
+        "B5": 0.2852901220321655
+      },
+      "0.5": {
+        "B1": 0.22360733151435852,
+        "B2": 0.07995244860649109,
+        "B3": 0.18619981408119202,
+        "B4": 0.27800923585891724,
+        "B5": 0.26630422472953796
+      },
+      "1.0": {
+        "B1": 0.19210568070411682,
+        "B2": 0.07245895266532898,
+        "B3": 0.168043315410614,
+        "B4": 0.22518333792686462,
+        "B5": 0.22769016027450562
+      }
+    },
+    "training_ids": [
+      "cds_000020f9f72d99505f6ea599d9dd311c2ecb7c4ed5c9618ce2bab33a72601cac",
+      "cds_000248f6a55f8c3d922771e9b71d00a6c6cf1550e810b7b436ce88b2b090ddd0",
+      "cds_001046b12978366c2dd8bab5e3bf1377abb8611491264587ff43cee96e3212ec",
+      "cds_0014dfdfe683ef5cb28d4dbfe76e345c496cf981c609d3828f2cae78b5fa615b",
+      "cds_0017177d8f56d194a844ee9fe415fb53c19a4269eebdec12a8c65413e3f6c13d",
+      "cds_001ebbf126d2eb506c29f2211f00053e55a180bd6e327133882046949144791c",
+      "cds_001ec14a036082f73c967b42d2fdc53d1f48b4697060c8c47b85cb661c701702",
+      "cds_002594c74cbca1cd58febe7cefbcaf319fafaa6b62a5050e5d5106b687235cc3"
+    ],
+    "steps_per_trial": 80,
+    "scorer_forward_sequences_per_arm": 5760,
+    "backward_sequence_evaluations_per_arm": 1920,
+    "criterion": "mean best feasible hard-score gain from shared decoded train starting CDS; ties choose smaller multiplier",
+    "evaluation_data_used": false,
+    "independent_grid_maxima": {
+      "B1": 0.5,
+      "B2": 0.25,
+      "B3": 0.25,
+      "B4": 0.5,
+      "B5": 0.25
+    },
+    "shared_dual_rate_rule": "B4 and B5 use B3 selected LR to isolate scheduling and regularization; all train trials retained"
+  },
+  "posthoc_edit_budget": {
+    "0.02": {
+      "B1": 0.060073480010032654,
+      "B2": 0.049609556794166565,
+      "B3": 0.04268947243690491,
+      "B4": 0.0747278481721878,
+      "B5": 0.04726162552833557
+    },
+    "0.04": {
+      "B1": 0.11966553330421448,
+      "B2": 0.09640835225582123,
+      "B3": 0.1070457249879837,
+      "B4": 0.15303555130958557,
+      "B5": 0.12034294009208679
+    },
+    "0.06": {
+      "B1": 0.15756647288799286,
+      "B2": 0.11342908442020416,
+      "B3": 0.17642493546009064,
+      "B4": 0.2334376871585846,
+      "B5": 0.19370345771312714
+    },
+    "0.08": {
+      "B1": 0.16201594471931458,
+      "B2": 0.11342908442020416,
+      "B3": 0.22804652154445648,
+      "B4": 0.274905189871788,
+      "B5": 0.26962392032146454
+    },
+    "0.1": {
+      "B1": 0.16803468763828278,
+      "B2": 0.11342908442020416,
+      "B3": 0.2522578835487366,
+      "B4": 0.2891801446676254,
+      "B5": 0.3027442544698715
+    },
+    "0.2": {
+      "B1": 0.16803468763828278,
+      "B2": 0.11342908442020416,
+      "B3": 0.2522578835487366,
+      "B4": 0.2891801446676254,
+      "B5": 0.3027442544698715
+    }
+  }
+}

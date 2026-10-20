@@ -1,0 +1,64 @@
+{
+  "direct_scale": 1.2517843842506409,
+  "direct_lr_factor": 1.6014172141870504,
+  "records": [
+    {
+      "sequence_id": "cds_000020f9f72d99505f6ea599d9dd311c2ecb7c4ed5c9618ce2bab33a72601cac",
+      "latent_step_logit_rms": 0.1942988485097885,
+      "direct_unit_step_logit_rms": 0.08456575125455856,
+      "first_step_ratio": 2.297606839971338,
+      "latent_full_radius_logit_rms": 1.3946343660354614
+    },
+    {
+      "sequence_id": "cds_000248f6a55f8c3d922771e9b71d00a6c6cf1550e810b7b436ce88b2b090ddd0",
+      "latent_step_logit_rms": 0.14550501108169556,
+      "direct_unit_step_logit_rms": 0.08472767472267151,
+      "first_step_ratio": 1.7173256737891,
+      "latent_full_radius_logit_rms": 1.062349557876587
+    },
+    {
+      "sequence_id": "cds_001046b12978366c2dd8bab5e3bf1377abb8611491264587ff43cee96e3212ec",
+      "latent_step_logit_rms": 0.16653966903686523,
+      "direct_unit_step_logit_rms": 0.08370892703533173,
+      "first_step_ratio": 1.989509063550324,
+      "latent_full_radius_logit_rms": 0.9450438618659973
+    },
+    {
+      "sequence_id": "cds_0014dfdfe683ef5cb28d4dbfe76e345c496cf981c609d3828f2cae78b5fa615b",
+      "latent_step_logit_rms": 0.11852268129587173,
+      "direct_unit_step_logit_rms": 0.08200526982545853,
+      "first_step_ratio": 1.4453056681373955,
+      "latent_full_radius_logit_rms": 1.2469562292099
+    },
+    {
+      "sequence_id": "cds_0017177d8f56d194a844ee9fe415fb53c19a4269eebdec12a8c65413e3f6c13d",
+      "latent_step_logit_rms": 0.16127672791481018,
+      "direct_unit_step_logit_rms": 0.07984988391399384,
+      "first_step_ratio": 2.019749059228703,
+      "latent_full_radius_logit_rms": 1.1504933834075928
+    },
+    {
+      "sequence_id": "cds_001ebbf126d2eb506c29f2211f00053e55a180bd6e327133882046949144791c",
+      "latent_step_logit_rms": 0.21963784098625183,
+      "direct_unit_step_logit_rms": 0.08513990044593811,
+      "first_step_ratio": 2.579728656433147,
+      "latent_full_radius_logit_rms": 1.5362660884857178
+    },
+    {
+      "sequence_id": "cds_001ec14a036082f73c967b42d2fdc53d1f48b4697060c8c47b85cb661c701702",
+      "latent_step_logit_rms": 0.11063914000988007,
+      "direct_unit_step_logit_rms": 0.08039255440235138,
+      "first_step_ratio": 1.3762361556040321,
+      "latent_full_radius_logit_rms": 1.2566125392913818
+    },
+    {
+      "sequence_id": "cds_002594c74cbca1cd58febe7cefbcaf319fafaa6b62a5050e5d5106b687235cc3",
+      "latent_step_logit_rms": 0.20207126438617706,
+      "direct_unit_step_logit_rms": 0.08245833963155746,
+      "first_step_ratio": 2.4505861419121127,
+      "latent_full_radius_logit_rms": 1.5202388763427734
+    }
+  ],
+  "split": "train",
+  "rule": "match full-radius output-logit RMS; then match first Adam-step RMS via direct LR; train-only, local approximate calibration"
+}
