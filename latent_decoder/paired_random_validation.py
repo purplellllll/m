@@ -131,8 +131,7 @@ def main():
     if args.device == 'cuda': torch.cuda.synchronize()
     assert hashes == (state_hash(model),state_hash(scorer))
     assert all(p.grad is None for p in list(model.parameters())+list(scorer.parameters()))
-    extra = 2 if args.arms else 0
-    assert scorer.forward_sequences == len(selected)*(6+len(config['run_arms'])*(240+extra))
+    assert scorer.forward_sequences == len(selected)*(6+len(config['run_arms'])*240)
     verify_reference(reference)
     receipt = dict(completed=True,seed=args.seed,records=len(selected),
         elapsed_seconds=time.monotonic()-start,scorer_forward_sequences=scorer.forward_sequences,

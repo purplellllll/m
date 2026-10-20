@@ -18,7 +18,9 @@
 
 `handoff.jsonl`：逐 CDS/arm 的 before、after、after.feasible、delta_projection=F(after)-F(before)、direct_l2_after=0，以及逐步 KL/目标轨迹。评分差在不可行交接时同样保留。`steps.jsonl`：两阶段变量范数与评分；`results.jsonl`：最终端点、历史最优和预算。
 
-每方法仍为 40+40 次搜索 backward、240 次搜索 scorer forward；额外 2 次交接 scorer forward。KL 增加 40 次 Decoder backward 和 42 次 Decoder forward；重新编码增加一次 Encoder forward 和 2 次 Decoder forward。投影耗时包含于搜索耗时，额外 backward 单独记录，不能声称与无投影 B4/B5/B6 的总计算成本相同。
+每方法为 40+40 次搜索 backward，**含交接诊断合计 240 次 scorer forward**。第 40/80 步省去不影响优化或离散候选选择的 soft-score 诊断各一次（对应字段为 null），释放的 2 次查询用于交接评分；所有步骤的 hard-score、候选和约束检查保留。公共初始化仍为每 CDS 6 次查询。KL 增加 40 次 Decoder backward 和 42 次 Decoder forward；重新编码增加一次 Encoder forward 和 2 次 Decoder forward。投影耗时、调用数和分数损失单独记录，不能声称总计算成本相同。
+
+本轮统一协议：同一 CDS/seed 使用同一个 z0、P0 和合法源 CDS 兜底；两阶段共享总查询预算，比例为 40/40；搜索学习率、温度及投影参数在开发集比较前固定，不按 B7/B8 分别调优；各阶段采用相同历史最佳合法离散候选规则；模型及所有性质评分器权重冻结；采用真实独立种子，CDS 为配对统计单位。
 
 ## 开发集比较与冻结
 

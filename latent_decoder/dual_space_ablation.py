@@ -68,6 +68,19 @@ def phase(arm, step, steps):
     return 'latent' if arm == 'B1' else 'direct' if arm == 'B2' else 'joint'
 
 
+def hard_only_snapshot(probabilities, tokens, scorer, counts, reference):
+    # Reallocate optional soft diagnostics to the handoff without losing any hard candidates.
+    cached = []
+    def hard_scorer(p, t):
+        if not cached: cached.append(scorer(p, t))
+        return cached[0]
+    rows = snapshot(probabilities, tokens, hard_scorer, counts, reference)
+    for row in rows:
+        row['soft_score'] = None
+        row['soft_hard_gap'] = None
+    return rows
+
+
 def project_to_latent(model, target, tokens, mu, sigma, latent, config):
     """Fit a detached distribution without consulting the translation scorer."""
     settings = config['handoff']
@@ -250,6 +263,8 @@ def optimize_batch(model, scorer, records, counts, config, output, run_start):
                     best_distribution[i] = design_probabilities(start_logits, tokens)[i].detach()
         handoff_forwards = 0
         projection_updates = 0
+        projection_seconds = 0.
+        omitted_soft_queries = 0
         accepted = [0] * len(tokens)
         decoder_evaluations = 0
         frozen_stage_base = base
@@ -266,6 +281,8 @@ def optimize_batch(model, scorer, records, counts, config, output, run_start):
             update_d = current_phase in ('direct', 'joint')
             if arm in ('B7', 'B8') and current_phase == 'latent' and last_phase == 'direct':
                 before = [dict(row) for row in best]
+                if tokens.is_cuda: torch.cuda.synchronize(tokens.device)
+                projection_start = time.monotonic()
                 projected, trace = project_to_latent(model, best_distribution, tokens, mu, sigma, latent, config)
                 with torch.no_grad():
                     latent.copy_(projected)
@@ -275,6 +292,8 @@ def optimize_batch(model, scorer, records, counts, config, output, run_start):
                     handoff_kl = (best_distribution * (best_distribution.clamp_min(1e-12).log() - handoff_p.clamp_min(1e-12).log())).sum(-1)
                     handoff_kl = (handoff_kl * active).sum(-1) / active.sum(-1)
                     handoff_rz = mean_square(latent, active[..., None])
+                if tokens.is_cuda: torch.cuda.synchronize(tokens.device)
+                projection_seconds = time.monotonic() - projection_start
                 handoff_forwards += 2 * len(tokens)
                 projection_updates = config['handoff']['steps'] if config['handoff']['method'] == 'kl' else 0
                 decoder_evaluations += (projection_updates + 2) * len(tokens)
@@ -288,6 +307,9 @@ def optimize_batch(model, scorer, records, counts, config, output, run_start):
                         method=config['handoff']['method'], before=before[i], after=dict(feasible=legal, **row),
                         delta_projection=row['hard_score']-before[i]['hard_score'], direct_l2_after=0.,
                         projection_kl=float(handoff_kl[i]), latent_l2_after=float(handoff_rz[i]),
+                        elapsed_seconds=projection_seconds / len(tokens), scorer_forward_sequences=2,
+                        decoder_forward_evaluations=projection_updates+2, decoder_backward_evaluations=projection_updates,
+                        encoder_forward_evaluations=int(config['handoff']['method']=='reencode'),
                         trace=[dict(step=t['step'], objective=t['objective'][i], kl=t['kl'][i]) for t in trace])])
             if arm in ('B4', 'B6') and current_phase == 'direct' and last_phase == 'latent':
                 with torch.no_grad():
@@ -328,7 +350,11 @@ def optimize_batch(model, scorer, records, counts, config, output, run_start):
                 p = design_probabilities(decoder_logits + config['direct_scale'] * direct * support, tokens)
                 decoder_p = design_probabilities(decoder_logits, tokens)
                 terms = regularizers(p, decoder_p, latent, direct, active, support)
-                values = snapshot(p, tokens, scorer, counts, reference)
+                if arm in ('B7', 'B8') and step in (config['steps']//2, config['steps']):
+                    values = hard_only_snapshot(p, tokens, scorer, counts, reference)
+                    omitted_soft_queries += len(tokens)
+                else:
+                    values = snapshot(p, tokens, scorer, counts, reference)
                 joint_energy = mean_square(latent, active[..., None]) + mean_square(direct, support)
                 assert float(joint_energy.max()) < (512.0001 if config.get('output_space_budget', False) else 1.00001)
             rows = []
@@ -352,14 +378,16 @@ def optimize_batch(model, scorer, records, counts, config, output, run_start):
                 print(json.dumps(dict(event='progress', arm=arm, step=step, records=len(tokens),
                                       tuning=config.get('tuning', False), lr_multiplier=config.get('arm_lr_multipliers', {}).get(arm, config.get('lr_multiplier', 1.)),
                                       best_gains=[b['hard_score'] - v['hard_score'] for b, v in zip(best, initial)])), flush=True)
-        assert scorer.forward_sequences - score_start == len(tokens) * config['steps'] * 3 + handoff_forwards
+        assert scorer.forward_sequences - score_start == len(tokens) * config['steps'] * 3 + handoff_forwards - omitted_soft_queries
+        if arm in ('B7', 'B8'): assert handoff_forwards == omitted_soft_queries
         elapsed = time.monotonic() - start
         for index, identity in enumerate(identities):
             results.append(dict(sequence_id=identity, arm=arm, initial=initial[index], best=best[index], final=values[index],
                 best_hard_gain=best[index]['hard_score'] - initial[index]['hard_score'],
                 final_hard_gain=values[index]['hard_score'] - initial[index]['hard_score'],
                 feasible_steps=accepted[index], unique_candidates=len(unique[index]),
-                elapsed_seconds=elapsed / len(tokens), scorer_forward_sequences=3 * config['steps'] + handoff_forwards // len(tokens),
+                elapsed_seconds=elapsed / len(tokens), scorer_forward_sequences=3 * config['steps'] + (handoff_forwards-omitted_soft_queries) // len(tokens),
+                projection_elapsed_seconds=projection_seconds / len(tokens),
                 projection_backward_evaluations=projection_updates,
                 projection_encoder_evaluations=int(arm in ('B7', 'B8') and config['handoff']['method'] == 'reencode'),
                 backward_sequence_evaluations=config['steps'],

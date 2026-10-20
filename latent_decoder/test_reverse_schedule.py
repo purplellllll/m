@@ -28,7 +28,7 @@ class ReverseScheduleChecks(unittest.TestCase):
             out = Path(directory)
             scorer = CountedScorer(LinearScorer())
             result = optimize_batch(model, scorer, records, torch.ones(64), config, out, time.monotonic())
-            self.assertEqual(scorer.forward_sequences, 6 + 2 * (4 * 3 + 2))
+            self.assertEqual(scorer.forward_sequences, 6 + 2 * 4 * 3)
             for key in ('initial', 'best', 'final', 'best_hard_gain'):
                 self.assertEqual(result[1][key], result[2][key])
             steps = [json.loads(line) for line in (out/'steps.jsonl').read_text().splitlines()]
