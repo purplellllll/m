@@ -1,0 +1,57 @@
+{
+  "measurements": [
+    {
+      "group": "short",
+      "selection": "median",
+      "codons": 177,
+      "seconds": 0.09518206864595413,
+      "peak_bytes": 1108962816,
+      "loss": 2.2999050617218018
+    },
+    {
+      "group": "short",
+      "selection": "longest",
+      "codons": 301,
+      "seconds": 0.11963336169719696,
+      "peak_bytes": 1606099456,
+      "loss": 2.2516536712646484
+    },
+    {
+      "group": "medium",
+      "selection": "median",
+      "codons": 452,
+      "seconds": 0.12985770776867867,
+      "peak_bytes": 2386485760,
+      "loss": 2.143735408782959
+    },
+    {
+      "group": "medium",
+      "selection": "longest",
+      "codons": 700,
+      "seconds": 0.20858195796608925,
+      "peak_bytes": 4039411712,
+      "loss": 1.9898921251296997
+    },
+    {
+      "group": "long",
+      "selection": "median",
+      "codons": 922,
+      "seconds": 0.2892438881099224,
+      "peak_bytes": 5902422016,
+      "loss": 1.844403624534607
+    },
+    {
+      "group": "long",
+      "selection": "longest",
+      "codons": 1500,
+      "seconds": 0.599611684679985,
+      "peak_bytes": 12711283712,
+      "loss": 1.759358525276184
+    }
+  ],
+  "train_counts": {
+    "short": 11844,
+    "medium": 13447,
+    "long": 5988
+  }
+}

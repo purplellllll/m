@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+results/
+logs/
+*.pt
+*.p
+*.gz
+*.npz
+*.zip
+data/folds.json
+data/proteins.fasta

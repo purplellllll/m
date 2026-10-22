@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "purpose": "Memory and integration only; randomly initialized model",
+  "results": [
+    {
+      "group": "short",
+      "codons": 301,
+      "peak_bytes": 339439104,
+      "search_seconds": 0.39981115609407425,
+      "baseline": 2.972898483276367,
+      "scorer_queries": 4,
+      "native_queries": 4
+    },
+    {
+      "group": "medium",
+      "codons": 700,
+      "peak_bytes": 517935104,
+      "search_seconds": 0.2033345028758049,
+      "baseline": 3.5666897296905518,
+      "scorer_queries": 4,
+      "native_queries": 4
+    },
+    {
+      "group": "long",
+      "codons": 1500,
+      "peak_bytes": 1142063616,
+      "search_seconds": 0.29121243208646774,
+      "baseline": 3.041609287261963,
+      "scorer_queries": 4,
+      "native_queries": 4
+    }
+  ]
+}

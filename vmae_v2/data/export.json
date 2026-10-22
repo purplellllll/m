@@ -1,0 +1,9 @@
+{
+  "records": 44001,
+  "original_manifest_sha256": "b11cd373b8fb8f5f7b79fe93089312b73142266cf3893fe270c7eee1fa9d77de",
+  "files_sha256": {
+    "corpus.jsonl.gz": "a697e50b9ab8e2ba0fff43fd82ebac802a6da7cd77951ccd7e54764d84ebe7d4",
+    "proteins.fasta": "946ad5cb546160533632e6786a52012d6e38880f152eab32fd047d6795d149bd"
+  },
+  "policy": "Merge old train/val/test for new cross-validation; never warm-start outer models from old weights"
+}

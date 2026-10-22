@@ -1,0 +1,112 @@
+{
+  "description": "Reference settings; runtime implementations remain frozen in latent_decoder/v2_train.py and v2_experiment.py",
+  "training_example_fold0_uniform": {
+    "model": {
+      "d_model": 512,
+      "n_heads": 8,
+      "encoder_layers": 6,
+      "decoder_layers": 6,
+      "ff_dim": 2048,
+      "latent_dim": 256,
+      "dropout": 0.1,
+      "max_codons": 1500,
+      "max_positions": 1536
+    },
+    "training": {
+      "seed": 20261022,
+      "epochs": 50,
+      "batch_size": 8,
+      "gradient_accumulation": 4,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "warmup_fraction": 0.1,
+      "mask_probability": 0.15,
+      "clean_batch_probability": 0.0,
+      "masked_loss_weight": 1.0,
+      "full_loss_weight": 1.0,
+      "beta_kl": 0.001,
+      "kl_warmup_fraction": 0.2,
+      "grad_clip": 1.0,
+      "patience": 8,
+      "amp": true,
+      "lr_schedule": "warmup_cosine",
+      "log_every_steps": 10,
+      "minimum_epochs": 10,
+      "profile": "uniform"
+    }
+  },
+  "profiles": {
+    "uniform": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "short_fast": [
+      2.0,
+      1.0,
+      0.5
+    ],
+    "long_fast": [
+      0.5,
+      1.0,
+      2.0
+    ]
+  },
+  "coefficients": [
+    [
+      0.5,
+      0.5
+    ],
+    [
+      0.5,
+      1.0
+    ],
+    [
+      0.5,
+      2.0
+    ],
+    [
+      1.0,
+      0.5
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      2.0
+    ],
+    [
+      2.0,
+      0.5
+    ],
+    [
+      2.0,
+      1.0
+    ],
+    [
+      2.0,
+      2.0
+    ]
+  ],
+  "primary_js": 0.05,
+  "relaxed_js": {
+    "5": 0.05,
+    "10": 0.1,
+    "20": 0.3
+  },
+  "budgets": [
+    5,
+    10,
+    20
+  ],
+  "folds": 5,
+  "inner_per_length": 3,
+  "outer_per_length": 12,
+  "steps": 80,
+  "seeds": [
+    20261023,
+    20261024
+  ]
+}

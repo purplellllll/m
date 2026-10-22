@@ -1,0 +1,47 @@
+{
+  "config": {
+    "model": {
+      "d_model": 512,
+      "n_heads": 8,
+      "encoder_layers": 6,
+      "decoder_layers": 6,
+      "ff_dim": 2048,
+      "latent_dim": 256,
+      "dropout": 0.1,
+      "max_codons": 1500,
+      "max_positions": 1536
+    },
+    "training": {
+      "seed": 20261022,
+      "epochs": 50,
+      "batch_size": 8,
+      "gradient_accumulation": 4,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "warmup_fraction": 0.1,
+      "mask_probability": 0.15,
+      "clean_batch_probability": 0.0,
+      "masked_loss_weight": 1.0,
+      "full_loss_weight": 1.0,
+      "beta_kl": 0.001,
+      "kl_warmup_fraction": 0.2,
+      "grad_clip": 1.0,
+      "patience": 8,
+      "amp": true,
+      "lr_schedule": "warmup_cosine",
+      "log_every_steps": 10,
+      "minimum_epochs": 10,
+      "profile": "uniform"
+    }
+  },
+  "fold": 0,
+  "folds_sha256": "4fb0d0103bb954c709ce72c48a3eb2688eaee80c7cff4d7521b32f215b185400",
+  "source_sha256": {
+    "v2_train.py": "87ee1f156a5fb15bae6cafc295d943a5cd4f27fa5d1862605cf5fe58702be544",
+    "v2_data.py": "cd213cd29225323f917617c46f4efd25a1d47eeabd9d36eba9967bbf02a79b69",
+    "model.py": "eba3d6be91cd205714afdd2c20074d202b445717b4a8622da84dec358a3c8853",
+    "train.py": "3ebaa6f229be4526a90846199d42e693faa16bfca79344817cc685b40b499128"
+  },
+  "torch_version": "2.0.0+cu118",
+  "precision": "FP16 autocast with FP32 loss and dynamic GradScaler"
+}

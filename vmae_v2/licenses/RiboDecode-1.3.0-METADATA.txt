@@ -1,0 +1,23 @@
+Metadata-Version: 2.2
+Name: RiboDecode
+Version: 1.3.0
+Home-page: 
+Author: Wang Fan
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy<2.0
+Requires-Dist: torch
+Requires-Dist: p_tqdm
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: pandas
+Requires-Dist: viennarna
+Dynamic: author
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python

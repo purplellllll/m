@@ -1,0 +1,7 @@
+{
+  "mmseqs_version": "fcf516aba34be4569b3eb5bda2b9db9e26a8f278",
+  "mmseqs_sha256": "79e4c3722ae4ba75ea5d46a67cc6d56415b59cec6f910445c49a961ee6ab0753",
+  "hits_sha256": "535b67f0958451b435caf1942a090da894ebb2c13e2e5b0bb18bdac6b87e3059",
+  "python": "3.8.10 (default, Jun  4 2021, 15:09:15) \n[GCC 7.5.0]",
+  "preparation_log_sha256": "ead3d53db6f012d0edda18f78f65955937b77b5c6df4b77a1e4c8731a8e0f5d3"
+}

@@ -1,0 +1,120 @@
+{
+  "folds": 5,
+  "profiles": {
+    "uniform": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "short_fast": [
+      2.0,
+      1.0,
+      0.5
+    ],
+    "long_fast": [
+      0.5,
+      1.0,
+      2.0
+    ]
+  },
+  "coefficients": [
+    [
+      0.5,
+      0.5
+    ],
+    [
+      0.5,
+      1.0
+    ],
+    [
+      0.5,
+      2.0
+    ],
+    [
+      1.0,
+      0.5
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      2.0
+    ],
+    [
+      2.0,
+      0.5
+    ],
+    [
+      2.0,
+      1.0
+    ],
+    [
+      2.0,
+      2.0
+    ]
+  ],
+  "seeds": [
+    20261023,
+    20261024
+  ],
+  "inner_per_length": 3,
+  "outer_per_length": 12,
+  "budgets": [
+    5,
+    10,
+    20
+  ],
+  "primary_js": 0.05,
+  "relaxed_js": {
+    "5": 0.05,
+    "10": 0.1,
+    "20": 0.3
+  },
+  "steps": 80,
+  "scorer_queries_per_trial": 160,
+  "folds_sha256": "4fb0d0103bb954c709ce72c48a3eb2688eaee80c7cff4d7521b32f215b185400",
+  "scorer_sha256": "3c6322ea417b68e13a520928a1d55fe7b4bc993e92c512e7c1acec121a35b2a6",
+  "sources": {
+    "analyze_b6.py": "d022f5c33d09e2c2db83743da539fce294580aae7e2fb03444edef9d699cc85f",
+    "analyze_dual_space.py": "f68cf6789004bcd0e6a60e430fd12d56fc9ea95b449c006fb5614173aff095a7",
+    "analyze_random_validation.py": "9777e0c616e3240c25e620ed9cc3275b897d7f1846c8440f4768ef328111a221",
+    "b6_reproducibility.py": "3beae485c1124290910c06c29e892245b136072dfba0e6f50bba3b70fe043fd0",
+    "budget_comparison.py": "55ef02ed52f5d6e5edab6cffa332e85621a5453f89107371bc5c939ef874711a",
+    "budget_js_extension.py": "8a8cf6c5068b13d8ecc91b182becfa9f18b3364c1e74de125541cb6b08870708",
+    "context_ablation.py": "3d7d2bd8bb822ee01aebe47508876b75a015eb6c64f801e3000a2a2dfadeac1e",
+    "diagnose_mask_plateau.py": "3cf0b431052e54eba964d02bb542f42109e50f4b7286048561eb54f6d61c9f87",
+    "dual_space_ablation.py": "8667906fd78d447fe61bd68a5d1019bc0edc9ad5e0e041c1c3ef116dd9e0b551",
+    "evaluate_prior.py": "925a27b9f95690e3b686bbb093f60ac736c941376dffc5dd4fa3d3900a93472d",
+    "formal_validation_analysis.py": "47503070f764e3b3f3ce3d91eb5ac408b76668166a72464017e63e5efce5288c",
+    "formal_validation_plan.py": "bb7b24115ebc7495dbe06a33f5e3a3513061b848dcd96699197827c3d94d11bf",
+    "independent_translation_score.py": "c7495661bb4f58fcc6521c8e09c5e97e65860e43396f19e75e6ab7586fe39ec5",
+    "js_constraint.py": "8288ee4d734bd155e326dd93962b78d622133bb4eac94334575b0f13f90ed9d8",
+    "js_constraint_validation.py": "6ab36b2adfb8baf83e0c0cba4de6557dd03ddca2710c3459826989956a9c3ab7",
+    "js_threshold_sweep.py": "903a78f8303082373727cd551ae885c2b16c9d8180cd59f6033568d743eeb8fb",
+    "latent_optimization.py": "fb9fbb444edd7d6578c0ea25ae181262fb713c018ed8ada3a2d01df1034a9028",
+    "length_control_audit.py": "3d193523895ee7b7b79cb6aaf2602b9b67ea927fe9626289bfc72dcb8bd6786b",
+    "length_diagnostics.py": "f17c73cdf5b9ea567e9bc3f86786dae40537d83d2beef449853c5062220acb57",
+    "lr_sweep.py": "7e5f30c58bda1c1f7147c86ffe20a4a8e81170a495c86862dce4bc1e0771cfed",
+    "model.py": "eba3d6be91cd205714afdd2c20074d202b445717b4a8622da84dec358a3c8853",
+    "paired_random_validation.py": "deb7a86c11bf368951b4209af62ef448d3adfe5083b9f788df4e90cb26c74d4c",
+    "prepare_combined.py": "bd129b71598eee4ecb97b5bc79aa618a1e7125488563aefe78e92893c5d1b87f",
+    "prepare_data.py": "247725f463286d6c2c3efd69a56002a386a5bcc89118e71014dcb70945c46f72",
+    "prior_sampling_audit.py": "56445d23633638cc9df6c52f05f09a49c0632a15980b3a32926b142e95b9eda3",
+    "repartition.py": "db1aeae1c0e7ff58a235f542e83f6c07e93577952bd86b7632126fdf49be6316",
+    "replay_single.py": "bca8626cba4576a74abf12e4e2bf29b03ed8c81239657bb4febfcc465a30cfa3",
+    "run_length_diagnostics.py": "c8eadf9fffb72f6e80fc1e16d2162b9d092dbc75e470140ec381012f427592c8",
+    "rz_relaxation.py": "1614621ba0d3865a004cf7cda9fa0594d90353d8f7ec6773c9e2b2cf7ef75c60",
+    "tokenizer.py": "34a5e3b53b90a217f33b4815dee733340f1f557d7f67112fc202c6fb3c7887fe",
+    "train.py": "3ebaa6f229be4526a90846199d42e693faa16bfca79344817cc685b40b499128",
+    "v2_data.py": "cd213cd29225323f917617c46f4efd25a1d47eeabd9d36eba9967bbf02a79b69",
+    "__init__.py": "0aaab5d405455884fd51301739fcc74648f32a6e172d6507d85ce62caf52730a",
+    "v2_train.py": "87ee1f156a5fb15bae6cafc295d943a5cd4f27fa5d1862605cf5fe58702be544",
+    "v2_search.py": "25bb74df0fd6f0bdfe76a160e502d185cc325d298c2aea941f070ee2d70e78fc",
+    "v2_experiment.py": "875c3f5a1d125fe92645d7b9055b52f40627d3343898422e31c00968e0d0c6ff",
+    "test_v2.py": "e1bc369a930eb5cddae2dcad8f758e6c3e3484bc816ba6fdb064d86087539a5b"
+  },
+  "selection": "Five outer group folds, each with 10% inner group holdout. All training starts from scratch. One profile per fold, coefficients per length. No outer tuning.",
+  "limits": "Frozen scorer surrogate, not biological validation. Native has no JS constraint; both use identical codon budget and score-call budget. Original fallback permitted. Budget summaries admit lower-budget winners equally for all arms."
+}

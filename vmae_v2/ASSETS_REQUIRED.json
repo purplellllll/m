@@ -1,0 +1,11 @@
+{
+  "source_bundle": "DS_RiboDecode_VMAE_V2_5Fold_ServerBundle_20261022.zip",
+  "bundle_sha256": "444270f983e64f0678bd8ea6c7f16e2fb67070e2dc8a5afa4dd7b32c42213eaa",
+  "excluded_from_git": {
+    "data/corpus.jsonl.gz": "a697e50b9ab8e2ba0fff43fd82ebac802a6da7cd77951ccd7e54764d84ebe7d4",
+    "data/folds.json": "4fb0d0103bb954c709ce72c48a3eb2688eaee80c7cff4d7521b32f215b185400",
+    "data/proteins.fasta": "946ad5cb546160533632e6786a52012d6e38880f152eab32fd047d6795d149bd",
+    "score_model/best_model.p": "3c6322ea417b68e13a520928a1d55fe7b4bc993e92c512e7c1acec121a35b2a6",
+    "score_model/conditions/HEK293T_normal_10552_RPKM_HEK293T.npz": "c1db139ef7eb69a527edd13d43782dcbb6c453e78c2619efa21a5569ff535daa"
+  }
+}
