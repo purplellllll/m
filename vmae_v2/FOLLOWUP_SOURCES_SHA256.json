@@ -1,0 +1,6 @@
+{
+  "latent_decoder/v2_followup.py": "0abc579012bb5e3d7a9c8cc59623788959158e42b7558a3558386d0c8ba3691d",
+  "latent_decoder/test_v2_followup.py": "0151515ddd2d2a0233b9a2e610ee96bf4da6b3414e31d776157fd49b653e0997",
+  "docs/VMAE_V2_POSTTRAIN_PROTOCOL_20261022.md": "8281a6706df45b0de9600fd0ce4eb4a599e362396d58e8ca7907f5e6045e336c",
+  "tools/run_vmae_v2_followup_20261022.sh": "ce8f9ef92e264c9638237afdf304cc31273b74a40d37962166e2c4a31b94b89b"
+}
