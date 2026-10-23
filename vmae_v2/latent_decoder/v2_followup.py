@@ -89,9 +89,9 @@ def evaluate(model, records, seeds=(173,), probes=False):
             rows.append(row)
             for key in sums[group]:
                 sums[group][key] += row[key]
-            if probes and seed == seeds[0]:
+            if seed == seeds[0]:
                 pools[group].add(mu, logvar, tokens)
-                if len(probe_rows[group]) < 16 and selected.any():
+                if probes and len(probe_rows[group]) < 16 and selected.any():
                     baseline = float(ce[selected].mean())
                     high = mu[valid].var(0, unbiased=False) > .01
                     changed = dict(zero=torch.zeros_like(mu),
@@ -120,8 +120,11 @@ def evaluate(model, records, seeds=(173,), probes=False):
         metrics[group] = dict(ce=ce, full_ce=full, kl=kl, loss=full+ce+.001*kl,
                               masked_sites=s['masked_sites'], valid_sites=s['valid_sites'],
                               sequences=s['sequences']//len(seeds))
+        encoded = pools[group].summary()
+        metrics[group].update(masked_mu_au_001=encoded['pooled']['active_dimensions']['0.01'],
+                              masked_mu_rms=encoded['sequence_mean']['mu_rms'])
         if probes:
-            metrics[group]['latent'] = dict(encoder=pools[group].summary(), interventions=probe_rows[group])
+            metrics[group]['latent'] = dict(encoder=encoded, interventions=probe_rows[group])
     return dict(by_length=metrics, macro=metrics_summary(metrics), paired_rows=rows,
                 mask_seeds=list(seeds), loss_definition='full_ce + masked_mutable_ce + 0.001 * raw_kl_per_token')
 
@@ -221,7 +224,8 @@ def train_trial(data_dir, initial, output, fold, recipe, stage, epochs):
             scaler=scaler.state_dict(), epoch=epoch+1, step=step, best=best,
             rng=torch.get_rng_state(), cuda_rng=torch.cuda.get_rng_state_all()))
         print(json.dumps(dict(event='followup_epoch', fold=fold, trial=output.name, stage=stage,
-                             epoch=epoch+1, **metrics['macro'])), flush=True)
+            epoch=epoch+1, masked_mu_au={g:m['masked_mu_au_001'] for g,m in metrics['by_length'].items()},
+            **metrics['macro'])), flush=True)
     result = dict(recipe=recipe, stage=stage, best=best, initial_sha256=plan['initial_sha256'])
     if stage == 'final':
         result['best_sha256'] = sha256(output/'best.pt')
@@ -261,7 +265,21 @@ def acceptance(candidate, reference):
                 deltas=comparison, criterion='CE and fixed loss strictly lower in every length bin and macro')
 
 
-def source_plan(data, prior, v1):
+def available_folds(prior):
+    return [fold for fold in range(5) if (prior/f'fold_{fold}'/'uniform'/'complete.json').exists()]
+
+
+def control_profiles(prior, folds, available_now):
+    profiles = {str(fold): [p for p in PROFILES if not available_now or
+                (prior/f'fold_{fold}'/p/'complete.json').exists()] for fold in folds}
+    if not folds or any('uniform' not in profiles[str(fold)] for fold in folds):
+        raise ValueError('Every selected fold needs a completed uniform baseline')
+    return profiles
+
+
+def source_plan(data, prior, v1, folds=None, available_now=False):
+    folds = list(range(5)) if folds is None else folds
+    profiles = control_profiles(prior, folds, available_now)
     export = json.loads((data/'export.json').read_text())
     assert export['original_manifest_sha256'] == OLD_DATA_SHA
     manifest = json.loads((data/'folds.json').read_text())
@@ -282,18 +300,19 @@ def source_plan(data, prior, v1):
         evaluation=dict(mask_seeds=[173, 174, 175], fixed_kl_weight=.001,
             v1_reference='epoch50; original-test groups disjoint from original train and val',
             limitation='Original test set has been used in previous exploratory studies; this is not a new external validation.'),
-        folds=list(range(5)))
+        folds=folds, control_profiles=profiles, available_now=available_now,
+        validation_scope='partial_cross_validation_pilot' if available_now else 'five_fold_cross_validation')
 
 
 def run(args):
-    plan = source_plan(args.data, args.prior, args.v1)
+    plan = source_plan(args.data, args.prior, args.v1, args.folds, args.available_now)
     assert json.loads((args.output/'queued_plan.json').read_text()) == plan, 'Queued source/data changed while waiting'
     if (args.output/'plan.json').exists():
         assert json.loads((args.output/'plan.json').read_text()) == plan
     else:
         save_json(args.output/'plan.json', plan)
     selections = []
-    for fold in range(5):
+    for fold in plan['folds']:
         out = args.output/f'fold_{fold}'
         out.mkdir(exist_ok=True)
         if (out/'selection.json').exists():
@@ -304,7 +323,7 @@ def run(args):
         split = corpus(args.data, fold)
         val = pick(split['val'], 128, 'followup-validation')
         controls = {}
-        for profile in PROFILES:
+        for profile in plan['control_profiles'][str(fold)]:
             checkpoint = args.prior/f'fold_{fold}'/profile/'best.pt'
             done = json.loads(checkpoint.with_name('complete.json').read_text())
             assert sha256(checkpoint) == done['best_sha256']
@@ -369,7 +388,7 @@ def run(args):
             leaderboard.append(candidate)
         selection = dict(fold=fold, **champion, leaderboard=leaderboard,
             selection_scope='Inner validation only; no outer or V1 metrics used',
-            learning_rate_comparison={p: controls[p]['metrics']['by_length'] for p in PROFILES})
+            learning_rate_comparison={p: c['metrics']['by_length'] for p,c in controls.items()})
         save_json(out/'selection.json', selection)
         selections.append(selection)
     # Lock every fold's selection before opening any held-out evaluation.
@@ -377,6 +396,7 @@ def run(args):
     manifest = json.loads((args.data/'folds.json').read_text())
     records = read_corpus(args.data/'corpus.jsonl.gz')
     safe = safe_reference(records, manifest)
+    safe = {identity for identity in safe if manifest['assignments'][identity]['outer_fold'] in plan['folds']}
     cohort = [r for r in records if r['sequence_id'] in safe]
     save_json(args.output/'v1_comparison_cohort.json', dict(ids=sorted(safe), count=len(safe),
         group_policy='Exclude every V2 homology group containing any original train or val record'))
@@ -407,13 +427,16 @@ def run(args):
         (r['sequence_id'], r['mask_seed']) for r in totals['V1']]
     summary = dict(acceptance_vs_v1=acceptance(aggregate['candidate'], aggregate['V1']), metrics=aggregate,
         v2_outer_comparison=acceptance(aggregate['candidate_outer'], aggregate['uniform']),
-        latent_comparison={arm: latent_summary(args.output, arm) for arm in ('candidate', 'V1')},
+        latent_comparison={arm: latent_summary(args.output, arm, plan['folds']) for arm in ('candidate', 'V1')},
+        validation_scope=plan['validation_scope'], folds=plan['folds'],
+        full_five_fold_validation_complete=not plan['available_now'] and plan['folds']==list(range(5)),
         v1_cohort_cds=len(safe), selections=[dict(fold=s['fold'], origin=s['origin'], recipe=s.get('recipe')) for s in selections],
         limitation=plan['evaluation']['limitation'],
         latent_note='AU and gradient participation are diagnostics; neither proves 256 independent useful dimensions.')
     save_json(args.output/'summary.json', summary)
     save_json(args.output/'complete.json', dict(summary_sha256=sha256(args.output/'summary.json'),
-                                              accepted=summary['acceptance_vs_v1']['passed']))
+        accepted=summary['acceptance_vs_v1']['passed'], validation_scope=plan['validation_scope'],
+        full_five_fold_validation_complete=summary['full_five_fold_validation_complete']))
     print(json.dumps(summary), flush=True)
 
 
@@ -432,17 +455,17 @@ def aggregate_rows(rows):
     return dict(by_length=result, macro=metrics_summary(result))
 
 
-def latent_summary(output, arm):
-    results = [json.loads((output/f'fold_{f}'/f'evaluation_{arm}.json').read_text()) for f in range(5)]
+def latent_summary(output, arm, folds=range(5)):
+    results = [json.loads((output/f'fold_{f}'/f'evaluation_{arm}.json').read_text()) for f in folds]
     summary = {}
     for group in GROUPS:
         latent = [r['by_length'][group]['latent'] for r in results]
         probes = [p for r in latent for p in r['interventions']]
         summary[group] = dict(
-            mean_fold_au_001=sum(r['encoder']['pooled']['active_dimensions']['0.01'] for r in latent)/5,
-            mean_fold_within_aa_au_001=sum(r['encoder']['within_amino_acid']['active_dimensions']['0.01'] for r in latent)/5,
-            mean_fold_variance_participation=sum(r['encoder']['pooled']['variance_energy_participation'] for r in latent)/5,
-            mean_fold_mu_rms=sum(r['encoder']['sequence_mean']['mu_rms'] for r in latent)/5,
+            mean_fold_au_001=sum(r['encoder']['pooled']['active_dimensions']['0.01'] for r in latent)/len(results),
+            mean_fold_within_aa_au_001=sum(r['encoder']['within_amino_acid']['active_dimensions']['0.01'] for r in latent)/len(results),
+            mean_fold_variance_participation=sum(r['encoder']['pooled']['variance_energy_participation'] for r in latent)/len(results),
+            mean_fold_mu_rms=sum(r['encoder']['sequence_mean']['mu_rms'] for r in latent)/len(results),
             mean_probe_gradient_dimensions_99pct=sum(p['gradient']['dims_for_99pct_gradient_energy'] for p in probes)/len(probes),
             intervention_ce_increase={key: sum(p[key] for p in probes)/len(probes)
                 for key in ('zero_ce_increase', 'shuffled_ce_increase', 'zero_high_ce_increase', 'zero_low_ce_increase')},
@@ -476,6 +499,7 @@ def main():
     parser.add_argument('--recipe')
     parser.add_argument('--stage', choices=('screen', 'final'))
     parser.add_argument('--epochs', type=int)
+    parser.add_argument('--available-now', action='store_true', help='Use completed uniform folds after an explicit upstream pause')
     args = parser.parse_args()
     torch.set_num_threads(4)
     torch.backends.cuda.matmul.allow_tf32 = False
@@ -483,18 +507,25 @@ def main():
     if args.action == 'worker':
         return train_trial(args.data, args.initial, args.output, args.fold,
                            json.loads(args.recipe), args.stage, args.epochs)
+    args.folds = available_folds(args.prior) if args.available_now else list(range(5))
+    if args.available_now:
+        phase = json.loads((args.prior/'deployment'/'status.json').read_text())
+        if phase.get('stage') != 'paused_by_user':
+            raise RuntimeError('--available-now requires an explicitly paused upstream queue')
     args.output.mkdir(parents=True, exist_ok=True)
     if args.action == 'check':
-        plan = source_plan(args.data, args.prior, args.v1)
+        plan = source_plan(args.data, args.prior, args.v1, args.folds, args.available_now)
         records = read_corpus(args.data/'corpus.jsonl.gz')
         manifest = json.loads((args.data/'folds.json').read_text())
         safe = safe_reference(records, manifest)
+        safe = {identity for identity in safe if manifest['assignments'][identity]['outer_fold'] in args.folds}
         counts = {str(f): {g: sum(r['sequence_id'] in safe and
             manifest['assignments'][r['sequence_id']]['outer_fold'] == f and length_group(r['n_codons']-1) == g
-            for r in records) for g in GROUPS} for f in range(5)}
+            for r in records) for g in GROUPS} for f in args.folds}
         assert all(n > 0 for c in counts.values() for n in c.values())
         lookup = {r['sequence_id']: dict(r, v2_group=manifest['assignments'][r['sequence_id']]['group']) for r in records}
-        for split in manifest['splits'].values():
+        for fold in args.folds:
+            split = manifest['splits'][str(fold)]
             pick([lookup[i] for i in split['train']], 512, 'followup-screen-train')
             pick([lookup[i] for i in split['val']], 128, 'followup-validation')
         save_json(args.output/'preflight.json', dict(plan=plan, reference_counts=counts, safe_cds=len(safe)))
@@ -503,14 +534,15 @@ def main():
     import fcntl
     with (args.output/'queue.lock').open('w') as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
-        queued_plan = source_plan(args.data, args.prior, args.v1)
+        queued_plan = source_plan(args.data, args.prior, args.v1, args.folds, args.available_now)
         if (args.output/'queued_plan.json').exists():
             assert json.loads((args.output/'queued_plan.json').read_text()) == queued_plan
         else:
             save_json(args.output/'queued_plan.json', queued_plan)
         save_json(args.output/'queue_status.json', dict(stage='waiting', pid=os.getpid()))
         try:
-            wait_ready(args.prior)
+            if not args.available_now:
+                wait_ready(args.prior)
             with (args.prior/'deployment'/'launch.lock').open('a') as upstream:
                 fcntl.flock(upstream, fcntl.LOCK_EX)
                 save_json(args.output/'queue_status.json', dict(stage='running', pid=os.getpid()))

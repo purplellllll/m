@@ -9,7 +9,8 @@ import torch
 
 from .model import CodonVMAE, collate_records, vae_loss
 from .v2_followup import (BASE, CHANGES, ScaledVMAE, acceptance, aggregate_rows, combine,
-                          evaluate, fixed_mask, load_model, safe_reference, training_loss, train_trial, wait_ready)
+                          evaluate, fixed_mask, load_model, safe_reference, training_loss, train_trial, wait_ready,
+                          available_folds, control_profiles, latent_summary)
 
 
 class FollowupTests(unittest.TestCase):
@@ -53,6 +54,7 @@ class FollowupTests(unittest.TestCase):
             self.assertAlmostEqual(metrics['loss'], metrics['ce']+metrics['full_ce']+.001*metrics['kl'])
             self.assertEqual(len(metrics['latent']['encoder']['pooled']['variance_by_dim']), 8)
             self.assertEqual(len(metrics['latent']['interventions']), 1)
+            self.assertIn('masked_mu_au_001',metrics)
         aggregate = aggregate_rows(result['paired_rows'])
         self.assertEqual(result['macro'], aggregate['macro'])
 
@@ -97,6 +99,34 @@ class FollowupTests(unittest.TestCase):
             status.write_text(json.dumps(dict(stage='failed')))
             with self.assertRaisesRegex(RuntimeError, 'Upstream training failed'):
                 wait_ready(root)
+
+    def test_early_followup_uses_only_completed_uniform_folds_and_available_controls(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory)
+            for fold,profile in ((0,'uniform'),(0,'short_fast'),(0,'long_fast'),(1,'uniform'),(2,'short_fast')):
+                p=root/f'fold_{fold}'/profile/'complete.json'
+                p.parent.mkdir(parents=True); p.write_text('{}')
+            self.assertEqual(available_folds(root),[0,1])
+            self.assertEqual(control_profiles(root,[0,1],True),
+                             {'0':['uniform','short_fast','long_fast'],'1':['uniform']})
+            with self.assertRaises(ValueError):
+                control_profiles(root,[2],True)
+            with self.assertRaises(ValueError):
+                control_profiles(root,[],True)
+
+    def test_partial_fold_latent_summary_uses_selected_denominator(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory)
+            for fold,au in ((0,10),(1,20)):
+                p=root/f'fold_{fold}'/'evaluation_candidate.json';p.parent.mkdir()
+                latent=dict(encoder=dict(pooled=dict(active_dimensions={'0.01':au},variance_energy_participation=au),
+                    within_amino_acid=dict(active_dimensions={'0.01':au}),sequence_mean=dict(mu_rms=au)),
+                    interventions=[dict(gradient=dict(dims_for_99pct_gradient_energy=au),zero_ce_increase=1.,
+                        shuffled_ce_increase=1.,zero_high_ce_increase=1.,zero_low_ce_increase=0.)])
+                p.write_text(json.dumps(dict(by_length={g:dict(latent=latent) for g in ('short','medium','long')})))
+            summary=latent_summary(root,'candidate',[0,1])
+            self.assertEqual(summary['long']['mean_fold_au_001'],15.)
+            self.assertEqual(summary['long']['mean_fold_mu_rms'],15.)
 
     @unittest.skipUnless(torch.cuda.is_available(), 'CUDA resume smoke test runs on the server')
     def test_cuda_worker_checkpoint_resume_and_complete(self):

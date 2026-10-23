@@ -34,3 +34,8 @@ train-all执行5折×3种学习率配置，共15次训练；每个最多50轮，
 ## Post-training coefficient experiments
 
 After all 15 training runs finish, use `tools/run_vmae_v2_followup_20261022.sh` to queue the inner-selected fine-tuning experiments. See [the protocol](docs/VMAE_V2_POSTTRAIN_PROTOCOL_20261022.md) for the gain, learning-rate, KL, weight-decay and free-bits controls, paired V1 CE/loss acceptance, and latent interventions. The V1 epoch-50 reference weight is a separate private runtime asset; its required SHA-256 is in the protocol.
+
+
+## Early follow-up after an explicit training pause
+
+Use `tools/run_vmae_v2_followup_early_20261023.sh` only after pausing the upstream training queue. It starts from completed uniform folds and labels the result as a partial cross-validation pilot. See [the early-start protocol](docs/VMAE_V2_EARLY_FOLLOWUP_20261023.md).

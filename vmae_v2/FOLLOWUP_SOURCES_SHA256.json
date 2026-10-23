@@ -1,6 +1,8 @@
 {
-  "latent_decoder/v2_followup.py": "0abc579012bb5e3d7a9c8cc59623788959158e42b7558a3558386d0c8ba3691d",
-  "latent_decoder/test_v2_followup.py": "0151515ddd2d2a0233b9a2e610ee96bf4da6b3414e31d776157fd49b653e0997",
+  "latent_decoder/v2_followup.py": "d579e3c6a5c51c4ef0c890b6cd675d24fadc24011edea2334c2f3bbe0447086b",
+  "latent_decoder/test_v2_followup.py": "fa617ea95944c7fadf41b2454c7fdf92d5b7eeba596daa244ec6f11db70e67a9",
   "docs/VMAE_V2_POSTTRAIN_PROTOCOL_20261022.md": "8281a6706df45b0de9600fd0ce4eb4a599e362396d58e8ca7907f5e6045e336c",
-  "tools/run_vmae_v2_followup_20261022.sh": "ce8f9ef92e264c9638237afdf304cc31273b74a40d37962166e2c4a31b94b89b"
+  "tools/run_vmae_v2_followup_20261022.sh": "ce8f9ef92e264c9638237afdf304cc31273b74a40d37962166e2c4a31b94b89b",
+  "tools/run_vmae_v2_followup_early_20261023.sh": "861116c19cb1f799235784ae6c826f9df64c1e195d742a273e22185617c6161d",
+  "docs/VMAE_V2_EARLY_FOLLOWUP_20261023.md": "7c31023f672e09d5ed85abd1b2e1f26174f6b40b467cf3919ef6fe1d077edd52"
 }
