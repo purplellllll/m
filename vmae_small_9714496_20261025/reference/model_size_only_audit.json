@@ -1,0 +1,25 @@
+{
+  "state": "passed",
+  "changed_model_fields": [
+    "d_model",
+    "ff_dim"
+  ],
+  "source_files_different": [
+    "latent_decoder/config_lsco_lr_50ep.json"
+  ],
+  "training_config_equal": true,
+  "parameter_counts": {
+    "original": 38302784,
+    "small": 9714496
+  },
+  "parameter_reduction_fraction": 0.7463762425206482,
+  "latent_dim": 256,
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "goal_complete": false
+}

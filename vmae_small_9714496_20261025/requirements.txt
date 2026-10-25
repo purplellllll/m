@@ -1,0 +1,6 @@
+# Install Torch separately with the matching CUDA wheel; see README.md.
+numpy==1.26.4
+pandas==2.2.3
+ViennaRNA==2.7.2
+# Local backup tool only; not needed by GPU training.
+paramiko>=3,<5

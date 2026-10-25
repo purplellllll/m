@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pt
+*.p
+*.npz
+*.gz
+*.tar
+*.zip
+data/
+results/
+logs/
+.env
+verification_receipt.json

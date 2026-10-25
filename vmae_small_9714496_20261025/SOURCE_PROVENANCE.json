@@ -1,0 +1,180 @@
+{
+  "files": {
+    "latent_decoder/__init__.py": {
+      "sha256": "0aaab5d405455884fd51301739fcc74648f32a6e172d6507d85ce62caf52730a",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/analyze_random_validation.py": {
+      "sha256": "9777e0c616e3240c25e620ed9cc3275b897d7f1846c8440f4768ef328111a221",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/baseline_codon_order.json": {
+      "sha256": "1fe7bb15eee8279d9ca47bcdef364b7d22da7cc0e023674d2e28008677be3bd6",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/budget_comparison.py": {
+      "sha256": "55ef02ed52f5d6e5edab6cffa332e85621a5453f89107371bc5c939ef874711a",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/budget_js_extension.py": {
+      "sha256": "fc11b2e882c58b2f43e4f12bada43e821f68b684e52b662ae9e096ced4a4356a",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/diagnose_mask_plateau.py": {
+      "sha256": "3cf0b431052e54eba964d02bb542f42109e50f4b7286048561eb54f6d61c9f87",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/dual_space_ablation.py": {
+      "sha256": "8667906fd78d447fe61bd68a5d1019bc0edc9ad5e0e041c1c3ef116dd9e0b551",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/evaluate_prior.py": {
+      "sha256": "925a27b9f95690e3b686bbb093f60ac736c941376dffc5dd4fa3d3900a93472d",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/js_constraint.py": {
+      "sha256": "8288ee4d734bd155e326dd93962b78d622133bb4eac94334575b0f13f90ed9d8",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/latent_collapse_cpu.py": {
+      "sha256": "c3590ccc7f71cf535702a5b42d865915ae0417cf9fedbee49ad28a59f99a07da",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/latent_information_probe.py": {
+      "sha256": "cafa3b702f10443cdc0e6ea0f16b4d46203f777a20fb31c12d3d33c54e4494f1",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/latent_optimization.py": {
+      "sha256": "fb9fbb444edd7d6578c0ea25ae181262fb713c018ed8ada3a2d01df1034a9028",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/latent_rank_cpu.py": {
+      "sha256": "758392b68f37c7cc8e8481df416b94d4c1f5da84b3af8676a16cbf2433c13bcf",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/latent_recovery_gpu.py": {
+      "sha256": "00e236a1aa901f3f8f1d4af8d1354209f80f712cc1132164884d8b8ff7e404ff",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/latent_search_probe_cpu.py": {
+      "sha256": "ab14ca5699dab51719e9c0f4553a5f9b6139b8286e6f9515322a28f1a75f3c90",
+      "stage": "Locked 30-CDS benchmark search dependency; later than training snapshot"
+    },
+    "latent_decoder/length_diagnostics.py": {
+      "sha256": "f17c73cdf5b9ea567e9bc3f86786dae40537d83d2beef449853c5062220acb57",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/model.py": {
+      "sha256": "eba3d6be91cd205714afdd2c20074d202b445717b4a8622da84dec358a3c8853",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/paper_guided_latent_cpu.py": {
+      "sha256": "a81860180601086aeabca29c3840e3e339b6887ada472006effec84f1dbdfe56",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/prepare_combined.py": {
+      "sha256": "bd129b71598eee4ecb97b5bc79aa618a1e7125488563aefe78e92893c5d1b87f",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/prepare_data.py": {
+      "sha256": "247725f463286d6c2c3efd69a56002a386a5bcc89118e71014dcb70945c46f72",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/repartition.py": {
+      "sha256": "db1aeae1c0e7ff58a235f542e83f6c07e93577952bd86b7632126fdf49be6316",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/replay_single.py": {
+      "sha256": "bca8626cba4576a74abf12e4e2bf29b03ed8c81239657bb4febfcc465a30cfa3",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/ribodecode_only_train.py": {
+      "sha256": "94b5d7d3eac01b57a2673d128d89df70609d6e296e65f3185b0278ea4131175e",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/tokenizer.py": {
+      "sha256": "34a5e3b53b90a217f33b4815dee733340f1f557d7f67112fc202c6fb3c7887fe",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/train.py": {
+      "sha256": "3ebaa6f229be4526a90846199d42e693faa16bfca79344817cc685b40b499128",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/v2_data.py": {
+      "sha256": "cd213cd29225323f917617c46f4efd25a1d47eeabd9d36eba9967bbf02a79b69",
+      "stage": "Original training snapshot"
+    },
+    "latent_decoder/v2_train.py": {
+      "sha256": "87ee1f156a5fb15bae6cafc295d943a5cd4f27fa5d1862605cf5fe58702be544",
+      "stage": "Original training snapshot"
+    },
+    "score_model/inference.py": {
+      "sha256": "3b22b9750377f23617053aeb7b707be758cee7ce8a7fe4f9f264d304623e69bb",
+      "stage": "Supporting experiment or scorer source"
+    },
+    "score_model/model_config.json": {
+      "sha256": "e1c328985d7df061278317b934604ce0e63b2181ab062e301f042e86a7ea83d9",
+      "stage": "Supporting experiment or scorer source"
+    },
+    "tools/evaluate_small_seq2ribo_20261025.py": {
+      "sha256": "3fcce3edce0bd85a09807ef320dc7fabbc7077a876590a099e5782a29f2c2f69",
+      "stage": "Supporting experiment or scorer source"
+    },
+    "tools/native_full_gpu_20261025.py": {
+      "sha256": "b6cf2a0a7904fa4d0f87455a62986a50e4747cc1a972b6f04ba550eff1d416e5",
+      "stage": "Supporting experiment or scorer source"
+    },
+    "tools/native_full_gpu_resume_20261025.py": {
+      "sha256": "a815a013922dca463ad3607ca2e3fb8c3c3b5bea304e6112183699b6ad9bd076",
+      "stage": "Supporting experiment or scorer source"
+    },
+    "tools/prepare_ribodecode_only_training.py": {
+      "sha256": "bd4ced56eca450815850b0ffe28c3f96fbbed00b48ab40c3a4703c7c94a872df",
+      "stage": "Original training snapshot"
+    },
+    "tools/resume_vmae_30cds_queue_20261025.py": {
+      "sha256": "75b300b94d638bed9b5a4f9e6a25be57c16da20dae571cfa76d62d3304d5e9a5",
+      "stage": "Supporting experiment or scorer source"
+    },
+    "tools/run_vmae_30cds_20261025.py": {
+      "sha256": "187a5c316371555367e159ae9166b7f0599f3cca5b1defc1bbe15b52dbf24f4d",
+      "stage": "Supporting experiment or scorer source"
+    },
+    "tools/search_vmae_small_translation_20261025.py": {
+      "sha256": "71deaf9f8d557794779ca0efbe9f5d6057aac450e9160790cf1bf87553da306d",
+      "stage": "Supporting experiment or scorer source"
+    },
+    "tools/test_ribodecode_only_training.py": {
+      "sha256": "1adafab6132771831caf2c4d44ad7fd898890e045c716be7152a2f4c8d213d3d",
+      "stage": "Original training snapshot"
+    },
+    "tools/test_vmae_30cds_20261025.py": {
+      "sha256": "d20d252a13772c0ba7847e9c8a8af37bdfa012adabf7bedf026cb40fc7c126c0",
+      "stage": "Supporting experiment or scorer source"
+    },
+    "tools/validate_native_round_resume_20261025.py": {
+      "sha256": "e0a990b4cd2e367c2e687ea3deae4897300d5378cd6406ce67f2bbc157032a75",
+      "stage": "Supporting experiment or scorer source"
+    },
+    "tools/verify_ribodecode_scoring_20261025.py": {
+      "sha256": "33a7a2e810850b5015689537838d0f48349cf2710a0b789d2345dd85aa910f1d",
+      "stage": "Supporting experiment or scorer source"
+    },
+    "tools/watch_latent_fullfold_backups.py": {
+      "sha256": "ed50c90cac90f562433492d73b79ea6372ddbef852d373bc06eab460528c050e",
+      "stage": "Supporting experiment or scorer source"
+    },
+    "tools/watch_vmae_30cds_20261025.py": {
+      "sha256": "c1fab2ddf1f222e322c877f8cc69665665aca70f590466a4c29aa7ff318f801d",
+      "stage": "Supporting experiment or scorer source"
+    },
+    "latent_decoder/config_lsco_lr_50ep.json": {
+      "sha256": "edb7ee2693f5a6459990ceddc699607f2de670ce0e5e9449563ae1fbf8898369",
+      "stage": "Downloaded from actual remote frozen training source"
+    }
+  },
+  "note": "Only config widths differed in size-only training. Benchmark search is a separately pinned later source.",
+  "original_training_source_count": 134,
+  "training_plan_sha256": "2119f0cc8d22375a33363317dce45a47a0f46b53ff36e067e93ab4d2a92712f1",
+  "benchmark_plan_sha256": "b2d8eb3d06b097479bae8f2c038e2e51b08481ce93856e257fadd09992fd61a0"
+}

@@ -1,0 +1,4 @@
+{
+  "model_size_only_audit": "Historical fold list superseded by fixed split; see MODEL_CARD.json",
+  "training_completion": "Training completion does not imply final translation benchmark completion"
+}
