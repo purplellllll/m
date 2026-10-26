@@ -1,0 +1,10 @@
+{
+  "files_sha256": {
+    "DATA_INTEGRITY.json": "3a1e2fcf8b48d3e760d7bbf1025e35956c03987775495baeb0e62860c5aaeb45",
+    "README.md": "da3f65eeca08791fe3d432736004a394241099dac273a18f1af6053719881196",
+    "RUN_PLAN.json": "3a0066edfed747aebfb8913bd8657c51c2f5e868ad8184966a5178fdc641f392",
+    "run_vmae_v4_full_20261026.py": "eb3e0528586b2d49591ce2c364c1baa8718444343e358f126d15597fe5c45dbf",
+    "test_vmae_v4_full_20261026.py": "6f2cfe3ea7654373708a3c417ac4e8e1fba0d6e82740679dba2685606e7057fc",
+    "train_vmae_v4_extended_20261026.py": "e7428ba7baf5369277abd809223c26213a2029aa00cdf62b17717fecfcf7c5b2"
+  }
+}
