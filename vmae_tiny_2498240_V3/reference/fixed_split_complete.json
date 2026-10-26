@@ -1,0 +1,13 @@
+{
+  "epochs": 43,
+  "best_objective": 1.130951371975243,
+  "best_sha256": "d79605bcee93be8b39e5e773a15be1aacd762230a25b8f9e0630200197614547",
+  "regime": "fixed_split_no_cross_validation",
+  "counts": {
+    "train": 23812,
+    "val": 2592,
+    "test": 6392
+  },
+  "final_test_evaluation_done": false,
+  "goal_complete": false
+}

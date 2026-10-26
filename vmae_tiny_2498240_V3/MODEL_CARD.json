@@ -1,0 +1,61 @@
+{
+  "parameter_count": 2498240,
+  "model": {
+    "d_model": 128,
+    "n_heads": 8,
+    "encoder_layers": 6,
+    "decoder_layers": 6,
+    "ff_dim": 512,
+    "latent_dim": 256,
+    "dropout": 0.1,
+    "max_codons": 1500,
+    "max_positions": 1536
+  },
+  "effective_training": {
+    "seed": 20261023,
+    "epochs": 50,
+    "batch_size": 4,
+    "gradient_accumulation": 8,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "warmup_fraction": 0.1,
+    "mask_probability": 0.15,
+    "clean_batch_probability": 0.0,
+    "masked_loss_weight": 1.0,
+    "full_loss_weight": 1.0,
+    "beta_kl": 0.001,
+    "kl_warmup_fraction": 0.2,
+    "grad_clip": 1.0,
+    "patience": 8,
+    "amp": true,
+    "lr_schedule": "warmup_cosine",
+    "log_every_steps": 10,
+    "minimum_epochs": 10,
+    "profile": "uniform"
+  },
+  "split_counts": {
+    "train": 23812,
+    "val": 2592,
+    "test": 6392
+  },
+  "regime": "fixed_split_no_cross_validation",
+  "recipe": "RecoveryVMAE(BASE)",
+  "best_epoch": 42,
+  "epochs_completed": 50,
+  "validation_macro": {
+    "ce": 0.983819088122497,
+    "full_ce": 0.14222802618557276,
+    "kl": 9.202923350036144,
+    "fixed_loss": 1.1352500384673476
+  },
+  "validation_panel": {
+    "short": 64,
+    "medium": 64,
+    "long": 64
+  },
+  "checkpoint_sha256": "6592a07293da25b18f9ed71584e48dc4da23fa121b4f735f10d26ee7da26c6af",
+  "checkpoint_bytes": 10041483,
+  "simultaneous_ce_and_loss_improvement": false,
+  "full_30_cds_native_test_complete": false,
+  "biological_expression_validation": false
+}

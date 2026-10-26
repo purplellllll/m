@@ -1,0 +1,34 @@
+{
+  "training_data": {
+    "corpus.jsonl.gz": {
+      "sha256": "6a1d10d95130cbfd81a35ba0eac7ba16db1429b33d47664976841aa6ac4eece1",
+      "local_path": "runs/ribodecode_only_vmae_20261023/data/corpus.jsonl.gz",
+      "remote_path": "/root/gpufree-data/vmae_adjustment_20261024/data/corpus.jsonl.gz"
+    },
+    "folds.json": {
+      "sha256": "229ffce99a401f8741c68a1bd11b590dae5160075547e644ce16c6ee4b30ec28",
+      "local_path": "runs/ribodecode_only_vmae_20261023/data/folds.json",
+      "remote_path": "/root/gpufree-data/vmae_adjustment_20261024/data/folds.json"
+    }
+  },
+  "checkpoint": {
+    "sha256": "6592a07293da25b18f9ed71584e48dc4da23fa121b4f735f10d26ee7da26c6af",
+    "bytes": 10041483,
+    "local_path": "runs/vmae_tiny_size_only_20261025/checkpoints/fold0_uniform.pt",
+    "remote_path": "/root/gpufree-data/vmae_tiny_size_only_20261025/results/fold_0/uniform/best.pt",
+    "release_url": "https://github.com/purplellllll/m/releases/tag/vmae-v3-2498240-20261026"
+  },
+  "benchmark_runtime": {
+    "source_root": "/root/gpufree-data/vmae_transfer_assessment_20261024",
+    "output_root": "/root/gpufree-data/vmae_tiny_30cds_20261025",
+    "required": [
+      "Author RiboDecode scorer weights, canonical_condition.pt and subset receipt",
+      "Pinned official RiboDecode 1.3.0 source plus native runtime assets",
+      "Official seq2ribo source/weights/transforms, Mamba2.2.4 compiled for Torch2.5/CUDA",
+      "Locked panel.json, plan.json, cases.json, calibration IDs and source manifests"
+    ],
+    "deployment": "Preserve existing server tree and frozen manifests; scripts are operational snapshots"
+  },
+  "credentials_included": false,
+  "binary_assets_included": false
+}
