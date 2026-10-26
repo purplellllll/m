@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.pt
+*.p
+*.pth
+*.tar.gz
+*.zip
+geometry/

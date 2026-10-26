@@ -1,0 +1,245 @@
+{
+  "objective": 0.22484212120374045,
+  "rows": [
+    {
+      "sequence_id": "cds_fde097307c417553195b010d6a9ef48f82662db087febe11871f53ccfb1c6b8f",
+      "objective": 0.049670398235321045,
+      "reconstruction": 0.9081076383590698,
+      "hard_score": 3.479921817779541,
+      "gc_reward": 1.303257942199707,
+      "cai_reward": 1.8212425708770752,
+      "mfe_reward": 1.9799498746867161,
+      "mfe_per_nt": -0.4077694159103814
+    },
+    {
+      "sequence_id": "cds_fe0feb0a81e1aff8c55ac9db8ab363a297da9c1b859855d0ec5f91b91f8ad79f",
+      "objective": -0.30508315563201904,
+      "reconstruction": 1.1501398086547852,
+      "hard_score": 2.7567195892333984,
+      "gc_reward": 3.9592432975769043,
+      "cai_reward": 4.514578819274902,
+      "mfe_reward": 3.3216886784138464,
+      "mfe_per_nt": -0.38064046579330424
+    },
+    {
+      "sequence_id": "cds_b9505aac5a1debaf0562a6681a6f760d9cb47ce6cb4a8291393286d14ef231e4",
+      "objective": 0.18580520153045654,
+      "reconstruction": 1.2315319776535034,
+      "hard_score": 3.094477415084839,
+      "gc_reward": 2.5408804416656494,
+      "cai_reward": 3.5741114616394043,
+      "mfe_reward": 1.2477988956859276,
+      "mfe_per_nt": -0.41182389169369105
+    },
+    {
+      "sequence_id": "cds_41b27d5caa8970ab6868b99022bf990256f7dce11796e63c0ea162a4f8226807",
+      "objective": 0.30926042795181274,
+      "reconstruction": 1.2531096935272217,
+      "hard_score": 3.261410713195801,
+      "gc_reward": 1.859900951385498,
+      "cai_reward": 2.9186296463012695,
+      "mfe_reward": 1.3985505772097673,
+      "mfe_per_nt": -0.412922697942614
+    },
+    {
+      "sequence_id": "cds_7942a7cc7b2f99894c9a2b5e0d0d3a78ff7946a24211ceaa37c3e232d5c8f6be",
+      "objective": 0.5166314244270325,
+      "reconstruction": 1.3283921480178833,
+      "hard_score": 2.646486520767212,
+      "gc_reward": 1.2297725677490234,
+      "cai_reward": 3.1151342391967773,
+      "mfe_reward": 1.126213690995399,
+      "mfe_per_nt": -0.38770227524840717
+    },
+    {
+      "sequence_id": "cds_8476bbfbc9a35ba26cb7b006d14a649bc790a474e78313fca47b9a11ba3cdda6",
+      "objective": 0.6792211532592773,
+      "reconstruction": 1.148895025253296,
+      "hard_score": 2.4814932346343994,
+      "gc_reward": 2.4464821815490723,
+      "cai_reward": -1.3566195964813232,
+      "mfe_reward": 1.1253828229525042,
+      "mfe_per_nt": -0.455963321417479
+    },
+    {
+      "sequence_id": "cds_0cce451ec892803a35dfd52983f0e1ed7efe152b43bfebd056a000099d62cf0f",
+      "objective": 0.5481893420219421,
+      "reconstruction": 1.298459768295288,
+      "hard_score": 2.816037178039551,
+      "gc_reward": 1.2195122241973877,
+      "cai_reward": 2.085040807723999,
+      "mfe_reward": 1.3821138211382122,
+      "mfe_per_nt": -0.5589430894308943
+    },
+    {
+      "sequence_id": "cds_cf4dc62c2eaf0d22bc0d6566cdae55d66c5896665e021112db85e6e4323613bd",
+      "objective": 0.028770089149475098,
+      "reconstruction": 1.4427717924118042,
+      "hard_score": 2.4114439487457275,
+      "gc_reward": 5.266666412353516,
+      "cai_reward": 1.6852402687072754,
+      "mfe_reward": 4.776666259765625,
+      "mfe_per_nt": -0.4646666463216146
+    },
+    {
+      "sequence_id": "cds_416fbea2cf08e9856e84d314c234d990f64ede1d5fdf348351dff9606afc60ef",
+      "objective": 0.6501180529594421,
+      "reconstruction": 1.0426777601242065,
+      "hard_score": 2.3738510608673096,
+      "gc_reward": -0.10730981826782227,
+      "cai_reward": 0.7603299617767334,
+      "mfe_reward": 0.8987256874580818,
+      "mfe_per_nt": -0.5487592301858023
+    },
+    {
+      "sequence_id": "cds_b08ab53b44136864921bd389708f4630e0cfbeccaf964d2eae8a9f30975057f5",
+      "objective": 0.12010550498962402,
+      "reconstruction": 1.2917237281799316,
+      "hard_score": 3.0804591178894043,
+      "gc_reward": 3.078556537628174,
+      "cai_reward": 3.2057857513427734,
+      "mfe_reward": 2.351380042462845,
+      "mfe_per_nt": -0.4200106092319367
+    },
+    {
+      "sequence_id": "cds_104482e3b97e9e807926e2e8cf57db597cfcc28570408fa6835ba41034a03207",
+      "objective": 0.2620738744735718,
+      "reconstruction": 1.2860902547836304,
+      "hard_score": 3.0974783897399902,
+      "gc_reward": 1.9588494300842285,
+      "cai_reward": 3.109762668609619,
+      "mfe_reward": 2.0740740740740735,
+      "mfe_per_nt": -0.4853498042856224
+    },
+    {
+      "sequence_id": "cds_758fb341964b2af2d066e757c77a72edfcd2d2d361ab1c93abc385cb33e46378",
+      "objective": 0.05298340320587158,
+      "reconstruction": 1.1881160736083984,
+      "hard_score": 3.270745277404785,
+      "gc_reward": 2.6490724086761475,
+      "cai_reward": 3.434441089630127,
+      "mfe_reward": 1.9970673293545327,
+      "mfe_per_nt": -0.3897849462365591
+    },
+    {
+      "sequence_id": "cds_3be23fdd78797cad5feac8ab20f0462c2c0fb1b78c92a54445974ada93be5eaa",
+      "objective": 0.30401313304901123,
+      "reconstruction": 0.8102426528930664,
+      "hard_score": 3.2106480598449707,
+      "gc_reward": 0.1431119441986084,
+      "cai_reward": 0.721057653427124,
+      "mfe_reward": 0.9874774930586616,
+      "mfe_per_nt": -0.5137149672033393
+    },
+    {
+      "sequence_id": "cds_2845e66a41ead6859de2e3be9661155f5e03994cbea66c0994aef9199fa0dee0",
+      "objective": -0.050145864486694336,
+      "reconstruction": 1.2525378465652466,
+      "hard_score": 3.008345603942871,
+      "gc_reward": 3.2109432220458984,
+      "cai_reward": 3.9277780055999756,
+      "mfe_reward": 2.8797696184305255,
+      "mfe_per_nt": -0.4269258459323254
+    },
+    {
+      "sequence_id": "cds_b7f47dd9330599e1e07c6e7ba09da1bf38f511a0cf0fcdfe843ae8a6819c820b",
+      "objective": -0.11223316192626953,
+      "reconstruction": 1.214079737663269,
+      "hard_score": 3.17366099357605,
+      "gc_reward": 3.1137728691101074,
+      "cai_reward": 3.1293880939483643,
+      "mfe_reward": 3.84630762888286,
+      "mfe_per_nt": -0.5842315612914796
+    },
+    {
+      "sequence_id": "cds_5c917117dba1ee5ba38c7e828b4c65769e20fc793fcacf2beb918128279d3194",
+      "objective": 0.2716941833496094,
+      "reconstruction": 0.8986520171165466,
+      "hard_score": 3.0947458744049072,
+      "gc_reward": 0.8957803249359131,
+      "cai_reward": 1.186889410018921,
+      "mfe_reward": 1.0921623499407829,
+      "mfe_per_nt": -0.47321276865982986
+    },
+    {
+      "sequence_id": "cds_eedf77b7d24deeff5a0596db16ec5df8ec52f06c5ed4d0a382669be1192c6c3a",
+      "objective": -0.051860690116882324,
+      "reconstruction": 1.2292815446853638,
+      "hard_score": 3.410207748413086,
+      "gc_reward": 3.3479928970336914,
+      "cai_reward": 3.4774374961853027,
+      "mfe_reward": 2.575784155924765,
+      "mfe_per_nt": -0.4113456392805446
+    },
+    {
+      "sequence_id": "cds_225b64111085c2afe8cb1f3e709e8563086b9e742f112d796ac92cd99d42bd70",
+      "objective": 0.48012107610702515,
+      "reconstruction": 1.1554099321365356,
+      "hard_score": 2.6430563926696777,
+      "gc_reward": 2.5178027153015137,
+      "cai_reward": -1.4242815971374512,
+      "mfe_reward": 3.0163111512534457,
+      "mfe_per_nt": -0.5457385935346313
+    },
+    {
+      "sequence_id": "cds_d2d60942ecfe8c9328301a9c97d72d2268e4e36328fae75e1357911eef0539e0",
+      "objective": 0.3315342664718628,
+      "reconstruction": 1.17899751663208,
+      "hard_score": 2.5586774349212646,
+      "gc_reward": 2.10191011428833,
+      "cai_reward": 1.8020141124725342,
+      "mfe_reward": 2.012031053028794,
+      "mfe_per_nt": -0.4480183919270833
+    },
+    {
+      "sequence_id": "cds_e81846fc589de0d6b0690bde14786f7543a70df78d31967417b0b9deb64a11c2",
+      "objective": 0.07568883895874023,
+      "reconstruction": 1.1765528917312622,
+      "hard_score": 3.1738545894622803,
+      "gc_reward": 2.8571434020996094,
+      "cai_reward": 2.3650145530700684,
+      "mfe_reward": 2.6126266814222174,
+      "mfe_per_nt": -0.45230068249648875
+    },
+    {
+      "sequence_id": "cds_b01192c222aabfe7ae02550fa40470c68e900ede3b26c6337b664fd834845a0f",
+      "objective": 0.5625025629997253,
+      "reconstruction": 1.1601413488388062,
+      "hard_score": 2.5329031944274902,
+      "gc_reward": 1.5134727954864502,
+      "cai_reward": 0.2666664123535156,
+      "mfe_reward": 1.6633447680186408,
+      "mfe_per_nt": -0.5322997416020672
+    },
+    {
+      "sequence_id": "cds_5127596011f4bc66b6bd5e155f7ac62e09017421eedf23588749da734843671c",
+      "objective": 0.17452019453048706,
+      "reconstruction": 1.158082365989685,
+      "hard_score": 2.9434943199157715,
+      "gc_reward": 2.279818058013916,
+      "cai_reward": 2.0521938800811768,
+      "mfe_reward": 2.560115893853492,
+      "mfe_per_nt": -0.5365011033492321
+    },
+    {
+      "sequence_id": "cds_f6aaba1e4b172d52d2b519fa550e061ad2e78ebbf501164b3c8fc5181db352e2",
+      "objective": 0.3482300043106079,
+      "reconstruction": 1.285860300064087,
+      "hard_score": 2.785120964050293,
+      "gc_reward": 2.179849147796631,
+      "cai_reward": 2.1330833435058594,
+      "mfe_reward": 2.2782487025144182,
+      "mfe_per_nt": -0.5377824858757062
+    },
+    {
+      "sequence_id": "cds_0f3fe83750cfb8a2a85020ed3e84ddfdc367ff13921347528b9ee0a98cc1304e",
+      "objective": -0.035599350929260254,
+      "reconstruction": 1.1745574474334717,
+      "hard_score": 3.1910157203674316,
+      "gc_reward": 3.153606653213501,
+      "cai_reward": 3.7071001529693604,
+      "mfe_reward": 2.0498445877890603,
+      "mfe_per_nt": -0.3907021386086898
+    }
+  ]
+}

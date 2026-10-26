@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "split": "TRAIN",
+  "sequence_id": "cds_3e68016196753e7753b2805dc635d03248079555385e85b36efb28902e9f446b",
+  "n_codons": 37,
+  "steps": 10,
+  "real_rnafold_feedback_verified": true,
+  "exact_fold_unique": 6,
+  "best": {
+    "cds_dna": "ATGATCCAGGCCATCCTGGTGTTCAACAACCACGGCAAGCCCCGCCTGGTGCGCTTCTACCAGCGCTTCAAGAAGTTCAACAGCCGGCTGTTCGAGCGGCTGAGCATCTAG",
+    "step": 9,
+    "hard_score": 3.497248649597168,
+    "gc_reward": 2.5225229263305664,
+    "cai_reward": 4.102833271026611,
+    "partial_reward": 10.122604846954346,
+    "mfe": -37.70000076293945,
+    "mfe_per_nt": -0.339639646512968,
+    "mfe_reward": 3.2072074134070587,
+    "total_reward": 13.329812260361404
+  },
+  "model_weights_unchanged": true,
+  "selection": "Maximum Hard+GC_reward+CAI_reward+MFE_reward over every unique archived discrete candidate"
+}

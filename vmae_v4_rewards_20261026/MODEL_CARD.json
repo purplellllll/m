@@ -1,0 +1,21 @@
+{
+  "version": "V4",
+  "parameter_count": 2498240,
+  "parent_version": "V3",
+  "parent_checkpoint_sha256": "6592a07293da25b18f9ed71584e48dc4da23fa121b4f735f10d26ee7da26c6af",
+  "architecture_changed": false,
+  "fine_tuning_epochs_planned": 3,
+  "learning_rate": 1e-05,
+  "status": "Fine-tuning running; real parameter update verified",
+  "objective": "Hard + (GC-GC_parent)/0.05 + (CAI-CAI_parent)/0.05 + (MFE_parent_per_nt-MFE_per_nt)/0.05",
+  "reward_weights": {
+    "gc": 1,
+    "cai": 1,
+    "mfe": 1
+  },
+  "tests_passed": 14,
+  "test_used_for_selection": false,
+  "checkpoint_published": false,
+  "training_process_pid": 43520,
+  "first_update_verified": true
+}

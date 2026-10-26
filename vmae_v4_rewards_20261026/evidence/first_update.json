@@ -1,0 +1,12 @@
+{
+  "version": "V4",
+  "step": 1,
+  "loss": 0.47303301095962524,
+  "gc_reward": 1.5061718225479126,
+  "cai_reward": 1.8037316799163818,
+  "model_hash_before": "3b1c847b00cecb885fed295488be1ff0ceaad675b72ff08908d83aaeff0582e3",
+  "model_hash_after": "9f968d00c7c5c683dd62c61477d9952cbbb7000e94fe6e24b112aaf634ff803b",
+  "scorer_unchanged": true,
+  "source_checkpoint_unchanged": true,
+  "recorded_unix": 1793014693.5323653
+}

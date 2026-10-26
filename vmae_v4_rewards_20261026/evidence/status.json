@@ -1,0 +1,12 @@
+{
+  "state": "training",
+  "started_unix": 1793014356.100775,
+  "heartbeat_unix": 1793014821.095403,
+  "elapsed_seconds": 464.99462819099426,
+  "completed_epochs": 0,
+  "total_epochs": 3,
+  "current_epoch": 1,
+  "step": 192,
+  "epoch_samples": 768,
+  "mfe_feedback": 12
+}
