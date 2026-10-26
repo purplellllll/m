@@ -1,0 +1,44 @@
+{
+  "gemorna": {
+    "url": "https://github.com/RainaBio/GEMORNA",
+    "commit": "3bba88e4c0a32377dcfac8caa492709b954f9d9e",
+    "checkpoint_sha256": "053de4e6c164a1b24378629229cc44d957dda776231e99698f9f42cbacb6757e",
+    "device": "cpu",
+    "seed": 20261026
+  },
+  "rnop": {
+    "url": "https://github.com/HudenJear/RPLoss",
+    "commit": "b1b49f4124e28d8e3cd2c9f8f6e82dc8820363da",
+    "status": "weights_unavailable",
+    "official_weight_file_id": "1RkJ-U22sH4z2_vWHPW8EeFtkkbaOE6Nf",
+    "reason": "Official Drive URL returned Google sign-in; user confirmed marking unavailable"
+  },
+  "lineardesign": {
+    "url": "https://github.com/LinearDesignSoftware/LinearDesign",
+    "commit": "f0126ca89a8b853088b4bccfd2cc8c378d3678be",
+    "lambdas": [
+      0,
+      3
+    ],
+    "codon_table_sha256": "e6c4a49036fe21f3266e7e53130011bd7725c62ebeabbe442f7f8f1cdf5890c4"
+  },
+  "panel_sha256": "2fd9dd6de996baf34d282fb0270dcc163a48636635b8b75fdf0631df66c60ca1",
+  "scripts": {
+    "compare.py": "c2cc30bd86b9836755e782bb0fbffa41bbb512aef3887fb03190debb47fa959d",
+    "compare_initial.py": "af929bf23e5217fe83230a8d398781ae83922078d63288681e41b07406285baa"
+  },
+  "native_scorer_applicability": {
+    "gemorna": "CDS generator has no standalone CDS TE head; UTR heads inapplicable",
+    "rnop": "Mechanism-aligned losses; no available checkpoint for native results",
+    "lineardesign": "Native MFE and native human-table CAI preserved in generated JSON"
+  },
+  "common_metrics": [
+    "RiboDecode",
+    "seq2ribo",
+    "GC_percent",
+    "train_reference_CAI",
+    "RNAfold_MFE",
+    "MFE_per_nt",
+    "RiboNN"
+  ]
+}

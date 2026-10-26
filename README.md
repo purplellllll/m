@@ -1,3 +1,15 @@
+# V3：2,498,240 参数 VMAE
+
+本分支的当前交付版本位于 [vmae_tiny_2498240_V3](vmae_tiny_2498240_V3/)。模型完成50轮训练，最优epoch42；源码、固定数据和权重身份均可通过目录内的verify_snapshot.py核验。
+
+[下载最优权重](https://github.com/purplellllll/m/releases/tag/vmae-v3-2498240-20261026) · [模型说明](vmae_tiny_2498240_V3/README.md) · [已有30条基线比较](vmae_tiny_2498240_V3/BENCHMARK_REPORT.md)
+
+GEMORNA、LinearDesign扩展正在同一面板上运行；RNop官方权重不可获取，保留缺失状态。完整原生RiboDecode对照尚未完成。
+
+---
+
+以下为历史工作记录，架构与训练轮次不代表本分支当前250万参数交付版本。
+
 # DS-RiboDecode
 
 2026-10-20：新增 [B7/B8 投影交接开发配置](docs/B78_projection_handoff_v2_20261020.md)。Direct → KL 投影/重新编码 → 清零残差 → Latent；开发集比较后再冻结正式方案。旧版保留残差的 B7/B8 已停止。
