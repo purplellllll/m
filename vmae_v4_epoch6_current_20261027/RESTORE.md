@@ -11,3 +11,5 @@ The archive includes 3,817 selected files: model checkpoints and optimizer/RNG r
 The user explicitly excluded early native RiboDecode per-proposal raw history (about 15GB). Completed method metrics, returned candidates, receipts and comparison reports remain in the formal archive. Downloadable runtime environments/external dependency caches are excluded. This release is not a full server disk image.
 
 No server deletion or shutdown was performed by the assistant.
+
+Also extract reproduction-inputs.tar.gz: it supplies the exact canonical RiboDecode condition tensor, scorer-subset and CUDA-parity receipts, and pinned seq2ribo source/HEK293 weights. LCL/RPE-1/iPSC scorer assets are in the main archive. File hashes are in reproduction_manifest.json.

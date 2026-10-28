@@ -69,11 +69,34 @@
       "offset": 0,
       "github_asset_id": 683696222,
       "url": "https://github.com/purplellllll/m/releases/download/untagged-e35eae414e2eae58785a/archive_manifest.json"
+    },
+    {
+      "name": "reproduction-inputs.tar.gz",
+      "bytes": 4131589,
+      "sha256": "e320e1e32b2c3872a50ec941b22abb4d8ccad5160506525390d96285746b47ad",
+      "joined_name": "reproduction-inputs.tar.gz",
+      "joined_bytes": 4131589,
+      "joined_sha256": "e320e1e32b2c3872a50ec941b22abb4d8ccad5160506525390d96285746b47ad",
+      "offset": 0,
+      "github_asset_id": 683713737,
+      "url": "https://github.com/purplellllll/m/releases/download/v4-epoch6-results-20261028/reproduction-inputs.tar.gz"
+    },
+    {
+      "name": "reproduction_manifest.json",
+      "bytes": 2896,
+      "sha256": "d87a4892a111d0a4047e66bc0765808d629675fc52ec7e799c202bbd72db8fbd",
+      "joined_name": "reproduction_manifest.json",
+      "joined_bytes": 2896,
+      "joined_sha256": "d87a4892a111d0a4047e66bc0765808d629675fc52ec7e799c202bbd72db8fbd",
+      "offset": 0,
+      "github_asset_id": 683713732,
+      "url": "https://github.com/purplellllll/m/releases/download/v4-epoch6-results-20261028/reproduction_manifest.json"
     }
   ],
   "verified_at": "2026-10-28T11:36:39.400717+08:00",
   "all_assets_github_digest_verified": true,
   "all_archive_members_sha256_verified_on_source": true,
   "excluded_by_user": "Early native RiboDecode per-proposal raw history (~15GB); downloadable runtime environments and external dependency caches are excluded",
-  "server_files_deleted": false
+  "server_files_deleted": false,
+  "reproduction_supplement": "Canonical RiboDecode condition, scorer-subset receipt, CUDA parity receipt, pinned seq2ribo source and HEK293 weights"
 }
