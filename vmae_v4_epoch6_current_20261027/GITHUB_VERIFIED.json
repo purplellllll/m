@@ -1,0 +1,79 @@
+{
+  "state": "verified",
+  "release": "https://github.com/purplellllll/m/releases/tag/v4-epoch6-results-20261028",
+  "branch": "V4",
+  "scientific_code_and_report_commit": "bb5f1af40334ea9a1281a7ac4e3ccc398e985915",
+  "selected_result_files": 3817,
+  "validation_cases": 24,
+  "test_cases": 30,
+  "cross_environment_candidates": 335,
+  "cross_environment_cells": [
+    "lcl",
+    "rpe",
+    "ipsc"
+  ],
+  "current_epoch": 6,
+  "current_checkpoint_sha256": "8e95e3d3e5c62917c01a78a3add4ab45ea1afa7a1282748ce8d637f3fbea02e3",
+  "assets": [
+    {
+      "name": "research-results-20261028.tar.gz.part01",
+      "bytes": 536870912,
+      "sha256": "3af39a415cc6be2049ca0b66a56fe040ce98c59dbccbb8bd6a10f4eab7a971cb",
+      "joined_name": "research-results-20261028.tar.gz",
+      "joined_bytes": 1157573398,
+      "joined_sha256": "9480db722ba6b848d98f76c0568119e23318d5cf68ae66b5021d6621bfb8032b",
+      "offset": 0,
+      "github_asset_id": 683696016,
+      "url": "https://github.com/purplellllll/m/releases/download/untagged-e35eae414e2eae58785a/research-results-20261028.tar.gz.part01"
+    },
+    {
+      "name": "research-results-20261028.tar.gz.part02",
+      "bytes": 536870912,
+      "sha256": "6a74080dd2cadd95b639910288f7dfc371de15845140d82f80c323293b9dc500",
+      "joined_name": "research-results-20261028.tar.gz",
+      "joined_bytes": 1157573398,
+      "joined_sha256": "9480db722ba6b848d98f76c0568119e23318d5cf68ae66b5021d6621bfb8032b",
+      "offset": 536870912,
+      "github_asset_id": 683695971,
+      "url": "https://github.com/purplellllll/m/releases/download/untagged-e35eae414e2eae58785a/research-results-20261028.tar.gz.part02"
+    },
+    {
+      "name": "research-results-20261028.tar.gz.part03",
+      "bytes": 83831574,
+      "sha256": "00d2977e24c8339f4a0a98e94885406b2836c1b4e93da7b8bad62f6458afc19d",
+      "joined_name": "research-results-20261028.tar.gz",
+      "joined_bytes": 1157573398,
+      "joined_sha256": "9480db722ba6b848d98f76c0568119e23318d5cf68ae66b5021d6621bfb8032b",
+      "offset": 1073741824,
+      "github_asset_id": 683695969,
+      "url": "https://github.com/purplellllll/m/releases/download/untagged-e35eae414e2eae58785a/research-results-20261028.tar.gz.part03"
+    },
+    {
+      "name": "epoch6.pt",
+      "bytes": 10041483,
+      "sha256": "8e95e3d3e5c62917c01a78a3add4ab45ea1afa7a1282748ce8d637f3fbea02e3",
+      "joined_name": "epoch6.pt",
+      "joined_bytes": 10041483,
+      "joined_sha256": "8e95e3d3e5c62917c01a78a3add4ab45ea1afa7a1282748ce8d637f3fbea02e3",
+      "offset": 0,
+      "github_asset_id": 683684582,
+      "url": "https://github.com/purplellllll/m/releases/download/untagged-e35eae414e2eae58785a/epoch6.pt"
+    },
+    {
+      "name": "archive_manifest.json",
+      "bytes": 1670193,
+      "sha256": "079d18be1413ed8d23f3f51d5f7f4a56dc7ae6298ce94ea0021c87e64eef9754",
+      "joined_name": "archive_manifest.json",
+      "joined_bytes": 1670193,
+      "joined_sha256": "079d18be1413ed8d23f3f51d5f7f4a56dc7ae6298ce94ea0021c87e64eef9754",
+      "offset": 0,
+      "github_asset_id": 683696222,
+      "url": "https://github.com/purplellllll/m/releases/download/untagged-e35eae414e2eae58785a/archive_manifest.json"
+    }
+  ],
+  "verified_at": "2026-10-28T11:36:39.400717+08:00",
+  "all_assets_github_digest_verified": true,
+  "all_archive_members_sha256_verified_on_source": true,
+  "excluded_by_user": "Early native RiboDecode per-proposal raw history (~15GB); downloadable runtime environments and external dependency caches are excluded",
+  "server_files_deleted": false
+}
