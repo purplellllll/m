@@ -1,0 +1,11 @@
+{
+  "current_epoch": 6,
+  "version": "V4-epoch6-current",
+  "checkpoint_sha256": "8e95e3d3e5c62917c01a78a3add4ab45ea1afa7a1282748ce8d637f3fbea02e3",
+  "parameters": 2498240,
+  "selection": "User explicit freeze of training-validation best epoch6",
+  "source": "/root/gpufree-data/vmae_v4_full_optimization_20261026/extension_direct_20261027/best.pt",
+  "frozen_unix": 1793109927.5864558,
+  "seq2ribo_used_for_selection": false,
+  "training_completed_epochs": 8
+}
