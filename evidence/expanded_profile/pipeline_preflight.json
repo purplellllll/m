@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "source": "synthetic numeric tensors; no biological metric",
+  "longest_codons": 1998,
+  "arms": {
+    "baseline": {
+      "parameters": 683144,
+      "finite_loss": 1.1435900926589966
+    },
+    "v2_control": {
+      "parameters": 1435334,
+      "finite_loss": 1.11800217628479
+    },
+    "sequence_graph": {
+      "parameters": 1435334,
+      "finite_loss": 1.1177315711975098
+    },
+    "gated_graph": {
+      "parameters": 1435334,
+      "finite_loss": 1.1177265644073486
+    },
+    "context_anchor": {
+      "parameters": 1435334,
+      "finite_loss": 1.1131806373596191
+    }
+  },
+  "pearson_formula_verified": true,
+  "validation_schedule": [
+    100,
+    200,
+    300
+  ],
+  "peak_cuda_mb": 113.3671875
+}

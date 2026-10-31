@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "conditions": [
+    {
+      "cell": "ipsc",
+      "use_utr": false,
+      "shape": [
+        2,
+        1
+      ],
+      "backbone_gradient_l1": 434.8601058027707
+    },
+    {
+      "cell": "ipsc",
+      "use_utr": true,
+      "shape": [
+        2,
+        1
+      ],
+      "backbone_gradient_l1": 711.8259674571455
+    },
+    {
+      "cell": "hek293",
+      "use_utr": false,
+      "shape": [
+        2,
+        1
+      ],
+      "backbone_gradient_l1": 1.919522610533022
+    },
+    {
+      "cell": "hek293",
+      "use_utr": true,
+      "shape": [
+        2,
+        1
+      ],
+      "backbone_gradient_l1": 8.60419873209321
+    },
+    {
+      "cell": "lcl",
+      "use_utr": false,
+      "shape": [
+        2,
+        1
+      ],
+      "backbone_gradient_l1": 1503.9764008317143
+    },
+    {
+      "cell": "lcl",
+      "use_utr": true,
+      "shape": [
+        2,
+        1
+      ],
+      "backbone_gradient_l1": 685.0546440538019
+    },
+    {
+      "cell": "rpe",
+      "use_utr": false,
+      "shape": [
+        2,
+        1
+      ],
+      "backbone_gradient_l1": 501.21642920561135
+    },
+    {
+      "cell": "rpe",
+      "use_utr": true,
+      "shape": [
+        2,
+        1
+      ],
+      "backbone_gradient_l1": 606.0738612310961
+    }
+  ],
+  "raw_sim_mean_reconstruction": true,
+  "tests_evaluated": 0,
+  "note": "Task heads are newly initialized; pretrained profile weights alone loaded"
+}

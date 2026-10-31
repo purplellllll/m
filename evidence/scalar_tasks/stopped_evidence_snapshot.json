@@ -1,0 +1,614 @@
+{
+  "scalar": {
+    "stage": "stopped_by_user",
+    "unix": 1793449101.7076738,
+    "controller_pid": 10781,
+    "previous_status": {
+      "stage": "prepare",
+      "unix": 1793447980.9272997,
+      "task": "te"
+    },
+    "saved_artifacts_preserved": true,
+    "instruction": "Do not resume without user instruction",
+    "profile_test_opened": null,
+    "weights": [
+      {
+        "path": "/root/scalar_downstream_20261031/runs/protein_finetune_30101/best.pt",
+        "sha256": "95af664b11a6aeb5f11ce4fefcedabf356644418f2321db9457b2eea0e3e8cec",
+        "best_validation_pcc": 0.8240630931627524,
+        "best_step": 1800,
+        "task": "protein",
+        "arm": "finetune",
+        "seed": 30101,
+        "n_outputs": 1,
+        "use_utr": false,
+        "model_kind": "ours",
+        "target_index": null,
+        "target_normalization": {
+          "target_low": 7.36065603585692,
+          "target_high": 11.338710284785616,
+          "target_mean": 10.130057334899902,
+          "target_scale": 0.7122930288314819
+        },
+        "n_train": 1019,
+        "n_validation": 219,
+        "n_test_evaluated": 0,
+        "task_sha256": "fbe2b11f04097e82802ea672ed6c2d4a350bb40054f35567142756ea7a15fa5b",
+        "pretrained_checkpoint": {
+          "path": "/root/graph_polish_20261031/runs/physics_gnn_polish_30101/best.pt",
+          "sha256": "aac8be4399a5530ad663f273ed2b6f3c29ae80a9ee5aa213e6f27c6f1b505464",
+          "arm": "physics_gnn_polish",
+          "seed": 30101,
+          "setting": {
+            "mode": "physics_gnn_polish"
+          },
+          "kind": "polish",
+          "validation_loss": 0.7281223248690367,
+          "validation_pcc": 0.3340005159715962,
+          "best_epoch": 3,
+          "input_gate": 0.09962329268455505,
+          "parameters": 3279224,
+          "n_test_evaluated": 0
+        },
+        "pretrained_species": "mouse liver",
+        "target_mean": [
+          [
+            10.130057334899902
+          ]
+        ],
+        "target_scale": [
+          [
+            0.7122930288314819
+          ]
+        ],
+        "max_steps": 2000,
+        "validation_every": 100,
+        "early_stop_checks": 10,
+        "selection": "macro validation scalar Pearson",
+        "source_sha256": {
+          "train_scalar_tasks_20261031.py": "69193c008cf4af4a7b55f53e4cef49eef25380cddd5978493bd3aca6ec798c6e",
+          "scalar_downstream.py": "996509f19566349eda322e2826ea202b755dc49b6067ebf5b87157aed56d533c",
+          "seq2ribo_scalar_reference.py": "cba67ced4b6d0fb3af0a844c294bd5ada1f9ec0fc4c665e2d9a81958cb98876a"
+        }
+      },
+      {
+        "path": "/root/scalar_downstream_20261031/runs/protein_finetune_30102/best.pt",
+        "sha256": "86f0cd5209a8f775b95789883c480682e7548a89b65bc2445214bf8c6ae57726",
+        "best_validation_pcc": 0.8551189936240745,
+        "best_step": 1400,
+        "task": "protein",
+        "arm": "finetune",
+        "seed": 30102,
+        "n_outputs": 1,
+        "use_utr": false,
+        "model_kind": "ours",
+        "target_index": null,
+        "target_normalization": {
+          "target_low": 7.36065603585692,
+          "target_high": 11.338710284785616,
+          "target_mean": 10.130057334899902,
+          "target_scale": 0.7122930288314819
+        },
+        "n_train": 1019,
+        "n_validation": 219,
+        "n_test_evaluated": 0,
+        "task_sha256": "fbe2b11f04097e82802ea672ed6c2d4a350bb40054f35567142756ea7a15fa5b",
+        "pretrained_checkpoint": {
+          "path": "/root/graph_polish_20261031/runs/physics_gnn_polish_30102/best.pt",
+          "sha256": "9987e6738d9b4720ad4f401f9d58b759f6b35f0392e843a1a263c573585e7546",
+          "arm": "physics_gnn_polish",
+          "seed": 30102,
+          "setting": {
+            "mode": "physics_gnn_polish"
+          },
+          "kind": "polish",
+          "validation_loss": 0.7225512951612473,
+          "validation_pcc": 0.33960740948930346,
+          "best_epoch": 4,
+          "input_gate": 0.09993381053209305,
+          "parameters": 3279224,
+          "n_test_evaluated": 0
+        },
+        "pretrained_species": "mouse liver",
+        "target_mean": [
+          [
+            10.130057334899902
+          ]
+        ],
+        "target_scale": [
+          [
+            0.7122930288314819
+          ]
+        ],
+        "max_steps": 2000,
+        "validation_every": 100,
+        "early_stop_checks": 10,
+        "selection": "macro validation scalar Pearson",
+        "source_sha256": {
+          "train_scalar_tasks_20261031.py": "69193c008cf4af4a7b55f53e4cef49eef25380cddd5978493bd3aca6ec798c6e",
+          "scalar_downstream.py": "996509f19566349eda322e2826ea202b755dc49b6067ebf5b87157aed56d533c",
+          "seq2ribo_scalar_reference.py": "cba67ced4b6d0fb3af0a844c294bd5ada1f9ec0fc4c665e2d9a81958cb98876a"
+        }
+      },
+      {
+        "path": "/root/scalar_downstream_20261031/runs/protein_finetune_30103/best.pt",
+        "sha256": "22998573f486f03707f162ce1f63c3e7fade0b1701ba27f20adeafb11e88a7e9",
+        "best_validation_pcc": 0.8439833406962995,
+        "best_step": 2000,
+        "task": "protein",
+        "arm": "finetune",
+        "seed": 30103,
+        "n_outputs": 1,
+        "use_utr": false,
+        "model_kind": "ours",
+        "target_index": null,
+        "target_normalization": {
+          "target_low": 7.36065603585692,
+          "target_high": 11.338710284785616,
+          "target_mean": 10.130057334899902,
+          "target_scale": 0.7122930288314819
+        },
+        "n_train": 1019,
+        "n_validation": 219,
+        "n_test_evaluated": 0,
+        "task_sha256": "fbe2b11f04097e82802ea672ed6c2d4a350bb40054f35567142756ea7a15fa5b",
+        "pretrained_checkpoint": {
+          "path": "/root/graph_polish_20261031/runs/physics_gnn_polish_30103/best.pt",
+          "sha256": "6039970ef70f31291d0a0f38be18b061ee1f37d1553504373ae6cade6eb1aba6",
+          "arm": "physics_gnn_polish",
+          "seed": 30103,
+          "setting": {
+            "mode": "physics_gnn_polish"
+          },
+          "kind": "polish",
+          "validation_loss": 0.7246155425906181,
+          "validation_pcc": 0.33740937678468363,
+          "best_epoch": 4,
+          "input_gate": 0.10013050585985184,
+          "parameters": 3279224,
+          "n_test_evaluated": 0
+        },
+        "pretrained_species": "mouse liver",
+        "target_mean": [
+          [
+            10.130057334899902
+          ]
+        ],
+        "target_scale": [
+          [
+            0.7122930288314819
+          ]
+        ],
+        "max_steps": 2000,
+        "validation_every": 100,
+        "early_stop_checks": 10,
+        "selection": "macro validation scalar Pearson",
+        "source_sha256": {
+          "train_scalar_tasks_20261031.py": "69193c008cf4af4a7b55f53e4cef49eef25380cddd5978493bd3aca6ec798c6e",
+          "scalar_downstream.py": "996509f19566349eda322e2826ea202b755dc49b6067ebf5b87157aed56d533c",
+          "seq2ribo_scalar_reference.py": "cba67ced4b6d0fb3af0a844c294bd5ada1f9ec0fc4c665e2d9a81958cb98876a"
+        }
+      },
+      {
+        "path": "/root/scalar_downstream_20261031/runs/protein_frozen_probe_30101/best.pt",
+        "sha256": "709adb9c23db1bc459c88b48e40385327b05413a8762120ec1902d57e425890a",
+        "best_validation_pcc": 0.6783553128206188,
+        "best_step": 2000,
+        "task": "protein",
+        "arm": "frozen_probe",
+        "seed": 30101,
+        "n_outputs": 1,
+        "use_utr": false,
+        "model_kind": "ours",
+        "target_index": null,
+        "target_normalization": {
+          "target_low": 7.36065603585692,
+          "target_high": 11.338710284785616,
+          "target_mean": 10.130057334899902,
+          "target_scale": 0.7122930288314819
+        },
+        "n_train": 1019,
+        "n_validation": 219,
+        "n_test_evaluated": 0,
+        "task_sha256": "fbe2b11f04097e82802ea672ed6c2d4a350bb40054f35567142756ea7a15fa5b",
+        "pretrained_checkpoint": {
+          "path": "/root/graph_polish_20261031/runs/physics_gnn_polish_30101/best.pt",
+          "sha256": "aac8be4399a5530ad663f273ed2b6f3c29ae80a9ee5aa213e6f27c6f1b505464",
+          "arm": "physics_gnn_polish",
+          "seed": 30101,
+          "setting": {
+            "mode": "physics_gnn_polish"
+          },
+          "kind": "polish",
+          "validation_loss": 0.7281223248690367,
+          "validation_pcc": 0.3340005159715962,
+          "best_epoch": 3,
+          "input_gate": 0.09962329268455505,
+          "parameters": 3279224,
+          "n_test_evaluated": 0
+        },
+        "pretrained_species": "mouse liver",
+        "target_mean": [
+          [
+            10.130057334899902
+          ]
+        ],
+        "target_scale": [
+          [
+            0.7122930288314819
+          ]
+        ],
+        "max_steps": 2000,
+        "validation_every": 100,
+        "early_stop_checks": 10,
+        "selection": "macro validation scalar Pearson",
+        "source_sha256": {
+          "train_scalar_tasks_20261031.py": "69193c008cf4af4a7b55f53e4cef49eef25380cddd5978493bd3aca6ec798c6e",
+          "scalar_downstream.py": "996509f19566349eda322e2826ea202b755dc49b6067ebf5b87157aed56d533c",
+          "seq2ribo_scalar_reference.py": "cba67ced4b6d0fb3af0a844c294bd5ada1f9ec0fc4c665e2d9a81958cb98876a"
+        }
+      },
+      {
+        "path": "/root/scalar_downstream_20261031/runs/protein_frozen_probe_30102/best.pt",
+        "sha256": "d68557c163b21a389fa624c209538775c11ae144f64c007a56f479f4e36aa5bb",
+        "best_validation_pcc": 0.6686525937057788,
+        "best_step": 1900,
+        "task": "protein",
+        "arm": "frozen_probe",
+        "seed": 30102,
+        "n_outputs": 1,
+        "use_utr": false,
+        "model_kind": "ours",
+        "target_index": null,
+        "target_normalization": {
+          "target_low": 7.36065603585692,
+          "target_high": 11.338710284785616,
+          "target_mean": 10.130057334899902,
+          "target_scale": 0.7122930288314819
+        },
+        "n_train": 1019,
+        "n_validation": 219,
+        "n_test_evaluated": 0,
+        "task_sha256": "fbe2b11f04097e82802ea672ed6c2d4a350bb40054f35567142756ea7a15fa5b",
+        "pretrained_checkpoint": {
+          "path": "/root/graph_polish_20261031/runs/physics_gnn_polish_30102/best.pt",
+          "sha256": "9987e6738d9b4720ad4f401f9d58b759f6b35f0392e843a1a263c573585e7546",
+          "arm": "physics_gnn_polish",
+          "seed": 30102,
+          "setting": {
+            "mode": "physics_gnn_polish"
+          },
+          "kind": "polish",
+          "validation_loss": 0.7225512951612473,
+          "validation_pcc": 0.33960740948930346,
+          "best_epoch": 4,
+          "input_gate": 0.09993381053209305,
+          "parameters": 3279224,
+          "n_test_evaluated": 0
+        },
+        "pretrained_species": "mouse liver",
+        "target_mean": [
+          [
+            10.130057334899902
+          ]
+        ],
+        "target_scale": [
+          [
+            0.7122930288314819
+          ]
+        ],
+        "max_steps": 2000,
+        "validation_every": 100,
+        "early_stop_checks": 10,
+        "selection": "macro validation scalar Pearson",
+        "source_sha256": {
+          "train_scalar_tasks_20261031.py": "69193c008cf4af4a7b55f53e4cef49eef25380cddd5978493bd3aca6ec798c6e",
+          "scalar_downstream.py": "996509f19566349eda322e2826ea202b755dc49b6067ebf5b87157aed56d533c",
+          "seq2ribo_scalar_reference.py": "cba67ced4b6d0fb3af0a844c294bd5ada1f9ec0fc4c665e2d9a81958cb98876a"
+        }
+      },
+      {
+        "path": "/root/scalar_downstream_20261031/runs/protein_frozen_probe_30103/best.pt",
+        "sha256": "fd8798e98dc1363ffc7c13f9773a5150cdabfed1e6721f0bf27794dc2bf0ba08",
+        "best_validation_pcc": 0.6835444958332607,
+        "best_step": 1900,
+        "task": "protein",
+        "arm": "frozen_probe",
+        "seed": 30103,
+        "n_outputs": 1,
+        "use_utr": false,
+        "model_kind": "ours",
+        "target_index": null,
+        "target_normalization": {
+          "target_low": 7.36065603585692,
+          "target_high": 11.338710284785616,
+          "target_mean": 10.130057334899902,
+          "target_scale": 0.7122930288314819
+        },
+        "n_train": 1019,
+        "n_validation": 219,
+        "n_test_evaluated": 0,
+        "task_sha256": "fbe2b11f04097e82802ea672ed6c2d4a350bb40054f35567142756ea7a15fa5b",
+        "pretrained_checkpoint": {
+          "path": "/root/graph_polish_20261031/runs/physics_gnn_polish_30103/best.pt",
+          "sha256": "6039970ef70f31291d0a0f38be18b061ee1f37d1553504373ae6cade6eb1aba6",
+          "arm": "physics_gnn_polish",
+          "seed": 30103,
+          "setting": {
+            "mode": "physics_gnn_polish"
+          },
+          "kind": "polish",
+          "validation_loss": 0.7246155425906181,
+          "validation_pcc": 0.33740937678468363,
+          "best_epoch": 4,
+          "input_gate": 0.10013050585985184,
+          "parameters": 3279224,
+          "n_test_evaluated": 0
+        },
+        "pretrained_species": "mouse liver",
+        "target_mean": [
+          [
+            10.130057334899902
+          ]
+        ],
+        "target_scale": [
+          [
+            0.7122930288314819
+          ]
+        ],
+        "max_steps": 2000,
+        "validation_every": 100,
+        "early_stop_checks": 10,
+        "selection": "macro validation scalar Pearson",
+        "source_sha256": {
+          "train_scalar_tasks_20261031.py": "69193c008cf4af4a7b55f53e4cef49eef25380cddd5978493bd3aca6ec798c6e",
+          "scalar_downstream.py": "996509f19566349eda322e2826ea202b755dc49b6067ebf5b87157aed56d533c",
+          "seq2ribo_scalar_reference.py": "cba67ced4b6d0fb3af0a844c294bd5ada1f9ec0fc4c665e2d9a81958cb98876a"
+        }
+      }
+    ],
+    "protein_baseline_partial_progress": {
+      "stage": "inference",
+      "cell": "ipsc",
+      "completed": 112,
+      "total": 219,
+      "seconds": 1087.0315931289988,
+      "unix": 1793449075.9598238
+    },
+    "te_partial_progress": {
+      "stage": "folding_and_simulation",
+      "completed": 400,
+      "total": 10348,
+      "seconds": 1116.7290117950015,
+      "unix": 1793449099.8314512
+    },
+    "baseline_full_predictions_available": false,
+    "baseline_metrics_available": false
+  },
+  "profile": {
+    "stage": "stopped_by_user",
+    "unix": 1793449101.7082944,
+    "controller_pid": 8394,
+    "previous_status": {
+      "stage": "train",
+      "unix": 1793449014.5532775,
+      "arm": "sequence_graph",
+      "seed": 30103
+    },
+    "saved_artifacts_preserved": true,
+    "instruction": "Do not resume without user instruction",
+    "profile_test_opened": false,
+    "weights": [
+      {
+        "path": "/root/riboseq_graph_v2_20261031/runs/baseline_30101/best.pt",
+        "sha256": "18444d7f88cd3b35fadbb50f94534a922bd0bb725eee4809e2dfa70fd11cae2c",
+        "arm": "baseline",
+        "seed": 30101,
+        "setting": {
+          "kind": "old_polish",
+          "mode": "physics_gnn_polish",
+          "width": 192
+        },
+        "best_validation_pcc": 0.36173645415312944,
+        "best_step": 3000,
+        "last_step": 3000,
+        "n_test_evaluated": 0,
+        "parameters": 683144
+      },
+      {
+        "path": "/root/riboseq_graph_v2_20261031/runs/baseline_30102/best.pt",
+        "sha256": "28e333a9ec201f6fc0f6ac939abaa0ee9b819660a77321f42e78d951aeffc458",
+        "arm": "baseline",
+        "seed": 30102,
+        "setting": {
+          "kind": "old_polish",
+          "mode": "physics_gnn_polish",
+          "width": 192
+        },
+        "best_validation_pcc": 0.36168296642578174,
+        "best_step": 2900,
+        "last_step": 3000,
+        "n_test_evaluated": 0,
+        "parameters": 683144
+      },
+      {
+        "path": "/root/riboseq_graph_v2_20261031/runs/baseline_30103/best.pt",
+        "sha256": "81b7549120a45e06e71c3a3325cf095745357f210f6a97f13e4f4d8238177308",
+        "arm": "baseline",
+        "seed": 30103,
+        "setting": {
+          "kind": "old_polish",
+          "mode": "physics_gnn_polish",
+          "width": 192
+        },
+        "best_validation_pcc": 0.36225825952323654,
+        "best_step": 3000,
+        "last_step": 3000,
+        "n_test_evaluated": 0,
+        "parameters": 683144
+      },
+      {
+        "path": "/root/riboseq_graph_v2_20261031/runs/context_anchor_30101/best.pt",
+        "sha256": "8907eb285a6ac151f3ab9b50a81e68a588c997c6505c327d2959ebb9b173cf5d",
+        "arm": "context_anchor",
+        "seed": 30101,
+        "setting": {
+          "kind": "reliable",
+          "width": 192,
+          "sequence_v2": true,
+          "structure_gate": true,
+          "anchored_head": true
+        },
+        "best_validation_pcc": 0.5224717624098996,
+        "best_step": 3000,
+        "last_step": 3000,
+        "n_test_evaluated": 0,
+        "parameters": 1435334
+      },
+      {
+        "path": "/root/riboseq_graph_v2_20261031/runs/context_anchor_30102/best.pt",
+        "sha256": "91bc746ce9eb9a47324f7df365bbf8ce11abd6b84104e3efef7aab408a1a43c2",
+        "arm": "context_anchor",
+        "seed": 30102,
+        "setting": {
+          "kind": "reliable",
+          "width": 192,
+          "sequence_v2": true,
+          "structure_gate": true,
+          "anchored_head": true
+        },
+        "best_validation_pcc": 0.5238851496174732,
+        "best_step": 3000,
+        "last_step": 3000,
+        "n_test_evaluated": 0,
+        "parameters": 1435334
+      },
+      {
+        "path": "/root/riboseq_graph_v2_20261031/runs/gated_graph_30101/best.pt",
+        "sha256": "edd1a1825f241940207dc11a1423dbb45ac6d2faee033d03ef41e4d73405cc50",
+        "arm": "gated_graph",
+        "seed": 30101,
+        "setting": {
+          "kind": "reliable",
+          "width": 192,
+          "sequence_v2": true,
+          "structure_gate": true,
+          "anchored_head": false
+        },
+        "best_validation_pcc": 0.5269801542158815,
+        "best_step": 3000,
+        "last_step": 3000,
+        "n_test_evaluated": 0,
+        "parameters": 1435334
+      },
+      {
+        "path": "/root/riboseq_graph_v2_20261031/runs/gated_graph_30102/best.pt",
+        "sha256": "06a6307575b5de3eea195f3a5f6a18dbefad0fd4dff18e06015eed9f8392c8fb",
+        "arm": "gated_graph",
+        "seed": 30102,
+        "setting": {
+          "kind": "reliable",
+          "width": 192,
+          "sequence_v2": true,
+          "structure_gate": true,
+          "anchored_head": false
+        },
+        "best_validation_pcc": 0.5285732216746267,
+        "best_step": 3000,
+        "last_step": 3000,
+        "n_test_evaluated": 0,
+        "parameters": 1435334
+      },
+      {
+        "path": "/root/riboseq_graph_v2_20261031/runs/sequence_graph_30101/best.pt",
+        "sha256": "6fb179168914b9b158e8667f03481255da68cd64cacae720ab95bdf69d8c4d73",
+        "arm": "sequence_graph",
+        "seed": 30101,
+        "setting": {
+          "kind": "reliable",
+          "width": 192,
+          "sequence_v2": true,
+          "structure_gate": false,
+          "anchored_head": false
+        },
+        "best_validation_pcc": 0.5172531960841388,
+        "best_step": 3000,
+        "last_step": 3000,
+        "n_test_evaluated": 0,
+        "parameters": 1435334
+      },
+      {
+        "path": "/root/riboseq_graph_v2_20261031/runs/sequence_graph_30102/best.pt",
+        "sha256": "6126c6ef9594b2e73962f5a2c6e0d0b8ea94cd82a471d19bf0c58cbc10ef82fa",
+        "arm": "sequence_graph",
+        "seed": 30102,
+        "setting": {
+          "kind": "reliable",
+          "width": 192,
+          "sequence_v2": true,
+          "structure_gate": false,
+          "anchored_head": false
+        },
+        "best_validation_pcc": 0.5173754797229647,
+        "best_step": 3000,
+        "last_step": 3000,
+        "n_test_evaluated": 0,
+        "parameters": 1435334
+      },
+      {
+        "path": "/root/riboseq_graph_v2_20261031/runs/v2_control_30101/best.pt",
+        "sha256": "6e90fedacdff956f0cf5603ccf98940c177d0b405b29dfd0d19a8dd1a90ecb04",
+        "arm": "v2_control",
+        "seed": 30101,
+        "setting": {
+          "kind": "reliable",
+          "width": 192,
+          "sequence_v2": false,
+          "structure_gate": false,
+          "anchored_head": false
+        },
+        "best_validation_pcc": 0.40101368886127947,
+        "best_step": 3000,
+        "last_step": 3000,
+        "n_test_evaluated": 0,
+        "parameters": 1435334
+      },
+      {
+        "path": "/root/riboseq_graph_v2_20261031/runs/v2_control_30102/best.pt",
+        "sha256": "e32ec909d2591d553d436a4cdb7efa92fbfbdac2d68a826854d7f38099e60111",
+        "arm": "v2_control",
+        "seed": 30102,
+        "setting": {
+          "kind": "reliable",
+          "width": 192,
+          "sequence_v2": false,
+          "structure_gate": false,
+          "anchored_head": false
+        },
+        "best_validation_pcc": 0.40315040578976946,
+        "best_step": 2900,
+        "last_step": 3000,
+        "n_test_evaluated": 0,
+        "parameters": 1435334
+      },
+      {
+        "path": "/root/riboseq_graph_v2_20261031/runs/v2_control_30103/best.pt",
+        "sha256": "d8ddf084c521d660f82a15ea21bad29e81aa71ce39022af134af574ea58cc8f7",
+        "arm": "v2_control",
+        "seed": 30103,
+        "setting": {
+          "kind": "reliable",
+          "width": 192,
+          "sequence_v2": false,
+          "structure_gate": false,
+          "anchored_head": false
+        },
+        "best_validation_pcc": 0.4022564702103608,
+        "best_step": 3000,
+        "last_step": 3000,
+        "n_test_evaluated": 0,
+        "parameters": 1435334
+      }
+    ]
+  }
+}

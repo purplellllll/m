@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "n_new_weights": 24,
+  "n_total_weights": 33,
+  "n_records": 720,
+  "checked_metric_values": 83200,
+  "max_pearson_error": 1.2212453270876722e-15,
+  "reload_max_errors": {
+    "parallel": 1.9718259334361443e-09,
+    "gnn_polish": 3.8548867084542415e-09,
+    "physics_gnn_polish": 4.351278743569553e-09,
+    "diagonal_attention": 2.8984035362750182e-09
+  },
+  "predictions_sha256": "389f98ae22800ea5b82753bd1286ad770c3ee3cec17f1238a219f985f0bb270f"
+}

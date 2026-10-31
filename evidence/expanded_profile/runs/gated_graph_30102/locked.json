@@ -1,0 +1,18 @@
+{
+  "path": "/root/riboseq_graph_v2_20261031/runs/gated_graph_30102/best.pt",
+  "sha256": "06a6307575b5de3eea195f3a5f6a18dbefad0fd4dff18e06015eed9f8392c8fb",
+  "arm": "gated_graph",
+  "seed": 30102,
+  "setting": {
+    "kind": "reliable",
+    "width": 192,
+    "sequence_v2": true,
+    "structure_gate": true,
+    "anchored_head": false
+  },
+  "best_validation_pcc": 0.5285732216746267,
+  "best_step": 3000,
+  "last_step": 3000,
+  "n_test_evaluated": 0,
+  "parameters": 1435334
+}

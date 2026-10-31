@@ -1,0 +1,24 @@
+{
+  "stage": "training",
+  "unix": 1793449101.577137,
+  "best_pcc": 0.4795772198371192,
+  "best_step": 1200,
+  "step": 1200,
+  "epoch": 2,
+  "seen_transcripts": 5906,
+  "loss": 0.6716244220733643,
+  "lr": 0.0002235743047808703,
+  "batch_size": 5,
+  "seconds": 64.7628210619987,
+  "validation": {
+    "pcc": 0.4795772198371192,
+    "interior_pcc": 0.44946994964122766,
+    "physics_pcc": 0.12233375118892462,
+    "gnn_pcc": 0.45143720926158853,
+    "context_pcc": 0.46980983285307365,
+    "native_loss": 0.565138883546166,
+    "n_transcripts": 696,
+    "n_defined": 696,
+    "structure_gate_mean": 0.9999999951619432
+  }
+}

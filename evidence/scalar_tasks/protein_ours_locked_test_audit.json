@@ -1,0 +1,100 @@
+{
+  "status": "completed",
+  "selected": "finetune",
+  "metrics": [
+    {
+      "subset": "native219",
+      "model": "ours_30101",
+      "n": 219,
+      "pearson": 0.8559854890946454,
+      "mse": 0.1751245609302055,
+      "sequence_bootstrap_95ci": [
+        0.7976870831365156,
+        0.9015450076968291
+      ]
+    },
+    {
+      "subset": "native219",
+      "model": "ours_30102",
+      "n": 219,
+      "pearson": 0.8233596343288745,
+      "mse": 0.19121955189270393,
+      "sequence_bootstrap_95ci": [
+        0.7648973498239209,
+        0.8714200501784108
+      ]
+    },
+    {
+      "subset": "native219",
+      "model": "ours_30103",
+      "n": 219,
+      "pearson": 0.8255922507731455,
+      "mse": 0.18071245519259294,
+      "sequence_bootstrap_95ci": [
+        0.7714893205573419,
+        0.8744524774319116
+      ]
+    },
+    {
+      "subset": "native219",
+      "model": "ours",
+      "n": 219,
+      "pearson": 0.8510317688647171,
+      "mse": 0.1668040027217175,
+      "sequence_bootstrap_95ci": [
+        0.8004480607981175,
+        0.8942046955864248
+      ]
+    },
+    {
+      "subset": "clean217",
+      "model": "ours_30101",
+      "n": 217,
+      "pearson": 0.8557108177051727,
+      "mse": 0.17644006601224116,
+      "sequence_bootstrap_95ci": [
+        0.8016611620722447,
+        0.9006877067299631
+      ]
+    },
+    {
+      "subset": "clean217",
+      "model": "ours_30102",
+      "n": 217,
+      "pearson": 0.8232149888521006,
+      "mse": 0.19222671469356717,
+      "sequence_bootstrap_95ci": [
+        0.7668929211339032,
+        0.8710782698156804
+      ]
+    },
+    {
+      "subset": "clean217",
+      "model": "ours_30103",
+      "n": 217,
+      "pearson": 0.8256877465074429,
+      "mse": 0.18191841273125042,
+      "sequence_bootstrap_95ci": [
+        0.7712738476976236,
+        0.8719474164499552
+      ]
+    },
+    {
+      "subset": "clean217",
+      "model": "ours",
+      "n": 217,
+      "pearson": 0.8510130268646459,
+      "mse": 0.16787681515659558,
+      "sequence_bootstrap_95ci": [
+        0.7964158484774723,
+        0.8927295196179569
+      ]
+    }
+  ],
+  "selection_sha256": "2498e5c3ce21fa789ac8773411a2ee363a9689f39fae24211ab3aef8e8323287",
+  "predictions_sha256": "7e41747d71aef32eb329368046631a746281f3aa9f034dae374b8a10bf743ad8",
+  "unix": 1793448185.184431,
+  "baseline_still_running": true,
+  "comparison": "No claim of superiority until paired baseline inference completes",
+  "rule": "Do not change model or tune against these219/217 test labels after opening"
+}

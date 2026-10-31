@@ -1,0 +1,19 @@
+{
+  "source": "related-study processed GSE73553 LIVER, not original RiboGL train.csv",
+  "source_doi": "10.5281/zenodo.17100113",
+  "source_sha256": "70a6621d0779a0cef17ce49427560c0c3c1b3b237e005a1d1038f047aff8aa7f",
+  "counts": {
+    "train": 5564,
+    "validation": 696,
+    "test": 696
+  },
+  "rejections": {
+    "coverage_or_constant": 7871,
+    "long_zero_run": 1397,
+    "incomplete_or_invalid_cds": 31,
+    "exact_duplicate_gene_cds_protein": 1
+  },
+  "no_length_truncation": true,
+  "near_homology_clustered": false,
+  "original_paper_split_reproduced": false
+}

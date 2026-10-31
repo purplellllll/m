@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "implementation": "centered dot product independent of np.corrcoef",
+  "checked_metric_values": 83200,
+  "max_error": 1.3322676295501878e-15,
+  "max_mass_error": 4.440892098500626e-16,
+  "n_records": 720,
+  "n_prior_excluded": 1500,
+  "fresh_genes": 120,
+  "predictions_sha256": "389f98ae22800ea5b82753bd1286ad770c3ee3cec17f1238a219f985f0bb270f",
+  "ensembles_recomputed": true
+}

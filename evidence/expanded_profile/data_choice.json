@@ -1,0 +1,7 @@
+{
+  "choice": "related_liver_repartition",
+  "confirmed_by": "user",
+  "confirmed_date": "2026-10-31",
+  "user_answer": "使用同一GSE73553研究的公开LIVER完整数据，重新按基因划分并扩大训练集（推荐）",
+  "original_ribogl_train_split_reproduced": false
+}

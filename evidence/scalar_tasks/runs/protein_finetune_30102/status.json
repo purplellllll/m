@@ -1,0 +1,7 @@
+{
+  "stage": "completed",
+  "steps": 2000,
+  "best_validation_pcc": 0.8551189936240745,
+  "unix": 1793447867.783906,
+  "n_test_evaluated": 0
+}

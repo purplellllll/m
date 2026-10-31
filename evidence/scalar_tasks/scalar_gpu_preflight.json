@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "actual_train_batch": 8,
+  "full_cds_codons": 226,
+  "profile_backbone_width": 424,
+  "scalar_shape": [
+    8,
+    1
+  ],
+  "gradient_l1_by_branch": {
+    "physics": 67.01888084411621,
+    "graph": 5780.150012016296,
+    "context": 2996.048313140869
+  },
+  "checkpoint_roundtrip_max_error": 2.9802322387695312e-08,
+  "peak_cuda_allocated_bytes": 218317824,
+  "test_records_evaluated": 0
+}

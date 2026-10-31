@@ -1,0 +1,60 @@
+{
+  "ribodecode": {
+    "archive_sha256": "2a365a5241f3b421a50c9fadb2d367b2076e8d68f530d3a87364f09af1d5f5a6",
+    "n_train_genes": 10552,
+    "n_test_genes": 1173,
+    "n_environments": 320,
+    "metadata_columns": [
+      "Studies",
+      "RiboSeq_GSM",
+      "RNASeq_GSM",
+      "Cell",
+      "Condition",
+      "Type"
+    ],
+    "environment_types": {
+      "training": 200,
+      "test": 120
+    },
+    "expression_shapes": [
+      [
+        11725,
+        320
+      ],
+      [
+        11725,
+        320
+      ]
+    ],
+    "readme": "This fold contains datasets for tranlation model of RiboDecode.\r\n\r\ngenes.csv: training and test genes;\r\nhuman_coding_transcript_sequences.csv: transcript sequences of human coding genes (gencode.v28);\r\nmjIsoform_320.csv: major isoforms of the 320 samples determined by RSEM;\r\nRNA_RPKM_320.csv: RNA-seq counts (in RPKM) of the 320 samples;\r\nRPF_RPKM_320.csv: Ribo-seq counts (in RPKM) of the 320 samples;\r\nsample_information.csv: sample meta and group of the 320 samples"
+  },
+  "seq2ribo_te": {
+    "source_sha256": "5a9dd751cb8ac96dbe364e249561cb54d4912c4170e7d659b9d465bd008e4c47",
+    "n_genes": 10348,
+    "verified_label_mapping": {
+      "mean": "mean_te",
+      "hek293": "TE_HEK293",
+      "lcl": "TE_LCL",
+      "rpe": "TE_RPE-1"
+    },
+    "finite_labels": {
+      "mean_te": 10348,
+      "TE_HEK293": 10228,
+      "TE_LCL": 10142,
+      "TE_RPE-1": 9805
+    },
+    "provided_fold_counts": {
+      "2": 1114,
+      "1": 1063,
+      "8": 1058,
+      "0": 1045,
+      "7": 1031,
+      "5": 1028,
+      "9": 1024,
+      "6": 1020,
+      "4": 1011,
+      "3": 954
+    },
+    "fold_identity": "RiboNN folds; NOT automatically seq2ribo native splits"
+  }
+}

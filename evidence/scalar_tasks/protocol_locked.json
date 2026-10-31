@@ -1,0 +1,48 @@
+{
+  "source_sha256": {
+    "run_scalar_tasks_20261031.py": "00dadda6c9a02d04fe10b044b48b0706032f341c3aff55fc7d6f7bbd9e4ec6e5",
+    "train_scalar_tasks_20261031.py": "69193c008cf4af4a7b55f53e4cef49eef25380cddd5978493bd3aca6ec798c6e",
+    "preflight_scalar_tasks_20261031.py": "218d7a50b814459864edde1f24a9548d7f8be77cdcbdb2a223629b1e8425b3d2",
+    "start_scalar_tasks_20261031.py": "1706b7ab3100b7d75a1ba0d1529df1b0eda4fdccc0eeace88e5a47d96ab0c837",
+    "evaluate_scalar_protein_20261031.py": "f60b3f5d3229b4dc8fadaa9badfdd18e5d27ff4c325cb32fe799fac09cf2e573",
+    "audit_scalar_sources_20261031.py": "9a9559c8500f463f8c4e18fbbec1398123e3c755ee8499e5e62dcf8f1e4e27a7",
+    "check_scalar_mamba_backend_20261031.py": "d2ca4d54c767799d6bdc05b39e2e24d751177fe5a6acf0fad2cb87a95115126f",
+    "evaluate_scalar_rpf_20261031.py": "f3d345c51edd26054fb5deb03dea82d023cd7b457298bbf969d727472885acdb",
+    "test_scalar_downstream_20261031.py": "bdd18c07d143c7692bfc6678e7891f325e13d6e882d2093affa7df2b069a1063",
+    "prepare_scalar_features_20261031.py": "54b1ec84fb6fc48f13aff656b0757b876bc96d14afa668db6a988576bbdabd4d",
+    "evaluate_scalar_te_20261031.py": "0b5a1a4be042d622390a482e30226c1aceb6208f98af225a4ee5729a51c45a3d",
+    "prepare_scalar_tasks_20261031.py": "138de1e71266e41d37f02a5d7ecec993e18b9f7fcb05cbe3056dc207f979a917",
+    "bootstrap_scalar_runtime_20261031.py": "ffb012e66aa0475d877781085f7b520578ebea26cedf9bde32388ab45265606a",
+    "train_scalar_rpf_20261031.py": "e224a2d710f1ee75d34fca842ae06da0c56f47f168d675120216169138d4857b",
+    "physics_scorer/profile_model.py": "9086793832af079643fd6633c02e314ce1fabf9d21e12466da43bb939a0e77ec",
+    "physics_scorer/fusion_encoder_model.py": "93c34518e5f40d26d1d91867fdffeb30bfdfa37c3581c5fefa9ce861d8c43380",
+    "physics_scorer/seq2ribo_scalar_reference.py": "cba67ced4b6d0fb3af0a844c294bd5ada1f9ec0fc4c665e2d9a81958cb98876a",
+    "physics_scorer/__init__.py": "87ec3aea37a44159924a46f71438f1836702ead7e0a5ba3f59328fbd3c927c0b",
+    "physics_scorer/scalar_downstream.py": "996509f19566349eda322e2826ea202b755dc49b6067ebf5b87157aed56d533c",
+    "physics_scorer/graph_polish_model.py": "5d2cb4c3336456db3be391516ecb86b4dd30572ce43a295d58a5dd8a05dcfb96",
+    "physics_scorer/model.py": "29cc83629021c0fe0d3438830419ca1df8b3e863a3269d33b9a8e81068f43a8e"
+  },
+  "seeds": [
+    30101,
+    30102,
+    30103
+  ],
+  "arms": [
+    "frozen_probe",
+    "finetune"
+  ],
+  "max_steps_per_run": 2000,
+  "validation_every": 100,
+  "selection": "Best scalar Pearson on validation only; select arm across3 seeds before any test",
+  "note": "Aim to exceed baselines; this is not an assertion of SOTA. Native seq2ribo TE split remains unavailable.",
+  "te_single_target_runs": 48,
+  "protein_runs": 6,
+  "rpf_frozen_probe_runs": 6,
+  "maximum_optimizer_steps": 126000,
+  "task_order": [
+    "protein",
+    "te",
+    "rpf"
+  ],
+  "unix": 1793447626.4606504
+}

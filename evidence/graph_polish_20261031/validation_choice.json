@@ -1,0 +1,11 @@
+{
+  "selected_arm": "parallel",
+  "mean_seed_validation_pcc": {
+    "parallel": 0.337634336754797,
+    "physics_polish": 0.3372860214114808,
+    "gnn_polish": 0.33684028229287755,
+    "physics_gnn_polish": 0.33700576741519445
+  },
+  "unix": 1793437642.3709364,
+  "test_metrics_existed": false
+}

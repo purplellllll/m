@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "compiled_mamba_version": "2.2.6.post3",
+  "reference": "unmodified Mamba2.2.4 class and selective_scan_ref",
+  "max_absolute_error": 2.384185791015625e-07,
+  "torch": "2.7.1+cu118",
+  "batch": 2,
+  "length": 226,
+  "dtype": "float32",
+  "test": "random initialized full4-layer192width profile model"
+}

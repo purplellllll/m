@@ -1,0 +1,78 @@
+{
+  "arms": {
+    "baseline": {
+      "kind": "old_polish",
+      "mode": "physics_gnn_polish",
+      "width": 192
+    },
+    "v2_control": {
+      "kind": "reliable",
+      "width": 192,
+      "sequence_v2": false,
+      "structure_gate": false,
+      "anchored_head": false
+    },
+    "sequence_graph": {
+      "kind": "reliable",
+      "width": 192,
+      "sequence_v2": true,
+      "structure_gate": false,
+      "anchored_head": false
+    },
+    "gated_graph": {
+      "kind": "reliable",
+      "width": 192,
+      "sequence_v2": true,
+      "structure_gate": true,
+      "anchored_head": false
+    },
+    "context_anchor": {
+      "kind": "reliable",
+      "width": 192,
+      "sequence_v2": true,
+      "structure_gate": true,
+      "anchored_head": true
+    }
+  },
+  "recipe": {
+    "max_steps": 3000,
+    "validate_every": 100,
+    "lr": 0.0003,
+    "warmup_steps": 200,
+    "weight_decay": 0.01,
+    "max_batch_size": 8,
+    "max_padded_codons": 4096,
+    "max_attention_cells": 4500000,
+    "early_stop_checks": 12
+  },
+  "seeds": [
+    30101,
+    30102,
+    30103
+  ],
+  "unix": 1793446752.9983816,
+  "source_hashes": {
+    "run_expanded_riboseq_20261031.py": "c43859db35d6ee094968f04e077c9ac031616911942786c1180157c8decf91c0",
+    "prepare_expanded_riboseq_20261031.py": "c8116d170561a2cd496a1b0daee6e6377723388231b80682ecf9482448977556",
+    "train_expanded_riboseq_20261031.py": "2e49e495eb20cffd07ca7a9b8a5f520c9a699ac2afa94b001eb08464f42f4b48",
+    "preflight_expanded_riboseq_20261031.py": "bd87e637fde7c424087abc11aa0b64d52de1173c4faf2d7940057aeecea31585",
+    "evaluate_expanded_riboseq_20261031.py": "3e00672ea373d791129e2fac9344b3914c2103f302d624c279ba7b501d6b1b34",
+    "physics_scorer/reliable_graph_context.py": "ef569a123092dd3ad01842d341ce78dd86018a1217691eef6c32963aa22f87ba",
+    "physics_scorer/test_reliable_graph_context.py": "ad945efd2629735ee7aa5a8c6bddba7fee0b53fe90194591b2c74fb8221aa755",
+    "physics_scorer/graph_polish_model.py": "5d2cb4c3336456db3be391516ecb86b4dd30572ce43a295d58a5dd8a05dcfb96",
+    "physics_scorer/fusion_encoder_model.py": "93c34518e5f40d26d1d91867fdffeb30bfdfa37c3581c5fefa9ce861d8c43380",
+    "physics_scorer/profile_model.py": "9086793832af079643fd6633c02e314ce1fabf9d21e12466da43bb939a0e77ec",
+    "physics_scorer/model.py": "29cc83629021c0fe0d3438830419ca1df8b3e863a3269d33b9a8e81068f43a8e",
+    "physics_scorer/diagnostic_model.py": "758062edc2ded26999bce969abd7b5fa809aa40d53c7c0c00e8d13dcc7ca7686",
+    "run_aligned_profile_ablation_20261030.py": "28b56a443e048ec03cc713fb0922491ede59be80ff2f1cf227bf3958353dd6a5",
+    "prepare_fusion_data_20261031.py": "2c5b8466072737b7707786bf1cc28f92d9b112c0f0b220557a78ee770f0a508f",
+    "source/evaluator/seq2ribo/geometry.py": "3888549d0faeaf1c6930e833485814be9ba8513081566338244581f45b81efa7",
+    "source/evaluator/seq2ribo/simulation.py": "80413b446388618fe34e1466619fb470b1c95e3c44a0dee045956d416e59f3c0",
+    "source/evaluator/seq2ribo/utils.py": "f5a89bf1956754e1bfedf7a750e2c81a1b25705c33b2d31470b4438a5efb059f"
+  },
+  "features_sha256": "76977191d69db3ca504fc7233c497efe5b9fff3d69af7b4d35076ecdcbceb401",
+  "evaluation_interval_optimizer_steps": 100,
+  "selection": "mean best validation PCC; before test evaluation",
+  "source": "related-study LIVER repartition, NOT original RiboGL train split",
+  "original_split_reproduced": false
+}

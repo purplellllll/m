@@ -1,0 +1,12 @@
+benchmark,sample,cell,study,target,n,pearson,ours_pearson,comparison
+RiboDecode,SRX021966,HeLa,GSE21992,RPF,1012,0.9089273757189591,,unavailable: no matching human RPF/TE head
+RiboDecode,SRX021966,HeLa,GSE21992,TE,575,0.3804756663769268,,unavailable: no matching human RPF/TE head
+RiboDecode,SRX1070446,HeLa,GSE63591,RPF,958,0.9509275265062131,,unavailable: no matching human RPF/TE head
+RiboDecode,SRX1070446,HeLa,GSE63591,TE,564,0.5138821906586775,,unavailable: no matching human RPF/TE head
+RiboDecode,SRX384671,HEK293T,GSE52809,RPF,1030,0.9402422009180671,,unavailable: no matching human RPF/TE head
+RiboDecode,SRX384671,HEK293T,GSE52809,TE,576,0.4162896378017792,,unavailable: no matching human RPF/TE head
+RiboDecode,SRX474109,HEK293T,GSE55195,RPF,942,0.9140563500566942,,unavailable: no matching human RPF/TE head
+RiboDecode,SRX474109,HEK293T,GSE55195,TE,487,0.37552172783452925,,unavailable: no matching human RPF/TE head
+seq2ribo,hek293,hek293,public human TE supplementary table,TE,50,0.9915687590397366,,unavailable: descriptive calibration; training overlap uncertified
+seq2ribo,lcl,lcl,public human TE supplementary table,TE,50,0.9723704645466246,,unavailable: descriptive calibration; training overlap uncertified
+seq2ribo,rpe,rpe,public human TE supplementary table,TE,50,0.8821026326575562,,unavailable: descriptive calibration; training overlap uncertified

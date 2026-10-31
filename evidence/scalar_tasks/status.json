@@ -1,0 +1,12 @@
+{
+  "stage": "stopped_by_user",
+  "unix": 1793449101.7076738,
+  "controller_pid": 10781,
+  "previous_status": {
+    "stage": "prepare",
+    "unix": 1793447980.9272997,
+    "task": "te"
+  },
+  "saved_artifacts_preserved": true,
+  "instruction": "Do not resume without user instruction"
+}

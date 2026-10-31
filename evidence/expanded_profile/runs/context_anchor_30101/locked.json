@@ -1,0 +1,18 @@
+{
+  "path": "/root/riboseq_graph_v2_20261031/runs/context_anchor_30101/best.pt",
+  "sha256": "8907eb285a6ac151f3ab9b50a81e68a588c997c6505c327d2959ebb9b173cf5d",
+  "arm": "context_anchor",
+  "seed": 30101,
+  "setting": {
+    "kind": "reliable",
+    "width": 192,
+    "sequence_v2": true,
+    "structure_gate": true,
+    "anchored_head": true
+  },
+  "best_validation_pcc": 0.5224717624098996,
+  "best_step": 3000,
+  "last_step": 3000,
+  "n_test_evaluated": 0,
+  "parameters": 1435334
+}

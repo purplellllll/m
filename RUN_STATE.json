@@ -1,0 +1,10 @@
+{
+  "status": "stopped_by_user",
+  "date": "2026-10-31",
+  "training_autostart": false,
+  "resume_requires_new_user_instruction": true,
+  "next_work": "Protocol and independent-gain evidence before full validation",
+  "liver_final_test_opened": false,
+  "protein219_test_opened": true,
+  "strict_native_sota_certified": false
+}

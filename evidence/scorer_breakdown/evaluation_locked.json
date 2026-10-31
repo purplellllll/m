@@ -1,0 +1,203 @@
+{
+  "unix": 1793441763.28906,
+  "models": [
+    {
+      "path": "/root/fusion_encoders_20261031/runs/context_x2_30101/best.pt",
+      "sha256": "8320e090bef03e4b7a4512e6153934fc89808a8e1b6e6d3c0aa57adf5c977917",
+      "arm": "context_x2",
+      "seed": 30101,
+      "setting": {
+        "encoder": "bilstm",
+        "gains": [
+          1.0,
+          1.0,
+          2.0
+        ]
+      },
+      "validation_loss": 0.6549663115292788,
+      "validation_pcc": 0.406518703076883,
+      "best_epoch": 4,
+      "gains": [
+        1.0,
+        1.0,
+        2.0
+      ],
+      "pretrained": false,
+      "parameters": 2736927,
+      "n_test_evaluated": 0,
+      "name": "bilstm_context_x2"
+    },
+    {
+      "path": "/root/fusion_encoders_20261031/runs/context_x2_30102/best.pt",
+      "sha256": "2535435208020ab90d9631ae05e97b135857f530323ff5f4993eda2366496aac",
+      "arm": "context_x2",
+      "seed": 30102,
+      "setting": {
+        "encoder": "bilstm",
+        "gains": [
+          1.0,
+          1.0,
+          2.0
+        ]
+      },
+      "validation_loss": 0.6508915469050407,
+      "validation_pcc": 0.4105920322906035,
+      "best_epoch": 3,
+      "gains": [
+        1.0,
+        1.0,
+        2.0
+      ],
+      "pretrained": false,
+      "parameters": 2736927,
+      "n_test_evaluated": 0,
+      "name": "bilstm_context_x2"
+    },
+    {
+      "path": "/root/fusion_encoders_20261031/runs/context_x2_30103/best.pt",
+      "sha256": "764fecdd6646d7ffff516f11f223bc88060c8937a2429a3eeaa1596a97fddc57",
+      "arm": "context_x2",
+      "seed": 30103,
+      "setting": {
+        "encoder": "bilstm",
+        "gains": [
+          1.0,
+          1.0,
+          2.0
+        ]
+      },
+      "validation_loss": 0.6576171472668648,
+      "validation_pcc": 0.40418576116400207,
+      "best_epoch": 3,
+      "gains": [
+        1.0,
+        1.0,
+        2.0
+      ],
+      "pretrained": false,
+      "parameters": 2736927,
+      "n_test_evaluated": 0,
+      "name": "bilstm_context_x2"
+    },
+    {
+      "path": "/root/graph_polish_20261031/runs/physics_gnn_polish_30101/best.pt",
+      "sha256": "aac8be4399a5530ad663f273ed2b6f3c29ae80a9ee5aa213e6f27c6f1b505464",
+      "arm": "physics_gnn_polish",
+      "seed": 30101,
+      "setting": {
+        "mode": "physics_gnn_polish"
+      },
+      "kind": "polish",
+      "validation_loss": 0.7281223248690367,
+      "validation_pcc": 0.3340005159715962,
+      "best_epoch": 3,
+      "input_gate": 0.09962329268455505,
+      "parameters": 3279224,
+      "n_test_evaluated": 0,
+      "name": "gnn_transformer_polish"
+    },
+    {
+      "path": "/root/graph_polish_20261031/runs/physics_gnn_polish_30102/best.pt",
+      "sha256": "9987e6738d9b4720ad4f401f9d58b759f6b35f0392e843a1a263c573585e7546",
+      "arm": "physics_gnn_polish",
+      "seed": 30102,
+      "setting": {
+        "mode": "physics_gnn_polish"
+      },
+      "kind": "polish",
+      "validation_loss": 0.7225512951612473,
+      "validation_pcc": 0.33960740948930346,
+      "best_epoch": 4,
+      "input_gate": 0.09993381053209305,
+      "parameters": 3279224,
+      "n_test_evaluated": 0,
+      "name": "gnn_transformer_polish"
+    },
+    {
+      "path": "/root/graph_polish_20261031/runs/physics_gnn_polish_30103/best.pt",
+      "sha256": "6039970ef70f31291d0a0f38be18b061ee1f37d1553504373ae6cade6eb1aba6",
+      "arm": "physics_gnn_polish",
+      "seed": 30103,
+      "setting": {
+        "mode": "physics_gnn_polish"
+      },
+      "kind": "polish",
+      "validation_loss": 0.7246155425906181,
+      "validation_pcc": 0.33740937678468363,
+      "best_epoch": 4,
+      "input_gate": 0.10013050585985184,
+      "parameters": 3279224,
+      "n_test_evaluated": 0,
+      "name": "gnn_transformer_polish"
+    },
+    {
+      "path": "/root/graph_polish_20261031/runs/parallel_30101/best.pt",
+      "sha256": "364de26f6dfe65de02d26e747269001b2879335076c1d69d42da0fb94c614975",
+      "arm": "parallel",
+      "seed": 30101,
+      "setting": {
+        "mode": "parallel"
+      },
+      "kind": "polish",
+      "validation_loss": 0.7272389102727175,
+      "validation_pcc": 0.3348677087913915,
+      "best_epoch": 3,
+      "input_gate": 0.09781870245933533,
+      "parameters": 3279224,
+      "n_test_evaluated": 0,
+      "name": "parallel_transformer"
+    },
+    {
+      "path": "/root/graph_polish_20261031/runs/parallel_30102/best.pt",
+      "sha256": "88193e5aefdb8727d07ed9cfa1a343ab17805c5aa302b3a3111e81226e2ad593",
+      "arm": "parallel",
+      "seed": 30102,
+      "setting": {
+        "mode": "parallel"
+      },
+      "kind": "polish",
+      "validation_loss": 0.7217497117817402,
+      "validation_pcc": 0.3403999040154546,
+      "best_epoch": 4,
+      "input_gate": 0.09730546176433563,
+      "parameters": 3279224,
+      "n_test_evaluated": 0,
+      "name": "parallel_transformer"
+    },
+    {
+      "path": "/root/graph_polish_20261031/runs/parallel_30103/best.pt",
+      "sha256": "7fc7045ef1cf9cd72c62fb3bc1e53b579d1fcabaac5140ab853f1a995e248c1f",
+      "arm": "parallel",
+      "seed": 30103,
+      "setting": {
+        "mode": "parallel"
+      },
+      "kind": "polish",
+      "validation_loss": 0.7243831519037485,
+      "validation_pcc": 0.33763539745754495,
+      "best_epoch": 4,
+      "input_gate": 0.09758982807397842,
+      "parameters": 3279224,
+      "n_test_evaluated": 0,
+      "name": "parallel_transformer"
+    }
+  ],
+  "candidates": [
+    "bilstm_context_x2",
+    "gnn_transformer_polish",
+    "parallel_transformer"
+  ],
+  "source_hashes": {
+    "/root/fusion_encoders_20261031/physics_scorer/fusion_encoder_model.py": "93c34518e5f40d26d1d91867fdffeb30bfdfa37c3581c5fefa9ce861d8c43380",
+    "/root/fusion_encoders_20261031/physics_scorer/profile_model.py": "9086793832af079643fd6633c02e314ce1fabf9d21e12466da43bb939a0e77ec",
+    "/root/fusion_encoders_20261031/physics_scorer/model.py": "29cc83629021c0fe0d3438830419ca1df8b3e863a3269d33b9a8e81068f43a8e",
+    "/root/graph_polish_20261031/physics_scorer/fusion_encoder_model.py": "93c34518e5f40d26d1d91867fdffeb30bfdfa37c3581c5fefa9ce861d8c43380",
+    "/root/graph_polish_20261031/physics_scorer/profile_model.py": "9086793832af079643fd6633c02e314ce1fabf9d21e12466da43bb939a0e77ec",
+    "/root/graph_polish_20261031/physics_scorer/model.py": "29cc83629021c0fe0d3438830419ca1df8b3e863a3269d33b9a8e81068f43a8e"
+  },
+  "panel": "historical previously inspected120, NOT a fresh confirmatory test",
+  "no_new_training": true,
+  "ensemble": "unit-mass per seed before arithmetic mean",
+  "n_train": 400,
+  "n_validation": 80
+}

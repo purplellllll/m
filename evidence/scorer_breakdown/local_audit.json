@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "position_values": 4800,
+  "max_error": 5.551115123125783e-16,
+  "native_scalar_rows": 11,
+  "n_human_ribodecode_records": 3942,
+  "n_human_te_genes": 50,
+  "inputs": {
+    "deliverables\\public_riboseq_validation_20261028\\predictions.csv": "1cfff93d1774a2b25347f6a24d1ea835cf26831f800bf7118e203bdaf2ac6a8f",
+    "deliverables\\public_riboseq_validation_20261028\\seq2ribo_calibration\\predictions.csv": "c91019b918017c70dc3fde2c25df166f041624e6e238c4863fcbe1d2acdf06db",
+    "runs\\scorer_benchmark_breakdown_20261031\\common_panel_predictions.npz": "00c733ab3d5fc984b6314f8c8766b2afbb679cfed4408de20847ba438f136bdf"
+  }
+}

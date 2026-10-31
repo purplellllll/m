@@ -1,0 +1,962 @@
+{
+  "schema_version": 1,
+  "created_unix": 1793451053.130337,
+  "state": "stopped_by_user",
+  "models": [
+    {
+      "path": "profile_v2/baseline_30101/best.pt",
+      "sha256": "021ff6f796c883c6153ce56ed512f7a6acd10bba508246753ebb8c9a292361f0",
+      "bytes": 2745893,
+      "spec": {
+        "kind": "GraphPolishModel",
+        "config": {
+          "mode": "physics_gnn_polish",
+          "width": 192
+        }
+      },
+      "source_checkpoint_sha256": "18444d7f88cd3b35fadbb50f94534a922bd0bb725eee4809e2dfa70fd11cae2c",
+      "source_path": "/root/riboseq_graph_v2_20261031/runs/baseline_30101/best.pt",
+      "experiment_complete": true,
+      "snapshot_role": "best",
+      "seed": 30101,
+      "step": 3000,
+      "validation": {
+        "pcc": 0.36173645415312944,
+        "interior_pcc": 0.3214985544036397,
+        "physics_pcc": 0.12480802158223804,
+        "gnn_pcc": 0.3232340082984453,
+        "context_pcc": 0.3565959836341681,
+        "native_loss": 0.6827583909034729,
+        "n_transcripts": 696,
+        "n_defined": 696
+      },
+      "best_validation_pcc": 0.36173645415312944,
+      "target_mean": null,
+      "target_scale": null,
+      "test_evaluated": false,
+      "test_evaluation_scope": "not evaluated on the final held-out set",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "profile_v2/baseline_30102/best.pt",
+      "sha256": "17792ccee0c920e90fd2270069eae45984cbcde90f930023386010f07bcc4df7",
+      "bytes": 2745893,
+      "spec": {
+        "kind": "GraphPolishModel",
+        "config": {
+          "mode": "physics_gnn_polish",
+          "width": 192
+        }
+      },
+      "source_checkpoint_sha256": "28e333a9ec201f6fc0f6ac939abaa0ee9b819660a77321f42e78d951aeffc458",
+      "source_path": "/root/riboseq_graph_v2_20261031/runs/baseline_30102/best.pt",
+      "experiment_complete": true,
+      "snapshot_role": "best",
+      "seed": 30102,
+      "step": 2900,
+      "validation": {
+        "pcc": 0.36168296642578174,
+        "interior_pcc": 0.3217941843712051,
+        "physics_pcc": 0.12479816016688837,
+        "gnn_pcc": 0.3245380720385786,
+        "context_pcc": 0.3566053254428702,
+        "native_loss": 0.6828271703387814,
+        "n_transcripts": 696,
+        "n_defined": 696
+      },
+      "best_validation_pcc": 0.36168296642578174,
+      "target_mean": null,
+      "target_scale": null,
+      "test_evaluated": false,
+      "test_evaluation_scope": "not evaluated on the final held-out set",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "profile_v2/baseline_30103/best.pt",
+      "sha256": "2c431182fad81fc9ecaa324af4672dcc0e4a245c54b4302d5ad3b3456ea02e94",
+      "bytes": 2745893,
+      "spec": {
+        "kind": "GraphPolishModel",
+        "config": {
+          "mode": "physics_gnn_polish",
+          "width": 192
+        }
+      },
+      "source_checkpoint_sha256": "81b7549120a45e06e71c3a3325cf095745357f210f6a97f13e4f4d8238177308",
+      "source_path": "/root/riboseq_graph_v2_20261031/runs/baseline_30103/best.pt",
+      "experiment_complete": true,
+      "snapshot_role": "best",
+      "seed": 30103,
+      "step": 3000,
+      "validation": {
+        "pcc": 0.36225825952323654,
+        "interior_pcc": 0.32263202397251867,
+        "physics_pcc": 0.12452045042687687,
+        "gnn_pcc": 0.3245950375745793,
+        "context_pcc": 0.35676252857228513,
+        "native_loss": 0.6822491701820801,
+        "n_transcripts": 696,
+        "n_defined": 696
+      },
+      "best_validation_pcc": 0.36225825952323654,
+      "target_mean": null,
+      "target_scale": null,
+      "test_evaluated": false,
+      "test_evaluation_scope": "not evaluated on the final held-out set",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "profile_v2/context_anchor_30101/best.pt",
+      "sha256": "b677cabb61eb7bac49abfb2aafc8e8df3d10f631260af47ff080812c8d0cd650",
+      "bytes": 5761155,
+      "spec": {
+        "kind": "ReliableGraphContext",
+        "config": {
+          "width": 192,
+          "sequence_v2": true,
+          "structure_gate": true,
+          "anchored_head": true
+        }
+      },
+      "source_checkpoint_sha256": "8907eb285a6ac151f3ab9b50a81e68a588c997c6505c327d2959ebb9b173cf5d",
+      "source_path": "/root/riboseq_graph_v2_20261031/runs/context_anchor_30101/best.pt",
+      "experiment_complete": true,
+      "snapshot_role": "best",
+      "seed": 30101,
+      "step": 3000,
+      "validation": {
+        "pcc": 0.5224717624098996,
+        "interior_pcc": 0.4962426747068408,
+        "physics_pcc": 0.12491711648804917,
+        "gnn_pcc": 0.5060474470315386,
+        "context_pcc": 0.49528029508297,
+        "native_loss": 0.5201652247844071,
+        "n_transcripts": 696,
+        "n_defined": 696,
+        "structure_gate_mean": 0.08096854442855765
+      },
+      "best_validation_pcc": 0.5224717624098996,
+      "target_mean": null,
+      "target_scale": null,
+      "test_evaluated": false,
+      "test_evaluation_scope": "not evaluated on the final held-out set",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "profile_v2/context_anchor_30102/best.pt",
+      "sha256": "d5737e50173988113a14c2844cc6d25a1ee98e19ad947fc20b90a86e0fc3b4bf",
+      "bytes": 5761155,
+      "spec": {
+        "kind": "ReliableGraphContext",
+        "config": {
+          "width": 192,
+          "sequence_v2": true,
+          "structure_gate": true,
+          "anchored_head": true
+        }
+      },
+      "source_checkpoint_sha256": "91bc746ce9eb9a47324f7df365bbf8ce11abd6b84104e3efef7aab408a1a43c2",
+      "source_path": "/root/riboseq_graph_v2_20261031/runs/context_anchor_30102/best.pt",
+      "experiment_complete": true,
+      "snapshot_role": "best",
+      "seed": 30102,
+      "step": 3000,
+      "validation": {
+        "pcc": 0.5238851496174732,
+        "interior_pcc": 0.49770463973679546,
+        "physics_pcc": 0.124840068116887,
+        "gnn_pcc": 0.5053035171537554,
+        "context_pcc": 0.49816078823206067,
+        "native_loss": 0.5187529718567585,
+        "n_transcripts": 696,
+        "n_defined": 696,
+        "structure_gate_mean": 0.0825168402159086
+      },
+      "best_validation_pcc": 0.5238851496174732,
+      "target_mean": null,
+      "target_scale": null,
+      "test_evaluated": false,
+      "test_evaluation_scope": "not evaluated on the final held-out set",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "profile_v2/gated_graph_30101/best.pt",
+      "sha256": "6b9186844410d2a15bf70c6d3ed881e47c1a15cec8724f96f08cb16ef7ffef45",
+      "bytes": 5761155,
+      "spec": {
+        "kind": "ReliableGraphContext",
+        "config": {
+          "width": 192,
+          "sequence_v2": true,
+          "structure_gate": true,
+          "anchored_head": false
+        }
+      },
+      "source_checkpoint_sha256": "edd1a1825f241940207dc11a1423dbb45ac6d2faee033d03ef41e4d73405cc50",
+      "source_path": "/root/riboseq_graph_v2_20261031/runs/gated_graph_30101/best.pt",
+      "experiment_complete": true,
+      "snapshot_role": "best",
+      "seed": 30101,
+      "step": 3000,
+      "validation": {
+        "pcc": 0.5269801542158815,
+        "interior_pcc": 0.501310926405124,
+        "physics_pcc": 0.1251301968412284,
+        "gnn_pcc": 0.5019897950260105,
+        "context_pcc": 0.5224637563383032,
+        "native_loss": 0.5173015519548422,
+        "n_transcripts": 696,
+        "n_defined": 696,
+        "structure_gate_mean": 0.08162486864750237
+      },
+      "best_validation_pcc": 0.5269801542158815,
+      "target_mean": null,
+      "target_scale": null,
+      "test_evaluated": false,
+      "test_evaluation_scope": "not evaluated on the final held-out set",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "profile_v2/gated_graph_30102/best.pt",
+      "sha256": "cb32f2fc9b9383e88ebbc5a66636a886e35e789add4e704d38405d0be91c70fd",
+      "bytes": 5761155,
+      "spec": {
+        "kind": "ReliableGraphContext",
+        "config": {
+          "width": 192,
+          "sequence_v2": true,
+          "structure_gate": true,
+          "anchored_head": false
+        }
+      },
+      "source_checkpoint_sha256": "06a6307575b5de3eea195f3a5f6a18dbefad0fd4dff18e06015eed9f8392c8fb",
+      "source_path": "/root/riboseq_graph_v2_20261031/runs/gated_graph_30102/best.pt",
+      "experiment_complete": true,
+      "snapshot_role": "best",
+      "seed": 30102,
+      "step": 3000,
+      "validation": {
+        "pcc": 0.5285732216746267,
+        "interior_pcc": 0.5027963857459261,
+        "physics_pcc": 0.12493945510225234,
+        "gnn_pcc": 0.5076369872741187,
+        "context_pcc": 0.5224002125769323,
+        "native_loss": 0.5148662169860012,
+        "n_transcripts": 696,
+        "n_defined": 696,
+        "structure_gate_mean": 0.08066936807373096
+      },
+      "best_validation_pcc": 0.5285732216746267,
+      "target_mean": null,
+      "target_scale": null,
+      "test_evaluated": false,
+      "test_evaluation_scope": "not evaluated on the final held-out set",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "profile_v2/sequence_graph_30101/best.pt",
+      "sha256": "99a91129b7a1dba54850ce53d3e0a34b40b8e180f7b1605335e1e4c5a3d593c7",
+      "bytes": 5761155,
+      "spec": {
+        "kind": "ReliableGraphContext",
+        "config": {
+          "width": 192,
+          "sequence_v2": true,
+          "structure_gate": false,
+          "anchored_head": false
+        }
+      },
+      "source_checkpoint_sha256": "6fb179168914b9b158e8667f03481255da68cd64cacae720ab95bdf69d8c4d73",
+      "source_path": "/root/riboseq_graph_v2_20261031/runs/sequence_graph_30101/best.pt",
+      "experiment_complete": true,
+      "snapshot_role": "best",
+      "seed": 30101,
+      "step": 3000,
+      "validation": {
+        "pcc": 0.5172531960841388,
+        "interior_pcc": 0.4904357830485307,
+        "physics_pcc": 0.12509622547576726,
+        "gnn_pcc": 0.4896492995112113,
+        "context_pcc": 0.5132221671896057,
+        "native_loss": 0.5262708281134737,
+        "n_transcripts": 696,
+        "n_defined": 696,
+        "structure_gate_mean": 0.9999999951619432
+      },
+      "best_validation_pcc": 0.5172531960841388,
+      "target_mean": null,
+      "target_scale": null,
+      "test_evaluated": false,
+      "test_evaluation_scope": "not evaluated on the final held-out set",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "profile_v2/sequence_graph_30102/best.pt",
+      "sha256": "554c5aeac51ab4c5feded9fdd2da116bbff23087d6ab169266253bce8c09db6d",
+      "bytes": 5761155,
+      "spec": {
+        "kind": "ReliableGraphContext",
+        "config": {
+          "width": 192,
+          "sequence_v2": true,
+          "structure_gate": false,
+          "anchored_head": false
+        }
+      },
+      "source_checkpoint_sha256": "6126c6ef9594b2e73962f5a2c6e0d0b8ea94cd82a471d19bf0c58cbc10ef82fa",
+      "source_path": "/root/riboseq_graph_v2_20261031/runs/sequence_graph_30102/best.pt",
+      "experiment_complete": true,
+      "snapshot_role": "best",
+      "seed": 30102,
+      "step": 3000,
+      "validation": {
+        "pcc": 0.5173754797229647,
+        "interior_pcc": 0.49044756041392235,
+        "physics_pcc": 0.12491484808883868,
+        "gnn_pcc": 0.4924569109063816,
+        "context_pcc": 0.5117585827946403,
+        "native_loss": 0.5260197475723837,
+        "n_transcripts": 696,
+        "n_defined": 696,
+        "structure_gate_mean": 0.9999999951619432
+      },
+      "best_validation_pcc": 0.5173754797229647,
+      "target_mean": null,
+      "target_scale": null,
+      "test_evaluated": false,
+      "test_evaluation_scope": "not evaluated on the final held-out set",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "profile_v2/sequence_graph_30103/best.pt",
+      "sha256": "fd11a18f1605617ae3c8af19e4559582e55f0369ce308b881fe7679c04d1a183",
+      "bytes": 5761155,
+      "spec": {
+        "kind": "ReliableGraphContext",
+        "config": {
+          "width": 192,
+          "sequence_v2": true,
+          "structure_gate": false,
+          "anchored_head": false
+        }
+      },
+      "source_checkpoint_sha256": "1053caa6bac081b9561be11b0b3b1eed5b8bed022dcf9b765aff002b2e3a26df",
+      "source_path": "/root/riboseq_graph_v2_20261031/runs/sequence_graph_30103/best.pt",
+      "experiment_complete": false,
+      "snapshot_role": "best",
+      "seed": 30103,
+      "step": 1200,
+      "validation": {
+        "pcc": 0.4795772198371192,
+        "interior_pcc": 0.44946994964122766,
+        "physics_pcc": 0.12233375118892462,
+        "gnn_pcc": 0.45143720926158853,
+        "context_pcc": 0.46980983285307365,
+        "native_loss": 0.565138883546166,
+        "n_transcripts": 696,
+        "n_defined": 696,
+        "structure_gate_mean": 0.9999999951619432
+      },
+      "best_validation_pcc": null,
+      "target_mean": null,
+      "target_scale": null,
+      "test_evaluated": false,
+      "test_evaluation_scope": "not evaluated on the final held-out set",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "profile_v2/v2_control_30101/best.pt",
+      "sha256": "8fa44d75a872cdb604a6336c342aeb22b5d9d09371c2507ff2aa13ec4bb3b3e1",
+      "bytes": 5761155,
+      "spec": {
+        "kind": "ReliableGraphContext",
+        "config": {
+          "width": 192,
+          "sequence_v2": false,
+          "structure_gate": false,
+          "anchored_head": false
+        }
+      },
+      "source_checkpoint_sha256": "6e90fedacdff956f0cf5603ccf98940c177d0b405b29dfd0d19a8dd1a90ecb04",
+      "source_path": "/root/riboseq_graph_v2_20261031/runs/v2_control_30101/best.pt",
+      "experiment_complete": true,
+      "snapshot_role": "best",
+      "seed": 30101,
+      "step": 3000,
+      "validation": {
+        "pcc": 0.40101368886127947,
+        "interior_pcc": 0.36551484974682963,
+        "physics_pcc": 0.12511597042520606,
+        "gnn_pcc": 0.3688548214203863,
+        "context_pcc": 0.39620873018376335,
+        "native_loss": 0.643585562449077,
+        "n_transcripts": 696,
+        "n_defined": 696,
+        "structure_gate_mean": 0.9999999951619432
+      },
+      "best_validation_pcc": 0.40101368886127947,
+      "target_mean": null,
+      "target_scale": null,
+      "test_evaluated": false,
+      "test_evaluation_scope": "not evaluated on the final held-out set",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "profile_v2/v2_control_30102/best.pt",
+      "sha256": "7f13d8ec93e3462c632c91496023680c536634f0bbbdc6b171dd3ce4f81e171f",
+      "bytes": 5761155,
+      "spec": {
+        "kind": "ReliableGraphContext",
+        "config": {
+          "width": 192,
+          "sequence_v2": false,
+          "structure_gate": false,
+          "anchored_head": false
+        }
+      },
+      "source_checkpoint_sha256": "e32ec909d2591d553d436a4cdb7efa92fbfbdac2d68a826854d7f38099e60111",
+      "source_path": "/root/riboseq_graph_v2_20261031/runs/v2_control_30102/best.pt",
+      "experiment_complete": true,
+      "snapshot_role": "best",
+      "seed": 30102,
+      "step": 2900,
+      "validation": {
+        "pcc": 0.40315040578976946,
+        "interior_pcc": 0.36783929402219645,
+        "physics_pcc": 0.12482225869293394,
+        "gnn_pcc": 0.37113491274550764,
+        "context_pcc": 0.3985537702648007,
+        "native_loss": 0.6415183724000536,
+        "n_transcripts": 696,
+        "n_defined": 696,
+        "structure_gate_mean": 0.9999999951619432
+      },
+      "best_validation_pcc": 0.40315040578976946,
+      "target_mean": null,
+      "target_scale": null,
+      "test_evaluated": false,
+      "test_evaluation_scope": "not evaluated on the final held-out set",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "profile_v2/v2_control_30103/best.pt",
+      "sha256": "18a2ded7ca2c3ae523206d55fbec4adbc8d19783e7ce2e805dcefeb6d0c311f0",
+      "bytes": 5761155,
+      "spec": {
+        "kind": "ReliableGraphContext",
+        "config": {
+          "width": 192,
+          "sequence_v2": false,
+          "structure_gate": false,
+          "anchored_head": false
+        }
+      },
+      "source_checkpoint_sha256": "d8ddf084c521d660f82a15ea21bad29e81aa71ce39022af134af574ea58cc8f7",
+      "source_path": "/root/riboseq_graph_v2_20261031/runs/v2_control_30103/best.pt",
+      "experiment_complete": true,
+      "snapshot_role": "best",
+      "seed": 30103,
+      "step": 3000,
+      "validation": {
+        "pcc": 0.4022564702103608,
+        "interior_pcc": 0.36716481170929743,
+        "physics_pcc": 0.12470707309611155,
+        "gnn_pcc": 0.3691587362090608,
+        "context_pcc": 0.39664438069051233,
+        "native_loss": 0.6424381890516172,
+        "n_transcripts": 696,
+        "n_defined": 696,
+        "structure_gate_mean": 0.9999999951619432
+      },
+      "best_validation_pcc": 0.4022564702103608,
+      "target_mean": null,
+      "target_scale": null,
+      "test_evaluated": false,
+      "test_evaluation_scope": "not evaluated on the final held-out set",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "scalar_protein/protein_finetune_30101/best.pt",
+      "sha256": "88d86dd50db595210ee9920bad84de6024d6152b4adf9875a5ad3064c91ddc3f",
+      "bytes": 15833367,
+      "spec": {
+        "kind": "TaskScalarModel",
+        "backbone": {
+          "kind": "GraphPolishModel",
+          "config": {
+            "mode": "physics_gnn_polish"
+          }
+        },
+        "task": "protein",
+        "n_outputs": 1,
+        "use_utr": false
+      },
+      "source_checkpoint_sha256": "95af664b11a6aeb5f11ce4fefcedabf356644418f2321db9457b2eea0e3e8cec",
+      "source_path": "/root/scalar_downstream_20261031/runs/protein_finetune_30101/best.pt",
+      "experiment_complete": true,
+      "snapshot_role": "best",
+      "seed": 30101,
+      "step": 1800,
+      "validation": {},
+      "best_validation_pcc": 0.8240630931627524,
+      "target_mean": [
+        [
+          10.130057334899902
+        ]
+      ],
+      "target_scale": [
+        [
+          0.7122930288314819
+        ]
+      ],
+      "test_evaluated": true,
+      "test_evaluation_scope": "locked mRFP219/clean217",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "scalar_protein/protein_finetune_30102/best.pt",
+      "sha256": "e4d60ab45431cf399e74cf07b781aed4fa3d8fdf5121d318e16e9d27dc1fb411",
+      "bytes": 15833367,
+      "spec": {
+        "kind": "TaskScalarModel",
+        "backbone": {
+          "kind": "GraphPolishModel",
+          "config": {
+            "mode": "physics_gnn_polish"
+          }
+        },
+        "task": "protein",
+        "n_outputs": 1,
+        "use_utr": false
+      },
+      "source_checkpoint_sha256": "86f0cd5209a8f775b95789883c480682e7548a89b65bc2445214bf8c6ae57726",
+      "source_path": "/root/scalar_downstream_20261031/runs/protein_finetune_30102/best.pt",
+      "experiment_complete": true,
+      "snapshot_role": "best",
+      "seed": 30102,
+      "step": 1400,
+      "validation": {},
+      "best_validation_pcc": 0.8551189936240745,
+      "target_mean": [
+        [
+          10.130057334899902
+        ]
+      ],
+      "target_scale": [
+        [
+          0.7122930288314819
+        ]
+      ],
+      "test_evaluated": true,
+      "test_evaluation_scope": "locked mRFP219/clean217",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "scalar_protein/protein_finetune_30103/best.pt",
+      "sha256": "6b949e79655f4588d2411006089fa6426a50d49afdee23c51c8683bd477f2ff4",
+      "bytes": 15833367,
+      "spec": {
+        "kind": "TaskScalarModel",
+        "backbone": {
+          "kind": "GraphPolishModel",
+          "config": {
+            "mode": "physics_gnn_polish"
+          }
+        },
+        "task": "protein",
+        "n_outputs": 1,
+        "use_utr": false
+      },
+      "source_checkpoint_sha256": "22998573f486f03707f162ce1f63c3e7fade0b1701ba27f20adeafb11e88a7e9",
+      "source_path": "/root/scalar_downstream_20261031/runs/protein_finetune_30103/best.pt",
+      "experiment_complete": true,
+      "snapshot_role": "best",
+      "seed": 30103,
+      "step": 2000,
+      "validation": {},
+      "best_validation_pcc": 0.8439833406962995,
+      "target_mean": [
+        [
+          10.130057334899902
+        ]
+      ],
+      "target_scale": [
+        [
+          0.7122930288314819
+        ]
+      ],
+      "test_evaluated": true,
+      "test_evaluation_scope": "locked mRFP219/clean217",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "scalar_protein/protein_frozen_probe_30101/best.pt",
+      "sha256": "330e8133b68409439eef70389b89e079cf03256ee8d2d4e2cf47c3c6fa84399f",
+      "bytes": 15833367,
+      "spec": {
+        "kind": "TaskScalarModel",
+        "backbone": {
+          "kind": "GraphPolishModel",
+          "config": {
+            "mode": "physics_gnn_polish"
+          }
+        },
+        "task": "protein",
+        "n_outputs": 1,
+        "use_utr": false
+      },
+      "source_checkpoint_sha256": "709adb9c23db1bc459c88b48e40385327b05413a8762120ec1902d57e425890a",
+      "source_path": "/root/scalar_downstream_20261031/runs/protein_frozen_probe_30101/best.pt",
+      "experiment_complete": true,
+      "snapshot_role": "best",
+      "seed": 30101,
+      "step": 2000,
+      "validation": {},
+      "best_validation_pcc": 0.6783553128206188,
+      "target_mean": [
+        [
+          10.130057334899902
+        ]
+      ],
+      "target_scale": [
+        [
+          0.7122930288314819
+        ]
+      ],
+      "test_evaluated": false,
+      "test_evaluation_scope": "not evaluated on the final held-out set",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "scalar_protein/protein_frozen_probe_30102/best.pt",
+      "sha256": "579ce2dfd94602d74316f1f15edb9c2086e0816accabc0f379564cb0de3bf857",
+      "bytes": 15833367,
+      "spec": {
+        "kind": "TaskScalarModel",
+        "backbone": {
+          "kind": "GraphPolishModel",
+          "config": {
+            "mode": "physics_gnn_polish"
+          }
+        },
+        "task": "protein",
+        "n_outputs": 1,
+        "use_utr": false
+      },
+      "source_checkpoint_sha256": "d68557c163b21a389fa624c209538775c11ae144f64c007a56f479f4e36aa5bb",
+      "source_path": "/root/scalar_downstream_20261031/runs/protein_frozen_probe_30102/best.pt",
+      "experiment_complete": true,
+      "snapshot_role": "best",
+      "seed": 30102,
+      "step": 1900,
+      "validation": {},
+      "best_validation_pcc": 0.6686525937057788,
+      "target_mean": [
+        [
+          10.130057334899902
+        ]
+      ],
+      "target_scale": [
+        [
+          0.7122930288314819
+        ]
+      ],
+      "test_evaluated": false,
+      "test_evaluation_scope": "not evaluated on the final held-out set",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "scalar_protein/protein_frozen_probe_30103/best.pt",
+      "sha256": "f630cdf75400bf6f3f354d660f1edd2f18264fc37fa0f11a5dcef5f2bd62a9af",
+      "bytes": 15833367,
+      "spec": {
+        "kind": "TaskScalarModel",
+        "backbone": {
+          "kind": "GraphPolishModel",
+          "config": {
+            "mode": "physics_gnn_polish"
+          }
+        },
+        "task": "protein",
+        "n_outputs": 1,
+        "use_utr": false
+      },
+      "source_checkpoint_sha256": "fd8798e98dc1363ffc7c13f9773a5150cdabfed1e6721f0bf27794dc2bf0ba08",
+      "source_path": "/root/scalar_downstream_20261031/runs/protein_frozen_probe_30103/best.pt",
+      "experiment_complete": true,
+      "snapshot_role": "best",
+      "seed": 30103,
+      "step": 1900,
+      "validation": {},
+      "best_validation_pcc": 0.6835444958332607,
+      "target_mean": [
+        [
+          10.130057334899902
+        ]
+      ],
+      "target_scale": [
+        [
+          0.7122930288314819
+        ]
+      ],
+      "test_evaluated": false,
+      "test_evaluation_scope": "not evaluated on the final held-out set",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "legacy_polish/physics_gnn_polish_30101/best.pt",
+      "sha256": "36c0654ef83a64eb3f6aa41543b1ca9cb7b777c82c75c944c646891a380b9dab",
+      "bytes": 13131045,
+      "spec": {
+        "kind": "GraphPolishModel",
+        "config": {
+          "mode": "physics_gnn_polish"
+        }
+      },
+      "source_checkpoint_sha256": "aac8be4399a5530ad663f273ed2b6f3c29ae80a9ee5aa213e6f27c6f1b505464",
+      "source_path": "/root/graph_polish_20261031/runs/physics_gnn_polish_30101/best.pt",
+      "experiment_complete": true,
+      "snapshot_role": "best",
+      "seed": 30101,
+      "step": null,
+      "validation": {},
+      "best_validation_pcc": 0.3340005159715962,
+      "target_mean": null,
+      "target_scale": null,
+      "test_evaluated": true,
+      "test_evaluation_scope": "historical repeatedly-inspected mouse profile panel",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "legacy_bilstm/context_x2_30101/best.pt",
+      "sha256": "9d4d37edd458e33bd804200ba34998b7c4cd77f3c406b9e8cf889b670f73d646",
+      "bytes": 10958823,
+      "spec": {
+        "kind": "FusionEncoderModel",
+        "config": {
+          "encoder": "bilstm",
+          "gains": [
+            1.0,
+            1.0,
+            2.0
+          ]
+        }
+      },
+      "source_checkpoint_sha256": "8320e090bef03e4b7a4512e6153934fc89808a8e1b6e6d3c0aa57adf5c977917",
+      "source_path": "/root/fusion_encoders_20261031/runs/context_x2_30101/best.pt",
+      "experiment_complete": true,
+      "snapshot_role": "best",
+      "seed": 30101,
+      "step": null,
+      "validation": {},
+      "best_validation_pcc": 0.406518703076883,
+      "target_mean": null,
+      "target_scale": null,
+      "test_evaluated": true,
+      "test_evaluation_scope": "historical repeatedly-inspected mouse profile panel",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "legacy_polish/physics_gnn_polish_30102/best.pt",
+      "sha256": "dc8bcf5d6578b8caa72489d706a012270ddbf2811a2ba56ccc7941337af8182d",
+      "bytes": 13131045,
+      "spec": {
+        "kind": "GraphPolishModel",
+        "config": {
+          "mode": "physics_gnn_polish"
+        }
+      },
+      "source_checkpoint_sha256": "9987e6738d9b4720ad4f401f9d58b759f6b35f0392e843a1a263c573585e7546",
+      "source_path": "/root/graph_polish_20261031/runs/physics_gnn_polish_30102/best.pt",
+      "experiment_complete": true,
+      "snapshot_role": "best",
+      "seed": 30102,
+      "step": null,
+      "validation": {},
+      "best_validation_pcc": 0.33960740948930346,
+      "target_mean": null,
+      "target_scale": null,
+      "test_evaluated": true,
+      "test_evaluation_scope": "historical repeatedly-inspected mouse profile panel",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "legacy_bilstm/context_x2_30102/best.pt",
+      "sha256": "bce10e3123526ce7c3efe871bd79eb39071180b7f1acbad2f86cee289d7b4b7e",
+      "bytes": 10958823,
+      "spec": {
+        "kind": "FusionEncoderModel",
+        "config": {
+          "encoder": "bilstm",
+          "gains": [
+            1.0,
+            1.0,
+            2.0
+          ]
+        }
+      },
+      "source_checkpoint_sha256": "2535435208020ab90d9631ae05e97b135857f530323ff5f4993eda2366496aac",
+      "source_path": "/root/fusion_encoders_20261031/runs/context_x2_30102/best.pt",
+      "experiment_complete": true,
+      "snapshot_role": "best",
+      "seed": 30102,
+      "step": null,
+      "validation": {},
+      "best_validation_pcc": 0.4105920322906035,
+      "target_mean": null,
+      "target_scale": null,
+      "test_evaluated": true,
+      "test_evaluation_scope": "historical repeatedly-inspected mouse profile panel",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "legacy_polish/physics_gnn_polish_30103/best.pt",
+      "sha256": "b5451ab9f4a8bbc43e8931beb447378e557542857b12158953bd3d379d1f40ee",
+      "bytes": 13131045,
+      "spec": {
+        "kind": "GraphPolishModel",
+        "config": {
+          "mode": "physics_gnn_polish"
+        }
+      },
+      "source_checkpoint_sha256": "6039970ef70f31291d0a0f38be18b061ee1f37d1553504373ae6cade6eb1aba6",
+      "source_path": "/root/graph_polish_20261031/runs/physics_gnn_polish_30103/best.pt",
+      "experiment_complete": true,
+      "snapshot_role": "best",
+      "seed": 30103,
+      "step": null,
+      "validation": {},
+      "best_validation_pcc": 0.33740937678468363,
+      "target_mean": null,
+      "target_scale": null,
+      "test_evaluated": true,
+      "test_evaluation_scope": "historical repeatedly-inspected mouse profile panel",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "legacy_bilstm/context_x2_30103/best.pt",
+      "sha256": "8dc60b3a5dc81beebe46d9f8d54bd81f097a1b4569b93d446063f36f7f36b70d",
+      "bytes": 10958823,
+      "spec": {
+        "kind": "FusionEncoderModel",
+        "config": {
+          "encoder": "bilstm",
+          "gains": [
+            1.0,
+            1.0,
+            2.0
+          ]
+        }
+      },
+      "source_checkpoint_sha256": "764fecdd6646d7ffff516f11f223bc88060c8937a2429a3eeaa1596a97fddc57",
+      "source_path": "/root/fusion_encoders_20261031/runs/context_x2_30103/best.pt",
+      "experiment_complete": true,
+      "snapshot_role": "best",
+      "seed": 30103,
+      "step": null,
+      "validation": {},
+      "best_validation_pcc": 0.40418576116400207,
+      "target_mean": null,
+      "target_scale": null,
+      "test_evaluated": true,
+      "test_evaluation_scope": "historical repeatedly-inspected mouse profile panel",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    },
+    {
+      "path": "profile_v2/sequence_graph_30103/latest.pt",
+      "sha256": "e15edeaeaf5ada587ee94a90975d724feeffe18c41e0c43c90f0919c21bc12e8",
+      "bytes": 5761321,
+      "spec": {
+        "kind": "ReliableGraphContext",
+        "config": {
+          "width": 192,
+          "sequence_v2": true,
+          "structure_gate": false,
+          "anchored_head": false
+        }
+      },
+      "source_checkpoint_sha256": "14b2eb1c3e876572ec18b8a383ae8e3cc7125195789cf080b9d872a9ab40ecd6",
+      "source_path": "/root/riboseq_graph_v2_20261031/runs/sequence_graph_30103/latest.pt",
+      "experiment_complete": false,
+      "snapshot_role": "latest",
+      "seed": 30103,
+      "step": 1200,
+      "validation": {
+        "pcc": 0.4795772198371192,
+        "interior_pcc": 0.44946994964122766,
+        "physics_pcc": 0.12233375118892462,
+        "gnn_pcc": 0.45143720926158853,
+        "context_pcc": 0.46980983285307365,
+        "native_loss": 0.565138883546166,
+        "n_transcripts": 696,
+        "n_defined": 696,
+        "structure_gate_mean": 0.9999999951619432
+      },
+      "best_validation_pcc": null,
+      "target_mean": null,
+      "target_scale": null,
+      "test_evaluated": false,
+      "test_evaluation_scope": "not evaluated on the final held-out set",
+      "stopped": true,
+      "final_model_selected": false,
+      "contains_optimizer": false
+    }
+  ],
+  "own_models_only": true,
+  "third_party_checkpoints_included": false,
+  "all_tensor_roundtrips_exact": true,
+  "model_specs_strict_load_passed": true,
+  "final_liver_test_opened": false,
+  "strict_native_sota_certified": false,
+  "note": "Exported tensor weights omit optimizer/RNG. Original resumable checkpoints remain on the server. Partial trial is explicitly marked incomplete."
+}

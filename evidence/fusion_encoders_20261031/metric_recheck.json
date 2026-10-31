@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "implementation": "centered dot product, independent from np.corrcoef evaluator",
+  "checked_metric_values": 64000,
+  "max_error": 1.2212453270876722e-15,
+  "predictions_sha256": "99fdd2cbb12417d9e028ae0c27981df747ccd4b8697032daa38a6c50ecdf39b1"
+}

@@ -1,40 +1,67 @@
-# DS-RiboDecode
+# RiboSeq Scorer: sTASEP + GNN + Transformer
 
-2026-10-20：新增 [B7/B8 投影交接开发配置](docs/B78_projection_handoff_v2_20261020.md)。Direct → KL 投影/重新编码 → 清零残差 → Latent；开发集比较后再冻结正式方案。旧版保留残差的 B7/B8 已停止。
+独立研究分支 `riboseq-gnn-transformer-20261031`，与本仓库VMAE生成模型分开。
 
-研究潜在空间 z 与直接密码子空间 Δ 的联合优化。当前已完成条件 Codon β-VMAE 的 50 轮训练，以及梯度回放、masked loss 平台诊断和生成先验的初步联合评估。
+**状态：按用户要求停止实验，先补机制和评测协议证据。没有证明下游任务SOTA。上传是保存与交接，不授权恢复训练。**
 
-## 当前状态（2026-10-19）
+- [完整交接文档](docs/HANDOFF_ZH.md)：已经做了什么、停止时状态、证据缺口、未来路线和资产位置。
+- [模型权重清单](models/manifest.json)：26份自有tensor-only权重及各自配置、SHA256、完成状态。
+- [独立模型Release](https://github.com/purplellllll/m/releases/tag/riboseq-scorer-snapshot-20261031)：权重附件与导出核验回执。
+- [证据缺口](evidence/scalar_tasks/停止记录与证据缺口.md)；[任务颗粒度核验](evidence/scorer_breakdown/评分器评测集拆分与超越核验.md)。
 
-- 模型：Encoder/Decoder 各 6 层，hidden 512，8 heads，FFN 2048，每个密码子 latent 256，RoPE；输出使用同义密码子硬约束。
-- 冻结数据：[dataset](dataset/README.md)，GENCODE v28 与 RiboDecode 去重 CDS，train/val/test 为 **35,710 / 3,949 / 4,342**。当前语料未纳入百万条 GEMORNA 数据，也未认证近同源隔离。
-- 完整验证集：masked CE **0.976372**，训练集频率基线 **1.144230**，相对改善 **14.67%**。
-- 新增 256 条验证 CDS 的配对评估：模型 masked CE **0.966981**，频率基线 **1.140876**，打乱 masked-input 潜变量后 CE **1.189174**。支持将模型作为候选生成先验进入下游对照试验；尚未验证 z/Δ 优化收益或表达量提升。
+## 已有证据
 
-## 代码与结果
+| 实验 | 已有结果 | 结论边界 |
+|---|---|---|
+| 新LIVER方向性序列邻接 | 验证Pearson 0.4021→0.5173 | 相同696验证样本，两个配对种子；不是最终测试 |
+| 再加结构门控 | 0.5173→0.5278 | 有初步正信号，第三种子未完成 |
+| 再加上下文锚定 | 0.5278→0.5232 | 当前没有改善 |
+| mRFP蛋白标量 | 219测试集成r=0.8510；去重217同为0.8510 | 同集seq2ribo原权重对照未完成；完整原划分尚未认证 |
+| 人类TE/RPF标量 | 数据与模型接口已整理 | 尚无本模型完整任务测试结果 |
 
-1. [架构、损失与训练说明](latent_decoder/README.md)
-2. [50 轮完成记录](docs/VGPU_west_LSCO_lr_50ep_completion_2026-10-19.md)
-3. [单条 CDS 回放与参数更新检查](docs/VGPU_single_record_replay_2026-10-19.md)
-4. [完整数据 masked loss 平台诊断](docs/VGPU_mask_plateau_diagnosis_2026-10-19.md)
-5. [生成先验联合评估](docs/VMAE_prior_joint_assessment_2026-10-19.md)
-6. [权重校验清单](deliverables/vmae_50ep_preserved_manifest_20261019.json)
-7. [上下文消融与潜在空间优化测试](docs/VMAE_context_latent_tests_2026-10-19.md)
+新v2使用6956条公开相关研究LIVER记录，5564/696/696按基因及精确CDS/蛋白去重划分；不是原RiboGL论文划分。最终696测试未打开。当前蛋白标量来自旧width424编码器，不能冒称新width192门控模型的下游成绩。
 
-研究阶段不同，配置也不同。已完成的 50 轮 run 对应 `config_lsco_lr_20ep.json` 起训及 `config_lsco_lr_50ep.json` 延长；`config.json` 是架构默认配置，不等于本次运行配置。请按对应报告复现，不覆盖已有 run。
+## 模型结构
+
+三路信息分别嵌入：sTASEP模拟统计、序列/结构邻接GNN、上下文Transformer。新模型提供有方向±1/±2/±4邻接、结构边门控和上下文主头选项。标量头使用三路屏蔽均值/最大池化与非线性读出；RPF另有真实RNA和环境输入，TE另有UTR输入选项。
+
+位置Pearson、跨转录本RPF/TE Pearson与蛋白表达相关分别报告。归一化位置预测求和不作为TE标签。门控数值不视为校准后的真实结构概率。
+
+## 代码与权重核验
+
+只做模型数值检查，不启动训练或生物数据评测：
 
 ```bash
-python -m unittest discover -s latent_decoder -t . -p "test_*.py" -v
+python -m physics_scorer.test_reliable_graph_context
+python -m physics_scorer.test_graph_polish_model
+python scripts/test_scalar_heads.py
 ```
 
-训练和诊断依赖 PyTorch、NumPy；绘图需要 matplotlib。原 GPU 实验环境为 Python 3.8 / PyTorch 2.0.0+cu118；配对 CPU 评估为 PyTorch 2.14.0+cpu。不同设备的相同 seed 不保证相同掩码。
+下载权重并按清单检查（Release附件约221MB）：
 
-权重 `.pt` 和部署归档不提交到 Git：第 37 轮 best 与第 50 轮 last 已另存于本地及服务器并校验，仓库保存代码、指标和校验清单。仓库中的历史报告按其日期保留；历史 [2026-10-16 Release](https://github.com/purplellllll/m/releases/tag/vmae-20ep-20261016) 是旧架构，不能用于恢复本次模型。
+```bash
+gh release download riboseq-scorer-snapshot-20261031 --repo purplellllll/m --pattern riboseq-scorer-weights-20261031.tar.gz
+tar -xzf riboseq-scorer-weights-20261031.tar.gz
+python scripts/verify_exported_models.py --models-root models
+```
 
-## 研究方案
+26份权重只包含本项目自有模型：13份v2最佳（其中1份未完成）及1份未完成trial的latest、6份蛋白标量、3份旧polish和3份旧BiLSTM参考。它们不是26个独立最终候选，也没有据测试成绩选出一个“最终SOTA模型”。原训练优化器/RNG留在服务器，Release导出不含这些状态。
 
-- [整体方案](docs/DS_RiboDecode_plan_2026-10-16.md)
-- [双空间数学与实验设计](docs/ds_ribodecode_math_review.md)
-- [数据审阅](docs/ds_ribodecode_data_review.md)
+`physics_scorer/checkpoint_io.py`提供`load_exported_checkpoint`，默认CPU、`weights_only=True`、严格载入，支持先验证SHA256。蛋白模型原始输出是训练标准化空间的标量，需要使用权重metadata中的`target_scale/target_mean`还原原标签尺度。
 
-下一阶段需要在相同起始序列和计算预算下比较 z-only、Δ-only 与 z+Δ，并用独立评价检查提升。重建指标及潜变量依赖均不等同于 mRNA 表达量改善。
+## 目录
+
+- `physics_scorer/`：独立模型及数值检查，不含VMAE生成器。
+- `scripts/`：可独立运行的检查入口。
+- `historical/drivers/`：原实验驱动与准备/训练/报告源码。保留原绝对路径，**不承诺新机器上一键运行**；不要直接执行setup或控制器。
+- `evidence/`：冻结记录、验证日志、数据/模型哈希及停止收据。大规模原始序列、测量矩阵和全部特征缓存未放Git。
+- `docs/HANDOFF_ZH.md`：下一轮对话入口。
+- `third_party/`：依赖来源及本项目的参考后端装配胶水；不重新分发第三方网络源码或权重。
+
+## 环境与第三方依赖
+
+模型核心使用PyTorch和NumPy；实验使用pandas/scipy/ViennaRNA/SwanLab等。完整原环境及基线隔离环境版本在交接文档中。BERT/T5编码器实验是随机初始化的小模型，需可选Transformers依赖。
+
+seq2ribo有非商业研究许可和再分发限制；外部网络/模拟源码、权重和数据应从其原始项目依许可获取，见[第三方说明](third_party/README.md)。这里不对其重新授予许可；本分支也未替用户选择新的通用软件许可证。
+
+原项目：[seq2ribo](https://github.com/Kingsford-Group/seq2ribo)、[RiboDecode](https://github.com/wangfanfff/RiboDecode)。实验背景：[seq2ribo论文](https://doi.org/10.1093/bioinformatics/btag296)、[RiboDecode论文](https://doi.org/10.1038/s41467-025-64894-x)。

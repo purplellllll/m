@@ -1,0 +1,16 @@
+{
+  "unix": 1793434448.6693432,
+  "selected_arm": "context_x2",
+  "mean_seed_validation_pcc": {
+    "bilstm_baseline": 0.40502521575571215,
+    "physics_x2": 0.40382959040405675,
+    "gnn_x2": 0.4040243551587334,
+    "context_x2": 0.40709883217716286,
+    "learned_fusion": 0.40568423451344415,
+    "bilstm_ln": 0.406296802080868,
+    "transformer": 0.3480232074593282,
+    "bert": 0.3171068193410633,
+    "t5": 0.30330581796544576
+  },
+  "test_metrics_existed": false
+}

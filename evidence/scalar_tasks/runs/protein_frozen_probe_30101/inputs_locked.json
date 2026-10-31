@@ -1,0 +1,55 @@
+{
+  "task": "protein",
+  "arm": "frozen_probe",
+  "seed": 30101,
+  "n_outputs": 1,
+  "use_utr": false,
+  "model_kind": "ours",
+  "target_index": null,
+  "target_normalization": {
+    "target_low": 7.36065603585692,
+    "target_high": 11.338710284785616,
+    "target_mean": 10.130057334899902,
+    "target_scale": 0.7122930288314819
+  },
+  "n_train": 1019,
+  "n_validation": 219,
+  "n_test_evaluated": 0,
+  "task_sha256": "fbe2b11f04097e82802ea672ed6c2d4a350bb40054f35567142756ea7a15fa5b",
+  "pretrained_checkpoint": {
+    "path": "/root/graph_polish_20261031/runs/physics_gnn_polish_30101/best.pt",
+    "sha256": "aac8be4399a5530ad663f273ed2b6f3c29ae80a9ee5aa213e6f27c6f1b505464",
+    "arm": "physics_gnn_polish",
+    "seed": 30101,
+    "setting": {
+      "mode": "physics_gnn_polish"
+    },
+    "kind": "polish",
+    "validation_loss": 0.7281223248690367,
+    "validation_pcc": 0.3340005159715962,
+    "best_epoch": 3,
+    "input_gate": 0.09962329268455505,
+    "parameters": 3279224,
+    "n_test_evaluated": 0
+  },
+  "pretrained_species": "mouse liver",
+  "target_mean": [
+    [
+      10.130057334899902
+    ]
+  ],
+  "target_scale": [
+    [
+      0.7122930288314819
+    ]
+  ],
+  "max_steps": 2000,
+  "validation_every": 100,
+  "early_stop_checks": 10,
+  "selection": "macro validation scalar Pearson",
+  "source_sha256": {
+    "train_scalar_tasks_20261031.py": "69193c008cf4af4a7b55f53e4cef49eef25380cddd5978493bd3aca6ec798c6e",
+    "scalar_downstream.py": "996509f19566349eda322e2826ea202b755dc49b6067ebf5b87157aed56d533c",
+    "seq2ribo_scalar_reference.py": "cba67ced4b6d0fb3af0a844c294bd5ada1f9ec0fc4c665e2d9a81958cb98876a"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "path": "/root/riboseq_graph_v2_20261031/runs/sequence_graph_30101/best.pt",
+  "sha256": "6fb179168914b9b158e8667f03481255da68cd64cacae720ab95bdf69d8c4d73",
+  "arm": "sequence_graph",
+  "seed": 30101,
+  "setting": {
+    "kind": "reliable",
+    "width": 192,
+    "sequence_v2": true,
+    "structure_gate": false,
+    "anchored_head": false
+  },
+  "best_validation_pcc": 0.5172531960841388,
+  "best_step": 3000,
+  "last_step": 3000,
+  "n_test_evaluated": 0,
+  "parameters": 1435334
+}

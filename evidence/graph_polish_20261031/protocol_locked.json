@@ -1,0 +1,82 @@
+{
+  "unix": 1793437041.7194393,
+  "arms": {
+    "parallel": {
+      "early_physics": false,
+      "early_graph": false
+    },
+    "physics_polish": {
+      "early_physics": true,
+      "early_graph": false
+    },
+    "gnn_polish": {
+      "early_physics": false,
+      "early_graph": true
+    },
+    "physics_gnn_polish": {
+      "early_physics": true,
+      "early_graph": true
+    },
+    "shuffled_physics": {
+      "early_physics": true,
+      "early_graph": true,
+      "shuffle_physics": true
+    },
+    "self_graph": {
+      "early_physics": true,
+      "early_graph": true,
+      "neighbors": "self"
+    },
+    "sequence_edges": {
+      "early_physics": true,
+      "early_graph": true,
+      "neighbors": "sequence"
+    },
+    "diagonal_attention": {
+      "early_physics": true,
+      "early_graph": true,
+      "global_attention": false
+    }
+  },
+  "seeds": [
+    30101,
+    30102,
+    30103
+  ],
+  "recipe": {
+    "lr": 0.0003,
+    "minimum_lr": 3e-05,
+    "warmup_epochs": 2,
+    "max_epochs": 30,
+    "patience": 7,
+    "batch_size": 8,
+    "weight_decay": 0.01,
+    "clip": 1.0,
+    "auxiliary": 0.1
+  },
+  "source_hashes": {
+    "run_graph_polish_20261031.py": "39f5ce95cf30c06000e1b95d441d84bf4788d71e6b11f30f7b371913464c3ceb",
+    "train_graph_polish_20261031.py": "1d1cc3e0823fbde2960cbc4048f6f9c5fdb8290e3a3faa4a9d52c2daf153bf2f",
+    "evaluate_graph_polish_20261031.py": "004857838eb3b0830165a15bb350504011d8efa118825cef0d340714cb21660e",
+    "preflight_graph_polish_20261031.py": "5abbecaeec2408b0711f830d00e699263a9fa2492585c8268b24b875c3de41ec",
+    "prepare_graph_polish_20261031.py": "8b58aa781baaa6dcaa32f0a9c8b69e83e7b2e675946cab860a13929868d7fc97",
+    "train_fusion_encoders_20261031.py": "2e60523c205457081e6ab4647bd8209ca1d2ae27bd45617c1c18c869b48da627",
+    "run_aligned_profile_ablation_20261030.py": "28b56a443e048ec03cc713fb0922491ede59be80ff2f1cf227bf3958353dd6a5",
+    "prepare_fusion_data_20261031.py": "2c5b8466072737b7707786bf1cc28f92d9b112c0f0b220557a78ee770f0a508f",
+    "physics_scorer/graph_polish_model.py": "5d2cb4c3336456db3be391516ecb86b4dd30572ce43a295d58a5dd8a05dcfb96",
+    "physics_scorer/test_graph_polish_model.py": "bfc07a715d6f787680cb901006905efe2b5b95e86e5b37bacd16f7ef408a007a",
+    "physics_scorer/fusion_encoder_model.py": "93c34518e5f40d26d1d91867fdffeb30bfdfa37c3581c5fefa9ce861d8c43380",
+    "physics_scorer/profile_model.py": "9086793832af079643fd6633c02e314ce1fabf9d21e12466da43bb939a0e77ec",
+    "physics_scorer/model.py": "29cc83629021c0fe0d3438830419ca1df8b3e863a3269d33b9a8e81068f43a8e",
+    "physics_scorer/diagnostic_model.py": "758062edc2ded26999bce969abd7b5fa809aa40d53c7c0c00e8d13dcc7ca7686",
+    "source/evaluator/seq2ribo/utils.py": "f5a89bf1956754e1bfedf7a750e2c81a1b25705c33b2d31470b4438a5efb059f",
+    "source/evaluator/seq2ribo/geometry.py": "3888549d0faeaf1c6930e833485814be9ba8513081566338244581f45b81efa7",
+    "source/evaluator/seq2ribo/simulation.py": "80413b446388618fe34e1466619fb470b1c95e3c44a0dee045956d416e59f3c0"
+  },
+  "data_features_manifest_sha256": "f953b62470511d5af4f2685fa2623c7e47a6f424e5e93317018fae53064076c0",
+  "selection": "mean per-seed validation PCC among four non-ablated routes before tests",
+  "primary": "fresh120 equal-transcript log1p position PCC; unit-mass prediction ensembles",
+  "reference_limit": "old recipe and smaller parameter count; reference only",
+  "initializations": "random; identical parameters across eight new arms",
+  "near_homology_clustered": false
+}

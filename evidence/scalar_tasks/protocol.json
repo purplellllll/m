@@ -1,0 +1,72 @@
+{
+  "aim": "Task-matched scalar validation of current sTASEP+GNN+Transformer; no SOTA assertion before results",
+  "backbone": "Frozen previous completed GraphPolishModel physics_gnn_polish checkpoints30101/2/3,width424; expanded v2 currently has no trained checkpoints",
+  "outputs": {
+    "RiboDecode": "One log1p(5*RPF_RPKM) scalar conditioned on actual RNA and10552-gene environment",
+    "seq2ribo_TE": "Four separately trained single-target scalars: Mean,HEK293,LCL,RPE-1; CDS-only andCDS+UTR separately",
+    "seq2ribo_protein": "One measured mRFP expression scalar"
+  },
+  "protein": {
+    "native_split_counts": [
+      1021,
+      219,
+      219
+    ],
+    "verified_seq2ribo_public_test_examples": 6,
+    "excluded_from_our_train_due_to_normalized_CDS_test_overlap": 2,
+    "our_clean_fit_n": 1019,
+    "native_test_n": 219,
+    "clean_paired_test_n": 217,
+    "full_seq2ribo_split_identity_certified": false
+  },
+  "TE": {
+    "source_n": 10348,
+    "common_split_counts": [
+      8240,
+      1063,
+      1045
+    ],
+    "split": "RiboNN folds0test/1val/2..9train; NOT seq2ribo native stratified split",
+    "single_target_matched_refit": true,
+    "shared_simulation": "Frozen previous train-only mouse physics proxy,4runs mean for both; ours additionally uses SD",
+    "input_settings": [
+      "CDS-only",
+      "CDS+UTR"
+    ],
+    "no_truncation": true,
+    "native_paper_reproduction": false
+  },
+  "RPF": {
+    "source_rows": 3245241,
+    "unique_CDS": 36484,
+    "contexts": 320,
+    "train_contexts": 200,
+    "test_contexts": 120,
+    "train_rows": 1626472,
+    "val_rows": 186375,
+    "author_gene_split_preserved": true,
+    "scope": "Canonical90..4500nt full-CDS common subset; not all paper population",
+    "first_stage": "Frozen current representations+supervised conditional scalar head; RNA/context-only ablation"
+  },
+  "training": {
+    "protein_runs": 6,
+    "te_runs": 48,
+    "rpf_runs": 6,
+    "max_optimizer_steps_total": 126000,
+    "validation_interval": 100,
+    "early_stopping": 10,
+    "test_selection": false,
+    "seeds": [
+      30101,
+      30102,
+      30103
+    ]
+  },
+  "comparison": {
+    "primary_metric": "Pearson across transcripts or mRFP variants on same measured scalar target; RPF within environment macro-average",
+    "references": "Frozen original RiboDecode; seq2ribo frozen protein checkpoints, and newly fitted seq2ribo TE heads/backbones on common split",
+    "report": "Single seeds and ensembles, MSE, bootstrap paired delta, exact cohorts; SOTA requires protocol identity and broader baselines"
+  },
+  "runtime": "Baseline CUDA Mamba2.2.6.post3 isolated installation, checked against unmodified2.2.4 reference; old environments left intact",
+  "credentials_in_files": false
+}

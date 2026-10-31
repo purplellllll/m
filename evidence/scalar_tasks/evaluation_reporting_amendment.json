@@ -1,0 +1,15 @@
+{
+  "unix": 1793448175.2425878,
+  "source": "evaluate_scalar_rpf_20261031.py",
+  "prior_source_sha256": "f3d345c51edd26054fb5deb03dea82d023cd7b457298bbf969d727472885acdb",
+  "amended_source_sha256": "f3aaed1fe7b970b16831bbd555261a87fbbde3262d5f137acee0439fdf7db4e9",
+  "reason": "Separate genes held out for our validation from truly seen training genes in unseen environments; add MSE and paired environment bootstrap",
+  "rpf_test_evaluated": false,
+  "training_unchanged": true,
+  "protein_selection_unchanged": true,
+  "additional_readonly_checks": [
+    "preflight_scalar_reference_20261031.py",
+    "audit_locked_protein_predictions_20261031.py",
+    "monitor_scalar_tasks_20261031.py"
+  ]
+}

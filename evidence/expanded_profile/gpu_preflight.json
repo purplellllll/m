@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "arms": {
+    "baseline": {
+      "parameters": 683144,
+      "loss": 1.1099332571029663
+    },
+    "v2_control": {
+      "parameters": 1435334,
+      "loss": 1.1239752769470215
+    },
+    "sequence_graph": {
+      "parameters": 1435334,
+      "loss": 1.1239713430404663
+    },
+    "gated_graph": {
+      "parameters": 1435334,
+      "loss": 1.1241897344589233
+    },
+    "context_anchor": {
+      "parameters": 1435334,
+      "loss": 1.0727827548980713
+    }
+  },
+  "max_length": 1995,
+  "long_batch_size": 1,
+  "peak_cuda_mb": 129.86865234375
+}

@@ -1,0 +1,16 @@
+{
+  "path": "/root/riboseq_graph_v2_20261031/runs/baseline_30103/best.pt",
+  "sha256": "81b7549120a45e06e71c3a3325cf095745357f210f6a97f13e4f4d8238177308",
+  "arm": "baseline",
+  "seed": 30103,
+  "setting": {
+    "kind": "old_polish",
+    "mode": "physics_gnn_polish",
+    "width": 192
+  },
+  "best_validation_pcc": 0.36225825952323654,
+  "best_step": 3000,
+  "last_step": 3000,
+  "n_test_evaluated": 0,
+  "parameters": 683144
+}

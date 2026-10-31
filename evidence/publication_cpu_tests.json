@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "tests": [
+    {
+      "module": "test_model",
+      "status": "passed",
+      "seconds": 26.780999999959022
+    },
+    {
+      "module": "test_profile_alignment",
+      "status": "passed",
+      "seconds": 0.1720000000204891
+    },
+    {
+      "module": "test_diagnostic_model",
+      "status": "passed",
+      "seconds": 0.2029999999795109
+    },
+    {
+      "module": "test_physics_routing_model",
+      "status": "passed",
+      "seconds": 0.0940000000409782
+    },
+    {
+      "module": "test_pretrain_profile_model",
+      "status": "passed",
+      "seconds": 0.0940000000409782
+    },
+    {
+      "module": "test_graph_polish_model",
+      "status": "passed",
+      "seconds": 0.5619999999180436
+    },
+    {
+      "module": "test_reliable_graph_context",
+      "status": "passed",
+      "seconds": 0.1410000000614673
+    },
+    {
+      "module": "test_scalar_heads",
+      "status": "passed"
+    }
+  ],
+  "training_started": false,
+  "biological_evaluation_started": false
+}

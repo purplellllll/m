@@ -1,0 +1,16 @@
+{
+  "status": "verified",
+  "n_models": 26,
+  "weights": {
+    "path": "/root/riboseq_github_snapshot_20261031/riboseq-scorer-weights-20261031.tar.gz",
+    "bytes": 220825516,
+    "sha256": "3c004bac13c5e6bb01b57af1ba1b59e7822c79ae4bb8a3a92f42fdfd737f3227"
+  },
+  "evidence": {
+    "path": "/root/riboseq_github_snapshot_20261031/riboseq-scorer-evidence-20261031.zip",
+    "bytes": 1071245,
+    "sha256": "8e42a3fe3f6c47e43c30ca25725df222b3aadc748fc4ee0db1dcabddf9f315f0"
+  },
+  "model_manifest_sha256": "3bf3f6bc3655d57635d34f829627ae9b43db36129ca411248f66b0e5a6461e43",
+  "third_party_checkpoints_included": false
+}

@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "te_all_labels_and_cds_exactly_matched": 10348,
+  "rpf_finite_labels": 3245241,
+  "rpf_cross_gene_split_exact_cds_collisions": {
+    "train__test": 0,
+    "train__validation": 0,
+    "validation__test": 0
+  },
+  "rpf_cohort_counts": {
+    "train": 1626472,
+    "validation": 186375,
+    "unseen_gene_seen_env": 199702,
+    "unseen_gene_unseen_env": 122664
+  },
+  "protein_excluded_train_overlapping_test": 2,
+  "protein_clean_fit_n": 1019,
+  "protein_clean_test_n": 217,
+  "native_seq2ribo_te_split_reproduced": false
+}

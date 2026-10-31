@@ -1,0 +1,72 @@
+{
+  "unix": 1793433877.4330056,
+  "arms": {
+    "bilstm_baseline": {
+      "encoder": "bilstm"
+    },
+    "physics_x2": {
+      "encoder": "bilstm",
+      "gains": [
+        2.0,
+        1.0,
+        1.0
+      ]
+    },
+    "gnn_x2": {
+      "encoder": "bilstm",
+      "gains": [
+        1.0,
+        2.0,
+        1.0
+      ]
+    },
+    "context_x2": {
+      "encoder": "bilstm",
+      "gains": [
+        1.0,
+        1.0,
+        2.0
+      ]
+    },
+    "learned_fusion": {
+      "encoder": "bilstm",
+      "learned_gains": true
+    },
+    "bilstm_ln": {
+      "encoder": "bilstm_ln"
+    },
+    "transformer": {
+      "encoder": "transformer"
+    },
+    "bert": {
+      "encoder": "bert"
+    },
+    "t5": {
+      "encoder": "t5"
+    }
+  },
+  "seeds": [
+    30101,
+    30102,
+    30103
+  ],
+  "data_features_manifest_sha256": "fd99c3a96192cfa6c58f9ef53280b4452e66c2496bcf7df1ce8bcb99b7197e79",
+  "source_hashes": {
+    "run_fusion_trial_20261031.py": "8fe92f942fa59c24ff0c94d67d3fdd38e83f08cbd333a227e16d8dc5256d6bc2",
+    "train_fusion_encoders_20261031.py": "2e60523c205457081e6ab4647bd8209ca1d2ae27bd45617c1c18c869b48da627",
+    "evaluate_fusion_encoders_20261031.py": "6492036597607c2ae2d4b9250ca17fd2869e376d117cbcc2dc613cc0b4d8fe2a",
+    "prepare_fusion_data_20261031.py": "2c5b8466072737b7707786bf1cc28f92d9b112c0f0b220557a78ee770f0a508f",
+    "run_aligned_profile_ablation_20261030.py": "28b56a443e048ec03cc713fb0922491ede59be80ff2f1cf227bf3958353dd6a5",
+    "physics_scorer/fusion_encoder_model.py": "93c34518e5f40d26d1d91867fdffeb30bfdfa37c3581c5fefa9ce861d8c43380",
+    "physics_scorer/profile_model.py": "9086793832af079643fd6633c02e314ce1fabf9d21e12466da43bb939a0e77ec",
+    "physics_scorer/diagnostic_model.py": "758062edc2ded26999bce969abd7b5fa809aa40d53c7c0c00e8d13dcc7ca7686",
+    "physics_scorer/model.py": "29cc83629021c0fe0d3438830419ca1df8b3e863a3269d33b9a8e81068f43a8e",
+    "source/evaluator/seq2ribo/geometry.py": "3888549d0faeaf1c6930e833485814be9ba8513081566338244581f45b81efa7",
+    "source/evaluator/seq2ribo/simulation.py": "80413b446388618fe34e1466619fb470b1c95e3c44a0dee045956d416e59f3c0",
+    "source/evaluator/seq2ribo/utils.py": "f5a89bf1956754e1bfedf7a750e2c81a1b25705c33b2d31470b4438a5efb059f"
+  },
+  "initializations": "random; no BERT/T5 pretrained weights",
+  "primary": "fresh120 equal-transcript log1p profile PCC; unit-mass seed ensembles",
+  "selection": "validation seed mean, before tests",
+  "bootstrap": "2000 paired genes, exploratory unadjusted intervals"
+}

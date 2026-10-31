@@ -1,7 +1,0 @@
-{
-  "method": "kl",
-  "temperature": 1.0,
-  "steps": 40,
-  "lr": 0.01,
-  "eta": 0.1
-}

@@ -1,0 +1,13 @@
+{
+  "stage": "stopped_by_user",
+  "unix": 1793449101.7082944,
+  "controller_pid": 8394,
+  "previous_status": {
+    "stage": "train",
+    "unix": 1793449014.5532775,
+    "arm": "sequence_graph",
+    "seed": 30103
+  },
+  "saved_artifacts_preserved": true,
+  "instruction": "Do not resume without user instruction"
+}

@@ -1,0 +1,29 @@
+{
+  "arm": "sequence_graph",
+  "seed": 30102,
+  "setting": {
+    "kind": "reliable",
+    "width": 192,
+    "sequence_v2": true,
+    "structure_gate": false,
+    "anchored_head": false
+  },
+  "recipe": {
+    "max_steps": 3000,
+    "validate_every": 100,
+    "lr": 0.0003,
+    "warmup_steps": 200,
+    "weight_decay": 0.01,
+    "max_batch_size": 8,
+    "max_padded_codons": 4096,
+    "max_attention_cells": 4500000,
+    "early_stop_checks": 12
+  },
+  "n_train": 5564,
+  "n_validation": 696,
+  "panel_sha256": "d198591b833f865481e861e4e57d782d09d337e017f97669a67a8d4fb53854af",
+  "source": "related GSE73553 repartition; original RiboGL split unavailable",
+  "parameters": 1435334,
+  "driver_sha256": "2e49e495eb20cffd07ca7a9b8a5f520c9a699ac2afa94b001eb08464f42f4b48",
+  "n_test_evaluated": 0
+}

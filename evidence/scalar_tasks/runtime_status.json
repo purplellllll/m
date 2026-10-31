@@ -1,0 +1,6 @@
+{
+  "stage": "installed_pending_numerical_parity",
+  "wheel_sha256": "50f0bb027a69a40afa2649b58da7ba13525a37262b7399d11b14bb8680f13d7f",
+  "source": "https://github.com/state-spaces/mamba/releases/download/v2.2.6.post3/mamba_ssm-2.2.6.post3+cu11torch2.7cxx11abiTRUE-cp310-cp310-linux_x86_64.whl",
+  "unix": 1793446005.7120123
+}

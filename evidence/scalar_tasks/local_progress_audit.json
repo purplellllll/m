@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "snapshot_archive_sha256": "1cc9c854ee7428af2a66b7a72454d116370e6689497dd5d31144579926bb9239",
+  "n_manifest_files_verified": 41,
+  "n_independent_Pearson_rechecks": 8,
+  "max_error": 9.992007221626409e-16,
+  "baseline_comparison_complete": false
+}
