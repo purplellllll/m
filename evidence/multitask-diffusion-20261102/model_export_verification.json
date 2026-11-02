@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "new_models": 2,
+  "total_models": 10,
+  "real_sequences": 3,
+  "max_target_error": 7.95246143425743e-06,
+  "strict_reload": true
+}

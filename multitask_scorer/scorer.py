@@ -21,13 +21,14 @@ def composition(s):
     return [counts[len(k)][k]/max(1,len(s)-len(k)+1) for k in KMERS]
 class Scorer:
     def __init__(self,models_root,stage='profile',arm='dynamics',device='cpu'):
-        if stage not in ['neutral','profile'] or arm not in ['sequence','dynamics']:raise ValueError('Unknown stage/arm')
+        if stage not in ['neutral','profile','diffusion'] or arm not in ['sequence','dynamics']:raise ValueError('Unknown stage/arm')
         self.root=Path(models_root);self.stage=stage;self.arm=arm;self.device=device
         torch.set_num_threads(2);torch.backends.mha.set_fastpath_enabled(False)
         source=Path(__file__).resolve().parent/'runtime'/stage
         self.dynamics=module('released_dynamics_'+stage,source/'dynamics_v2.py')
+        if stage=='diffusion':module('base_model',source/'base_model.py')
         Model=module('released_model_'+stage,source/'model.py').MultiTaskTransformer
-        if stage=='profile':
+        if stage!='neutral':
             import RNA
             if RNA.__version__!='2.7.2':raise RuntimeError('Profile stage requires ViennaRNA2.7.2')
             self.RNA=RNA
@@ -42,7 +43,7 @@ class Scorer:
         dna=dna.upper().replace('U','T');utr5=utr5.upper().replace('U','T');utr3=utr3.upper().replace('U','T')
         if host not in ['human','ecoli']:raise ValueError('host must be human or ecoli')
         params=None;geometry=None
-        if self.stage=='profile':
+        if self.stage!='neutral':
             params=json.loads((self.root/'profile'/f'{host}_parameters.json').read_text(encoding='utf8'));bracket,_=self.RNA.fold(dna[:150].replace('T','U'));paired=np.zeros(len(dna)//3,dtype=np.int64)
             for i in range(len(bracket)//3):paired[i]=sum(c!='.' for c in bracket[3*i:3*i+3])
             geometry=dict(paired=paired,abin=np.zeros_like(paired))
@@ -54,7 +55,7 @@ class Scorer:
         for region in [utr5,dna,utr3]:stats.extend(composition(region))
         stats.extend(protein.count(a)/max(1,len(protein)) for a in AA);stats.extend([np.log1p(len(dna)),np.log1p(len(utr5)),np.log1p(len(utr3)),np.log1p(len(protein))])
         stats.extend(sum(b in 'GC' for b in dna[i:i+30])/max(1,len(dna[i:i+30])) for i in [0,30,60])
-        if self.stage=='profile':
+        if self.stage!='neutral':
             for seq in [dna[:k] for k in [30,60,90,150]]+[utr5[-80:]+dna[:120],utr5[:150]]:stats.append(float(self.RNA.fold(seq.replace('T','U'))[1])/len(seq) if seq else 0.)
         utrs=[]
         for seq in [utr5,utr3]:
@@ -65,7 +66,7 @@ class Scorer:
         s=self.scale
         arrays=dict(codons=cod[None],amino=amino[None],valid=np.ones((1,n),bool),utr=uv,utr_present=present,host=np.array([host=='ecoli'],np.int64),
             physics=((event['node']-s['node_mean'])/s['node_scale']).astype(np.float32)[None],physical_global=((event['global']-s['global_mean'])/s['global_scale']).astype(np.float32)[None],
-            stats=((np.array(stats)-s['stats_mean'])/s['stats_scale']).astype(np.float32)[None],physics_present=np.ones(1,np.float32),physics_calibrated=np.array([self.stage=='profile'],np.float32))
+            stats=((np.array(stats)-s['stats_mean'])/s['stats_scale']).astype(np.float32)[None],physics_present=np.ones(1,np.float32),physics_calibrated=np.array([self.stage!='neutral'],np.float32))
         x={k:torch.from_numpy(v).to(self.device) for k,v in arrays.items()}
         with torch.inference_mode():z=np.mean([m(x).float().cpu().numpy()[0] for m in self.models],axis=0)
         return dict(predictions={t:float(z[j]*self.stats[t]['scale']+self.stats[t]['mean']) for j,t in enumerate(TASKS)},checkpoint_sha256=self.hashes,

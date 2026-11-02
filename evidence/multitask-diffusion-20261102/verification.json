@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "n": 1188,
+  "arithmetic_max_error": 2.220446049250313e-16,
+  "strict_reload": [
+    {
+      "arm": "dynamics",
+      "seed": 30101,
+      "path": "F:\\\u79d1\u7814\u5b9e\u9a8c\u590d\u73b0\\\u65b0\u5efa\u6587\u4ef6\u5939\\runs\\multitask_diffusion_20261102\\models\\dynamics_30101\\best.pt",
+      "sha256": "5031e96385a4052a8dfdc380a6fd0359bafe6e8990a765b3b17ffa8c8d49e002",
+      "reload_max_error": 2.384185791015625e-07
+    },
+    {
+      "arm": "dynamics",
+      "seed": 30102,
+      "path": "F:\\\u79d1\u7814\u5b9e\u9a8c\u590d\u73b0\\\u65b0\u5efa\u6587\u4ef6\u5939\\runs\\multitask_diffusion_20261102\\models\\dynamics_30102\\best.pt",
+      "sha256": "9cc40c413a970f8eb01ad031c062dbe357630762a7b2e34fda0a08e540b1801a",
+      "reload_max_error": 1.7881393432617188e-07
+    }
+  ],
+  "gates": [
+    {
+      "seed": 30101,
+      "best_step": 6000,
+      "effective_residual_gate": -0.0006441372097469866
+    },
+    {
+      "seed": 30102,
+      "best_step": 6000,
+      "effective_residual_gate": 0.003438696265220642
+    }
+  ]
+}

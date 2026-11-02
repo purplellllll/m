@@ -20,3 +20,5 @@ and dynamics. Both arms in the profile stage share the same folding statistics.
 All8 exports passed strict state load and real-sequence CPU inference parity.
 Training snapshots in historical/ need the documented public datasets and local
 path setup; they are not claimed to be a data-free one-command training package.
+
+Diffusion release: download the all10-model archive and use `Scorer("own_models", stage="diffusion", arm="dynamics", device="cpu")`. Fixed4-step deterministic DDIM adds inference cost; it is not a discrete-CDS generator.

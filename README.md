@@ -64,3 +64,8 @@ python scripts/predict_human_te.py --models-root models_20261102 --features your
 ## Multi-task scorer evidence — 2026-11-02
 
 [Measured endpoint report](docs/MULTITASK_SCORERS_20261102_ZH.md) · [Portable inference](multitask_scorer/README.md). Eight own model exports are release assets. Acceptance has **not** passed: mRFP expression remains below seq2ribo, no stable controlled physics gain, and no paired cellular expression/HL/solubility assay.
+
+
+## Diffusion experiment
+
+[Conditional latent diffusion results](docs/DIFFUSION_SCORERS_20261102_ZH.md). This adds a denoising branch to an already GNN-free multi-task model; no claim of direct GNN replacement or validated benefit. The diffusion prerelease archive contains all10 own models; prior releases are preserved.

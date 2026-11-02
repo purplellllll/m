@@ -1,0 +1,378 @@
+{
+  "status": "completed",
+  "metrics": [
+    {
+      "task": "expression",
+      "model": "dynamics_30101",
+      "n": 217,
+      "bootstrap_groups": 217,
+      "pearson": 0.8694304308490401,
+      "ci95": [
+        0.8273934949792612,
+        0.9021519584413455
+      ],
+      "spearman": 0.8292746515593512,
+      "mse": 0.14128033890563263
+    },
+    {
+      "task": "expression",
+      "model": "dynamics_30102",
+      "n": 217,
+      "bootstrap_groups": 217,
+      "pearson": 0.8511046289378591,
+      "ci95": [
+        0.8025163521557445,
+        0.8907253132716746
+      ],
+      "spearman": 0.8277925750550787,
+      "mse": 0.16253104326432777
+    },
+    {
+      "task": "expression",
+      "model": "dynamics_ensemble",
+      "n": 217,
+      "bootstrap_groups": 217,
+      "pearson": 0.868387013149529,
+      "ci95": [
+        0.8260899015496661,
+        0.901808436429514
+      ],
+      "spearman": 0.8367190913062473,
+      "mse": 0.14432612673214004
+    },
+    {
+      "task": "expression",
+      "model": "no_diffusion_ensemble",
+      "n": 217,
+      "bootstrap_groups": 217,
+      "pearson": 0.8675300743338646,
+      "ci95": [
+        0.8250201277817774,
+        0.9011718839308772
+      ],
+      "spearman": 0.8373062848499369,
+      "mse": 0.14560665117560756
+    },
+    {
+      "task": "expression",
+      "model": "seq2ribo_native_expression",
+      "n": 217,
+      "bootstrap_groups": 217,
+      "pearson": 0.9033417624519616,
+      "ci95": [
+        0.8718887644664554,
+        0.9271492612498332
+      ],
+      "spearman": 0.8569749197893619,
+      "mse": 0.10391256294236548
+    },
+    {
+      "task": "expression",
+      "model": "previous_own424",
+      "n": 217,
+      "bootstrap_groups": 217,
+      "pearson": 0.8510130428660576,
+      "ci95": [
+        0.8017876629183548,
+        0.8930215148102683
+      ],
+      "spearman": 0.8339334451349841,
+      "mse": 0.16787680424232387
+    },
+    {
+      "task": "half_life",
+      "model": "dynamics_30101",
+      "n": 601,
+      "bootstrap_groups": 601,
+      "pearson": 0.5564460996906455,
+      "ci95": [
+        0.491946164166895,
+        0.6135324028919699
+      ],
+      "spearman": 0.5054382231165113,
+      "mse": 0.10717397611740996
+    },
+    {
+      "task": "half_life",
+      "model": "dynamics_30102",
+      "n": 601,
+      "bootstrap_groups": 601,
+      "pearson": 0.5736222075144262,
+      "ci95": [
+        0.5127783169265592,
+        0.6286433215579648
+      ],
+      "spearman": 0.5297015494662827,
+      "mse": 0.1023449275830029
+    },
+    {
+      "task": "half_life",
+      "model": "dynamics_ensemble",
+      "n": 601,
+      "bootstrap_groups": 601,
+      "pearson": 0.5727766947644298,
+      "ci95": [
+        0.5105032483974474,
+        0.6288657828280992
+      ],
+      "spearman": 0.5238285028827924,
+      "mse": 0.10219121205380029
+    },
+    {
+      "task": "half_life",
+      "model": "no_diffusion_ensemble",
+      "n": 601,
+      "bootstrap_groups": 601,
+      "pearson": 0.5749144371767623,
+      "ci95": [
+        0.5123724539465042,
+        0.6302627667312527
+      ],
+      "spearman": 0.5256883599316754,
+      "mse": 0.10169754252379005
+    },
+    {
+      "task": "half_life",
+      "model": "previous_HL_auxiliary",
+      "n": 601,
+      "bootstrap_groups": 601,
+      "pearson": 0.5192520113152159,
+      "ci95": [
+        0.460238013132359,
+        0.5762047178827469
+      ],
+      "spearman": 0.48881924367471724,
+      "mse": null
+    },
+    {
+      "task": "half_life",
+      "model": "seq2ribo_TE_cross_task",
+      "n": 601,
+      "bootstrap_groups": 601,
+      "pearson": 0.2570748823691735,
+      "ci95": [
+        0.18014213135234003,
+        0.3305499105697984
+      ],
+      "spearman": 0.23096992277544076,
+      "mse": 2.6983593853548498
+    },
+    {
+      "task": "half_life",
+      "model": "RiboDecode_TE_cross_task",
+      "n": 601,
+      "bootstrap_groups": 601,
+      "pearson": 0.2994811098638397,
+      "ci95": [
+        0.2262102010040725,
+        0.37462202635562697
+      ],
+      "spearman": 0.36709354840492875,
+      "mse": 1.7084172276043907
+    },
+    {
+      "task": "solubility",
+      "model": "dynamics_30101",
+      "n": 370,
+      "bootstrap_groups": 369,
+      "pearson": 0.7095594047502889,
+      "ci95": [
+        0.6491793807099513,
+        0.7592520402435001
+      ],
+      "spearman": 0.7100325987020459,
+      "mse": 571.0609914743125
+    },
+    {
+      "task": "solubility",
+      "model": "dynamics_30102",
+      "n": 370,
+      "bootstrap_groups": 369,
+      "pearson": 0.6932796526793987,
+      "ci95": [
+        0.6306244297329142,
+        0.7479373937680424
+      ],
+      "spearman": 0.6911007362684368,
+      "mse": 599.1212313373018
+    },
+    {
+      "task": "solubility",
+      "model": "dynamics_ensemble",
+      "n": 370,
+      "bootstrap_groups": 369,
+      "pearson": 0.7065279182324027,
+      "ci95": [
+        0.6456398476475625,
+        0.7589163808952731
+      ],
+      "spearman": 0.7045123033990273,
+      "mse": 575.7494181675814
+    },
+    {
+      "task": "solubility",
+      "model": "no_diffusion_ensemble",
+      "n": 370,
+      "bootstrap_groups": 369,
+      "pearson": 0.7075755981457301,
+      "ci95": [
+        0.6457326805581242,
+        0.7597497262718416
+      ],
+      "spearman": 0.7073634993649942,
+      "mse": 573.8584414995363
+    },
+    {
+      "task": "solubility",
+      "model": "CDS_Ridge_auxiliary",
+      "n": 370,
+      "bootstrap_groups": 369,
+      "pearson": 0.6808118799419935,
+      "ci95": [
+        0.6263759071390907,
+        0.7291041346772771
+      ],
+      "spearman": 0.7074712844411494,
+      "mse": 618.57157627713
+    },
+    {
+      "task": "solubility",
+      "model": "AA_Ridge_auxiliary",
+      "n": 370,
+      "bootstrap_groups": 369,
+      "pearson": 0.6544470685103168,
+      "ci95": [
+        0.5973136665071164,
+        0.7053880974324543
+      ],
+      "spearman": 0.6809893254597027,
+      "mse": 659.7676736106544
+    }
+  ],
+  "paired": [
+    {
+      "task": "expression",
+      "model": "dynamics_ensemble",
+      "reference": "no_diffusion_ensemble",
+      "delta": 0.0008569388156643987,
+      "ci95": [
+        -0.0009851921499986927,
+        0.0028520057860329535
+      ]
+    },
+    {
+      "task": "expression",
+      "model": "dynamics_ensemble",
+      "reference": "seq2ribo_native_expression",
+      "delta": -0.034954749302432586,
+      "ci95": [
+        -0.07078839673369554,
+        -0.0031869287335789882
+      ]
+    },
+    {
+      "task": "expression",
+      "model": "dynamics_ensemble",
+      "reference": "previous_own424",
+      "delta": 0.01737397028347143,
+      "ci95": [
+        -0.026085809686957763,
+        0.06588701001849451
+      ]
+    },
+    {
+      "task": "half_life",
+      "model": "dynamics_ensemble",
+      "reference": "no_diffusion_ensemble",
+      "delta": -0.002137742412332444,
+      "ci95": [
+        -0.008259860358486165,
+        0.0034979579048890603
+      ]
+    },
+    {
+      "task": "half_life",
+      "model": "dynamics_ensemble",
+      "reference": "previous_HL_auxiliary",
+      "delta": 0.053524683449213906,
+      "ci95": [
+        0.012095759184264596,
+        0.09376882748206047
+      ]
+    },
+    {
+      "task": "half_life",
+      "model": "dynamics_ensemble",
+      "reference": "seq2ribo_TE_cross_task",
+      "delta": 0.31570181239525635,
+      "ci95": [
+        0.23355695580663038,
+        0.39944140890130964
+      ]
+    },
+    {
+      "task": "half_life",
+      "model": "dynamics_ensemble",
+      "reference": "RiboDecode_TE_cross_task",
+      "delta": 0.27329558490059014,
+      "ci95": [
+        0.18506978381769723,
+        0.35415655134810087
+      ]
+    },
+    {
+      "task": "solubility",
+      "model": "dynamics_ensemble",
+      "reference": "no_diffusion_ensemble",
+      "delta": -0.0010476799133274373,
+      "ci95": [
+        -0.0030066810589669006,
+        0.0009221535109370646
+      ]
+    },
+    {
+      "task": "solubility",
+      "model": "dynamics_ensemble",
+      "reference": "CDS_Ridge_auxiliary",
+      "delta": 0.025716038290409138,
+      "ci95": [
+        -0.007889459533569496,
+        0.05947363296766118
+      ]
+    },
+    {
+      "task": "solubility",
+      "model": "dynamics_ensemble",
+      "reference": "AA_Ridge_auxiliary",
+      "delta": 0.05208084972208593,
+      "ci95": [
+        0.014299831152988043,
+        0.0912454255811729
+      ]
+    }
+  ],
+  "reload_checks": [
+    {
+      "arm": "dynamics",
+      "seed": 30101,
+      "path": "F:\\科研实验复现\\新建文件夹\\runs\\multitask_diffusion_20261102\\models\\dynamics_30101\\best.pt",
+      "sha256": "5031e96385a4052a8dfdc380a6fd0359bafe6e8990a765b3b17ffa8c8d49e002",
+      "reload_max_error": 2.384185791015625e-07
+    },
+    {
+      "arm": "dynamics",
+      "seed": 30102,
+      "path": "F:\\科研实验复现\\新建文件夹\\runs\\multitask_diffusion_20261102\\models\\dynamics_30102\\best.pt",
+      "sha256": "9cc40c413a970f8eb01ad031c062dbe357630762a7b2e34fda0a08e540b1801a",
+      "reload_max_error": 1.7881393432617188e-07
+    }
+  ],
+  "acceptance": {
+    "functional_expression_and_HL_same_sample_n": 0,
+    "all_three_same_sample_n": 0,
+    "joint_pearson": null,
+    "status": "Not established: separately measured endpoint tests are not a paired functional-expression/HL/triple assay",
+    "physics_calibration": "Host-specific observedRPF train-only relative-occupancy proxy; offsets are explicit hypotheses, not identified absolute kinetics",
+    "history": "Previously opened benchmark datasets; all results exploratory"
+  }
+}

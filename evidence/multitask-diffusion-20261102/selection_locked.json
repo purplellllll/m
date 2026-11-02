@@ -1,0 +1,19 @@
+{
+  "models": [
+    {
+      "arm": "dynamics",
+      "seed": 30101,
+      "path": "F:\\科研实验复现\\新建文件夹\\runs\\multitask_diffusion_20261102\\models\\dynamics_30101\\best.pt",
+      "sha256": "5031e96385a4052a8dfdc380a6fd0359bafe6e8990a765b3b17ffa8c8d49e002"
+    },
+    {
+      "arm": "dynamics",
+      "seed": 30102,
+      "path": "F:\\科研实验复现\\新建文件夹\\runs\\multitask_diffusion_20261102\\models\\dynamics_30102\\best.pt",
+      "sha256": "9cc40c413a970f8eb01ad031c062dbe357630762a7b2e34fda0a08e540b1801a"
+    }
+  ],
+  "source_sha256": "7a33d446d0cd9c5f100d3b72c1481c31470e571d68b5457198500be6146c17bf",
+  "training_protocol_sha256": "2c93350791fd31fbbe593f1c228fdf8bae6f566c7b91f6a99ff85acfb616abc4",
+  "test_labels_opened_by_this_run": false
+}
