@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "device": "cpu",
+  "unix": 1793510597.875905,
+  "checks": [
+    {
+      "name": "reliable_graph_context",
+      "status": "passed",
+      "coverage": "Direct context gradients, structure gate gradients and scale, padding/batch isolation, invalid edges"
+    },
+    {
+      "name": "physics_ablation",
+      "status": "passed",
+      "coverage": "TE/protein/RPF disabled-input invariance, zero gradients, omitted physics auxiliary loss, enabled sensitivity, state compatibility"
+    },
+    {
+      "name": "scalar_probe_masks",
+      "status": "passed",
+      "coverage": "All branch masks and excluded global statistics invariant"
+    },
+    {
+      "name": "frozen_path_sensitivity",
+      "status": "passed",
+      "coverage": "Two frozen seeds, three historical sequences; nonzero physics/structure gradients"
+    },
+    {
+      "name": "sparse_attention_equivalence",
+      "status": "passed",
+      "coverage": "Full window and local radius1/16/32 across lengths17/65/257 including chunk boundary"
+    }
+  ],
+  "files": {
+    "runtime_probe_cpu.json": "ecf6209ba70886ec3a646f3f824915f8fd6914c6d31de865b9ab801a3c51493b",
+    "length_probe_cpu.json": "a9ce9ba62ce8ef8e3d9eb2cd1c252fd55a537831db2dde8c3d535784eee24c52",
+    "physics_parameter_audit.json": "d47f37c882e523ff655d16751e7c261c3e3b5f8debbbdd5082d7751f23c55be6",
+    "source_identity.json": "f362deb7c94b023ab278dc294bec144d9186733d7fd268a213e84e3f7de4c5b6"
+  },
+  "limits": "Functional checks and historical-input sensitivity; no new held-out accuracy, no encoder retraining; GPU pending"
+}

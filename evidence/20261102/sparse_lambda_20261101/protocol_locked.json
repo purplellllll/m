@@ -1,0 +1,18 @@
+{
+  "lambdas": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "objective": "own_score+(1-lambda)*(gc_reward+cai_reward+mfe_reward)",
+  "endpoints": "lambda0=current own multiobjective; lambda1=pure own score; not original RiboDecode multiobjective",
+  "scan": "V3 and V4 frozen; 2 shortest per length group, six historical-panel exploratory cases per model;20 proposals per lambda",
+  "shared_seeds": true,
+  "steps": 20,
+  "selection": "Report all components and Pareto tradeoffs, no test-based winner selection",
+  "sparse": "Frozen gated_graph two seeds; original219 mRFP validation only; radii16,32,64,128 plus full; no retraining",
+  "warning": "Existing panel is exploratory, not independent test; lambda sensitivity is coefficient/unit dependent; sparse inference intervention has distribution shift",
+  "source_sha256": "9bffbb3e499c3362230b92cf3cea8762de343653bd97673eb4c18788b3c75bb7"
+}

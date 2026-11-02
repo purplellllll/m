@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "cases": 3,
+  "search_methods": 2,
+  "proposals": 120,
+  "all_proteins_and_terminals_verified": true,
+  "all_human_task_labels_verified": true,
+  "winners_and_summary_means_verified": true,
+  "endpoint_metrics_sha256": "17ec37ceb11b11811446375eb64958f99dec316a042d8e08fc4fe83651d961cd"
+}

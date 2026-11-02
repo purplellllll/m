@@ -1,0 +1,147 @@
+{
+  "device": "cpu",
+  "torch": "2.14.0+cpu",
+  "cuda": null,
+  "gpu": null,
+  "interpretation": "Frozen sensitivity on three previously opened historical-panel originals, not new held-out accuracy, causal attribution or sufficiency.",
+  "records": [
+    {
+      "seed": 30101,
+      "sequence_id": "cds_33cc1855d718e94b84d6137c6b65e811debdfa354f6635ba4d222bef71c9de3a",
+      "n_codons": 44,
+      "checkpoint_sha256": "6b9186844410d2a15bf70c6d3ed881e47c1a15cec8724f96f08cb16ef7ffef45",
+      "baseline": 8.800682067871094,
+      "baseline_structure_gates": [
+        {
+          "mean": 0.13695579767227173,
+          "count": 58
+        },
+        {
+          "mean": 0.03354042023420334,
+          "count": 58
+        }
+      ],
+      "without_pair_messages": 8.79323673248291,
+      "diagonal_context": 7.551821708679199,
+      "physics_zero": 8.93948745727539,
+      "structure_zero": 8.91191577911377,
+      "physics_input_gradient_l1": 0.23226141929626465,
+      "structure_input_gradient_l1": 1.6494624614715576
+    },
+    {
+      "seed": 30101,
+      "sequence_id": "cds_4ab87a0ce372b115df9eb5f66d5d4f5885428c2ac5ff228fca0c97d6921b22f9",
+      "n_codons": 70,
+      "checkpoint_sha256": "6b9186844410d2a15bf70c6d3ed881e47c1a15cec8724f96f08cb16ef7ffef45",
+      "baseline": 8.27598762512207,
+      "baseline_structure_gates": [
+        {
+          "mean": 0.13113339245319366,
+          "count": 86
+        },
+        {
+          "mean": 0.0265436340123415,
+          "count": 86
+        }
+      ],
+      "without_pair_messages": 8.246855735778809,
+      "diagonal_context": 8.650102615356445,
+      "physics_zero": 8.530532836914062,
+      "structure_zero": 8.182674407958984,
+      "physics_input_gradient_l1": 0.2508775293827057,
+      "structure_input_gradient_l1": 3.300689220428467
+    },
+    {
+      "seed": 30101,
+      "sequence_id": "cds_e30cd0d9f04c10ec772bbb78b85e3c0e8e83948f7a30bc192291fb318fe26177",
+      "n_codons": 70,
+      "checkpoint_sha256": "6b9186844410d2a15bf70c6d3ed881e47c1a15cec8724f96f08cb16ef7ffef45",
+      "baseline": 10.625000953674316,
+      "baseline_structure_gates": [
+        {
+          "mean": 0.13580086827278137,
+          "count": 90
+        },
+        {
+          "mean": 0.02843153290450573,
+          "count": 90
+        }
+      ],
+      "without_pair_messages": 10.627959251403809,
+      "diagonal_context": 9.325752258300781,
+      "physics_zero": 10.774506568908691,
+      "structure_zero": 10.61786937713623,
+      "physics_input_gradient_l1": 0.2694837152957916,
+      "structure_input_gradient_l1": 3.290266990661621
+    },
+    {
+      "seed": 30102,
+      "sequence_id": "cds_33cc1855d718e94b84d6137c6b65e811debdfa354f6635ba4d222bef71c9de3a",
+      "n_codons": 44,
+      "checkpoint_sha256": "cb32f2fc9b9383e88ebbc5a66636a886e35e789add4e704d38405d0be91c70fd",
+      "baseline": 9.769874572753906,
+      "baseline_structure_gates": [
+        {
+          "mean": 0.1404954493045807,
+          "count": 58
+        },
+        {
+          "mean": 0.027430661022663116,
+          "count": 58
+        }
+      ],
+      "without_pair_messages": 9.716273307800293,
+      "diagonal_context": 8.87053108215332,
+      "physics_zero": 9.543218612670898,
+      "structure_zero": 9.936162948608398,
+      "physics_input_gradient_l1": 0.866679310798645,
+      "structure_input_gradient_l1": 3.0256452560424805
+    },
+    {
+      "seed": 30102,
+      "sequence_id": "cds_4ab87a0ce372b115df9eb5f66d5d4f5885428c2ac5ff228fca0c97d6921b22f9",
+      "n_codons": 70,
+      "checkpoint_sha256": "cb32f2fc9b9383e88ebbc5a66636a886e35e789add4e704d38405d0be91c70fd",
+      "baseline": 9.893861770629883,
+      "baseline_structure_gates": [
+        {
+          "mean": 0.12630468606948853,
+          "count": 86
+        },
+        {
+          "mean": 0.021635139361023903,
+          "count": 86
+        }
+      ],
+      "without_pair_messages": 9.891928672790527,
+      "diagonal_context": 9.769400596618652,
+      "physics_zero": 10.221029281616211,
+      "structure_zero": 9.969993591308594,
+      "physics_input_gradient_l1": 0.7110944390296936,
+      "structure_input_gradient_l1": 3.1358444690704346
+    },
+    {
+      "seed": 30102,
+      "sequence_id": "cds_e30cd0d9f04c10ec772bbb78b85e3c0e8e83948f7a30bc192291fb318fe26177",
+      "n_codons": 70,
+      "checkpoint_sha256": "cb32f2fc9b9383e88ebbc5a66636a886e35e789add4e704d38405d0be91c70fd",
+      "baseline": 10.067156791687012,
+      "baseline_structure_gates": [
+        {
+          "mean": 0.14196477830410004,
+          "count": 90
+        },
+        {
+          "mean": 0.02340313419699669,
+          "count": 90
+        }
+      ],
+      "without_pair_messages": 10.045324325561523,
+      "diagonal_context": 9.932474136352539,
+      "physics_zero": 9.670637130737305,
+      "structure_zero": 10.194293975830078,
+      "physics_input_gradient_l1": 0.7272447943687439,
+      "structure_input_gradient_l1": 2.4823508262634277
+    }
+  ]
+}

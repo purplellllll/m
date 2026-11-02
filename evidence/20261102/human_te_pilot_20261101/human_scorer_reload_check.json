@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "arm": "finetune2_no_stats",
+  "cases": 3,
+  "max_abs_error": 2.438706513396838e-07,
+  "task": "human_HEK293_TE",
+  "no_mrfp_head": true,
+  "feature_and_seed_identity": "Native cohort canonical RNA SHA; output sequence SHA uses DNA"
+}

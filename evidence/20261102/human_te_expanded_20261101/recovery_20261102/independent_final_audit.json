@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "test_n": 903,
+  "checkpoints_and_selection_unchanged": true,
+  "all_target_and_sequence_identities_verified": true,
+  "baselines_unchanged": true,
+  "all_seed_means_verified": true,
+  "pearsons_independently_recomputed": true,
+  "corrected_scalar_heads_verified": true,
+  "metrics_sha256": "f1ffbddb5e26fd2396e3ee8c393ceb3eb138b80220d1126cc966faa33518cf16"
+}

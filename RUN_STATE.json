@@ -1,10 +1,34 @@
 {
-  "status": "stopped_by_user",
-  "date": "2026-10-31",
+  "status": "completed_research_handoff",
+  "date": "2026-11-02",
+  "branch": "results/human-te-scorer-20261102",
+  "release_tag": "human-te-scorer-20261102",
   "training_autostart": false,
-  "resume_requires_new_user_instruction": true,
-  "next_work": "Protocol and independent-gain evidence before full validation",
-  "liver_final_test_opened": false,
-  "protein219_test_opened": true,
-  "strict_native_sota_certified": false
+  "human_te": {
+    "train": 7373,
+    "validation": 922,
+    "test": 903,
+    "selected_arm": "no_stats",
+    "seeds": [
+      30101,
+      30102
+    ],
+    "test_opened": true,
+    "pearson": 0.592070249616775,
+    "seq2ribo": 0.556807561454692,
+    "ribodecode_fixed_rna_proxy": 0.6275160615611023,
+    "evaluation_head_loading_repaired": true,
+    "source_weights_and_selection_unchanged": true,
+    "strict_sota_established": false
+  },
+  "liver": {
+    "test_opened_count": 120,
+    "test_remaining_without_predictions": 576
+  },
+  "models_exported": 60,
+  "old_mrfp_lambda_scope_separate": true,
+  "direct_search_expanded_human_head_done": false,
+  "diffusion_trained": false,
+  "next_work": "Validation-only paired search with expanded human head; no automatic execution",
+  "latest_report": "docs/HANDOFF_20261102_ZH.md"
 }

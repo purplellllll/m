@@ -1,0 +1,79 @@
+{
+  "arm": "no_stats",
+  "validation_mean_per_seed": {
+    "no_stats": 0.593917428408955,
+    "properties": 0.5929048841391369
+  },
+  "models": [
+    {
+      "status": "completed",
+      "arm": "no_stats",
+      "seed": 30101,
+      "best_step": 5750,
+      "validation_pearson": 0.5852466458350412,
+      "best_path": "F:\\科研实验复现\\新建文件夹\\runs\\human_te_expanded_20261101\\models\\no_stats_30101\\best.pt",
+      "checkpoint_sha256": "15faeebe358fcc594a939c29a4b4b14f1fbe341195d486485b89930998e76c89",
+      "last_step": 6000,
+      "seen_transcripts": 33864
+    },
+    {
+      "status": "completed",
+      "arm": "properties",
+      "seed": 30101,
+      "best_step": 5750,
+      "validation_pearson": 0.5839681689958937,
+      "best_path": "F:\\科研实验复现\\新建文件夹\\runs\\human_te_expanded_20261101\\models\\properties_30101\\best.pt",
+      "checkpoint_sha256": "ec5abd8c8a202d1e686f684c8018b2b1d91b6d4ba214a394305b34b8660682a8",
+      "last_step": 6000,
+      "seen_transcripts": 33864
+    },
+    {
+      "status": "completed",
+      "arm": "no_stats",
+      "seed": 30102,
+      "best_step": 6000,
+      "validation_pearson": 0.6025882109828687,
+      "best_path": "F:\\科研实验复现\\新建文件夹\\runs\\human_te_expanded_20261101\\models\\no_stats_30102\\best.pt",
+      "checkpoint_sha256": "9bfcb9f9e15fae93f64db59ae35667ea719dc84de156a4334861d7956b609d5b",
+      "last_step": 6000,
+      "seen_transcripts": 33987
+    },
+    {
+      "status": "completed",
+      "arm": "properties",
+      "seed": 30102,
+      "best_step": 6000,
+      "validation_pearson": 0.6018415992823801,
+      "best_path": "F:\\科研实验复现\\新建文件夹\\runs\\human_te_expanded_20261101\\models\\properties_30102\\best.pt",
+      "checkpoint_sha256": "b500c9789bc70b88e7365fc33821a148e9cb1da4dea97abf74836830b21bb170",
+      "last_step": 6000,
+      "seen_transcripts": 33987
+    }
+  ],
+  "selected_models": [
+    {
+      "status": "completed",
+      "arm": "no_stats",
+      "seed": 30101,
+      "best_step": 5750,
+      "validation_pearson": 0.5852466458350412,
+      "best_path": "F:\\科研实验复现\\新建文件夹\\runs\\human_te_expanded_20261101\\models\\no_stats_30101\\best.pt",
+      "checkpoint_sha256": "15faeebe358fcc594a939c29a4b4b14f1fbe341195d486485b89930998e76c89",
+      "last_step": 6000,
+      "seen_transcripts": 33864
+    },
+    {
+      "status": "completed",
+      "arm": "no_stats",
+      "seed": 30102,
+      "best_step": 6000,
+      "validation_pearson": 0.6025882109828687,
+      "best_path": "F:\\科研实验复现\\新建文件夹\\runs\\human_te_expanded_20261101\\models\\no_stats_30102\\best.pt",
+      "checkpoint_sha256": "9bfcb9f9e15fae93f64db59ae35667ea719dc84de156a4334861d7956b609d5b",
+      "last_step": 6000,
+      "seen_transcripts": 33987
+    }
+  ],
+  "test_predicted": false,
+  "protocol_sha256": "4669f0d5d4e78207a1700ec5beb191f170d174dd3b7a0baefab74754ddea95b4"
+}

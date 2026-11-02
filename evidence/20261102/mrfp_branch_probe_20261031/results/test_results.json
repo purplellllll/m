@@ -1,0 +1,1439 @@
+{
+  "status": "completed",
+  "single_seeds": [
+    {
+      "candidate": "gated_graph",
+      "seed": 30101,
+      "arm": "stats3",
+      "test219": {
+        "pearson": 0.29104754400054644,
+        "mse": 0.5164347819597943,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.28910847691740454,
+        "mse": 0.5200920942906421,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "seed": 30101,
+      "arm": "stats6",
+      "test219": {
+        "pearson": 0.31038373981522177,
+        "mse": 0.5092081743969142,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.3081761983621806,
+        "mse": 0.5129698824741245,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "seed": 30101,
+      "arm": "p",
+      "test219": {
+        "pearson": 0.2873348299891832,
+        "mse": 0.522368563986725,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.285163942090996,
+        "mse": 0.5261214375323111,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "seed": 30101,
+      "arm": "g",
+      "test219": {
+        "pearson": 0.4272201480298947,
+        "mse": 0.4620681857103976,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.4257524616699214,
+        "mse": 0.46581558616445745,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "seed": 30101,
+      "arm": "c",
+      "test219": {
+        "pearson": 0.7465365002552429,
+        "mse": 0.3073998260827956,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.746562319705346,
+        "mse": 0.30789771040957,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "seed": 30101,
+      "arm": "pg",
+      "test219": {
+        "pearson": 0.41249105404193304,
+        "mse": 0.4779110452087574,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.4108176614998527,
+        "mse": 0.48183300093712267,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "seed": 30101,
+      "arm": "pc",
+      "test219": {
+        "pearson": 0.7343904968601607,
+        "mse": 0.26324032031041905,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.7344292433752249,
+        "mse": 0.2650709100029033,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "seed": 30101,
+      "arm": "gc",
+      "test219": {
+        "pearson": 0.69155483745028,
+        "mse": 0.3238677369406694,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.6907003702198418,
+        "mse": 0.3260607811348298,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "seed": 30101,
+      "arm": "pgc",
+      "test219": {
+        "pearson": 0.6961197327047164,
+        "mse": 0.296794589651831,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.6953516298583553,
+        "mse": 0.29887718385988365,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "seed": 30101,
+      "arm": "pgc_stats6",
+      "test219": {
+        "pearson": 0.697129428150205,
+        "mse": 0.3046239160116802,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.6961488608702029,
+        "mse": 0.30736326211936627,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "seed": 30102,
+      "arm": "stats3",
+      "test219": {
+        "pearson": 0.2939201216454102,
+        "mse": 0.5127893893753647,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.29199386929366045,
+        "mse": 0.516594628942674,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "seed": 30102,
+      "arm": "stats6",
+      "test219": {
+        "pearson": 0.3191547205255934,
+        "mse": 0.5067000067525099,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.3172646021048211,
+        "mse": 0.5103345120152235,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "seed": 30102,
+      "arm": "p",
+      "test219": {
+        "pearson": 0.2914928066098206,
+        "mse": 0.5198598070816992,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.2894770367936502,
+        "mse": 0.5238999398917634,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "seed": 30102,
+      "arm": "g",
+      "test219": {
+        "pearson": 0.43432817211881,
+        "mse": 0.46548744431245886,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.4359538149311296,
+        "mse": 0.46643545039651246,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "seed": 30102,
+      "arm": "c",
+      "test219": {
+        "pearson": 0.7153904856776777,
+        "mse": 0.2820959720292034,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.715340921353082,
+        "mse": 0.2835969881247283,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "seed": 30102,
+      "arm": "pg",
+      "test219": {
+        "pearson": 0.43695162065403753,
+        "mse": 0.5348274369543701,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.437687903324846,
+        "mse": 0.5349139388069211,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "seed": 30102,
+      "arm": "pc",
+      "test219": {
+        "pearson": 0.6936422703065013,
+        "mse": 0.2952261740126253,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.6932300247625404,
+        "mse": 0.29741485730576017,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "seed": 30102,
+      "arm": "gc",
+      "test219": {
+        "pearson": 0.682646639448302,
+        "mse": 0.3876237045059838,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.6831517714014806,
+        "mse": 0.3874027598163206,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "seed": 30102,
+      "arm": "pgc",
+      "test219": {
+        "pearson": 0.6830205657093628,
+        "mse": 0.33365260187217805,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.6837419897197304,
+        "mse": 0.3360295777776091,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "seed": 30102,
+      "arm": "pgc_stats6",
+      "test219": {
+        "pearson": 0.6835895430221323,
+        "mse": 0.3254502234973039,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.6840290913716108,
+        "mse": 0.3260156668492571,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "seed": 30101,
+      "arm": "stats3",
+      "test219": {
+        "pearson": 0.29104754400054644,
+        "mse": 0.5164347819597943,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.28910847691740454,
+        "mse": 0.5200920942906421,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "seed": 30101,
+      "arm": "stats6",
+      "test219": {
+        "pearson": 0.31038373981522177,
+        "mse": 0.5092081743969142,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.3081761983621806,
+        "mse": 0.5129698824741245,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "seed": 30101,
+      "arm": "p",
+      "test219": {
+        "pearson": 0.286866292869425,
+        "mse": 0.5224180212432722,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.284677423321245,
+        "mse": 0.5261664617710499,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "seed": 30101,
+      "arm": "g",
+      "test219": {
+        "pearson": 0.4259360089942368,
+        "mse": 0.5309690503618951,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.42499654660959846,
+        "mse": 0.5334934011925863,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "seed": 30101,
+      "arm": "c",
+      "test219": {
+        "pearson": 0.7632235033013741,
+        "mse": 0.2709198598318558,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.763458614093309,
+        "mse": 0.2709924631610934,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "seed": 30101,
+      "arm": "pg",
+      "test219": {
+        "pearson": 0.42081550553542735,
+        "mse": 0.5629013109861221,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.41970585005001937,
+        "mse": 0.5669945885845401,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "seed": 30101,
+      "arm": "pc",
+      "test219": {
+        "pearson": 0.7492708358194082,
+        "mse": 0.25021847537931036,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.7492928886577508,
+        "mse": 0.25154480288336656,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "seed": 30101,
+      "arm": "gc",
+      "test219": {
+        "pearson": 0.7219420822526018,
+        "mse": 0.27719918399878574,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.7217133122032615,
+        "mse": 0.27863965175927446,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "seed": 30101,
+      "arm": "pgc",
+      "test219": {
+        "pearson": 0.7198335808374523,
+        "mse": 0.2745282915810492,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.7192207184838006,
+        "mse": 0.2765181613478896,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "seed": 30101,
+      "arm": "pgc_stats6",
+      "test219": {
+        "pearson": 0.7155249632470441,
+        "mse": 0.2729684256613652,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.7151390374585113,
+        "mse": 0.27504486896990554,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "seed": 30102,
+      "arm": "stats3",
+      "test219": {
+        "pearson": 0.2939201216454102,
+        "mse": 0.5127893893753647,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.29199386929366045,
+        "mse": 0.516594628942674,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "seed": 30102,
+      "arm": "stats6",
+      "test219": {
+        "pearson": 0.3191547205255934,
+        "mse": 0.5067000067525099,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.3172646021048211,
+        "mse": 0.5103345120152235,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "seed": 30102,
+      "arm": "p",
+      "test219": {
+        "pearson": 0.2913176119646263,
+        "mse": 0.5198360429681474,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.28929585361180354,
+        "mse": 0.5238794950578924,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "seed": 30102,
+      "arm": "g",
+      "test219": {
+        "pearson": 0.4855431268852178,
+        "mse": 0.42637882698040935,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.4854774279260719,
+        "mse": 0.428833282221783,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "seed": 30102,
+      "arm": "c",
+      "test219": {
+        "pearson": 0.687741552589542,
+        "mse": 0.29350978748971035,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.6869702455657917,
+        "mse": 0.2959054477854817,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "seed": 30102,
+      "arm": "pg",
+      "test219": {
+        "pearson": 0.4787089675206112,
+        "mse": 0.4390026731208156,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.47767951106908807,
+        "mse": 0.4426674974573716,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "seed": 30102,
+      "arm": "pc",
+      "test219": {
+        "pearson": 0.6804690408067195,
+        "mse": 0.3260078730165245,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.6795655660875737,
+        "mse": 0.3283205830633007,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "seed": 30102,
+      "arm": "gc",
+      "test219": {
+        "pearson": 0.6962221476793753,
+        "mse": 0.3842934957571668,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.6957185453300307,
+        "mse": 0.38738223553944706,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "seed": 30102,
+      "arm": "pgc",
+      "test219": {
+        "pearson": 0.6895101894370054,
+        "mse": 0.42080236269873383,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.6889431157464336,
+        "mse": 0.42404019388886477,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "seed": 30102,
+      "arm": "pgc_stats6",
+      "test219": {
+        "pearson": 0.6878121798508569,
+        "mse": 0.30586841305059725,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.6870462335688242,
+        "mse": 0.30848730946352776,
+        "n": 217
+      }
+    }
+  ],
+  "ensembles": [
+    {
+      "candidate": "gated_graph",
+      "arm": "stats3",
+      "test219": {
+        "pearson": 0.29264148093815245,
+        "mse": 0.5143643768407666,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.29070918894852416,
+        "mse": 0.5180955647379968,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "arm": "stats6",
+      "test219": {
+        "pearson": 0.31595460781061196,
+        "mse": 0.5077701976737617,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.31390376346493865,
+        "mse": 0.5114673000489283,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "arm": "p",
+      "test219": {
+        "pearson": 0.28985005471744263,
+        "mse": 0.5204164654377281,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.2877653269791803,
+        "mse": 0.5243134101183224,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "arm": "g",
+      "test219": {
+        "pearson": 0.4636158133717082,
+        "mse": 0.4386878552373817,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.4629337824462451,
+        "mse": 0.4415900881396427,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "arm": "c",
+      "test219": {
+        "pearson": 0.752066503047428,
+        "mse": 0.27185083890215817,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.752091545770292,
+        "mse": 0.27273304969136986,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "arm": "pg",
+      "test219": {
+        "pearson": 0.4493155266130568,
+        "mse": 0.45142962470591075,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.4483289866419567,
+        "mse": 0.45417895607036063,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "arm": "pc",
+      "test219": {
+        "pearson": 0.7365603150942202,
+        "mse": 0.2640045655085133,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.7364356622463107,
+        "mse": 0.2658751248896481,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "arm": "gc",
+      "test219": {
+        "pearson": 0.7237619378210708,
+        "mse": 0.32710155647747524,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.7234551084657805,
+        "mse": 0.32811080243434654,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "arm": "pgc",
+      "test219": {
+        "pearson": 0.7235386030649766,
+        "mse": 0.27820780960692804,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.7233855929347284,
+        "mse": 0.2801399406138412,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "gated_graph",
+      "arm": "pgc_stats6",
+      "test219": {
+        "pearson": 0.7197911963149474,
+        "mse": 0.27500817771223796,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.719398706929136,
+        "mse": 0.2768439357697777,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "arm": "stats3",
+      "test219": {
+        "pearson": 0.29264148093815245,
+        "mse": 0.5143643768407666,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.29070918894852416,
+        "mse": 0.5180955647379968,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "arm": "stats6",
+      "test219": {
+        "pearson": 0.31595460781061196,
+        "mse": 0.5077701976737617,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.31390376346493865,
+        "mse": 0.5114673000489283,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "arm": "p",
+      "test219": {
+        "pearson": 0.28955949829344574,
+        "mse": 0.5203893491368541,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.2874637214451976,
+        "mse": 0.5242857511634904,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "arm": "g",
+      "test219": {
+        "pearson": 0.4944218202199474,
+        "mse": 0.44557808929283255,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.4939505160952259,
+        "mse": 0.447824745274468,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "arm": "c",
+      "test219": {
+        "pearson": 0.7513941498024447,
+        "mse": 0.2559221924791324,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.750879763956362,
+        "mse": 0.2574469171046087,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "arm": "pg",
+      "test219": {
+        "pearson": 0.48119089080561006,
+        "mse": 0.47382411170588395,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.4802201587782206,
+        "mse": 0.4777861554419826,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "arm": "pc",
+      "test219": {
+        "pearson": 0.7376258856328534,
+        "mse": 0.269557162216225,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.7370119178319328,
+        "mse": 0.271251143291795,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "arm": "gc",
+      "test219": {
+        "pearson": 0.749457189185756,
+        "mse": 0.2599423079080985,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.7488020846071167,
+        "mse": 0.26227692908471983,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "arm": "pgc",
+      "test219": {
+        "pearson": 0.7376354422319586,
+        "mse": 0.28979199207991585,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.7367563848680212,
+        "mse": 0.292453469422671,
+        "n": 217
+      }
+    },
+    {
+      "candidate": "sequence_graph",
+      "arm": "pgc_stats6",
+      "test219": {
+        "pearson": 0.7357574949511219,
+        "mse": 0.2661495917922579,
+        "n": 219
+      },
+      "test217": {
+        "pearson": 0.7349313866381738,
+        "mse": 0.26853854831825297,
+        "n": 217
+      }
+    }
+  ],
+  "paired_branch_differences": [
+    {
+      "candidate": "gated_graph",
+      "comparison": "pgc minus stats3",
+      "cohort": "219",
+      "delta_pearson": 0.4308971221268242,
+      "ci95": [
+        0.30641833827899595,
+        0.5590108103034673
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "gated_graph",
+      "comparison": "pgc minus stats3",
+      "cohort": "217",
+      "delta_pearson": 0.4326764039862042,
+      "ci95": [
+        0.30331998958923595,
+        0.5614311841321035
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "gated_graph",
+      "comparison": "pgc minus stats6",
+      "cohort": "219",
+      "delta_pearson": 0.4075839952543647,
+      "ci95": [
+        0.28383201619182663,
+        0.5335222946186877
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "gated_graph",
+      "comparison": "pgc minus stats6",
+      "cohort": "217",
+      "delta_pearson": 0.4094818294697897,
+      "ci95": [
+        0.2844926523631317,
+        0.5341355964499701
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "gated_graph",
+      "comparison": "pgc minus p",
+      "cohort": "219",
+      "delta_pearson": 0.433688548347534,
+      "ci95": [
+        0.30602394421335394,
+        0.5626575166290682
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "gated_graph",
+      "comparison": "pgc minus p",
+      "cohort": "217",
+      "delta_pearson": 0.4356202659555481,
+      "ci95": [
+        0.3054506865820105,
+        0.5665788101466621
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "gated_graph",
+      "comparison": "pgc minus g",
+      "cohort": "219",
+      "delta_pearson": 0.25992278969326843,
+      "ci95": [
+        0.17812958765327253,
+        0.34434491661084016
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "gated_graph",
+      "comparison": "pgc minus g",
+      "cohort": "217",
+      "delta_pearson": 0.26045181048848326,
+      "ci95": [
+        0.18246440875844575,
+        0.3471628815301696
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "gated_graph",
+      "comparison": "pgc minus c",
+      "cohort": "219",
+      "delta_pearson": -0.02852789998245131,
+      "ci95": [
+        -0.0585158532384698,
+        0.0007461442890407414
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "gated_graph",
+      "comparison": "pgc minus c",
+      "cohort": "217",
+      "delta_pearson": -0.028705952835563653,
+      "ci95": [
+        -0.05922186607451782,
+        0.001287097383834691
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "gated_graph",
+      "comparison": "pgc minus pg",
+      "cohort": "219",
+      "delta_pearson": 0.27422307645191984,
+      "ci95": [
+        0.19402210343001353,
+        0.35633699844951494
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "gated_graph",
+      "comparison": "pgc minus pg",
+      "cohort": "217",
+      "delta_pearson": 0.2750566062927717,
+      "ci95": [
+        0.19542704837071231,
+        0.3600838716012303
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "gated_graph",
+      "comparison": "pgc minus pc",
+      "cohort": "219",
+      "delta_pearson": -0.013021712029243515,
+      "ci95": [
+        -0.03911142342320639,
+        0.01264053954143172
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "gated_graph",
+      "comparison": "pgc minus pc",
+      "cohort": "217",
+      "delta_pearson": -0.013050069311582368,
+      "ci95": [
+        -0.03825208208308522,
+        0.01262841194782382
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "gated_graph",
+      "comparison": "pgc minus gc",
+      "cohort": "219",
+      "delta_pearson": -0.0002233347560941512,
+      "ci95": [
+        -0.01094840635447939,
+        0.010175474708748444
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "gated_graph",
+      "comparison": "pgc minus gc",
+      "cohort": "217",
+      "delta_pearson": -6.951553105216668e-05,
+      "ci95": [
+        -0.01047394529052526,
+        0.010292519781533926
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "sequence_graph",
+      "comparison": "pgc minus stats3",
+      "cohort": "219",
+      "delta_pearson": 0.4449939612938062,
+      "ci95": [
+        0.3216261240367088,
+        0.5713327052629555
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "sequence_graph",
+      "comparison": "pgc minus stats3",
+      "cohort": "217",
+      "delta_pearson": 0.44604719591949704,
+      "ci95": [
+        0.3195691245672173,
+        0.5764665813328337
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "sequence_graph",
+      "comparison": "pgc minus stats6",
+      "cohort": "219",
+      "delta_pearson": 0.4216808344213467,
+      "ci95": [
+        0.2997904169583495,
+        0.548523699218434
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "sequence_graph",
+      "comparison": "pgc minus stats6",
+      "cohort": "217",
+      "delta_pearson": 0.42285262140308255,
+      "ci95": [
+        0.29792382831225245,
+        0.5517669981785492
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "sequence_graph",
+      "comparison": "pgc minus p",
+      "cohort": "219",
+      "delta_pearson": 0.4480759439385129,
+      "ci95": [
+        0.3206743262439936,
+        0.5785828906920738
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "sequence_graph",
+      "comparison": "pgc minus p",
+      "cohort": "217",
+      "delta_pearson": 0.4492926634228236,
+      "ci95": [
+        0.3174561105737159,
+        0.5847549359669929
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "sequence_graph",
+      "comparison": "pgc minus g",
+      "cohort": "219",
+      "delta_pearson": 0.24321362201201124,
+      "ci95": [
+        0.1716241489758313,
+        0.32279862411133264
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "sequence_graph",
+      "comparison": "pgc minus g",
+      "cohort": "217",
+      "delta_pearson": 0.2428058687727953,
+      "ci95": [
+        0.16925047738202187,
+        0.3251693347197981
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "sequence_graph",
+      "comparison": "pgc minus c",
+      "cohort": "219",
+      "delta_pearson": -0.013758707570486028,
+      "ci95": [
+        -0.04039094249774368,
+        0.01673165805474847
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "sequence_graph",
+      "comparison": "pgc minus c",
+      "cohort": "217",
+      "delta_pearson": -0.014123379088340826,
+      "ci95": [
+        -0.04281737948452399,
+        0.016012217825559456
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "sequence_graph",
+      "comparison": "pgc minus pg",
+      "cohort": "219",
+      "delta_pearson": 0.2564445514263486,
+      "ci95": [
+        0.1861789235690042,
+        0.327533181365398
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "sequence_graph",
+      "comparison": "pgc minus pg",
+      "cohort": "217",
+      "delta_pearson": 0.2565362260898006,
+      "ci95": [
+        0.18364423415653594,
+        0.3323046300372077
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "sequence_graph",
+      "comparison": "pgc minus pc",
+      "cohort": "219",
+      "delta_pearson": 9.556599105287056e-06,
+      "ci95": [
+        -0.028048833229575194,
+        0.030351749175522014
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "sequence_graph",
+      "comparison": "pgc minus pc",
+      "cohort": "217",
+      "delta_pearson": -0.00025553296391156444,
+      "ci95": [
+        -0.027829431730269676,
+        0.030923779409328986
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "sequence_graph",
+      "comparison": "pgc minus gc",
+      "cohort": "219",
+      "delta_pearson": -0.01182174695379734,
+      "ci95": [
+        -0.02197851395629284,
+        -0.0022408561597029412
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    },
+    {
+      "candidate": "sequence_graph",
+      "comparison": "pgc minus gc",
+      "cohort": "217",
+      "delta_pearson": -0.012045699739095528,
+      "ci95": [
+        -0.021909711486584847,
+        -0.002140519735197056
+      ],
+      "interpretation": "Exploratory paired variant bootstrap, conditional on the two trained seeds; not multiplicity adjusted"
+    }
+  ],
+  "paired_candidate_differences": [
+    {
+      "arm": "stats3",
+      "cohort": "219",
+      "delta_pearson": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "arm": "stats3",
+      "cohort": "217",
+      "delta_pearson": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "arm": "stats6",
+      "cohort": "219",
+      "delta_pearson": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "arm": "stats6",
+      "cohort": "217",
+      "delta_pearson": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "arm": "p",
+      "cohort": "219",
+      "delta_pearson": 0.0002905564239968905,
+      "ci95": [
+        -0.0001534698826022432,
+        0.0007009279833112619
+      ]
+    },
+    {
+      "arm": "p",
+      "cohort": "217",
+      "delta_pearson": 0.000301605533982674,
+      "ci95": [
+        -0.00014331322095991126,
+        0.000717522848612937
+      ]
+    },
+    {
+      "arm": "g",
+      "cohort": "219",
+      "delta_pearson": -0.030806006848239198,
+      "ci95": [
+        -0.0909428676705925,
+        0.0296339434642712
+      ]
+    },
+    {
+      "arm": "g",
+      "cohort": "217",
+      "delta_pearson": -0.031016733648980777,
+      "ci95": [
+        -0.09227042314069508,
+        0.02720090998717331
+      ]
+    },
+    {
+      "arm": "c",
+      "cohort": "219",
+      "delta_pearson": 0.0006723532449832703,
+      "ci95": [
+        -0.02018973679358394,
+        0.02133892270323528
+      ]
+    },
+    {
+      "arm": "c",
+      "cohort": "217",
+      "delta_pearson": 0.0012117818139300018,
+      "ci95": [
+        -0.019012259298982113,
+        0.020527760151336998
+      ]
+    },
+    {
+      "arm": "pg",
+      "cohort": "219",
+      "delta_pearson": -0.03187536419255327,
+      "ci95": [
+        -0.09070150233651636,
+        0.0265862141743876
+      ]
+    },
+    {
+      "arm": "pg",
+      "cohort": "217",
+      "delta_pearson": -0.03189117213626391,
+      "ci95": [
+        -0.09140293267161363,
+        0.025055006619879524
+      ]
+    },
+    {
+      "arm": "pc",
+      "cohort": "219",
+      "delta_pearson": -0.0010655705386332093,
+      "ci95": [
+        -0.02100674373347817,
+        0.01953027961254387
+      ]
+    },
+    {
+      "arm": "pc",
+      "cohort": "217",
+      "delta_pearson": -0.0005762555856220208,
+      "ci95": [
+        -0.020735765755077497,
+        0.018284800609588623
+      ]
+    },
+    {
+      "arm": "gc",
+      "cohort": "219",
+      "delta_pearson": -0.0256952513646852,
+      "ci95": [
+        -0.05674894730675704,
+        0.004125896446068586
+      ]
+    },
+    {
+      "arm": "gc",
+      "cohort": "217",
+      "delta_pearson": -0.025346976141336186,
+      "ci95": [
+        -0.058291215225251755,
+        0.0057138997818625
+      ]
+    },
+    {
+      "arm": "pgc",
+      "cohort": "219",
+      "delta_pearson": -0.014096839166982011,
+      "ci95": [
+        -0.04255933563162485,
+        0.013955060090980095
+      ]
+    },
+    {
+      "arm": "pgc",
+      "cohort": "217",
+      "delta_pearson": -0.013370791933292825,
+      "ci95": [
+        -0.04434377435992429,
+        0.015597843811882848
+      ]
+    },
+    {
+      "arm": "pgc_stats6",
+      "cohort": "219",
+      "delta_pearson": -0.015966298636174492,
+      "ci95": [
+        -0.045420337069789735,
+        0.013470964307885304
+      ]
+    },
+    {
+      "arm": "pgc_stats6",
+      "cohort": "217",
+      "delta_pearson": -0.015532679709037822,
+      "ci95": [
+        -0.04654927634060356,
+        0.014565157444236575
+      ]
+    }
+  ],
+  "validation_selection": {
+    "candidate": "gated_graph",
+    "arm": "c",
+    "mean_seed_validation_pearson": 0.7019746728606608,
+    "ensemble_validation": {
+      "pearson": 0.7251255112569418,
+      "mse": 0.27547726035118103,
+      "n": 219
+    }
+  },
+  "selection_lock_sha256": "019c77064933099010d7ee41c5aea4a9fd914e3bcebd8af67e24634f50f142aa",
+  "predictions_sha256": "0770b65f7e4c92d40193feb6ef8abaecb199fab63ed1c5548e2805acf8bd96c2",
+  "n_test": 219,
+  "n_clean_test": 217,
+  "test_previously_opened": true,
+  "claims": "Frozen representation transfer and readout increments only"
+}

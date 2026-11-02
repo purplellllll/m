@@ -1,0 +1,40 @@
+{
+  "comparisons": [
+    {
+      "first": "finetune4_properties",
+      "second": "finetune2_properties",
+      "delta_pearson": -0.013953051140011608,
+      "ci_low": -0.02771574374105073,
+      "ci_high": -0.00021688642086785105
+    },
+    {
+      "first": "finetune2_properties",
+      "second": "frozen_c_properties",
+      "delta_pearson": 0.005474231161030074,
+      "ci_low": -0.007343526011641746,
+      "ci_high": 0.018014434173355555
+    },
+    {
+      "first": "finetune2_properties",
+      "second": "finetune2_no_physics",
+      "delta_pearson": 0.006430936126373854,
+      "ci_low": -0.002583380868444261,
+      "ci_high": 0.015826825611348065
+    },
+    {
+      "first": "finetune2_properties",
+      "second": "finetune2_sequence_only",
+      "delta_pearson": 0.005254720884801223,
+      "ci_low": -0.01874845027475312,
+      "ci_high": 0.03058950832993669
+    },
+    {
+      "first": "finetune2_properties",
+      "second": "finetune2_no_stats",
+      "delta_pearson": 0.0028725431799531687,
+      "ci_low": -0.01399582568309638,
+      "ci_high": 0.019616848572109158
+    }
+  ],
+  "scope": "Exploratory 2000 paired validation resamples; unadjusted, conditional on selected checkpoints, not independent confirmation"
+}

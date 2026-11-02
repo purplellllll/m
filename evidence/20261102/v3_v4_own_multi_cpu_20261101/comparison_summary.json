@@ -1,0 +1,121 @@
+{
+  "summary": [
+    {
+      "method": "original",
+      "label": "原始CDS",
+      "n": 30,
+      "own_score": 9.093149934233956,
+      "combined_reward": 9.093149934233956,
+      "ribodecode_score": 3.0323665459950764,
+      "seq2ribo_score": 0.22529839229617035,
+      "gc_percent": 50.844940576369844,
+      "cai": 0.7719302465833634,
+      "mfe_kcal_mol": -534.6266640981038,
+      "mfe_per_nt": -0.321038727540555
+    },
+    {
+      "method": "V3_RiboDecode_search",
+      "label": "V3原RiboDecode搜索",
+      "n": 30,
+      "own_score": 9.549424467919748,
+      "combined_reward": 8.253655611585401,
+      "ribodecode_score": 4.78162514368693,
+      "seq2ribo_score": 1.572092946577509,
+      "gc_percent": 47.44181771748879,
+      "cai": 0.7633834371872154,
+      "mfe_kcal_mol": -524.1746608734131,
+      "mfe_per_nt": -0.29882832270879633
+    },
+    {
+      "method": "V3_own_only",
+      "label": "V3仅自有分数",
+      "n": 30,
+      "own_score": 9.547277270437734,
+      "combined_reward": 14.48438396165738,
+      "ribodecode_score": 3.111814339955648,
+      "seq2ribo_score": 0.4769142525735389,
+      "gc_percent": 58.600756123699064,
+      "cai": 0.8748575878360663,
+      "mfe_kcal_mol": -679.8100011189779,
+      "mfe_per_nt": -0.38740856537554236
+    },
+    {
+      "method": "v3_historical_multiobjective",
+      "label": "V3旧多指标",
+      "n": 30,
+      "own_score": 9.212608896018791,
+      "combined_reward": 18.558026057002873,
+      "ribodecode_score": 3.165565013885498,
+      "seq2ribo_score": 0.5758744715396026,
+      "gc_percent": 66.48562407797134,
+      "cai": 0.9846598153248397,
+      "mfe_kcal_mol": -716.1943369547527,
+      "mfe_per_nt": -0.41917318183226804
+    },
+    {
+      "method": "v3_own_multiobjective",
+      "label": "V3自有分数＋性质奖励",
+      "n": 30,
+      "own_score": 9.218169339937704,
+      "combined_reward": 16.721169144898212,
+      "ribodecode_score": 3.0245923439661664,
+      "seq2ribo_score": 0.20790166457873796,
+      "gc_percent": 62.22494563933105,
+      "cai": 0.9214349856647193,
+      "mfe_kcal_mol": -743.4999979654948,
+      "mfe_per_nt": -0.43288392807761267
+    },
+    {
+      "method": "v4_historical_multiobjective",
+      "label": "V4第6轮旧多指标",
+      "n": 30,
+      "own_score": 9.230530972799164,
+      "combined_reward": 18.932005202018484,
+      "ribodecode_score": 3.1031368891398112,
+      "seq2ribo_score": 0.3681858648901701,
+      "gc_percent": 66.78160517970282,
+      "cai": 0.9935176753138554,
+      "mfe_kcal_mol": -724.9733339945475,
+      "mfe_per_nt": -0.42515836423769937
+    },
+    {
+      "method": "v4_own_multiobjective",
+      "label": "V4第6轮自有分数＋性质奖励",
+      "n": 30,
+      "own_score": 9.277874296750962,
+      "combined_reward": 19.007386848319552,
+      "ribodecode_score": 2.888915705680847,
+      "seq2ribo_score": 0.2984679498800612,
+      "gc_percent": 66.51614239370221,
+      "cai": 0.9908523242661603,
+      "mfe_kcal_mol": -727.3666697184245,
+      "mfe_per_nt": -0.4318802592628639
+    }
+  ],
+  "version_audits": {
+    "v3_multi": {
+      "status": "passed",
+      "n_cases": 30,
+      "trajectory_records": 2490,
+      "unique_sequences": 2478,
+      "max_reward_error": 3.552713678800501e-15,
+      "checkpoint_unchanged": true,
+      "combined_winner_verified": true,
+      "protein_start_stop_verified": true,
+      "feature_and_evaluation_hashes_verified": true,
+      "all_seed_score_means_verified": true
+    },
+    "v4_epoch6": {
+      "status": "passed",
+      "n_cases": 30,
+      "trajectory_records": 2490,
+      "unique_sequences": 2414,
+      "max_reward_error": 3.552713678800501e-15,
+      "checkpoint_unchanged": true,
+      "combined_winner_verified": true,
+      "protein_start_stop_verified": true,
+      "feature_and_evaluation_hashes_verified": true,
+      "all_seed_score_means_verified": true
+    }
+  }
+}

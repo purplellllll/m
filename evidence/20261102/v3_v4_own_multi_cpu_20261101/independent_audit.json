@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "versions": {
+    "v3_multi": {
+      "status": "passed",
+      "n_cases": 30,
+      "trajectory_records": 2490,
+      "unique_sequences": 2478,
+      "max_reward_error": 3.552713678800501e-15,
+      "checkpoint_unchanged": true,
+      "combined_winner_verified": true,
+      "protein_start_stop_verified": true,
+      "feature_and_evaluation_hashes_verified": true,
+      "all_seed_score_means_verified": true
+    },
+    "v4_epoch6": {
+      "status": "passed",
+      "n_cases": 30,
+      "trajectory_records": 2490,
+      "unique_sequences": 2414,
+      "max_reward_error": 3.552713678800501e-15,
+      "checkpoint_unchanged": true,
+      "combined_winner_verified": true,
+      "protein_start_stop_verified": true,
+      "feature_and_evaluation_hashes_verified": true,
+      "all_seed_score_means_verified": true
+    }
+  },
+  "total_completed_cases": 60,
+  "all_summary_rows_n30": true,
+  "no_retraining": true,
+  "no_measured_expression_claim": true
+}

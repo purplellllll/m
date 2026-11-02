@@ -1,0 +1,83 @@
+{
+  "device": "cuda",
+  "torch": "2.11.0+cu126",
+  "full_window_equivalence_max_abs_error": 0.0,
+  "local_mask_equivalence": [
+    {
+      "n_codons": 17,
+      "radius": 1,
+      "max_abs_error": 0.0
+    },
+    {
+      "n_codons": 65,
+      "radius": 16,
+      "max_abs_error": 0.0
+    },
+    {
+      "n_codons": 257,
+      "radius": 32,
+      "max_abs_error": 7.152557373046875e-07
+    }
+  ],
+  "scope": "Synthetic context-only inference; fixed checkpoint; not accuracy, training, whole folding pipeline, padding or global-token support.",
+  "benchmarks": [
+    {
+      "n_codons": 256,
+      "mode": "dense",
+      "seconds": 0.0017689000815153122,
+      "peak_allocated_bytes": 27837440,
+      "finite": true
+    },
+    {
+      "n_codons": 256,
+      "mode": "sparse_radius128",
+      "seconds": 0.0025983001105487347,
+      "peak_allocated_bytes": 25840640,
+      "finite": true
+    },
+    {
+      "n_codons": 1024,
+      "mode": "dense",
+      "seconds": 0.003676600055769086,
+      "peak_allocated_bytes": 103341056,
+      "finite": true
+    },
+    {
+      "n_codons": 1024,
+      "mode": "sparse_radius128",
+      "seconds": 0.012553599895909429,
+      "peak_allocated_bytes": 32313344,
+      "finite": true
+    },
+    {
+      "n_codons": 4096,
+      "mode": "dense",
+      "seconds": 0.0502142000477761,
+      "peak_allocated_bytes": 1254702080,
+      "finite": true
+    },
+    {
+      "n_codons": 4096,
+      "mode": "sparse_radius128",
+      "seconds": 0.03263809997588396,
+      "peak_allocated_bytes": 56182272,
+      "finite": true
+    },
+    {
+      "n_codons": 8192,
+      "mode": "dense",
+      "seconds": 0.19916779990307987,
+      "peak_allocated_bytes": 4903779328,
+      "finite": true
+    },
+    {
+      "n_codons": 8192,
+      "mode": "sparse_radius128",
+      "seconds": 0.06963949999772012,
+      "peak_allocated_bytes": 90785280,
+      "finite": true
+    }
+  ],
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "arithmetic": "FP32; TF32 disabled; math SDPA; MHA/Transformer fused fastpath disabled for both implementations"
+}

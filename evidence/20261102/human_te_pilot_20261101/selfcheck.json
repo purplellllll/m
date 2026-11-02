@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "arms": [
+    "two_layers",
+    "four_layers",
+    "no_physics",
+    "sequence_only"
+  ],
+  "head_properties": 3,
+  "explicit_length_input": false,
+  "last_context_layer_gradient_verified": true,
+  "route_exclusion_verified": true
+}

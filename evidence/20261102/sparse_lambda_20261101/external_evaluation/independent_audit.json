@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "endpoint_rows": 60,
+  "original_rows": 6,
+  "summary_groups": 11,
+  "dna_identities_verified": true,
+  "all_means_recomputed": true,
+  "seq2ribo_seed_means_verified": true,
+  "metrics_sha256": "b0a4113669263192d2768c85e47b025138a7bcd5683e37642aed50bcafd69411"
+}

@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "n": 903,
+  "all_local_prediction_pearsons_recomputed": true,
+  "paper_coefficients_used": false,
+  "test_predictions_sha256": "f1ffbddb5e26fd2396e3ee8c393ceb3eb138b80220d1126cc966faa33518cf16",
+  "selection_sha256": "b51b1121843d3bc4e776169cfab40b20bc95d0fe60629a0f9f606d6e897dd614"
+}

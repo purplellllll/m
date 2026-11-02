@@ -1,0 +1,67 @@
+{
+  "task": "human_HEK293_native_CDS_only_TE",
+  "counts": {
+    "train": 7373,
+    "val": 922,
+    "test": 903
+  },
+  "length_codons": [
+    80,
+    1500
+  ],
+  "seeds": [
+    30101,
+    30102
+  ],
+  "arms": [
+    "no_stats",
+    "properties"
+  ],
+  "max_steps": 6000,
+  "validation_every": 250,
+  "early_stop_stale_checks": 8,
+  "lr_encoder": 1e-05,
+  "lr_head": 0.0003,
+  "warmup": 200,
+  "optimizer": "AdamW",
+  "weight_decay": 0.01,
+  "clip": 1.0,
+  "max_batch": 8,
+  "max_padded_codons": 4096,
+  "max_attention_cells": 4500000,
+  "target": "Provided native TE labels, train mean/std normalization only",
+  "explicit_length_feature": false,
+  "properties": [
+    "GC_fraction",
+    "MFE_per_nt",
+    "CAI"
+  ],
+  "selection": "Mean per-seed validation Pearson; lexical tie; freeze all checkpoints before test prediction",
+  "test_access": "Separate target file; training reads only train_validation.json. Test inference only after selection_locked.json",
+  "independence": "Native splits retained, gene/exact-CDS/exact-protein disjoint; no near-homology clustering",
+  "physics": "Frozen mouse-proxy train-fitted parameters,4 simulations; not claimed human kinetic calibration",
+  "native_baselines": "Local actual predictions on identical903 targets; no paper coefficients. seq2ribo historical-weight training membership not certified. RiboDecode fixed-RNA score is TE proxy.",
+  "canonical_uid": "SHA256 of RNA; seed human_te:<RNA_SHA>. DNA SHA separate; old feature dna_sha256 field is legacy RNA UID",
+  "source_sha256": {
+    "F:\\科研实验复现\\新建文件夹\\runs\\human_te_expanded_20261101\\common.py": "372e813bead73f1f465553b10324b08d5d49bd75c4e4775f37dd66a434ac0ae2",
+    "F:\\科研实验复现\\新建文件夹\\runs\\human_te_expanded_20261101\\evaluate.py": "a5d5d848a4c2d135a16be2ea9eb9e8aec3d181d06a52684cf4d03c3b1d358cc1",
+    "F:\\科研实验复现\\新建文件夹\\runs\\human_te_expanded_20261101\\pipeline.py": "367d26c1b7edaa1d1ce4ad23105696cccdec0e7f7fd6c14459b87901a281ed49",
+    "F:\\科研实验复现\\新建文件夹\\runs\\human_te_expanded_20261101\\train.py": "a43a751fae333749228307c6d009a30f00d1c2f977073fef1df428ee1cd2f175",
+    "F:\\科研实验复现\\新建文件夹\\runs\\scorer_path_alignment_20261031\\native_te_cohort.json": "01803904b2bd8a516e40130814320095b343a2b234f320b1528cefc0506e0bb4",
+    "F:\\科研实验复现\\新建文件夹\\runs\\graph_polish_20261031\\gpu_result\\completed_snapshot\\graph_polish_20261031\\data\\physics_parameters_train_only.json": "5c9b02550fa978efb826745746b232d84268cc3b582759079551e11d38f5646a",
+    "F:\\科研实验复现\\新建文件夹\\repos\\riboseq_scorer_20261031\\physics_scorer\\reliable_graph_context.py": "8c03dd025839667db341c313b4c9b53125d70b3e70ac853bf4ba6a6bafd25a14",
+    "F:\\科研实验复现\\新建文件夹\\repos\\riboseq_scorer_20261031\\physics_scorer\\scalar_downstream.py": "bdf2ce9f039dd9eeaa13115d7660d9ec4c953d99fadd57e2355f56ecb317b6a8",
+    "F:\\科研实验复现\\新建文件夹\\repos\\riboseq_scorer_20261031\\historical\\drivers\\run_aligned_profile_ablation_20261030.py": "fe920d65d3c444c10c3de6e7d529adb0f25d6a9b87c95ca858590539bcbe8640",
+    "F:\\科研实验复现\\新建文件夹\\runs\\human_te_pilot_20261101\\run_pilot.py": "fed8039effe95aa0b281c32942ef939d5986f1827ce7d63bb14c2459081d84ac",
+    "F:\\科研实验复现\\新建文件夹\\runs\\vmae_own_full30_cpu_20261031\\evaluate_cpu.py": "d98461a0a59e8fa384dead81769d20999d10c059c2e494c919bc0facd41d59e2",
+    "F:\\科研实验复现\\新建文件夹\\runs\\vmae_tiny_30cds_20261025\\cai_weights.json": "079c22aaefde74977d1871ac0ee59846bc3ecf60ba3d261cb7d4eeb0033c080c",
+    "F:\\科研实验复现\\新建文件夹\\runs\\scorer_compare_search_20261031\\search_outputs\\scorer_backbones\\gated_graph_30101.pt": "6b9186844410d2a15bf70c6d3ed881e47c1a15cec8724f96f08cb16ef7ffef45",
+    "F:\\科研实验复现\\新建文件夹\\runs\\scorer_compare_search_20261031\\search_outputs\\scorer_backbones\\gated_graph_30102.pt": "cb32f2fc9b9383e88ebbc5a66636a886e35e789add4e704d38405d0be91c70fd",
+    "F:\\科研实验复现\\新建文件夹\\runs\\graph_polish_20261031\\gpu_result\\completed_snapshot\\graph_polish_20261031\\source\\evaluator\\seq2ribo\\geometry.py": "3888549d0faeaf1c6930e833485814be9ba8513081566338244581f45b81efa7",
+    "F:\\科研实验复现\\新建文件夹\\runs\\graph_polish_20261031\\gpu_result\\completed_snapshot\\graph_polish_20261031\\source\\evaluator\\seq2ribo\\simulation.py": "80413b446388618fe34e1466619fb470b1c95e3c44a0dee045956d416e59f3c0",
+    "F:\\科研实验复现\\新建文件夹\\runs\\graph_polish_20261031\\gpu_result\\completed_snapshot\\graph_polish_20261031\\source\\evaluator\\seq2ribo\\utils.py": "f5a89bf1956754e1bfedf7a750e2c81a1b25705c33b2d31470b4438a5efb059f"
+  },
+  "train_validation_sha256": "7ce82d01ef80e038dcd67d4cd8b58e312499cb64413e49a43b784bfee8e08b08",
+  "test_inputs_sha256": "628a6bebc0cba0348446a965d914c24e3c793b399a2eb7d5bc8a63e7e220747b",
+  "test_targets_sha256": "a2fbfe662ad3df47efe49cd078989ae81418e8a9d13056ba8eb94f8f90edc119"
+}

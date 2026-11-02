@@ -1,0 +1,200 @@
+[
+  {
+    "cohort": "lambda_common6",
+    "method": "original",
+    "label": "原始CDS",
+    "n": 6,
+    "ribodecode_score": 3.1166662772496543,
+    "seq2ribo_score": 0.5853711064572543,
+    "gc_percent": 52.06074738335693,
+    "cai": 0.7525714010218861,
+    "mfe_per_nt": -0.3391692466196108
+  },
+  {
+    "cohort": "lambda_common6",
+    "method": "V3_2.5M_Hard",
+    "label": "V3／RiboDecode目标搜索",
+    "n": 6,
+    "ribodecode_score": 4.546509663263957,
+    "seq2ribo_score": 1.6785560932319923,
+    "gc_percent": 46.95703975266875,
+    "cai": 0.732467067297116,
+    "mfe_per_nt": -0.2968636800031117
+  },
+  {
+    "cohort": "lambda_common6",
+    "method": "VMAE_9.7M_Hard",
+    "label": "971万VMAE／RiboDecode目标搜索",
+    "n": 6,
+    "ribodecode_score": 4.556194384892781,
+    "seq2ribo_score": 1.5877878265434626,
+    "gc_percent": 50.7106167828637,
+    "cai": 0.779435493266116,
+    "mfe_per_nt": -0.2989263581672623
+  },
+  {
+    "cohort": "lambda_common6",
+    "method": "V3_same_reward",
+    "label": "V3历史多目标",
+    "n": 6,
+    "ribodecode_score": 3.2043095032374063,
+    "seq2ribo_score": 0.7030262766823756,
+    "gc_percent": 66.64480807981727,
+    "cai": 0.9867472392950515,
+    "mfe_per_nt": -0.43532970663366644
+  },
+  {
+    "cohort": "lambda_common6",
+    "method": "V4_epoch6_current",
+    "label": "V4第6轮历史多目标",
+    "n": 6,
+    "ribodecode_score": 3.1645730336507163,
+    "seq2ribo_score": 0.581235815388118,
+    "gc_percent": 66.7962265263767,
+    "cai": 0.9940373453610956,
+    "mfe_per_nt": -0.4387958364754234
+  },
+  {
+    "cohort": "lambda_common6",
+    "method": "codontransformer",
+    "label": "CodonTransformer",
+    "n": 6,
+    "ribodecode_score": 3.05503519376119,
+    "seq2ribo_score": 0.25078256861349146,
+    "gc_percent": 59.19171367069787,
+    "cai": 0.9372586815720875,
+    "mfe_per_nt": -0.3916104398826899
+  },
+  {
+    "cohort": "lambda_common6",
+    "method": "fpp_codonbert",
+    "label": "FPP-CodonBERT",
+    "n": 6,
+    "ribodecode_score": 2.961436708768209,
+    "seq2ribo_score": 0.849172003673505,
+    "gc_percent": 65.89754626113702,
+    "cai": 0.9549677849426148,
+    "mfe_per_nt": -0.4094323133698983
+  },
+  {
+    "cohort": "lambda_common6",
+    "method": "gemorna",
+    "label": "GEMORNA",
+    "n": 6,
+    "ribodecode_score": 2.979161818822225,
+    "seq2ribo_score": 0.6304962680530455,
+    "gc_percent": 61.56440023684134,
+    "cai": 0.8715164174721162,
+    "mfe_per_nt": -0.3899908334392017
+  },
+  {
+    "cohort": "lambda_common6",
+    "method": "lineardesign_l0",
+    "label": "LinearDesign λ=0",
+    "n": 6,
+    "ribodecode_score": 2.918160915374756,
+    "seq2ribo_score": 0.5231997819079843,
+    "gc_percent": 58.676897715281086,
+    "cai": 0.7638805925845327,
+    "mfe_per_nt": -0.6880601506837933
+  },
+  {
+    "cohort": "native_common8",
+    "method": "original",
+    "label": "原始CDS",
+    "n": 8,
+    "ribodecode_score": 3.077411860227585,
+    "seq2ribo_score": 0.5581167313401968,
+    "gc_percent": 54.21979972038012,
+    "cai": 0.7487115633740711,
+    "mfe_per_nt": -0.3458565099344344
+  },
+  {
+    "cohort": "native_common8",
+    "method": "V3_2.5M_Hard",
+    "label": "V3／RiboDecode目标搜索",
+    "n": 8,
+    "ribodecode_score": 4.202462255954742,
+    "seq2ribo_score": 1.8756565549272022,
+    "gc_percent": 47.95632087457543,
+    "cai": 0.7337257110809031,
+    "mfe_per_nt": -0.2859689390264693
+  },
+  {
+    "cohort": "native_common8",
+    "method": "VMAE_9.7M_Hard",
+    "label": "971万VMAE／RiboDecode目标搜索",
+    "n": 8,
+    "ribodecode_score": 4.1515748500823975,
+    "seq2ribo_score": 1.628719798888673,
+    "gc_percent": 51.41445840709128,
+    "cai": 0.7733787434118212,
+    "mfe_per_nt": -0.3042981542928492
+  },
+  {
+    "cohort": "native_common8",
+    "method": "V3_same_reward",
+    "label": "V3历史多目标",
+    "n": 8,
+    "ribodecode_score": 3.12831774353981,
+    "seq2ribo_score": 0.8689135178867192,
+    "gc_percent": 67.20607869220528,
+    "cai": 0.9863663435680993,
+    "mfe_per_nt": -0.4301618289593686
+  },
+  {
+    "cohort": "native_common8",
+    "method": "V4_epoch6_current",
+    "label": "V4第6轮历史多目标",
+    "n": 8,
+    "ribodecode_score": 3.090485602617264,
+    "seq2ribo_score": 0.8125017007864986,
+    "gc_percent": 67.24839732357349,
+    "cai": 0.9948014968791616,
+    "mfe_per_nt": -0.43652834429223325
+  },
+  {
+    "cohort": "native_common8",
+    "method": "codontransformer",
+    "label": "CodonTransformer",
+    "n": 8,
+    "ribodecode_score": 3.0992699563503265,
+    "seq2ribo_score": 0.5974580031247749,
+    "gc_percent": 59.46568935207537,
+    "cai": 0.9408066488351152,
+    "mfe_per_nt": -0.38878395558513396
+  },
+  {
+    "cohort": "native_common8",
+    "method": "fpp_codonbert",
+    "label": "FPP-CodonBERT",
+    "n": 8,
+    "ribodecode_score": 2.999223083257675,
+    "seq2ribo_score": 0.9146038301937909,
+    "gc_percent": 66.93141774039293,
+    "cai": 0.9697461041514737,
+    "mfe_per_nt": -0.4101820006210175
+  },
+  {
+    "cohort": "native_common8",
+    "method": "gemorna",
+    "label": "GEMORNA",
+    "n": 8,
+    "ribodecode_score": 3.0792906880378723,
+    "seq2ribo_score": 0.7813036296782709,
+    "gc_percent": 59.083163574039325,
+    "cai": 0.8542134319371837,
+    "mfe_per_nt": -0.3787233219179118
+  },
+  {
+    "cohort": "native_common8",
+    "method": "RiboDecode_native",
+    "label": "原生RiboDecode完整生成流程",
+    "n": 8,
+    "ribodecode_score": 3.5445663928985596,
+    "seq2ribo_score": 0.7228574433182908,
+    "gc_percent": 57.482693319686376,
+    "cai": 0.7520860752206023,
+    "mfe_per_nt": -0.6211064769178334
+  }
+]

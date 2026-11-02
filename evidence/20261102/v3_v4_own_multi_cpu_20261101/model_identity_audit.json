@@ -1,0 +1,31 @@
+{
+  "status": "verified",
+  "same_architecture": true,
+  "parameters": 2498240,
+  "model_config": {
+    "d_model": 128,
+    "n_heads": 8,
+    "encoder_layers": 6,
+    "decoder_layers": 6,
+    "ff_dim": 512,
+    "latent_dim": 256,
+    "dropout": 0.1,
+    "max_codons": 1500,
+    "max_positions": 1536
+  },
+  "v3": {
+    "path": "runs\\vmae_tiny_size_only_20261025\\checkpoints\\fold0_uniform.pt",
+    "epoch": 42,
+    "objective": 1.1352500384673476,
+    "sha256": "6592a07293da25b18f9ed71584e48dc4da23fa121b4f735f10d26ee7da26c6af"
+  },
+  "v4": {
+    "path": "deliverables\\vmae_v4_epoch6_current_20261027\\checkpoints\\epoch6.pt",
+    "epoch": 6,
+    "objective": -0.03252927213907242,
+    "sha256": "8e95e3d3e5c62917c01a78a3add4ab45ea1afa7a1282748ce8d637f3fbea02e3"
+  },
+  "state_tensors": 159,
+  "changed_state_tensors": 158,
+  "max_abs_change": 0.049335092306137085
+}

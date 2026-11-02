@@ -1,0 +1,103 @@
+{
+  "status": "passed",
+  "models": 16,
+  "maximum_error": 4.76837158203125e-07,
+  "results": [
+    {
+      "path": "human_te_expanded/no_stats_30101.pt",
+      "cases": 8,
+      "max_abs_error": 4.76837158203125e-07,
+      "backbone_and_scalar_head_parity": true
+    },
+    {
+      "path": "human_te_expanded/no_stats_30102.pt",
+      "cases": 8,
+      "max_abs_error": 2.980232238769531e-07,
+      "backbone_and_scalar_head_parity": true
+    },
+    {
+      "path": "human_te_expanded/properties_30101.pt",
+      "cases": 8,
+      "max_abs_error": 2.384185791015625e-07,
+      "backbone_and_scalar_head_parity": true
+    },
+    {
+      "path": "human_te_expanded/properties_30102.pt",
+      "cases": 8,
+      "max_abs_error": 3.5762786865234375e-07,
+      "backbone_and_scalar_head_parity": true
+    },
+    {
+      "path": "human_te_pilot/finetune2_no_physics_30101.pt",
+      "cases": 3,
+      "max_abs_error": 5.960464477539063e-08,
+      "backbone_and_scalar_head_parity": true
+    },
+    {
+      "path": "human_te_pilot/finetune2_no_physics_30102.pt",
+      "cases": 3,
+      "max_abs_error": 0.0,
+      "backbone_and_scalar_head_parity": true
+    },
+    {
+      "path": "human_te_pilot/finetune2_no_stats_30101.pt",
+      "cases": 3,
+      "max_abs_error": 0.0,
+      "backbone_and_scalar_head_parity": true
+    },
+    {
+      "path": "human_te_pilot/finetune2_no_stats_30102.pt",
+      "cases": 3,
+      "max_abs_error": 0.0,
+      "backbone_and_scalar_head_parity": true
+    },
+    {
+      "path": "human_te_pilot/finetune2_properties_30101.pt",
+      "cases": 3,
+      "max_abs_error": 0.0,
+      "backbone_and_scalar_head_parity": true
+    },
+    {
+      "path": "human_te_pilot/finetune2_properties_30102.pt",
+      "cases": 3,
+      "max_abs_error": 0.0,
+      "backbone_and_scalar_head_parity": true
+    },
+    {
+      "path": "human_te_pilot/finetune2_sequence_only_30101.pt",
+      "cases": 3,
+      "max_abs_error": 0.0,
+      "backbone_and_scalar_head_parity": true
+    },
+    {
+      "path": "human_te_pilot/finetune2_sequence_only_30102.pt",
+      "cases": 3,
+      "max_abs_error": 0.0,
+      "backbone_and_scalar_head_parity": true
+    },
+    {
+      "path": "human_te_pilot/finetune4_properties_30101.pt",
+      "cases": 3,
+      "max_abs_error": 0.0,
+      "backbone_and_scalar_head_parity": true
+    },
+    {
+      "path": "human_te_pilot/finetune4_properties_30102.pt",
+      "cases": 3,
+      "max_abs_error": 5.960464477539063e-08,
+      "backbone_and_scalar_head_parity": true
+    },
+    {
+      "path": "human_te_pilot/frozen_c_properties_30101.pt",
+      "cases": 3,
+      "max_abs_error": 0.0,
+      "backbone_and_scalar_head_parity": true
+    },
+    {
+      "path": "human_te_pilot/frozen_c_properties_30102.pt",
+      "cases": 3,
+      "max_abs_error": 0.0,
+      "backbone_and_scalar_head_parity": true
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "method": "length_only",
+    "pearson": 0.36700245024174616
+  },
+  {
+    "method": "codon_frequency",
+    "pearson": 0.3443391559415521
+  },
+  {
+    "method": "GC_MFE_CAI",
+    "pearson": 0.08144640124041205
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "batch": 2,
+  "n_codons": 1500,
+  "last_layer_gradient": true,
+  "peak_allocated_bytes": 187436032,
+  "dynamic_batch_limits_checked": true
+}
