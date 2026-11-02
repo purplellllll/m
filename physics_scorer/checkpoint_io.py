@@ -6,6 +6,8 @@ from .fusion_encoder_model import FusionEncoderModel
 from .graph_polish_model import GraphPolishModel
 from .reliable_graph_context import ReliableGraphContext
 from .scalar_downstream import TaskScalarModel
+from .human_te_model import HumanTEScalar
+from .branch_probe import BranchProbe
 
 
 def load_exported_checkpoint(path,expected_sha256=None,device='cpu'):
@@ -16,11 +18,14 @@ def load_exported_checkpoint(path,expected_sha256=None,device='cpu'):
     payload=torch.load(path,map_location='cpu',weights_only=True)
     metadata=payload['metadata'];spec=metadata['spec'];kind=spec['kind']
     constructors={'FusionEncoderModel':FusionEncoderModel,'GraphPolishModel':GraphPolishModel,
-                  'ReliableGraphContext':ReliableGraphContext}
+                  'ReliableGraphContext':ReliableGraphContext,'HumanTEScalar':HumanTEScalar,'BranchProbe':BranchProbe}
     if kind=='TaskScalarModel':
         if spec['backbone']['kind']!='GraphPolishModel':raise ValueError('Unsupported exported scalar backbone')
         backbone=GraphPolishModel(**spec['backbone']['config'])
         model=TaskScalarModel(backbone,spec['task'],spec['n_outputs'],spec['use_utr'])
+    elif kind=='CodonVMAE':
+        from generation.vmae_snapshot.model import CodonVMAE
+        model=CodonVMAE(**spec['config'])
     elif kind in constructors:model=constructors[kind](**spec['config'])
     else:raise ValueError('Unknown exported model class')
     model.load_state_dict(payload['state_dict'],strict=True)

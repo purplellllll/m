@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "counts": {
+    "train": 7373,
+    "val": 922,
+    "test": 903
+  },
+  "gene_disjoint": true,
+  "exact_CDS_disjoint": true,
+  "exact_protein_disjoint": true,
+  "unique_genes": {
+    "train": 7373,
+    "val": 922,
+    "test": 903
+  },
+  "test_predictions_opened": false
+}

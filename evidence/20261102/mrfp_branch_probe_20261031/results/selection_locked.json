@@ -1,0 +1,81 @@
+{
+  "status": "locked_before_test",
+  "selected": {
+    "candidate": "gated_graph",
+    "arm": "c",
+    "mean_seed_validation_pearson": 0.7019746728606608,
+    "ensemble_validation": {
+      "pearson": 0.7251255112569418,
+      "mse": 0.27547726035118103,
+      "n": 219
+    }
+  },
+  "per_candidate_selection": {
+    "gated_graph": {
+      "candidate": "gated_graph",
+      "arm": "c",
+      "mean_seed_validation_pearson": 0.7019746728606608,
+      "ensemble_validation": {
+        "pearson": 0.7251255112569418,
+        "mse": 0.27547726035118103,
+        "n": 219
+      }
+    },
+    "sequence_graph": {
+      "candidate": "sequence_graph",
+      "arm": "c",
+      "mean_seed_validation_pearson": 0.6893549900576177,
+      "ensemble_validation": {
+        "pearson": 0.7131186734324385,
+        "mse": 0.2665524184703827,
+        "n": 219
+      }
+    }
+  },
+  "protocol_sha256": "a3dbbde4bc61dc6dc49358998ed79c69c7ca8e2598ed1644e5dc8a04d88d0a48",
+  "validation_results_sha256": "2f94cc216adde17bfa955cb80d7589f51fc36a8f76a0bb39532d363240be2c18",
+  "heads": {
+    "/root/mrfp_branch_probe_20261031/heads/gated_graph_30101_stats3.pt": "412dbe3e39eea803752bb2e252eb66092b204ff86cfa0fe55b39b24760847800",
+    "/root/mrfp_branch_probe_20261031/heads/gated_graph_30101_stats6.pt": "4aa96caa4f18d4cb0a6b7bcf755123b25509408331789fadc95ee150b4ccd4d3",
+    "/root/mrfp_branch_probe_20261031/heads/gated_graph_30101_p.pt": "2e3ea9b3c83cf705f66ff97210676520c880eaa28105710619376d4787625687",
+    "/root/mrfp_branch_probe_20261031/heads/gated_graph_30101_g.pt": "2e44d6febc58efd0a1cc0459309b1b763ffc9b5832c1edc4c08a2990e35be9ce",
+    "/root/mrfp_branch_probe_20261031/heads/gated_graph_30101_c.pt": "035ccaab552fd890cfda86a82e94759f14a90f5b210d55150852922e79761041",
+    "/root/mrfp_branch_probe_20261031/heads/gated_graph_30101_pg.pt": "bcee1324edb59f6c40809f5709d1ddfafd768dc3337584faf235a2e11b2fe2e8",
+    "/root/mrfp_branch_probe_20261031/heads/gated_graph_30101_pc.pt": "b21675b402d02adff4c2eb859b7b33b40dc25ae6273dff182011c4ef0dabd916",
+    "/root/mrfp_branch_probe_20261031/heads/gated_graph_30101_gc.pt": "d1ba7d6cd421acd9b7d0a1d64b344fedeac4860d4e17f537adba2ff7b128fc0d",
+    "/root/mrfp_branch_probe_20261031/heads/gated_graph_30101_pgc.pt": "2db6e74a03b2d44f75b6ee28e683edd0538635d5ac6ee7184a5b3b97655fc603",
+    "/root/mrfp_branch_probe_20261031/heads/gated_graph_30101_pgc_stats6.pt": "ca9a0d54a53101a46ba08c8d9e6c373db0c15e3393f1d639b4b5734794c489f8",
+    "/root/mrfp_branch_probe_20261031/heads/gated_graph_30102_stats3.pt": "6f2bc836abd20df32298ed54ad2fb7371a638831e13e1cec01b174cf2f736763",
+    "/root/mrfp_branch_probe_20261031/heads/gated_graph_30102_stats6.pt": "7401be8d197a59013b96b2e0873ca091fc9f24af6d1f6b547ef6fe5008a80a95",
+    "/root/mrfp_branch_probe_20261031/heads/gated_graph_30102_p.pt": "dda439b4e8da2e441c653d0eb0a110334bdb84947c2bcef96d8d2c6fd78fdea1",
+    "/root/mrfp_branch_probe_20261031/heads/gated_graph_30102_g.pt": "24341185144eb25f9768a49ac3d7f3977bf135a860310a25b87075de49462727",
+    "/root/mrfp_branch_probe_20261031/heads/gated_graph_30102_c.pt": "ffe0b27055a56e591fd99e1a71632ad230b30058840e1a2d14d96fa9a3a73c21",
+    "/root/mrfp_branch_probe_20261031/heads/gated_graph_30102_pg.pt": "e80a7f15567f2bdb2cf0ed91760ac9004417ffd606e49dfe494c50d96dd9cd94",
+    "/root/mrfp_branch_probe_20261031/heads/gated_graph_30102_pc.pt": "085506e2f61145e4fac0f25abd0cc084d28ff1958882bf7c8b92aedbc6641228",
+    "/root/mrfp_branch_probe_20261031/heads/gated_graph_30102_gc.pt": "d7dbee6b0109e85907dd9778bc1f7e13be66248edf3edfe11606e8d75fa9737c",
+    "/root/mrfp_branch_probe_20261031/heads/gated_graph_30102_pgc.pt": "f9262e1e34935e6b75bbb4eed0f392535331cef78ea8f25b2012dbdabbcb5f74",
+    "/root/mrfp_branch_probe_20261031/heads/gated_graph_30102_pgc_stats6.pt": "251132f549b9b59d5a82daf1e7bbfaa7a658c5f645d4ad110368822f5022d42e",
+    "/root/mrfp_branch_probe_20261031/heads/sequence_graph_30101_stats3.pt": "63087b7b9a70e43f448b873051e18065d32d4ec8967efc5f3ca4f51820dfa929",
+    "/root/mrfp_branch_probe_20261031/heads/sequence_graph_30101_stats6.pt": "f3eb1b9ec3ee3bdad213894fe9c208f4918e1d45485275ae1df9fb75bfc9fba0",
+    "/root/mrfp_branch_probe_20261031/heads/sequence_graph_30101_p.pt": "51bbc5b5f4f2579816189aeff9230b94204c4f54d1366897702f7184b04328f9",
+    "/root/mrfp_branch_probe_20261031/heads/sequence_graph_30101_g.pt": "69da2cf7e270f50cabc8b436e68614b62a2119c4495c1192d233fea1c2d0bce8",
+    "/root/mrfp_branch_probe_20261031/heads/sequence_graph_30101_c.pt": "432a43ce03c4736f48933262c0331d1fef6640ed48569c9efac548f0cc045578",
+    "/root/mrfp_branch_probe_20261031/heads/sequence_graph_30101_pg.pt": "4c0e4546642d133f8a6b3aed9524a0f4b5da7a7c5ca6f8f342260c7312ca16db",
+    "/root/mrfp_branch_probe_20261031/heads/sequence_graph_30101_pc.pt": "86ef6a824cfd591f5eab45999e786a8aaee2d882fb86396e25a9aeed6b18654c",
+    "/root/mrfp_branch_probe_20261031/heads/sequence_graph_30101_gc.pt": "b3d4b3fd962ebc919b90af4aa504c55539674a2b61f3314d4b8d4cf969f236c6",
+    "/root/mrfp_branch_probe_20261031/heads/sequence_graph_30101_pgc.pt": "313441deb2be8351316ea71b34b3e044165d77f10a2387d20bbd8db9622497ce",
+    "/root/mrfp_branch_probe_20261031/heads/sequence_graph_30101_pgc_stats6.pt": "df02a54ab7ee6412d7a923c8d94dc404a46ff1abcc056958b315aff83c43ba23",
+    "/root/mrfp_branch_probe_20261031/heads/sequence_graph_30102_stats3.pt": "9c8f0d31dbd7754f6fd038b220193f8ed4aed386d300a2589ad6d5588a4464d7",
+    "/root/mrfp_branch_probe_20261031/heads/sequence_graph_30102_stats6.pt": "cfbb4d949124b840f9b3bfded1010de48d88dd16a613db72dcadac0434af2a1e",
+    "/root/mrfp_branch_probe_20261031/heads/sequence_graph_30102_p.pt": "bd3ec066b7fb7cf10ab2ad54e80365079252e55b9b4c563d355cb09d1141478f",
+    "/root/mrfp_branch_probe_20261031/heads/sequence_graph_30102_g.pt": "aba72ed5238e7cdab3d2e881fcda89c5328cffed830884a9ad3d1861bdc7c2d1",
+    "/root/mrfp_branch_probe_20261031/heads/sequence_graph_30102_c.pt": "0a87f9c04790f30b66c448e8914e1784675bd163c7273675b54eb58377b46025",
+    "/root/mrfp_branch_probe_20261031/heads/sequence_graph_30102_pg.pt": "dc388a0537c1bddbb56e257293ff510b484c793af967814fe06484b5eedc7af7",
+    "/root/mrfp_branch_probe_20261031/heads/sequence_graph_30102_pc.pt": "31f72a2efac77eb382caaaed794cbb8413df7e39b91a8636b27717b44dd3b71d",
+    "/root/mrfp_branch_probe_20261031/heads/sequence_graph_30102_gc.pt": "2aa184868916a2e81fa9c881f2aabbbe8331e082e7ca724de97c7739f27dbcf8",
+    "/root/mrfp_branch_probe_20261031/heads/sequence_graph_30102_pgc.pt": "86485468019e40f15987c866ecf9cec4c1836f0cf22ff882fa1a3a2db2acec08",
+    "/root/mrfp_branch_probe_20261031/heads/sequence_graph_30102_pgc_stats6.pt": "1969607c243cd74fb28965b4b4716426dc02300ebc20a3dbb1e708930138a4e2"
+  },
+  "test_metrics_computed": false,
+  "unix": 1793457014.254735
+}

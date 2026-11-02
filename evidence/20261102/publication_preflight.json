@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "models": 60,
+  "archive": "human-te-own-models-20261102.tar.gz",
+  "archive_bytes": 167682954,
+  "archive_sha256": "e584524704c31f1f7a55b84a30610e9f9907c2e32e3218f272f132e78ff72797",
+  "credential_pattern_scan": "passed",
+  "utf8_scan": "passed",
+  "entry_document_links": "passed",
+  "no_git_large_binary": true
+}

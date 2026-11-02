@@ -1,0 +1,401 @@
+{
+  "copied_evidence": [
+    {
+      "source": "runs/human_te_expanded_20261101/运行协议.md",
+      "destination": "evidence/20261102/human_te_expanded_20261101/运行协议.md",
+      "sha256": "619769989d6f6f6113f25d9e72086d236de612a1b79f4eda41ad9c4eedc829c4"
+    },
+    {
+      "source": "runs/human_te_expanded_20261101/评估修正说明.md",
+      "destination": "evidence/20261102/human_te_expanded_20261101/评估修正说明.md",
+      "sha256": "fcc8c3a9b7e20996245812fcba9b6686056afe4bb21582cbcb434787629687a4"
+    },
+    {
+      "source": "runs/human_te_expanded_20261101/独立测试比较.md",
+      "destination": "evidence/20261102/human_te_expanded_20261101/独立测试比较.md",
+      "sha256": "ec5d30ad18936d5f5bbf4005fdcf9b488ae7fe5da4fc1f7e2010a4e22100f5f1"
+    },
+    {
+      "source": "runs/human_te_expanded_20261101/protocol_locked.json",
+      "destination": "evidence/20261102/human_te_expanded_20261101/protocol_locked.json",
+      "sha256": "4669f0d5d4e78207a1700ec5beb191f170d174dd3b7a0baefab74754ddea95b4"
+    },
+    {
+      "source": "runs/human_te_expanded_20261101/split_audit.json",
+      "destination": "evidence/20261102/human_te_expanded_20261101/split_audit.json",
+      "sha256": "d584c92a57cd5f80e73e575162a25d68a054137e9b829e8fde6c2a0c51c55d86"
+    },
+    {
+      "source": "runs/human_te_expanded_20261101/selection_locked.json",
+      "destination": "evidence/20261102/human_te_expanded_20261101/selection_locked.json",
+      "sha256": "b51b1121843d3bc4e776169cfab40b20bc95d0fe60629a0f9f606d6e897dd614"
+    },
+    {
+      "source": "runs/human_te_expanded_20261101/training_complete.json",
+      "destination": "evidence/20261102/human_te_expanded_20261101/training_complete.json",
+      "sha256": "df2125d4df3542d44a6a0bff1a933714f70addc5565d40213f31768092153520"
+    },
+    {
+      "source": "runs/human_te_expanded_20261101/test_summary.json",
+      "destination": "evidence/20261102/human_te_expanded_20261101/test_summary.json",
+      "sha256": "0ad9fca4a8f3c006110469ae25f63bccbc121c34a570898e561871016051216d"
+    },
+    {
+      "source": "runs/human_te_expanded_20261101/test_predictions.csv",
+      "destination": "evidence/20261102/human_te_expanded_20261101/test_predictions.csv",
+      "sha256": "31473df49970e1535dd74854a8219622d074747c1895fdb0910308bb0c805ebc"
+    },
+    {
+      "source": "runs/human_te_expanded_20261101/test_predictions.json",
+      "destination": "evidence/20261102/human_te_expanded_20261101/test_predictions.json",
+      "sha256": "f1ffbddb5e26fd2396e3ee8c393ceb3eb138b80220d1126cc966faa33518cf16"
+    },
+    {
+      "source": "runs/human_te_expanded_20261101/evaluation_complete.json",
+      "destination": "evidence/20261102/human_te_expanded_20261101/evaluation_complete.json",
+      "sha256": "2d87b53f642b0dd67e016208a2493b70e5356de93ff6cd6f9a4310bbf55137ae"
+    },
+    {
+      "source": "runs/human_te_expanded_20261101/gpu_preflight.json",
+      "destination": "evidence/20261102/human_te_expanded_20261101/gpu_preflight.json",
+      "sha256": "58ae27ef954666b748f241accdce860fc0da26a046e08f58467a2ccbcaec9d0a"
+    },
+    {
+      "source": "runs/human_te_expanded_20261101/pipeline_status.json",
+      "destination": "evidence/20261102/human_te_expanded_20261101/pipeline_status.json",
+      "sha256": "b34ed78afd719d7b788680e0369e567769821695bf5eb809b237b551df584d8e"
+    },
+    {
+      "source": "runs/human_te_expanded_20261101/recovery_20261102/correction_protocol.json",
+      "destination": "evidence/20261102/human_te_expanded_20261101/recovery_20261102/correction_protocol.json",
+      "sha256": "c498465a48ef4a6840ed35c60fbdfbe89ccf13b31f414168b4affb910d0a0a21"
+    },
+    {
+      "source": "runs/human_te_expanded_20261101/recovery_20261102/validation_reload_regression.json",
+      "destination": "evidence/20261102/human_te_expanded_20261101/recovery_20261102/validation_reload_regression.json",
+      "sha256": "662ff1f5b759681b7a45b0eb327496368b062ceb939bb1818f7dbe5402fbaeda"
+    },
+    {
+      "source": "runs/human_te_expanded_20261101/recovery_20261102/correction_complete.json",
+      "destination": "evidence/20261102/human_te_expanded_20261101/recovery_20261102/correction_complete.json",
+      "sha256": "e994fa32d27e2e853ed1630c3f5c613d559e6fdf063dfbd0697626c997e2bc23"
+    },
+    {
+      "source": "runs/human_te_expanded_20261101/recovery_20261102/independent_final_audit.json",
+      "destination": "evidence/20261102/human_te_expanded_20261101/recovery_20261102/independent_final_audit.json",
+      "sha256": "94e95653934113e7e703ac0f4cf188987b7412370f2efe95f59d14ccf524c616"
+    },
+    {
+      "source": "runs/human_te_pilot_20261101/实验范围与解释.md",
+      "destination": "evidence/20261102/human_te_pilot_20261101/实验范围与解释.md",
+      "sha256": "8a45ed994cfd26470b77775a2d504805c74831712f0c9d67f71fa0a1704aa234"
+    },
+    {
+      "source": "runs/human_te_pilot_20261101/人源TE开发结果.md",
+      "destination": "evidence/20261102/human_te_pilot_20261101/人源TE开发结果.md",
+      "sha256": "cd1866f0b62ef54c95cd1a2259742673b35fa81893bbc1a55661d4086665116e"
+    },
+    {
+      "source": "runs/human_te_pilot_20261101/protocol_locked.json",
+      "destination": "evidence/20261102/human_te_pilot_20261101/protocol_locked.json",
+      "sha256": "30fc202ae4ef7b109865228e4b500407787b9298e588a7e612041fc86f9dc405"
+    },
+    {
+      "source": "runs/human_te_pilot_20261101/validation_summary.json",
+      "destination": "evidence/20261102/human_te_pilot_20261101/validation_summary.json",
+      "sha256": "05e0c1620d34453414781e02153afa2fe55798101637427cf73c6537e63b55c8"
+    },
+    {
+      "source": "runs/human_te_pilot_20261101/paired_development_differences.json",
+      "destination": "evidence/20261102/human_te_pilot_20261101/paired_development_differences.json",
+      "sha256": "f21d3271fcd192bfe87bc4dff90190bb78422c8d820e9b3fce6faa4a2f470458"
+    },
+    {
+      "source": "runs/human_te_pilot_20261101/early_ridge_checks.json",
+      "destination": "evidence/20261102/human_te_pilot_20261101/early_ridge_checks.json",
+      "sha256": "78e69869a9881eebc61a3120bf111764892bc3ec21064394a33d5b9f4fdb5a69"
+    },
+    {
+      "source": "runs/human_te_pilot_20261101/selfcheck.json",
+      "destination": "evidence/20261102/human_te_pilot_20261101/selfcheck.json",
+      "sha256": "bdaaf4598872ac33035c0d7fe1406e04a954f4bbd76741af47c818487460c507"
+    },
+    {
+      "source": "runs/human_te_pilot_20261101/human_scorer_reload_check.json",
+      "destination": "evidence/20261102/human_te_pilot_20261101/human_scorer_reload_check.json",
+      "sha256": "149d683c9df181192db191cdca9fb082db4ce3d2f894919b78601718bd368df3"
+    },
+    {
+      "source": "runs/human_te_pilot_20261101/baseline_metric_recheck.json",
+      "destination": "evidence/20261102/human_te_pilot_20261101/baseline_metric_recheck.json",
+      "sha256": "51344a7ca0844b991f850bae241dab025eb7f904fcb6c278588a5b229e60caf3"
+    },
+    {
+      "source": "runs/human_te_pilot_20261101/audit_complete.json",
+      "destination": "evidence/20261102/human_te_pilot_20261101/audit_complete.json",
+      "sha256": "dcaf2d52fe55badfef974594aee8e13af7a3127916efd4c74e211f9eec492650"
+    },
+    {
+      "source": "runs/sparse_lambda_20261101/探索结果.md",
+      "destination": "evidence/20261102/sparse_lambda_20261101/探索结果.md",
+      "sha256": "9260a0b2e21acd87289e8513366ced788cd20eb48f286cde782ad76986d279df"
+    },
+    {
+      "source": "runs/sparse_lambda_20261101/lambda全部支线对比.md",
+      "destination": "evidence/20261102/sparse_lambda_20261101/lambda全部支线对比.md",
+      "sha256": "e7d0c6a810b7a0a4fdc842d4eb0374475f39b85f0d84d3c51cc04847d1050a04"
+    },
+    {
+      "source": "runs/sparse_lambda_20261101/外部生成基线对比.md",
+      "destination": "evidence/20261102/sparse_lambda_20261101/外部生成基线对比.md",
+      "sha256": "e8173acf9413e48ebda5e5e162cbcb830170c9e6557366ca9631caa55c966565"
+    },
+    {
+      "source": "runs/sparse_lambda_20261101/lambda完整外部评分对比.md",
+      "destination": "evidence/20261102/sparse_lambda_20261101/lambda完整外部评分对比.md",
+      "sha256": "7920b4a588cb7a9982b43a1b89b74b50694a3f3b3e52c3b10eb1fd727dc173f5"
+    },
+    {
+      "source": "runs/sparse_lambda_20261101/protocol_locked.json",
+      "destination": "evidence/20261102/sparse_lambda_20261101/protocol_locked.json",
+      "sha256": "eb3d48ba0ecce9566dba91964d1490c3fdde06d1462dfa34d85fc1113ec623aa"
+    },
+    {
+      "source": "runs/sparse_lambda_20261101/summary.json",
+      "destination": "evidence/20261102/sparse_lambda_20261101/summary.json",
+      "sha256": "d480fedc4cb5639aa7f8770a1d5a681aae96015607975d05af117b3c230765da"
+    },
+    {
+      "source": "runs/sparse_lambda_20261101/independent_audit.json",
+      "destination": "evidence/20261102/sparse_lambda_20261101/independent_audit.json",
+      "sha256": "398b5f1aa50b29a45ab0764e49366638093179eb01427fa1ad9c0816e38e9267"
+    },
+    {
+      "source": "runs/sparse_lambda_20261101/external_baseline_summary.json",
+      "destination": "evidence/20261102/sparse_lambda_20261101/external_baseline_summary.json",
+      "sha256": "93d60b54a08b8a91bd6ad4a836e81950f53252bc354b671872b6578c5f28d921"
+    },
+    {
+      "source": "runs/sparse_lambda_20261101/external_baseline_audit.json",
+      "destination": "evidence/20261102/sparse_lambda_20261101/external_baseline_audit.json",
+      "sha256": "84b0f722b7a5f6997d5f11df685751894ca1538d7f457fdc19a1e998784ec8c2"
+    },
+    {
+      "source": "runs/sparse_lambda_20261101/external_evaluation/summary.json",
+      "destination": "evidence/20261102/sparse_lambda_20261101/external_evaluation/summary.json",
+      "sha256": "04b342e96177591a5abc833b2846e0dca8958bee30029531b5f9dbb07f931622"
+    },
+    {
+      "source": "runs/sparse_lambda_20261101/external_evaluation/summary.csv",
+      "destination": "evidence/20261102/sparse_lambda_20261101/external_evaluation/summary.csv",
+      "sha256": "91481f0d6eb1750c1378ee327d6ae31d39df1940fc54344049c5383ac5748d30"
+    },
+    {
+      "source": "runs/sparse_lambda_20261101/external_evaluation/per_case_metrics.json",
+      "destination": "evidence/20261102/sparse_lambda_20261101/external_evaluation/per_case_metrics.json",
+      "sha256": "b0a4113669263192d2768c85e47b025138a7bcd5683e37642aed50bcafd69411"
+    },
+    {
+      "source": "runs/sparse_lambda_20261101/external_evaluation/complete.json",
+      "destination": "evidence/20261102/sparse_lambda_20261101/external_evaluation/complete.json",
+      "sha256": "412eef2ab2a4599d31f59d4e4c0de6771ad2851c9feeda5e6b0b85bca34d277f"
+    },
+    {
+      "source": "runs/sparse_lambda_20261101/external_evaluation/independent_audit.json",
+      "destination": "evidence/20261102/sparse_lambda_20261101/external_evaluation/independent_audit.json",
+      "sha256": "c7742d585e5bf9afa18ad8c4bb5cc25c2f0cdf713f4896f05622df2a628a3257"
+    },
+    {
+      "source": "runs/scorer_source_audit_20261101/源码核验与三路表示解释.md",
+      "destination": "evidence/20261102/scorer_source_audit_20261101/源码核验与三路表示解释.md",
+      "sha256": "d8fc4024712fa7fb281cfb754fdf1fb70e344e35ccb991769e5ce5e41afaa6df"
+    },
+    {
+      "source": "runs/scorer_source_audit_20261101/CPU与GPU验证结果.md",
+      "destination": "evidence/20261102/scorer_source_audit_20261101/CPU与GPU验证结果.md",
+      "sha256": "0e1c5f79e92c28cf40d969be836e18c3d0e9ce5afbc507b351202b27dafc7f0c"
+    },
+    {
+      "source": "runs/scorer_source_audit_20261101/runtime_probe_cpu.json",
+      "destination": "evidence/20261102/scorer_source_audit_20261101/runtime_probe_cpu.json",
+      "sha256": "ecf6209ba70886ec3a646f3f824915f8fd6914c6d31de865b9ab801a3c51493b"
+    },
+    {
+      "source": "runs/scorer_source_audit_20261101/runtime_probe_cuda.json",
+      "destination": "evidence/20261102/scorer_source_audit_20261101/runtime_probe_cuda.json",
+      "sha256": "d2fa88e3882f50f8ad041ee6974240223b4e816db25846c5be1a8b793a7629a0"
+    },
+    {
+      "source": "runs/scorer_source_audit_20261101/length_probe_cpu.json",
+      "destination": "evidence/20261102/scorer_source_audit_20261101/length_probe_cpu.json",
+      "sha256": "a9ce9ba62ce8ef8e3d9eb2cd1c252fd55a537831db2dde8c3d535784eee24c52"
+    },
+    {
+      "source": "runs/scorer_source_audit_20261101/length_probe_cuda.json",
+      "destination": "evidence/20261102/scorer_source_audit_20261101/length_probe_cuda.json",
+      "sha256": "256c21ddcad61e4e4bc1dc49dde5e33dbaa95df6cc3a4467dbf5b5e0c8b562af"
+    },
+    {
+      "source": "runs/scorer_source_audit_20261101/physics_parameter_audit.json",
+      "destination": "evidence/20261102/scorer_source_audit_20261101/physics_parameter_audit.json",
+      "sha256": "d47f37c882e523ff655d16751e7c261c3e3b5f8debbbdd5082d7751f23c55be6"
+    },
+    {
+      "source": "runs/scorer_source_audit_20261101/cpu_validation_complete.json",
+      "destination": "evidence/20261102/scorer_source_audit_20261101/cpu_validation_complete.json",
+      "sha256": "bf20e235085117d3e0f94934ebee1049bbda7420fc21dc27aecdda0397183139"
+    },
+    {
+      "source": "runs/scorer_source_audit_20261101/validation_complete.json",
+      "destination": "evidence/20261102/scorer_source_audit_20261101/validation_complete.json",
+      "sha256": "2df03b6329d88b1db491cd7a48120219e09c698c0d8fde692b0bf0cc07969602"
+    },
+    {
+      "source": "runs/scorer_source_audit_20261101/source_identity.json",
+      "destination": "evidence/20261102/scorer_source_audit_20261101/source_identity.json",
+      "sha256": "f362deb7c94b023ab278dc294bec144d9186733d7fd268a213e84e3f7de4c5b6"
+    },
+    {
+      "source": "runs/direct_vs_vmae_human_20261101/直接搜索对比.md",
+      "destination": "evidence/20261102/direct_vs_vmae_human_20261101/直接搜索对比.md",
+      "sha256": "308046dc895e883f6300059afa6621710074970c30911dea119da5513ab4026a"
+    },
+    {
+      "source": "runs/direct_vs_vmae_human_20261101/protocol_locked.json",
+      "destination": "evidence/20261102/direct_vs_vmae_human_20261101/protocol_locked.json",
+      "sha256": "3ae24c3ec3931d459e848e8ee7a36d049ba7de226581cc31f9c12f780738768f"
+    },
+    {
+      "source": "runs/direct_vs_vmae_human_20261101/summary.json",
+      "destination": "evidence/20261102/direct_vs_vmae_human_20261101/summary.json",
+      "sha256": "15817f6b863627f139c414945d48ec721580d09dc5b8d7b33da63579fa897192"
+    },
+    {
+      "source": "runs/direct_vs_vmae_human_20261101/endpoint_metrics.json",
+      "destination": "evidence/20261102/direct_vs_vmae_human_20261101/endpoint_metrics.json",
+      "sha256": "17ec37ceb11b11811446375eb64958f99dec316a042d8e08fc4fe83651d961cd"
+    },
+    {
+      "source": "runs/direct_vs_vmae_human_20261101/complete.json",
+      "destination": "evidence/20261102/direct_vs_vmae_human_20261101/complete.json",
+      "sha256": "6e96b6bdd67ec56c2a4ebcf4aff9f2517bd25f3e74145ff9866c0d5ee2be22bf"
+    },
+    {
+      "source": "runs/direct_vs_vmae_human_20261101/independent_audit.json",
+      "destination": "evidence/20261102/direct_vs_vmae_human_20261101/independent_audit.json",
+      "sha256": "d5dee92d777235b10986e8bab1d961bf7cad77795f08875a6201c429b75e0f93"
+    },
+    {
+      "source": "runs/direct_vs_vmae_human_20261101/selfcheck.json",
+      "destination": "evidence/20261102/direct_vs_vmae_human_20261101/selfcheck.json",
+      "sha256": "6be2d7927d19cb8b1e3d7f9929be626708b0d3fbdb78d1235d4a09b508105db4"
+    },
+    {
+      "source": "runs/v3_v4_own_multi_cpu_20261101/模型具体情况与运行协议.md",
+      "destination": "evidence/20261102/v3_v4_own_multi_cpu_20261101/模型具体情况与运行协议.md",
+      "sha256": "579b3d72d058b05778d4de866230703a73d30dfbad2646255e38453d25af2efe"
+    },
+    {
+      "source": "runs/v3_v4_own_multi_cpu_20261101/完整结果.md",
+      "destination": "evidence/20261102/v3_v4_own_multi_cpu_20261101/完整结果.md",
+      "sha256": "aaffc9a5e77d9f9c8514ce46e63c65b84b51b01ac02c734bc008968aac6c14d2"
+    },
+    {
+      "source": "runs/v3_v4_own_multi_cpu_20261101/model_identity_audit.json",
+      "destination": "evidence/20261102/v3_v4_own_multi_cpu_20261101/model_identity_audit.json",
+      "sha256": "91c02ba46cb6891d198e396849534124da92d855989deca7c97984d1b75d5e65"
+    },
+    {
+      "source": "runs/v3_v4_own_multi_cpu_20261101/comparison_metrics.csv",
+      "destination": "evidence/20261102/v3_v4_own_multi_cpu_20261101/comparison_metrics.csv",
+      "sha256": "4082fb4299750309b3ea30fe7e56d3145b8c9a00f45c3064eb0c0973412f71b1"
+    },
+    {
+      "source": "runs/v3_v4_own_multi_cpu_20261101/summary.csv",
+      "destination": "evidence/20261102/v3_v4_own_multi_cpu_20261101/summary.csv",
+      "sha256": "860470e95441a29fb83e6472a5878ab635416b8fb5baf3c52959f9e2f07b4db5"
+    },
+    {
+      "source": "runs/v3_v4_own_multi_cpu_20261101/comparison_summary.json",
+      "destination": "evidence/20261102/v3_v4_own_multi_cpu_20261101/comparison_summary.json",
+      "sha256": "a8d3cb521ec75895c9cbf7d446e8ae463acc7a4c6ac6de85b2d8c724130f2d7a"
+    },
+    {
+      "source": "runs/v3_v4_own_multi_cpu_20261101/independent_audit.json",
+      "destination": "evidence/20261102/v3_v4_own_multi_cpu_20261101/independent_audit.json",
+      "sha256": "9adf35d3f272f9d007246b992229b9eb3840ac9f8ae6dc2509afdd3c150608e4"
+    },
+    {
+      "source": "runs/v3_v4_own_multi_cpu_20261101/completion_receipt.json",
+      "destination": "evidence/20261102/v3_v4_own_multi_cpu_20261101/completion_receipt.json",
+      "sha256": "36fceee14a7e7a8650e6686a29c7f4e470583cc23c802b7df27940c733a6977c"
+    },
+    {
+      "source": "runs/v3_v4_own_multi_cpu_20261101/comparison.png",
+      "destination": "evidence/20261102/v3_v4_own_multi_cpu_20261101/comparison.png",
+      "sha256": "e4989a1378e51e8deb14ec4d5fc05fd953f5e359c5e3be4ca89f67a9e95235f0"
+    },
+    {
+      "source": "runs/mrfp_branch_probe_20261031/结果与下一步.md",
+      "destination": "evidence/20261102/mrfp_branch_probe_20261031/结果与下一步.md",
+      "sha256": "4721674b742a7839c3a4f967e7d9882bd51a4ffd810c4f275dfe6e0af265ec93"
+    },
+    {
+      "source": "runs/mrfp_branch_probe_20261031/results/validation_results.json",
+      "destination": "evidence/20261102/mrfp_branch_probe_20261031/results/validation_results.json",
+      "sha256": "2f94cc216adde17bfa955cb80d7589f51fc36a8f76a0bb39532d363240be2c18"
+    },
+    {
+      "source": "runs/mrfp_branch_probe_20261031/results/test_results.json",
+      "destination": "evidence/20261102/mrfp_branch_probe_20261031/results/test_results.json",
+      "sha256": "89f8860b1b5565995709060886c8275d401faa6bdf5525e5618c519f320475f2"
+    },
+    {
+      "source": "runs/mrfp_branch_probe_20261031/results/selection_locked.json",
+      "destination": "evidence/20261102/mrfp_branch_probe_20261031/results/selection_locked.json",
+      "sha256": "019c77064933099010d7ee41c5aea4a9fd914e3bcebd8af67e24634f50f142aa"
+    },
+    {
+      "source": "runs/mrfp_branch_probe_20261031/results/protocol_locked.json",
+      "destination": "evidence/20261102/mrfp_branch_probe_20261031/results/protocol_locked.json",
+      "sha256": "a3dbbde4bc61dc6dc49358998ed79c69c7ca8e2598ed1644e5dc8a04d88d0a48"
+    },
+    {
+      "source": "runs/vmae_own_full30_cpu_20261031/完整30条对比展示.md",
+      "destination": "evidence/20261102/vmae_own_full30_cpu_20261031/完整30条对比展示.md",
+      "sha256": "4d87419c95b857d1fbc063d994b54e957517a82ecd1f6f9101453413aec29ef6"
+    },
+    {
+      "source": "runs/vmae_own_full30_cpu_20261031/全部基线对比.md",
+      "destination": "evidence/20261102/vmae_own_full30_cpu_20261031/全部基线对比.md",
+      "sha256": "239df955a84571f11877e57349820a8656a77a8a118610c6d9f9b1bfda771c3e"
+    },
+    {
+      "source": "runs/vmae_own_full30_cpu_20261031/comparison_summary.json",
+      "destination": "evidence/20261102/vmae_own_full30_cpu_20261031/comparison_summary.json",
+      "sha256": "5037ee9a304bcc2ae80da949be7f778a131837467c1f2fa18a97b04ede0d0ac5"
+    },
+    {
+      "source": "runs/vmae_own_full30_cpu_20261031/comparison_independent_audit.json",
+      "destination": "evidence/20261102/vmae_own_full30_cpu_20261031/comparison_independent_audit.json",
+      "sha256": "1dacd692daf7543ef83982388f1fc9b365bbd9d00c168722f6a86e1554ee5c01"
+    },
+    {
+      "source": "runs/vmae_own_full30_cpu_20261031/search_independent_audit.json",
+      "destination": "evidence/20261102/vmae_own_full30_cpu_20261031/search_independent_audit.json",
+      "sha256": "7ada99b4b0635088c72764820564b786a1730a99bd6b71dc1f5a977b5217114b"
+    },
+    {
+      "source": "runs/vmae_own_full30_cpu_20261031/all_baselines_group_means.csv",
+      "destination": "evidence/20261102/vmae_own_full30_cpu_20261031/all_baselines_group_means.csv",
+      "sha256": "52d9dc761b0922a210c7c49ad39a133084265013ded701f8e5b17b06051648ad"
+    },
+    {
+      "source": "runs/vmae_own_full30_cpu_20261031/all_baselines_audit.json",
+      "destination": "evidence/20261102/vmae_own_full30_cpu_20261031/all_baselines_audit.json",
+      "sha256": "e44298a83c6902b8ba77beaeb18133660d53355467f4e8b5720a79ff3238589c"
+    }
+  ],
+  "no_third_party_checkpoints": true,
+  "model_manifest_sha256": "aebd2745b812bb9f50e33bbf5e9ce56b6991b2f3402d6cb3a16fe0bc51c7c22c"
+}

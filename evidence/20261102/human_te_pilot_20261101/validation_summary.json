@@ -1,0 +1,74 @@
+{
+  "models": [
+    {
+      "arm": "finetune2_no_physics",
+      "mean_seed_validation_pearson": 0.4268633810102731,
+      "ensemble_validation_pearson": 0.4314670202663788,
+      "mse": 0.4998552245941125,
+      "parameters": 1485895
+    },
+    {
+      "arm": "finetune2_no_stats",
+      "mean_seed_validation_pearson": 0.43564033518059175,
+      "ensemble_validation_pearson": 0.43502541321279964,
+      "mse": 0.5331650413362418,
+      "parameters": 1485895
+    },
+    {
+      "arm": "finetune2_properties",
+      "mean_seed_validation_pearson": 0.4324994946645071,
+      "ensemble_validation_pearson": 0.4378979563927527,
+      "mse": 0.4932385154594881,
+      "parameters": 1485895
+    },
+    {
+      "arm": "finetune2_sequence_only",
+      "mean_seed_validation_pearson": 0.4269854707105786,
+      "ensemble_validation_pearson": 0.43264323550795153,
+      "mse": 0.4971914658356312,
+      "parameters": 1485895
+    },
+    {
+      "arm": "finetune4_properties",
+      "mean_seed_validation_pearson": 0.41867482827804525,
+      "ensemble_validation_pearson": 0.4239449052527411,
+      "mse": 0.5279726279079662,
+      "parameters": 2079943
+    },
+    {
+      "arm": "frozen_c_properties",
+      "mean_seed_validation_pearson": 0.42585550059162613,
+      "ensemble_validation_pearson": 0.4324237252317225,
+      "mse": 0.4935561095310203,
+      "parameters": 1485895
+    }
+  ],
+  "baselines": [
+    {
+      "method": "native_seq2ribo_paper_HEK293",
+      "validation_pearson": 0.5117710960638627,
+      "limitation": "Corrected native cohort versus historical paper weights; training overlap not certified, descriptive only"
+    },
+    {
+      "method": "RiboDecode_fixed_RNA_proxy",
+      "validation_pearson": 0.5368386744108804,
+      "limitation": "Fixed RNA/environment score versus TE; not native TE head"
+    },
+    {
+      "method": "length_only_ridge10",
+      "validation_pearson": 0.36700245024174616
+    },
+    {
+      "method": "codon_frequency_ridge10",
+      "validation_pearson": 0.3443391559415521
+    },
+    {
+      "method": "GC_MFE_CAI_ridge10",
+      "validation_pearson": 0.08144640124041205
+    }
+  ],
+  "selected": "finetune2_no_stats",
+  "n": 96,
+  "task": "human_HEK293_TE",
+  "test_predicted": false
+}

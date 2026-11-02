@@ -1,0 +1,49 @@
+{
+  "status": "completed",
+  "task": "human_HEK293_native_TE",
+  "selected_arm": "no_stats",
+  "summary": {
+    "ours": {
+      "n": 903,
+      "genes": 903,
+      "pearson": 0.592070249616775,
+      "ci_low": 0.5457132345577561,
+      "ci_high": 0.6329017509038288
+    },
+    "ribodecode": {
+      "n": 903,
+      "genes": 903,
+      "pearson": 0.6275160615611023,
+      "ci_low": 0.5607879523813227,
+      "ci_high": 0.6849895683665297
+    },
+    "seq2ribo": {
+      "n": 903,
+      "genes": 903,
+      "pearson": 0.556807561454692,
+      "ci_low": 0.5060211566345048,
+      "ci_high": 0.6030521561338872
+    }
+  },
+  "paired": {
+    "ribodecode": {
+      "delta_pearson": -0.03544581194432728,
+      "ci_low": -0.10453172239108131,
+      "ci_high": 0.03961227201169315
+    },
+    "seq2ribo": {
+      "delta_pearson": 0.035262688162083,
+      "ci_low": -0.0033333045198931373,
+      "ci_high": 0.07420828578540438
+    }
+  },
+  "coefficients_computed_from_local_predictions": true,
+  "paper_coefficients_used": false,
+  "limitations": [
+    "seq2ribo published-weight training membership not certified",
+    "RiboDecode fixed-RNA score versus TE, not RPF accuracy",
+    "Native gene/exact protein split; no near-homology clustering",
+    "80-1500 codons, one human cell context",
+    "Unadjusted exploratory paired intervals"
+  ]
+}

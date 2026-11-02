@@ -1,0 +1,255 @@
+{
+  "scope": "Existing original30 historical panel; no new labels or predictions",
+  "active_rule": "Current and next codon sense; not final position; matching pre-wait terminal branches",
+  "stored_parameters": {
+    "waits": 64,
+    "pair": 4,
+    "angle": 4,
+    "bucket": 3
+  },
+  "active_positions": 17118,
+  "wait_below_one": 5459,
+  "rows": [
+    {
+      "sequence_id": "cds_33cc1855d718e94b84d6137c6b65e811debdfa354f6635ba4d222bef71c9de3a",
+      "active_positions": 42,
+      "wait_below_one": 12,
+      "fraction_below_one": 0.2857142857142857,
+      "min_wait": 0.7510341197959587,
+      "max_wait": 1.6104203899304579
+    },
+    {
+      "sequence_id": "cds_4ab87a0ce372b115df9eb5f66d5d4f5885428c2ac5ff228fca0c97d6921b22f9",
+      "active_positions": 68,
+      "wait_below_one": 21,
+      "fraction_below_one": 0.3088235294117647,
+      "min_wait": 0.7510341197959587,
+      "max_wait": 1.7395509397448494
+    },
+    {
+      "sequence_id": "cds_e30cd0d9f04c10ec772bbb78b85e3c0e8e83948f7a30bc192291fb318fe26177",
+      "active_positions": 68,
+      "wait_below_one": 25,
+      "fraction_below_one": 0.36764705882352944,
+      "min_wait": 0.7523391974188068,
+      "max_wait": 1.8189752721871415
+    },
+    {
+      "sequence_id": "cds_22e62463349b0bdbed32f528356f3a2fe38451d0a9cae2658e75e09d71ba9e98",
+      "active_positions": 94,
+      "wait_below_one": 35,
+      "fraction_below_one": 0.3723404255319149,
+      "min_wait": 0.7523391974188068,
+      "max_wait": 1.8610048004374875
+    },
+    {
+      "sequence_id": "cds_a0dc6e03f1855e098c1bbcd168fe18045e68cad70b9dd7b23799db867ee82b08",
+      "active_positions": 162,
+      "wait_below_one": 57,
+      "fraction_below_one": 0.35185185185185186,
+      "min_wait": 0.7151480248457887,
+      "max_wait": 1.8381565967446785
+    },
+    {
+      "sequence_id": "cds_e9c5be33f166486c3edbdd16a9a832d114dbdbf4405a79c7a22db6cb8e0d738c",
+      "active_positions": 191,
+      "wait_below_one": 48,
+      "fraction_below_one": 0.2513089005235602,
+      "min_wait": 0.7138429472229405,
+      "max_wait": 1.8976955907410846
+    },
+    {
+      "sequence_id": "cds_af7cd3d1196392a70a36d7f8d1abdad20b746af62d43aa6f7310d930faf1f2b0",
+      "active_positions": 199,
+      "wait_below_one": 73,
+      "fraction_below_one": 0.36683417085427134,
+      "min_wait": 0.7510341197959587,
+      "max_wait": 1.84708197842193
+    },
+    {
+      "sequence_id": "cds_b18fe1bd667f4bb2b163e5784aab7e16e5e6e3868b002167030e8771b29db061",
+      "active_positions": 230,
+      "wait_below_one": 71,
+      "fraction_below_one": 0.30869565217391304,
+      "min_wait": 0.7151480248457887,
+      "max_wait": 1.876926712536403
+    },
+    {
+      "sequence_id": "cds_91163beeda724d7ffabfb22b53abd42c2e8813cd86a453c4e01087234c53ca66",
+      "active_positions": 235,
+      "wait_below_one": 84,
+      "fraction_below_one": 0.3574468085106383,
+      "min_wait": 0.7510341197959587,
+      "max_wait": 1.82227855578993
+    },
+    {
+      "sequence_id": "cds_4baa6aea3ff7d977a35d75fb9ce9e88cd63d2b58d9d2af4596434c45b8190537",
+      "active_positions": 271,
+      "wait_below_one": 92,
+      "fraction_below_one": 0.33948339483394835,
+      "min_wait": 0.7151480248457887,
+      "max_wait": 1.8438225659633085
+    },
+    {
+      "sequence_id": "cds_06662bf9006efc95ed61d563797aa158c355217a5bf92dcedc5d03fa5ea63b8b",
+      "active_positions": 310,
+      "wait_below_one": 110,
+      "fraction_below_one": 0.3548387096774194,
+      "min_wait": 0.7118886123871674,
+      "max_wait": 1.8381565967446785
+    },
+    {
+      "sequence_id": "cds_07c9cca230596c5475c9a1f826b3202838b81da135edb4dbb40b9bf32eae362a",
+      "active_positions": 338,
+      "wait_below_one": 120,
+      "fraction_below_one": 0.35502958579881655,
+      "min_wait": 0.7105835347643192,
+      "max_wait": 1.8736673000777817
+    },
+    {
+      "sequence_id": "cds_7c61aad41a32b8a08759484df2561f7a5ab961d67dff56916af9b17129a396a2",
+      "active_positions": 544,
+      "wait_below_one": 175,
+      "fraction_below_one": 0.32169117647058826,
+      "min_wait": 0.7374667633650583,
+      "max_wait": 1.876926712536403
+    },
+    {
+      "sequence_id": "cds_3b8957547bfa9e49948b2288caa0b0098b32d454f067313246e8dbf72dc90a0c",
+      "active_positions": 549,
+      "wait_below_one": 181,
+      "fraction_below_one": 0.3296903460837887,
+      "min_wait": 0.7105835347643192,
+      "max_wait": 1.859744478062224
+    },
+    {
+      "sequence_id": "cds_64952a82ccd98dbab80aeef5b6fe27d2bb8a9c3270c96519782fdc74bdf5bab8",
+      "active_positions": 557,
+      "wait_below_one": 164,
+      "fraction_below_one": 0.29443447037701975,
+      "min_wait": 0.7374667633650583,
+      "max_wait": 1.876926712536403
+    },
+    {
+      "sequence_id": "cds_961334ac81e999d0f0fca77cb2b65018bf8e3c809e3423f7285b62f8a82aed07",
+      "active_positions": 564,
+      "wait_below_one": 147,
+      "fraction_below_one": 0.26063829787234044,
+      "min_wait": 0.7105835347643192,
+      "max_wait": 1.9116184127566425
+    },
+    {
+      "sequence_id": "cds_7650721bad4bfee22747c41808b073f05ae6c681ad31b9649bb60f673cc2469d",
+      "active_positions": 612,
+      "wait_below_one": 196,
+      "fraction_below_one": 0.3202614379084967,
+      "min_wait": 0.7118886123871674,
+      "max_wait": 1.8976955907410846
+    },
+    {
+      "sequence_id": "cds_9433014cdc7bff08b208c1c0edb283af35ead5ca4d5b906c79ecb6a1b6e58a35",
+      "active_positions": 664,
+      "wait_below_one": 179,
+      "fraction_below_one": 0.26957831325301207,
+      "min_wait": 0.7523391974188068,
+      "max_wait": 1.8630038905208455
+    },
+    {
+      "sequence_id": "cds_0f58d02a856f7ac11e83883da471bb8853ca98145ac0865cea7f63b0c54ff27f",
+      "active_positions": 672,
+      "wait_below_one": 170,
+      "fraction_below_one": 0.25297619047619047,
+      "min_wait": 0.7105835347643192,
+      "max_wait": 1.876926712536403
+    },
+    {
+      "sequence_id": "cds_2d5394717520676d0bf79cf4b015ff09bbc3d2c0bf917ec1a1eb342103e5d02a",
+      "active_positions": 676,
+      "wait_below_one": 202,
+      "fraction_below_one": 0.2988165680473373,
+      "min_wait": 0.7510341197959587,
+      "max_wait": 1.8976955907410846
+    },
+    {
+      "sequence_id": "cds_f61675adca00281a975182129125b3979f97523f756483a0b5874a6716da97f2",
+      "active_positions": 707,
+      "wait_below_one": 194,
+      "fraction_below_one": 0.2743988684582744,
+      "min_wait": 0.7523391974188068,
+      "max_wait": 1.876926712536403
+    },
+    {
+      "sequence_id": "cds_2b42583c88629ad0524c824160f8eba8ead5d5f1ff8378635ebf32beec5c8ea4",
+      "active_positions": 710,
+      "wait_below_one": 226,
+      "fraction_below_one": 0.3183098591549296,
+      "min_wait": 0.7355124285292852,
+      "max_wait": 1.8976955907410846
+    },
+    {
+      "sequence_id": "cds_0cbe9f954dbf8de8362ba16db297b2a34e4c3428e7b58e456a651c0fcc1e9968",
+      "active_positions": 725,
+      "wait_below_one": 263,
+      "fraction_below_one": 0.3627586206896552,
+      "min_wait": 0.7342073509064371,
+      "max_wait": 1.876926712536403
+    },
+    {
+      "sequence_id": "cds_47ae6b90858a9dfc964eaf1def97629c615938da746ae2e1dd6c467359b4cb1c",
+      "active_positions": 747,
+      "wait_below_one": 210,
+      "fraction_below_one": 0.28112449799196787,
+      "min_wait": 0.7105835347643192,
+      "max_wait": 1.876926712536403
+    },
+    {
+      "sequence_id": "cds_f98c642f02f31abb1b896728199d5551bd93bb522a7537d999f5f6cd84b9a2ca",
+      "active_positions": 954,
+      "wait_below_one": 287,
+      "fraction_below_one": 0.3008385744234801,
+      "min_wait": 0.7118886123871674,
+      "max_wait": 1.8736673000777817
+    },
+    {
+      "sequence_id": "cds_524e9b05d27a2e3dbe2b11e155736a35d1ca350f54099c29cce8cbd7ce84e02a",
+      "active_positions": 1103,
+      "wait_below_one": 386,
+      "fraction_below_one": 0.3499546690843155,
+      "min_wait": 0.7118886123871674,
+      "max_wait": 1.9116184127566425
+    },
+    {
+      "sequence_id": "cds_d3a99d330ca2b1f5b84f1e05a57bd99edc81edcfdf27fdefdc31a9f668eaec2a",
+      "active_positions": 1112,
+      "wait_below_one": 348,
+      "fraction_below_one": 0.3129496402877698,
+      "min_wait": 0.7105835347643192,
+      "max_wait": 1.876926712536403
+    },
+    {
+      "sequence_id": "cds_deed4f656d9e90087de051f4c5e2abf3aacf25e44eea654d7ee49a7b9388bc34",
+      "active_positions": 1266,
+      "wait_below_one": 416,
+      "fraction_below_one": 0.3285939968404423,
+      "min_wait": 0.7118886123871674,
+      "max_wait": 1.876926712536403
+    },
+    {
+      "sequence_id": "cds_7b4c982986b5fabda64b41194c5cff10db46b558d18a92b4502498806338ac05",
+      "active_positions": 1294,
+      "wait_below_one": 427,
+      "fraction_below_one": 0.32998454404945904,
+      "min_wait": 0.7105835347643192,
+      "max_wait": 1.8956965006577269
+    },
+    {
+      "sequence_id": "cds_b1e5057198f96e82bee836b9a1a9e522be10fa56de7a64d193eb25c4aa23e146",
+      "active_positions": 1454,
+      "wait_below_one": 540,
+      "fraction_below_one": 0.3713892709766162,
+      "min_wait": 0.7105835347643192,
+      "max_wait": 1.9116184127566425
+    }
+  ],
+  "position_weighted_fraction_below_one": 0.31890407757915645
+}

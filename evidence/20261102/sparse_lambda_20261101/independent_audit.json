@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "lambda_searches": 60,
+  "steps_each": 20,
+  "objective_and_winner_verified": true,
+  "validation_samples": 219,
+  "sparse_metrics_recomputed": true,
+  "sparse_paired_bootstrap_intervals": {
+    "16": [
+      -0.06176389053584824,
+      0.0068360379057727395
+    ],
+    "32": [
+      -0.06439994081008367,
+      0.00682609836391149
+    ],
+    "64": [
+      -0.04305347062807329,
+      0.008224050203407631
+    ],
+    "128": [
+      -0.03410504451590104,
+      0.004380218125935111
+    ]
+  },
+  "limits": "Exploratory unadjusted validation intervals; six sequence lambda panel; no new model training, no independent test confirmation",
+  "source_hashes": {
+    "lambda_search_results.json": "d86a5429cdeef2de66d86cbf4fb4e85b91fe625917926c666b0100d8513fbdf9",
+    "sparse_validation_results.json": "d6514058205f6d4210f28bf5f2e7acc6c627fee2534d15059092721d2de5027b"
+  }
+}

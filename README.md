@@ -1,67 +1,59 @@
-# RiboSeq Scorer: sTASEP + GNN + Transformer
+# RiboSeq scorer — human TE results and model handoff
 
-独立研究分支 `riboseq-gnn-transformer-20261031`，与本仓库VMAE生成模型分开。
+2026-11-02研究归档。分支 **`results/human-te-scorer-20261102`** 从评分器快照分支派生；不覆盖`main`、`V3`、`V4`、`vmae-v2`或2026-10-31快照，不自动恢复训练。
 
-**状态：按用户要求停止实验，先补机制和评测协议证据。没有证明下游任务SOTA。上传是保存与交接，不授权恢复训练。**
+**人源HEK293 CDS-only TE：7373训练／922验证／903测试。下表全部由同903条样本的本地实际预测计算，没有使用论文相关系数。**
 
-- [完整交接文档](docs/HANDOFF_ZH.md)：已经做了什么、停止时状态、证据缺口、未来路线和资产位置。
-- [模型权重清单](models/manifest.json)：26份自有tensor-only权重及各自配置、SHA256、完成状态。
-- [独立模型Release](https://github.com/purplellllll/m/releases/tag/riboseq-scorer-snapshot-20261031)：权重附件与导出核验回执。
-- [证据缺口](evidence/scalar_tasks/停止记录与证据缺口.md)；[任务颗粒度核验](evidence/scorer_breakdown/评分器评测集拆分与超越核验.md)。
+| 模型 | 留出Pearson | 95%基因bootstrap区间 |
+|---|---:|---|
+| 自有两种子人源TE模型 | **0.5921** | [0.5457, 0.6329] |
+| seq2ribo历史作者权重 | 0.5568 | [0.5060, 0.6031] |
+| RiboDecode固定RNA代理 | 0.6275 | [0.5608, 0.6850] |
 
-## 已有证据
+我们减seq2ribo：Δr=+0.0353，配对95%区间[-0.0033,+0.0742]；两项参照的配对区间均跨零，**没有证明稳定超越或SOTA**。我们的训练/验证与测试在基因、精确CDS和精确蛋白上隔离，尚未做近同源聚类。作者seq2ribo权重训练成员身份未认证；RiboDecode此项是固定RNA/环境分数与TE的代理相关，不是其原生RPF准确率。
 
-| 实验 | 已有结果 | 结论边界 |
-|---|---|---|
-| 新LIVER方向性序列邻接 | 验证Pearson 0.4021→0.5173 | 相同696验证样本，两个配对种子；不是最终测试 |
-| 再加结构门控 | 0.5173→0.5278 | 有初步正信号，第三种子未完成 |
-| 再加上下文锚定 | 0.5278→0.5232 | 当前没有改善 |
-| mRFP蛋白标量 | 219测试集成r=0.8510；去重217同为0.8510 | 同集seq2ribo原权重对照未完成；完整原划分尚未认证 |
-| 人类TE/RPF标量 | 数据与模型接口已整理 | 尚无本模型完整任务测试结果 |
+## 模型与验证
 
-新v2使用6956条公开相关研究LIVER记录，5564/696/696按基因及精确CDS/蛋白去重划分；不是原RiboGL论文划分。最终696测试未打开。当前蛋白标量来自旧width424编码器，不能冒称新width192门控模型的下游成绩。
+验证选定`no_stats`：两层width192、方向性±1/±2/±4图邻接、结构边门控、sTASEP物理输入先融合至Transformer，context mean/max读出人源标量。无显式长度、GC/MFE/CAI或模拟全局统计输入。GC/MFE/CAI仍独立报告并可作为搜索奖励。物理参数仍为鼠肝代理拟合，不声称已经人源动力学校准。
 
-## 模型结构
+**重要评估修正：**初版测试脚本漏载训练标量头，初版自有预测无效。这里公布的是载入原验证选定的两个完整权重后重算的结果；没有重训、换模型或按测试调参。验证批次重载误差≤2.4e-7，903行及三个Pearson独立复核通过。[修正记录](evidence/20261102/human_te_expanded_20261101/评估修正说明.md)保留错误和原生进程退出异常，不隐藏失败。
 
-三路信息分别嵌入：sTASEP模拟统计、序列/结构邻接GNN、上下文Transformer。新模型提供有方向±1/±2/±4邻接、结构边门控和上下文主头选项。标量头使用三路屏蔽均值/最大池化与非线性读出；RPF另有真实RNA和环境输入，TE另有UTR输入选项。
+## 下载和使用
 
-位置Pearson、跨转录本RPF/TE Pearson与蛋白表达相关分别报告。归一化位置预测求和不作为TE标签。门控数值不视为校准后的真实结构概率。
-
-## 代码与权重核验
-
-只做模型数值检查，不启动训练或生物数据评测：
+- [本次独立模型Release](https://github.com/purplellllll/m/releases/tag/human-te-scorer-20261102)
+- [60份权重清单与SHA256](models/20261102/manifest.json)：4份扩大人源模型、12份人源pilot、40份历史mRFP读出、2份图骨干、2份VMAE生成器快照。只有清单`selected_paths`中的两个种子构成人源主模型；其他是研究对照。
+- 不包含优化器/RNG、外部模型权重、原始序列数据集或第三方模拟源码。40份mRFP探针中，sequence_graph骨干依赖[原评分器Release](https://github.com/purplellllll/m/releases/tag/riboseq-scorer-snapshot-20261031)。
 
 ```bash
-python -m physics_scorer.test_reliable_graph_context
-python -m physics_scorer.test_graph_polish_model
-python scripts/test_scalar_heads.py
+gh release download human-te-scorer-20261102 --repo purplellllll/m --pattern human-te-own-models-20261102.tar.gz
+tar -xzf human-te-own-models-20261102.tar.gz
+python scripts/verify_release_20261102.py --models-root models_20261102
+python scripts/predict_human_te.py --models-root models_20261102 --features your_aligned_CDS_features.npz
 ```
 
-下载权重并按清单检查（Release附件约221MB）：
+推理默认CPU，自动选两个主模型并平均原标签尺度输出。NPZ需要`cod:[L]`、`physics:[L,2]`、`structure:[L,5]`、`edges:[2,E]`，其中密码子ID采用上游seq2ribo顺序；不得混用VMAE tokenizer或用零物理冒充原输入。CDS折叠/模拟必须采用记录的结构、参数和种子规则；完整第三方依赖需从原项目取得，见[输入合同](docs/HUMAN_TE_INFERENCE.md)与[第三方来源](third_party/README.md)。
 
-```bash
-gh release download riboseq-scorer-snapshot-20261031 --repo purplellllll/m --pattern riboseq-scorer-weights-20261031.tar.gz
-tar -xzf riboseq-scorer-weights-20261031.tar.gz
-python scripts/verify_exported_models.py --models-root models
-```
+`load_exported_checkpoint`采用`weights_only=True`、SHA校验和完整`strict=True`载入，包含训练后的标量头。`HumanTEScalar`直接输出训练目标尺度；历史`BranchProbe`输出仍需用其metadata中的`y_scale/y_mean`还原。
 
-26份权重只包含本项目自有模型：13份v2最佳（其中1份未完成）及1份未完成trial的latest、6份蛋白标量、3份旧polish和3份旧BiLSTM参考。它们不是26个独立最终候选，也没有据测试成绩选出一个“最终SOTA模型”。原训练优化器/RNG留在服务器，Release导出不含这些状态。
+## 其他实验结果
 
-`physics_scorer/checkpoint_io.py`提供`load_exported_checkpoint`，默认CPU、`weights_only=True`、严格载入，支持先验证SHA256。蛋白模型原始输出是训练标准化空间的标量，需要使用权重metadata中的`target_scale/target_mean`还原原标签尺度。
+| 实验 | 结果与边界 |
+|---|---|
+| 人源小pilot，256/96 | 两层集成r0.4379，四层0.4239；仅验证开发，不支持加深直接改善 |
+| mRFP读出，217历史测试 | gated_graph+C r0.7521，三路拼接0.7234；C已混合物理/图，不能称纯Transformer优势 |
+| 稀疏推理，219 mRFP验证 | 全注意力r0.7251；滑窗16/32/64/128均较低；未重新训练稀疏模型 |
+| 长序列合成推理 | 8192密码子滑窗可运行；FP32 math后端下约0.070秒/86.6MiB，非训练显存或长CDS准确率证据 |
+| λ扫描，2模型×5档×6条×20步 | 全部60组完成并补齐两外部评分；旧mRFP头的人源域外搜索，不是扩大人源头的结果 |
+| 人源pilot直接搜索，3条×20步 | 自有分数上升，但seq2ribo均下降；不能认定表达改善 |
+| 旧V3/V4完整30条 | 两轮搜索和独立评估完成；保留性质奖励、替换评分项未显示全面外部改善 |
 
-## 目录
+- [结果总览与下一轮交接](docs/HANDOFF_20261102_ZH.md)
+- [903条逐样本预测CSV](evidence/20261102/human_te_expanded_20261101/test_predictions.csv)
+- [独立测试摘要与配对区间](evidence/20261102/human_te_expanded_20261101/test_summary.json)
+- [λ完整外部评分表](evidence/20261102/sparse_lambda_20261101/lambda完整外部评分对比.md)
+- [直接搜索对照](evidence/20261102/direct_vs_vmae_human_20261101/直接搜索对比.md)
+- [旧V3/V4完整对照](evidence/20261102/v3_v4_own_multi_cpu_20261101/完整结果.md)
 
-- `physics_scorer/`：独立模型及数值检查，不含VMAE生成器。
-- `scripts/`：可独立运行的检查入口。
-- `historical/drivers/`：原实验驱动与准备/训练/报告源码。保留原绝对路径，**不承诺新机器上一键运行**；不要直接执行setup或控制器。
-- `evidence/`：冻结记录、验证日志、数据/模型哈希及停止收据。大规模原始序列、测量矩阵和全部特征缓存未放Git。
-- `docs/HANDOFF_ZH.md`：下一轮对话入口。
-- `third_party/`：依赖来源及本项目的参考后端装配胶水；不重新分发第三方网络源码或权重。
+`historical/20261102/`是原实验源码溯源，保留工作区路径，不承诺fresh clone一键训练。其原`evaluate.py`包含已归档的漏载头错误；正确复算需使用同目录`recovery_20261102/correct_head_loading.py`及完整依赖。日常推理使用上面的新入口，不直接运行历史控制器。
 
-## 环境与第三方依赖
-
-模型核心使用PyTorch和NumPy；实验使用pandas/scipy/ViennaRNA/SwanLab等。完整原环境及基线隔离环境版本在交接文档中。BERT/T5编码器实验是随机初始化的小模型，需可选Transformers依赖。
-
-seq2ribo有非商业研究许可和再分发限制；外部网络/模拟源码、权重和数据应从其原始项目依许可获取，见[第三方说明](third_party/README.md)。这里不对其重新授予许可；本分支也未替用户选择新的通用软件许可证。
-
-原项目：[seq2ribo](https://github.com/Kingsford-Group/seq2ribo)、[RiboDecode](https://github.com/wangfanfff/RiboDecode)。实验背景：[seq2ribo论文](https://doi.org/10.1093/bioinformatics/btag296)、[RiboDecode论文](https://doi.org/10.1038/s41467-025-64894-x)。
+原`docs/HANDOFF_ZH.md`和旧证据保留2026-10-31快照身份，当前状态以本README和新交接为准。LIVER旧696留出中120已在历史固定比较打开，余576未预测；本次没有再读取该测试。

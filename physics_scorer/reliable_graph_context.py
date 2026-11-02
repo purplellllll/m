@@ -93,7 +93,9 @@ class ReliableGraphContext(nn.Module):
         correction=self.correction(torch.cat((p,h,c),-1)).squeeze(-1)
         raw=raw_context+.1*correction if self.anchored_head else correction
         q=F.softplus(raw).masked_fill(~valid,0)
-        aux=dict(physics=F.softplus(self.physics_head(p).squeeze(-1)).masked_fill(~valid,0),
-            gnn=F.softplus(self.graph_head(h).squeeze(-1)).masked_fill(~valid,0),
+        aux={}
+        if self.use_physics:
+            aux['physics']=F.softplus(self.physics_head(p).squeeze(-1)).masked_fill(~valid,0)
+        aux.update(gnn=F.softplus(self.graph_head(h).squeeze(-1)).masked_fill(~valid,0),
             context=F.softplus(raw_context).masked_fill(~valid,0))
         return q,aux

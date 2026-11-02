@@ -36,10 +36,17 @@ class ScalarHeads(nn.Module):
         self.readout=nn.Sequential(nn.Linear(6*width+extra,256),nn.GELU(),nn.Dropout(.1),
                                    nn.Linear(256,64),nn.GELU(),nn.Linear(64,n_outputs))
 
-    def forward(self,pooled,global_features,log_rna=None,environment=None,utrs=None,environment_embedding=None):
+    def forward(self,pooled,global_features,log_rna=None,environment=None,utrs=None,environment_embedding=None,
+                physics_enabled=True):
         if pooled.ndim!=3 or pooled.shape[1:]!=(3,2*self.width):raise ValueError('Expected three pooled branches')
         if global_features.shape!=(len(pooled),6):raise ValueError('Six sequence/simulation statistics required')
-        gains=3*self.branch_logits.softmax(0)
+        logits=self.branch_logits
+        if not physics_enabled:
+            # Cached representations and simulation summary statistics are separate physics entrances.
+            pooled=torch.cat((torch.zeros_like(pooled[:,:1]),pooled[:,1:]),1)
+            global_features=torch.cat((global_features[:,:3],torch.zeros_like(global_features[:,3:])),1)
+            logits=logits.masked_fill(torch.tensor([True,False,False],device=logits.device),-torch.inf)
+        gains=(3 if physics_enabled else 2)*logits.softmax(0)
         branches=[norm(pooled[:,j])*gains[j] for j,norm in enumerate(self.branch_norm)]
         parts=branches+[global_features]
         if self.task=='rpf':
@@ -81,6 +88,8 @@ class TaskScalarModel(nn.Module):
         try:
             profile,_=self.backbone(*inputs)
             valid=inputs[1]
+            if not getattr(self.backbone,'use_physics',True):
+                self._branches['physics']=torch.zeros_like(self._branches['physics'])
             pooled=torch.stack([masked_pool(self._branches[k].reshape(*valid.shape,-1),valid)
                                 for k in ['physics','graph','context']],1)
             return pooled,profile
@@ -88,4 +97,4 @@ class TaskScalarModel(nn.Module):
 
     def forward(self,inputs,global_features,**task_inputs):
         pooled,_=self.representations(inputs)
-        return self.heads(pooled,global_features,**task_inputs)
+        return self.heads(pooled,global_features,physics_enabled=getattr(self.backbone,'use_physics',True),**task_inputs)

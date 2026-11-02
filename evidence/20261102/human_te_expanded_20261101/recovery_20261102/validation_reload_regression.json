@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "seed": 30101,
+      "validation_batch": 8,
+      "max_abs_error": 2.384185791015625e-07,
+      "scalar_head_state_exact": true
+    },
+    {
+      "seed": 30102,
+      "validation_batch": 8,
+      "max_abs_error": 2.384185791015625e-07,
+      "scalar_head_state_exact": true
+    }
+  ]
+}

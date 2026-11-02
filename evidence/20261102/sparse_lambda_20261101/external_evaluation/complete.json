@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "endpoint_rows": 60,
+  "original_rows": 6,
+  "unique_sequences": 38,
+  "seconds": 363.9220000000205,
+  "all_seed_means_verified": true,
+  "protocol_sha256": "2c8c0aa3a56e10802d2e55cd951dd0229064b691d1e433400d3b8733dc058eff",
+  "metrics_sha256": "b0a4113669263192d2768c85e47b025138a7bcd5683e37642aed50bcafd69411",
+  "reused": {
+    "ribodecode": 8,
+    "seq2ribo": 8
+  }
+}

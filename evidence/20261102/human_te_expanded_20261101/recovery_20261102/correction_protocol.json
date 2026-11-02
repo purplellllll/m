@@ -1,0 +1,23 @@
+{
+  "issue": "Original evaluation omitted head.load_state_dict; old own-score column invalid",
+  "correction": "Inject the same selected checkpoints scalar-head state before test inference; locked evaluator otherwise unchanged",
+  "source_sha256": "ae42b9249c7294f1724340827ba8e4edb1cc4a6ab50bfddbba89c7d0597766e8",
+  "original_evaluator_sha256": "a5d5d848a4c2d135a16be2ea9eb9e8aec3d181d06a52684cf4d03c3b1d358cc1",
+  "selection_sha256": "b51b1121843d3bc4e776169cfab40b20bc95d0fe60629a0f9f606d6e897dd614",
+  "model_training_or_selection_changed": false,
+  "test_based_tuning": false,
+  "validation_reload_checks": [
+    {
+      "seed": 30101,
+      "validation_batch": 8,
+      "max_abs_error": 2.384185791015625e-07,
+      "scalar_head_state_exact": true
+    },
+    {
+      "seed": 30102,
+      "validation_batch": 8,
+      "max_abs_error": 2.384185791015625e-07,
+      "scalar_head_state_exact": true
+    }
+  ]
+}

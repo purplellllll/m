@@ -1,0 +1,12 @@
+[
+  {
+    "path": "physics_parameters_train_only.json",
+    "sha256": "5c9b02550fa978efb826745746b232d84268cc3b582759079551e11d38f5646a",
+    "role": "Own fitted proxy parameters or human training-corpus reference; not a third-party neural checkpoint"
+  },
+  {
+    "path": "cai_weights.json",
+    "sha256": "079c22aaefde74977d1871ac0ee59846bc3ecf60ba3d261cb7d4eeb0033c080c",
+    "role": "Own fitted proxy parameters or human training-corpus reference; not a third-party neural checkpoint"
+  }
+]

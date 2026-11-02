@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "models": 60,
+  "kinds": {
+    "HumanTEScalar": 16,
+    "BranchProbe": 40,
+    "ReliableGraphContext": 2,
+    "CodonVMAE": 2
+  },
+  "hashes_verified": true,
+  "strict_state_load": true,
+  "missing_human_head_rejected": true,
+  "no_stats_input_invariance": true,
+  "synthetic_inference": true,
+  "torch": "2.14.0+cpu",
+  "not_biological_validation": true
+}

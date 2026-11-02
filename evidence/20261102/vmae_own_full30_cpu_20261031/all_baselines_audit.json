@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "historical_rows": 335,
+  "own_added_rows": 30,
+  "cohort_counts": {
+    "common30": 30,
+    "common27_LinearDesign": 27,
+    "common8_nativeRiboDecode": 8
+  },
+  "historical_candidate_sha_verified": true,
+  "historical_metrics_verified": true,
+  "original_and_v3_endpoints_exactly_matched": true,
+  "sources_sha256": {
+    "runs\\seq2ribo_multicell_comparison_20261027\\metrics.csv": "3ac213d3ad807a43da52b7b182d3b17b5020432acf37a2d0ef39947ad93509d3",
+    "runs\\seq2ribo_multicell_comparison_20261027\\candidate_manifest.json": "24f18e0cb3bc273683bce11fb2faf4634a2304c17d61cb7af5b6f78e60582b3a",
+    "runs\\vmae_own_full30_cpu_20261031\\comparison_metrics.json": "2410ac15766ac11a8e0c3ff561c71bf084f6d7d49c645167695c6e554841a27f"
+  },
+  "no_new_inference": true,
+  "no_imputed_own_scores_for_baselines": true
+}

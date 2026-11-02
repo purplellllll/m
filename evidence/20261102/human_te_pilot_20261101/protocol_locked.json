@@ -1,0 +1,41 @@
+{
+  "task": "Human HEK293 native CDS-only TE",
+  "train": 256,
+  "validation": 96,
+  "length_codons": [
+    80,
+    500
+  ],
+  "seeds": [
+    30101,
+    30102
+  ],
+  "arms": [
+    "frozen_c_properties",
+    "finetune2_properties",
+    "finetune4_properties",
+    "finetune2_no_stats",
+    "finetune2_no_physics",
+    "finetune2_sequence_only"
+  ],
+  "max_steps": 300,
+  "validation_every": 50,
+  "batch_size": 4,
+  "optimizer": "AdamW",
+  "lr_encoder": 1e-05,
+  "lr_head": 0.0003,
+  "weight_decay": 0.01,
+  "properties": [
+    "GC_fraction",
+    "MFE_per_nt",
+    "CAI"
+  ],
+  "explicit_length_feature": false,
+  "statistics_normalization": "Train only",
+  "physics": "Frozen existing mouse-proxy parameters, four simulations; domain mismatch retained and ablated, not human-calibrated",
+  "expansion": "Duplicate pretrained context layers2->4; no width change; all other architecture and budgets matched",
+  "limits": "Small length-restricted development pilot; test never predicted; no claim of full human calibration, SOTA or generator improvement",
+  "source_sha256": "fed8039effe95aa0b281c32942ef939d5986f1827ce7d63bb14c2459081d84ac",
+  "cohort_sha256": "01803904b2bd8a516e40130814320095b343a2b234f320b1528cefc0506e0bb4",
+  "physics_sha256": "5c9b02550fa978efb826745746b232d84268cc3b582759079551e11d38f5646a"
+}

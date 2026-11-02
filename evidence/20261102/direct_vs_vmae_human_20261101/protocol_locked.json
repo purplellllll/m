@@ -1,0 +1,28 @@
+{
+  "task": "Human HEK293 CDS-only TE, experimental pilot head",
+  "scorer_arm": "finetune2_no_stats",
+  "scorer_checkpoints": [
+    "780031c1db201c2d1ff203809b12fa0964c97e7c072634c0566c6c1a71004073",
+    "3a823e3524474cfa544b6a35b4d73e310b42d51c4d10ea8bdc8bef4d8eb7e0dc"
+  ],
+  "generator_sha256": "6592a07293da25b18f9ed71584e48dc4da23fa121b4f735f10d26ee7da26c6af",
+  "cases": [
+    "ffde06fc6a41c481ac5bb9bce53f393a6c3b878dae5f6cd20f913dc6d628561a",
+    "9490e18697ee2cbc557c14b7b8a207506afb1edf528890280136c117d728ecb7",
+    "207bafc5497c2fd63e294f431a589ea6cf8c0b28b3317d8768d9ad0c633b6bf8"
+  ],
+  "proposals_per_method": 20,
+  "objective": "Own human TE scalar only, lambda1; properties reported separately",
+  "direct": "Greedy synonymous hill climb; edit1/2/4 mutable codons with probabilities0.5/0.3/0.2; always a changed codon",
+  "vmae": "Original V3 frozen; initial masked decoder plus19 Gaussian latent proposals, same radius8 and noise schedule",
+  "seed": 20261101,
+  "original_fallback": true,
+  "amino_acids_and_terminals_fixed": true,
+  "limits": [
+    "3 development cases, not903 heldout test",
+    "20 attempted proposals; unique queries and wall times can differ",
+    "Pilot head256train96validation; mouse-proxy four-run physics; not expanded final head",
+    "All generated-sequence results are predictions, no measured candidate expression"
+  ],
+  "source_sha256": "7215f521e6e6e43d6b90b63c865e1674375641f8b201dda3b53191e464922dc8"
+}

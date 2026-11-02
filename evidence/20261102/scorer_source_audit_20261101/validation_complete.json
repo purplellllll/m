@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "unix": 1793511422.5023475,
+  "cpu_torch": "2.14.0+cpu",
+  "gpu_torch": "2.11.0+cu126",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "compared_frozen_cases": 6,
+  "max_cpu_gpu_abs_error": {
+    "baseline": 0.00011444091796875,
+    "without_pair_messages": 0.00011539459228515625,
+    "diagonal_context": 0.00014495849609375,
+    "physics_zero": 0.0001430511474609375,
+    "structure_zero": 0.00013446807861328125
+  },
+  "benchmarks": [
+    {
+      "n_codons": 256,
+      "mode": "dense",
+      "seconds": 0.0017689000815153122,
+      "peak_allocated_bytes": 27837440,
+      "finite": true
+    },
+    {
+      "n_codons": 256,
+      "mode": "sparse_radius128",
+      "seconds": 0.0025983001105487347,
+      "peak_allocated_bytes": 25840640,
+      "finite": true
+    },
+    {
+      "n_codons": 1024,
+      "mode": "dense",
+      "seconds": 0.003676600055769086,
+      "peak_allocated_bytes": 103341056,
+      "finite": true
+    },
+    {
+      "n_codons": 1024,
+      "mode": "sparse_radius128",
+      "seconds": 0.012553599895909429,
+      "peak_allocated_bytes": 32313344,
+      "finite": true
+    },
+    {
+      "n_codons": 4096,
+      "mode": "dense",
+      "seconds": 0.0502142000477761,
+      "peak_allocated_bytes": 1254702080,
+      "finite": true
+    },
+    {
+      "n_codons": 4096,
+      "mode": "sparse_radius128",
+      "seconds": 0.03263809997588396,
+      "peak_allocated_bytes": 56182272,
+      "finite": true
+    },
+    {
+      "n_codons": 8192,
+      "mode": "dense",
+      "seconds": 0.19916779990307987,
+      "peak_allocated_bytes": 4903779328,
+      "finite": true
+    },
+    {
+      "n_codons": 8192,
+      "mode": "sparse_radius128",
+      "seconds": 0.06963949999772012,
+      "peak_allocated_bytes": 90785280,
+      "finite": true
+    }
+  ],
+  "limits": "Functional and synthetic inference checks; no new held-out accuracy or training-memory validation."
+}

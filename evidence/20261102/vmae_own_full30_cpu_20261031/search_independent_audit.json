@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "n_cases": 30,
+  "steps_each": 80,
+  "identity_and_same_protein_verified": true,
+  "all_best_selections_recomputed": true,
+  "all_gc_cai_mfe_normalization_verified": true,
+  "all_feature_hashes_verified": true,
+  "trajectory_records": 2490,
+  "unique_scored_sequences": 2481,
+  "generator_unchanged": true,
+  "no_claim_of_measured_expression": true,
+  "limitation": "Cached feature/source identities audited; external simulation and neural scores not independently regenerated in this standard-library audit"
+}

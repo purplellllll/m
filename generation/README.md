@@ -1,0 +1,5 @@
+# 冻结VMAE快照
+
+这里只保存本次搜索复核所用的自有CodonVMAE/tokenizer源码，权重在本次Release的vmae_generators目录。V3为原42轮权重，V4为额外多目标微调第6轮；两者均2498240参数。主仓库V3、V4及vmae-v2分支保持独立，未在此进行合并或改写。
+
+该tokenizer顺序与评分器输入cod的seq2ribo密码子顺序不同。模型/序列转换应通过DNA字符串，不直接复用token IDs。生成端固定目标氨基酸与起止，评分端独立重建折叠和模拟。详细搜索配方在evidence/20261102/及historical/20261102/，不将旧mRFP引导的lambda结果重命名为新的人源TE搜索。

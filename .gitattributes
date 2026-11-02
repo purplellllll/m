@@ -1,0 +1,10 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.csv text eol=lf
+evidence/20261102/** -text
+historical/20261102/** -text
+models/20261102/** -text
+*.png binary

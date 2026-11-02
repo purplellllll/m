@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "n_cases": 30,
+  "method_rows": 90,
+  "all_endpoint_identity_and_score_matches": true,
+  "all_seed_averages_verified": true,
+  "all_aggregate_and_paired_deltas_recomputed": true,
+  "max_aggregate_recompute_error": 1.4210854715202004e-14,
+  "historical_reference_reuse_explicit": true,
+  "no_measured_expression_claim": true,
+  "search_audit_sha256": "7ada99b4b0635088c72764820564b786a1730a99bd6b71dc1f5a977b5217114b"
+}

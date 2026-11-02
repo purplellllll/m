@@ -1,0 +1,12 @@
+{
+  "stage": "completed_after_evaluation_repair",
+  "unix": 1793578698.1073906,
+  "training_models": 4,
+  "test_n": 903,
+  "paper_coefficients_used": false,
+  "repair": "recovery_20261102/correct_head_loading.py",
+  "audit": "recovery_20261102/independent_final_audit.json",
+  "initial_process_failure_preserved": true,
+  "native_process_exit_error_after_output": true,
+  "scientific_results": "Corrected outputs independently verified; training and selection unchanged"
+}

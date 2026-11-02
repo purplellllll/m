@@ -1,0 +1,38 @@
+{
+  "status": "completed",
+  "methods": [
+    {
+      "method": "original",
+      "n": 3,
+      "own_score": 0.4336977292978129,
+      "ribodecode_score": 2.9315863450368247,
+      "seq2ribo_score": 0.6810134419711091,
+      "gc_percent": 51.63644897864167,
+      "cai": 0.7881941491469177,
+      "mfe_per_nt": -0.3139122692512574
+    },
+    {
+      "method": "direct_synonymous",
+      "n": 3,
+      "own_score": 0.49679240804693775,
+      "ribodecode_score": 2.9808687369028726,
+      "seq2ribo_score": 0.4960136819886676,
+      "gc_percent": 50.76009801923423,
+      "cai": 0.7766155168315008,
+      "mfe_per_nt": -0.3157323477275064
+    },
+    {
+      "method": "vmae_latent",
+      "n": 3,
+      "own_score": 0.44261909527886845,
+      "ribodecode_score": 2.9901886781056723,
+      "seq2ribo_score": 0.5405895891448063,
+      "gc_percent": 54.414226756419446,
+      "cai": 0.8285431634697221,
+      "mfe_per_nt": -0.34815262860300594
+    }
+  ],
+  "unique_external_sequences": 7,
+  "all_metrics_locally_computed": true,
+  "limits": "Three development CDS, frozen small human TE pilot; no measured expression for changed sequences, no expanded test read"
+}
