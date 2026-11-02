@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "models": 14,
+  "real_validation_sequences_per_model": 4,
+  "maximum_error": 1.7881393432617188e-06,
+  "checks": [
+    {
+      "model": "human_te_100000",
+      "seed": 30101,
+      "max_error": 1.7881393432617188e-06,
+      "n": 4
+    },
+    {
+      "model": "human_te_100000",
+      "seed": 30102,
+      "max_error": 6.556510925292969e-07,
+      "n": 4
+    },
+    {
+      "model": "human_te_24000",
+      "seed": 30101,
+      "max_error": 8.940696716308594e-07,
+      "n": 4
+    },
+    {
+      "model": "human_te_24000",
+      "seed": 30102,
+      "max_error": 3.5762786865234375e-07,
+      "n": 4
+    },
+    {
+      "model": "full",
+      "seed": 30101,
+      "max_error": 1.7881393432617188e-07,
+      "n": 4
+    },
+    {
+      "model": "full",
+      "seed": 30102,
+      "max_error": 1.4901161193847656e-07,
+      "n": 4
+    },
+    {
+      "model": "no_physics",
+      "seed": 30101,
+      "max_error": 2.384185791015625e-07,
+      "n": 4
+    },
+    {
+      "model": "no_physics",
+      "seed": 30102,
+      "max_error": 1.7881393432617188e-07,
+      "n": 4
+    },
+    {
+      "model": "no_graph",
+      "seed": 30101,
+      "max_error": 2.384185791015625e-07,
+      "n": 4
+    },
+    {
+      "model": "no_graph",
+      "seed": 30102,
+      "max_error": 5.960464477539063e-08,
+      "n": 4
+    },
+    {
+      "model": "no_context",
+      "seed": 30101,
+      "max_error": 2.086162567138672e-07,
+      "n": 4
+    },
+    {
+      "model": "no_context",
+      "seed": 30102,
+      "max_error": 2.682209014892578e-07,
+      "n": 4
+    },
+    {
+      "model": "seq_transformer",
+      "seed": 30101,
+      "max_error": 2.384185791015625e-07,
+      "n": 4
+    },
+    {
+      "model": "seq_transformer",
+      "seed": 30102,
+      "max_error": 5.960464477539063e-08,
+      "n": 4
+    }
+  ],
+  "strict_state_loading": true,
+  "weights_only_loading": true
+}

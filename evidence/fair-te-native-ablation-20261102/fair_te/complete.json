@@ -1,0 +1,6 @@
+{
+  "status": "completed",
+  "fair_budget_baselines": true,
+  "three_branch_ablations": true,
+  "independent_audit": true
+}

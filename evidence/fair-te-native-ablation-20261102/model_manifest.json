@@ -1,0 +1,408 @@
+{
+  "models": [
+    {
+      "path": "human_te_100000_no_stats_30101.pt",
+      "sha256": "fff2a59482ed24a9d345dd35c4ebafe6be918c5d84a021215727d66e61a87391",
+      "bytes": 5970654,
+      "metadata": {
+        "spec": {
+          "kind": "HumanTEScalar",
+          "config": {
+            "backbone_config": {
+              "width": 192,
+              "sequence_v2": true,
+              "structure_gate": true,
+              "anchored_head": false
+            },
+            "context_layers": 2,
+            "use_properties": false,
+            "sequence_only": false
+          }
+        },
+        "role": "validation_selected_te_100000",
+        "seed": 30101,
+        "step": 98500,
+        "source_checkpoint_sha256": "79a4b51b9d61ad48d77043fec92cf73360674d06bd61b9b48caea8782207c248",
+        "validation_pearson": 0.6251635305798282,
+        "independent_test_evaluated": false,
+        "reused_test_evaluated": true
+      }
+    },
+    {
+      "path": "human_te_100000_no_stats_30102.pt",
+      "sha256": "ef6cf09faed80466a62c75a4bcc743f4447315772b559c9f43a12511a797522b",
+      "bytes": 5970654,
+      "metadata": {
+        "spec": {
+          "kind": "HumanTEScalar",
+          "config": {
+            "backbone_config": {
+              "width": 192,
+              "sequence_v2": true,
+              "structure_gate": true,
+              "anchored_head": false
+            },
+            "context_layers": 2,
+            "use_properties": false,
+            "sequence_only": false
+          }
+        },
+        "role": "validation_selected_te_100000",
+        "seed": 30102,
+        "step": 97500,
+        "source_checkpoint_sha256": "99ee78c5b80528cdf1472f2baea0608a6009f35912f3ae388cc7ef5e1834d7db",
+        "validation_pearson": 0.6467687014656096,
+        "independent_test_evaluated": false,
+        "reused_test_evaluated": true
+      }
+    },
+    {
+      "path": "human_te_24000_no_stats_30101.pt",
+      "sha256": "eb4f4dd86c98c359060ec0517f0a03240c46da9b9d614a6b862c70caa01b2eb9",
+      "bytes": 5970654,
+      "metadata": {
+        "spec": {
+          "kind": "HumanTEScalar",
+          "config": {
+            "backbone_config": {
+              "width": 192,
+              "sequence_v2": true,
+              "structure_gate": true,
+              "anchored_head": false
+            },
+            "context_layers": 2,
+            "use_properties": false,
+            "sequence_only": false
+          }
+        },
+        "role": "validation_selected_te_24000",
+        "seed": 30101,
+        "step": 24000,
+        "source_checkpoint_sha256": "6ac18fdba4d66e639a90660acdffd4ef04882375c349f9358f1e96da57cf4819",
+        "validation_pearson": 0.6168047188490255,
+        "independent_test_evaluated": false,
+        "reused_test_evaluated": false
+      }
+    },
+    {
+      "path": "human_te_24000_no_stats_30102.pt",
+      "sha256": "05812e397df94c72bd1054b4eab116db15da32d2c9a2650c6905d8ac795c74f5",
+      "bytes": 5970654,
+      "metadata": {
+        "spec": {
+          "kind": "HumanTEScalar",
+          "config": {
+            "backbone_config": {
+              "width": 192,
+              "sequence_v2": true,
+              "structure_gate": true,
+              "anchored_head": false
+            },
+            "context_layers": 2,
+            "use_properties": false,
+            "sequence_only": false
+          }
+        },
+        "role": "validation_selected_te_24000",
+        "seed": 30102,
+        "step": 23000,
+        "source_checkpoint_sha256": "0a57225c66b9f2f0825a3067718c7e9235d309a6b9d34d9c3b88d7a5fd13b910",
+        "validation_pearson": 0.6344573203826643,
+        "independent_test_evaluated": false,
+        "reused_test_evaluated": false
+      }
+    },
+    {
+      "path": "fair_te_full_30101.pt",
+      "sha256": "1ed60b050307a0eb8f5b391cd56dde4d241949205bf8d6f6c0825d5f4250acb8",
+      "bytes": 5970718,
+      "metadata": {
+        "spec": {
+          "kind": "FairTEAblation",
+          "config": {
+            "arm": "full",
+            "backbone_config": {
+              "width": 192,
+              "sequence_v2": true,
+              "structure_gate": true,
+              "anchored_head": false,
+              "physics": true
+            }
+          }
+        },
+        "kind": "FairTEAblation",
+        "arm": "full",
+        "seed": 30101,
+        "target_mean": 0.7485950216022552,
+        "target_scale": 0.7769612122573364,
+        "validation_pearson": 0.5306236565034429,
+        "step": 3000,
+        "source_checkpoint_sha256": "d9e2c5b4c99dff03fb4c17daed90ecadbd80810ca3c5e882aa3ec19568019b1c",
+        "reconstruction": "physics_scorer.checkpoint_io.load_exported_checkpoint; output already in native TE label scale"
+      }
+    },
+    {
+      "path": "fair_te_full_30102.pt",
+      "sha256": "39288defcd6462b89f687429573606177cca97fb5e56f3c24c3f4ba6063e16e0",
+      "bytes": 5970718,
+      "metadata": {
+        "spec": {
+          "kind": "FairTEAblation",
+          "config": {
+            "arm": "full",
+            "backbone_config": {
+              "width": 192,
+              "sequence_v2": true,
+              "structure_gate": true,
+              "anchored_head": false,
+              "physics": true
+            }
+          }
+        },
+        "kind": "FairTEAblation",
+        "arm": "full",
+        "seed": 30102,
+        "target_mean": 0.7485950216022552,
+        "target_scale": 0.7769612122573364,
+        "validation_pearson": 0.5363966592141935,
+        "step": 3000,
+        "source_checkpoint_sha256": "30474520b1e51f804603d2b0ee5dee37b33cc4a14f532e9ffe96a2452cb3277a",
+        "reconstruction": "physics_scorer.checkpoint_io.load_exported_checkpoint; output already in native TE label scale"
+      }
+    },
+    {
+      "path": "fair_te_no_physics_30101.pt",
+      "sha256": "21cdd16b6ed4c0d64325de531010effef20f54e0469d5be2a522e869a9ea7e41",
+      "bytes": 5970718,
+      "metadata": {
+        "spec": {
+          "kind": "FairTEAblation",
+          "config": {
+            "arm": "no_physics",
+            "backbone_config": {
+              "width": 192,
+              "sequence_v2": true,
+              "structure_gate": true,
+              "anchored_head": false,
+              "physics": true
+            }
+          }
+        },
+        "kind": "FairTEAblation",
+        "arm": "no_physics",
+        "seed": 30101,
+        "target_mean": 0.7485950216022552,
+        "target_scale": 0.7769612122573364,
+        "validation_pearson": 0.5307173249160038,
+        "step": 3000,
+        "source_checkpoint_sha256": "aace434b1e5dce9d7488fdedb3fbc3aaf75527507878ac6b0473eb54a9977b04",
+        "reconstruction": "physics_scorer.checkpoint_io.load_exported_checkpoint; output already in native TE label scale"
+      }
+    },
+    {
+      "path": "fair_te_no_physics_30102.pt",
+      "sha256": "fe424ac5b13986017658e661df1683adf279cfb18ebc71532b4ee650bd202a0a",
+      "bytes": 5970718,
+      "metadata": {
+        "spec": {
+          "kind": "FairTEAblation",
+          "config": {
+            "arm": "no_physics",
+            "backbone_config": {
+              "width": 192,
+              "sequence_v2": true,
+              "structure_gate": true,
+              "anchored_head": false,
+              "physics": true
+            }
+          }
+        },
+        "kind": "FairTEAblation",
+        "arm": "no_physics",
+        "seed": 30102,
+        "target_mean": 0.7485950216022552,
+        "target_scale": 0.7769612122573364,
+        "validation_pearson": 0.540832420057845,
+        "step": 3000,
+        "source_checkpoint_sha256": "34e4260a0de7f52fbd3b8e71c04dd9aa26bddf2158d10d38eed89a004c684e10",
+        "reconstruction": "physics_scorer.checkpoint_io.load_exported_checkpoint; output already in native TE label scale"
+      }
+    },
+    {
+      "path": "fair_te_no_graph_30101.pt",
+      "sha256": "950c358c8a0018a59dc51e1f1bfc68360c77ce10989108e9b20eda004cef9683",
+      "bytes": 5970718,
+      "metadata": {
+        "spec": {
+          "kind": "FairTEAblation",
+          "config": {
+            "arm": "no_graph",
+            "backbone_config": {
+              "width": 192,
+              "sequence_v2": true,
+              "structure_gate": true,
+              "anchored_head": false,
+              "physics": true
+            }
+          }
+        },
+        "kind": "FairTEAblation",
+        "arm": "no_graph",
+        "seed": 30101,
+        "target_mean": 0.7485950216022552,
+        "target_scale": 0.7769612122573364,
+        "validation_pearson": 0.5360948105711819,
+        "step": 3000,
+        "source_checkpoint_sha256": "6dae9ff2a0bd0b367a042dfb4db00728ecf014ce6feec6a8db774fe06755daba",
+        "reconstruction": "physics_scorer.checkpoint_io.load_exported_checkpoint; output already in native TE label scale"
+      }
+    },
+    {
+      "path": "fair_te_no_graph_30102.pt",
+      "sha256": "f04e171b150e49223ac5485ab034f0480b3f8fd046931a5f780c041cdda1e3d5",
+      "bytes": 5970718,
+      "metadata": {
+        "spec": {
+          "kind": "FairTEAblation",
+          "config": {
+            "arm": "no_graph",
+            "backbone_config": {
+              "width": 192,
+              "sequence_v2": true,
+              "structure_gate": true,
+              "anchored_head": false,
+              "physics": true
+            }
+          }
+        },
+        "kind": "FairTEAblation",
+        "arm": "no_graph",
+        "seed": 30102,
+        "target_mean": 0.7485950216022552,
+        "target_scale": 0.7769612122573364,
+        "validation_pearson": 0.5377664985277225,
+        "step": 2500,
+        "source_checkpoint_sha256": "94819cf3e169596fda852b4542e190b6a5756ea157cecb4dd9cf6fde1cc3a576",
+        "reconstruction": "physics_scorer.checkpoint_io.load_exported_checkpoint; output already in native TE label scale"
+      }
+    },
+    {
+      "path": "fair_te_no_context_30101.pt",
+      "sha256": "bbe8b56e1e30ece71b1311c2623697d41d6a113efd61075836b4a1afe66c3e38",
+      "bytes": 5970718,
+      "metadata": {
+        "spec": {
+          "kind": "FairTEAblation",
+          "config": {
+            "arm": "no_context",
+            "backbone_config": {
+              "width": 192,
+              "sequence_v2": true,
+              "structure_gate": true,
+              "anchored_head": false,
+              "physics": true
+            }
+          }
+        },
+        "kind": "FairTEAblation",
+        "arm": "no_context",
+        "seed": 30101,
+        "target_mean": 0.7485950216022552,
+        "target_scale": 0.7769612122573364,
+        "validation_pearson": 0.44422436818711136,
+        "step": 3000,
+        "source_checkpoint_sha256": "a6fb6a40107e7e6524e369dbc20b393092a638ce289e6b9abb57732178fcbc0c",
+        "reconstruction": "physics_scorer.checkpoint_io.load_exported_checkpoint; output already in native TE label scale"
+      }
+    },
+    {
+      "path": "fair_te_no_context_30102.pt",
+      "sha256": "e0feea0413109b13502cdc5c9b88ef75c930c25d3c9c46d35988031fe59aca60",
+      "bytes": 5970718,
+      "metadata": {
+        "spec": {
+          "kind": "FairTEAblation",
+          "config": {
+            "arm": "no_context",
+            "backbone_config": {
+              "width": 192,
+              "sequence_v2": true,
+              "structure_gate": true,
+              "anchored_head": false,
+              "physics": true
+            }
+          }
+        },
+        "kind": "FairTEAblation",
+        "arm": "no_context",
+        "seed": 30102,
+        "target_mean": 0.7485950216022552,
+        "target_scale": 0.7769612122573364,
+        "validation_pearson": 0.454275783133175,
+        "step": 3000,
+        "source_checkpoint_sha256": "211bad4b322358387322f5b27d46112cda791ca4b2b5922e91d0ea153cd8bd12",
+        "reconstruction": "physics_scorer.checkpoint_io.load_exported_checkpoint; output already in native TE label scale"
+      }
+    },
+    {
+      "path": "fair_te_seq_transformer_30101.pt",
+      "sha256": "175b473cec9d0fe3e4c04a744ba3c6e4d597d787ecbf30a4df5e7ff9b0df1578",
+      "bytes": 5970718,
+      "metadata": {
+        "spec": {
+          "kind": "FairTEAblation",
+          "config": {
+            "arm": "seq_transformer",
+            "backbone_config": {
+              "width": 192,
+              "sequence_v2": true,
+              "structure_gate": true,
+              "anchored_head": false,
+              "physics": true
+            }
+          }
+        },
+        "kind": "FairTEAblation",
+        "arm": "seq_transformer",
+        "seed": 30101,
+        "target_mean": 0.7485950216022552,
+        "target_scale": 0.7769612122573364,
+        "validation_pearson": 0.5374553538461847,
+        "step": 3000,
+        "source_checkpoint_sha256": "cf70e03a454d414635d7b8f56f499708eefecf7457825f1d3f4f7a2c1830f448",
+        "reconstruction": "physics_scorer.checkpoint_io.load_exported_checkpoint; output already in native TE label scale"
+      }
+    },
+    {
+      "path": "fair_te_seq_transformer_30102.pt",
+      "sha256": "ae7b15bef5015ca8034cb67046a9862df851e82aa8ce6a003b6fd42b56a589d0",
+      "bytes": 5970718,
+      "metadata": {
+        "spec": {
+          "kind": "FairTEAblation",
+          "config": {
+            "arm": "seq_transformer",
+            "backbone_config": {
+              "width": 192,
+              "sequence_v2": true,
+              "structure_gate": true,
+              "anchored_head": false,
+              "physics": true
+            }
+          }
+        },
+        "kind": "FairTEAblation",
+        "arm": "seq_transformer",
+        "seed": 30102,
+        "target_mean": 0.7485950216022552,
+        "target_scale": 0.7769612122573364,
+        "validation_pearson": 0.5430411655072336,
+        "step": 2500,
+        "source_checkpoint_sha256": "20be6fc7ae627c64ddb1f6ed8af7d6f7d9fd0203ec18d32358000744f8cd1b3a",
+        "reconstruction": "physics_scorer.checkpoint_io.load_exported_checkpoint; output already in native TE label scale"
+      }
+    }
+  ],
+  "archive_sha256": "7a45c845b6a9dbf027c87363da11752475a31afe30807b437281a55a0b3a5bf4",
+  "archive_bytes": 76764946
+}

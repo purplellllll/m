@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "source_syntax": true,
+  "case_identity_matches_prior_scan": true,
+  "proposal_count_matched": 2400,
+  "native_actual_MFE_training_enabled": true,
+  "terminal_learning_rate_preserved": true,
+  "artifacts_do_not_overwrite_previous_runs": true
+}

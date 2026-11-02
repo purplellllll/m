@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "stage": "multitask_transformer_20261102",
+      "status": "passed",
+      "n": 1188,
+      "metric_count": 25,
+      "checkpoint_count": 4
+    },
+    {
+      "stage": "multitask_profile_20261102",
+      "status": "passed",
+      "n": 1188,
+      "metric_count": 25,
+      "checkpoint_count": 4
+    },
+    {
+      "stage": "profile_physics",
+      "status": "passed",
+      "same_length_synonymous_features_differ": true,
+      "no_heldout_exact_CDS_fit": true
+    }
+  ]
+}

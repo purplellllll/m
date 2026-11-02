@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "arm": "seq2ribo_TE_adapt",
+  "largest_codons": [
+    300,
+    300
+  ],
+  "seconds": 1.828999999910593,
+  "gradient_totals": {
+    "backbone.physics.": 0,
+    "backbone.graph.": 0,
+    "backbone.context.": 0
+  },
+  "total_gradient": 51.464930218378754,
+  "full_vs_portable_scalar_max_error": null,
+  "parameters": 1062084,
+  "cuda_peak_bytes": 231535104,
+  "torch": "2.11.0+cu126",
+  "cuda": "12.6",
+  "cudnn": 91002
+}

@@ -1,0 +1,6 @@
+{
+  "n": 203,
+  "max_relative_error_ln2_over_k": 1.104987924412559e-14,
+  "issue": "Published R code fits log2 abundance but derives half-life as ln(2)/slope; a log2 slope implies 1/slope. Do not silently relabel these as calibrated hours.",
+  "decision": "PERSIST retained as secondary source, not used to train human stability model"
+}

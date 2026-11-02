@@ -1,0 +1,871 @@
+{
+  "status": "completed",
+  "metrics": [
+    {
+      "model": "CDS_kmer",
+      "task": "MRL_log2",
+      "n": 203,
+      "pearson": 0.26083509079999206,
+      "ci95": [
+        0.08859176586265835,
+        0.6087316855787914
+      ]
+    },
+    {
+      "model": "CDS_kmer",
+      "task": "HL_log2",
+      "n": 203,
+      "pearson": -0.41240828659648665,
+      "ci95": [
+        -0.5122265135670581,
+        -0.15650759110041843
+      ]
+    },
+    {
+      "model": "CDS_kmer",
+      "task": "integrated_translation_proxy",
+      "n": 203,
+      "pearson": -0.41416620040116703,
+      "ci95": [
+        -0.524336757584614,
+        -0.23031903928360395
+      ]
+    },
+    {
+      "model": "UTR_CDS_kmer",
+      "task": "MRL_log2",
+      "n": 203,
+      "pearson": 0.21742439241128236,
+      "ci95": [
+        0.033277012838331704,
+        0.6768660234755987
+      ]
+    },
+    {
+      "model": "UTR_CDS_kmer",
+      "task": "HL_log2",
+      "n": 203,
+      "pearson": 0.13734560679984165,
+      "ci95": [
+        -0.09566511415285525,
+        0.5852788863032108
+      ]
+    },
+    {
+      "model": "UTR_CDS_kmer",
+      "task": "integrated_translation_proxy",
+      "n": 203,
+      "pearson": 0.20047011313932048,
+      "ci95": [
+        -0.06617188567893498,
+        0.6084521609736485
+      ]
+    },
+    {
+      "model": "adapt_ours100k",
+      "task": "MRL_log2",
+      "n": 203,
+      "pearson": -0.13728792077396795,
+      "ci95": [
+        -0.3793923016273468,
+        -0.01724386866683238
+      ]
+    },
+    {
+      "model": "adapt_ours100k",
+      "task": "HL_log2",
+      "n": 203,
+      "pearson": -0.15961742636471968,
+      "ci95": [
+        -0.29912849765180954,
+        0.09640397494107465
+      ]
+    },
+    {
+      "model": "adapt_ours100k",
+      "task": "integrated_translation_proxy",
+      "n": 203,
+      "pearson": -0.14021355821135972,
+      "ci95": [
+        -0.28689137035081813,
+        0.09027170347402268
+      ]
+    },
+    {
+      "model": "adapt_seq2ribo",
+      "task": "MRL_log2",
+      "n": 203,
+      "pearson": -0.09691204061696203,
+      "ci95": [
+        -0.3343894271265581,
+        0.012891778454228859
+      ]
+    },
+    {
+      "model": "adapt_seq2ribo",
+      "task": "HL_log2",
+      "n": 203,
+      "pearson": -0.3569992874892915,
+      "ci95": [
+        -0.4532517118886425,
+        -0.024659880678220232
+      ]
+    },
+    {
+      "model": "adapt_seq2ribo",
+      "task": "integrated_translation_proxy",
+      "n": 203,
+      "pearson": -0.33118640434637603,
+      "ci95": [
+        -0.45094811314323474,
+        -0.035718284216534425
+      ]
+    },
+    {
+      "model": "adapt_RiboDecode",
+      "task": "MRL_log2",
+      "n": 203,
+      "pearson": -0.02114670365339253,
+      "ci95": [
+        -0.11707812895084296,
+        0.16931546962938746
+      ]
+    },
+    {
+      "model": "adapt_RiboDecode",
+      "task": "HL_log2",
+      "n": 203,
+      "pearson": -0.043627576025078475,
+      "ci95": [
+        -0.18494866244171368,
+        0.23766255085791813
+      ]
+    },
+    {
+      "model": "adapt_RiboDecode",
+      "task": "integrated_translation_proxy",
+      "n": 203,
+      "pearson": 0.039650284241113845,
+      "ci95": [
+        -0.10941663111061953,
+        0.24038266399444774
+      ]
+    },
+    {
+      "model": "frozen_ours100k",
+      "task": "MRL_log2",
+      "n": 203,
+      "pearson": -0.00031484487778035735,
+      "ci95": [
+        -0.21049555286899282,
+        0.1135075350087969
+      ]
+    },
+    {
+      "model": "frozen_ours100k",
+      "task": "HL_log2",
+      "n": 203,
+      "pearson": -0.268217726057723,
+      "ci95": [
+        -0.39051937583274277,
+        0.10211724298484323
+      ]
+    },
+    {
+      "model": "frozen_ours100k",
+      "task": "integrated_translation_proxy",
+      "n": 203,
+      "pearson": -0.2533061232330023,
+      "ci95": [
+        -0.38764342959726406,
+        0.08821419763978548
+      ]
+    },
+    {
+      "model": "frozen_seq2ribo",
+      "task": "MRL_log2",
+      "n": 203,
+      "pearson": -0.07223773479397048,
+      "ci95": [
+        -0.2740827960847471,
+        0.05890462987465948
+      ]
+    },
+    {
+      "model": "frozen_seq2ribo",
+      "task": "HL_log2",
+      "n": 203,
+      "pearson": 0.007916804187397809,
+      "ci95": [
+        -0.16115413184964064,
+        0.24990726150146614
+      ]
+    },
+    {
+      "model": "frozen_seq2ribo",
+      "task": "integrated_translation_proxy",
+      "n": 203,
+      "pearson": -0.01836141395738104,
+      "ci95": [
+        -0.19134364462797465,
+        0.21602681993160158
+      ]
+    },
+    {
+      "model": "frozen_RiboDecode",
+      "task": "MRL_log2",
+      "n": 203,
+      "pearson": 0.11379781427360042,
+      "ci95": [
+        -0.006056827000380667,
+        0.40679147414798833
+      ]
+    },
+    {
+      "model": "frozen_RiboDecode",
+      "task": "HL_log2",
+      "n": 203,
+      "pearson": 0.28965925236839196,
+      "ci95": [
+        0.05303335330278593,
+        0.42710354843711984
+      ]
+    },
+    {
+      "model": "frozen_RiboDecode",
+      "task": "integrated_translation_proxy",
+      "n": 203,
+      "pearson": 0.31413211116355316,
+      "ci95": [
+        0.085871673066573,
+        0.456084617241769
+      ]
+    }
+  ],
+  "paired": [
+    {
+      "model": "frozen_ours100k",
+      "reference": "frozen_seq2ribo",
+      "task": "MRL_log2",
+      "delta": 0.07192288991619013,
+      "ci95": [
+        -0.1004933402304708,
+        0.22472787166574296
+      ]
+    },
+    {
+      "model": "frozen_ours100k",
+      "reference": "frozen_seq2ribo",
+      "task": "HL_log2",
+      "delta": -0.2761345302451208,
+      "ci95": [
+        -0.4226786649171004,
+        0.04024552816102973
+      ]
+    },
+    {
+      "model": "frozen_ours100k",
+      "reference": "frozen_seq2ribo",
+      "task": "integrated_translation_proxy",
+      "delta": -0.23494470927562125,
+      "ci95": [
+        -0.38515051699879715,
+        0.05883720726064228
+      ]
+    },
+    {
+      "model": "frozen_ours100k",
+      "reference": "frozen_RiboDecode",
+      "task": "MRL_log2",
+      "delta": -0.11411265915138077,
+      "ci95": [
+        -0.5196326024289541,
+        0.03783610839739706
+      ]
+    },
+    {
+      "model": "frozen_ours100k",
+      "reference": "frozen_RiboDecode",
+      "task": "HL_log2",
+      "delta": -0.5578769784261149,
+      "ci95": [
+        -0.7751308781201697,
+        -0.04745732517214826
+      ]
+    },
+    {
+      "model": "frozen_ours100k",
+      "reference": "frozen_RiboDecode",
+      "task": "integrated_translation_proxy",
+      "delta": -0.5674382343965554,
+      "ci95": [
+        -0.8059958381968483,
+        -0.09763639826155177
+      ]
+    },
+    {
+      "model": "frozen_ours100k",
+      "reference": "adapt_seq2ribo",
+      "task": "MRL_log2",
+      "delta": 0.09659719573918167,
+      "ci95": [
+        -0.1282264142324317,
+        0.3191921993008698
+      ]
+    },
+    {
+      "model": "frozen_ours100k",
+      "reference": "adapt_seq2ribo",
+      "task": "HL_log2",
+      "delta": 0.08878156143156851,
+      "ci95": [
+        -0.049811672544159614,
+        0.3445990564976444
+      ]
+    },
+    {
+      "model": "frozen_ours100k",
+      "reference": "adapt_seq2ribo",
+      "task": "integrated_translation_proxy",
+      "delta": 0.07788028111337375,
+      "ci95": [
+        -0.05615021655382587,
+        0.36914967800683485
+      ]
+    },
+    {
+      "model": "frozen_ours100k",
+      "reference": "adapt_RiboDecode",
+      "task": "MRL_log2",
+      "delta": 0.020831858775612173,
+      "ci95": [
+        -0.23671418452900306,
+        0.1434349232173271
+      ]
+    },
+    {
+      "model": "frozen_ours100k",
+      "reference": "adapt_RiboDecode",
+      "task": "HL_log2",
+      "delta": -0.22459015003264451,
+      "ci95": [
+        -0.38087026911324395,
+        0.03747419702342209
+      ]
+    },
+    {
+      "model": "frozen_ours100k",
+      "reference": "adapt_RiboDecode",
+      "task": "integrated_translation_proxy",
+      "delta": -0.2929564074741161,
+      "ci95": [
+        -0.45434282940870047,
+        -0.003858777034753072
+      ]
+    },
+    {
+      "model": "UTR_CDS_kmer",
+      "reference": "frozen_seq2ribo",
+      "task": "MRL_log2",
+      "delta": 0.28966212720525286,
+      "ci95": [
+        0.03896592932166147,
+        0.9184209227946292
+      ]
+    },
+    {
+      "model": "UTR_CDS_kmer",
+      "reference": "frozen_seq2ribo",
+      "task": "HL_log2",
+      "delta": 0.12942880261244383,
+      "ci95": [
+        -0.1986779998184623,
+        0.6284858953987222
+      ]
+    },
+    {
+      "model": "UTR_CDS_kmer",
+      "reference": "frozen_seq2ribo",
+      "task": "integrated_translation_proxy",
+      "delta": 0.2188315270967015,
+      "ci95": [
+        -0.13145116151058536,
+        0.6849903000354234
+      ]
+    },
+    {
+      "model": "UTR_CDS_kmer",
+      "reference": "frozen_RiboDecode",
+      "task": "MRL_log2",
+      "delta": 0.10362657813768195,
+      "ci95": [
+        -0.05372258551026393,
+        0.5013777164269864
+      ]
+    },
+    {
+      "model": "UTR_CDS_kmer",
+      "reference": "frozen_RiboDecode",
+      "task": "HL_log2",
+      "delta": -0.15231364556855032,
+      "ci95": [
+        -0.3890319811165947,
+        0.42419337916657507
+      ]
+    },
+    {
+      "model": "UTR_CDS_kmer",
+      "reference": "frozen_RiboDecode",
+      "task": "integrated_translation_proxy",
+      "delta": -0.11366199802423269,
+      "ci95": [
+        -0.3627913528833723,
+        0.38774200898978056
+      ]
+    },
+    {
+      "model": "UTR_CDS_kmer",
+      "reference": "adapt_seq2ribo",
+      "task": "MRL_log2",
+      "delta": 0.3143364330282444,
+      "ci95": [
+        0.07581300018442214,
+        0.9008888302794995
+      ]
+    },
+    {
+      "model": "UTR_CDS_kmer",
+      "reference": "adapt_seq2ribo",
+      "task": "HL_log2",
+      "delta": 0.49434489428913314,
+      "ci95": [
+        0.2170117495249933,
+        0.8971199277742709
+      ]
+    },
+    {
+      "model": "UTR_CDS_kmer",
+      "reference": "adapt_seq2ribo",
+      "task": "integrated_translation_proxy",
+      "delta": 0.5316565174856965,
+      "ci95": [
+        0.21306560733629337,
+        0.9610269359648583
+      ]
+    },
+    {
+      "model": "UTR_CDS_kmer",
+      "reference": "adapt_RiboDecode",
+      "task": "MRL_log2",
+      "delta": 0.2385710960646749,
+      "ci95": [
+        0.037842268559232464,
+        0.6897204115671598
+      ]
+    },
+    {
+      "model": "UTR_CDS_kmer",
+      "reference": "adapt_RiboDecode",
+      "task": "HL_log2",
+      "delta": 0.18097318282492011,
+      "ci95": [
+        -0.048619441045731945,
+        0.5607553636552792
+      ]
+    },
+    {
+      "model": "UTR_CDS_kmer",
+      "reference": "adapt_RiboDecode",
+      "task": "integrated_translation_proxy",
+      "delta": 0.16081982889820662,
+      "ci95": [
+        -0.08986737984471195,
+        0.538135161168472
+      ]
+    },
+    {
+      "model": "CDS_kmer",
+      "reference": "frozen_seq2ribo",
+      "task": "MRL_log2",
+      "delta": 0.33307282559396256,
+      "ci95": [
+        0.09537072589676372,
+        0.83462944784302
+      ]
+    },
+    {
+      "model": "CDS_kmer",
+      "reference": "frozen_seq2ribo",
+      "task": "HL_log2",
+      "delta": -0.42032509078388447,
+      "ci95": [
+        -0.6241914726952581,
+        -0.14136587412033041
+      ]
+    },
+    {
+      "model": "CDS_kmer",
+      "reference": "frozen_seq2ribo",
+      "task": "integrated_translation_proxy",
+      "delta": -0.39580478644378597,
+      "ci95": [
+        -0.6251953378825764,
+        -0.15804292593505195
+      ]
+    },
+    {
+      "model": "CDS_kmer",
+      "reference": "frozen_RiboDecode",
+      "task": "MRL_log2",
+      "delta": 0.14703727652639165,
+      "ci95": [
+        -0.057556357341900545,
+        0.437278522230183
+      ]
+    },
+    {
+      "model": "CDS_kmer",
+      "reference": "frozen_RiboDecode",
+      "task": "HL_log2",
+      "delta": -0.7020675389648786,
+      "ci95": [
+        -0.9187120707849243,
+        -0.24857030264662136
+      ]
+    },
+    {
+      "model": "CDS_kmer",
+      "reference": "frozen_RiboDecode",
+      "task": "integrated_translation_proxy",
+      "delta": -0.7282983115647201,
+      "ci95": [
+        -0.951505405038961,
+        -0.35743365396770765
+      ]
+    },
+    {
+      "model": "CDS_kmer",
+      "reference": "adapt_seq2ribo",
+      "task": "MRL_log2",
+      "delta": 0.3577471314169541,
+      "ci95": [
+        0.13654732502077482,
+        0.7840951204540882
+      ]
+    },
+    {
+      "model": "CDS_kmer",
+      "reference": "adapt_seq2ribo",
+      "task": "HL_log2",
+      "delta": -0.055408999107195156,
+      "ci95": [
+        -0.24168525900603594,
+        0.05317859930102056
+      ]
+    },
+    {
+      "model": "CDS_kmer",
+      "reference": "adapt_seq2ribo",
+      "task": "integrated_translation_proxy",
+      "delta": -0.082979796054791,
+      "ci95": [
+        -0.2849191659430244,
+        0.0018690076996247613
+      ]
+    },
+    {
+      "model": "CDS_kmer",
+      "reference": "adapt_RiboDecode",
+      "task": "MRL_log2",
+      "delta": 0.2819817944533846,
+      "ci95": [
+        0.07644463174678849,
+        0.6048841977593143
+      ]
+    },
+    {
+      "model": "CDS_kmer",
+      "reference": "adapt_RiboDecode",
+      "task": "HL_log2",
+      "delta": -0.36878071057140815,
+      "ci95": [
+        -0.6026283064697443,
+        -0.1136630588110619
+      ]
+    },
+    {
+      "model": "CDS_kmer",
+      "reference": "adapt_RiboDecode",
+      "task": "integrated_translation_proxy",
+      "delta": -0.45381648464228086,
+      "ci95": [
+        -0.6674364014647132,
+        -0.21913487196905718
+      ]
+    }
+  ],
+  "choices": {
+    "CDS_kmer": [
+      {
+        "alpha": 1000.0,
+        "inner_losses": [
+          2.2963648930084544,
+          1.343193579124555,
+          1.0762788824196725,
+          1.0420007829781266
+        ],
+        "test_n": 100
+      },
+      {
+        "alpha": 1000.0,
+        "inner_losses": [
+          4.02538438733667,
+          2.3517860141222133,
+          1.5778336808640654,
+          1.3027772869468313
+        ],
+        "test_n": 26
+      },
+      {
+        "alpha": 1000.0,
+        "inner_losses": [
+          3.3530415845089228,
+          2.0930667949632,
+          1.5905394362188938,
+          1.3554761492103238
+        ],
+        "test_n": 26
+      },
+      {
+        "alpha": 1000.0,
+        "inner_losses": [
+          3.4780002858751247,
+          2.290209277743146,
+          1.8084956473074698,
+          1.5416943547371857
+        ],
+        "test_n": 26
+      },
+      {
+        "alpha": 1000.0,
+        "inner_losses": [
+          3.1077085875142765,
+          1.8717024856969815,
+          1.4913743965248791,
+          1.3666604078315456
+        ],
+        "test_n": 25
+      }
+    ],
+    "UTR_CDS_kmer": [
+      {
+        "alpha": 1000.0,
+        "inner_losses": [
+          2.77958556189261,
+          1.2059032587236513,
+          0.8338842282853167,
+          0.8024678175364937
+        ],
+        "test_n": 100
+      },
+      {
+        "alpha": 1000.0,
+        "inner_losses": [
+          7.505378561480854,
+          4.695056936360678,
+          2.4604907761242574,
+          1.4692585340229034
+        ],
+        "test_n": 26
+      },
+      {
+        "alpha": 1000.0,
+        "inner_losses": [
+          15.201511167280126,
+          3.905244193291844,
+          1.380675348340044,
+          1.1036461579579984
+        ],
+        "test_n": 26
+      },
+      {
+        "alpha": 1000.0,
+        "inner_losses": [
+          11.11955316937648,
+          3.4000763094663005,
+          1.6369992867433918,
+          1.2507547392797858
+        ],
+        "test_n": 26
+      },
+      {
+        "alpha": 1000.0,
+        "inner_losses": [
+          7.418665654488403,
+          2.9122600868312247,
+          1.3831945746504761,
+          1.141484497390832
+        ],
+        "test_n": 25
+      }
+    ],
+    "adapt_ours100k": [
+      {
+        "alpha": 1000.0,
+        "inner_losses": [
+          1.15620363349161,
+          1.1519970734062677,
+          1.1376715846707082,
+          1.1302767336921284
+        ],
+        "test_n": 100
+      },
+      {
+        "alpha": 10.0,
+        "inner_losses": [
+          1.3361434076711458,
+          1.334802625989376,
+          1.3353702519716786,
+          1.3557732996701146
+        ],
+        "test_n": 26
+      },
+      {
+        "alpha": 1.0,
+        "inner_losses": [
+          1.2735770212314443,
+          1.2742601446768245,
+          1.2917890705626076,
+          1.3468704394400415
+        ],
+        "test_n": 26
+      },
+      {
+        "alpha": 10.0,
+        "inner_losses": [
+          1.4160230720793983,
+          1.4150119740860818,
+          1.4191861299641477,
+          1.4510010518613814
+        ],
+        "test_n": 26
+      },
+      {
+        "alpha": 100.0,
+        "inner_losses": [
+          1.4016227001257169,
+          1.3958155161172716,
+          1.3753528126548131,
+          1.3810573005673854
+        ],
+        "test_n": 25
+      }
+    ],
+    "adapt_seq2ribo": [
+      {
+        "alpha": 100.0,
+        "inner_losses": [
+          1.1286146570719582,
+          1.1274546841709092,
+          1.1260285156342915,
+          1.1284187256259541
+        ],
+        "test_n": 100
+      },
+      {
+        "alpha": 1000.0,
+        "inner_losses": [
+          1.3902806450739371,
+          1.3880659873807524,
+          1.3769593911344236,
+          1.3666856969358354
+        ],
+        "test_n": 26
+      },
+      {
+        "alpha": 1000.0,
+        "inner_losses": [
+          1.3876120373481255,
+          1.3856005399688724,
+          1.3759894217875928,
+          1.368551333892386
+        ],
+        "test_n": 26
+      },
+      {
+        "alpha": 1000.0,
+        "inner_losses": [
+          1.5751116520223143,
+          1.5658697663789471,
+          1.5183816839562623,
+          1.4733319020423596
+        ],
+        "test_n": 26
+      },
+      {
+        "alpha": 1000.0,
+        "inner_losses": [
+          1.4746997682876721,
+          1.467372409010247,
+          1.4299603054867889,
+          1.3950995217300826
+        ],
+        "test_n": 25
+      }
+    ],
+    "adapt_RiboDecode": [
+      {
+        "alpha": 10.0,
+        "inner_losses": [
+          1.1030295267676313,
+          1.100020505444861,
+          1.103976742033855,
+          1.1238538542891265
+        ],
+        "test_n": 100
+      },
+      {
+        "alpha": 100.0,
+        "inner_losses": [
+          1.3614183758250045,
+          1.358581305314054,
+          1.3497830960381625,
+          1.3585126161848686
+        ],
+        "test_n": 26
+      },
+      {
+        "alpha": 1.0,
+        "inner_losses": [
+          1.2686217004581644,
+          1.2702651872125341,
+          1.2911031904682742,
+          1.3471032379206804
+        ],
+        "test_n": 26
+      },
+      {
+        "alpha": 100.0,
+        "inner_losses": [
+          1.4829687637299982,
+          1.474555368037216,
+          1.4455979126821195,
+          1.4540317826258669
+        ],
+        "test_n": 26
+      },
+      {
+        "alpha": 10.0,
+        "inner_losses": [
+          1.241276514175792,
+          1.2410117740597109,
+          1.2637055914735507,
+          1.3533930008796755
+        ],
+        "test_n": 25
+      }
+    ]
+  },
+  "acceptance": "Not established: functional protein+HL paired measurements absent",
+  "warning": "PERSIST joint target is measured MRL plus measured HL, not independently measured protein output. Crossfit adaptation has different supervision from frozen models."
+}

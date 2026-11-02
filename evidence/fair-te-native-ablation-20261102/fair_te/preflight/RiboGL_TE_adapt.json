@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "arm": "RiboGL_TE_adapt",
+  "largest_codons": [
+    300,
+    300
+  ],
+  "seconds": 3.2660000000614673,
+  "gradient_totals": {
+    "backbone.physics.": 0,
+    "backbone.graph.": 0,
+    "backbone.context.": 0
+  },
+  "total_gradient": 877.3201629601214,
+  "full_vs_portable_scalar_max_error": null,
+  "parameters": 2813762,
+  "cuda_peak_bytes": 85764608,
+  "torch": "2.11.0+cu126",
+  "cuda": "12.6",
+  "cudnn": 91002
+}

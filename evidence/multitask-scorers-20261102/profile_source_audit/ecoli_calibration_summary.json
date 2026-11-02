@@ -1,0 +1,3987 @@
+{
+  "status": "completed",
+  "reference": "NC_000913.2",
+  "profile_source": "Observed RPF, no synthetic supervision",
+  "counts": {
+    "train": 993,
+    "val": 225,
+    "test": 209
+  },
+  "excluded_task_val_test": 780,
+  "exclusions": [
+    {
+      "gene": "mog",
+      "locus": "b0009",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ribF",
+      "locus": "b0025",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fkpB",
+      "locus": "b0028",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ispH",
+      "locus": "b0029",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "folA",
+      "locus": "b0048",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "apaH",
+      "locus": "b0049",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "djlA",
+      "locus": "b0055",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "araB",
+      "locus": "b0063",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yabI",
+      "locus": "b0065",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "leuB",
+      "locus": "b0073",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "leuA",
+      "locus": "b0074",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ftsL",
+      "locus": "b0083",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "murF",
+      "locus": "b0086",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "murG",
+      "locus": "b0090",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "secA",
+      "locus": "b0098",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yacG",
+      "locus": "b0101",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ppdD",
+      "locus": "b0108",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "aceE",
+      "locus": "b0114",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "aceF",
+      "locus": "b0115",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yacL",
+      "locus": "b0119",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "speD",
+      "locus": "b0120",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yacC",
+      "locus": "b0122",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cueO",
+      "locus": "b0123",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "can",
+      "locus": "b0126",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yadG",
+      "locus": "b0127",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "panD",
+      "locus": "b0131",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "htrE",
+      "locus": "b0139",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "pcnB",
+      "locus": "b0143",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hemL",
+      "locus": "b0154",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "clcA",
+      "locus": "b0155",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "degP",
+      "locus": "b0161",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yaeH",
+      "locus": "b0163",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rpsB",
+      "locus": "b0169",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "lpxA",
+      "locus": "b0181",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ldcC",
+      "locus": "b0186",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "tilS",
+      "locus": "b0188",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rof",
+      "locus": "b0189",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yaeF",
+      "locus": "b0193",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "proS",
+      "locus": "b0194",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "metQ",
+      "locus": "b0197",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "metN",
+      "locus": "b0199",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "gmhB",
+      "locus": "b0200",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "mltD",
+      "locus": "b0211",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "frsA",
+      "locus": "b0239",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "proA",
+      "locus": "b0243",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ykfF",
+      "locus": "b0249",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ykfA",
+      "locus": "b0253",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yagE",
+      "locus": "b0268",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ykgJ",
+      "locus": "b0288",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ykgM",
+      "locus": "b0296",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ykgE",
+      "locus": "b0306",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yahB",
+      "locus": "b0316",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yahG",
+      "locus": "b0321",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yahN",
+      "locus": "b0328",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "prpC",
+      "locus": "b0333",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "prpE",
+      "locus": "b0335",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "codA",
+      "locus": "b0337",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "lacZ",
+      "locus": "b0344",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "mhpR",
+      "locus": "b0346",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "mhpB",
+      "locus": "b0348",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "mhpF",
+      "locus": "b0351",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "mhpE",
+      "locus": "b0352",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yaiO",
+      "locus": "b0358",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yaiP",
+      "locus": "b0363",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yaiS",
+      "locus": "b0364",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "tauC",
+      "locus": "b0367",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "tauD",
+      "locus": "b0368",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yaiW",
+      "locus": "b0378",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yaiY",
+      "locus": "b0379",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "malZ",
+      "locus": "b0403",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "secD",
+      "locus": "b0408",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ribD",
+      "locus": "b0414",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "thiL",
+      "locus": "b0417",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ispA",
+      "locus": "b0421",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "panE",
+      "locus": "b0425",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yajQ",
+      "locus": "b0426",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "bolA",
+      "locus": "b0435",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "tig",
+      "locus": "b0436",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ppiD",
+      "locus": "b0441",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "mdlB",
+      "locus": "b0449",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "acrR",
+      "locus": "b0464",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "apt",
+      "locus": "b0469",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ybaB",
+      "locus": "b0471",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "recR",
+      "locus": "b0472",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "adk",
+      "locus": "b0474",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "gsk",
+      "locus": "b0477",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ushA",
+      "locus": "b0480",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ybaK",
+      "locus": "b0481",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ybbP",
+      "locus": "b0496",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ybbC",
+      "locus": "b0498",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "allR",
+      "locus": "b0506",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "glxR",
+      "locus": "b0509",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "glxK",
+      "locus": "b0514",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "allD",
+      "locus": "b0517",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "purE",
+      "locus": "b0523",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ppiB",
+      "locus": "b0525",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cysS",
+      "locus": "b0526",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "emrE",
+      "locus": "b0543",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ybcL",
+      "locus": "b0545",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ybcN",
+      "locus": "b0547",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ybcO",
+      "locus": "b0549",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rzpD",
+      "locus": "b0556",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ompT",
+      "locus": "b0565",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "nfrA",
+      "locus": "b0568",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cusS",
+      "locus": "b0570",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cusR",
+      "locus": "b0571",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cusC",
+      "locus": "b0572",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cusB",
+      "locus": "b0574",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ybdF",
+      "locus": "b0579",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "entD",
+      "locus": "b0583",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fepA",
+      "locus": "b0584",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fepC",
+      "locus": "b0588",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "entC",
+      "locus": "b0593",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "entA",
+      "locus": "b0596",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "dsbG",
+      "locus": "b0604",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ahpC",
+      "locus": "b0605",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ybdR",
+      "locus": "b0608",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rnk",
+      "locus": "b0610",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rna",
+      "locus": "b0611",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "citF",
+      "locus": "b0615",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "citD",
+      "locus": "b0617",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "lipA",
+      "locus": "b0628",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "lipB",
+      "locus": "b0630",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "dacA",
+      "locus": "b0632",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "holA",
+      "locus": "b0640",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ybeL",
+      "locus": "b0643",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hscC",
+      "locus": "b0650",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "gltI",
+      "locus": "b0655",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ybeY",
+      "locus": "b0659",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ubiF",
+      "locus": "b0662",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fur",
+      "locus": "b0683",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "kdpA",
+      "locus": "b0698",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ybfB",
+      "locus": "b0702",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ybgQ",
+      "locus": "b0718",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "gltA",
+      "locus": "b0720",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "sucA",
+      "locus": "b0726",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "mngA",
+      "locus": "b0731",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ybgE",
+      "locus": "b0735",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "tolQ",
+      "locus": "b0737",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "tolR",
+      "locus": "b0738",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "tolA",
+      "locus": "b0739",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "pal",
+      "locus": "b0741",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "galK",
+      "locus": "b0757",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "modF",
+      "locus": "b0760",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "modE",
+      "locus": "b0761",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "bioA",
+      "locus": "b0774",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "bioF",
+      "locus": "b0776",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "bioC",
+      "locus": "b0777",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "moaA",
+      "locus": "b0781",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "moaB",
+      "locus": "b0782",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "moaE",
+      "locus": "b0785",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ybhP",
+      "locus": "b0790",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ybiI",
+      "locus": "b0803",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ybiX",
+      "locus": "b0804",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "glnQ",
+      "locus": "b0809",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ybiU",
+      "locus": "b0821",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "moeB",
+      "locus": "b0826",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ybjI",
+      "locus": "b0844",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "nfsA",
+      "locus": "b0851",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ybjP",
+      "locus": "b0865",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "poxB",
+      "locus": "b0871",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hcr",
+      "locus": "b0872",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hcp",
+      "locus": "b0873",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ybjD",
+      "locus": "b0876",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ybjX",
+      "locus": "b0877",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "clpS",
+      "locus": "b0881",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "aat",
+      "locus": "b0885",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cydC",
+      "locus": "b0886",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "lolA",
+      "locus": "b0891",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rarA",
+      "locus": "b0892",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "serS",
+      "locus": "b0893",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "dmsA",
+      "locus": "b0894",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ycaN",
+      "locus": "b0900",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rpsA",
+      "locus": "b0911",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ihfB",
+      "locus": "b0912",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "mukF",
+      "locus": "b0922",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "pepN",
+      "locus": "b0932",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ycbU",
+      "locus": "b0942",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ycbX",
+      "locus": "b0947",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "sulA",
+      "locus": "b0958",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hyaA",
+      "locus": "b0972",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hyaB",
+      "locus": "b0973",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hyaD",
+      "locus": "b0975",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hyaF",
+      "locus": "b0977",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yccM",
+      "locus": "b0992",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "torT",
+      "locus": "b0994",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cbpA",
+      "locus": "b1000",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "csgF",
+      "locus": "b1038",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "csgC",
+      "locus": "b1043",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "opgG",
+      "locus": "b1048",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "solA",
+      "locus": "b1059",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yceB",
+      "locus": "b1063",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "flgN",
+      "locus": "b1070",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "flgA",
+      "locus": "b1072",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "flgE",
+      "locus": "b1076",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "flgH",
+      "locus": "b1079",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "plsX",
+      "locus": "b1090",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ptsG",
+      "locus": "b1101",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hflD",
+      "locus": "b1132",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ymfE",
+      "locus": "b1138",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cohE",
+      "locus": "b1145",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ymfR",
+      "locus": "b1150",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "tfaE",
+      "locus": "b1156",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "minC",
+      "locus": "b1176",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "umuD",
+      "locus": "b1183",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ycgY",
+      "locus": "b1196",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ychH",
+      "locus": "b1205",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "prmC",
+      "locus": "b1212",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "chaB",
+      "locus": "b1217",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ychN",
+      "locus": "b1219",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "narL",
+      "locus": "b1221",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "narX",
+      "locus": "b1222",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "narG",
+      "locus": "b1224",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "narJ",
+      "locus": "b1226",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "galU",
+      "locus": "b1236",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hns",
+      "locus": "b1237",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "tdk",
+      "locus": "b1238",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "clsA",
+      "locus": "b1249",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "trpB",
+      "locus": "b1261",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yciK",
+      "locus": "b1271",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "sohB",
+      "locus": "b1272",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yciN",
+      "locus": "b1273",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "acnA",
+      "locus": "b1276",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rnb",
+      "locus": "b1286",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yciW",
+      "locus": "b1287",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fabI",
+      "locus": "b1288",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "sapF",
+      "locus": "b1290",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "sapD",
+      "locus": "b1291",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ymjA",
+      "locus": "b1295",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "puuA",
+      "locus": "b1297",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "pspF",
+      "locus": "b1303",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "pspC",
+      "locus": "b1306",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ycjN",
+      "locus": "b1310",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ycjQ",
+      "locus": "b1313",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ycjX",
+      "locus": "b1321",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fnr",
+      "locus": "b1334",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ogt",
+      "locus": "b1335",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "abgB",
+      "locus": "b1337",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "dbpA",
+      "locus": "b1343",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "recT",
+      "locus": "b1349",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ydaE",
+      "locus": "b4526",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ydaT",
+      "locus": "b1358",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ynaK",
+      "locus": "b1365",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "tfaR",
+      "locus": "b1373",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ldhA",
+      "locus": "b1380",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "paaD",
+      "locus": "b1391",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "paaG",
+      "locus": "b1394",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "paaH",
+      "locus": "b1395",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "paaJ",
+      "locus": "b1397",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "paaX",
+      "locus": "b1399",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ynbA",
+      "locus": "b1408",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "aldA",
+      "locus": "b1415",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "tehB",
+      "locus": "b1430",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yncG",
+      "locus": "b1454",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yncH",
+      "locus": "b1455",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "narW",
+      "locus": "b1466",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ddpC",
+      "locus": "b1485",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ddpX",
+      "locus": "b1488",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "gadB",
+      "locus": "b1493",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "pqqL",
+      "locus": "b1494",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yddB",
+      "locus": "b1495",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ydeM",
+      "locus": "b1497",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ydeN",
+      "locus": "b1498",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ydeP",
+      "locus": "b1501",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ydeQ",
+      "locus": "b1502",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ydeR",
+      "locus": "b1503",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ydeS",
+      "locus": "b1504",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "lsrG",
+      "locus": "b1518",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "tam",
+      "locus": "b1519",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yneG",
+      "locus": "b1523",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ydeI",
+      "locus": "b1536",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ydfG",
+      "locus": "b1539",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cspB",
+      "locus": "b1557",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "quuQ",
+      "locus": "b1559",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "relB",
+      "locus": "b1564",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "dicC",
+      "locus": "b1569",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "dicA",
+      "locus": "b1570",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ydfC",
+      "locus": "b1573",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "speG",
+      "locus": "b1584",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ynfD",
+      "locus": "b1586",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ynfG",
+      "locus": "b1589",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "tus",
+      "locus": "b1610",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "uidC",
+      "locus": "b1615",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hdhA",
+      "locus": "b1619",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rsxG",
+      "locus": "b1631",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "tyrS",
+      "locus": "b1637",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "slyA",
+      "locus": "b1642",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "nemA",
+      "locus": "b1650",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "gloA",
+      "locus": "b1651",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ydhQ",
+      "locus": "b1664",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ydhT",
+      "locus": "b1669",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ydhW",
+      "locus": "b1672",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ydhV",
+      "locus": "b1673",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "lpp",
+      "locus": "b1677",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "sufE",
+      "locus": "b1679",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "sufD",
+      "locus": "b1681",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "sufC",
+      "locus": "b1682",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ydiJ",
+      "locus": "b1687",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ydiS",
+      "locus": "b1699",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ydiV",
+      "locus": "b1707",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rplT",
+      "locus": "b1716",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ydjM",
+      "locus": "b1728",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ydjO",
+      "locus": "b1730",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "chbA",
+      "locus": "b1736",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "chbB",
+      "locus": "b1738",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "astA",
+      "locus": "b1747",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "xthA",
+      "locus": "b1749",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ynjA",
+      "locus": "b1753",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ynjB",
+      "locus": "b1754",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ynjD",
+      "locus": "b1756",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "selD",
+      "locus": "b1764",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "sppA",
+      "locus": "b1766",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ydjF",
+      "locus": "b1770",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ydjI",
+      "locus": "b1773",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yeaE",
+      "locus": "b1781",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "mipA",
+      "locus": "b1782",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yeaO",
+      "locus": "b1792",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yeaW",
+      "locus": "b1802",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yeaX",
+      "locus": "b1803",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rnd",
+      "locus": "b1804",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yoaC",
+      "locus": "b1810",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yobH",
+      "locus": "b4536",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yebT",
+      "locus": "b1834",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yebY",
+      "locus": "b1839",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "zwf",
+      "locus": "b1852",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "znuA",
+      "locus": "b1857",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yecN",
+      "locus": "b1869",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "argS",
+      "locus": "b1876",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cheZ",
+      "locus": "b1881",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cheY",
+      "locus": "b1882",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cheB",
+      "locus": "b1883",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "motA",
+      "locus": "b1890",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "flhD",
+      "locus": "b1892",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "otsA",
+      "locus": "b1896",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "otsB",
+      "locus": "b1897",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yecJ",
+      "locus": "b4537",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yecH",
+      "locus": "b1906",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "amyA",
+      "locus": "b1927",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yedD",
+      "locus": "b1928",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yedL",
+      "locus": "b1932",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fliE",
+      "locus": "b1937",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fliI",
+      "locus": "b1941",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fliL",
+      "locus": "b1944",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fliN",
+      "locus": "b1946",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fliO",
+      "locus": "b1947",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cobS",
+      "locus": "b1992",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yeeS",
+      "locus": "b2002",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "sbcB",
+      "locus": "b2011",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yefM",
+      "locus": "b2017",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hisD",
+      "locus": "b2020",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hisH",
+      "locus": "b2023",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "gmd",
+      "locus": "b2053",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "wcaC",
+      "locus": "b2057",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "wcaA",
+      "locus": "b2059",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "wzc",
+      "locus": "b2060",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "wza",
+      "locus": "b2062",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yegH",
+      "locus": "b2063",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "udk",
+      "locus": "b2066",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yegD",
+      "locus": "b2069",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yegQ",
+      "locus": "b2081",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "gatD",
+      "locus": "b2091",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "gatZ",
+      "locus": "b2095",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "gatY",
+      "locus": "b2096",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yegU",
+      "locus": "b2099",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yegW",
+      "locus": "b2101",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yehB",
+      "locus": "b2109",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yehE",
+      "locus": "b2112",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yehP",
+      "locus": "b2121",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yehS",
+      "locus": "b2124",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yehX",
+      "locus": "b2129",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "dld",
+      "locus": "b2133",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "pbpG",
+      "locus": "b2134",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "sanA",
+      "locus": "b2144",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "mglA",
+      "locus": "b2149",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "mglB",
+      "locus": "b2150",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cirA",
+      "locus": "b2155",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fruA",
+      "locus": "b2167",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yeiP",
+      "locus": "b2171",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rsuA",
+      "locus": "b2183",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yejL",
+      "locus": "b2187",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ccmE",
+      "locus": "b2197",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ccmD",
+      "locus": "b2198",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "napF",
+      "locus": "b2208",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "mqo",
+      "locus": "b2210",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yojI",
+      "locus": "b2211",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ompC",
+      "locus": "b2215",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "atoS",
+      "locus": "b2219",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "atoB",
+      "locus": "b2224",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yfaT",
+      "locus": "b2229",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "gyrA",
+      "locus": "b2231",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yfaL",
+      "locus": "b2233",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "nrdB",
+      "locus": "b2235",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "glpA",
+      "locus": "b2241",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "pmrD",
+      "locus": "b2259",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "menD",
+      "locus": "b2264",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "menF",
+      "locus": "b2265",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yfbP",
+      "locus": "b2275",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "nuoI",
+      "locus": "b2281",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "nuoF",
+      "locus": "b2284",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "nuoE",
+      "locus": "b2285",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yfbR",
+      "locus": "b2291",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yfcD",
+      "locus": "b2299",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hisP",
+      "locus": "b2306",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "purF",
+      "locus": "b2312",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "usg",
+      "locus": "b2319",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fabB",
+      "locus": "b2323",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "aroC",
+      "locus": "b2329",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yfcR",
+      "locus": "b2335",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yfdQ",
+      "locus": "b2360",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "frc",
+      "locus": "b2374",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ypdE",
+      "locus": "b2384",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ypeC",
+      "locus": "b2390",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yfeC",
+      "locus": "b2398",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yfeD",
+      "locus": "b2399",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "xapR",
+      "locus": "b2405",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yfeN",
+      "locus": "b2408",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ligA",
+      "locus": "b2411",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ptsH",
+      "locus": "b2415",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ptsI",
+      "locus": "b2416",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "pdxK",
+      "locus": "b2418",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cysM",
+      "locus": "b2421",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cysA",
+      "locus": "b2422",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yfeY",
+      "locus": "b2432",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "amiA",
+      "locus": "b2435",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "eutC",
+      "locus": "b2440",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "eutA",
+      "locus": "b2451",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "eutG",
+      "locus": "b2453",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "eutP",
+      "locus": "b2461",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "maeB",
+      "locus": "b2463",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "aegA",
+      "locus": "b2468",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "narQ",
+      "locus": "b2469",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "gcvR",
+      "locus": "b2479",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hyfA",
+      "locus": "b2481",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hyfR",
+      "locus": "b2491",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "focB",
+      "locus": "b2492",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yfgO",
+      "locus": "b2493",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hisS",
+      "locus": "b2514",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "pbpC",
+      "locus": "b2519",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hscA",
+      "locus": "b2526",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "iscU",
+      "locus": "b2529",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "suhB",
+      "locus": "b2533",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yphB",
+      "locus": "b2544",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "acpS",
+      "locus": "b2563",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "era",
+      "locus": "b2566",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rseC",
+      "locus": "b2570",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "nadB",
+      "locus": "b2574",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yfiE",
+      "locus": "b2577",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ung",
+      "locus": "b2580",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yfiF",
+      "locus": "b2581",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yfiM",
+      "locus": "b2586",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yfiH",
+      "locus": "b2593",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "pheA",
+      "locus": "b2599",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rimM",
+      "locus": "b2608",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "smpB",
+      "locus": "b2620",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yfjR",
+      "locus": "b2634",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yfjZ",
+      "locus": "b2645",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ypjF",
+      "locus": "b2646",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "gabD",
+      "locus": "b2661",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "gabT",
+      "locus": "b2662",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "proX",
+      "locus": "b2679",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yqaA",
+      "locus": "b2689",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yqaB",
+      "locus": "b2690",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "recX",
+      "locus": "b2698",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "srlD",
+      "locus": "b2705",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "norR",
+      "locus": "b2709",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "norV",
+      "locus": "b2710",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hypF",
+      "locus": "b2712",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ascF",
+      "locus": "b2715",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hycF",
+      "locus": "b2720",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hycE",
+      "locus": "b2721",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hypD",
+      "locus": "b2729",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hypE",
+      "locus": "b2730",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "pphB",
+      "locus": "b2734",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ygbI",
+      "locus": "b2735",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "surE",
+      "locus": "b2744",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "truD",
+      "locus": "b2745",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ispF",
+      "locus": "b2746",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ispD",
+      "locus": "b2747",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "iap",
+      "locus": "b2753",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cysJ",
+      "locus": "b2764",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ygcR",
+      "locus": "b2770",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "relA",
+      "locus": "b2784",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "gudD",
+      "locus": "b2787",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yqcC",
+      "locus": "b2792",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "syd",
+      "locus": "b2793",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "sdaB",
+      "locus": "b2797",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fucR",
+      "locus": "b2805",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "gcvA",
+      "locus": "b2808",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ygdI",
+      "locus": "b2809",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "csdA",
+      "locus": "b2810",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "argA",
+      "locus": "b2818",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ppdC",
+      "locus": "b2823",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "thyA",
+      "locus": "b2827",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "galR",
+      "locus": "b2837",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "lysA",
+      "locus": "b2838",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ygeA",
+      "locus": "b2840",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "kduD",
+      "locus": "b2842",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yqeF",
+      "locus": "b2844",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yqeH",
+      "locus": "b2846",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ygeH",
+      "locus": "b2852",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "xdhB",
+      "locus": "b2867",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ygeW",
+      "locus": "b2870",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ygeY",
+      "locus": "b2872",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yqeB",
+      "locus": "b2875",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ygfT",
+      "locus": "b2887",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "idi",
+      "locus": "b2889",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "dsbC",
+      "locus": "b2893",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fldB",
+      "locus": "b2895",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cptA",
+      "locus": "b2896",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ygfZ",
+      "locus": "b2898",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "bglA",
+      "locus": "b2901",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "gcvT",
+      "locus": "b2905",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ubiH",
+      "locus": "b2907",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "pepP",
+      "locus": "b2908",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ygfB",
+      "locus": "b2909",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rpiA",
+      "locus": "b2914",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "argP",
+      "locus": "b2916",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fbaA",
+      "locus": "b2925",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "epd",
+      "locus": "b2927",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yggP",
+      "locus": "b4465",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yqgE",
+      "locus": "b2948",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yggR",
+      "locus": "b2950",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yggS",
+      "locus": "b2951",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ansB",
+      "locus": "b2957",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yggN",
+      "locus": "b2958",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "mutY",
+      "locus": "b2961",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yghD",
+      "locus": "b2968",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "glcB",
+      "locus": "b2976",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "glcE",
+      "locus": "b4468",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "glcD",
+      "locus": "b2979",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "glcC",
+      "locus": "b2980",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hybA",
+      "locus": "b2996",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "metC",
+      "locus": "b3008",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yghB",
+      "locus": "b3009",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ygiQ",
+      "locus": "b4469",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "parE",
+      "locus": "b3030",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cpdA",
+      "locus": "b3032",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ygiC",
+      "locus": "b3038",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ribB",
+      "locus": "b3041",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yqiH",
+      "locus": "b3047",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yqiI",
+      "locus": "b3048",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ygiF",
+      "locus": "b3054",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "folB",
+      "locus": "b3058",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ebgA",
+      "locus": "b3076",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ebgC",
+      "locus": "b3077",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ygjR",
+      "locus": "b3087",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "sstT",
+      "locus": "b3089",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "exuR",
+      "locus": "b3094",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yqjC",
+      "locus": "b3097",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yhaK",
+      "locus": "b3106",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yhaL",
+      "locus": "b3107",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "tdcG",
+      "locus": "b4471",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "tdcE",
+      "locus": "b3114",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "agaR",
+      "locus": "b3131",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "agaS",
+      "locus": "b3136",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "kbaY",
+      "locus": "b3137",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "agaC",
+      "locus": "b3139",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yraR",
+      "locus": "b3152",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yhbO",
+      "locus": "b3153",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yhbP",
+      "locus": "b3154",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yhbW",
+      "locus": "b3160",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "nlpI",
+      "locus": "b3163",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "pnp",
+      "locus": "b3164",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "truB",
+      "locus": "b3166",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "secG",
+      "locus": "b3175",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "folP",
+      "locus": "b3177",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yhbY",
+      "locus": "b3180",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "greA",
+      "locus": "b3181",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rpoN",
+      "locus": "b3202",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "npr",
+      "locus": "b3206",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "nanA",
+      "locus": "b3225",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rplM",
+      "locus": "b3231",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "degQ",
+      "locus": "b3234",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "degS",
+      "locus": "b3235",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "tldD",
+      "locus": "b3244",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "mreB",
+      "locus": "b3251",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "accB",
+      "locus": "b3255",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "prmA",
+      "locus": "b3259",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fis",
+      "locus": "b3261",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yhdJ",
+      "locus": "b3262",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yrdA",
+      "locus": "b3279",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yrdB",
+      "locus": "b3280",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "aroE",
+      "locus": "b3281",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fmt",
+      "locus": "b3288",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rsmB",
+      "locus": "b3289",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "zntR",
+      "locus": "b3292",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rplQ",
+      "locus": "b3294",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rpsH",
+      "locus": "b3306",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rplN",
+      "locus": "b3310",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rpsQ",
+      "locus": "b3311",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rplP",
+      "locus": "b3313",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rpsC",
+      "locus": "b3314",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "gspD",
+      "locus": "b3325",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "gspF",
+      "locus": "b3327",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "gspG",
+      "locus": "b3328",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "gspI",
+      "locus": "b3330",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rpsL",
+      "locus": "b3342",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yheS",
+      "locus": "b3352",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "argD",
+      "locus": "b3359",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ppiA",
+      "locus": "b3363",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "frlR",
+      "locus": "b3375",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yhfS",
+      "locus": "b3376",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yhfU",
+      "locus": "b3378",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yhfX",
+      "locus": "b3381",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hofQ",
+      "locus": "b3391",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "mrcA",
+      "locus": "b3396",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hslR",
+      "locus": "b3400",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "greB",
+      "locus": "b3406",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yhgF",
+      "locus": "b3407",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "bioH",
+      "locus": "b3412",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rtcA",
+      "locus": "b4475",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rtcB",
+      "locus": "b3421",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rtcR",
+      "locus": "b3422",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "glgP",
+      "locus": "b3428",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "glgB",
+      "locus": "b3432",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yhhX",
+      "locus": "b3440",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ggt",
+      "locus": "b3447",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "livK",
+      "locus": "b3458",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rpoH",
+      "locus": "b3461",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yhhM",
+      "locus": "b3467",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yhhT",
+      "locus": "b3474",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "nikE",
+      "locus": "b3480",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "nikR",
+      "locus": "b3481",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yhhI",
+      "locus": "b3484",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rbbA",
+      "locus": "b3486",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "arsR",
+      "locus": "b3501",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yhiD",
+      "locus": "b3508",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hdeA",
+      "locus": "b3510",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "treF",
+      "locus": "b3519",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yhjJ",
+      "locus": "b3527",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "bcsZ",
+      "locus": "b3531",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "dppC",
+      "locus": "b3542",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "tag",
+      "locus": "b3549",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yiaG",
+      "locus": "b3555",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ysaB",
+      "locus": "b4553",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yiaA",
+      "locus": "b3562",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "xylB",
+      "locus": "b3564",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "malS",
+      "locus": "b3571",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yiaR",
+      "locus": "b3582",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yiaT",
+      "locus": "b3584",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "selB",
+      "locus": "b3590",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yibH",
+      "locus": "b3597",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "lldD",
+      "locus": "b3605",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cysE",
+      "locus": "b3607",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "gpsA",
+      "locus": "b3608",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "waaJ",
+      "locus": "b3626",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "waaP",
+      "locus": "b3630",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "coaD",
+      "locus": "b3634",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ligB",
+      "locus": "b3647",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "spoT",
+      "locus": "b3650",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yicH",
+      "locus": "b3655",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "nlpA",
+      "locus": "b3661",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yidI",
+      "locus": "b3677",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yidP",
+      "locus": "b3684",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yidQ",
+      "locus": "b3688",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "dgoD",
+      "locus": "b4478",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "dgoK",
+      "locus": "b3693",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yidB",
+      "locus": "b3698",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "recF",
+      "locus": "b3700",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "dnaN",
+      "locus": "b3701",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "dnaA",
+      "locus": "b3702",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rpmH",
+      "locus": "b3703",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "tnaA",
+      "locus": "b3708",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "chrR",
+      "locus": "b3713",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cbrC",
+      "locus": "b3717",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yieK",
+      "locus": "b3718",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "glmS",
+      "locus": "b3729",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "atpC",
+      "locus": "b3731",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "atpG",
+      "locus": "b3733",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "asnA",
+      "locus": "b3744",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rbsC",
+      "locus": "b3750",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hdfR",
+      "locus": "b4480",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ilvA",
+      "locus": "b3772",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ppiC",
+      "locus": "b3775",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "wzzE",
+      "locus": "b3785",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rffG",
+      "locus": "b3788",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "wecD",
+      "locus": "b3790",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "aslB",
+      "locus": "b3800",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hemY",
+      "locus": "b3802",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cyaY",
+      "locus": "b3807",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "xerC",
+      "locus": "b3811",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "uvrD",
+      "locus": "b3813",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yigF",
+      "locus": "b3817",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yigI",
+      "locus": "b3820",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ysgA",
+      "locus": "b3830",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rfaH",
+      "locus": "b3842",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yihD",
+      "locus": "b3858",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "dsbA",
+      "locus": "b3860",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yihG",
+      "locus": "b3862",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "polA",
+      "locus": "b3863",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yihI",
+      "locus": "b3866",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "glnL",
+      "locus": "b3869",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yihU",
+      "locus": "b3882",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yihV",
+      "locus": "b3883",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fdoH",
+      "locus": "b3893",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rhaD",
+      "locus": "b3902",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "pfkA",
+      "locus": "b3916",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "sbp",
+      "locus": "b3917",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cdh",
+      "locus": "b3918",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cytR",
+      "locus": "b3934",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "katG",
+      "locus": "b3942",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "pflC",
+      "locus": "b3952",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "frwD",
+      "locus": "b3953",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yijO",
+      "locus": "b3954",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "argE",
+      "locus": "b3957",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "argC",
+      "locus": "b3958",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "oxyR",
+      "locus": "b3961",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fabR",
+      "locus": "b3963",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "birA",
+      "locus": "b3973",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "thiG",
+      "locus": "b3991",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "thiF",
+      "locus": "b3992",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "thiE",
+      "locus": "b3993",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rsd",
+      "locus": "b3995",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yjaB",
+      "locus": "b4012",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "metA",
+      "locus": "b4013",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "iclR",
+      "locus": "b4018",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "dinF",
+      "locus": "b4044",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yjbJ",
+      "locus": "b4045",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "dnaB",
+      "locus": "b4052",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yjbQ",
+      "locus": "b4056",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yjcB",
+      "locus": "b4060",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "nrfC",
+      "locus": "b4072",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "alsA",
+      "locus": "b4087",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "alsB",
+      "locus": "b4088",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "phnL",
+      "locus": "b4096",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "phnH",
+      "locus": "b4100",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "phnG",
+      "locus": "b4101",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "phnF",
+      "locus": "b4102",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "melR",
+      "locus": "b4118",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "dcuS",
+      "locus": "b4125",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yjdI",
+      "locus": "b4126",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fxsA",
+      "locus": "b4140",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "efp",
+      "locus": "b4147",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yjeN",
+      "locus": "b4157",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yjeO",
+      "locus": "b4158",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "orn",
+      "locus": "b4162",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "amiB",
+      "locus": "b4169",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hflX",
+      "locus": "b4173",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hflK",
+      "locus": "b4174",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yjfJ",
+      "locus": "b4182",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yjfL",
+      "locus": "b4184",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yjfP",
+      "locus": "b4190",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ulaG",
+      "locus": "b4192",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ulaB",
+      "locus": "b4194",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ulaC",
+      "locus": "b4195",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ulaE",
+      "locus": "b4197",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rpsR",
+      "locus": "b4202",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yjfZ",
+      "locus": "b4204",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ytfE",
+      "locus": "b4209",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cpdB",
+      "locus": "b4213",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "cysQ",
+      "locus": "b4214",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "ytfJ",
+      "locus": "b4216",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fbp",
+      "locus": "b4232",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "pmbA",
+      "locus": "b4235",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "treB",
+      "locus": "b4240",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "pyrB",
+      "locus": "b4245",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yjgM",
+      "locus": "b4256",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "idnD",
+      "locus": "b4267",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fecE",
+      "locus": "b4287",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fecD",
+      "locus": "b4288",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fecA",
+      "locus": "b4291",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "fecI",
+      "locus": "b4293",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yjhI",
+      "locus": "b4299",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "sgcR",
+      "locus": "b4300",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "sgcQ",
+      "locus": "b4303",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yjiC",
+      "locus": "b4325",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yjiL",
+      "locus": "b4334",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hsdS",
+      "locus": "b4348",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "hsdM",
+      "locus": "b4349",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "mrr",
+      "locus": "b4351",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yjjA",
+      "locus": "b4360",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "dnaT",
+      "locus": "b4362",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "rsmC",
+      "locus": "b4371",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yjjG",
+      "locus": "b4374",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "prfC",
+      "locus": "b4375",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yjjU",
+      "locus": "b4377",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "deoB",
+      "locus": "b4383",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yjjJ",
+      "locus": "b4385",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "creD",
+      "locus": "b4400",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    },
+    {
+      "gene": "yjtD",
+      "locus": "b4403",
+      "reason": "task_val_test_gene_protein_or_DNA_overlap"
+    }
+  ],
+  "source_formula_verified_examples": 8,
+  "models": [
+    {
+      "model": "ecoli_Asite11_codon_parameters.json",
+      "sha256": "1ef11e5d123c957e4c6824e5ba1d930500aead293dc6d14a33da539743a3a668",
+      "validation": {
+        "genes": 225,
+        "positions": 71988,
+        "pooled_relative_occupancy_pearson": 0.10822667150368998,
+        "per_gene_pearson_mean": 0.1465456786999681,
+        "mae": 0.8141958007429355,
+        "neutral_mae": 0.8328059372010089,
+        "warning": "Direct relative-occupancy proxy diagnostic; not simulated profile or true-rate recovery"
+      },
+      "test": {
+        "genes": 209,
+        "positions": 67829,
+        "pooled_relative_occupancy_pearson": 0.12717332508138623,
+        "per_gene_pearson_mean": 0.15746370464579224,
+        "mae": 0.8126224756047127,
+        "neutral_mae": 0.8315922338539733,
+        "warning": "Direct relative-occupancy proxy diagnostic; not simulated profile or true-rate recovery"
+      }
+    },
+    {
+      "model": "ecoli_Asite11_5prime150_parameters.json",
+      "sha256": "1610ef7d4e98fb0900f92d08777264a32c5cd1b8aeecf43319e80544010c231c",
+      "validation": {
+        "genes": 225,
+        "positions": 71988,
+        "pooled_relative_occupancy_pearson": 0.10817402857340216,
+        "per_gene_pearson_mean": 0.14645283306762324,
+        "mae": 0.8142102758354619,
+        "neutral_mae": 0.8328059372010089,
+        "warning": "Direct relative-occupancy proxy diagnostic; not simulated profile or true-rate recovery"
+      },
+      "test": {
+        "genes": 209,
+        "positions": 67829,
+        "pooled_relative_occupancy_pearson": 0.12714604312114933,
+        "per_gene_pearson_mean": 0.15731811141810226,
+        "mae": 0.8126358912608381,
+        "neutral_mae": 0.8315922338539733,
+        "warning": "Direct relative-occupancy proxy diagnostic; not simulated profile or true-rate recovery"
+      }
+    },
+    {
+      "model": "ecoli_Psite14_5prime150_parameters.json",
+      "sha256": "4452da92f7a598918ef7f131ea3b93dfb89faa5bc06758050b49706b27642bc8",
+      "validation": {
+        "genes": 225,
+        "positions": 71988,
+        "pooled_relative_occupancy_pearson": 0.09876935816071676,
+        "per_gene_pearson_mean": 0.11323096769729672,
+        "mae": 0.8187536910272559,
+        "neutral_mae": 0.8330858384179839,
+        "warning": "Direct relative-occupancy proxy diagnostic; not simulated profile or true-rate recovery"
+      },
+      "test": {
+        "genes": 209,
+        "positions": 67829,
+        "pooled_relative_occupancy_pearson": 0.11833025891892424,
+        "per_gene_pearson_mean": 0.13121629872069535,
+        "mae": 0.8161079723382307,
+        "neutral_mae": 0.831189613804151,
+        "warning": "Direct relative-occupancy proxy diagnostic; not simulated profile or true-rate recovery"
+      }
+    }
+  ],
+  "limits": [
+    "P-site to A-site one-codon conversion predeclared, not learned from heldout",
+    "Relative occupancy proxy not identifiable physical waiting rate; initiation not calibrated",
+    "Exact protein/gene/CDS isolation only; no near-homology guarantee"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "passed_after_correction",
+  "problem": "Partial path replacement left selection pointing to18000step checkpoints.",
+  "correction": "Replace all path tokens and assert loaded hashes equal24000 validation selection before search and final evaluation.",
+  "invalid_run": "native_compare/invalid_18k_search_archived",
+  "invalid_results_reused": false,
+  "expected_checkpoint_sha256": [
+    "6ac18fdba4d66e639a90660acdffd4ef04882375c349f9358f1e96da57cf4819",
+    "0a57225c66b9f2f0825a3067718c7e9235d309a6b9d34d9c3b88d7a5fd13b910"
+  ],
+  "reload_max_error": 1.6234019362126872e-07,
+  "native_case1_protein_and_stop_preserved": true,
+  "native_case1_actual_rounds": 3
+}

@@ -1,0 +1,410 @@
+{
+  "status": "completed",
+  "metrics": [
+    {
+      "panel": "synonymous92",
+      "target": "norm RFP",
+      "model": "ours100k",
+      "n": 92,
+      "pearson": -0.0008787238681985437,
+      "ci95": [
+        -0.28189612178643464,
+        0.2715522558526735
+      ]
+    },
+    {
+      "panel": "synonymous92",
+      "target": "norm RFP",
+      "model": "seq2ribo",
+      "n": 92,
+      "pearson": 0.05126622066665844,
+      "ci95": [
+        -0.21964477371321614,
+        0.3076872313946504
+      ]
+    },
+    {
+      "panel": "synonymous92",
+      "target": "norm RFP",
+      "model": "RiboDecode",
+      "n": 92,
+      "pearson": 0.07391426431532795,
+      "ci95": [
+        -0.19177111486952453,
+        0.30109279130884026
+      ]
+    },
+    {
+      "panel": "synonymous92",
+      "target": "norm GFP",
+      "model": "ours100k",
+      "n": 92,
+      "pearson": -0.16005493352466935,
+      "ci95": [
+        -0.4229027437688794,
+        0.14225850970273493
+      ]
+    },
+    {
+      "panel": "synonymous92",
+      "target": "norm GFP",
+      "model": "seq2ribo",
+      "n": 92,
+      "pearson": 0.044773114622318436,
+      "ci95": [
+        -0.2388808430780329,
+        0.2877281796241199
+      ]
+    },
+    {
+      "panel": "synonymous92",
+      "target": "norm GFP",
+      "model": "RiboDecode",
+      "n": 92,
+      "pearson": -0.04075276753873172,
+      "ci95": [
+        -0.2541373470461578,
+        0.14477282351287354
+      ]
+    },
+    {
+      "panel": "synonymous92",
+      "target": "norm RFP/GFP",
+      "model": "ours100k",
+      "n": 92,
+      "pearson": 0.035289807982336815,
+      "ci95": [
+        -0.21195543871383074,
+        0.2768171512842563
+      ]
+    },
+    {
+      "panel": "synonymous92",
+      "target": "norm RFP/GFP",
+      "model": "seq2ribo",
+      "n": 92,
+      "pearson": 0.05093475051395054,
+      "ci95": [
+        -0.21600930057307502,
+        0.28680632346169727
+      ]
+    },
+    {
+      "panel": "synonymous92",
+      "target": "norm RFP/GFP",
+      "model": "RiboDecode",
+      "n": 92,
+      "pearson": 0.1216332295945123,
+      "ci95": [
+        -0.12865229788681082,
+        0.323126455040022
+      ]
+    },
+    {
+      "panel": "source_all93_sensitivity",
+      "target": "norm RFP",
+      "model": "ours100k",
+      "n": 93,
+      "pearson": -0.0014489784228509282,
+      "ci95": [
+        -0.2854848835159939,
+        0.2684056347458794
+      ]
+    },
+    {
+      "panel": "source_all93_sensitivity",
+      "target": "norm RFP",
+      "model": "seq2ribo",
+      "n": 93,
+      "pearson": 0.054042196395835816,
+      "ci95": [
+        -0.21603330638681767,
+        0.3117269536292183
+      ]
+    },
+    {
+      "panel": "source_all93_sensitivity",
+      "target": "norm RFP",
+      "model": "RiboDecode",
+      "n": 93,
+      "pearson": 0.07234915359244154,
+      "ci95": [
+        -0.19255798111395447,
+        0.298878768052418
+      ]
+    },
+    {
+      "panel": "source_all93_sensitivity",
+      "target": "norm GFP",
+      "model": "ours100k",
+      "n": 93,
+      "pearson": -0.16058116131951658,
+      "ci95": [
+        -0.4232457491602647,
+        0.14225997142949492
+      ]
+    },
+    {
+      "panel": "source_all93_sensitivity",
+      "target": "norm GFP",
+      "model": "seq2ribo",
+      "n": 93,
+      "pearson": 0.04800766278367755,
+      "ci95": [
+        -0.2294060212383255,
+        0.2890288752440832
+      ]
+    },
+    {
+      "panel": "source_all93_sensitivity",
+      "target": "norm GFP",
+      "model": "RiboDecode",
+      "n": 93,
+      "pearson": -0.04233248253751028,
+      "ci95": [
+        -0.2570802718873139,
+        0.14354685092119318
+      ]
+    },
+    {
+      "panel": "source_all93_sensitivity",
+      "target": "norm RFP/GFP",
+      "model": "ours100k",
+      "n": 93,
+      "pearson": 0.03484170803633675,
+      "ci95": [
+        -0.2119557862846227,
+        0.274652611671145
+      ]
+    },
+    {
+      "panel": "source_all93_sensitivity",
+      "target": "norm RFP/GFP",
+      "model": "seq2ribo",
+      "n": 93,
+      "pearson": 0.052981393514552694,
+      "ci95": [
+        -0.2134812990903918,
+        0.2892578580555435
+      ]
+    },
+    {
+      "panel": "source_all93_sensitivity",
+      "target": "norm RFP/GFP",
+      "model": "RiboDecode",
+      "n": 93,
+      "pearson": 0.12036679733397586,
+      "ci95": [
+        -0.12965545836527992,
+        0.3203562173264656
+      ]
+    }
+  ],
+  "paired": [
+    {
+      "panel": "synonymous92",
+      "target": "norm RFP",
+      "model": "ours100k",
+      "reference": "seq2ribo",
+      "delta": -0.052144944534856984,
+      "ci95": [
+        -0.33705271025442485,
+        0.2517880139689393
+      ]
+    },
+    {
+      "panel": "synonymous92",
+      "target": "norm RFP",
+      "model": "ours100k",
+      "reference": "RiboDecode",
+      "delta": -0.07479298818352649,
+      "ci95": [
+        -0.4191171395195424,
+        0.2978105648599732
+      ]
+    },
+    {
+      "panel": "synonymous92",
+      "target": "norm GFP",
+      "model": "ours100k",
+      "reference": "seq2ribo",
+      "delta": -0.2048280481469878,
+      "ci95": [
+        -0.6072833135207897,
+        0.25920723966271036
+      ]
+    },
+    {
+      "panel": "synonymous92",
+      "target": "norm GFP",
+      "model": "ours100k",
+      "reference": "RiboDecode",
+      "delta": -0.11930216598593762,
+      "ci95": [
+        -0.4784958568684921,
+        0.28489447322654027
+      ]
+    },
+    {
+      "panel": "synonymous92",
+      "target": "norm RFP/GFP",
+      "model": "ours100k",
+      "reference": "seq2ribo",
+      "delta": -0.015644942531613727,
+      "ci95": [
+        -0.30423593980467,
+        0.3055725338222948
+      ]
+    },
+    {
+      "panel": "synonymous92",
+      "target": "norm RFP/GFP",
+      "model": "ours100k",
+      "reference": "RiboDecode",
+      "delta": -0.08634342161217548,
+      "ci95": [
+        -0.4122175708262973,
+        0.27436185967008114
+      ]
+    },
+    {
+      "panel": "source_all93_sensitivity",
+      "target": "norm RFP",
+      "model": "ours100k",
+      "reference": "seq2ribo",
+      "delta": -0.05549117481868675,
+      "ci95": [
+        -0.3409119410993997,
+        0.24805951461141793
+      ]
+    },
+    {
+      "panel": "source_all93_sensitivity",
+      "target": "norm RFP",
+      "model": "ours100k",
+      "reference": "RiboDecode",
+      "delta": -0.07379813201529246,
+      "ci95": [
+        -0.4174094100567496,
+        0.29796117176320713
+      ]
+    },
+    {
+      "panel": "source_all93_sensitivity",
+      "target": "norm GFP",
+      "model": "ours100k",
+      "reference": "seq2ribo",
+      "delta": -0.20858882410319413,
+      "ci95": [
+        -0.6091902741551701,
+        0.2514031467782393
+      ]
+    },
+    {
+      "panel": "source_all93_sensitivity",
+      "target": "norm GFP",
+      "model": "ours100k",
+      "reference": "RiboDecode",
+      "delta": -0.1182486787820063,
+      "ci95": [
+        -0.47847539629593894,
+        0.2881290501147752
+      ]
+    },
+    {
+      "panel": "source_all93_sensitivity",
+      "target": "norm RFP/GFP",
+      "model": "ours100k",
+      "reference": "seq2ribo",
+      "delta": -0.01813968547821594,
+      "ci95": [
+        -0.3079643328350232,
+        0.3046712068228623
+      ]
+    },
+    {
+      "panel": "source_all93_sensitivity",
+      "target": "norm RFP/GFP",
+      "model": "ours100k",
+      "reference": "RiboDecode",
+      "delta": -0.0855250892976391,
+      "ci95": [
+        -0.4110180243921215,
+        0.27477299307632824
+      ]
+    }
+  ],
+  "position_CV": [
+    {
+      "target": "norm RFP",
+      "model": "position_CV_kmer",
+      "n": 92,
+      "pearson": -0.10570456930751947
+    },
+    {
+      "target": "norm GFP",
+      "model": "position_CV_kmer",
+      "n": 92,
+      "pearson": -0.05331962224487063
+    },
+    {
+      "target": "norm RFP/GFP",
+      "model": "position_CV_kmer",
+      "n": 92,
+      "pearson": -0.11157974173099398
+    }
+  ],
+  "choices": [
+    {
+      "alpha": 1000.0,
+      "inner_losses": [
+        6.447230240644292,
+        2.6586398324274723,
+        1.6700218530906585,
+        1.3564649367305204
+      ],
+      "test_n": 19
+    },
+    {
+      "alpha": 1000.0,
+      "inner_losses": [
+        6.06693278261137,
+        2.7536840179838413,
+        1.5280663950036484,
+        1.1827862301580132
+      ],
+      "test_n": 19
+    },
+    {
+      "alpha": 1000.0,
+      "inner_losses": [
+        5.199439579534768,
+        2.19804293232538,
+        1.2968783573500124,
+        1.0825412419747609
+      ],
+      "test_n": 18
+    },
+    {
+      "alpha": 1000.0,
+      "inner_losses": [
+        4.6893214029083925,
+        2.280541631959329,
+        1.4594489881242219,
+        1.1577855120022653
+      ],
+      "test_n": 18
+    },
+    {
+      "alpha": 1000.0,
+      "inner_losses": [
+        5.079015418686713,
+        2.3422094398553983,
+        1.3862425075667304,
+        1.079909215939937
+      ],
+      "test_n": 18
+    }
+  ],
+  "interpretation": "Native-CDS human-to-E.coli diagnostic; no claim of measured soluble-protein validation or full fusion expression prediction"
+}

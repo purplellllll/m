@@ -1,0 +1,49 @@
+[
+  {
+    "file": "seq2ribo_paper_readme.md",
+    "url": "https://raw.githubusercontent.com/Kingsford-Group/seq2ribo/main/reproduction/paper/README.md",
+    "status": 200,
+    "bytes": 11672,
+    "sha256": "e7834ec95ec3153010a0b051e5efc3cf66bfb799f40fe23c302e61bbfa6f8e69"
+  },
+  {
+    "file": "seq2ribo_repro_readme.md",
+    "url": "https://raw.githubusercontent.com/Kingsford-Group/seq2ribo/main/reproduction/README.md",
+    "status": 404,
+    "bytes": 14,
+    "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+  },
+  {
+    "file": "Riboformer_README.md",
+    "url": "https://raw.githubusercontent.com/lingxusb/Riboformer/main/README.md",
+    "status": 200,
+    "bytes": 8870,
+    "sha256": "4cf2d265b1ab55fb7304559f0f07bc309d34749b76a240ef0846a7e676b3e24f"
+  },
+  {
+    "file": "Riboformer_ecoli_input.txt",
+    "url": "https://raw.githubusercontent.com/lingxusb/Riboformer/main/datasets/GSE119104_Mg_buffer/cm_mg_xc.txt",
+    "status": 200,
+    "bytes": 20500000,
+    "sha256": "0d88a7536d259c201edab61771a91c6f8ac4e59dfcc994c796b4cfee4ce2eb04"
+  },
+  {
+    "file": "Riboformer_ecoli_observed.txt",
+    "url": "https://raw.githubusercontent.com/lingxusb/Riboformer/main/datasets/GSE119104_Mg_buffer/cm_mg_zc.txt",
+    "status": 200,
+    "bytes": 16184400,
+    "sha256": "75726b3c966f5324589eb2fb7ae96f804a1d9d1f3a3c0dade2d8e7a0ac92c3a7"
+  },
+  {
+    "file": "human_GSM1606107.ribo",
+    "url": "https://raw.githubusercontent.com/ribosomeprofiling/ribo_manuscript_supplemental/master/sidrauski_et_al/ribo/with_coverage/experiments/GSM1606107.ribo",
+    "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out."
+  },
+  {
+    "file": "human_ingolia_run.yaml",
+    "url": "https://raw.githubusercontent.com/ribosomeprofiling/ribo_manuscript_supplemental/master/sidrauski_et_al/ingolia_run.yaml",
+    "status": 200,
+    "bytes": 7230,
+    "sha256": "7eacb6c1f8171fc1350e6de18c85d32c162552eaddf04b829a11ac561b507fc9"
+  }
+]

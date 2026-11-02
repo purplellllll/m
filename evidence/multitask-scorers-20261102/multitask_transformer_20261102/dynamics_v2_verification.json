@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "official_table": 11,
+  "official_starts": [
+    "ATA",
+    "ATC",
+    "ATG",
+    "ATT",
+    "CTG",
+    "GTG",
+    "TTG"
+  ],
+  "legacy_supported_starts_bitwise_parity": [
+    {
+      "host": "human",
+      "start": "ATG"
+    },
+    {
+      "host": "ecoli",
+      "start": "ATG"
+    },
+    {
+      "host": "ecoli",
+      "start": "GTG"
+    },
+    {
+      "host": "ecoli",
+      "start": "TTG"
+    }
+  ],
+  "invalid_host_starts_rejected": true,
+  "dynamics_v1_sha256": "a2d90918be662aea960c3a465c9235e62598e13f213bb78ab485dfed126aa604",
+  "dynamics_v2_sha256": "88d0f13d6907ab4b9020742b6f1730173624ed68a9dad0f775b02f0ee0d94f20",
+  "scope": "Only E.coli initiation validation expanded; event kernel and all output semantics unchanged"
+}

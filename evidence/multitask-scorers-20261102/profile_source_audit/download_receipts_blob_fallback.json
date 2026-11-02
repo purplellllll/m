@@ -1,0 +1,15 @@
+[
+  {
+    "file": "ecoli_NC000913.2.fasta",
+    "url": "https://api.github.com/repos/lingxusb/Riboformer/git/blobs/b2558f576d19542f2e8575ca2cabd3d92fb56b50",
+    "status": 200,
+    "bytes": 4706030,
+    "sha256": "2a8e2f78bc145fa82fa325acf7d34dc944612795cee74f793045dc64d782176c",
+    "git_blob_sha": "b2558f576d19542f2e8575ca2cabd3d92fb56b50"
+  },
+  {
+    "file": "human_APPRIS_transcripts.fa.gz",
+    "url": "https://api.github.com/repos/ribosomeprofiling/rf_sample_data/git/blobs/a976fad5bbc5eb5551ba09b7b8304f4a138daa68",
+    "error": "ChunkedEncodingError"
+  }
+]

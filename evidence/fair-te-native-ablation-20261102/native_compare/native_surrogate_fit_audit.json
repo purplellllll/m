@@ -1,0 +1,34 @@
+{
+  "status": "completed",
+  "cases": [
+    {
+      "case": 1,
+      "training_r2_by_round": [
+        -360.24,
+        0.43,
+        -0.28
+      ],
+      "log_sha256": "1f9481561c81770d67f51dd3c6143042044ed3ae23eab9316d50432fc33da25e"
+    },
+    {
+      "case": 2,
+      "training_r2_by_round": [
+        -334.59,
+        -7.26,
+        -0.61
+      ],
+      "log_sha256": "5aff35c1e1290698750bfb17e19908f97d54959740c17ba536310cf0640dff46"
+    },
+    {
+      "case": 3,
+      "training_r2_by_round": [
+        -1015.74,
+        -1.54,
+        -0.39
+      ],
+      "log_sha256": "2e77ec56844768f2e954d8f927b8c95f64659617991781a140c57ab3fb83c314"
+    }
+  ],
+  "negative_training_r2_observed": true,
+  "interpretation": "Native printed R2 pools predictions made throughout parameter updates; it is not final frozen-model training R2 or independent validation. See native_surrogate_holdout_audit.json for frozen-model diagnostics. An MFE advantage over this finite-budget run is not proof of superiority to a fully trained native optimizer."
+}

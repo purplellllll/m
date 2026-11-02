@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "same_case_seed_budget": true,
+  "failed_attempt_context": {
+    "phase": "optim",
+    "round": 2,
+    "queries": 1600,
+    "fold_sequences": 848,
+    "fold_calls": 1616,
+    "max_history": 5
+  },
+  "discarded_work_is_extra": true,
+  "linux_root": "/home/lc666/.cache/te_native_20261102_case3_retry1"
+}

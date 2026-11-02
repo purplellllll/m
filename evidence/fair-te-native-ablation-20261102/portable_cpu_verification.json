@@ -1,0 +1,93 @@
+{
+  "status": "passed",
+  "models": 14,
+  "torch": "2.14.0+cpu",
+  "device": "cpu",
+  "results": [
+    {
+      "path": "human_te_100000_no_stats_30101.pt",
+      "strict_load": true,
+      "hash_checked": true,
+      "finite_scalar_output": true
+    },
+    {
+      "path": "human_te_100000_no_stats_30102.pt",
+      "strict_load": true,
+      "hash_checked": true,
+      "finite_scalar_output": true
+    },
+    {
+      "path": "human_te_24000_no_stats_30101.pt",
+      "strict_load": true,
+      "hash_checked": true,
+      "finite_scalar_output": true
+    },
+    {
+      "path": "human_te_24000_no_stats_30102.pt",
+      "strict_load": true,
+      "hash_checked": true,
+      "finite_scalar_output": true
+    },
+    {
+      "path": "fair_te_full_30101.pt",
+      "strict_load": true,
+      "hash_checked": true,
+      "finite_scalar_output": true
+    },
+    {
+      "path": "fair_te_full_30102.pt",
+      "strict_load": true,
+      "hash_checked": true,
+      "finite_scalar_output": true
+    },
+    {
+      "path": "fair_te_no_physics_30101.pt",
+      "strict_load": true,
+      "hash_checked": true,
+      "finite_scalar_output": true
+    },
+    {
+      "path": "fair_te_no_physics_30102.pt",
+      "strict_load": true,
+      "hash_checked": true,
+      "finite_scalar_output": true
+    },
+    {
+      "path": "fair_te_no_graph_30101.pt",
+      "strict_load": true,
+      "hash_checked": true,
+      "finite_scalar_output": true
+    },
+    {
+      "path": "fair_te_no_graph_30102.pt",
+      "strict_load": true,
+      "hash_checked": true,
+      "finite_scalar_output": true
+    },
+    {
+      "path": "fair_te_no_context_30101.pt",
+      "strict_load": true,
+      "hash_checked": true,
+      "finite_scalar_output": true
+    },
+    {
+      "path": "fair_te_no_context_30102.pt",
+      "strict_load": true,
+      "hash_checked": true,
+      "finite_scalar_output": true
+    },
+    {
+      "path": "fair_te_seq_transformer_30101.pt",
+      "strict_load": true,
+      "hash_checked": true,
+      "finite_scalar_output": true
+    },
+    {
+      "path": "fair_te_seq_transformer_30102.pt",
+      "strict_load": true,
+      "hash_checked": true,
+      "finite_scalar_output": true
+    }
+  ],
+  "biological_metrics_recomputed": false
+}

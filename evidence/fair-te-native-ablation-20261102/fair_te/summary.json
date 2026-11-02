@@ -1,0 +1,243 @@
+{
+  "status": "completed",
+  "task": "Human_HEK293_short_CDS_TE",
+  "metrics": {
+    "full": {
+      "n": 227,
+      "pearson": 0.5992639060040998,
+      "ci95": [
+        0.5183072529095659,
+        0.6768012919654843
+      ],
+      "bootstrap_defined": 2000,
+      "spearman": 0.5931255373238759,
+      "mse": 0.38343455073765037,
+      "single_seed_pearson": [
+        0.6000935998398523,
+        0.5910214064038821
+      ],
+      "single_seed_std": 0.006415009498810621,
+      "validation_mean_per_seed": 0.5335101578588182
+    },
+    "no_physics": {
+      "n": 227,
+      "pearson": 0.6021942557733809,
+      "ci95": [
+        0.5219756029102974,
+        0.6798624362732992
+      ],
+      "bootstrap_defined": 2000,
+      "spearman": 0.5977637067601757,
+      "mse": 0.38139554404298137,
+      "single_seed_pearson": [
+        0.60333185356564,
+        0.5936062483237847
+      ],
+      "single_seed_std": 0.006877041417659303,
+      "validation_mean_per_seed": 0.5357748724869245
+    },
+    "no_graph": {
+      "n": 227,
+      "pearson": 0.5906719598014977,
+      "ci95": [
+        0.5091972314375379,
+        0.6691723653124257
+      ],
+      "bootstrap_defined": 2000,
+      "spearman": 0.5924463804632629,
+      "mse": 0.39547131221342363,
+      "single_seed_pearson": [
+        0.5890780731568767,
+        0.5829450310268092
+      ],
+      "single_seed_std": 0.004336715679473509,
+      "validation_mean_per_seed": 0.5369306545494522
+    },
+    "no_context": {
+      "n": 227,
+      "pearson": 0.5588836530041078,
+      "ci95": [
+        0.47141505532645384,
+        0.6433026484507338
+      ],
+      "bootstrap_defined": 2000,
+      "spearman": 0.5594210957200808,
+      "mse": 0.4165015994715058,
+      "single_seed_pearson": [
+        0.5535220782258848,
+        0.5544577421282808
+      ],
+      "single_seed_std": 0.000661614290295656,
+      "validation_mean_per_seed": 0.4492500756601432
+    },
+    "seq_transformer": {
+      "n": 227,
+      "pearson": 0.5853809126528449,
+      "ci95": [
+        0.5045056081550167,
+        0.6663098546177876
+      ],
+      "bootstrap_defined": 2000,
+      "spearman": 0.5941565836152894,
+      "mse": 0.3975459649772673,
+      "single_seed_pearson": [
+        0.5909061780948556,
+        0.5683273170834144
+      ],
+      "single_seed_std": 0.015965665732658573,
+      "validation_mean_per_seed": 0.5402482596767091
+    },
+    "seq2ribo_TE_adapt": {
+      "n": 227,
+      "pearson": 0.5131055048282883,
+      "ci95": [
+        0.4047868398074772,
+        0.6027137466768512
+      ],
+      "bootstrap_defined": 2000,
+      "spearman": 0.5045109557645234,
+      "mse": 0.4384407752567246,
+      "single_seed_pearson": [
+        0.5355550438346653,
+        0.46711476151883996
+      ],
+      "single_seed_std": 0.048394587731841875,
+      "validation_mean_per_seed": 0.459163157328339
+    },
+    "RiboGL_TE_adapt": {
+      "n": 227,
+      "pearson": 0.400423422115071,
+      "ci95": [
+        0.28725207913803563,
+        0.505323187747216
+      ],
+      "bootstrap_defined": 2000,
+      "spearman": 0.3793829726552161,
+      "mse": 0.5255427751927219,
+      "single_seed_pearson": [
+        0.39952137876765653,
+        0.3449225997513441
+      ],
+      "single_seed_std": 0.0386071668869403,
+      "validation_mean_per_seed": 0.33821729200553097
+    },
+    "RiboDecode_TE_adapt": {
+      "n": 227,
+      "pearson": 0.4393097187963094,
+      "ci95": [
+        0.32846133465760496,
+        0.5489977022605131
+      ],
+      "bootstrap_defined": 2000,
+      "spearman": 0.4480137226618846,
+      "mse": 0.490378791914252,
+      "single_seed_pearson": [
+        0.4392108329758628,
+        0.4328949363912108
+      ],
+      "single_seed_std": 0.0044660133042803704,
+      "validation_mean_per_seed": 0.2462935139540967
+    }
+  },
+  "paired": [
+    {
+      "comparison": "full minus no_physics",
+      "delta_pearson": -0.002930349769281082,
+      "ci95": [
+        -0.009510242461021234,
+        0.0031693747619721017
+      ],
+      "bootstrap_defined": 2000,
+      "multiplicity_adjusted": false
+    },
+    {
+      "comparison": "full minus no_graph",
+      "delta_pearson": 0.008591946202602174,
+      "ci95": [
+        -0.0031831613352723913,
+        0.02070362584301664
+      ],
+      "bootstrap_defined": 2000,
+      "multiplicity_adjusted": false
+    },
+    {
+      "comparison": "full minus no_context",
+      "delta_pearson": 0.04038025299999204,
+      "ci95": [
+        -0.009689529872431237,
+        0.09063525714554226
+      ],
+      "bootstrap_defined": 2000,
+      "multiplicity_adjusted": false
+    },
+    {
+      "comparison": "full minus seq_transformer",
+      "delta_pearson": 0.01388299335125498,
+      "ci95": [
+        0.0006828592536500034,
+        0.027165878056437533
+      ],
+      "bootstrap_defined": 2000,
+      "multiplicity_adjusted": false
+    },
+    {
+      "comparison": "full minus seq2ribo_TE_adapt",
+      "delta_pearson": 0.08615840117581153,
+      "ci95": [
+        0.024316544199810115,
+        0.15510424526396654
+      ],
+      "bootstrap_defined": 2000,
+      "multiplicity_adjusted": false
+    },
+    {
+      "comparison": "full minus RiboGL_TE_adapt",
+      "delta_pearson": 0.19884048388902886,
+      "ci95": [
+        0.1139319563027222,
+        0.2895546479344719
+      ],
+      "bootstrap_defined": 2000,
+      "multiplicity_adjusted": false
+    },
+    {
+      "comparison": "full minus RiboDecode_TE_adapt",
+      "delta_pearson": 0.15995418720779042,
+      "ci95": [
+        0.05393863895873087,
+        0.2738757357002644
+      ],
+      "bootstrap_defined": 2000,
+      "multiplicity_adjusted": false
+    }
+  ],
+  "physics_graph_interaction_given_context": {
+    "definition": "r(full)-r(no_physics)-r(no_graph)+r(seq_transformer)",
+    "delta_on_pearson_scale": -0.008221396917933887,
+    "ci95": [
+      -0.017738050680044727,
+      0.0016170349018588862
+    ],
+    "bootstrap_defined": 2000,
+    "interpretation": "Exploratory2x2 physics/graph contrast with Transformer retained; not proof of biological synergy"
+  },
+  "train_genes": 1951,
+  "validation_genes": 262,
+  "test_genes": 227,
+  "seeds": [
+    30101,
+    30102
+  ],
+  "max_steps": 3000,
+  "primary_metric": "Across-gene ensemble Pearson on same reused test rows",
+  "all_metrics_locally_computed": true,
+  "limits": [
+    "Finite common-recipe short-CDS TE adaptation benchmark, not each original paper task or full-data optimum",
+    "903-sample source test already opened historically; this filtered reuse is exploratory, not fresh independent confirmation",
+    "Training samples, updates, batch and selection matched; FLOPs, wall time, capacity and feature availability differ",
+    "No near-homology or cross-study split; no universal/SOTA superiority claim",
+    "RiboGL and RiboDecode are explicitly TE-adapted architectures, not their original native-task evaluations",
+    "Bootstrap is conditional on these trained models; two seeds do not establish broad training stability",
+    "This controlled from-scratch benchmark is separate from the profile-pretrained full-length100000-step scorer"
+  ]
+}

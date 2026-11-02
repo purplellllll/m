@@ -8,3 +8,7 @@ evidence/20261102/** -text
 historical/20261102/** -text
 models/20261102/** -text
 *.png binary
+
+evidence/fair-te-native-ablation-20261102/** -text
+
+historical/fair-te-native-ablation-20261102/** -text

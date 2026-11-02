@@ -1,0 +1,42 @@
+{
+  "status": "completed",
+  "metrics": [
+    {
+      "task": "expression24h",
+      "n": 19,
+      "pearson": 0.1549515514368286,
+      "ci95": [
+        -0.20333410424436307,
+        0.5664794979559677
+      ]
+    },
+    {
+      "task": "expression6h",
+      "n": 19,
+      "pearson": -0.3290676299342824,
+      "ci95": [
+        -0.612517966769207,
+        0.048377176109394134
+      ]
+    },
+    {
+      "task": "chemical_HL",
+      "n": 19,
+      "pearson": -0.06283628219206874,
+      "ci95": [
+        -0.48443777264414,
+        0.3504106404202682
+      ]
+    },
+    {
+      "task": "joint24h_chemicalHL",
+      "n": 19,
+      "pearson": -0.13247562630887894,
+      "ci95": [
+        -0.5559788773116002,
+        0.35507128348749484
+      ]
+    }
+  ],
+  "acceptance": "Not cellularHL; no solubility labels; not primary acceptance"
+}

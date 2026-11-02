@@ -1,0 +1,10 @@
+{
+  "target": "Mean of two Dieterich HEK293 replicates after published log10(half_life+1) transform; not Saluki PC1",
+  "source_sha256": "6879ca92cb92afb25006652efa3de6af1e096ceae91783ceeeb44aeb24fc86ab",
+  "transform_source_sha256": "31cf52b082baced491256c4e0a70e4f5383690ba38e08a5030ffca212cbd8151",
+  "development_rows_sha256": "7ce82d01ef80e038dcd67d4cd8b58e312499cb64413e49a43b784bfee8e08b08",
+  "inputs": "Separate 5UTR/CDS/3UTR 1-3mer frequencies, no explicit length input; fixed UTRs for synonymous search",
+  "selection": "Ridge alpha 10/100/1000 via three train-only gene folds; validation opened once",
+  "test": "No previously opened 903 TE test samples read",
+  "source_code_sha256": "ffaa269248c450bcac920b370f2e145985734c6608b18f7247aa9162874544aa"
+}

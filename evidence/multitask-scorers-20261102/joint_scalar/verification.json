@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "dataset": "persist",
+      "metrics_recomputed": 24,
+      "status": "passed"
+    },
+    {
+      "dataset": "ddla",
+      "metrics_recomputed": 18,
+      "status": "passed"
+    },
+    {
+      "dataset": "mrfp_cpu",
+      "status": "passed",
+      "metrics_recomputed": 5
+    },
+    {
+      "dataset": "mrfp_ribodecode",
+      "status": "passed",
+      "metrics_recomputed": 3
+    },
+    {
+      "dataset": "fair_composition",
+      "status": "passed"
+    },
+    {
+      "dataset": "physics36",
+      "status": "passed",
+      "strict_npz_reload": true
+    },
+    {
+      "dataset": "ensemble",
+      "status": "passed",
+      "validation_selected_weight": 0.5
+    },
+    {
+      "dataset": "esol_v2",
+      "status": "passed",
+      "n": 370
+    },
+    {
+      "dataset": "opt",
+      "status": "passed",
+      "n": 944,
+      "scope": "Ordinal Pearson recompute; classification values not independently recomputed here"
+    },
+    {
+      "dataset": "human_joint",
+      "status": "passed",
+      "n": 601
+    }
+  ],
+  "files_hashed": 900
+}

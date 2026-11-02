@@ -1,0 +1,1274 @@
+[
+  {
+    "step": 250,
+    "seen_transcripts": 1445,
+    "validation_pearson": 0.49926167463564664,
+    "validation_mse": 0.48663103380698713
+  },
+  {
+    "step": 500,
+    "seen_transcripts": 2823,
+    "validation_pearson": 0.5087947159557167,
+    "validation_mse": 0.48376363484245893
+  },
+  {
+    "step": 750,
+    "seen_transcripts": 4223,
+    "validation_pearson": 0.5205279241047328,
+    "validation_mse": 0.5101432901472057
+  },
+  {
+    "step": 1000,
+    "seen_transcripts": 5590,
+    "validation_pearson": 0.5308949916753971,
+    "validation_mse": 0.4804487759265873
+  },
+  {
+    "step": 1250,
+    "seen_transcripts": 7038,
+    "validation_pearson": 0.5428844621958834,
+    "validation_mse": 0.4580189946290603
+  },
+  {
+    "step": 1500,
+    "seen_transcripts": 8512,
+    "validation_pearson": 0.55338405000245,
+    "validation_mse": 0.44711562614591444
+  },
+  {
+    "step": 1750,
+    "seen_transcripts": 9951,
+    "validation_pearson": 0.5574528758001256,
+    "validation_mse": 0.48015932241153053
+  },
+  {
+    "step": 2000,
+    "seen_transcripts": 11398,
+    "validation_pearson": 0.5621076938639565,
+    "validation_mse": 0.4555710929715207
+  },
+  {
+    "step": 2250,
+    "seen_transcripts": 12781,
+    "validation_pearson": 0.5647162758341567,
+    "validation_mse": 0.4487531626120671
+  },
+  {
+    "step": 2500,
+    "seen_transcripts": 14176,
+    "validation_pearson": 0.5703827884708798,
+    "validation_mse": 0.4370037213374336
+  },
+  {
+    "step": 2750,
+    "seen_transcripts": 15539,
+    "validation_pearson": 0.5709678007762314,
+    "validation_mse": 0.444194375003851
+  },
+  {
+    "step": 3000,
+    "seen_transcripts": 16927,
+    "validation_pearson": 0.5732835579243448,
+    "validation_mse": 0.44631761585622154
+  },
+  {
+    "step": 3250,
+    "seen_transcripts": 18375,
+    "validation_pearson": 0.5753343857150027,
+    "validation_mse": 0.4401853990120013
+  },
+  {
+    "step": 3500,
+    "seen_transcripts": 19772,
+    "validation_pearson": 0.5780620684069494,
+    "validation_mse": 0.4305060557185223
+  },
+  {
+    "step": 3750,
+    "seen_transcripts": 21151,
+    "validation_pearson": 0.5783940401397167,
+    "validation_mse": 0.4306651153104154
+  },
+  {
+    "step": 4000,
+    "seen_transcripts": 22604,
+    "validation_pearson": 0.5815956252523914,
+    "validation_mse": 0.46778323471862976
+  },
+  {
+    "step": 4250,
+    "seen_transcripts": 24026,
+    "validation_pearson": 0.5814650172662805,
+    "validation_mse": 0.42654464031423306
+  },
+  {
+    "step": 4500,
+    "seen_transcripts": 25445,
+    "validation_pearson": 0.5825521688013684,
+    "validation_mse": 0.4327120986573479
+  },
+  {
+    "step": 4750,
+    "seen_transcripts": 26854,
+    "validation_pearson": 0.5822583157994101,
+    "validation_mse": 0.42499107568753963
+  },
+  {
+    "step": 5000,
+    "seen_transcripts": 28253,
+    "validation_pearson": 0.5830081938387417,
+    "validation_mse": 0.42886979679668064
+  },
+  {
+    "step": 5250,
+    "seen_transcripts": 29687,
+    "validation_pearson": 0.5840338410366673,
+    "validation_mse": 0.4259053887609598
+  },
+  {
+    "step": 5500,
+    "seen_transcripts": 31051,
+    "validation_pearson": 0.5848335050677949,
+    "validation_mse": 0.42941702251819763
+  },
+  {
+    "step": 5750,
+    "seen_transcripts": 32431,
+    "validation_pearson": 0.5852466458350412,
+    "validation_mse": 0.4238552728577675
+  },
+  {
+    "step": 6000,
+    "seen_transcripts": 33864,
+    "validation_pearson": 0.5849237147175732,
+    "validation_mse": 0.4241516126663248
+  },
+  {
+    "step": 6500,
+    "seen_transcripts": 36777,
+    "validation_pearson": 0.5895943751718107,
+    "validation_mse": 0.4653325442256015
+  },
+  {
+    "step": 7000,
+    "seen_transcripts": 39665,
+    "validation_pearson": 0.5922381945412764,
+    "validation_mse": 0.41919957568782557
+  },
+  {
+    "step": 7500,
+    "seen_transcripts": 42412,
+    "validation_pearson": 0.5937196091864803,
+    "validation_mse": 0.4198512870169623
+  },
+  {
+    "step": 8000,
+    "seen_transcripts": 45221,
+    "validation_pearson": 0.5968954533570338,
+    "validation_mse": 0.4284222836735031
+  },
+  {
+    "step": 8500,
+    "seen_transcripts": 48082,
+    "validation_pearson": 0.6014890564365899,
+    "validation_mse": 0.4143047376092669
+  },
+  {
+    "step": 9000,
+    "seen_transcripts": 50864,
+    "validation_pearson": 0.5942551886218068,
+    "validation_mse": 0.45138361965009827
+  },
+  {
+    "step": 9500,
+    "seen_transcripts": 53704,
+    "validation_pearson": 0.5973974259868574,
+    "validation_mse": 0.4174062864391846
+  },
+  {
+    "step": 10000,
+    "seen_transcripts": 56566,
+    "validation_pearson": 0.5979840130066673,
+    "validation_mse": 0.42171004400660517
+  },
+  {
+    "step": 10500,
+    "seen_transcripts": 59329,
+    "validation_pearson": 0.6053792340317726,
+    "validation_mse": 0.41734432111672304
+  },
+  {
+    "step": 11000,
+    "seen_transcripts": 62219,
+    "validation_pearson": 0.608131644050054,
+    "validation_mse": 0.4221084140903772
+  },
+  {
+    "step": 11500,
+    "seen_transcripts": 65026,
+    "validation_pearson": 0.6076406132902006,
+    "validation_mse": 0.4142658831401052
+  },
+  {
+    "step": 12000,
+    "seen_transcripts": 67853,
+    "validation_pearson": 0.6079492883334989,
+    "validation_mse": 0.4078963882471623
+  },
+  {
+    "step": 12500,
+    "seen_transcripts": 70644,
+    "validation_pearson": 0.6095452174519517,
+    "validation_mse": 0.40931709439649516
+  },
+  {
+    "step": 13000,
+    "seen_transcripts": 73498,
+    "validation_pearson": 0.6095422339567239,
+    "validation_mse": 0.41035612141416766
+  },
+  {
+    "step": 13500,
+    "seen_transcripts": 76335,
+    "validation_pearson": 0.6108561957198505,
+    "validation_mse": 0.4152137898233289
+  },
+  {
+    "step": 14000,
+    "seen_transcripts": 79118,
+    "validation_pearson": 0.6115870476096456,
+    "validation_mse": 0.4230678918713152
+  },
+  {
+    "step": 14500,
+    "seen_transcripts": 81946,
+    "validation_pearson": 0.6101518680305549,
+    "validation_mse": 0.40393057478190675
+  },
+  {
+    "step": 15000,
+    "seen_transcripts": 84824,
+    "validation_pearson": 0.6108262469447591,
+    "validation_mse": 0.416461763348461
+  },
+  {
+    "step": 15500,
+    "seen_transcripts": 87595,
+    "validation_pearson": 0.6099596591463796,
+    "validation_mse": 0.4069568891466908
+  },
+  {
+    "step": 16000,
+    "seen_transcripts": 90435,
+    "validation_pearson": 0.6125567239185176,
+    "validation_mse": 0.4073957178532691
+  },
+  {
+    "step": 16500,
+    "seen_transcripts": 93255,
+    "validation_pearson": 0.6130995542883733,
+    "validation_mse": 0.40866512650308334
+  },
+  {
+    "step": 17000,
+    "seen_transcripts": 96124,
+    "validation_pearson": 0.6132126132652809,
+    "validation_mse": 0.4043663530612602
+  },
+  {
+    "step": 17500,
+    "seen_transcripts": 98934,
+    "validation_pearson": 0.61290339671268,
+    "validation_mse": 0.40707458468119223
+  },
+  {
+    "step": 18000,
+    "seen_transcripts": 101787,
+    "validation_pearson": 0.6137653038322781,
+    "validation_mse": 0.4058423113103092
+  },
+  {
+    "step": 18500,
+    "seen_transcripts": 104623,
+    "validation_pearson": 0.6138843386869289,
+    "validation_mse": 0.4055226593097114
+  },
+  {
+    "step": 19000,
+    "seen_transcripts": 107457,
+    "validation_pearson": 0.6141838904383429,
+    "validation_mse": 0.4067570724997863
+  },
+  {
+    "step": 19500,
+    "seen_transcripts": 110267,
+    "validation_pearson": 0.6147206579810811,
+    "validation_mse": 0.4141400557845942
+  },
+  {
+    "step": 20000,
+    "seen_transcripts": 113060,
+    "validation_pearson": 0.6138246846542836,
+    "validation_mse": 0.4112256960506408
+  },
+  {
+    "step": 20500,
+    "seen_transcripts": 115892,
+    "validation_pearson": 0.6153439984799355,
+    "validation_mse": 0.4097162895423753
+  },
+  {
+    "step": 21000,
+    "seen_transcripts": 118751,
+    "validation_pearson": 0.6150958380154309,
+    "validation_mse": 0.40227453743996017
+  },
+  {
+    "step": 21500,
+    "seen_transcripts": 121552,
+    "validation_pearson": 0.6159429908389346,
+    "validation_mse": 0.40854410948279646
+  },
+  {
+    "step": 22000,
+    "seen_transcripts": 124432,
+    "validation_pearson": 0.6154857306851782,
+    "validation_mse": 0.4017119505446387
+  },
+  {
+    "step": 22500,
+    "seen_transcripts": 127142,
+    "validation_pearson": 0.6154503231575562,
+    "validation_mse": 0.4046323822337459
+  },
+  {
+    "step": 23000,
+    "seen_transcripts": 130002,
+    "validation_pearson": 0.6153514223403282,
+    "validation_mse": 0.40987829527460756
+  },
+  {
+    "step": 23500,
+    "seen_transcripts": 132906,
+    "validation_pearson": 0.6149348912290585,
+    "validation_mse": 0.4039951189161848
+  },
+  {
+    "step": 24000,
+    "seen_transcripts": 135782,
+    "validation_pearson": 0.6168047188490255,
+    "validation_mse": 0.40685117655451625
+  },
+  {
+    "step": 24500,
+    "seen_transcripts": 138610,
+    "validation_pearson": 0.6171841378564236,
+    "validation_mse": 0.41256515149793477
+  },
+  {
+    "step": 25000,
+    "seen_transcripts": 141466,
+    "validation_pearson": 0.6168780843914624,
+    "validation_mse": 0.40601072070189537
+  },
+  {
+    "step": 25500,
+    "seen_transcripts": 144284,
+    "validation_pearson": 0.6160316723155028,
+    "validation_mse": 0.40062157015779143
+  },
+  {
+    "step": 26000,
+    "seen_transcripts": 147043,
+    "validation_pearson": 0.6170424210511655,
+    "validation_mse": 0.4080742129272531
+  },
+  {
+    "step": 26500,
+    "seen_transcripts": 149854,
+    "validation_pearson": 0.616538441538631,
+    "validation_mse": 0.4007605855948322
+  },
+  {
+    "step": 27000,
+    "seen_transcripts": 152702,
+    "validation_pearson": 0.6164640721739403,
+    "validation_mse": 0.4012286374921372
+  },
+  {
+    "step": 27500,
+    "seen_transcripts": 155526,
+    "validation_pearson": 0.6172122341706607,
+    "validation_mse": 0.40435790841029357
+  },
+  {
+    "step": 28000,
+    "seen_transcripts": 158386,
+    "validation_pearson": 0.61769100789331,
+    "validation_mse": 0.4058141422202847
+  },
+  {
+    "step": 28500,
+    "seen_transcripts": 161191,
+    "validation_pearson": 0.6177982701104469,
+    "validation_mse": 0.4088112723353613
+  },
+  {
+    "step": 29000,
+    "seen_transcripts": 164071,
+    "validation_pearson": 0.6173352580972344,
+    "validation_mse": 0.4028705542700165
+  },
+  {
+    "step": 29500,
+    "seen_transcripts": 166850,
+    "validation_pearson": 0.619436240137087,
+    "validation_mse": 0.401738809712976
+  },
+  {
+    "step": 30000,
+    "seen_transcripts": 169713,
+    "validation_pearson": 0.6173601507964344,
+    "validation_mse": 0.40408070457940987
+  },
+  {
+    "step": 30500,
+    "seen_transcripts": 172576,
+    "validation_pearson": 0.6187673813951451,
+    "validation_mse": 0.3980085315009385
+  },
+  {
+    "step": 31000,
+    "seen_transcripts": 175373,
+    "validation_pearson": 0.6192090468698831,
+    "validation_mse": 0.40959450447832113
+  },
+  {
+    "step": 31500,
+    "seen_transcripts": 178184,
+    "validation_pearson": 0.6191920908539275,
+    "validation_mse": 0.40620681307613243
+  },
+  {
+    "step": 32000,
+    "seen_transcripts": 180958,
+    "validation_pearson": 0.6195762303262422,
+    "validation_mse": 0.40438688824231545
+  },
+  {
+    "step": 32500,
+    "seen_transcripts": 183824,
+    "validation_pearson": 0.6174593218688225,
+    "validation_mse": 0.39957295733289877
+  },
+  {
+    "step": 33000,
+    "seen_transcripts": 186690,
+    "validation_pearson": 0.619891197034596,
+    "validation_mse": 0.4215728870861833
+  },
+  {
+    "step": 33500,
+    "seen_transcripts": 189475,
+    "validation_pearson": 0.6204514632826784,
+    "validation_mse": 0.402371248258381
+  },
+  {
+    "step": 34000,
+    "seen_transcripts": 192323,
+    "validation_pearson": 0.6198523810811482,
+    "validation_mse": 0.39632725066639857
+  },
+  {
+    "step": 34500,
+    "seen_transcripts": 195110,
+    "validation_pearson": 0.6187822445597946,
+    "validation_mse": 0.398736801858998
+  },
+  {
+    "step": 35000,
+    "seen_transcripts": 197982,
+    "validation_pearson": 0.6201468852059865,
+    "validation_mse": 0.39861971626645826
+  },
+  {
+    "step": 35500,
+    "seen_transcripts": 200811,
+    "validation_pearson": 0.6202556480498177,
+    "validation_mse": 0.3966262999182149
+  },
+  {
+    "step": 36000,
+    "seen_transcripts": 203681,
+    "validation_pearson": 0.6209429946915512,
+    "validation_mse": 0.40194706072622455
+  },
+  {
+    "step": 36500,
+    "seen_transcripts": 206468,
+    "validation_pearson": 0.619771990949963,
+    "validation_mse": 0.40396465194356235
+  },
+  {
+    "step": 37000,
+    "seen_transcripts": 209321,
+    "validation_pearson": 0.6201085971285816,
+    "validation_mse": 0.4126183778490708
+  },
+  {
+    "step": 37500,
+    "seen_transcripts": 212062,
+    "validation_pearson": 0.618382721961065,
+    "validation_mse": 0.39843606033771656
+  },
+  {
+    "step": 38000,
+    "seen_transcripts": 214972,
+    "validation_pearson": 0.6204108905351559,
+    "validation_mse": 0.398283123723945
+  },
+  {
+    "step": 38500,
+    "seen_transcripts": 217889,
+    "validation_pearson": 0.6189767605327966,
+    "validation_mse": 0.39728848097449854
+  },
+  {
+    "step": 39000,
+    "seen_transcripts": 220633,
+    "validation_pearson": 0.6212093424565143,
+    "validation_mse": 0.3998469433441323
+  },
+  {
+    "step": 39500,
+    "seen_transcripts": 223467,
+    "validation_pearson": 0.6208352174087117,
+    "validation_mse": 0.3981335485678412
+  },
+  {
+    "step": 40000,
+    "seen_transcripts": 226308,
+    "validation_pearson": 0.6212900676001147,
+    "validation_mse": 0.4164326338446888
+  },
+  {
+    "step": 40500,
+    "seen_transcripts": 229140,
+    "validation_pearson": 0.6210383658603351,
+    "validation_mse": 0.3986757795730056
+  },
+  {
+    "step": 41000,
+    "seen_transcripts": 231982,
+    "validation_pearson": 0.6186043416075961,
+    "validation_mse": 0.3993746239196105
+  },
+  {
+    "step": 41500,
+    "seen_transcripts": 234807,
+    "validation_pearson": 0.6201896180544169,
+    "validation_mse": 0.405108985877578
+  },
+  {
+    "step": 42000,
+    "seen_transcripts": 237566,
+    "validation_pearson": 0.6190242346366722,
+    "validation_mse": 0.4092548008292515
+  },
+  {
+    "step": 42500,
+    "seen_transcripts": 240431,
+    "validation_pearson": 0.6214621893713093,
+    "validation_mse": 0.40558659228178806
+  },
+  {
+    "step": 43000,
+    "seen_transcripts": 243285,
+    "validation_pearson": 0.6218259717447445,
+    "validation_mse": 0.403668730724306
+  },
+  {
+    "step": 43500,
+    "seen_transcripts": 246094,
+    "validation_pearson": 0.621918057288788,
+    "validation_mse": 0.39978859974208103
+  },
+  {
+    "step": 44000,
+    "seen_transcripts": 248904,
+    "validation_pearson": 0.6215738239018455,
+    "validation_mse": 0.4180528812008892
+  },
+  {
+    "step": 44500,
+    "seen_transcripts": 251772,
+    "validation_pearson": 0.6213135430138894,
+    "validation_mse": 0.4011550879547425
+  },
+  {
+    "step": 45000,
+    "seen_transcripts": 254649,
+    "validation_pearson": 0.6215235885759876,
+    "validation_mse": 0.41120063216743413
+  },
+  {
+    "step": 45500,
+    "seen_transcripts": 257439,
+    "validation_pearson": 0.6226549312877897,
+    "validation_mse": 0.39969790448005793
+  },
+  {
+    "step": 46000,
+    "seen_transcripts": 260180,
+    "validation_pearson": 0.6219270675160852,
+    "validation_mse": 0.3960033689823809
+  },
+  {
+    "step": 46500,
+    "seen_transcripts": 263036,
+    "validation_pearson": 0.6232121249045612,
+    "validation_mse": 0.40142411877050943
+  },
+  {
+    "step": 47000,
+    "seen_transcripts": 265923,
+    "validation_pearson": 0.6225220796927959,
+    "validation_mse": 0.3946641144859515
+  },
+  {
+    "step": 47500,
+    "seen_transcripts": 268769,
+    "validation_pearson": 0.6227117638571668,
+    "validation_mse": 0.39622554466610754
+  },
+  {
+    "step": 48000,
+    "seen_transcripts": 271569,
+    "validation_pearson": 0.6222345797917719,
+    "validation_mse": 0.3956823346046209
+  },
+  {
+    "step": 48500,
+    "seen_transcripts": 274387,
+    "validation_pearson": 0.6234876389972953,
+    "validation_mse": 0.40097196303949756
+  },
+  {
+    "step": 49000,
+    "seen_transcripts": 277204,
+    "validation_pearson": 0.6235277666316876,
+    "validation_mse": 0.39912221316190627
+  },
+  {
+    "step": 49500,
+    "seen_transcripts": 280092,
+    "validation_pearson": 0.6233004191067888,
+    "validation_mse": 0.3976077863448568
+  },
+  {
+    "step": 50000,
+    "seen_transcripts": 282887,
+    "validation_pearson": 0.6221647720235728,
+    "validation_mse": 0.39433562642455733
+  },
+  {
+    "step": 50500,
+    "seen_transcripts": 285769,
+    "validation_pearson": 0.6228598293163848,
+    "validation_mse": 0.4070653630833235
+  },
+  {
+    "step": 51000,
+    "seen_transcripts": 288590,
+    "validation_pearson": 0.6233437829705707,
+    "validation_mse": 0.39601844680215637
+  },
+  {
+    "step": 51500,
+    "seen_transcripts": 291429,
+    "validation_pearson": 0.6238171617677172,
+    "validation_mse": 0.40523375779006937
+  },
+  {
+    "step": 52000,
+    "seen_transcripts": 294222,
+    "validation_pearson": 0.6221365675199678,
+    "validation_mse": 0.39728453371452477
+  },
+  {
+    "step": 52500,
+    "seen_transcripts": 297077,
+    "validation_pearson": 0.6242159098966874,
+    "validation_mse": 0.4163186506126782
+  },
+  {
+    "step": 53000,
+    "seen_transcripts": 299918,
+    "validation_pearson": 0.6237510494752562,
+    "validation_mse": 0.40020082707835075
+  },
+  {
+    "step": 53500,
+    "seen_transcripts": 302696,
+    "validation_pearson": 0.6233053702078696,
+    "validation_mse": 0.40480253126156207
+  },
+  {
+    "step": 54000,
+    "seen_transcripts": 305479,
+    "validation_pearson": 0.6240531636380806,
+    "validation_mse": 0.4093171944840897
+  },
+  {
+    "step": 54500,
+    "seen_transcripts": 308371,
+    "validation_pearson": 0.6221689295784758,
+    "validation_mse": 0.3981093263917463
+  },
+  {
+    "step": 55000,
+    "seen_transcripts": 311266,
+    "validation_pearson": 0.6226787970645397,
+    "validation_mse": 0.396052490465829
+  },
+  {
+    "step": 55500,
+    "seen_transcripts": 314169,
+    "validation_pearson": 0.6241094514381632,
+    "validation_mse": 0.4007571364954545
+  },
+  {
+    "step": 56000,
+    "seen_transcripts": 316879,
+    "validation_pearson": 0.6244955086520997,
+    "validation_mse": 0.402323538293177
+  },
+  {
+    "step": 56500,
+    "seen_transcripts": 319698,
+    "validation_pearson": 0.6234164851947903,
+    "validation_mse": 0.39788812429238163
+  },
+  {
+    "step": 57000,
+    "seen_transcripts": 322514,
+    "validation_pearson": 0.6220890493275661,
+    "validation_mse": 0.3965544681210926
+  },
+  {
+    "step": 57500,
+    "seen_transcripts": 325365,
+    "validation_pearson": 0.6234079529770113,
+    "validation_mse": 0.4024264349649244
+  },
+  {
+    "step": 58000,
+    "seen_transcripts": 328244,
+    "validation_pearson": 0.6232422906552054,
+    "validation_mse": 0.3974935417362786
+  },
+  {
+    "step": 58500,
+    "seen_transcripts": 331040,
+    "validation_pearson": 0.6247575092154742,
+    "validation_mse": 0.3939078467631533
+  },
+  {
+    "step": 59000,
+    "seen_transcripts": 333845,
+    "validation_pearson": 0.6239731304826525,
+    "validation_mse": 0.4011951406495217
+  },
+  {
+    "step": 59500,
+    "seen_transcripts": 336712,
+    "validation_pearson": 0.6246453155333725,
+    "validation_mse": 0.4050195413810474
+  },
+  {
+    "step": 60000,
+    "seen_transcripts": 339501,
+    "validation_pearson": 0.6239085745571842,
+    "validation_mse": 0.4048693637920686
+  },
+  {
+    "step": 60500,
+    "seen_transcripts": 342302,
+    "validation_pearson": 0.6241348232071597,
+    "validation_mse": 0.39685358282645855
+  },
+  {
+    "step": 61000,
+    "seen_transcripts": 345186,
+    "validation_pearson": 0.6221546205212115,
+    "validation_mse": 0.3971875473782548
+  },
+  {
+    "step": 61500,
+    "seen_transcripts": 347974,
+    "validation_pearson": 0.6236508253136531,
+    "validation_mse": 0.3957387474524698
+  },
+  {
+    "step": 62000,
+    "seen_transcripts": 350787,
+    "validation_pearson": 0.6232997128983212,
+    "validation_mse": 0.39656699182099775
+  },
+  {
+    "step": 62500,
+    "seen_transcripts": 353632,
+    "validation_pearson": 0.6239404384978507,
+    "validation_mse": 0.3999477464726589
+  },
+  {
+    "step": 63000,
+    "seen_transcripts": 356488,
+    "validation_pearson": 0.6235841365225321,
+    "validation_mse": 0.3984216679300921
+  },
+  {
+    "step": 63500,
+    "seen_transcripts": 359331,
+    "validation_pearson": 0.6236774838526463,
+    "validation_mse": 0.39593776384675744
+  },
+  {
+    "step": 64000,
+    "seen_transcripts": 362115,
+    "validation_pearson": 0.6223958961472367,
+    "validation_mse": 0.39656499641330695
+  },
+  {
+    "step": 64500,
+    "seen_transcripts": 364997,
+    "validation_pearson": 0.6224820387672904,
+    "validation_mse": 0.4007161573435826
+  },
+  {
+    "step": 65000,
+    "seen_transcripts": 367823,
+    "validation_pearson": 0.6226687790607462,
+    "validation_mse": 0.39620118724532694
+  },
+  {
+    "step": 65500,
+    "seen_transcripts": 370569,
+    "validation_pearson": 0.6234664604442417,
+    "validation_mse": 0.402458497109024
+  },
+  {
+    "step": 66000,
+    "seen_transcripts": 373459,
+    "validation_pearson": 0.623125382460797,
+    "validation_mse": 0.3977549478610455
+  },
+  {
+    "step": 66500,
+    "seen_transcripts": 376255,
+    "validation_pearson": 0.6244440685636861,
+    "validation_mse": 0.4080609307967762
+  },
+  {
+    "step": 67000,
+    "seen_transcripts": 379094,
+    "validation_pearson": 0.6238949395234553,
+    "validation_mse": 0.3965215931850463
+  },
+  {
+    "step": 67500,
+    "seen_transcripts": 381937,
+    "validation_pearson": 0.6223509821414989,
+    "validation_mse": 0.3968839086721596
+  },
+  {
+    "step": 68000,
+    "seen_transcripts": 384760,
+    "validation_pearson": 0.623926018558309,
+    "validation_mse": 0.39523318968988214
+  },
+  {
+    "step": 68500,
+    "seen_transcripts": 387599,
+    "validation_pearson": 0.624540525650477,
+    "validation_mse": 0.398280796916744
+  },
+  {
+    "step": 69000,
+    "seen_transcripts": 390389,
+    "validation_pearson": 0.6224133512085093,
+    "validation_mse": 0.39445219859054387
+  },
+  {
+    "step": 69500,
+    "seen_transcripts": 393281,
+    "validation_pearson": 0.6242035121651842,
+    "validation_mse": 0.4081869202819341
+  },
+  {
+    "step": 70000,
+    "seen_transcripts": 396022,
+    "validation_pearson": 0.6240211677272557,
+    "validation_mse": 0.41919676369397013
+  },
+  {
+    "step": 70500,
+    "seen_transcripts": 398889,
+    "validation_pearson": 0.6243418681555998,
+    "validation_mse": 0.40599747955668625
+  },
+  {
+    "step": 71000,
+    "seen_transcripts": 401769,
+    "validation_pearson": 0.6247528955782707,
+    "validation_mse": 0.40026781837110526
+  },
+  {
+    "step": 71500,
+    "seen_transcripts": 404562,
+    "validation_pearson": 0.6247817473127685,
+    "validation_mse": 0.3946821259229276
+  },
+  {
+    "step": 72000,
+    "seen_transcripts": 407387,
+    "validation_pearson": 0.624445371011455,
+    "validation_mse": 0.40261986268681854
+  },
+  {
+    "step": 72500,
+    "seen_transcripts": 410181,
+    "validation_pearson": 0.6247667490748835,
+    "validation_mse": 0.3924066301811137
+  },
+  {
+    "step": 73000,
+    "seen_transcripts": 413031,
+    "validation_pearson": 0.6250553199492558,
+    "validation_mse": 0.3993079354570083
+  },
+  {
+    "step": 73500,
+    "seen_transcripts": 415857,
+    "validation_pearson": 0.6251472229048028,
+    "validation_mse": 0.4000491440015914
+  },
+  {
+    "step": 74000,
+    "seen_transcripts": 418706,
+    "validation_pearson": 0.6238618281925796,
+    "validation_mse": 0.40435345120361915
+  },
+  {
+    "step": 74500,
+    "seen_transcripts": 421479,
+    "validation_pearson": 0.6251388590866386,
+    "validation_mse": 0.39541865724960673
+  },
+  {
+    "step": 75000,
+    "seen_transcripts": 424342,
+    "validation_pearson": 0.6224267123743569,
+    "validation_mse": 0.3956127874967379
+  },
+  {
+    "step": 75500,
+    "seen_transcripts": 427191,
+    "validation_pearson": 0.623343148120609,
+    "validation_mse": 0.4039585404782109
+  },
+  {
+    "step": 76000,
+    "seen_transcripts": 430038,
+    "validation_pearson": 0.62251197913747,
+    "validation_mse": 0.3977748062608286
+  },
+  {
+    "step": 76500,
+    "seen_transcripts": 432831,
+    "validation_pearson": 0.6249043271747746,
+    "validation_mse": 0.40263569738424115
+  },
+  {
+    "step": 77000,
+    "seen_transcripts": 435638,
+    "validation_pearson": 0.6238272927557508,
+    "validation_mse": 0.39328136348353515
+  },
+  {
+    "step": 77500,
+    "seen_transcripts": 438460,
+    "validation_pearson": 0.6241712304158874,
+    "validation_mse": 0.40018139482629345
+  },
+  {
+    "step": 78000,
+    "seen_transcripts": 441313,
+    "validation_pearson": 0.6246035149031448,
+    "validation_mse": 0.39672815552131413
+  },
+  {
+    "step": 78500,
+    "seen_transcripts": 444148,
+    "validation_pearson": 0.6241730739951893,
+    "validation_mse": 0.39394376972462886
+  },
+  {
+    "step": 79000,
+    "seen_transcripts": 447038,
+    "validation_pearson": 0.6225990090272175,
+    "validation_mse": 0.39851566826870727
+  },
+  {
+    "step": 79500,
+    "seen_transcripts": 449812,
+    "validation_pearson": 0.624524226861359,
+    "validation_mse": 0.40039396178338416
+  },
+  {
+    "step": 80000,
+    "seen_transcripts": 452701,
+    "validation_pearson": 0.6250302354903453,
+    "validation_mse": 0.39566900888107726
+  },
+  {
+    "step": 80500,
+    "seen_transcripts": 455468,
+    "validation_pearson": 0.6212134055461264,
+    "validation_mse": 0.39520395052863894
+  },
+  {
+    "step": 81000,
+    "seen_transcripts": 458314,
+    "validation_pearson": 0.6243418444526962,
+    "validation_mse": 0.39926460224796984
+  },
+  {
+    "step": 81500,
+    "seen_transcripts": 461139,
+    "validation_pearson": 0.6246454302976658,
+    "validation_mse": 0.39713663390633197
+  },
+  {
+    "step": 82000,
+    "seen_transcripts": 464002,
+    "validation_pearson": 0.6235214945559404,
+    "validation_mse": 0.39715376093354954
+  },
+  {
+    "step": 82500,
+    "seen_transcripts": 466810,
+    "validation_pearson": 0.6225782409008965,
+    "validation_mse": 0.39807111592513683
+  },
+  {
+    "step": 83000,
+    "seen_transcripts": 469673,
+    "validation_pearson": 0.6242985842461205,
+    "validation_mse": 0.39696638749967356
+  },
+  {
+    "step": 83500,
+    "seen_transcripts": 472489,
+    "validation_pearson": 0.6238235392555087,
+    "validation_mse": 0.39275397369185866
+  },
+  {
+    "step": 84000,
+    "seen_transcripts": 475291,
+    "validation_pearson": 0.622518660810231,
+    "validation_mse": 0.398983137137124
+  },
+  {
+    "step": 84500,
+    "seen_transcripts": 478128,
+    "validation_pearson": 0.6241875028223625,
+    "validation_mse": 0.39405675095372483
+  },
+  {
+    "step": 85000,
+    "seen_transcripts": 480936,
+    "validation_pearson": 0.6245498810699838,
+    "validation_mse": 0.4071785797281866
+  },
+  {
+    "step": 85500,
+    "seen_transcripts": 483748,
+    "validation_pearson": 0.6245249719911833,
+    "validation_mse": 0.39910348145839614
+  },
+  {
+    "step": 86000,
+    "seen_transcripts": 486629,
+    "validation_pearson": 0.623820418351649,
+    "validation_mse": 0.3938698810955512
+  },
+  {
+    "step": 86500,
+    "seen_transcripts": 489441,
+    "validation_pearson": 0.6251528867589293,
+    "validation_mse": 0.39552182702949934
+  },
+  {
+    "step": 87000,
+    "seen_transcripts": 492295,
+    "validation_pearson": 0.6243991905661324,
+    "validation_mse": 0.3966463769674608
+  },
+  {
+    "step": 87500,
+    "seen_transcripts": 495150,
+    "validation_pearson": 0.6236069301289996,
+    "validation_mse": 0.39689124985705637
+  },
+  {
+    "step": 88000,
+    "seen_transcripts": 497954,
+    "validation_pearson": 0.6246423373332141,
+    "validation_mse": 0.3989717237293902
+  },
+  {
+    "step": 88500,
+    "seen_transcripts": 500783,
+    "validation_pearson": 0.6230809850723521,
+    "validation_mse": 0.3952823862511172
+  },
+  {
+    "step": 89000,
+    "seen_transcripts": 503572,
+    "validation_pearson": 0.6236043320747644,
+    "validation_mse": 0.3941598081715722
+  },
+  {
+    "step": 89500,
+    "seen_transcripts": 506374,
+    "validation_pearson": 0.622295573539966,
+    "validation_mse": 0.3995017273812469
+  },
+  {
+    "step": 90000,
+    "seen_transcripts": 509304,
+    "validation_pearson": 0.623550035312544,
+    "validation_mse": 0.3952221136276202
+  },
+  {
+    "step": 90500,
+    "seen_transcripts": 512104,
+    "validation_pearson": 0.6236217485071635,
+    "validation_mse": 0.39422048635841106
+  },
+  {
+    "step": 91000,
+    "seen_transcripts": 514899,
+    "validation_pearson": 0.623110080525948,
+    "validation_mse": 0.3995360488391164
+  },
+  {
+    "step": 91500,
+    "seen_transcripts": 517717,
+    "validation_pearson": 0.6235420398813282,
+    "validation_mse": 0.39551111515486187
+  },
+  {
+    "step": 92000,
+    "seen_transcripts": 520531,
+    "validation_pearson": 0.6240044989475827,
+    "validation_mse": 0.40486753158567873
+  },
+  {
+    "step": 92500,
+    "seen_transcripts": 523388,
+    "validation_pearson": 0.6238168360087404,
+    "validation_mse": 0.39387354508005407
+  },
+  {
+    "step": 93000,
+    "seen_transcripts": 526206,
+    "validation_pearson": 0.6248263141156751,
+    "validation_mse": 0.3932554839821731
+  },
+  {
+    "step": 93500,
+    "seen_transcripts": 529059,
+    "validation_pearson": 0.6207673677516342,
+    "validation_mse": 0.3957447287454122
+  },
+  {
+    "step": 94000,
+    "seen_transcripts": 531898,
+    "validation_pearson": 0.6236122456516207,
+    "validation_mse": 0.4107004687244656
+  },
+  {
+    "step": 94500,
+    "seen_transcripts": 534738,
+    "validation_pearson": 0.6248514410363037,
+    "validation_mse": 0.3945543099265003
+  },
+  {
+    "step": 95000,
+    "seen_transcripts": 537554,
+    "validation_pearson": 0.6236443780830256,
+    "validation_mse": 0.3946777304819646
+  },
+  {
+    "step": 95500,
+    "seen_transcripts": 540390,
+    "validation_pearson": 0.6238489871729241,
+    "validation_mse": 0.3929523412392739
+  },
+  {
+    "step": 96000,
+    "seen_transcripts": 543169,
+    "validation_pearson": 0.6246186066961268,
+    "validation_mse": 0.39589253632227855
+  },
+  {
+    "step": 96500,
+    "seen_transcripts": 546030,
+    "validation_pearson": 0.6243617212483288,
+    "validation_mse": 0.39833169910673305
+  },
+  {
+    "step": 97000,
+    "seen_transcripts": 548820,
+    "validation_pearson": 0.6250019447765621,
+    "validation_mse": 0.40214118580540875
+  },
+  {
+    "step": 97500,
+    "seen_transcripts": 551640,
+    "validation_pearson": 0.6249637614445679,
+    "validation_mse": 0.41032579055500257
+  },
+  {
+    "step": 98000,
+    "seen_transcripts": 554514,
+    "validation_pearson": 0.6240020591445311,
+    "validation_mse": 0.3994015962629977
+  },
+  {
+    "step": 98500,
+    "seen_transcripts": 557306,
+    "validation_pearson": 0.6251635305798282,
+    "validation_mse": 0.39486375850955446
+  },
+  {
+    "step": 99000,
+    "seen_transcripts": 560155,
+    "validation_pearson": 0.6241903709556995,
+    "validation_mse": 0.39248515160562764
+  },
+  {
+    "step": 99500,
+    "seen_transcripts": 563037,
+    "validation_pearson": 0.6231004627404414,
+    "validation_mse": 0.39799672433874606
+  },
+  {
+    "step": 100000,
+    "seen_transcripts": 565852,
+    "validation_pearson": 0.6223021866158669,
+    "validation_mse": 0.4005085932025015
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "n": 100,
+  "unique_CDS": 1,
+  "observed_MRL_range": [
+    0.2956173666561006,
+    1.1881921598516445
+  ],
+  "observed_HL_range": [
+    1.8370874735560083,
+    3.0756701737161856
+  ],
+  "scores": {
+    "ours100k": {
+      "pearson": null,
+      "reason": "Constant CDS-only score across UTR variants"
+    },
+    "seq2ribo": {
+      "pearson": null,
+      "reason": "Constant CDS-only score across UTR variants"
+    },
+    "RiboDecode": {
+      "pearson": null,
+      "reason": "Constant CDS-only score across UTR variants"
+    }
+  }
+}

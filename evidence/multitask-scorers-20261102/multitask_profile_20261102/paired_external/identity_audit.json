@@ -1,0 +1,26 @@
+{
+  "raw_n": 24,
+  "exact_CDS_context_n": 19,
+  "excluded": [
+    {
+      "id": "1220188B1",
+      "reason": "CDS_sequence disagrees with sequence_with_UTRs; do not silently repair source"
+    },
+    {
+      "id": "1220187B1",
+      "reason": "CDS_sequence disagrees with sequence_with_UTRs; do not silently repair source"
+    },
+    {
+      "id": "1220185B1",
+      "reason": "CDS_sequence disagrees with sequence_with_UTRs; do not silently repair source"
+    },
+    {
+      "id": "1220186B1",
+      "reason": "CDS_sequence disagrees with sequence_with_UTRs; do not silently repair source"
+    },
+    {
+      "id": "1220184B1",
+      "reason": "CDS_sequence disagrees with sequence_with_UTRs; do not silently repair source"
+    }
+  ]
+}

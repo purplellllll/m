@@ -1,0 +1,578 @@
+{
+  "copied_evidence": [
+    {
+      "source": "runs/fair_te_ablation_20261102/protocol_locked.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/protocol_locked.json",
+      "sha256": "1144b5ce1207094c374c1464065bb2a1f8ed09d445ee588d585edf05b890c16d"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/metric_protocol_locked.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/metric_protocol_locked.json",
+      "sha256": "6a53a00f578610d602a7bed6dfd93f84fc6f0ecba5c0f853e1ffbebf56f7bcee"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/inputs_locked.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/inputs_locked.json",
+      "sha256": "f7bdd88649de5454d5528d872f65c7504f804b861185ae3b57c3eaabdfbcdd7d"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/summary.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/summary.json",
+      "sha256": "1a753bf8a738178deae01a0b4b4c3fad419d52cdf3fbf7b1a88f9e9ec552ed1a"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/metrics.csv",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/metrics.csv",
+      "sha256": "ae19f7ddc169a2d72a814070ad21f7b5f4ce4e28718805d0a34772e845ae6662"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/per_gene_predictions.csv",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/per_gene_predictions.csv",
+      "sha256": "fe105b01d2a51f88fe9949698e6cc8398f0c666bafa270214a18d480f2108219"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/test_predictions_locked.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/test_predictions_locked.json",
+      "sha256": "4294d2ed7d5f0cbe50b5dc18e8da558b7136280b563e5f33f1d9e0024664642d"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/all_checkpoints_locked.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/all_checkpoints_locked.json",
+      "sha256": "119b5de0f6e71226cf37030ab9d17eda77d9c5afcd7366409eabba8542f67f73"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/independent_audit.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/independent_audit.json",
+      "sha256": "fb4879383905ba9c8b8ed04071f7113fbdd52ac8472654b20b24d03f4e2b4e58"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/complete.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/complete.json",
+      "sha256": "4ac2487e3ace833bbfb104cd79dedc51f7e0749d7ebf12942a363c3287c557f6"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/公平基线与三路消融.md",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/公平基线与三路消融.md",
+      "sha256": "a07490298bcc03333f0adfcf3099ed6ca10260eff1ba2b712551566c19ad4c98"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/all_preflight_complete.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/all_preflight_complete.json",
+      "sha256": "6fd5c5aa17b39ca57d4ae820d4ff56d96b1571527919aaf1d1b24db7dd32ac42"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/ribogl_backend_parity.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/ribogl_backend_parity.json",
+      "sha256": "1ac32513636e2516bd7b3ef48c67a658e7debdb4adc9c0d7d86447fbf572ca28"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/portable_module_parity.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/portable_module_parity.json",
+      "sha256": "47f2902f22a601791dbe51301a0a784075d9d1bf9f3e339f58c2aea3ff2f4e15"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/initial_PyG_import_crash_archived.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/initial_PyG_import_crash_archived.json",
+      "sha256": "9471595bf0706b4b93b68c4d1ea299420f23f3ca6d766192db2bdf45ebe451d7"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/preflight_cudnn_failure_archived.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/preflight_cudnn_failure_archived.json",
+      "sha256": "6323d94a475bbc520ea5dc087271a95f86755e8a8b282ed4c9980e2f0cd81a5a"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/preflight/full.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/preflight/full.json",
+      "sha256": "c46e3a4e7530839b711256daff7870f4050b64e2e5da2ccad54752e9ff951e2d"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/preflight/no_context.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/preflight/no_context.json",
+      "sha256": "bde76523634b8523298d4112d9dff80be572bfaa748beb91ba69a10b1efa37c0"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/preflight/no_graph.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/preflight/no_graph.json",
+      "sha256": "588286f34a1799ed9bdd86d4efea7fbb4dd4a8d5d52664a76f2cbc998b0d46e1"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/preflight/no_physics.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/preflight/no_physics.json",
+      "sha256": "742cc963c24719bbb03270efd88ca0db34bf7d989dce72360503979abf0c4152"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/preflight/RiboDecode_TE_adapt.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/preflight/RiboDecode_TE_adapt.json",
+      "sha256": "22ace0aa764e878b6c1e7b64af1c684c070a05257e14b77ce397b4071dd5ae24"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/preflight/RiboGL_TE_adapt.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/preflight/RiboGL_TE_adapt.json",
+      "sha256": "00488da11b6519ca78cdc9435f8c3b433ed274e8ee7cff73ed73600828060bb8"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/preflight/seq2ribo_TE_adapt.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/preflight/seq2ribo_TE_adapt.json",
+      "sha256": "5a40e3c20667add454d3a5f4b10be953e322f946e2501eae1a27c30df0bcf5cb"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/preflight/seq_transformer.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/preflight/seq_transformer.json",
+      "sha256": "85fdda0af8aff5aaed4f6f88be0084e58f898fdc2393b15680b86057e3f2590a"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/models/full_30101/history.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/models/full_30101/history.json",
+      "sha256": "2dda574e7bc31fe0ab26ca703ae99f16194fbe5afeeb61240f8a14c2033b1e5c"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/models/full_30102/history.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/models/full_30102/history.json",
+      "sha256": "27f14b7474d842c2bb2fd0454276a7de44ef983f545060b5052b68e8465d49d4"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/models/no_context_30101/history.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/models/no_context_30101/history.json",
+      "sha256": "b8968a0ed2a96cdd05a1182c0bdc801847b6288d6b7265001a8fc88ff6f71227"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/models/no_context_30102/history.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/models/no_context_30102/history.json",
+      "sha256": "453a324a9935e631f75be71978af8c2d54f5cccec5616ba8f50c05231c04eb96"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/models/no_graph_30101/history.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/models/no_graph_30101/history.json",
+      "sha256": "6cff504baf8893de10766a94af397b4f47e86dbf533ea06e55a09a95c12eb2b7"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/models/no_graph_30102/history.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/models/no_graph_30102/history.json",
+      "sha256": "716685e3be33584d5539d19bbaf777ec5d636cb41ee7a9756280e4df191a7a20"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/models/no_physics_30101/history.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/models/no_physics_30101/history.json",
+      "sha256": "34d87c471ca20921d47b57ff96308feb0abb6810702892050b2f3058d08f6094"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/models/no_physics_30102/history.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/models/no_physics_30102/history.json",
+      "sha256": "4541d158198c0207c30c23553cc400b5427788ec2f7d818eb16cbe9c18fd0e5b"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/models/RiboDecode_TE_adapt_30101/history.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/models/RiboDecode_TE_adapt_30101/history.json",
+      "sha256": "7a59d1b5ac8a450329b02aa6aed7f7adb0407fd6dc0d3d3129ab038e7d874a34"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/models/RiboDecode_TE_adapt_30102/history.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/models/RiboDecode_TE_adapt_30102/history.json",
+      "sha256": "b305d100033a818e7e3f9aabfeeb9bfa2c8f209b6b605be7dcd94b8a4bb3b0ec"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/models/RiboGL_TE_adapt_30101/history.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/models/RiboGL_TE_adapt_30101/history.json",
+      "sha256": "bdd2b0ee55eff06f77152870192111b4f62f0d1cc3cbc9c445e54c286c121e75"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/models/RiboGL_TE_adapt_30102/history.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/models/RiboGL_TE_adapt_30102/history.json",
+      "sha256": "566758ba234118f2b92703e244cb2c00d9295e903cae8135e7fff2a8b68d9a92"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/models/seq2ribo_TE_adapt_30101/history.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/models/seq2ribo_TE_adapt_30101/history.json",
+      "sha256": "a15ba42a86f0cddbf208e096f1641c33cb80513029f46de1351b95e1d0b620a9"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/models/seq2ribo_TE_adapt_30102/history.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/models/seq2ribo_TE_adapt_30102/history.json",
+      "sha256": "faa652671584050bcdd33ffd44515a084ca42791830412834f8844156b9a3b6e"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/models/seq_transformer_30101/history.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/models/seq_transformer_30101/history.json",
+      "sha256": "63c8c5dc2f6edaad692129d65e5f551385a4f70f10a55adaa8ccf2e4c2b9cea8"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/models/seq_transformer_30102/history.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/fair_te/models/seq_transformer_30102/history.json",
+      "sha256": "0f97c6237703580456e80763c5ba0a66f6be0c02b01f0a82f9fff2f2462aa66a"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare/protocol_locked.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/native_compare/protocol_locked.json",
+      "sha256": "78606a977e3292e09b6550d7fb20dfc4e09d73f23bb33e35d4fe8dc148b9aff5"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare/summary.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/native_compare/summary.json",
+      "sha256": "d4485392d090049f419fddad8e9299a0c9648ef44469fd5523b39d1e9335e697"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare/endpoint_metrics.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/native_compare/endpoint_metrics.json",
+      "sha256": "155572f1d3b103f0cb9b02c2779cd1677705f4015525c71c8a62331cfe45e6ad"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare/原生优化对照.md",
+      "destination": "evidence/fair-te-native-ablation-20261102/native_compare/原生优化对照.md",
+      "sha256": "0c5835f62073b318939a75fe3e585a5799e178672e818fdcee7fa04ca466898d"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare/complete.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/native_compare/complete.json",
+      "sha256": "9d2f9305bdd9106129539465ebb9bcf17e25842d3412bbd03b7de923c30dae3f"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare/preflight_audit.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/native_compare/preflight_audit.json",
+      "sha256": "98f2fb2d1a827c79e4896cbdf9c6eecb42197c84c992add0e70b95e11e739cad"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare/loading_path_correction.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/native_compare/loading_path_correction.json",
+      "sha256": "0814803baed9e85b0e7fc265933502ddeec325ce10dfb8d8e3d32d33b6ccb8b0"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare/case3_recovery_execution.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/native_compare/case3_recovery_execution.json",
+      "sha256": "96414d79764818153a9ea415791f3ecc76b6f6ee553997918156a3c900211d7c"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare/native_surrogate_fit_audit.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/native_compare/native_surrogate_fit_audit.json",
+      "sha256": "72a7ca22a980f20122f2f0f7b5cc4bb8e24439da512fe1cbf4909824e1ced1bd"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare/native_surrogate_holdout_audit.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/native_compare/native_surrogate_holdout_audit.json",
+      "sha256": "666a82686a4abeeac227b60b675778c0df859d88b0d3ab93f8351465b2503ecb"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare/own_search/protocol_locked.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/native_compare/own_search/protocol_locked.json",
+      "sha256": "710ca5dc0c063a04f8528b15a13b4d116d82838283d402029ebe4f996ef817a3"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare/own_search/reload_check.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/native_compare/own_search/reload_check.json",
+      "sha256": "eedc7c3bd1ed3a0fbe35dfd5245c957cedaa7eb7982253e04c8eeef21ac7abf9"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare/case1_native/completion_receipt.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/native_compare/case1_native/completion_receipt.json",
+      "sha256": "47fe30960a5343f4ddb6d70dc9d277199c0fefa410eb26600dcda06318dc0f8d"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare/case1_native/runtime_protocol.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/native_compare/case1_native/runtime_protocol.json",
+      "sha256": "bd8aedf38952b2668973b9791868a04a1a176d8dff5eb7a6b5a3d5822e455d1e"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare/case2_native/completion_receipt.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/native_compare/case2_native/completion_receipt.json",
+      "sha256": "7ba8d7c8556e80f0c16da1f6d25ddec5e25f5d4e5634d6411b946c2622433a59"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare/case2_native/runtime_protocol.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/native_compare/case2_native/runtime_protocol.json",
+      "sha256": "2f0a6195fbb164ecde06ed432a5ca2c31dee36292ef4542f3d203f06c3963905"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare/case3_native/completion_receipt.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/native_compare/case3_native/completion_receipt.json",
+      "sha256": "4d46c5bf6ce8cd49d0027dbccd2fa2614c6ff18e9db2c5c6e8d339c5da6d5005"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare/case3_native/runtime_protocol.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/native_compare/case3_native/runtime_protocol.json",
+      "sha256": "1c89514e9e3b104ba6b5a43fc5f6b59b584e7c95706cf91b19af76a9ef7f47ad"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare/own_search/case1.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/native_compare/own_search/case1.json",
+      "sha256": "18fb37937d864818f2c67de800f7bc81839766a38abeae61f6eeacd4191a1912"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare/own_search/case2.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/native_compare/own_search/case2.json",
+      "sha256": "6ddf9f0bdb9429126160fdf6009c4920e3422e1240b03d46eb0c5db3ce396032"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare/own_search/case3.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/native_compare/own_search/case3.json",
+      "sha256": "1ddb1c7cf44738e7ce028941afc6d3f647fa0f26b767be7dcf919abb02f926b4"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare/own_search/memory_recovery.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/native_compare/own_search/memory_recovery.json",
+      "sha256": "1880fbe042da18dc9140882d95db6be2fde2090788bfb0e7d5d17ab556d340fa"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare/case3_native_interrupted_io_1/failure.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/native_compare/case3_native_interrupted_io_1/failure.json",
+      "sha256": "5bd22e6fc6e46a99faae3dfb11fd5299824223fede9f3fcf9dd76c6593c7ba51"
+    },
+    {
+      "source": "runs/te_stability_20261102/te_100000/protocol_locked.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/human_te_100000/protocol_locked.json",
+      "sha256": "666929e7580cb8bd320a97b953fddf9543470bc2fbd64cbdf3161208f8961ea5"
+    },
+    {
+      "source": "runs/te_stability_20261102/te_100000/selection_locked.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/human_te_100000/selection_locked.json",
+      "sha256": "a88820d8f34aea4069129bb40a9788813a5990dcdd33ab48301b6258c0a30b3f"
+    },
+    {
+      "source": "runs/te_stability_20261102/te_100000/training_complete.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/human_te_100000/training_complete.json",
+      "sha256": "c9947a8c6e858ad4a5c87961f3b9afdbaa51058e99aa1d027f259171105a47ea"
+    },
+    {
+      "source": "runs/te_stability_20261102/te_100000/requested_plan.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/human_te_100000/requested_plan.json",
+      "sha256": "6ec39c23e0aac63bf1d62260308c196943f97f5ab28ac55bdea3e1e6275a6099"
+    },
+    {
+      "source": "runs/te_stability_20261102/te_24000/protocol_locked.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/human_te_search24k/protocol_locked.json",
+      "sha256": "fb12276b155dd9a0335035e515d83fda062926be2da20ff914ca65c71fd121aa"
+    },
+    {
+      "source": "runs/te_stability_20261102/te_24000/selection_locked.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/human_te_search24k/selection_locked.json",
+      "sha256": "f308509cafe251f92ed584c686891d7f5c918cf8cf39c68dc6bdaa23b99eefe7"
+    },
+    {
+      "source": "runs/te_stability_20261102/te_24000/training_complete.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/human_te_search24k/training_complete.json",
+      "sha256": "c9947a8c6e858ad4a5c87961f3b9afdbaa51058e99aa1d027f259171105a47ea"
+    },
+    {
+      "source": "runs/te_stability_20261102/te_100000/models/no_stats_30101/history.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/human_te_100000/models/no_stats_30101/history.json",
+      "sha256": "a57d731ea1f5ada7e0bb117a3faa6efd773a29e36c254df16a2483f077dead8e"
+    },
+    {
+      "source": "runs/te_stability_20261102/te_100000/models/no_stats_30102/history.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/human_te_100000/models/no_stats_30102/history.json",
+      "sha256": "bda0d2891d47c5aec98b155d5cb29dd636a08e444a543cc16899b47e6158d8d2"
+    },
+    {
+      "source": "runs/te_stability_20261102/stability/protocol_locked.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/half_life/protocol_locked.json",
+      "sha256": "11224e6fb09de76004f983ade0e69ea3040eacdd0f86f30e721e71d7a5845ce5"
+    },
+    {
+      "source": "runs/te_stability_20261102/stability/summary.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/half_life/summary.json",
+      "sha256": "61daa7deff61dfae21a9e089e343f2878032c05c98259b8932d30150b8666981"
+    },
+    {
+      "source": "runs/te_stability_20261102/stability/persist_units_audit.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/half_life/persist_units_audit.json",
+      "sha256": "d2d4641f2b88fe2fc56a143f3f49d66eeeffc2022f7bd531bf2b5db3183a70a4"
+    },
+    {
+      "source": "runs/te_stability_20261102/stability/model.npz",
+      "destination": "evidence/fair-te-native-ablation-20261102/half_life/model.npz",
+      "sha256": "ef1c39b5987bbafb4f6fc51e8fefaec322946e9d25ef5dacf17bb485ee3a1b7c"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/full_length_100000/protocol_locked.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/human_te_100000_reused903/protocol_locked.json",
+      "sha256": "fecae28a1b94455c1e62e853f55d5c6d9e8b10661e6c80c6e4a415993263e4b1"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/full_length_100000/summary.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/human_te_100000_reused903/summary.json",
+      "sha256": "adff92a5cc398457563fe41794d58cd847a655fea071676af6341998367d6d2c"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/full_length_100000/metrics.csv",
+      "destination": "evidence/fair-te-native-ablation-20261102/human_te_100000_reused903/metrics.csv",
+      "sha256": "dec3185848228dae4b5814b99e55e53a39102e1a99a92b32646b283ecb3d7ae8"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/full_length_100000/predictions.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/human_te_100000_reused903/predictions.json",
+      "sha256": "1665f91e9cbc4288679cfd0620d298e82cc78621eb5fc4a1c1a94c463f0ceecf"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/full_length_100000/own_predictions_locked.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/human_te_100000_reused903/own_predictions_locked.json",
+      "sha256": "d517530a1ed25b2fa4b42ba2c94062bc19e0b06c723382f11580a9ab59c90d04"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/full_length_100000/complete.json",
+      "destination": "evidence/fair-te-native-ablation-20261102/human_te_100000_reused903/complete.json",
+      "sha256": "c89818bd068fcd7f03a421bed04437a3c8694aec1035ed024e277b7acafe13e1"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/models.py",
+      "destination": "historical/fair-te-native-ablation-20261102/fair_te_ablation_20261102/models.py",
+      "sha256": "1747f28da57e09672b4bc4724313b53085033be782199a0360d091aeac779c8f",
+      "role": "source_snapshot"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/experiment.py",
+      "destination": "historical/fair-te-native-ablation-20261102/fair_te_ablation_20261102/experiment.py",
+      "sha256": "dc68c6f17c190d452bfbf7185b86a54b281f95dc21e4cc31a5322e9c79745b69",
+      "role": "source_snapshot"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/evaluate.py",
+      "destination": "historical/fair-te-native-ablation-20261102/fair_te_ablation_20261102/evaluate.py",
+      "sha256": "eeb8276c7ff96d126544b32b0c100fe83f0cab26dce4e23e5ef138a1e43b3405",
+      "role": "source_snapshot"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/evaluate_100000.py",
+      "destination": "historical/fair-te-native-ablation-20261102/fair_te_ablation_20261102/evaluate_100000.py",
+      "sha256": "135e01a28af942563dde370c497da640105577b2d1f6c56254284f469c51d507",
+      "role": "source_snapshot"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/publish.py",
+      "destination": "historical/fair-te-native-ablation-20261102/fair_te_ablation_20261102/publish.py",
+      "sha256": "7373959754649bf7876734bd23b652967404c6ff21aa08519c5dfdad52dc750c",
+      "role": "source_snapshot"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/pipeline.py",
+      "destination": "historical/fair-te-native-ablation-20261102/fair_te_ablation_20261102/pipeline.py",
+      "sha256": "86aaa357e27c1df6706e20868d2cb2ce20f468d89780e5e71528b3ee85dc429b",
+      "role": "source_snapshot"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/preflight_queue.py",
+      "destination": "historical/fair-te-native-ablation-20261102/fair_te_ablation_20261102/preflight_queue.py",
+      "sha256": "f1967758ca9666816ad2bc855ee0f1c6e74d5af5e5cd411d27401719fc644faf",
+      "role": "source_snapshot"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/verify_ribogl_backend.py",
+      "destination": "historical/fair-te-native-ablation-20261102/fair_te_ablation_20261102/verify_ribogl_backend.py",
+      "sha256": "b8d69e61c0a4b8088b6ccc057ee5ce0a09e74899601e71a3610d0be2008529e2",
+      "role": "source_snapshot"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/verify_portable_module.py",
+      "destination": "historical/fair-te-native-ablation-20261102/fair_te_ablation_20261102/verify_portable_module.py",
+      "sha256": "3d8fd7266c278368f6f3473e52e3b44e5302386ab75e7b2c88d6ce1791daffc7",
+      "role": "source_snapshot"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/audit_native_surrogates.py",
+      "destination": "historical/fair-te-native-ablation-20261102/fair_te_ablation_20261102/audit_native_surrogates.py",
+      "sha256": "183f05a513d44e57874d2a258114aec555da1194117f525032db768b4d74daef",
+      "role": "source_snapshot"
+    },
+    {
+      "source": "runs/fair_te_ablation_20261102/audit_native_holdout_linux.py",
+      "destination": "historical/fair-te-native-ablation-20261102/fair_te_ablation_20261102/audit_native_holdout_linux.py",
+      "sha256": "e7e6af70fc2a2510559aaed00eda706115249a9a8523f550a9d697a7dd6c036a",
+      "role": "source_snapshot"
+    },
+    {
+      "source": "runs/te_stability_20261102/continue_te.py",
+      "destination": "historical/fair-te-native-ablation-20261102/te_stability_20261102/continue_te.py",
+      "sha256": "d8abca28976e7a16c168d2710a1de20629c044b7713cebea8b3afd96a24ec62e",
+      "role": "source_snapshot"
+    },
+    {
+      "source": "runs/te_stability_20261102/stability.py",
+      "destination": "historical/fair-te-native-ablation-20261102/te_stability_20261102/stability.py",
+      "sha256": "ffaa269248c450bcac920b370f2e145985734c6608b18f7247aa9162874544aa",
+      "role": "source_snapshot"
+    },
+    {
+      "source": "runs/te_stability_20261102/locked_scorer.py",
+      "destination": "historical/fair-te-native-ablation-20261102/te_stability_20261102/locked_scorer.py",
+      "sha256": "6b763723d749ccfd8c0896cb3ca4ab04d027b01503860a7ad15f5f1824dabc07",
+      "role": "source_snapshot"
+    },
+    {
+      "source": "runs/te_stability_20261102/scan.py",
+      "destination": "historical/fair-te-native-ablation-20261102/te_stability_20261102/scan.py",
+      "sha256": "fa896f124104ed267860feee84553890ffe070a30c022f203ff3b0daf548a035",
+      "role": "source_snapshot"
+    },
+    {
+      "source": "runs/te_stability_20261102/evaluate_scan.py",
+      "destination": "historical/fair-te-native-ablation-20261102/te_stability_20261102/evaluate_scan.py",
+      "sha256": "cd9efa4a9e7330d87e87ad5c987df6d2f217b8bd6f288602b27319966f70be3f",
+      "role": "source_snapshot"
+    },
+    {
+      "source": "runs/te_stability_20261102/train_to_24000.py",
+      "destination": "historical/fair-te-native-ablation-20261102/te_stability_20261102/train_to_24000.py",
+      "sha256": "4e0716d41912252c219287aba543e1a8b738e511c97cc34c185f8370ccfcf67b",
+      "role": "source_snapshot"
+    },
+    {
+      "source": "runs/te_stability_20261102/train_to_30000.py",
+      "destination": "historical/fair-te-native-ablation-20261102/te_stability_20261102/train_to_30000.py",
+      "sha256": "cb7da5506d8acc45b70a01b6ebcf784e0e8a48b70ff840dd19666befdbd65750",
+      "role": "source_snapshot"
+    },
+    {
+      "source": "runs/te_stability_20261102/train_to_100000.py",
+      "destination": "historical/fair-te-native-ablation-20261102/te_stability_20261102/train_to_100000.py",
+      "sha256": "43e31e738f7525a6f409c54266ffcaf73b58be4b14a7cf9c0a43e1f338ebf287",
+      "role": "source_snapshot"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare_queue.py",
+      "destination": "historical/fair-te-native-ablation-20261102/te_stability_20261102/native_compare_queue.py",
+      "sha256": "7c20b8e332a4ddb2b043b30f9b2c6b063339a1634b1569d87d383133ed87762c",
+      "role": "source_snapshot"
+    },
+    {
+      "source": "runs/te_stability_20261102/search_continued_native_panel.py",
+      "destination": "historical/fair-te-native-ablation-20261102/te_stability_20261102/search_continued_native_panel.py",
+      "sha256": "6507faf8288245db7a0edc602344644e812a278fcbade3f9005245c92588e323",
+      "role": "source_snapshot"
+    },
+    {
+      "source": "runs/te_stability_20261102/finish_native_comparison.py",
+      "destination": "historical/fair-te-native-ablation-20261102/te_stability_20261102/finish_native_comparison.py",
+      "sha256": "c34bc9b8079ac6fd415039e40de2971e808ccc3e43b302480bc42ed5f5f629f0",
+      "role": "source_snapshot"
+    },
+    {
+      "source": "runs/te_stability_20261102/locked_scorer_24000.py",
+      "destination": "historical/fair-te-native-ablation-20261102/te_stability_20261102/locked_scorer_24000.py",
+      "sha256": "f46f34cca65772685f8149a44e340389777e2dbd5ca29bb717d88d20da401903",
+      "role": "source_snapshot"
+    },
+    {
+      "source": "runs/te_stability_20261102/recover_native_case3.py",
+      "destination": "historical/fair-te-native-ablation-20261102/te_stability_20261102/recover_native_case3.py",
+      "sha256": "e1efd8cc09612cb8a876bc1f2443044f126c6a56ce3f781294bb9069fdfb96bb",
+      "role": "source_snapshot"
+    },
+    {
+      "source": "runs/te_stability_20261102/native_compare/native_bounded_cpu.py",
+      "destination": "historical/fair-te-native-ablation-20261102/native_compare/native_bounded_cpu.py",
+      "sha256": "bbb293f90f9a6bdcd900ccd5031d5d67c4f1049866cd827f0af382b667747d05",
+      "role": "native_runtime_source"
+    },
+    {
+      "source": "tools/native_default_cpu.py",
+      "destination": "historical/fair-te-native-ablation-20261102/native_compare/native_default_cpu.py",
+      "sha256": "50c33aa6dbc839fc5ca2810ffbd251f71768aacb359372f8629eea4a9b773f23",
+      "role": "native_runtime_source"
+    },
+    {
+      "source": "Linux_ext4_runtime_wrapper_reconstructed_and_hash_verified",
+      "destination": "historical/fair-te-native-ablation-20261102/native_compare/case3_native_bounded_ext4.py",
+      "sha256": "ca11eac89176d2bad93d1238d5bcce6750b625410758128609ae5779ab23ee2a",
+      "role": "native_runtime_source"
+    }
+  ],
+  "raw_train_sequences_not_redistributed": true,
+  "third_party_checkpoints_not_redistributed": true
+}

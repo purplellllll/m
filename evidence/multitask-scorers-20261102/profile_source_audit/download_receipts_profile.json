@@ -1,0 +1,58 @@
+[
+  {
+    "file": "ribofomer_data_processing.py",
+    "url": "https://raw.githubusercontent.com/lingxusb/Riboformer/main/Riboformer/data_processing.py",
+    "status": 200,
+    "bytes": 10703,
+    "sha256": "05f8528ec99a5c1b0b5072139db870aa55dc34f06138b7157677a706dcdacdd6"
+  },
+  {
+    "file": "ecoli_Mg_forward.wig",
+    "url": "https://raw.githubusercontent.com/lingxusb/Riboformer/main/datasets/GSE119104_Mg_buffer/GSM3358140_freeze_Mg_ctrl_f.wig",
+    "status": 200,
+    "bytes": 23827550,
+    "sha256": "b36711a0e24db2e1c6e80a6d0b8f938957f07e550ac27dce7cec083ab54be374"
+  },
+  {
+    "file": "ecoli_Mg_reverse.wig",
+    "url": "https://raw.githubusercontent.com/lingxusb/Riboformer/main/datasets/GSE119104_Mg_buffer/GSM3358140_freeze_Mg_ctrl_r.wig",
+    "status": 200,
+    "bytes": 24395627,
+    "sha256": "fe2807d39b520e1f6bd0196332697f111ba8ff4ef741d893b7274c1cdc86a0c9"
+  },
+  {
+    "file": "ecoli_NC000913.2.fasta",
+    "url": "https://raw.githubusercontent.com/lingxusb/Riboformer/main/datasets/GSE119104_Mg_buffer/NC000913.2.fasta",
+    "status": 200,
+    "bytes": 4706030,
+    "sha256": "2a8e2f78bc145fa82fa325acf7d34dc944612795cee74f793045dc64d782176c"
+  },
+  {
+    "file": "ecoli_NC000913.2.gff3",
+    "url": "https://raw.githubusercontent.com/lingxusb/Riboformer/main/datasets/GSE119104_Mg_buffer/NC000913.2.gff3",
+    "status": 200,
+    "bytes": 3114172,
+    "sha256": "f1a5c2ac33985ec1593ac5d93f4f1153d0607444a0e42c7bae51ce2ca192a26b"
+  },
+  {
+    "file": "human_APPRIS_transcripts.fa.gz",
+    "url": "https://raw.githubusercontent.com/ribosomeprofiling/rf_sample_data/master/transcriptome/appris_human_24_01_2019_selected.fa.gz",
+    "status": 200,
+    "bytes": 21480235,
+    "sha256": "a22959eb58ec5641cacaa31e10501e7d52455062df7e50fc0df442d978f5489d"
+  },
+  {
+    "file": "human_APPRIS_regions.bed",
+    "url": "https://raw.githubusercontent.com/ribosomeprofiling/rf_sample_data/master/annotation/appris_human_24_01_2019_actual_regions.bed",
+    "status": 200,
+    "bytes": 7754478,
+    "sha256": "65c44eca0995e4b64b287eee061afb717ae9ffddb832afe6069f3d6754aa307b"
+  },
+  {
+    "file": "human_APPRIS_lengths.tsv",
+    "url": "https://raw.githubusercontent.com/ribosomeprofiling/rf_sample_data/master/annotation/appris_human_24_01_2019_selected.lengths.tsv",
+    "status": 200,
+    "bytes": 2396901,
+    "sha256": "d4c480b08d7659cfe7b78a9fac5ea81a452f993c4826588ce45673aeac832559"
+  }
+]

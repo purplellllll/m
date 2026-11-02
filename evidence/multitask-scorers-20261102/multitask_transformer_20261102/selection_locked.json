@@ -1,0 +1,31 @@
+{
+  "models": [
+    {
+      "arm": "sequence",
+      "seed": 30101,
+      "path": "F:\\科研实验复现\\新建文件夹\\runs\\multitask_transformer_20261102\\models\\sequence_30101\\best.pt",
+      "sha256": "2cc21b535a0a560921f22c969faa42f92c5512dfaa555b779a10c9ea05a03c68"
+    },
+    {
+      "arm": "sequence",
+      "seed": 30102,
+      "path": "F:\\科研实验复现\\新建文件夹\\runs\\multitask_transformer_20261102\\models\\sequence_30102\\best.pt",
+      "sha256": "6f4ab7b88029907dadce36826b08864755768bb2f8fc87f327c4808ad09b8eba"
+    },
+    {
+      "arm": "dynamics",
+      "seed": 30101,
+      "path": "F:\\科研实验复现\\新建文件夹\\runs\\multitask_transformer_20261102\\models\\dynamics_30101\\best.pt",
+      "sha256": "7c367de3864d50113038a4ecf7376d87fa9e9b4cb7b52aeb46fe8e14926477ca"
+    },
+    {
+      "arm": "dynamics",
+      "seed": 30102,
+      "path": "F:\\科研实验复现\\新建文件夹\\runs\\multitask_transformer_20261102\\models\\dynamics_30102\\best.pt",
+      "sha256": "e0ab1febfdaf73c1d910f4ecb6e1cf47298b3d945a98a6858ccb88da81eb1296"
+    }
+  ],
+  "source_sha256": "d97843e319de7acc17585df7e69efa497cae0e199795135c008fb1061b97179c",
+  "training_protocol_sha256": "ed496d86706adbba89bc96fce9ea008706f2bdf88bce2b0e2cb2d5b63578321a",
+  "test_labels_opened_by_this_run": false
+}

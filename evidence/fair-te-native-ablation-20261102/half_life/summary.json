@@ -1,0 +1,48 @@
+{
+  "status": "completed",
+  "train_genes": 4677,
+  "validation_genes": 586,
+  "alpha": 1000.0,
+  "train_only_cv": [
+    {
+      "alpha": 10.0,
+      "n": 4677,
+      "pearson": 0.46438480352469486,
+      "spearman": 0.44605888242488195,
+      "mse": 0.10969562525325288
+    },
+    {
+      "alpha": 100.0,
+      "n": 4677,
+      "pearson": 0.4673762405653117,
+      "spearman": 0.44105699452698843,
+      "mse": 0.1086295263990649
+    },
+    {
+      "alpha": 1000.0,
+      "n": 4677,
+      "pearson": 0.4681949519803311,
+      "spearman": 0.4403151710967358,
+      "mse": 0.10805143098858928
+    }
+  ],
+  "validation": {
+    "n": 586,
+    "pearson": 0.4519065864347355,
+    "spearman": 0.3978033137989182,
+    "mse": 0.10972153374712583
+  },
+  "pearson_ci95": [
+    0.379822328277376,
+    0.5218978234150028
+  ],
+  "model_sha256": "ef1c39b5987bbafb4f6fc51e8fefaec322946e9d25ef5dacf17bb485ee3a1b7c",
+  "usable_for_exploratory_scan": true,
+  "not_independent_final_confirmation": true,
+  "limits": [
+    "Gene-level measurements assigned to one selected transcript; isoform-specific half-life not measured",
+    "HEK293 assay, not all cell types; changed CDS predictions have no measured half-life",
+    "Absolute hours not claimed; transformed original time units retained",
+    "Kmer ridge is an auxiliary model, not a trained half-life head in our TE network"
+  ]
+}

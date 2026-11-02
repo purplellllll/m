@@ -1,0 +1,25 @@
+{
+  "lambda_value": 0.75,
+  "proposals_per_case": 2400,
+  "cases": [
+    "0aeb8f0c161f22a9a1ed752ce802afc217bd6cedfcc81a294206174572d8a670",
+    "a6cd434356339861c35ef7fa91b86a7b0724ae3602c345dd0d33fb6675574ff0",
+    "3c7bdf920819f62001b18df03967b8f87fae783164a2b501dfd7b88add24eaa9"
+  ],
+  "own_checkpoint_sha256": [
+    "6ac18fdba4d66e639a90660acdffd4ef04882375c349f9358f1e96da57cf4819",
+    "0a57225c66b9f2f0825a3067718c7e9235d309a6b9d34d9c3b88d7a5fd13b910"
+  ],
+  "generator_sha256": "6592a07293da25b18f9ed71584e48dc4da23fa121b4f735f10d26ee7da26c6af",
+  "stability_model_sha256": "ef1c39b5987bbafb4f6fc51e8fefaec322946e9d25ef5dacf17bb485ee3a1b7c",
+  "source_sha256": "6507faf8288245db7a0edc602344644e812a278fcbade3f9005245c92588e323",
+  "scorer_source_sha256": "f46f34cca65772685f8149a44e340389777e2dbd5ca29bb717d88d20da401903",
+  "native_protocol_sha256": "78606a977e3292e09b6550d7fb20dfc4e09d73f23bb33e35d4fe8dc148b9aff5",
+  "scales": {
+    "own": 0.79826154976756,
+    "stability": 0.3719750788856862
+  },
+  "objective": "Same frozen lambda0.75 and GC/CAI/MFE/half-life combination as prior development scan",
+  "model_selection": "Validation-best continued checkpoints; no903 test opened",
+  "fairness": "2400 nominal proposals per CDS, same as bounded native; gradient updates, folds, unique queries and total compute differ"
+}

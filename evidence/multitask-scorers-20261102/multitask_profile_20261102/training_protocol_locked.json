@@ -1,0 +1,52 @@
+{
+  "seeds": [
+    30101,
+    30102
+  ],
+  "arms": [
+    "sequence",
+    "dynamics"
+  ],
+  "max_steps": 6000,
+  "batch_size": 8,
+  "validation_every": 500,
+  "task_sampling": "Round robin expression/half_life/solubility, equal8 examples per update; humanHL also has TE auxiliary label",
+  "loss": "MSE of train-standardized observed labels; average observed tasks; missing labels masked",
+  "model": {
+    "width": 192,
+    "context_layers": 2,
+    "heads": 8,
+    "max_context_tokens": 512,
+    "CDS": "Keep all codons; average-pool representations only when >512",
+    "UTR": "Separate nucleotide convolution encoders, retain ends plus full composition",
+    "AA": "Learned per-residue embeddings aligned to codons and20 composition features",
+    "host": "Explicit human/ecoli embedding conditions both codon context and readout; cell-free assay semantics retained in record metadata",
+    "fold": "Six RNAfold short-window MFE/nt sequence features shared by both arms"
+  },
+  "optimization": {
+    "optimizer": "AdamW",
+    "encoder_lr": 1e-05,
+    "new_lr": 0.0003,
+    "weight_decay": 0.01,
+    "clip": 1.0,
+    "warmup": 200,
+    "amp": "bfloat16 training only; full float32 validation/inference"
+  },
+  "selection": "Max validation macro Pearson of3 primary measured endpoints, not TE or test; freeze all4 checkpoints before opening test labels",
+  "physics": "Fixed-window3-rate event features, observed host-specific train-only RPF relative-occupancy proxy; 5prime150 RNAfold pairing; no mouse parameters and not identified absolute kinetics",
+  "comparison": "Same initialization, sample order, data, steps, selection and architecture except physics paths disabled in sequence arm",
+  "resource": "CUDA allocator capped25% of8GB; prior fair experiment remains running;2CPU threads",
+  "acceptance": "Measured fluorescence, observed HL, observed eSOL solubility separately; TE auxiliary cannot satisfy expression acceptance; no paired-expression-HL/triple labels available",
+  "history": "Historical test sets already used; explicitly exploratory, no fresh independent confirmation",
+  "hashes": {
+    "model.py": "ae558405f85259c3b266559fd303b3406e81aa5011108b96d5ee7870f9766d52",
+    "train.py": "4ac825bf9948c8ae5634fe8f0362b2d661500838b8d17c95fefff85632996baf",
+    "features.py": "cd32c56f5c83b3436b01de527b102254ae63fff80ee5135939145d84702bbfd1",
+    "dynamics_v2.py": "88d0f13d6907ab4b9020742b6f1730173624ed68a9dad0f775b02f0ee0d94f20",
+    "data_protocol_locked.json": "1e03c7948314e0c306a35c6fa046cae3aa32387fc151ead9f098aabaf2400b61",
+    "derived_data_protocol.json": "d12463053b0a23b92b577b448512e4bcd899f553ad6581591058c35f6d555f37",
+    "features_v2_protocol_locked.json": "849a348f613e3fa8d7ff49be80ba6f60dc753bc3cca3e5122bd1f3238e5c2942",
+    "input_scaler.npz": "78c9015f1bd4587996c19f0dcad8cb5c6116eef8c9f92f534cec721c1d13ac81",
+    "target_statistics.json": "d4b11fb8909b2119278e3ca8c10573eed74cbcc558e85449b8bca4f09a378f3a"
+  }
+}

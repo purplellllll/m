@@ -7,6 +7,7 @@ from .graph_polish_model import GraphPolishModel
 from .reliable_graph_context import ReliableGraphContext
 from .scalar_downstream import TaskScalarModel
 from .human_te_model import HumanTEScalar
+from .fair_te_ablation import FairTEAblation
 from .branch_probe import BranchProbe
 
 
@@ -18,7 +19,7 @@ def load_exported_checkpoint(path,expected_sha256=None,device='cpu'):
     payload=torch.load(path,map_location='cpu',weights_only=True)
     metadata=payload['metadata'];spec=metadata['spec'];kind=spec['kind']
     constructors={'FusionEncoderModel':FusionEncoderModel,'GraphPolishModel':GraphPolishModel,
-                  'ReliableGraphContext':ReliableGraphContext,'HumanTEScalar':HumanTEScalar,'BranchProbe':BranchProbe}
+                  'ReliableGraphContext':ReliableGraphContext,'HumanTEScalar':HumanTEScalar,'FairTEAblation':FairTEAblation,'BranchProbe':BranchProbe}
     if kind=='TaskScalarModel':
         if spec['backbone']['kind']!='GraphPolishModel':raise ValueError('Unsupported exported scalar backbone')
         backbone=GraphPolishModel(**spec['backbone']['config'])

@@ -1,0 +1,470 @@
+{
+  "status": "completed",
+  "metrics": [
+    {
+      "task": "expression",
+      "model": "sequence_30101",
+      "n": 217,
+      "bootstrap_groups": 217,
+      "pearson": 0.8739859379820831,
+      "ci95": [
+        0.8342595503491086,
+        0.9046157832948629
+      ],
+      "spearman": 0.8325911206941098,
+      "mse": 0.1342626820744302
+    },
+    {
+      "task": "expression",
+      "model": "sequence_30102",
+      "n": 217,
+      "bootstrap_groups": 217,
+      "pearson": 0.8565401754898079,
+      "ci95": [
+        0.8114539228319466,
+        0.8912004370629243
+      ],
+      "spearman": 0.8316739243788668,
+      "mse": 0.1576632619148536
+    },
+    {
+      "task": "expression",
+      "model": "dynamics_30101",
+      "n": 217,
+      "bootstrap_groups": 217,
+      "pearson": 0.8693152263026068,
+      "ci95": [
+        0.827561965249691,
+        0.9019053698839673
+      ],
+      "spearman": 0.8293967878164386,
+      "mse": 0.14171758709953666
+    },
+    {
+      "task": "expression",
+      "model": "dynamics_30102",
+      "n": 217,
+      "bootstrap_groups": 217,
+      "pearson": 0.8488825021250452,
+      "ci95": [
+        0.799340368422905,
+        0.8892385799592385
+      ],
+      "spearman": 0.8293686025263416,
+      "mse": 0.16471140027923356
+    },
+    {
+      "task": "expression",
+      "model": "sequence_ensemble",
+      "n": 217,
+      "bootstrap_groups": 217,
+      "pearson": 0.8719799409761604,
+      "ci95": [
+        0.8320613967853617,
+        0.9031100315278123
+      ],
+      "spearman": 0.8405675577915888,
+      "mse": 0.13945616155993176
+    },
+    {
+      "task": "expression",
+      "model": "dynamics_ensemble",
+      "n": 217,
+      "bootstrap_groups": 217,
+      "pearson": 0.8675300743338646,
+      "ci95": [
+        0.8250201277817774,
+        0.9011718839308772
+      ],
+      "spearman": 0.8373062848499369,
+      "mse": 0.14560665117560756
+    },
+    {
+      "task": "expression",
+      "model": "seq2ribo_native_expression",
+      "n": 217,
+      "bootstrap_groups": 217,
+      "pearson": 0.9033417624519616,
+      "ci95": [
+        0.8718887644664554,
+        0.9271492612498332
+      ],
+      "spearman": 0.8569749197893619,
+      "mse": 0.10391256294236548
+    },
+    {
+      "task": "expression",
+      "model": "previous_own424",
+      "n": 217,
+      "bootstrap_groups": 217,
+      "pearson": 0.8510130428660576,
+      "ci95": [
+        0.8017876629183548,
+        0.8930215148102683
+      ],
+      "spearman": 0.8339334451349841,
+      "mse": 0.16787680424232387
+    },
+    {
+      "task": "half_life",
+      "model": "sequence_30101",
+      "n": 601,
+      "bootstrap_groups": 601,
+      "pearson": 0.5587174247340412,
+      "ci95": [
+        0.4960175685372276,
+        0.6170353321192441
+      ],
+      "spearman": 0.5046732743323697,
+      "mse": 0.1065373569546546
+    },
+    {
+      "task": "half_life",
+      "model": "sequence_30102",
+      "n": 601,
+      "bootstrap_groups": 601,
+      "pearson": 0.5751070572645922,
+      "ci95": [
+        0.5120778648852965,
+        0.6306014839319467
+      ],
+      "spearman": 0.5344706220529462,
+      "mse": 0.1019712360568716
+    },
+    {
+      "task": "half_life",
+      "model": "dynamics_30101",
+      "n": 601,
+      "bootstrap_groups": 601,
+      "pearson": 0.5601058574648105,
+      "ci95": [
+        0.49572487191824693,
+        0.6178427548816318
+      ],
+      "spearman": 0.5072375498200674,
+      "mse": 0.10585310405407872
+    },
+    {
+      "task": "half_life",
+      "model": "dynamics_30102",
+      "n": 601,
+      "bootstrap_groups": 601,
+      "pearson": 0.573372706553677,
+      "ci95": [
+        0.5117408219819036,
+        0.6279490467797361
+      ],
+      "spearman": 0.5314064598868995,
+      "mse": 0.10241099918498475
+    },
+    {
+      "task": "half_life",
+      "model": "sequence_ensemble",
+      "n": 601,
+      "bootstrap_groups": 601,
+      "pearson": 0.5734550146917209,
+      "ci95": [
+        0.5100058850282907,
+        0.6294748788708635
+      ],
+      "spearman": 0.5262313641162847,
+      "mse": 0.10208026406531473
+    },
+    {
+      "task": "half_life",
+      "model": "dynamics_ensemble",
+      "n": 601,
+      "bootstrap_groups": 601,
+      "pearson": 0.5749144371767623,
+      "ci95": [
+        0.5123724539465042,
+        0.6302627667312527
+      ],
+      "spearman": 0.5256883599316754,
+      "mse": 0.10169754252379005
+    },
+    {
+      "task": "half_life",
+      "model": "previous_HL_auxiliary",
+      "n": 601,
+      "bootstrap_groups": 601,
+      "pearson": 0.5192520113152159,
+      "ci95": [
+        0.460238013132359,
+        0.5762047178827469
+      ],
+      "spearman": 0.48881924367471724,
+      "mse": null
+    },
+    {
+      "task": "half_life",
+      "model": "seq2ribo_TE_cross_task",
+      "n": 601,
+      "bootstrap_groups": 601,
+      "pearson": 0.2570748823691735,
+      "ci95": [
+        0.18014213135234003,
+        0.3305499105697984
+      ],
+      "spearman": 0.23096992277544076,
+      "mse": 2.6983593853548498
+    },
+    {
+      "task": "half_life",
+      "model": "RiboDecode_TE_cross_task",
+      "n": 601,
+      "bootstrap_groups": 601,
+      "pearson": 0.2994811098638397,
+      "ci95": [
+        0.2262102010040725,
+        0.37462202635562697
+      ],
+      "spearman": 0.36709354840492875,
+      "mse": 1.7084172276043907
+    },
+    {
+      "task": "solubility",
+      "model": "sequence_30101",
+      "n": 370,
+      "bootstrap_groups": 369,
+      "pearson": 0.7096077995372024,
+      "ci95": [
+        0.6507427841426289,
+        0.7601059002530948
+      ],
+      "spearman": 0.7074787650154383,
+      "mse": 570.7971169996829
+    },
+    {
+      "task": "solubility",
+      "model": "sequence_30102",
+      "n": 370,
+      "bootstrap_groups": 369,
+      "pearson": 0.7001543346163043,
+      "ci95": [
+        0.6388247431902101,
+        0.7529364255769132
+      ],
+      "spearman": 0.6979977031339065,
+      "mse": 589.5669716651778
+    },
+    {
+      "task": "solubility",
+      "model": "dynamics_30101",
+      "n": 370,
+      "bootstrap_groups": 369,
+      "pearson": 0.7101228336645703,
+      "ci95": [
+        0.6500408510804414,
+        0.7603094284010355
+      ],
+      "spearman": 0.7100407899097363,
+      "mse": 570.272282408746
+    },
+    {
+      "task": "solubility",
+      "model": "dynamics_30102",
+      "n": 370,
+      "bootstrap_groups": 369,
+      "pearson": 0.6954788147730067,
+      "ci95": [
+        0.6324531529706852,
+        0.749977682200983
+      ],
+      "spearman": 0.6939028880624779,
+      "mse": 594.8363069865725
+    },
+    {
+      "task": "solubility",
+      "model": "sequence_ensemble",
+      "n": 370,
+      "bootstrap_groups": 369,
+      "pearson": 0.7088808757463133,
+      "ci95": [
+        0.650065742225002,
+        0.7597792307530782
+      ],
+      "spearman": 0.7073086504480821,
+      "mse": 572.4757801635683
+    },
+    {
+      "task": "solubility",
+      "model": "dynamics_ensemble",
+      "n": 370,
+      "bootstrap_groups": 369,
+      "pearson": 0.7075755981457301,
+      "ci95": [
+        0.6457326805581242,
+        0.7597497262718416
+      ],
+      "spearman": 0.7073634993649942,
+      "mse": 573.8584414995363
+    },
+    {
+      "task": "solubility",
+      "model": "CDS_Ridge_auxiliary",
+      "n": 370,
+      "bootstrap_groups": 369,
+      "pearson": 0.6808118799419935,
+      "ci95": [
+        0.6263759071390907,
+        0.7291041346772771
+      ],
+      "spearman": 0.7074712844411494,
+      "mse": 618.57157627713
+    },
+    {
+      "task": "solubility",
+      "model": "AA_Ridge_auxiliary",
+      "n": 370,
+      "bootstrap_groups": 369,
+      "pearson": 0.6544470685103168,
+      "ci95": [
+        0.5973136665071164,
+        0.7053880974324543
+      ],
+      "spearman": 0.6809893254597027,
+      "mse": 659.7676736106544
+    }
+  ],
+  "paired": [
+    {
+      "task": "expression",
+      "model": "dynamics_ensemble",
+      "reference": "sequence_ensemble",
+      "delta": -0.004449866642295741,
+      "ci95": [
+        -0.01542238745190887,
+        0.00589043878350117
+      ]
+    },
+    {
+      "task": "expression",
+      "model": "dynamics_ensemble",
+      "reference": "seq2ribo_native_expression",
+      "delta": -0.035811688118096985,
+      "ci95": [
+        -0.07193033898817179,
+        -0.004385190755558374
+      ]
+    },
+    {
+      "task": "expression",
+      "model": "dynamics_ensemble",
+      "reference": "previous_own424",
+      "delta": 0.01651703146780703,
+      "ci95": [
+        -0.026624179122755946,
+        0.0652051459455628
+      ]
+    },
+    {
+      "task": "half_life",
+      "model": "dynamics_ensemble",
+      "reference": "sequence_ensemble",
+      "delta": 0.001459422485041384,
+      "ci95": [
+        -0.007537649564266108,
+        0.010342098666669467
+      ]
+    },
+    {
+      "task": "half_life",
+      "model": "dynamics_ensemble",
+      "reference": "previous_HL_auxiliary",
+      "delta": 0.05566242586154635,
+      "ci95": [
+        0.014417620771980692,
+        0.09642028347827444
+      ]
+    },
+    {
+      "task": "half_life",
+      "model": "dynamics_ensemble",
+      "reference": "seq2ribo_TE_cross_task",
+      "delta": 0.3178395548075888,
+      "ci95": [
+        0.23568391324087137,
+        0.3994898978401862
+      ]
+    },
+    {
+      "task": "half_life",
+      "model": "dynamics_ensemble",
+      "reference": "RiboDecode_TE_cross_task",
+      "delta": 0.2754333273129226,
+      "ci95": [
+        0.18804471665509806,
+        0.35526905807442904
+      ]
+    },
+    {
+      "task": "solubility",
+      "model": "dynamics_ensemble",
+      "reference": "sequence_ensemble",
+      "delta": -0.0013052776005831879,
+      "ci95": [
+        -0.012758698822010908,
+        0.01031565352819081
+      ]
+    },
+    {
+      "task": "solubility",
+      "model": "dynamics_ensemble",
+      "reference": "CDS_Ridge_auxiliary",
+      "delta": 0.026763718203736575,
+      "ci95": [
+        -0.006711670029000369,
+        0.060027631733500265
+      ]
+    },
+    {
+      "task": "solubility",
+      "model": "dynamics_ensemble",
+      "reference": "AA_Ridge_auxiliary",
+      "delta": 0.05312852963541337,
+      "ci95": [
+        0.015594324252423962,
+        0.09223190917812622
+      ]
+    }
+  ],
+  "reload_checks": [
+    {
+      "arm": "sequence",
+      "seed": 30101,
+      "path": "F:\\科研实验复现\\新建文件夹\\runs\\multitask_profile_20261102\\models\\sequence_30101\\best.pt",
+      "sha256": "a630e2bed6c048634a001ddcf32b6c331613ed2ec8b34c1244d1df4face248d5",
+      "reload_max_error": 1.1920928955078125e-07
+    },
+    {
+      "arm": "sequence",
+      "seed": 30102,
+      "path": "F:\\科研实验复现\\新建文件夹\\runs\\multitask_profile_20261102\\models\\sequence_30102\\best.pt",
+      "sha256": "058d4dc774dc5c13668f9a735a908fcf07e8af27622e222a344146b056158a0e",
+      "reload_max_error": 1.1920928955078125e-07
+    },
+    {
+      "arm": "dynamics",
+      "seed": 30101,
+      "path": "F:\\科研实验复现\\新建文件夹\\runs\\multitask_profile_20261102\\models\\dynamics_30101\\best.pt",
+      "sha256": "8d714dd9970d16ea9f9db8387a9014cc7af27cdb4f3a227fab1850eb904bf52c",
+      "reload_max_error": 1.1920928955078125e-07
+    },
+    {
+      "arm": "dynamics",
+      "seed": 30102,
+      "path": "F:\\科研实验复现\\新建文件夹\\runs\\multitask_profile_20261102\\models\\dynamics_30102\\best.pt",
+      "sha256": "2fbc20b31f6118220d0a511529bf6defe03520c9aeb04f78a866dc437f62638e",
+      "reload_max_error": 1.1920928955078125e-07
+    }
+  ],
+  "acceptance": {
+    "functional_expression_and_HL_same_sample_n": 0,
+    "all_three_same_sample_n": 0,
+    "joint_pearson": null,
+    "status": "Not established: separately measured endpoint tests are not a paired functional-expression/HL/triple assay",
+    "physics_calibration": "Host-specific observedRPF train-only relative-occupancy proxy; offsets are explicit hypotheses, not identified absolute kinetics",
+    "history": "Previously opened benchmark datasets; all results exploratory"
+  }
+}

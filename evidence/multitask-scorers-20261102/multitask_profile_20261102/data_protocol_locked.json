@@ -1,0 +1,42 @@
+{
+  "status": "locked_before_model_training",
+  "source_sha256": {
+    "runs\\scalar_downstream_20261031\\data\\protein.json": "fbe2b11f04097e82802ea672ed6c2d4a350bb40054f35567142756ea7a15fa5b",
+    "runs\\te_stability_20261102\\stability\\development_records.json": "332dbe577019b30ed67eceb360337036f13ea983462e5aaea001eea68185306d",
+    "runs\\joint_scalar_20261102\\human_joint\\test_predictions.csv": "ee4171f0a419d5e80826c71209fdef609026924df18d343f2d3b30dd02c4b445",
+    "runs\\scorer_path_alignment_20261031\\native_te_cohort.json": "01803904b2bd8a516e40130814320095b343a2b234f320b1528cefc0506e0bb4",
+    "runs\\human_te_expanded_20261101\\test_inputs.json": "628a6bebc0cba0348446a965d914c24e3c793b399a2eb7d5bc8a63e7e220747b",
+    "runs\\joint_scalar_20261102\\esol_v2\\mapped_sequences.csv": "d923d85535b051d5eb70d9e9fb3fa99ed8a03c94905c71477d7a513962811861"
+  },
+  "script_sha256": "407c8f2fc620a44052ad6395ba7cfd167f475d1b1f2c0b85c746c7b98a6a528e",
+  "tasks": [
+    "expression",
+    "half_life",
+    "solubility",
+    "te"
+  ],
+  "primary_tasks": [
+    "expression",
+    "half_life",
+    "solubility"
+  ],
+  "auxiliary_task": "te",
+  "transforms": {
+    "expression": "Use source mRFP Value as supplied; no extra logarithm",
+    "half_life": "Published Dieterich HEK293 mean of two log10(HL+1) replicates; not hours",
+    "solubility": "Measured PURE Solubility (%) unchanged",
+    "te": "Original native human HEK293 TE unchanged"
+  },
+  "normalization": "Mean and population SD separately for each observed target on train records only; all predictions inverse-transformed before metrics",
+  "missing_labels": "Absent task is missing, never zero target; target_mask defines per-task supervision",
+  "missing_context": "Unavailable UTR represented by empty string plus utr_available=False, never claimed complete context",
+  "holdouts": "Preserve existing task splits; exclude lower-priority exact-CDS/gene/protein conflicts globally, test>val>train",
+  "mrfp_exception": "Same mRFP protein is deliberately shared across splits: synonymous-variant evaluation, NOT protein-disjoint. Exact DNA remains split-disjoint.",
+  "acceptance": "Evaluate three MEASURED endpoints separately. No same-construct function+HL+solubility joint acceptance because no three-label panel exists.",
+  "limits": [
+    "Different hosts and assays: mRFP E.coli fluorescence, HL human HEK293, eSOL PURE cell-free E.coli proteins",
+    "Historical test sets previously opened; new experiment is exploratory, not untouched confirmation",
+    "eSOL native W3110 reference lacks verified exact ASKA tags; near-homology split not certified",
+    "TE auxiliary labels must not replace measured functional expression"
+  ]
+}

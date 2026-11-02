@@ -1,0 +1,9 @@
+{
+  "source_sha256": "be95968f3e1be1553c415a28a1078e7d3df188a5d6281cbb616ab4528e000254",
+  "script_sha256": "89083a996e103780aba9a5582c7cee479de0f4b34e54388a486a00c6e6af35e5",
+  "panel": "24 identical constructs with measured human-cell Nluc/Fluc6/24h AND accelerated in-solution chemical HL; unmodified RNA/HBB context",
+  "predictions": "Frozen multi-task expression head trained Ecoli mRFP, HL head trained cellularHEK293; both are out-of-assay transfer here",
+  "target": "log2(Nluc/Fluc24h)+log2(chemicalHL), fixed unit weights; chemicalHL NOT cellularHL",
+  "joint_prediction": "Half-sum source-training-standardized expression and HL head outputs; no fitting on external24",
+  "acceptance": "Secondary external stress diagnostic only; cannot satisfy cellularHL or solubility acceptance"
+}

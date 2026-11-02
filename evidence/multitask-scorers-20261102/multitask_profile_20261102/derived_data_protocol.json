@@ -1,0 +1,15 @@
+{
+  "status": "locked_before_training",
+  "parent_protocol_sha256": "1e03c7948314e0c306a35c6fa046cae3aa32387fc151ead9f098aabaf2400b61",
+  "parent_records_sha256": "fce273500e9c27b52c9d84f5632ba892c8867f52b490f68c43b16fb178f7a4f3",
+  "script_sha256": "07321caf1349228aa019435c923bafb83912b3fef539a976bb765ad660915157",
+  "derived_sha256": {
+    "train_validation.jsonl": "f10130481feec5ca3f9ecf5aa3b8f46484751b7abfc2b4e7b652b045311ec721",
+    "test_inputs.jsonl": "b652608faeb1584ac7ae82a22df9f320c6bcde5922fde2e0fd2950fa17edb3d5",
+    "sealed_test_targets.json": "30993f5d3c16cb566328e7885e02e6fed9efe5ffd53be7d36f19fa6f6d255e5b"
+  },
+  "training_access": "Trainer reads train_validation.jsonl only; test inference uses test_inputs.jsonl; labels opened only by evaluator after checkpoint selection",
+  "added_metadata": "assay_cell_free boolean; false for expression/half_life, true for PURE solubility",
+  "clipping": false,
+  "old_locked_protocol_modified": false
+}

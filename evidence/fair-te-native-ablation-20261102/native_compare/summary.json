@@ -1,0 +1,172 @@
+{
+  "status": "completed",
+  "methods": [
+    {
+      "method": "original",
+      "n": 3,
+      "own_score": 0.6986839343028527,
+      "ribodecode_score": 3.0585552056630454,
+      "seq2ribo_score": 0.7201761388459307,
+      "evaluation_mfe_per_nt": -0.32615906508008885,
+      "stability_log_score": 1.9910263492134705,
+      "gc_percent": 52.021996508793876,
+      "cai": 0.7889778131091622
+    },
+    {
+      "method": "own_lambda075",
+      "n": 3,
+      "own_score": 1.4102284681233743,
+      "ribodecode_score": 3.2307240962982178,
+      "seq2ribo_score": 0.8974149065837547,
+      "evaluation_mfe_per_nt": -0.38506052605633995,
+      "stability_log_score": 2.0919803580044025,
+      "gc_percent": 57.80307669481088,
+      "cai": 0.8959868060694658
+    },
+    {
+      "method": "RiboDecode_native_final",
+      "n": 3,
+      "own_score": 1.132881153782067,
+      "ribodecode_score": 4.285922288894653,
+      "seq2ribo_score": 1.387333084198971,
+      "evaluation_mfe_per_nt": -0.34207225681335635,
+      "stability_log_score": 2.227012193560972,
+      "gc_percent": 50.16493161407313,
+      "cai": 0.7469867513342675
+    }
+  ],
+  "mean_five_metric_dominance": false,
+  "case_dominance_count": 0,
+  "resources": [
+    {
+      "case": 1,
+      "native_nominal_proposals": 2400,
+      "native_optimizer_updates": 120,
+      "native_target_negative_queries": 4800,
+      "native_true_fold_sequences": 1264,
+      "native_seconds": 568.7512623881921,
+      "own_attempts": 2400,
+      "own_unique_proposals": 678,
+      "own_seconds": 307.26600000006147
+    },
+    {
+      "case": 2,
+      "native_nominal_proposals": 2400,
+      "native_optimizer_updates": 120,
+      "native_target_negative_queries": 4800,
+      "native_true_fold_sequences": 1264,
+      "native_seconds": 732.5742501360364,
+      "own_attempts": 2400,
+      "own_unique_proposals": 2334,
+      "own_seconds": 1240.8589999999385
+    },
+    {
+      "case": 3,
+      "native_nominal_proposals": 2400,
+      "native_optimizer_updates": 120,
+      "native_target_negative_queries": 4800,
+      "native_true_fold_sequences": 1264,
+      "native_seconds": 831.4045676710084,
+      "own_attempts": 2400,
+      "own_unique_proposals": 2394,
+      "own_seconds": 2926.75
+    }
+  ],
+  "own_selection": {
+    "arm": "no_stats",
+    "validation_mean_per_seed": {
+      "no_stats": 0.625631019615845
+    },
+    "models": [
+      {
+        "status": "completed",
+        "arm": "no_stats",
+        "seed": 30101,
+        "best_step": 24000,
+        "validation_pearson": 0.6168047188490255,
+        "best_path": "F:\\科研实验复现\\新建文件夹\\runs\\te_stability_20261102\\te_24000\\models\\no_stats_30101\\best.pt",
+        "checkpoint_sha256": "6ac18fdba4d66e639a90660acdffd4ef04882375c349f9358f1e96da57cf4819",
+        "last_step": 24000,
+        "seen_transcripts": 135782
+      },
+      {
+        "status": "completed",
+        "arm": "no_stats",
+        "seed": 30102,
+        "best_step": 23000,
+        "validation_pearson": 0.6344573203826643,
+        "best_path": "F:\\科研实验复现\\新建文件夹\\runs\\te_stability_20261102\\te_24000\\models\\no_stats_30102\\best.pt",
+        "checkpoint_sha256": "0a57225c66b9f2f0825a3067718c7e9235d309a6b9d34d9c3b88d7a5fd13b910",
+        "last_step": 24000,
+        "seen_transcripts": 135852
+      }
+    ],
+    "selected_models": [
+      {
+        "status": "completed",
+        "arm": "no_stats",
+        "seed": 30101,
+        "best_step": 24000,
+        "validation_pearson": 0.6168047188490255,
+        "best_path": "F:\\科研实验复现\\新建文件夹\\runs\\te_stability_20261102\\te_24000\\models\\no_stats_30101\\best.pt",
+        "checkpoint_sha256": "6ac18fdba4d66e639a90660acdffd4ef04882375c349f9358f1e96da57cf4819",
+        "last_step": 24000,
+        "seen_transcripts": 135782
+      },
+      {
+        "status": "completed",
+        "arm": "no_stats",
+        "seed": 30102,
+        "best_step": 23000,
+        "validation_pearson": 0.6344573203826643,
+        "best_path": "F:\\科研实验复现\\新建文件夹\\runs\\te_stability_20261102\\te_24000\\models\\no_stats_30102\\best.pt",
+        "checkpoint_sha256": "0a57225c66b9f2f0825a3067718c7e9235d309a6b9d34d9c3b88d7a5fd13b910",
+        "last_step": 24000,
+        "seen_transcripts": 135852
+      }
+    ],
+    "test_predicted": false,
+    "protocol_sha256": "fb12276b155dd9a0335035e515d83fda062926be2da20ff914ca65c71fd121aa"
+  },
+  "caveats": [
+    "Finite-budget native algorithm, NOT original default40000x20 run",
+    "Three previously used development CDS; lambda0.75 exploratory, no fresh confirmation",
+    "HEK293T native cell condition vs human HEK293 scorer; related but not identical conditions",
+    "Generated TE and half-life have no experimental labels",
+    "Native MFE model is newly trained for each CDS; do not reuse across proteins",
+    "Proposal-matched, not total-compute-matched",
+    "Native last-round output used without selecting the best round by external scores",
+    "Auxiliary stability prediction is not experimental candidate half-life or a half-life-trained TE head",
+    "Native optimizer permits synonymous terminal stop changes; own search fixes the original stop. Protein constraints agree but exact terminal codon constraints differ. Native outputs were not silently rewritten.",
+    "Native case3 replayed after mounted-drive I/O failure; discarded attempt adds compute beyond nominal proposal budget.",
+    "Own case2 replayed after native memory-allocation exit using the same seed and frozen score cache; per-case seconds exclude the interrupted attempt."
+  ],
+  "endpoints_sha256": "c0436a117c48d18a77dc1b85826e9306859b552f153f3674889c8d8ea04c2206",
+  "all_metrics_locally_computed": true,
+  "native_changed_terminal_stop_cases": [
+    2,
+    3
+  ],
+  "native_recovery": {
+    "status": "completed",
+    "same_case_seed_budget": true,
+    "failed_attempt_context": {
+      "phase": "optim",
+      "round": 2,
+      "queries": 1600,
+      "fold_sequences": 848,
+      "fold_calls": 1616,
+      "max_history": 5
+    },
+    "discarded_work_is_extra": true,
+    "linux_root": "/home/lc666/.cache/te_native_20261102_case3_retry1"
+  },
+  "own_search_recovery": {
+    "failure": "Underlying memory allocation failure, process exited without Python exception",
+    "recovery": "Same frozen source, weights, seed and cached scores; completed case1 retained; case2 deterministically replayed",
+    "previous_status_step": 1020,
+    "resumed_past_previous_point": 1060,
+    "no_candidates_silently_skipped": true,
+    "extra_replay_cost_disclosed": true
+  }
+}

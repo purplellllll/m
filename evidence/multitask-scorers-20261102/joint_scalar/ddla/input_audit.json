@@ -1,0 +1,136 @@
+{
+  "raw_n": 105,
+  "single_variant_n": 93,
+  "confirmed_synonymous": 92,
+  "positions": 59,
+  "issues": [
+    {
+      "ID": "15A_GTC",
+      "synonymous": false,
+      "has_primer": false,
+      "old_aa": "A",
+      "new_aa": "V"
+    },
+    {
+      "ID": "20S_TCA",
+      "synonymous": true,
+      "has_primer": false,
+      "old_aa": "S",
+      "new_aa": "S"
+    },
+    {
+      "ID": "20S_TCG",
+      "synonymous": true,
+      "has_primer": false,
+      "old_aa": "S",
+      "new_aa": "S"
+    },
+    {
+      "ID": "21L_TTG",
+      "synonymous": true,
+      "has_primer": false,
+      "old_aa": "L",
+      "new_aa": "L"
+    },
+    {
+      "ID": "21L_CTT",
+      "synonymous": true,
+      "has_primer": false,
+      "old_aa": "L",
+      "new_aa": "L"
+    },
+    {
+      "ID": "24A_GCT",
+      "synonymous": true,
+      "has_primer": false,
+      "old_aa": "A",
+      "new_aa": "A"
+    },
+    {
+      "ID": "30A_GCT",
+      "synonymous": true,
+      "has_primer": false,
+      "old_aa": "A",
+      "new_aa": "A"
+    },
+    {
+      "ID": "34S_TCC",
+      "synonymous": true,
+      "has_primer": false,
+      "old_aa": "S",
+      "new_aa": "S"
+    },
+    {
+      "ID": "34S_TCT",
+      "synonymous": true,
+      "has_primer": false,
+      "old_aa": "S",
+      "new_aa": "S"
+    },
+    {
+      "ID": "35R_CGT",
+      "synonymous": true,
+      "has_primer": false,
+      "old_aa": "R",
+      "new_aa": "R"
+    },
+    {
+      "ID": "38V_GTG",
+      "synonymous": true,
+      "has_primer": false,
+      "old_aa": "V",
+      "new_aa": "V"
+    },
+    {
+      "ID": "58L_TTG",
+      "synonymous": true,
+      "has_primer": false,
+      "old_aa": "L",
+      "new_aa": "L"
+    },
+    {
+      "ID": "58L_TTA",
+      "synonymous": true,
+      "has_primer": false,
+      "old_aa": "L",
+      "new_aa": "L"
+    },
+    {
+      "ID": "59L_TTA",
+      "synonymous": true,
+      "has_primer": false,
+      "old_aa": "L",
+      "new_aa": "L"
+    },
+    {
+      "ID": "59L_TTG",
+      "synonymous": true,
+      "has_primer": false,
+      "old_aa": "L",
+      "new_aa": "L"
+    },
+    {
+      "ID": "61A_GCT",
+      "synonymous": true,
+      "has_primer": false,
+      "old_aa": "A",
+      "new_aa": "A"
+    },
+    {
+      "ID": "64P_CCG",
+      "synonymous": true,
+      "has_primer": false,
+      "old_aa": "P",
+      "new_aa": "P"
+    },
+    {
+      "ID": "137A_GCT",
+      "synonymous": true,
+      "has_primer": false,
+      "old_aa": "A",
+      "new_aa": "A"
+    }
+  ],
+  "reference_agreement": "MG1655 and W3110 exact CDS identical; all93 WTcodon identities match",
+  "full_fusion_sequence_verified": false
+}

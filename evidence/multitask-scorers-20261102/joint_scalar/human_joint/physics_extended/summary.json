@@ -1,0 +1,260 @@
+{
+  "status": "completed",
+  "metrics": [
+    {
+      "model": "physics36_only",
+      "task": "TE",
+      "n": 601,
+      "pearson": 0.5146696310419201,
+      "ci95": [
+        0.455780898969099,
+        0.5681554117344831
+      ]
+    },
+    {
+      "model": "physics36_only",
+      "task": "HL",
+      "n": 601,
+      "pearson": 0.2593782235343937,
+      "ci95": [
+        0.19383183210930485,
+        0.324304583943447
+      ]
+    },
+    {
+      "model": "physics36_only",
+      "task": "joint",
+      "n": 601,
+      "pearson": 0.4302774495516732,
+      "ci95": [
+        0.3703463915331842,
+        0.48500888819427274
+      ]
+    },
+    {
+      "model": "kmer",
+      "task": "TE",
+      "n": 601,
+      "pearson": 0.6226114963365783,
+      "ci95": [
+        0.568574440218687,
+        0.6725917593714906
+      ]
+    },
+    {
+      "model": "kmer",
+      "task": "HL",
+      "n": 601,
+      "pearson": 0.51585500974528,
+      "ci95": [
+        0.45709590337203504,
+        0.5719019014269563
+      ]
+    },
+    {
+      "model": "kmer",
+      "task": "joint",
+      "n": 601,
+      "pearson": 0.6040202888249339,
+      "ci95": [
+        0.5507527707596327,
+        0.6555432613812497
+      ]
+    },
+    {
+      "model": "kmer_physics36",
+      "task": "TE",
+      "n": 601,
+      "pearson": 0.6538829592928701,
+      "ci95": [
+        0.6017428658963747,
+        0.7010035086945623
+      ]
+    },
+    {
+      "model": "kmer_physics36",
+      "task": "HL",
+      "n": 601,
+      "pearson": 0.528046562973215,
+      "ci95": [
+        0.4708492263827267,
+        0.5821614834486577
+      ]
+    },
+    {
+      "model": "kmer_physics36",
+      "task": "joint",
+      "n": 601,
+      "pearson": 0.6256286406606275,
+      "ci95": [
+        0.5758768380829392,
+        0.6716786673090273
+      ]
+    }
+  ],
+  "paired": [
+    {
+      "task": "TE",
+      "model": "physics36_only",
+      "reference": "kmer",
+      "delta_pearson": -0.10794186529465821,
+      "ci95": [
+        -0.17046262083539707,
+        -0.0435557059297639
+      ]
+    },
+    {
+      "task": "TE",
+      "model": "kmer_physics36",
+      "reference": "kmer",
+      "delta_pearson": 0.031271462956291796,
+      "ci95": [
+        0.014567680225451842,
+        0.047727895813245866
+      ]
+    },
+    {
+      "task": "HL",
+      "model": "physics36_only",
+      "reference": "kmer",
+      "delta_pearson": -0.25647678621088627,
+      "ci95": [
+        -0.3266513642954838,
+        -0.18490857815498146
+      ]
+    },
+    {
+      "task": "HL",
+      "model": "kmer_physics36",
+      "reference": "kmer",
+      "delta_pearson": 0.01219155322793497,
+      "ci95": [
+        -0.0029427858006443194,
+        0.028301675179425688
+      ]
+    },
+    {
+      "task": "joint",
+      "model": "physics36_only",
+      "reference": "kmer",
+      "delta_pearson": -0.17374283927326067,
+      "ci95": [
+        -0.24099498690991214,
+        -0.1111032556634348
+      ]
+    },
+    {
+      "task": "joint",
+      "model": "kmer_physics36",
+      "reference": "kmer",
+      "delta_pearson": 0.02160835183569365,
+      "ci95": [
+        0.005883206465974766,
+        0.0384137357678064
+      ]
+    }
+  ],
+  "selection": {
+    "physics36_only": {
+      "alpha": 10.0,
+      "cv": [
+        {
+          "alpha": 10.0,
+          "mse": 0.8752455296839752
+        },
+        {
+          "alpha": 100.0,
+          "mse": 0.8807318408770205
+        },
+        {
+          "alpha": 1000.0,
+          "mse": 0.8952608196244813
+        },
+        {
+          "alpha": 10000.0,
+          "mse": 0.9297683861060729
+        }
+      ]
+    },
+    "kmer": {
+      "alpha": 10.0,
+      "cv": [
+        {
+          "alpha": 10.0,
+          "mse": 0.7229727717247582
+        },
+        {
+          "alpha": 100.0,
+          "mse": 0.7297790268092982
+        },
+        {
+          "alpha": 1000.0,
+          "mse": 0.729618427298492
+        },
+        {
+          "alpha": 10000.0,
+          "mse": 0.8014667710503839
+        }
+      ]
+    },
+    "kmer_physics36": {
+      "alpha": 100.0,
+      "cv": [
+        {
+          "alpha": 10.0,
+          "mse": 0.7000359631536679
+        },
+        {
+          "alpha": 100.0,
+          "mse": 0.695382880861725
+        },
+        {
+          "alpha": 1000.0,
+          "mse": 0.6968385902728839
+        },
+        {
+          "alpha": 10000.0,
+          "mse": 0.7749512119857311
+        }
+      ]
+    }
+  },
+  "physics_feature_names": [
+    "relative_occupancy_log1p_mean",
+    "relative_occupancy_log1p_sd",
+    "relative_occupancy_log1p_p90",
+    "relative_simulation_sd_log1p_mean",
+    "relative_simulation_sd_log1p_sd",
+    "relative_simulation_sd_log1p_p90",
+    "codon_wait_mean",
+    "codon_wait_sd",
+    "codon_wait_p90",
+    "pair_wait_mean",
+    "pair_wait_sd",
+    "pair_wait_p90",
+    "angle_wait_mean",
+    "angle_wait_sd",
+    "angle_wait_p90",
+    "bucket_wait_mean",
+    "bucket_wait_sd",
+    "bucket_wait_p90",
+    "total_wait_mean",
+    "total_wait_sd",
+    "total_wait_p90",
+    "move_probability_mean",
+    "move_probability_sd",
+    "move_probability_p90",
+    "raw_occupancy_log1p_mean",
+    "raw_occupancy_log1p_sd",
+    "raw_occupancy_log1p_p90",
+    "raw_simulation_sd_log1p_mean",
+    "raw_simulation_sd_log1p_sd",
+    "raw_simulation_sd_log1p_p90",
+    "occupancy_cv",
+    "occupancy_first30_over_mean",
+    "occupancy_last30_over_mean",
+    "occupancy_peak15_over_mean",
+    "wait_first30_over_mean",
+    "wait_peak15_over_mean"
+  ]
+}

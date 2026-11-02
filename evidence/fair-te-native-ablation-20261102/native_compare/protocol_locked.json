@@ -1,0 +1,54 @@
+{
+  "task": "Native RiboDecode1.3.0 versus continued human TE guided V3",
+  "cases": [
+    {
+      "uid": "0aeb8f0c161f22a9a1ed752ce802afc217bd6cedfcc81a294206174572d8a670",
+      "gene": "ENSG00000211584.14",
+      "n_codons": 147
+    },
+    {
+      "uid": "a6cd434356339861c35ef7fa91b86a7b0724ae3602c345dd0d33fb6675574ff0",
+      "gene": "ENSG00000198898.16",
+      "n_codons": 287
+    },
+    {
+      "uid": "3c7bdf920819f62001b18df03967b8f87fae783164a2b501dfd7b88add24eaa9",
+      "gene": "ENSG00000186153.19",
+      "n_codons": 415
+    }
+  ],
+  "native": {
+    "mode": "bounded",
+    "rounds": 3,
+    "mfe_weight": 0.7,
+    "optim_num_per_round": 800,
+    "optim_batchsize": 20,
+    "optimizer_updates_per_case": 120,
+    "nominal_target_negative_scorer_evaluations_per_case": 4800,
+    "optimization_proposals_per_case": 2400,
+    "num_seqs_train_gen": 2048,
+    "num_seqs_select_mfe": 512,
+    "num_seqs_train_mfe": 8192,
+    "num_optim_top": 80,
+    "source_sha256": "bd0150e06fe99ee64b594a8c9d3fd3e03cb04a163133746f75d689f39501eb90",
+    "wrapper_sha256": "bbb293f90f9a6bdcd900ccd5031d5d67c4f1049866cd827f0af382b667747d05",
+    "weight_sha256": "3c6322ea417b68e13a520928a1d55fe7b4bc993e92c512e7c1acec121a35b2a6",
+    "endpoint": "Last outer-round native selected sequence; preserve all round outputs; no external-score reselection"
+  },
+  "own": {
+    "lambda_value": 0.75,
+    "proposals_per_case": 2400,
+    "generator": "V3 frozen",
+    "model": "Both continued TE seeds, validation-selected only"
+  },
+  "fairness": "Match nominal proposal count, not gradient updates, scorer calls, unique sequences, folding cost, total compute or runtime. Report these differences.",
+  "runtime": "Native CPU Linux/Python3.8/Torch2.0.1/ViennaRNA2.6.4; all endpoints also folded with common ViennaRNA2.7.2",
+  "limits": [
+    "Finite-budget native algorithm, NOT original default40000x20 run",
+    "Three previously used development CDS; lambda0.75 exploratory, no fresh confirmation",
+    "HEK293T native cell condition vs human HEK293 scorer; related but not identical conditions",
+    "Generated TE and half-life have no experimental labels",
+    "Native MFE model is newly trained for each CDS; do not reuse across proteins"
+  ],
+  "source_sha256": "7c20b8e332a4ddb2b043b30f9b2c6b063339a1634b1569d87d383133ed87762c"
+}

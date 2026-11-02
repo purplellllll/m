@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "checks": [
+    "original_masked_label_gradient_check",
+    "missing_UTR_forward_finite",
+    "long_CDS_compression_forward",
+    "right_padding_CDS_invariance",
+    "unobserved_label_gradient_exact_zero"
+  ],
+  "padding_max_error": 0.0,
+  "model_modified": false
+}

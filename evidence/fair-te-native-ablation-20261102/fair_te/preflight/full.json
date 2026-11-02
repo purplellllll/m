@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "arm": "full",
+  "largest_codons": [
+    300,
+    300
+  ],
+  "seconds": 4.047000000020489,
+  "gradient_totals": {
+    "backbone.physics.": 0.22053081542253494,
+    "backbone.graph.": 13.271263863009153,
+    "backbone.context.": 290.18124037981033
+  },
+  "total_gradient": 807.5594818396985,
+  "full_vs_portable_scalar_max_error": 2.9802322387695312e-08,
+  "parameters": 1485895,
+  "cuda_peak_bytes": 56876544,
+  "torch": "2.11.0+cu126",
+  "cuda": "12.6",
+  "cudnn": 91002
+}

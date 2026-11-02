@@ -1,0 +1,71 @@
+{
+  "status": "completed",
+  "metrics": {
+    "ours100000": {
+      "n": 903,
+      "pearson": 0.6109601725600815,
+      "ci95": [
+        0.5654561185617903,
+        0.6528929256433614
+      ],
+      "mse": 0.4310856526808838
+    },
+    "seq2ribo": {
+      "n": 903,
+      "pearson": 0.556807561454692,
+      "ci95": [
+        0.5090038619877463,
+        0.6028918492306469
+      ],
+      "mse": 0.48479338796141985
+    },
+    "RiboDecode_fixedRNA_TEproxy": {
+      "n": 903,
+      "pearson": 0.6275160615611023,
+      "ci95": [
+        0.5627654309861863,
+        0.6831917111970365
+      ],
+      "mse": 8.220782548091819
+    }
+  },
+  "paired": {
+    "seq2ribo": {
+      "delta": 0.05415261110538949,
+      "ci95": [
+        0.01765493169483152,
+        0.09137823015957248
+      ]
+    },
+    "RiboDecode_fixedRNA_TEproxy": {
+      "delta": -0.016555889001020785,
+      "ci95": [
+        -0.08338059183776979,
+        0.05643963567022515
+      ]
+    }
+  },
+  "reused_test": true,
+  "independent_fresh_confirmation": false,
+  "limitations": [
+    "Prior903 results informed project iterations; do not call this fresh confirmatory testing",
+    "Frozen external published weights have uncertified training-set overlap; different training resources",
+    "RiboDecode is fixed-RNA TE proxy, not its native RPF task",
+    "No RiboGL native TE score; its explicitly adapted TE comparison is reported separately",
+    "No near-homology or cross-study confirmation; intervals exploratory"
+  ],
+  "reload_checks": [
+    {
+      "seed": 30101,
+      "best_step": 98500,
+      "checkpoint_sha256": "79a4b51b9d61ad48d77043fec92cf73360674d06bd61b9b48caea8782207c248",
+      "reload_max_error": 1.1920928955078125e-07
+    },
+    {
+      "seed": 30102,
+      "best_step": 97500,
+      "checkpoint_sha256": "99ee78c5b80528cdf1472f2baea0608a6009f35912f3ae388cc7ef5e1834d7db",
+      "reload_max_error": 2.384185791015625e-07
+    }
+  ]
+}

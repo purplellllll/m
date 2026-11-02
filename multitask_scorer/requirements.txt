@@ -1,0 +1,5 @@
+torch>=2.11
+numpy>=1.26
+numba
+biopython
+ViennaRNA==2.7.2

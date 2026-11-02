@@ -1,0 +1,60 @@
+{
+  "status": "completed",
+  "counts": {
+    "train": 5333,
+    "val": 1133,
+    "test": 1135
+  },
+  "excluded_task_heldout": 1823,
+  "models": [
+    {
+      "model": "human_Asite15_5prime150_parameters.json",
+      "sha256": "8b86715282df84bc59bbe19987d59a4f0c59ea759b21865974f587c7f769893b",
+      "validation": {
+        "genes": 1133,
+        "positions": 601574,
+        "pooled_relative_occupancy_pearson": 0.05024971163307288,
+        "per_gene_pearson_mean": 0.06903087568521503,
+        "mae": 1.468545828432604,
+        "neutral_mae": 1.5622246255706407,
+        "warning": "Direct relative-occupancy proxy diagnostic; not simulated profile or true-rate recovery"
+      },
+      "test": {
+        "genes": 1135,
+        "positions": 586960,
+        "pooled_relative_occupancy_pearson": 0.0491045689809879,
+        "per_gene_pearson_mean": 0.07023050182599401,
+        "mae": 1.4613763087974112,
+        "neutral_mae": 1.5547042556373776,
+        "warning": "Direct relative-occupancy proxy diagnostic; not simulated profile or true-rate recovery"
+      }
+    },
+    {
+      "model": "human_Psite12_5prime150_parameters.json",
+      "sha256": "a0f22cf4240da243aaaa6097a22ef2daa43ebaa376d7db99dc40fa7e06df48da",
+      "validation": {
+        "genes": 1133,
+        "positions": 601574,
+        "pooled_relative_occupancy_pearson": 0.06902920879074177,
+        "per_gene_pearson_mean": 0.09976288944457463,
+        "mae": 1.4631679567106337,
+        "neutral_mae": 1.5618060926204385,
+        "warning": "Direct relative-occupancy proxy diagnostic; not simulated profile or true-rate recovery"
+      },
+      "test": {
+        "genes": 1135,
+        "positions": 586960,
+        "pooled_relative_occupancy_pearson": 0.06917349694190542,
+        "per_gene_pearson_mean": 0.09787055790300199,
+        "mae": 1.4561163213456718,
+        "neutral_mae": 1.5542412476026066,
+        "warning": "Direct relative-occupancy proxy diagnostic; not simulated profile or true-rate recovery"
+      }
+    }
+  ],
+  "limits": [
+    "5prime footprint starts shifted with prespecified offsets, not experimentally inferred P/A sites",
+    "Relative RPF proxy not identified kinetic parameters",
+    "One human experiment, no nearhomology split guarantee"
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "status": "passed",
+  "checks": [
+    "bitwise repeated-seed determinism",
+    "schema, finite outputs, terminal stop zero",
+    "entry/exit conservation, minimum spacing, attempted initiation accounting",
+    "actual movement-blocking events observed in congested chain",
+    "neutral synonymous sequences share dynamics under same RNG seed",
+    "cross-host/invalid CDS/budget/geometry/nonfinite parameters rejected",
+    "valid bacterial alternative start accepted",
+    "fit API rejects validation/test and mismatched-host supervision"
+  ],
+  "compile_seconds": 2.6664962000213563,
+  "benchmark": [
+    {
+      "codons": 100,
+      "seconds_per_sequence": 0.0029272600077092648,
+      "runs": 1,
+      "initiation_rates": 3,
+      "burn": 8192,
+      "observe": 4096
+    },
+    {
+      "codons": 500,
+      "seconds_per_sequence": 0.01035271999426186,
+      "runs": 1,
+      "initiation_rates": 3,
+      "burn": 8192,
+      "observe": 4096
+    },
+    {
+      "codons": 1500,
+      "seconds_per_sequence": 0.025659639993682502,
+      "runs": 1,
+      "initiation_rates": 3,
+      "burn": 8192,
+      "observe": 4096
+    }
+  ],
+  "convergence": [
+    {
+      "codons": 100,
+      "runs": 1,
+      "seconds": 0.0031002999749034643,
+      "occupancy_MAE_vs_8run_mean": 0.0029963175766170025,
+      "current_by_init": [
+        0.003662109375,
+        0.00830078125,
+        0.026611328125
+      ],
+      "caution": "8-run reference is another Monte Carlo estimate, not ground truth; MAE need not improve monotonically"
+    },
+    {
+      "codons": 100,
+      "runs": 2,
+      "seconds": 0.005478000035509467,
+      "occupancy_MAE_vs_8run_mean": 0.001310933381319046,
+      "current_by_init": [
+        0.003173828125,
+        0.010009765625,
+        0.0263671875
+      ],
+      "caution": "8-run reference is another Monte Carlo estimate, not ground truth; MAE need not improve monotonically"
+    },
+    {
+      "codons": 100,
+      "runs": 8,
+      "seconds": 0.021757700014859438,
+      "occupancy_MAE_vs_8run_mean": 0.0,
+      "current_by_init": [
+        0.002777099609375,
+        0.009979248046875,
+        0.0264892578125
+      ],
+      "caution": "8-run reference is another Monte Carlo estimate, not ground truth; MAE need not improve monotonically"
+    },
+    {
+      "codons": 500,
+      "runs": 1,
+      "seconds": 0.010371699929237366,
+      "occupancy_MAE_vs_8run_mean": 0.004326110705733299,
+      "current_by_init": [
+        0.002685546875,
+        0.009521484375,
+        0.028564453125
+      ],
+      "caution": "8-run reference is another Monte Carlo estimate, not ground truth; MAE need not improve monotonically"
+    },
+    {
+      "codons": 500,
+      "runs": 2,
+      "seconds": 0.021326399873942137,
+      "occupancy_MAE_vs_8run_mean": 0.0031861774623394012,
+      "current_by_init": [
+        0.0025634765625,
+        0.009033203125,
+        0.0264892578125
+      ],
+      "caution": "8-run reference is another Monte Carlo estimate, not ground truth; MAE need not improve monotonically"
+    },
+    {
+      "codons": 500,
+      "runs": 8,
+      "seconds": 0.08677810011431575,
+      "occupancy_MAE_vs_8run_mean": 0.0,
+      "current_by_init": [
+        0.0032958984375,
+        0.008514404296875,
+        0.02349853515625
+      ],
+      "caution": "8-run reference is another Monte Carlo estimate, not ground truth; MAE need not improve monotonically"
+    },
+    {
+      "codons": 1500,
+      "runs": 1,
+      "seconds": 0.04652269999496639,
+      "occupancy_MAE_vs_8run_mean": 0.0024674818851053715,
+      "current_by_init": [
+        0.004150390625,
+        0.009765625,
+        0.02685546875
+      ],
+      "caution": "8-run reference is another Monte Carlo estimate, not ground truth; MAE need not improve monotonically"
+    },
+    {
+      "codons": 1500,
+      "runs": 2,
+      "seconds": 0.10585179994814098,
+      "occupancy_MAE_vs_8run_mean": 0.0018820326076820493,
+      "current_by_init": [
+        0.0037841796875,
+        0.010009765625,
+        0.02490234375
+      ],
+      "caution": "8-run reference is another Monte Carlo estimate, not ground truth; MAE need not improve monotonically"
+    },
+    {
+      "codons": 1500,
+      "runs": 8,
+      "seconds": 0.30838009994477034,
+      "occupancy_MAE_vs_8run_mean": 0.0,
+      "current_by_init": [
+        0.002777099609375,
+        0.009918212890625,
+        0.0247802734375
+      ],
+      "caution": "8-run reference is another Monte Carlo estimate, not ground truth; MAE need not improve monotonically"
+    }
+  ],
+  "legacy_simulator_sha256": "80413b446388618fe34e1466619fb470b1c95e3c44a0dee045956d416e59f3c0",
+  "legacy_parity": "Not claimed: fixed observation window and wait-aware last-sense completion deliberately change semantics",
+  "species_calibration": "No certified human/Ecoli train positional-RPF source found in local audited panels; neutral is explicit control, not repair of biological calibration"
+}

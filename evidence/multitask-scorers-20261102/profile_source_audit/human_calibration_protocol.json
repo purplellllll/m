@@ -1,0 +1,18 @@
+{
+  "source": "Official ribosomeprofiling/ribo_manuscript_supplemental GSM1606107 HEK293 GSE65778; APPRIS2019 reference",
+  "input_sha256": {
+    "human_GSM1606107_coverage.ribo": "cb6c71b83dec77579d2e3b1d002829ca66995fe9776d4f4cc8aba4c303445418",
+    "human_APPRIS_transcripts.fa.gz": "a22959eb58ec5641cacaa31e10501e7d52455062df7e50fc0df442d978f5489d",
+    "official_coverage.py": "5ff7bfeebf024ec948afd2a6cf922313ea96ff771b64945898a4d83d4202863f",
+    "official_get_transcript_coverage.py": "e1672b3a1decebe1a88409a2f083047e31d5cb2951237fd8cd8ef4866d5079db"
+  },
+  "script_sha256": "2ff154e10d25522efc78b5dba87c19ba180c5402b7f40f8aac97df3484a646ae",
+  "position_definition": "Official ribopy coverage stores aligned read5prime STARTS, not P/A-site and not span-coverage",
+  "reads": "Fixed28..30nt read lengths only",
+  "site": "Predeclared A-site hypothesis start+15nt; Psite start+12nt sensitivity; not experimentally calibrated offsets",
+  "CDS": "Official annotation end excludes terminal stop; append next3 reference bases and require canonical stop",
+  "split": "Source gene hash70/15/15 after exclusion all currenthuman task val/test gene,CDS,protein, plus oldhumanTE val/test genes",
+  "geometry": "RNAfoldfirst150nt codon paired counts;rest0;angle0",
+  "fitting": "Train-only relative-occupancy proxy, no true kinetics recovery; no heldout site-offset tuning",
+  "filters": "Complete ATG-CDS with single terminalstop,>=90nt,<=4500nt,>=20reads/10nonzero positions"
+}

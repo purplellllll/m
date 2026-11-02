@@ -1,0 +1,7 @@
+{
+  "source_split": "gene_disjoint_hash, NOT proteinhomology_disjoint",
+  "train_val_exact_protein_overlap": 2,
+  "train_test_exact_protein_overlap": 4,
+  "scope": "Six source genes share exact proteins across internal source split; source diagnostic not independent protein validation. Current multitask val/test proteins were explicitly removed before fit.",
+  "parameter_selection": "Prespecified Asite15; neither offset nor parameter config chosen by internal test results"
+}

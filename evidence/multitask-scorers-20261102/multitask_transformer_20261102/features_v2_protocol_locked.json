@@ -1,0 +1,21 @@
+{
+  "source_sha256": {
+    "dynamics_v2.py": "88d0f13d6907ab4b9020742b6f1730173624ed68a9dad0f775b02f0ee0d94f20",
+    "features.py": "ab800013d0e1281b82c496c70eee908608f401bc8c7abf5cc37e7e952a89c714",
+    "data_protocol_locked.json": "1e03c7948314e0c306a35c6fa046cae3aa32387fc151ead9f098aabaf2400b61"
+  },
+  "parameters": "Explicit neutral equal-wait assumptions per host; no transferred mouse/public fitted weights",
+  "seed": 20261102,
+  "n_runs": 2,
+  "burn_steps": 8192,
+  "observe_steps": 4096,
+  "init_ps": [
+    0.003,
+    0.01,
+    0.03
+  ],
+  "cache": "host+DNA SHA; each cache verifies its provenance hash; all sequence features label-free",
+  "labels_used_for_input_scaling": "train records only, no target values",
+  "geometry": "Not supplied in neutral dynamics: structural waits are zero assumptions, not predicted structure measurements",
+  "utr_encoder": "First512+last512 bases if >1024; full UTR1-3mer composition retained; missing UTR explicit"
+}

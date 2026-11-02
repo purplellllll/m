@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "max_error": 1.6234019362126872e-07,
+  "checkpoint_sha256": [
+    "6ac18fdba4d66e639a90660acdffd4ef04882375c349f9358f1e96da57cf4819",
+    "0a57225c66b9f2f0825a3067718c7e9235d309a6b9d34d9c3b88d7a5fd13b910"
+  ]
+}

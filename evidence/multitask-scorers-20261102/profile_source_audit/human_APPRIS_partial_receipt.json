@@ -1,0 +1,9 @@
+{
+  "url": "https://raw.githubusercontent.com/ribosomeprofiling/rf_sample_data/master/transcriptome/appris_human_24_01_2019_selected.fa.gz",
+  "status": 206,
+  "bytes": 2097152,
+  "decompressed_bytes": 7080998,
+  "seconds": 68.58128905296326,
+  "sha256": "29210d4e7503ddef40f245e7a6b2eaa70afe6c1ee1dfe25c8cd945b290c0fde3",
+  "warning": "Partial gzip transport; use only complete FASTA records; whole file CRC not available"
+}

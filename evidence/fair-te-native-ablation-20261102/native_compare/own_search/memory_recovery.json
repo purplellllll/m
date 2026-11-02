@@ -1,0 +1,8 @@
+{
+  "failure": "Underlying memory allocation failure, process exited without Python exception",
+  "recovery": "Same frozen source, weights, seed and cached scores; completed case1 retained; case2 deterministically replayed",
+  "previous_status_step": 1020,
+  "resumed_past_previous_point": 1060,
+  "no_candidates_silently_skipped": true,
+  "extra_replay_cost_disclosed": true
+}

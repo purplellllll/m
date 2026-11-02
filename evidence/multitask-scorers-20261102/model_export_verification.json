@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "stage": "neutral",
+      "arm": "sequence",
+      "real_validation_sequences": 3,
+      "max_native_target_error": 8.69800469160964e-06,
+      "strict_load": true
+    },
+    {
+      "stage": "neutral",
+      "arm": "dynamics",
+      "real_validation_sequences": 3,
+      "max_native_target_error": 7.952461430704716e-06,
+      "strict_load": true
+    },
+    {
+      "stage": "profile",
+      "arm": "sequence",
+      "real_validation_sequences": 3,
+      "max_native_target_error": 1.491086518967677e-05,
+      "strict_load": true
+    },
+    {
+      "stage": "profile",
+      "arm": "dynamics",
+      "real_validation_sequences": 3,
+      "max_native_target_error": 7.95246143425743e-06,
+      "strict_load": true
+    }
+  ],
+  "source_models": 8,
+  "portable_cpu_inference": true
+}

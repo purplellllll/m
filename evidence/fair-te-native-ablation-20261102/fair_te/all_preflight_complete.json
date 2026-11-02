@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "arms": 8,
+  "checks": [
+    {
+      "arm": "full",
+      "parameters": 1485895,
+      "cuda_peak_bytes": 56876544
+    },
+    {
+      "arm": "no_physics",
+      "parameters": 1485895,
+      "cuda_peak_bytes": 55944704
+    },
+    {
+      "arm": "no_graph",
+      "parameters": 1485895,
+      "cuda_peak_bytes": 42549760
+    },
+    {
+      "arm": "no_context",
+      "parameters": 1485895,
+      "cuda_peak_bytes": 43670528
+    },
+    {
+      "arm": "seq_transformer",
+      "parameters": 1485895,
+      "cuda_peak_bytes": 41617920
+    },
+    {
+      "arm": "seq2ribo_TE_adapt",
+      "parameters": 1062084,
+      "cuda_peak_bytes": 231535104
+    },
+    {
+      "arm": "RiboGL_TE_adapt",
+      "parameters": 2813762,
+      "cuda_peak_bytes": 85764608
+    },
+    {
+      "arm": "RiboDecode_TE_adapt",
+      "parameters": 17268514,
+      "cuda_peak_bytes": 208771584
+    }
+  ],
+  "scope": "Individual real-input forward/backward checks; all affected RiboGL paths retested after compatibility fixes"
+}

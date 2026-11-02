@@ -1,0 +1,29 @@
+{
+  "task": "HEK293_TE_low_lr_continuation",
+  "max_total_steps": 24000,
+  "initial_steps": 18000,
+  "seeds": [
+    30101,
+    30102
+  ],
+  "arms": [
+    "no_stats"
+  ],
+  "encoder_lr": 1e-06,
+  "head_lr": 3e-05,
+  "validation_every": 500,
+  "early_stop_checks": 6,
+  "train_validation_sha256": "7ce82d01ef80e038dcd67d4cd8b58e312499cb64413e49a43b784bfee8e08b08",
+  "initial_checkpoint_sha256": {
+    "F:\\科研实验复现\\新建文件夹\\runs\\te_stability_20261102\\te_continuation\\models\\no_stats_30101\\best.pt": "52ca5dd78b840fe42293ab7f9b42de6f709191a42c5e12c935d159b7391179d6",
+    "F:\\科研实验复现\\新建文件夹\\runs\\te_stability_20261102\\te_continuation\\models\\no_stats_30101\\latest.pt": "50008ec2d6b02e8b752b30a4caf50214225846a8c6d32c1b081a6d367cb564a1",
+    "F:\\科研实验复现\\新建文件夹\\runs\\te_stability_20261102\\te_continuation\\models\\no_stats_30102\\best.pt": "e8e724e309b0da7bc947cf631bc8d11f4aa0ce6739c5079845d78884ab998903",
+    "F:\\科研实验复现\\新建文件夹\\runs\\te_stability_20261102\\te_continuation\\models\\no_stats_30102\\latest.pt": "3fe09a73c4803aede5e84500b71b174d51c23a22f70c8cf55c5f8d0616356eae"
+  },
+  "test_policy": "Previously opened903 samples never read; no new TE test confirmation claimed",
+  "source_sha256": {
+    "F:\\科研实验复现\\新建文件夹\\runs\\te_stability_20261102\\train_to_24000.py": "4e0716d41912252c219287aba543e1a8b738e511c97cc34c185f8370ccfcf67b",
+    "F:\\科研实验复现\\新建文件夹\\runs\\te_stability_20261102\\te_24000\\trainer_low_lr.py": "92ec71fe0382521d4bbc5ec0ea22e2669dfbfc0efbfb1834ae2d267845f5c59d",
+    "F:\\科研实验复现\\新建文件夹\\runs\\human_te_expanded_20261101\\common.py": "372e813bead73f1f465553b10324b08d5d49bd75c4e4775f37dd66a434ac0ae2"
+  }
+}

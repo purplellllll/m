@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "models": 16,
+  "test_n": 227,
+  "same_test_rows": true,
+  "identical_training_sample_budget": true,
+  "steps_per_model": 3000,
+  "batch_size": 2,
+  "max_pearson_recompute_error": 0.0,
+  "all_checkpoint_hashes_verified": true,
+  "all_arms_reported": true,
+  "independent_fresh_test": false,
+  "summary_sha256": "1a753bf8a738178deae01a0b4b4c3fad419d52cdf3fbf7b1a88f9e9ec552ed1a",
+  "predictions_sha256": "4294d2ed7d5f0cbe50b5dc18e8da558b7136280b563e5f33f1d9e0024664642d"
+}

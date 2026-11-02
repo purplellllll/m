@@ -1,3 +1,5 @@
+[人源TE公平基线、三路消融与原生优化对照](docs/FAIR_TE_NATIVE_ABLATION_20261102_ZH.md)
+
 # RiboSeq scorer — human TE results and model handoff
 
 2026-11-02研究归档。分支 **`results/human-te-scorer-20261102`** 从评分器快照分支派生；不覆盖`main`、`V3`、`V4`、`vmae-v2`或2026-10-31快照，不自动恢复训练。
@@ -57,3 +59,8 @@ python scripts/predict_human_te.py --models-root models_20261102 --features your
 `historical/20261102/`是原实验源码溯源，保留工作区路径，不承诺fresh clone一键训练。其原`evaluate.py`包含已归档的漏载头错误；正确复算需使用同目录`recovery_20261102/correct_head_loading.py`及完整依赖。日常推理使用上面的新入口，不直接运行历史控制器。
 
 原`docs/HANDOFF_ZH.md`和旧证据保留2026-10-31快照身份，当前状态以本README和新交接为准。LIVER旧696留出中120已在历史固定比较打开，余576未预测；本次没有再读取该测试。
+
+
+## Multi-task scorer evidence — 2026-11-02
+
+[Measured endpoint report](docs/MULTITASK_SCORERS_20261102_ZH.md) · [Portable inference](multitask_scorer/README.md). Eight own model exports are release assets. Acceptance has **not** passed: mRFP expression remains below seq2ribo, no stable controlled physics gain, and no paired cellular expression/HL/solubility assay.

@@ -1,0 +1,9 @@
+{
+  "status": "completed",
+  "arm": "sequence",
+  "seed": 30102,
+  "steps": 6000,
+  "best_macro": 0.6983254490971599,
+  "best_sha256": "058d4dc774dc5c13668f9a735a908fcf07e8af27622e222a344146b056158a0e",
+  "seconds": 152.125
+}

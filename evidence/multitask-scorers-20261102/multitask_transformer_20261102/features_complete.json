@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "unique_sequences": 9785,
+  "train_records": 7382,
+  "stats_dim": 279,
+  "protocol_sha256": "aa055905d2fe5b523eaf5e8b13c5096507684e28b3f66dc83214747d59381f10",
+  "scaler_sha256": "51888d4d2fc59a4dbb54c2dd7b0fba81a2eb9ea610d55a04125a3c8c3884faa7"
+}

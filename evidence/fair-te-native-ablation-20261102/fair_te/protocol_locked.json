@@ -1,0 +1,77 @@
+{
+  "task": "Human_HEK293_TE",
+  "length_domain_codons": [
+    80,
+    300
+  ],
+  "seeds": [
+    30101,
+    30102
+  ],
+  "arms": [
+    "full",
+    "no_physics",
+    "no_graph",
+    "no_context",
+    "seq_transformer",
+    "seq2ribo_TE_adapt",
+    "RiboGL_TE_adapt",
+    "RiboDecode_TE_adapt"
+  ],
+  "counts": {
+    "train": 1951,
+    "val": 262,
+    "test": 227
+  },
+  "recipe": {
+    "max_optimizer_steps": 3000,
+    "batch_size": 2,
+    "validation_every": 250,
+    "optimizer": "AdamW",
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "clip": 1.0,
+    "warmup": 100,
+    "cosine_floor": 0.1,
+    "early_stop": false
+  },
+  "initialization": "All models random from scratch; no published weights loaded; identical full-backbone initialization across own ablations within seed",
+  "selection": "Same validation Pearson selection every250steps; all arms reported, no test-based winner selection",
+  "loss": "MSE of train-standardized native TE label; all models see same two rows per step",
+  "physics": "Same frozen mouse train-proxy4-run simulations across branches; current own physics encoder receives2 aggregate features, not the original71 dimensions; seq2ribo uses log1p simulation mean, not its published per-run inference protocol",
+  "adaptations": {
+    "RiboGL": "Official GCN_LSTM forward with Torch SAGE/GraphNorm backend matched to original saved PyG predictions and cuDNN disabled for LSTM; hook pre-linear256-dim nodes, mean/max pool and512->128->1 scalar head",
+    "seq2ribo": "Official RiboPolisherMamba + official TEHeadFullCounts positive_output=False for standardized TE; explicit official Torch reference scan on CUDA",
+    "RiboDecode": "Official CNN_Encoder_Model from scratch; constant original HEK293T context and RNA4.5; TE-supervised task adaptation, not native RPF-label training"
+  },
+  "ablations": {
+    "no_physics": "Remove simulated physics embedding from all scalar paths",
+    "no_graph": "Remove graph and structural representation from fusion; retain sequence and physics",
+    "no_context": "Bypass entire Transformer, pool its input; retain sequence/physics/graph fusion",
+    "seq_transformer": "Remove both physics and graph, retain sequence Transformer"
+  },
+  "limits": [
+    "Finite common-recipe short-CDS TE adaptation benchmark, not each original paper task or full-data optimum",
+    "903-sample source test already opened historically; this filtered reuse is exploratory, not fresh independent confirmation",
+    "Training samples, updates, batch and selection matched; FLOPs, wall time, capacity and feature availability differ",
+    "No near-homology or cross-study split; no universal/SOTA superiority claim"
+  ],
+  "source_sha256": {
+    "F:\\科研实验复现\\新建文件夹\\runs\\fair_te_ablation_20261102\\models.py": "1747f28da57e09672b4bc4724313b53085033be782199a0360d091aeac779c8f",
+    "F:\\科研实验复现\\新建文件夹\\runs\\fair_te_ablation_20261102\\experiment.py": "dc68c6f17c190d452bfbf7185b86a54b281f95dc21e4cc31a5322e9c79745b69",
+    "F:\\科研实验复现\\新建文件夹\\runs\\human_te_expanded_20261101\\train_validation.json": "7ce82d01ef80e038dcd67d4cd8b58e312499cb64413e49a43b784bfee8e08b08",
+    "F:\\科研实验复现\\新建文件夹\\runs\\human_te_expanded_20261101\\test_inputs.json": "628a6bebc0cba0348446a965d914c24e3c793b399a2eb7d5bc8a63e7e220747b",
+    "F:\\科研实验复现\\新建文件夹\\runs\\profile_model_comparison_20261030\\completed_snapshot\\frozen_sources\\ribogl\\gnn_utils.py": "bb1e77093a57b62ab749dfb0dd59c58073526555d11c4943828d7e552e468600",
+    "F:\\科研实验复现\\新建文件夹\\tmp\\seq2ribo_source_20261020\\seq2ribo-main\\seq2ribo\\models.py": "34705f86f93f10098d5dac99af9a33671cbd8c0ec5e8db99bfe3302fdb4d7945",
+    "F:\\科研实验复现\\新建文件夹\\deliverables\\public_riboseq_validation_20261028\\source\\inference.py": "3b22b9750377f23617053aeb7b707be758cee7ce8a7fe4f9f264d304623e69bb",
+    "F:\\科研实验复现\\新建文件夹\\deliverables\\public_riboseq_validation_20261028\\source\\model_config.json": "e1c328985d7df061278317b934604ce0e63b2181ab062e301f042e86a7ea83d9",
+    "F:\\科研实验复现\\新建文件夹\\runs\\vmae_adjustment_gpu_20261024\\transfer_assets\\canonical_condition.pt": "4341dfb744402a644371710bf8637348c28d01b2976af1075d993c734fdac9de",
+    "F:\\科研实验复现\\新建文件夹\\repos\\riboseq_human_te_release_20261102\\physics_scorer\\reliable_graph_context.py": "8c03dd025839667db341c313b4c9b53125d70b3e70ac853bf4ba6a6bafd25a14",
+    "F:\\科研实验复现\\新建文件夹\\repos\\riboseq_human_te_release_20261102\\physics_scorer\\human_te_model.py": "bc746c907f2edfb2863a02cc4b5287fd53ac567f350e1fdc5b6b5903ffa832cf",
+    "F:\\科研实验复现\\新建文件夹\\latent_decoder\\seq2ribo_cpu_reference.py": "fdc4f3f6594cfb42818312fada5204c9ca771ba9a9ad167d6fc3ccf3c77ab722",
+    "F:\\科研实验复现\\新建文件夹\\runs\\mrfp_branch_probe_20261031\\run_probe.py": "db2ae8b7d1474c377d12ee3025bb16a5f180e16522e07fbba13add874a9f74d8",
+    "F:\\科研实验复现\\新建文件夹\\runs\\fair_te_ablation_20261102\\verify_ribogl_backend.py": "b8d69e61c0a4b8088b6ccc057ee5ce0a09e74899601e71a3610d0be2008529e2"
+  },
+  "ribogl_backend_parity_sha256": "1ac32513636e2516bd7b3ef48c67a658e7debdb4adc9c0d7d86447fbf572ca28",
+  "previously_opened_test_targets_sha256": "a2fbfe662ad3df47efe49cd078989ae81418e8a9d13056ba8eb94f8f90edc119"
+}

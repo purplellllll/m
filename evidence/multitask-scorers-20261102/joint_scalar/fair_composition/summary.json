@@ -1,0 +1,53 @@
+{
+  "status": "completed",
+  "metrics": [
+    {
+      "model": "ours100000+same_HL_aux",
+      "n": 601,
+      "pearson": 0.6246354056505102,
+      "ci95": [
+        0.5727626839664396,
+        0.6716221948907682
+      ]
+    },
+    {
+      "model": "seq2ribo+same_HL_aux",
+      "n": 601,
+      "pearson": 0.6268914235443573,
+      "ci95": [
+        0.5733997779142539,
+        0.6730511819717223
+      ]
+    },
+    {
+      "model": "RiboDecode_fixedRNA_TEproxy+same_HL_aux",
+      "n": 601,
+      "pearson": 0.6762819539915804,
+      "ci95": [
+        0.6276383917797742,
+        0.7186718411623609
+      ]
+    }
+  ],
+  "paired": [
+    {
+      "model": "ours100000+same_HL_aux",
+      "reference": "seq2ribo+same_HL_aux",
+      "delta": -0.0022560178938471065,
+      "ci95": [
+        -0.029349739272976492,
+        0.026187135961481596
+      ]
+    },
+    {
+      "model": "ours100000+same_HL_aux",
+      "reference": "RiboDecode_fixedRNA_TEproxy+same_HL_aux",
+      "delta": -0.051646548341070186,
+      "ci95": [
+        -0.10290068891812137,
+        0.0012980508353560287
+      ]
+    }
+  ],
+  "acceptance": "Still TE+HL proxy; crossfit calibration does not establish functional protein improvement"
+}

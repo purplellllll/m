@@ -1,0 +1,19 @@
+{
+  "status": "queued",
+  "seeds": [
+    30101,
+    30102
+  ],
+  "initial_step": 30000,
+  "requested_total_steps_each_seed": 100000,
+  "additional_steps_each_seed": 70000,
+  "encoder_lr": 1e-06,
+  "head_lr": 3e-05,
+  "validation_every": 500,
+  "early_stop": false,
+  "best_checkpoint_selection": "Validation Pearson only; final100000 checkpoint also retained",
+  "dependency": "native_compare/complete.json",
+  "reason_for_queue": "Prior memory-allocation crash while searches and training overlapped; release resources before long training",
+  "test_policy": "No903 test tuning; current native comparison stays frozen at24000 models",
+  "source_sha256": "43e31e738f7525a6f409c54266ffcaf73b58be4b14a7cf9c0a43e1f338ebf287"
+}

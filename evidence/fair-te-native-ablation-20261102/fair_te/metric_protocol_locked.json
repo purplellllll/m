@@ -1,0 +1,25 @@
+{
+  "status": "locked_before_controlled_training",
+  "primary": "Across-gene Pearson of two-seed mean predictions; same227 reused test genes for every arm",
+  "secondary": [
+    "Spearman",
+    "MSE",
+    "two-seed Pearson standard deviation",
+    "paired full-minus-baseline and full-minus-ablation differences"
+  ],
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 20261102,
+    "sampling_unit": "gene",
+    "interval": [
+      0.025,
+      0.975
+    ],
+    "minimum_defined_resamples_for_interval": 1900
+  },
+  "constant_predictions": "Pearson undefined, report null/NA; never replace with0 or drop the model",
+  "multiplicity": "Exploratory unadjusted intervals, no confirmatory superiority claim",
+  "interaction": "r(full)-r(no_physics)-r(no_graph)+r(seq_transformer), exploratory contrast onr scale, not biological synergy",
+  "test_scope": "Previously opened903 test subset; no fresh independent confirmation",
+  "evaluator_sha256": "eeb8276c7ff96d126544b32b0c100fe83f0cab26dce4e23e5ef138a1e43b3405"
+}

@@ -1,0 +1,24 @@
+{
+  "source_sha256": {
+    "dynamics_v2.py": "88d0f13d6907ab4b9020742b6f1730173624ed68a9dad0f775b02f0ee0d94f20",
+    "features.py": "cd32c56f5c83b3436b01de527b102254ae63fff80ee5135939145d84702bbfd1",
+    "data_protocol_locked.json": "1e03c7948314e0c306a35c6fa046cae3aa32387fc151ead9f098aabaf2400b61",
+    "human_parameters.json": "8b86715282df84bc59bbe19987d59a4f0c59ea759b21865974f587c7f769893b",
+    "ecoli_parameters.json": "1610ef7d4e98fb0900f92d08777264a32c5cd1b8aeecf43319e80544010c231c"
+  },
+  "parameters": "New observed host-specific RPF train-only relative-occupancy proxy; not identified true kinetics; no mouse transfer",
+  "seed": 20261102,
+  "n_runs": 2,
+  "burn_steps": 8192,
+  "observe_steps": 4096,
+  "init_ps": [
+    0.003,
+    0.01,
+    0.03
+  ],
+  "cache": "host+DNA SHA; each cache verifies its provenance hash; all sequence features label-free",
+  "labels_used_for_input_scaling": "train records only, no target values",
+  "geometry": "RNAfold2.7.2 first150nt CDS dotbracket paired-base count per codon; remaining positions zero and angles missing0, not claimed3D measurements",
+  "fold_statistics": "MFE/nt of CDS first30/60/90/150nt; last80nt UTR5+first120nt CDS; first150nt UTR5; both arms receive same6 features",
+  "utr_encoder": "First512+last512 bases if >1024; full UTR1-3mer composition retained; missing UTR explicit"
+}

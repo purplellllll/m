@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "total_records": 9789,
+  "counts": {
+    "expression": {
+      "train": 1019,
+      "val": 219,
+      "test": 217
+    },
+    "half_life": {
+      "train": 4677,
+      "val": 586,
+      "test": 601
+    },
+    "solubility": {
+      "train": 1686,
+      "val": 414,
+      "test": 370
+    }
+  },
+  "source_counts_before_global_filter": {
+    "expression": {
+      "train": 1019,
+      "val": 219,
+      "test": 217
+    },
+    "half_life": {
+      "train": 4677,
+      "val": 586,
+      "test": 601
+    },
+    "solubility": {
+      "train": 1686,
+      "val": 414,
+      "test": 370
+    }
+  },
+  "source_exclusions": [
+    {
+      "task": "expression",
+      "source_index": 712,
+      "reason": "prior_clean_fit_exclusion"
+    },
+    {
+      "task": "expression",
+      "source_index": 737,
+      "reason": "prior_clean_fit_exclusion"
+    },
+    {
+      "task": "expression",
+      "source_index": 1363,
+      "reason": "prior_normalized_CDS_train_test_overlap"
+    },
+    {
+      "task": "expression",
+      "source_index": 1440,
+      "reason": "prior_normalized_CDS_train_test_overlap"
+    }
+  ],
+  "cross_task_or_split_conflicts_excluded": [],
+  "global_exact_CDS_split_disjoint": true,
+  "cross_gene_tasks_exact_protein_split_disjoint": true,
+  "mrfp_protein_disjoint": false,
+  "mrfp_unique_proteins": 1,
+  "near_homology_checked": false,
+  "utr_available_by_task": {
+    "expression": 0,
+    "half_life": 5864,
+    "solubility": 0
+  },
+  "true_expression_HL_joint_n": 0,
+  "true_three_endpoint_joint_n": 0,
+  "test_labels_used_for_training": false,
+  "test_labels_previously_opened": true,
+  "records_sha256": "fce273500e9c27b52c9d84f5632ba892c8867f52b490f68c43b16fb178f7a4f3",
+  "protocol_sha256": "1e03c7948314e0c306a35c6fa046cae3aa32387fc151ead9f098aabaf2400b61"
+}

@@ -1,0 +1,16 @@
+{
+  "inputs": {
+    "ecoli_NC000913.2.fasta": "2a8e2f78bc145fa82fa325acf7d34dc944612795cee74f793045dc64d782176c",
+    "ecoli_NC000913.2.gff3": "f1a5c2ac33985ec1593ac5d93f4f1153d0607444a0e42c7bae51ce2ca192a26b",
+    "ecoli_Mg_forward.wig": "b36711a0e24db2e1c6e80a6d0b8f938957f07e550ac27dce7cec083ab54be374",
+    "ecoli_Mg_reverse.wig": "fe2807d39b520e1f6bd0196332697f111ba8ff4ef741d893b7274c1cdc86a0c9"
+  },
+  "source": "Riboformer official GitHub GSE119104 GSM3358140 high-Mg flash frozen",
+  "script_sha256": "5b7e431bf917808e92d5acc1ced608514141d5fa66a3d4130fb7973f454c41f4",
+  "site": "Main A-site3prime_offset11=author_Psite14-3nt; Psite14 sensitivity retained",
+  "source_gene_split": "sha256(profilecalibration20261102:proteinSHA)70/15/15 after exclusion of all task val/test exact genes,CDS,proteins",
+  "geometry": "RNAfoldfirst150nt, codon paired bases0..3; remainder0, angle0 unobserved; same rule needed in prediction",
+  "labels": "Observed stranded3prime-end WIG, triplet-summed; no TE or model predictions used",
+  "minimum": ">=30sensecodons,>=20observed total reads,>=10nonzero codon positions",
+  "fitting": "Nonnegative75-column additive relative-occupancy proxy; train-only; no true kinetics claim"
+}

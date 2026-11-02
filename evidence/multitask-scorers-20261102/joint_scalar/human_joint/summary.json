@@ -1,0 +1,683 @@
+{
+  "status": "completed",
+  "protocol_sha256": "30d927318ee661a2abb69a9dfb4eb87559bd6f5c562a6e7cee97c2c13a3ec11f",
+  "metrics": [
+    {
+      "split": "val",
+      "task": "TE",
+      "model": "kmer",
+      "n": 586,
+      "pearson": 0.6229769866347875,
+      "ci95": [
+        0.5749583956303603,
+        0.6729061521676354
+      ],
+      "spearman": 0.6379359146550452
+    },
+    {
+      "split": "val",
+      "task": "TE",
+      "model": "kmer_physics_summaries",
+      "n": 586,
+      "pearson": 0.6344561480704579,
+      "ci95": [
+        0.5846746560178905,
+        0.681634440373764
+      ],
+      "spearman": 0.6459242873322678
+    },
+    {
+      "split": "val",
+      "task": "HL",
+      "model": "kmer",
+      "n": 586,
+      "pearson": 0.4577375120708668,
+      "ci95": [
+        0.38592606008604186,
+        0.5281028250364703
+      ],
+      "spearman": 0.40082219567541466
+    },
+    {
+      "split": "val",
+      "task": "HL",
+      "model": "kmer_physics_summaries",
+      "n": 586,
+      "pearson": 0.448394351140515,
+      "ci95": [
+        0.37452795228378155,
+        0.5194515858982884
+      ],
+      "spearman": 0.38705701505848017
+    },
+    {
+      "split": "val",
+      "task": "HL",
+      "model": "existing_HL_auxiliary",
+      "n": 586,
+      "pearson": 0.4519065864347354,
+      "ci95": [
+        0.379822328277376,
+        0.5218978234150028
+      ],
+      "spearman": 0.3978033137989182
+    },
+    {
+      "split": "val",
+      "task": "joint",
+      "model": "kmer",
+      "n": 586,
+      "pearson": 0.5844640014606198,
+      "ci95": [
+        0.531982926559313,
+        0.6365298753744315
+      ],
+      "spearman": 0.5690243183565507
+    },
+    {
+      "split": "val",
+      "task": "joint",
+      "model": "kmer_physics_summaries",
+      "n": 586,
+      "pearson": 0.5772580463211691,
+      "ci95": [
+        0.5239950038942315,
+        0.6308119929131183
+      ],
+      "spearman": 0.5591492041399303
+    },
+    {
+      "split": "test",
+      "task": "TE",
+      "model": "kmer",
+      "n": 601,
+      "pearson": 0.6226114963365783,
+      "ci95": [
+        0.5676585412102999,
+        0.6716594946228244
+      ],
+      "spearman": 0.6187937601229402
+    },
+    {
+      "split": "test",
+      "task": "TE",
+      "model": "kmer_physics_summaries",
+      "n": 601,
+      "pearson": 0.6254951998305763,
+      "ci95": [
+        0.570843189102332,
+        0.6734573627885546
+      ],
+      "spearman": 0.6201390815971168
+    },
+    {
+      "split": "test",
+      "task": "TE",
+      "model": "ours100000",
+      "n": 601,
+      "pearson": 0.6283042572857432,
+      "ci95": [
+        0.5763516204785002,
+        0.6774998157809
+      ],
+      "spearman": 0.6259732118672644
+    },
+    {
+      "split": "test",
+      "task": "TE",
+      "model": "seq2ribo",
+      "n": 601,
+      "pearson": 0.5970827484842588,
+      "ci95": [
+        0.5406976651095711,
+        0.6456231501082572
+      ],
+      "spearman": 0.5655177693876763
+    },
+    {
+      "split": "test",
+      "task": "TE",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 601,
+      "pearson": 0.6890993873435755,
+      "ci95": [
+        0.6276617696728328,
+        0.739267348544775
+      ],
+      "spearman": 0.7056740979872971
+    },
+    {
+      "split": "test",
+      "task": "TE",
+      "model": "ours100000_plus_existing_HL_auxiliary",
+      "n": 601,
+      "pearson": 0.6283042572857432,
+      "ci95": [
+        0.5763516204785002,
+        0.6774998157809
+      ],
+      "spearman": 0.6259732118672644
+    },
+    {
+      "split": "test",
+      "task": "HL",
+      "model": "kmer",
+      "n": 601,
+      "pearson": 0.51585500974528,
+      "ci95": [
+        0.4574101307668677,
+        0.5722580515170546
+      ],
+      "spearman": 0.48613036964969797
+    },
+    {
+      "split": "test",
+      "task": "HL",
+      "model": "kmer_physics_summaries",
+      "n": 601,
+      "pearson": 0.5225821499791006,
+      "ci95": [
+        0.46605531452171156,
+        0.5776560890754964
+      ],
+      "spearman": 0.4887165908425051
+    },
+    {
+      "split": "test",
+      "task": "HL",
+      "model": "existing_HL_auxiliary",
+      "n": 601,
+      "pearson": 0.519252011315216,
+      "ci95": [
+        0.46172991278587644,
+        0.5751213951510749
+      ],
+      "spearman": 0.48881924367471724
+    },
+    {
+      "split": "test",
+      "task": "HL",
+      "model": "ours100000",
+      "n": 601,
+      "pearson": 0.28361155701124663,
+      "ci95": [
+        0.21593400677591226,
+        0.3500442162571082
+      ],
+      "spearman": 0.28975688359931684
+    },
+    {
+      "split": "test",
+      "task": "HL",
+      "model": "seq2ribo",
+      "n": 601,
+      "pearson": 0.25707488236917336,
+      "ci95": [
+        0.18172435407989138,
+        0.33039282658767377
+      ],
+      "spearman": 0.23096992277544076
+    },
+    {
+      "split": "test",
+      "task": "HL",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 601,
+      "pearson": 0.2994811098638398,
+      "ci95": [
+        0.2267335433468378,
+        0.3725703360657983
+      ],
+      "spearman": 0.36709354840492875
+    },
+    {
+      "split": "test",
+      "task": "HL",
+      "model": "ours100000_plus_existing_HL_auxiliary",
+      "n": 601,
+      "pearson": 0.5192520113152159,
+      "ci95": [
+        0.46172991278587633,
+        0.575121395151075
+      ],
+      "spearman": 0.48881924367471724
+    },
+    {
+      "split": "test",
+      "task": "joint",
+      "model": "kmer",
+      "n": 601,
+      "pearson": 0.6040202888249339,
+      "ci95": [
+        0.5505741130063565,
+        0.654855245958701
+      ],
+      "spearman": 0.5962905124902572
+    },
+    {
+      "split": "test",
+      "task": "joint",
+      "model": "kmer_physics_summaries",
+      "n": 601,
+      "pearson": 0.611546570576119,
+      "ci95": [
+        0.5586102783638932,
+        0.6615301668857758
+      ],
+      "spearman": 0.6045787474917221
+    },
+    {
+      "split": "test",
+      "task": "joint",
+      "model": "ours100000",
+      "n": 601,
+      "pearson": 0.5699776381398879,
+      "ci95": [
+        0.513467909455644,
+        0.6210770000769784
+      ],
+      "spearman": 0.5574796712013754
+    },
+    {
+      "split": "test",
+      "task": "joint",
+      "model": "seq2ribo",
+      "n": 601,
+      "pearson": 0.5338363258626814,
+      "ci95": [
+        0.4729743419548892,
+        0.5901727772403337
+      ],
+      "spearman": 0.49041680256051656
+    },
+    {
+      "split": "test",
+      "task": "joint",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 601,
+      "pearson": 0.617857912912259,
+      "ci95": [
+        0.5522947662679946,
+        0.673301420710571
+      ],
+      "spearman": 0.6512525635568627
+    },
+    {
+      "split": "test",
+      "task": "joint",
+      "model": "ours100000_plus_existing_HL_auxiliary",
+      "n": 601,
+      "pearson": 0.6309117925322076,
+      "ci95": [
+        0.579094727196958,
+        0.6793729110457389
+      ],
+      "spearman": 0.6217844566917818
+    }
+  ],
+  "paired": [
+    {
+      "task": "TE",
+      "model": "kmer",
+      "reference": "ours100000",
+      "delta_pearson": -0.005692760949164932,
+      "ci95": [
+        -0.05122296018597019,
+        0.042275362572672975
+      ]
+    },
+    {
+      "task": "TE",
+      "model": "kmer",
+      "reference": "seq2ribo",
+      "delta_pearson": 0.02552874785231951,
+      "ci95": [
+        -0.02766664425746381,
+        0.07757554886345099
+      ]
+    },
+    {
+      "task": "TE",
+      "model": "kmer",
+      "reference": "RiboDecode_fixedRNA_TEproxy",
+      "delta_pearson": -0.06648789100699715,
+      "ci95": [
+        -0.14085722006923587,
+        0.011865826735039777
+      ]
+    },
+    {
+      "task": "TE",
+      "model": "kmer_physics_summaries",
+      "reference": "ours100000",
+      "delta_pearson": -0.002809057455166908,
+      "ci95": [
+        -0.04709188443805706,
+        0.04215519932646462
+      ]
+    },
+    {
+      "task": "TE",
+      "model": "kmer_physics_summaries",
+      "reference": "seq2ribo",
+      "delta_pearson": 0.028412451346317535,
+      "ci95": [
+        -0.02168009513390463,
+        0.07940079102922548
+      ]
+    },
+    {
+      "task": "TE",
+      "model": "kmer_physics_summaries",
+      "reference": "RiboDecode_fixedRNA_TEproxy",
+      "delta_pearson": -0.06360418751299912,
+      "ci95": [
+        -0.1356255384288131,
+        0.015194436748994032
+      ]
+    },
+    {
+      "task": "TE",
+      "model": "ours100000_plus_existing_HL_auxiliary",
+      "reference": "ours100000",
+      "delta_pearson": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "task": "TE",
+      "model": "ours100000_plus_existing_HL_auxiliary",
+      "reference": "seq2ribo",
+      "delta_pearson": 0.031221508801484443,
+      "ci95": [
+        -0.010512260836251317,
+        0.07318752344209051
+      ]
+    },
+    {
+      "task": "TE",
+      "model": "ours100000_plus_existing_HL_auxiliary",
+      "reference": "RiboDecode_fixedRNA_TEproxy",
+      "delta_pearson": -0.060795130057832214,
+      "ci95": [
+        -0.13258843739816534,
+        0.01932741184599802
+      ]
+    },
+    {
+      "task": "TE",
+      "model": "kmer_physics_summaries",
+      "reference": "kmer",
+      "delta_pearson": 0.0028837034939980244,
+      "ci95": [
+        -0.011183059219318902,
+        0.018017372642857635
+      ]
+    },
+    {
+      "task": "HL",
+      "model": "kmer",
+      "reference": "ours100000",
+      "delta_pearson": 0.23224345273403335,
+      "ci95": [
+        0.16174852029697856,
+        0.3050469779473923
+      ]
+    },
+    {
+      "task": "HL",
+      "model": "kmer",
+      "reference": "seq2ribo",
+      "delta_pearson": 0.2587801273761066,
+      "ci95": [
+        0.17673103261035586,
+        0.34465049778451007
+      ]
+    },
+    {
+      "task": "HL",
+      "model": "kmer",
+      "reference": "RiboDecode_fixedRNA_TEproxy",
+      "delta_pearson": 0.21637389988144018,
+      "ci95": [
+        0.13501704633139305,
+        0.3019314993572973
+      ]
+    },
+    {
+      "task": "HL",
+      "model": "kmer_physics_summaries",
+      "reference": "ours100000",
+      "delta_pearson": 0.23897059296785395,
+      "ci95": [
+        0.16973818585455674,
+        0.3109169555699378
+      ]
+    },
+    {
+      "task": "HL",
+      "model": "kmer_physics_summaries",
+      "reference": "seq2ribo",
+      "delta_pearson": 0.2655072676099272,
+      "ci95": [
+        0.1849543142750017,
+        0.34946094812686657
+      ]
+    },
+    {
+      "task": "HL",
+      "model": "kmer_physics_summaries",
+      "reference": "RiboDecode_fixedRNA_TEproxy",
+      "delta_pearson": 0.22310104011526077,
+      "ci95": [
+        0.14178375282996525,
+        0.30683359624883516
+      ]
+    },
+    {
+      "task": "HL",
+      "model": "ours100000_plus_existing_HL_auxiliary",
+      "reference": "ours100000",
+      "delta_pearson": 0.2356404543039693,
+      "ci95": [
+        0.1662337213774949,
+        0.30807921684855105
+      ]
+    },
+    {
+      "task": "HL",
+      "model": "ours100000_plus_existing_HL_auxiliary",
+      "reference": "seq2ribo",
+      "delta_pearson": 0.26217712894604256,
+      "ci95": [
+        0.18351741467783866,
+        0.34580803507329533
+      ]
+    },
+    {
+      "task": "HL",
+      "model": "ours100000_plus_existing_HL_auxiliary",
+      "reference": "RiboDecode_fixedRNA_TEproxy",
+      "delta_pearson": 0.21977090145137612,
+      "ci95": [
+        0.13923273508333942,
+        0.30338051977237424
+      ]
+    },
+    {
+      "task": "HL",
+      "model": "kmer_physics_summaries",
+      "reference": "kmer",
+      "delta_pearson": 0.006727140233820594,
+      "ci95": [
+        -0.005291568537451594,
+        0.018939756367366802
+      ]
+    },
+    {
+      "task": "joint",
+      "model": "kmer",
+      "reference": "ours100000",
+      "delta_pearson": 0.03404265068504597,
+      "ci95": [
+        -0.01645632258092587,
+        0.08471404007840218
+      ]
+    },
+    {
+      "task": "joint",
+      "model": "kmer",
+      "reference": "seq2ribo",
+      "delta_pearson": 0.07018396296225249,
+      "ci95": [
+        0.01084944078445802,
+        0.12951202146641133
+      ]
+    },
+    {
+      "task": "joint",
+      "model": "kmer",
+      "reference": "RiboDecode_fixedRNA_TEproxy",
+      "delta_pearson": -0.01383762408732514,
+      "ci95": [
+        -0.08639398848095825,
+        0.06559587295867357
+      ]
+    },
+    {
+      "task": "joint",
+      "model": "kmer_physics_summaries",
+      "reference": "ours100000",
+      "delta_pearson": 0.041568932436231165,
+      "ci95": [
+        -0.005097692008035172,
+        0.08888812874714813
+      ]
+    },
+    {
+      "task": "joint",
+      "model": "kmer_physics_summaries",
+      "reference": "seq2ribo",
+      "delta_pearson": 0.07771024471343768,
+      "ci95": [
+        0.0194142649883203,
+        0.13673966328163803
+      ]
+    },
+    {
+      "task": "joint",
+      "model": "kmer_physics_summaries",
+      "reference": "RiboDecode_fixedRNA_TEproxy",
+      "delta_pearson": -0.006311342336139947,
+      "ci95": [
+        -0.07795842541967447,
+        0.07590145154093515
+      ]
+    },
+    {
+      "task": "joint",
+      "model": "ours100000_plus_existing_HL_auxiliary",
+      "reference": "ours100000",
+      "delta_pearson": 0.06093415439231975,
+      "ci95": [
+        0.03498180749016022,
+        0.0880923064679533
+      ]
+    },
+    {
+      "task": "joint",
+      "model": "ours100000_plus_existing_HL_auxiliary",
+      "reference": "seq2ribo",
+      "delta_pearson": 0.09707546666952627,
+      "ci95": [
+        0.04874668761056942,
+        0.14722290090223453
+      ]
+    },
+    {
+      "task": "joint",
+      "model": "ours100000_plus_existing_HL_auxiliary",
+      "reference": "RiboDecode_fixedRNA_TEproxy",
+      "delta_pearson": 0.013053879619948638,
+      "ci95": [
+        -0.05458314033339641,
+        0.09258931857373452
+      ]
+    },
+    {
+      "task": "joint",
+      "model": "kmer_physics_summaries",
+      "reference": "kmer",
+      "delta_pearson": 0.007526281751185193,
+      "ci95": [
+        -0.004520802347865657,
+        0.020706464459439716
+      ]
+    }
+  ],
+  "selection": {
+    "kmer": {
+      "alpha": 10.0,
+      "train_only_cv": [
+        {
+          "alpha": 10.0,
+          "mse": 0.7229727717247582
+        },
+        {
+          "alpha": 100.0,
+          "mse": 0.7297790268092982
+        },
+        {
+          "alpha": 1000.0,
+          "mse": 0.729618427298492
+        },
+        {
+          "alpha": 10000.0,
+          "mse": 0.8014667710503839
+        }
+      ],
+      "n_features": 252
+    },
+    "kmer_physics_summaries": {
+      "alpha": 100.0,
+      "train_only_cv": [
+        {
+          "alpha": 10.0,
+          "mse": 0.7116833791294924
+        },
+        {
+          "alpha": 100.0,
+          "mse": 0.7087785332455299
+        },
+        {
+          "alpha": 1000.0,
+          "mse": 0.7124247708938378
+        },
+        {
+          "alpha": 10000.0,
+          "mse": 0.792573874813667
+        }
+      ],
+      "n_features": 268
+    }
+  },
+  "audit": {
+    "n_train": 4677,
+    "n_validation": 586,
+    "n_test_inputs": 903,
+    "n_test_joint": 601,
+    "drops": {
+      "missing_context": 19,
+      "missing_HL_gene": 1,
+      "nonfinite_HL": 282
+    },
+    "historical_test_reused": true,
+    "near_homology_checked": false,
+    "uid_disjoint": true,
+    "protein_sha256_disjoint": true,
+    "unversioned_gene_disjoint": true
+  },
+  "acceptance": "Not established: TE+HL proxy cannot establish functional protein+HL performance; no solubility labels"
+}

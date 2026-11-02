@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "arm": "full",
+      "max_error": 0.0
+    },
+    {
+      "arm": "no_physics",
+      "max_error": 0.0
+    },
+    {
+      "arm": "no_graph",
+      "max_error": 0.0
+    },
+    {
+      "arm": "no_context",
+      "max_error": 0.0
+    },
+    {
+      "arm": "seq_transformer",
+      "max_error": 0.0
+    }
+  ],
+  "real_inputs": 2,
+  "random_weights": true,
+  "biological_metrics_computed": false,
+  "portable_source_sha256": "cb8348cae37c1d6913a616c77765f5b096a355377eea2983f6b7bf038d159102"
+}

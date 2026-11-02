@@ -1,0 +1,461 @@
+{
+  "files": [
+    {
+      "source": "runs/multitask_transformer_20261102/data_protocol_locked.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/data_protocol_locked.json",
+      "sha256": "1e03c7948314e0c306a35c6fa046cae3aa32387fc151ead9f098aabaf2400b61"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/derived_data_protocol.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/derived_data_protocol.json",
+      "sha256": "d12463053b0a23b92b577b448512e4bcd899f553ad6581591058c35f6d555f37"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/data_audit.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/data_audit.json",
+      "sha256": "c0b2531f75e56b1e01f98c86d7f57a805671c66259448797d416074e34c83c19"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/target_statistics.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/target_statistics.json",
+      "sha256": "d4b11fb8909b2119278e3ca8c10573eed74cbcc558e85449b8bca4f09a378f3a"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/features_v2_protocol_locked.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/features_v2_protocol_locked.json",
+      "sha256": "aa055905d2fe5b523eaf5e8b13c5096507684e28b3f66dc83214747d59381f10"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/features_complete.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/features_complete.json",
+      "sha256": "df76770f9716257384f8b7a13878ca1e204c5e0d837f2b62fef3404f9c1ef079"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/training_protocol_locked.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/training_protocol_locked.json",
+      "sha256": "ed496d86706adbba89bc96fce9ea008706f2bdf88bce2b0e2cb2d5b63578321a"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/selection_locked.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/selection_locked.json",
+      "sha256": "15b0877e760695ce3168461bd7ccfbc1c19f2913daafdde0790c354a761c9bbb"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/gpu_preflight.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/gpu_preflight.json",
+      "sha256": "fe098f54e9f221400e74050d35a4c932a8525dd18715e6f1d89f3068c7bab72d"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/dynamics_verification.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/dynamics_verification.json",
+      "sha256": "6a6fd27a7a45b430017a5b67fcc9e979fad09b54d4efbcced9e40f689f5a8d24"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/dynamics_v2_verification.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/dynamics_v2_verification.json",
+      "sha256": "34f5b0418535c7764360cb242c33e41cc72825b19ec043190fa528586996dd5f"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/model_independent_review.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/model_independent_review.json",
+      "sha256": "d75c116dffc175ac787c8d34cd7d0e76246f0b94b255cadf28a7c42298eeb89f"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/train_review.md",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/train_review.md",
+      "sha256": "78b898183cbbba8ceedd3bb5a32be5e898290d4a50b958baa1b26ac394414b2b"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/dynamics_audit.md",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/dynamics_audit.md",
+      "sha256": "63f7f3716462055741d5d12e49dd9d21d26f1810105df0afd69602fdcfcd04b0"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/label_audit.md",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/label_audit.md",
+      "sha256": "7e6c0257229c67c6587366be3bac8a3e7a8d3bd85833300b2bf33bf6c0e5b7ed"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/feature_start_failure.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/feature_start_failure.json",
+      "sha256": "1dd1444371297531de2a04e126a26f5d25eda3b56581654e02f9c9ea588fc082"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/evaluation/summary.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/evaluation/summary.json",
+      "sha256": "d2144211928a70d6f976d65372ac8c83b8bb67c2dad30bf04f4b8c7a290f9217"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/evaluation/predictions.csv",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/evaluation/predictions.csv",
+      "sha256": "b730be114f7e163dd3bce2b77513b2250f727ac3ade0fd0f0c407986a32bc731"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/evaluation/complete.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/evaluation/complete.json",
+      "sha256": "c86d005360a734b6d0f6d9bce7bac449b5126d92a43b5907801570ae3d29c92b"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/evaluation/arithmetic_recheck.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/evaluation/arithmetic_recheck.json",
+      "sha256": "16146176c26eff425ddf0291d08f868184861ea80a9ad5a7e390fe50b001f454"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/models/dynamics_30101/complete.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/models/dynamics_30101/complete.json",
+      "sha256": "2ab8fc7cfcda1c24d9e947178e429a222641cf518e68c14417da53f0dd549319"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/models/dynamics_30102/complete.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/models/dynamics_30102/complete.json",
+      "sha256": "600976301a78f2199137a9029f27c4e3faf6d20db9fa6ab77c1d0eb6d3d5af46"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/models/sequence_30101/complete.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/models/sequence_30101/complete.json",
+      "sha256": "d0e6d574bd372aeada7976eabedc7d74f57d7e7e6344fe4292d707a231212378"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/models/sequence_30102/complete.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/models/sequence_30102/complete.json",
+      "sha256": "22d8853ffe4a680047d46b7cd9ed1d6dcfcf3a608045cfe8d8a14dbc2e595cb8"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/models/dynamics_30101/validation_latest.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/models/dynamics_30101/validation_latest.json",
+      "sha256": "e291ef5f1f614d2fb971b6ae3a424aed4d74e9540a385f50c62636751fa00a98"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/models/dynamics_30102/validation_latest.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/models/dynamics_30102/validation_latest.json",
+      "sha256": "ac78b695a892eb98dc7af9209a82aae40b3c576efedac7dd203118db5e18bc82"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/models/sequence_30101/validation_latest.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/models/sequence_30101/validation_latest.json",
+      "sha256": "2c1d3f950fb1cd3bcd999e36dc576250c6c72cdb6b5f753d3e3da2fa884a5ab5"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/models/sequence_30102/validation_latest.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_transformer_20261102/models/sequence_30102/validation_latest.json",
+      "sha256": "39c2523c8adb3c84142ea0cb13926505efcb98212b2c517ab65294f25e7a7338"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/dynamics.py",
+      "destination": "historical/multitask-scorers-20261102/multitask_transformer_20261102/dynamics.py",
+      "sha256": "a2d90918be662aea960c3a465c9235e62598e13f213bb78ab485dfed126aa604"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/dynamics_v2.py",
+      "destination": "historical/multitask-scorers-20261102/multitask_transformer_20261102/dynamics_v2.py",
+      "sha256": "88d0f13d6907ab4b9020742b6f1730173624ed68a9dad0f775b02f0ee0d94f20"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/evaluate.py",
+      "destination": "historical/multitask-scorers-20261102/multitask_transformer_20261102/evaluate.py",
+      "sha256": "d97843e319de7acc17585df7e69efa497cae0e199795135c008fb1061b97179c"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/features.py",
+      "destination": "historical/multitask-scorers-20261102/multitask_transformer_20261102/features.py",
+      "sha256": "ab800013d0e1281b82c496c70eee908608f401bc8c7abf5cc37e7e952a89c714"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/model.py",
+      "destination": "historical/multitask-scorers-20261102/multitask_transformer_20261102/model.py",
+      "sha256": "22ce68f907d4068ec336bb3b3c60cf6e1ddae2bddc62628f90fe52c8ef8efdb4"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/pipeline.py",
+      "destination": "historical/multitask-scorers-20261102/multitask_transformer_20261102/pipeline.py",
+      "sha256": "5bb51a61a0b1ece333223aaa439749fc29b8829197da9583dfb1003b02ed7a97"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/prepare_data.py",
+      "destination": "historical/multitask-scorers-20261102/multitask_transformer_20261102/prepare_data.py",
+      "sha256": "407c8f2fc620a44052ad6395ba7cfd167f475d1b1f2c0b85c746c7b98a6a528e"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/review_model.py",
+      "destination": "historical/multitask-scorers-20261102/multitask_transformer_20261102/review_model.py",
+      "sha256": "ad3ca251a093caa3e3392857c31f8176a81bf1c9868a0563aac7a4222acfbbc6"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/seal_data.py",
+      "destination": "historical/multitask-scorers-20261102/multitask_transformer_20261102/seal_data.py",
+      "sha256": "07321caf1349228aa019435c923bafb83912b3fef539a976bb765ad660915157"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/tests_dynamics.py",
+      "destination": "historical/multitask-scorers-20261102/multitask_transformer_20261102/tests_dynamics.py",
+      "sha256": "b91baadeb746df915af3b6f875f0b75e8166b8b687fed68cd275c8a165fdd717"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/tests_dynamics_v2.py",
+      "destination": "historical/multitask-scorers-20261102/multitask_transformer_20261102/tests_dynamics_v2.py",
+      "sha256": "62538e35a3fe140b39c65415bc7f93436ab466fe170290afb9618ab8bacfbb53"
+    },
+    {
+      "source": "runs/multitask_transformer_20261102/train.py",
+      "destination": "historical/multitask-scorers-20261102/multitask_transformer_20261102/train.py",
+      "sha256": "cddffa084fca18a39b8c17d9a7a9f642c69b33f61d2a59f04375781da4469a42"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/data_protocol_locked.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_profile_20261102/data_protocol_locked.json",
+      "sha256": "1e03c7948314e0c306a35c6fa046cae3aa32387fc151ead9f098aabaf2400b61"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/derived_data_protocol.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_profile_20261102/derived_data_protocol.json",
+      "sha256": "d12463053b0a23b92b577b448512e4bcd899f553ad6581591058c35f6d555f37"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/target_statistics.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_profile_20261102/target_statistics.json",
+      "sha256": "d4b11fb8909b2119278e3ca8c10573eed74cbcc558e85449b8bca4f09a378f3a"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/features_v2_protocol_locked.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_profile_20261102/features_v2_protocol_locked.json",
+      "sha256": "849a348f613e3fa8d7ff49be80ba6f60dc753bc3cca3e5122bd1f3238e5c2942"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/features_complete.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_profile_20261102/features_complete.json",
+      "sha256": "d53b96cb78267668e6cb8db62c27c2ad54e8d955f5e7accf28619054f3cb0c57"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/training_protocol_locked.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_profile_20261102/training_protocol_locked.json",
+      "sha256": "a3b39ae2d68ba3ca08b9704031c523cd99f8d48f00fd84cc5b5926d56f3b9c7e"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/selection_locked.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_profile_20261102/selection_locked.json",
+      "sha256": "7f9ae2ce1666d7156fbf377141ac96bfa519667b4d3dd4857a467ae4367106cb"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/gpu_preflight.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_profile_20261102/gpu_preflight.json",
+      "sha256": "43b1e318a2593cf9ecbe6a286b7b3b9c756f97ae69615b5daa7a74ec73958887"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/verification.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_profile_20261102/verification.json",
+      "sha256": "c9b090ba4b82f9e3697de95bf6574fde792371c778f90d8351764670e50bba21"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/验收报告.md",
+      "destination": "evidence/multitask-scorers-20261102/multitask_profile_20261102/验收报告.md",
+      "sha256": "f8c5e2cc6ca7d6351c544dd65fa1795b68b7289aa97093cb1d2d08b76172009f"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/evaluation/summary.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_profile_20261102/evaluation/summary.json",
+      "sha256": "45d6b58ff48d8667f048dcdcf366a615c3143c16ba9cb71b598481ebdf3713de"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/evaluation/predictions.csv",
+      "destination": "evidence/multitask-scorers-20261102/multitask_profile_20261102/evaluation/predictions.csv",
+      "sha256": "09246baa14ce53fbdbfc8ed46036416da46137edbfa6592f0e24d0653b876d7b"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/evaluation/complete.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_profile_20261102/evaluation/complete.json",
+      "sha256": "240b6769c030e1b6ef3800314be17afff92ccbcb5f5a1c144ff97bc7ca291b6a"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/paired_external/protocol.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_profile_20261102/paired_external/protocol.json",
+      "sha256": "4e325e37879e48218558c3a06d23a36fb8d83a8c3578d4e9eef607c609b7dd96"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/paired_external/summary.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_profile_20261102/paired_external/summary.json",
+      "sha256": "359d92b2c092bb733f47de842a3a0dccd8e8908d75b9dd88e8032b29f0a8ab96"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/paired_external/identity_audit.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_profile_20261102/paired_external/identity_audit.json",
+      "sha256": "de44270ea11d7d3e25ba805fd97879cddb57c6ff877d232c3a5314dba01970f7"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/models/dynamics_30101/complete.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_profile_20261102/models/dynamics_30101/complete.json",
+      "sha256": "8cb7375f625b99166ac41cd04471e9ff8471b30e77e843d7bfa8afb9d86a3ef5"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/models/dynamics_30102/complete.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_profile_20261102/models/dynamics_30102/complete.json",
+      "sha256": "5f31420048a029f5a5d13b46b3cf9d3dc1c07708d257e9365c5a12ccecaa51e4"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/models/sequence_30101/complete.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_profile_20261102/models/sequence_30101/complete.json",
+      "sha256": "7066110d4c8a1385e9a2bfce65f5b63b4d81b1fe233980cfdf3958760522ef5f"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/models/sequence_30102/complete.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_profile_20261102/models/sequence_30102/complete.json",
+      "sha256": "c88fad08d373fd3f1b4c9efb50fb5e0dd43d904dfd77a5b5861816e3da7bc48f"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/models/dynamics_30101/validation_latest.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_profile_20261102/models/dynamics_30101/validation_latest.json",
+      "sha256": "d45c0965233e295c505d048fa7b809b9ac34df2fa7fad6d99d7bd282fd65b00e"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/models/dynamics_30102/validation_latest.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_profile_20261102/models/dynamics_30102/validation_latest.json",
+      "sha256": "96bc63f3f22517048f8f0cd5a25573de04e8b2ce5b9ac8f782acf6bcd808f50f"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/models/sequence_30101/validation_latest.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_profile_20261102/models/sequence_30101/validation_latest.json",
+      "sha256": "7cc2d55f5bd7b4f50ba178c969e6b72d3b506a1f1491b172980a4d46ad716748"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/models/sequence_30102/validation_latest.json",
+      "destination": "evidence/multitask-scorers-20261102/multitask_profile_20261102/models/sequence_30102/validation_latest.json",
+      "sha256": "2c79af679b88cc4e2633314aac055ad162973fe31272edc157d83afb89c68347"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/dynamics_v2.py",
+      "destination": "historical/multitask-scorers-20261102/multitask_profile_20261102/dynamics_v2.py",
+      "sha256": "88d0f13d6907ab4b9020742b6f1730173624ed68a9dad0f775b02f0ee0d94f20"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/evaluate.py",
+      "destination": "historical/multitask-scorers-20261102/multitask_profile_20261102/evaluate.py",
+      "sha256": "16bf83c278092751c5aa0a4a183a349e3b0ace78fc429e2c7ed85f10921ef979"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/features.py",
+      "destination": "historical/multitask-scorers-20261102/multitask_profile_20261102/features.py",
+      "sha256": "cd32c56f5c83b3436b01de527b102254ae63fff80ee5135939145d84702bbfd1"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/model.py",
+      "destination": "historical/multitask-scorers-20261102/multitask_profile_20261102/model.py",
+      "sha256": "ae558405f85259c3b266559fd303b3406e81aa5011108b96d5ee7870f9766d52"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/paired_external.py",
+      "destination": "historical/multitask-scorers-20261102/multitask_profile_20261102/paired_external.py",
+      "sha256": "89083a996e103780aba9a5582c7cee479de0f4b34e54388a486a00c6e6af35e5"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/pipeline.py",
+      "destination": "historical/multitask-scorers-20261102/multitask_profile_20261102/pipeline.py",
+      "sha256": "626cf4dfc08bc0a06a90c0700fee2cb7bcd9390392dd5a188f1b0d4329093baa"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/portable_runtime.py",
+      "destination": "historical/multitask-scorers-20261102/multitask_profile_20261102/portable_runtime.py",
+      "sha256": "1c8538fc961190ea2af663f080233d6ed9123408562c4799b1d86ea58346fadc"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/predict.py",
+      "destination": "historical/multitask-scorers-20261102/multitask_profile_20261102/predict.py",
+      "sha256": "d394293173ebe2881afd4eb3c1436c25e338d5499c93204b93f854527a8e7675"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/report.py",
+      "destination": "historical/multitask-scorers-20261102/multitask_profile_20261102/report.py",
+      "sha256": "c91613922c35aaa2ed32b1092002bcb97895baa5acc05ede4aba1041e84f9cfe"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/train.py",
+      "destination": "historical/multitask-scorers-20261102/multitask_profile_20261102/train.py",
+      "sha256": "4ac825bf9948c8ae5634fe8f0362b2d661500838b8d17c95fefff85632996baf"
+    },
+    {
+      "source": "runs/multitask_profile_20261102/verify_results.py",
+      "destination": "historical/multitask-scorers-20261102/multitask_profile_20261102/verify_results.py",
+      "sha256": "84020cb03b617df868f830608837377e950855e59bc3ca791c3e59496e1f4396"
+    },
+    {
+      "source": "runs/joint_scalar_20261102/实验报告.md",
+      "destination": "evidence/multitask-scorers-20261102/joint_scalar/实验报告.md",
+      "sha256": "6abfd36e8b0268103b6f15408f8f96d1e570b688f187beb8dc925af4ea0be8f5"
+    },
+    {
+      "source": "runs/joint_scalar_20261102/physics_audit.md",
+      "destination": "evidence/multitask-scorers-20261102/joint_scalar/physics_audit.md",
+      "sha256": "d817c870f7ff65940d7ca6c822c94ff212fc995469a1a7b3a4d6e7540ecfe146"
+    },
+    {
+      "source": "runs/joint_scalar_20261102/verification.json",
+      "destination": "evidence/multitask-scorers-20261102/joint_scalar/verification.json",
+      "sha256": "4d73db26395c05c4e4309af43646ee0e221dfd71b1d08c71b63588d5d41d2a90"
+    },
+    {
+      "source": "runs/joint_scalar_20261102/results_overview.png",
+      "destination": "evidence/multitask-scorers-20261102/joint_scalar/results_overview.png",
+      "sha256": "18b8c6eae5ea76f286aeea419baf5b66553bd328c73d976beb9cc8f720d713be"
+    },
+    {
+      "source": "runs/joint_scalar_20261102/human_joint/summary.json",
+      "destination": "evidence/multitask-scorers-20261102/joint_scalar/human_joint/summary.json",
+      "sha256": "11f9ba00a89ee8defb9bf43834e06c20705d7a56f12a1957432988a3cac6629f"
+    },
+    {
+      "source": "runs/joint_scalar_20261102/human_joint/physics_extended/summary.json",
+      "destination": "evidence/multitask-scorers-20261102/joint_scalar/human_joint/physics_extended/summary.json",
+      "sha256": "6e49ec426eb0bdca18d1c925f8de30190922789ccf92a0d3669dbe3e10bd7f20"
+    },
+    {
+      "source": "runs/joint_scalar_20261102/fair_composition/summary.json",
+      "destination": "evidence/multitask-scorers-20261102/joint_scalar/fair_composition/summary.json",
+      "sha256": "3a8d011148bdc9560389afbcaf5a4a07239970410981192fbddbd718832f0e1d"
+    },
+    {
+      "source": "runs/joint_scalar_20261102/mrfp_cpu/summary.json",
+      "destination": "evidence/multitask-scorers-20261102/joint_scalar/mrfp_cpu/summary.json",
+      "sha256": "b8611b4f7b0a831a1afb39440207a18a8839e6b5dbaa67ccade1d459ee1eed9b"
+    },
+    {
+      "source": "runs/joint_scalar_20261102/mrfp_ribodecode/summary.json",
+      "destination": "evidence/multitask-scorers-20261102/joint_scalar/mrfp_ribodecode/summary.json",
+      "sha256": "c76956f5754330f69725cdf5f17f8e9cb5f878128189aeb7b448d922d792f756"
+    },
+    {
+      "source": "runs/joint_scalar_20261102/persist/summary.json",
+      "destination": "evidence/multitask-scorers-20261102/joint_scalar/persist/summary.json",
+      "sha256": "892fbf33e423e2ea68ea1d0cf5a6559db2a5d3e9a1bf9361a64816e8d813c7ee"
+    },
+    {
+      "source": "runs/joint_scalar_20261102/persist/identical_CDS_audit.json",
+      "destination": "evidence/multitask-scorers-20261102/joint_scalar/persist/identical_CDS_audit.json",
+      "sha256": "3a42ca1da51ba9ecd9bb4661cc7f3f9c1ca7890bbfdae8a71d220e001ed747bb"
+    },
+    {
+      "source": "runs/joint_scalar_20261102/ddla/summary.json",
+      "destination": "evidence/multitask-scorers-20261102/joint_scalar/ddla/summary.json",
+      "sha256": "040e03f80e451d2ea0c8d68888193885680bbf68aace3d5406fb17aebf572e01"
+    },
+    {
+      "source": "runs/joint_scalar_20261102/ddla/input_audit.json",
+      "destination": "evidence/multitask-scorers-20261102/joint_scalar/ddla/input_audit.json",
+      "sha256": "8aaaebd31550c982d1958648320c62e8d6e7d68cc49a1b4286cee56a361a35ee"
+    },
+    {
+      "source": "runs/joint_scalar_20261102/esol_v2/summary.json",
+      "destination": "evidence/multitask-scorers-20261102/joint_scalar/esol_v2/summary.json",
+      "sha256": "975950dbfee46663e0069542ad5f26f2cc51a105b5218373a6108e984b748953"
+    },
+    {
+      "source": "runs/joint_scalar_20261102/opt/summary.json",
+      "destination": "evidence/multitask-scorers-20261102/joint_scalar/opt/summary.json",
+      "sha256": "0465fac19801e7b8a39fa10c97269c033eb83834d0c0a5815618fdfcbd6b73a1"
+    },
+    {
+      "source": "runs/joint_scalar_20261102/saluki_cross_study/summary.json",
+      "destination": "evidence/multitask-scorers-20261102/joint_scalar/saluki_cross_study/summary.json",
+      "sha256": "79e90d2ab5d7f231e4de01995768e12b550431390d8464383927e05718449c85"
+    }
+  ],
+  "raw_datasets_not_redistributed": true,
+  "original_index_preserved": true
+}

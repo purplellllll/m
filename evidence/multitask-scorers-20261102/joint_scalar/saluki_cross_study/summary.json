@@ -1,0 +1,1304 @@
+{
+  "status": "completed",
+  "unique_test_genes": 883,
+  "study_replicate_columns": 54,
+  "metrics": [
+    {
+      "study": "Bazzini_ActD_HEK293_1",
+      "model": "HL_aux",
+      "n": 874,
+      "pearson": 0.39644381448964866
+    },
+    {
+      "study": "Bazzini_ActD_HEK293_1",
+      "model": "ours100000",
+      "n": 874,
+      "pearson": 0.28923134166096126
+    },
+    {
+      "study": "Bazzini_ActD_HEK293_1",
+      "model": "seq2ribo",
+      "n": 874,
+      "pearson": 0.26947225506040534
+    },
+    {
+      "study": "Bazzini_ActD_HEK293_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 874,
+      "pearson": 0.1737530561187359
+    },
+    {
+      "study": "Bazzini_ActD_HeLa_1",
+      "model": "HL_aux",
+      "n": 794,
+      "pearson": -0.37826172514421846
+    },
+    {
+      "study": "Bazzini_ActD_HeLa_1",
+      "model": "ours100000",
+      "n": 794,
+      "pearson": -0.21172031627032575
+    },
+    {
+      "study": "Bazzini_ActD_HeLa_1",
+      "model": "seq2ribo",
+      "n": 794,
+      "pearson": -0.20677268503262028
+    },
+    {
+      "study": "Bazzini_ActD_HeLa_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 794,
+      "pearson": -0.16852075860779933
+    },
+    {
+      "study": "Bazzini_ActD_RPE_1",
+      "model": "HL_aux",
+      "n": 796,
+      "pearson": -0.3585495547128316
+    },
+    {
+      "study": "Bazzini_ActD_RPE_1",
+      "model": "ours100000",
+      "n": 796,
+      "pearson": -0.2390788936667179
+    },
+    {
+      "study": "Bazzini_ActD_RPE_1",
+      "model": "seq2ribo",
+      "n": 796,
+      "pearson": -0.2546820766380269
+    },
+    {
+      "study": "Bazzini_ActD_RPE_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 796,
+      "pearson": -0.1507607390425411
+    },
+    {
+      "study": "Bazzini_4sU_K562_1",
+      "model": "HL_aux",
+      "n": 673,
+      "pearson": 0.36014402142754093
+    },
+    {
+      "study": "Bazzini_4sU_K562_1",
+      "model": "ours100000",
+      "n": 673,
+      "pearson": 0.2846145318996522
+    },
+    {
+      "study": "Bazzini_4sU_K562_1",
+      "model": "seq2ribo",
+      "n": 673,
+      "pearson": 0.2374331344441597
+    },
+    {
+      "study": "Bazzini_4sU_K562_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 673,
+      "pearson": 0.15517959879740015
+    },
+    {
+      "study": "Akimitsu_BrU_HeLa_1",
+      "model": "HL_aux",
+      "n": 789,
+      "pearson": 0.37632823304573165
+    },
+    {
+      "study": "Akimitsu_BrU_HeLa_1",
+      "model": "ours100000",
+      "n": 789,
+      "pearson": 0.3611601769645835
+    },
+    {
+      "study": "Akimitsu_BrU_HeLa_1",
+      "model": "seq2ribo",
+      "n": 789,
+      "pearson": 0.34966817638919884
+    },
+    {
+      "study": "Akimitsu_BrU_HeLa_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 789,
+      "pearson": 0.3252941959053655
+    },
+    {
+      "study": "Rinn_ActD_K562_1",
+      "model": "HL_aux",
+      "n": 702,
+      "pearson": 0.3850470516913071
+    },
+    {
+      "study": "Rinn_ActD_K562_1",
+      "model": "ours100000",
+      "n": 702,
+      "pearson": 0.3517587690104873
+    },
+    {
+      "study": "Rinn_ActD_K562_1",
+      "model": "seq2ribo",
+      "n": 702,
+      "pearson": 0.30704624819267545
+    },
+    {
+      "study": "Rinn_ActD_K562_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 702,
+      "pearson": 0.2373082651248071
+    },
+    {
+      "study": "Rinn_ActD_K562_2",
+      "model": "HL_aux",
+      "n": 706,
+      "pearson": 0.40804847548572065
+    },
+    {
+      "study": "Rinn_ActD_K562_2",
+      "model": "ours100000",
+      "n": 706,
+      "pearson": 0.36809534701164254
+    },
+    {
+      "study": "Rinn_ActD_K562_2",
+      "model": "seq2ribo",
+      "n": 706,
+      "pearson": 0.33493686075491924
+    },
+    {
+      "study": "Rinn_ActD_K562_2",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 706,
+      "pearson": 0.25658189434436307
+    },
+    {
+      "study": "Rinn_ActD_K562_3",
+      "model": "HL_aux",
+      "n": 715,
+      "pearson": 0.4287985922045703
+    },
+    {
+      "study": "Rinn_ActD_K562_3",
+      "model": "ours100000",
+      "n": 715,
+      "pearson": 0.3906446525189836
+    },
+    {
+      "study": "Rinn_ActD_K562_3",
+      "model": "seq2ribo",
+      "n": 715,
+      "pearson": 0.3236120145645963
+    },
+    {
+      "study": "Rinn_ActD_K562_3",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 715,
+      "pearson": 0.27221911706833557
+    },
+    {
+      "study": "Rinn_ActD_H1ESC_1",
+      "model": "HL_aux",
+      "n": 541,
+      "pearson": 0.45600993238943627
+    },
+    {
+      "study": "Rinn_ActD_H1ESC_1",
+      "model": "ours100000",
+      "n": 541,
+      "pearson": 0.35841468716709923
+    },
+    {
+      "study": "Rinn_ActD_H1ESC_1",
+      "model": "seq2ribo",
+      "n": 541,
+      "pearson": 0.3192875937524884
+    },
+    {
+      "study": "Rinn_ActD_H1ESC_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 541,
+      "pearson": 0.30186103029216405
+    },
+    {
+      "study": "Rinn_ActD_H1ESC_2",
+      "model": "HL_aux",
+      "n": 520,
+      "pearson": 0.4752676688035981
+    },
+    {
+      "study": "Rinn_ActD_H1ESC_2",
+      "model": "ours100000",
+      "n": 520,
+      "pearson": 0.3506171228857457
+    },
+    {
+      "study": "Rinn_ActD_H1ESC_2",
+      "model": "seq2ribo",
+      "n": 520,
+      "pearson": 0.30846748862402934
+    },
+    {
+      "study": "Rinn_ActD_H1ESC_2",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 520,
+      "pearson": 0.2827988012816958
+    },
+    {
+      "study": "Rinn_ActD_H1ESC_3",
+      "model": "HL_aux",
+      "n": 510,
+      "pearson": 0.4399012155869569
+    },
+    {
+      "study": "Rinn_ActD_H1ESC_3",
+      "model": "ours100000",
+      "n": 510,
+      "pearson": 0.2902925273123218
+    },
+    {
+      "study": "Rinn_ActD_H1ESC_3",
+      "model": "seq2ribo",
+      "n": 510,
+      "pearson": 0.26774165155712226
+    },
+    {
+      "study": "Rinn_ActD_H1ESC_3",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 510,
+      "pearson": 0.25941016254984545
+    },
+    {
+      "study": "Akimitsu2_BrU4sU_HeLa_1",
+      "model": "HL_aux",
+      "n": 357,
+      "pearson": -0.3940948295779592
+    },
+    {
+      "study": "Akimitsu2_BrU4sU_HeLa_1",
+      "model": "ours100000",
+      "n": 357,
+      "pearson": -0.3359167165939784
+    },
+    {
+      "study": "Akimitsu2_BrU4sU_HeLa_1",
+      "model": "seq2ribo",
+      "n": 357,
+      "pearson": -0.2635563213224059
+    },
+    {
+      "study": "Akimitsu2_BrU4sU_HeLa_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 357,
+      "pearson": -0.3322068731984957
+    },
+    {
+      "study": "Jaffrey_ActD_HEK293_1",
+      "model": "HL_aux",
+      "n": 315,
+      "pearson": 0.22402600601175815
+    },
+    {
+      "study": "Jaffrey_ActD_HEK293_1",
+      "model": "ours100000",
+      "n": 315,
+      "pearson": 0.05755037092984032
+    },
+    {
+      "study": "Jaffrey_ActD_HEK293_1",
+      "model": "seq2ribo",
+      "n": 315,
+      "pearson": -0.013931981438901496
+    },
+    {
+      "study": "Jaffrey_ActD_HEK293_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 315,
+      "pearson": -0.05163576397140272
+    },
+    {
+      "study": "Cramer_4sU_K562_1",
+      "model": "HL_aux",
+      "n": 659,
+      "pearson": 0.345199045319816
+    },
+    {
+      "study": "Cramer_4sU_K562_1",
+      "model": "ours100000",
+      "n": 659,
+      "pearson": 0.27585589857484005
+    },
+    {
+      "study": "Cramer_4sU_K562_1",
+      "model": "seq2ribo",
+      "n": 659,
+      "pearson": 0.2750463668143771
+    },
+    {
+      "study": "Cramer_4sU_K562_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 659,
+      "pearson": 0.22100392475384006
+    },
+    {
+      "study": "Shendure_4sU_A549_1",
+      "model": "HL_aux",
+      "n": 813,
+      "pearson": 0.3562715772537379
+    },
+    {
+      "study": "Shendure_4sU_A549_1",
+      "model": "ours100000",
+      "n": 813,
+      "pearson": 0.35130086201680033
+    },
+    {
+      "study": "Shendure_4sU_A549_1",
+      "model": "seq2ribo",
+      "n": 813,
+      "pearson": 0.3353102447651985
+    },
+    {
+      "study": "Shendure_4sU_A549_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 813,
+      "pearson": 0.29402534663363994
+    },
+    {
+      "study": "Cramer2_4sU_K562_1",
+      "model": "HL_aux",
+      "n": 430,
+      "pearson": -0.07011541685035218
+    },
+    {
+      "study": "Cramer2_4sU_K562_1",
+      "model": "ours100000",
+      "n": 430,
+      "pearson": -0.07489925941303789
+    },
+    {
+      "study": "Cramer2_4sU_K562_1",
+      "model": "seq2ribo",
+      "n": 430,
+      "pearson": -0.07997140082544399
+    },
+    {
+      "study": "Cramer2_4sU_K562_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 430,
+      "pearson": -0.1703978146438748
+    },
+    {
+      "study": "Oberdoerffer_BrU_HeLa_1",
+      "model": "HL_aux",
+      "n": 745,
+      "pearson": 0.3087039995790585
+    },
+    {
+      "study": "Oberdoerffer_BrU_HeLa_1",
+      "model": "ours100000",
+      "n": 745,
+      "pearson": 0.3384471378601809
+    },
+    {
+      "study": "Oberdoerffer_BrU_HeLa_1",
+      "model": "seq2ribo",
+      "n": 745,
+      "pearson": 0.2674535414615338
+    },
+    {
+      "study": "Oberdoerffer_BrU_HeLa_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 745,
+      "pearson": 0.2711045348420273
+    },
+    {
+      "study": "Dieterich_4sU_HEK293_1",
+      "model": "HL_aux",
+      "n": 601,
+      "pearson": 0.5043274647299315
+    },
+    {
+      "study": "Dieterich_4sU_HEK293_1",
+      "model": "ours100000",
+      "n": 601,
+      "pearson": 0.255668552445091
+    },
+    {
+      "study": "Dieterich_4sU_HEK293_1",
+      "model": "seq2ribo",
+      "n": 601,
+      "pearson": 0.23677660386148022
+    },
+    {
+      "study": "Dieterich_4sU_HEK293_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 601,
+      "pearson": 0.27105495286942133
+    },
+    {
+      "study": "Dieterich_4sU_HEK293_2",
+      "model": "HL_aux",
+      "n": 601,
+      "pearson": 0.5263070090701305
+    },
+    {
+      "study": "Dieterich_4sU_HEK293_2",
+      "model": "ours100000",
+      "n": 601,
+      "pearson": 0.3074038385388683
+    },
+    {
+      "study": "Dieterich_4sU_HEK293_2",
+      "model": "seq2ribo",
+      "n": 601,
+      "pearson": 0.2735733030182976
+    },
+    {
+      "study": "Dieterich_4sU_HEK293_2",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 601,
+      "pearson": 0.32351623353712045
+    },
+    {
+      "study": "Dieterich_4sU_MCF7_1",
+      "model": "HL_aux",
+      "n": 550,
+      "pearson": 0.3754239275286526
+    },
+    {
+      "study": "Dieterich_4sU_MCF7_1",
+      "model": "ours100000",
+      "n": 550,
+      "pearson": 0.33139551195662525
+    },
+    {
+      "study": "Dieterich_4sU_MCF7_1",
+      "model": "seq2ribo",
+      "n": 550,
+      "pearson": 0.288392128618828
+    },
+    {
+      "study": "Dieterich_4sU_MCF7_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 550,
+      "pearson": 0.33445203109780275
+    },
+    {
+      "study": "Dieterich_4sU_MCF7_2",
+      "model": "HL_aux",
+      "n": 550,
+      "pearson": 0.41082018928660935
+    },
+    {
+      "study": "Dieterich_4sU_MCF7_2",
+      "model": "ours100000",
+      "n": 550,
+      "pearson": 0.40354226303610025
+    },
+    {
+      "study": "Dieterich_4sU_MCF7_2",
+      "model": "seq2ribo",
+      "n": 550,
+      "pearson": 0.35941352636314644
+    },
+    {
+      "study": "Dieterich_4sU_MCF7_2",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 550,
+      "pearson": 0.27576878756809003
+    },
+    {
+      "study": "He_ActD_HeLa_1",
+      "model": "HL_aux",
+      "n": 726,
+      "pearson": 0.35737821605891895
+    },
+    {
+      "study": "He_ActD_HeLa_1",
+      "model": "ours100000",
+      "n": 726,
+      "pearson": 0.20600329544887933
+    },
+    {
+      "study": "He_ActD_HeLa_1",
+      "model": "seq2ribo",
+      "n": 726,
+      "pearson": 0.17833414543041137
+    },
+    {
+      "study": "He_ActD_HeLa_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 726,
+      "pearson": 0.25803537303539087
+    },
+    {
+      "study": "He_ActD_HeLa_2",
+      "model": "HL_aux",
+      "n": 739,
+      "pearson": 0.39486630243329734
+    },
+    {
+      "study": "He_ActD_HeLa_2",
+      "model": "ours100000",
+      "n": 739,
+      "pearson": 0.24302648565579657
+    },
+    {
+      "study": "He_ActD_HeLa_2",
+      "model": "seq2ribo",
+      "n": 739,
+      "pearson": 0.21227075213275926
+    },
+    {
+      "study": "He_ActD_HeLa_2",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 739,
+      "pearson": 0.21482835129345312
+    },
+    {
+      "study": "Marks_ActD_HeLa_1",
+      "model": "HL_aux",
+      "n": 553,
+      "pearson": -0.4038206552238231
+    },
+    {
+      "study": "Marks_ActD_HeLa_1",
+      "model": "ours100000",
+      "n": 553,
+      "pearson": -0.30617916401644324
+    },
+    {
+      "study": "Marks_ActD_HeLa_1",
+      "model": "seq2ribo",
+      "n": 553,
+      "pearson": -0.23424345078310796
+    },
+    {
+      "study": "Marks_ActD_HeLa_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 553,
+      "pearson": -0.20241674070921772
+    },
+    {
+      "study": "Darnell_ActD_HepG2_1",
+      "model": "HL_aux",
+      "n": 254,
+      "pearson": -0.40682329342548496
+    },
+    {
+      "study": "Darnell_ActD_HepG2_1",
+      "model": "ours100000",
+      "n": 254,
+      "pearson": -0.2593714036053726
+    },
+    {
+      "study": "Darnell_ActD_HepG2_1",
+      "model": "seq2ribo",
+      "n": 254,
+      "pearson": -0.23772161613694184
+    },
+    {
+      "study": "Darnell_ActD_HepG2_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 254,
+      "pearson": -0.09177861710990114
+    },
+    {
+      "study": "Mortazavi_4sU_GM12878_1",
+      "model": "HL_aux",
+      "n": 633,
+      "pearson": 0.3641509993472641
+    },
+    {
+      "study": "Mortazavi_4sU_GM12878_1",
+      "model": "ours100000",
+      "n": 633,
+      "pearson": 0.28651958166002056
+    },
+    {
+      "study": "Mortazavi_4sU_GM12878_1",
+      "model": "seq2ribo",
+      "n": 633,
+      "pearson": 0.2285368231436898
+    },
+    {
+      "study": "Mortazavi_4sU_GM12878_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 633,
+      "pearson": 0.27591500423068793
+    },
+    {
+      "study": "Rissland2_ActD_HEK293_1",
+      "model": "HL_aux",
+      "n": 787,
+      "pearson": 0.3764017528753729
+    },
+    {
+      "study": "Rissland2_ActD_HEK293_1",
+      "model": "ours100000",
+      "n": 787,
+      "pearson": 0.22549261123905626
+    },
+    {
+      "study": "Rissland2_ActD_HEK293_1",
+      "model": "seq2ribo",
+      "n": 787,
+      "pearson": 0.200914172875887
+    },
+    {
+      "study": "Rissland2_ActD_HEK293_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 787,
+      "pearson": 0.1380505004777117
+    },
+    {
+      "study": "Rissland2_ActD_HEK293_2",
+      "model": "HL_aux",
+      "n": 819,
+      "pearson": 0.32296788608924787
+    },
+    {
+      "study": "Rissland2_ActD_HEK293_2",
+      "model": "ours100000",
+      "n": 819,
+      "pearson": 0.17228835991704816
+    },
+    {
+      "study": "Rissland2_ActD_HEK293_2",
+      "model": "seq2ribo",
+      "n": 819,
+      "pearson": 0.1709620390315689
+    },
+    {
+      "study": "Rissland2_ActD_HEK293_2",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 819,
+      "pearson": 0.11339224038323775
+    },
+    {
+      "study": "Rissland2_Aman_HEK293_1",
+      "model": "HL_aux",
+      "n": 809,
+      "pearson": 0.30731503239967456
+    },
+    {
+      "study": "Rissland2_Aman_HEK293_1",
+      "model": "ours100000",
+      "n": 809,
+      "pearson": 0.12760189267566177
+    },
+    {
+      "study": "Rissland2_Aman_HEK293_1",
+      "model": "seq2ribo",
+      "n": 809,
+      "pearson": 0.12023468595767343
+    },
+    {
+      "study": "Rissland2_Aman_HEK293_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 809,
+      "pearson": 0.043312502760022444
+    },
+    {
+      "study": "Rissland2_Aman_HEK293_2",
+      "model": "HL_aux",
+      "n": 831,
+      "pearson": 0.32291861304367137
+    },
+    {
+      "study": "Rissland2_Aman_HEK293_2",
+      "model": "ours100000",
+      "n": 831,
+      "pearson": 0.18806349654687743
+    },
+    {
+      "study": "Rissland2_Aman_HEK293_2",
+      "model": "seq2ribo",
+      "n": 831,
+      "pearson": 0.18760482901122133
+    },
+    {
+      "study": "Rissland2_Aman_HEK293_2",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 831,
+      "pearson": 0.13326869781651893
+    },
+    {
+      "study": "Rissland2_4sU_HEK293_1",
+      "model": "HL_aux",
+      "n": 825,
+      "pearson": 0.46568331232947746
+    },
+    {
+      "study": "Rissland2_4sU_HEK293_1",
+      "model": "ours100000",
+      "n": 825,
+      "pearson": 0.348675083799471
+    },
+    {
+      "study": "Rissland2_4sU_HEK293_1",
+      "model": "seq2ribo",
+      "n": 825,
+      "pearson": 0.3073423218483933
+    },
+    {
+      "study": "Rissland2_4sU_HEK293_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 825,
+      "pearson": 0.3295140443719522
+    },
+    {
+      "study": "Rissland2_4sU_HEK293_2",
+      "model": "HL_aux",
+      "n": 549,
+      "pearson": 0.33095277891339064
+    },
+    {
+      "study": "Rissland2_4sU_HEK293_2",
+      "model": "ours100000",
+      "n": 549,
+      "pearson": 0.21333965604714233
+    },
+    {
+      "study": "Rissland2_4sU_HEK293_2",
+      "model": "seq2ribo",
+      "n": 549,
+      "pearson": 0.20360489110550825
+    },
+    {
+      "study": "Rissland2_4sU_HEK293_2",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 549,
+      "pearson": 0.2189226369915448
+    },
+    {
+      "study": "Zimmer_ActD_Bcell_1",
+      "model": "HL_aux",
+      "n": 492,
+      "pearson": 0.4309213493017508
+    },
+    {
+      "study": "Zimmer_ActD_Bcell_1",
+      "model": "ours100000",
+      "n": 492,
+      "pearson": 0.3116919972487947
+    },
+    {
+      "study": "Zimmer_ActD_Bcell_1",
+      "model": "seq2ribo",
+      "n": 492,
+      "pearson": 0.28076519521456716
+    },
+    {
+      "study": "Zimmer_ActD_Bcell_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 492,
+      "pearson": 0.27848189258119044
+    },
+    {
+      "study": "Gejman_4sU_GM07029_1",
+      "model": "HL_aux",
+      "n": 596,
+      "pearson": 0.19740889701089337
+    },
+    {
+      "study": "Gejman_4sU_GM07029_1",
+      "model": "ours100000",
+      "n": 596,
+      "pearson": 0.16328567344897982
+    },
+    {
+      "study": "Gejman_4sU_GM07029_1",
+      "model": "seq2ribo",
+      "n": 596,
+      "pearson": 0.1442012204088199
+    },
+    {
+      "study": "Gejman_4sU_GM07029_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 596,
+      "pearson": 0.11487175951445026
+    },
+    {
+      "study": "Gejman_4sU_GM07029_2",
+      "model": "HL_aux",
+      "n": 596,
+      "pearson": 0.18175934105991282
+    },
+    {
+      "study": "Gejman_4sU_GM07029_2",
+      "model": "ours100000",
+      "n": 596,
+      "pearson": 0.19578583123943402
+    },
+    {
+      "study": "Gejman_4sU_GM07029_2",
+      "model": "seq2ribo",
+      "n": 596,
+      "pearson": 0.15825216946151707
+    },
+    {
+      "study": "Gejman_4sU_GM07029_2",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 596,
+      "pearson": 0.10132772392801653
+    },
+    {
+      "study": "Gejman_4sU_GM07029_3",
+      "model": "HL_aux",
+      "n": 596,
+      "pearson": 0.23765384394409406
+    },
+    {
+      "study": "Gejman_4sU_GM07029_3",
+      "model": "ours100000",
+      "n": 596,
+      "pearson": 0.2430237945960584
+    },
+    {
+      "study": "Gejman_4sU_GM07029_3",
+      "model": "seq2ribo",
+      "n": 596,
+      "pearson": 0.18566364101820854
+    },
+    {
+      "study": "Gejman_4sU_GM07029_3",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 596,
+      "pearson": 0.1585497528664862
+    },
+    {
+      "study": "Gejman_4sU_GM10835_1",
+      "model": "HL_aux",
+      "n": 596,
+      "pearson": 0.27237730789478565
+    },
+    {
+      "study": "Gejman_4sU_GM10835_1",
+      "model": "ours100000",
+      "n": 596,
+      "pearson": 0.281352298578704
+    },
+    {
+      "study": "Gejman_4sU_GM10835_1",
+      "model": "seq2ribo",
+      "n": 596,
+      "pearson": 0.21785309671048683
+    },
+    {
+      "study": "Gejman_4sU_GM10835_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 596,
+      "pearson": 0.1508132372599163
+    },
+    {
+      "study": "Gejman_4sU_GM10835_2",
+      "model": "HL_aux",
+      "n": 596,
+      "pearson": 0.21973403017435172
+    },
+    {
+      "study": "Gejman_4sU_GM10835_2",
+      "model": "ours100000",
+      "n": 596,
+      "pearson": 0.23592444966091405
+    },
+    {
+      "study": "Gejman_4sU_GM10835_2",
+      "model": "seq2ribo",
+      "n": 596,
+      "pearson": 0.1997018455458213
+    },
+    {
+      "study": "Gejman_4sU_GM10835_2",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 596,
+      "pearson": 0.09883848096165544
+    },
+    {
+      "study": "Gejman_4sU_GM10835_3",
+      "model": "HL_aux",
+      "n": 596,
+      "pearson": 0.24082431615738528
+    },
+    {
+      "study": "Gejman_4sU_GM10835_3",
+      "model": "ours100000",
+      "n": 596,
+      "pearson": 0.26102784778380417
+    },
+    {
+      "study": "Gejman_4sU_GM10835_3",
+      "model": "seq2ribo",
+      "n": 596,
+      "pearson": 0.2079704007980396
+    },
+    {
+      "study": "Gejman_4sU_GM10835_3",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 596,
+      "pearson": 0.13365910798351427
+    },
+    {
+      "study": "Gejman_4sU_GM12813_1",
+      "model": "HL_aux",
+      "n": 596,
+      "pearson": 0.17889383882681706
+    },
+    {
+      "study": "Gejman_4sU_GM12813_1",
+      "model": "ours100000",
+      "n": 596,
+      "pearson": 0.05060716835645064
+    },
+    {
+      "study": "Gejman_4sU_GM12813_1",
+      "model": "seq2ribo",
+      "n": 596,
+      "pearson": 0.03285757318130346
+    },
+    {
+      "study": "Gejman_4sU_GM12813_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 596,
+      "pearson": 0.0616955359898949
+    },
+    {
+      "study": "Gejman_4sU_GM12813_2",
+      "model": "HL_aux",
+      "n": 596,
+      "pearson": 0.1326194916867126
+    },
+    {
+      "study": "Gejman_4sU_GM12813_2",
+      "model": "ours100000",
+      "n": 596,
+      "pearson": 0.050150651504514115
+    },
+    {
+      "study": "Gejman_4sU_GM12813_2",
+      "model": "seq2ribo",
+      "n": 596,
+      "pearson": 0.04465824299124799
+    },
+    {
+      "study": "Gejman_4sU_GM12813_2",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 596,
+      "pearson": 0.02598103579618717
+    },
+    {
+      "study": "Gejman_4sU_GM12813_3",
+      "model": "HL_aux",
+      "n": 596,
+      "pearson": 0.1629522304791378
+    },
+    {
+      "study": "Gejman_4sU_GM12813_3",
+      "model": "ours100000",
+      "n": 596,
+      "pearson": 0.0606083457294321
+    },
+    {
+      "study": "Gejman_4sU_GM12813_3",
+      "model": "seq2ribo",
+      "n": 596,
+      "pearson": 0.04269416145987903
+    },
+    {
+      "study": "Gejman_4sU_GM12813_3",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 596,
+      "pearson": 0.06192252151610041
+    },
+    {
+      "study": "Gejman_4sU_GM12813_4",
+      "model": "HL_aux",
+      "n": 596,
+      "pearson": 0.11168801105670058
+    },
+    {
+      "study": "Gejman_4sU_GM12813_4",
+      "model": "ours100000",
+      "n": 596,
+      "pearson": 0.022993447200020407
+    },
+    {
+      "study": "Gejman_4sU_GM12813_4",
+      "model": "seq2ribo",
+      "n": 596,
+      "pearson": 0.025411096488304682
+    },
+    {
+      "study": "Gejman_4sU_GM12813_4",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 596,
+      "pearson": 0.01387748862425416
+    },
+    {
+      "study": "Gejman_4sU_GM12813_5",
+      "model": "HL_aux",
+      "n": 596,
+      "pearson": 0.15180735958633387
+    },
+    {
+      "study": "Gejman_4sU_GM12813_5",
+      "model": "ours100000",
+      "n": 596,
+      "pearson": 0.021058959484560606
+    },
+    {
+      "study": "Gejman_4sU_GM12813_5",
+      "model": "seq2ribo",
+      "n": 596,
+      "pearson": 0.011714200398767353
+    },
+    {
+      "study": "Gejman_4sU_GM12813_5",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 596,
+      "pearson": 0.02047903806867942
+    },
+    {
+      "study": "Gejman_4sU_GM07019_1",
+      "model": "HL_aux",
+      "n": 596,
+      "pearson": 0.1491872634825278
+    },
+    {
+      "study": "Gejman_4sU_GM07019_1",
+      "model": "ours100000",
+      "n": 596,
+      "pearson": 0.11836713288965792
+    },
+    {
+      "study": "Gejman_4sU_GM07019_1",
+      "model": "seq2ribo",
+      "n": 596,
+      "pearson": 0.08195920369593994
+    },
+    {
+      "study": "Gejman_4sU_GM07019_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 596,
+      "pearson": 0.10772858435506862
+    },
+    {
+      "study": "Gejman_4sU_GM12812_1",
+      "model": "HL_aux",
+      "n": 596,
+      "pearson": 0.10581324658432933
+    },
+    {
+      "study": "Gejman_4sU_GM12812_1",
+      "model": "ours100000",
+      "n": 596,
+      "pearson": 0.030848339702417862
+    },
+    {
+      "study": "Gejman_4sU_GM12812_1",
+      "model": "seq2ribo",
+      "n": 596,
+      "pearson": 0.00822957154771899
+    },
+    {
+      "study": "Gejman_4sU_GM12812_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 596,
+      "pearson": 0.05948731444514873
+    },
+    {
+      "study": "Gejman_4sU_GM12814_1",
+      "model": "HL_aux",
+      "n": 596,
+      "pearson": 0.13931597436080234
+    },
+    {
+      "study": "Gejman_4sU_GM12814_1",
+      "model": "ours100000",
+      "n": 596,
+      "pearson": 0.022914915266190255
+    },
+    {
+      "study": "Gejman_4sU_GM12814_1",
+      "model": "seq2ribo",
+      "n": 596,
+      "pearson": 0.00937021864675531
+    },
+    {
+      "study": "Gejman_4sU_GM12814_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 596,
+      "pearson": 0.04892250275318728
+    },
+    {
+      "study": "Gejman_4sU_GM12815_1",
+      "model": "HL_aux",
+      "n": 596,
+      "pearson": 0.11411602851637742
+    },
+    {
+      "study": "Gejman_4sU_GM12815_1",
+      "model": "ours100000",
+      "n": 596,
+      "pearson": 0.04204654161562612
+    },
+    {
+      "study": "Gejman_4sU_GM12815_1",
+      "model": "seq2ribo",
+      "n": 596,
+      "pearson": 0.041388067997934486
+    },
+    {
+      "study": "Gejman_4sU_GM12815_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 596,
+      "pearson": 0.04305783907325326
+    },
+    {
+      "study": "Simon_4sU_K562_1",
+      "model": "HL_aux",
+      "n": 416,
+      "pearson": 0.48080349643451314
+    },
+    {
+      "study": "Simon_4sU_K562_1",
+      "model": "ours100000",
+      "n": 416,
+      "pearson": 0.47393614608709167
+    },
+    {
+      "study": "Simon_4sU_K562_1",
+      "model": "seq2ribo",
+      "n": 416,
+      "pearson": 0.4283558228578358
+    },
+    {
+      "study": "Simon_4sU_K562_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 416,
+      "pearson": 0.4180966398155833
+    },
+    {
+      "study": "Simon_4sU_K562_2",
+      "model": "HL_aux",
+      "n": 416,
+      "pearson": 0.4813940857935102
+    },
+    {
+      "study": "Simon_4sU_K562_2",
+      "model": "ours100000",
+      "n": 416,
+      "pearson": 0.47566596444062265
+    },
+    {
+      "study": "Simon_4sU_K562_2",
+      "model": "seq2ribo",
+      "n": 416,
+      "pearson": 0.41987349778758287
+    },
+    {
+      "study": "Simon_4sU_K562_2",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 416,
+      "pearson": 0.417745231006971
+    },
+    {
+      "study": "Rissland_4sU_HEK293_1",
+      "model": "HL_aux",
+      "n": 709,
+      "pearson": 0.3195589389558343
+    },
+    {
+      "study": "Rissland_4sU_HEK293_1",
+      "model": "ours100000",
+      "n": 709,
+      "pearson": 0.19408946226255266
+    },
+    {
+      "study": "Rissland_4sU_HEK293_1",
+      "model": "seq2ribo",
+      "n": 709,
+      "pearson": 0.16275537786867456
+    },
+    {
+      "study": "Rissland_4sU_HEK293_1",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 709,
+      "pearson": 0.12663185711839353
+    },
+    {
+      "study": "Rissland_4sU_HEK293_2",
+      "model": "HL_aux",
+      "n": 548,
+      "pearson": 0.20634652489104996
+    },
+    {
+      "study": "Rissland_4sU_HEK293_2",
+      "model": "ours100000",
+      "n": 548,
+      "pearson": 0.22271991538003366
+    },
+    {
+      "study": "Rissland_4sU_HEK293_2",
+      "model": "seq2ribo",
+      "n": 548,
+      "pearson": 0.1691064921495761
+    },
+    {
+      "study": "Rissland_4sU_HEK293_2",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 548,
+      "pearson": 0.09290861681135054
+    },
+    {
+      "study": "Rissland_4sU_HEK293_3",
+      "model": "HL_aux",
+      "n": 624,
+      "pearson": 0.23130721376153443
+    },
+    {
+      "study": "Rissland_4sU_HEK293_3",
+      "model": "ours100000",
+      "n": 624,
+      "pearson": 0.25201151312261266
+    },
+    {
+      "study": "Rissland_4sU_HEK293_3",
+      "model": "seq2ribo",
+      "n": 624,
+      "pearson": 0.1931769000209051
+    },
+    {
+      "study": "Rissland_4sU_HEK293_3",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 624,
+      "pearson": 0.09138053278883354
+    },
+    {
+      "study": "Rissland_4sU_HEK293_4",
+      "model": "HL_aux",
+      "n": 713,
+      "pearson": 0.2360659508679853
+    },
+    {
+      "study": "Rissland_4sU_HEK293_4",
+      "model": "ours100000",
+      "n": 713,
+      "pearson": 0.30427365276890167
+    },
+    {
+      "study": "Rissland_4sU_HEK293_4",
+      "model": "seq2ribo",
+      "n": 713,
+      "pearson": 0.2867917322517729
+    },
+    {
+      "study": "Rissland_4sU_HEK293_4",
+      "model": "RiboDecode_fixedRNA_TEproxy",
+      "n": 713,
+      "pearson": 0.14462042650351628
+    }
+  ],
+  "warning": "Do not call this original Saluki model inference or independent54 studies; source columns include replicates."
+}

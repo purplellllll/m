@@ -1,0 +1,140 @@
+{
+  "status": "completed",
+  "metrics": [
+    {
+      "model": "aa_composition",
+      "n": 944,
+      "pearson": 0.2809588137078561,
+      "ci95": [
+        0.2235359256758425,
+        0.33699190208600094
+      ],
+      "mse": 3.951771066815402,
+      "alpha": 1000.0
+    },
+    {
+      "model": "aa_composition",
+      "task": "E0_vs_E5",
+      "n": 571,
+      "auroc": 0.6970638820638821,
+      "auprc": 0.6781743720327209
+    },
+    {
+      "model": "cds_composition",
+      "n": 944,
+      "pearson": 0.3111903519281078,
+      "ci95": [
+        0.2557496484796803,
+        0.3657430005968532
+      ],
+      "mse": 3.86964853491172,
+      "alpha": 1000.0
+    },
+    {
+      "model": "cds_composition",
+      "task": "E0_vs_E5",
+      "n": 571,
+      "auroc": 0.7141277641277641,
+      "auprc": 0.6721135223365515
+    },
+    {
+      "model": "cds_composition_plus_fold",
+      "n": 944,
+      "pearson": 0.35426864507364975,
+      "ci95": [
+        0.3012826773740984,
+        0.40757954520089407
+      ],
+      "mse": 3.749074462404188,
+      "alpha": 100.0
+    },
+    {
+      "model": "cds_composition_plus_fold",
+      "task": "E0_vs_E5",
+      "n": 571,
+      "auroc": 0.7308230958230959,
+      "auprc": 0.6898026247281501
+    }
+  ],
+  "validation_choices": {
+    "aa_composition": [
+      {
+        "validation_mse": 3.7999677456589622,
+        "alpha": 0.1
+      },
+      {
+        "validation_mse": 3.799793164176392,
+        "alpha": 1.0
+      },
+      {
+        "validation_mse": 3.798190103206928,
+        "alpha": 10.0
+      },
+      {
+        "validation_mse": 3.789850448572926,
+        "alpha": 100.0
+      },
+      {
+        "validation_mse": 3.778514649481239,
+        "alpha": 1000.0
+      },
+      {
+        "validation_mse": 3.830961854181929,
+        "alpha": 10000.0
+      }
+    ],
+    "cds_composition": [
+      {
+        "validation_mse": 3.5956494569024304,
+        "alpha": 0.1
+      },
+      {
+        "validation_mse": 3.595229307682148,
+        "alpha": 1.0
+      },
+      {
+        "validation_mse": 3.592992469053255,
+        "alpha": 10.0
+      },
+      {
+        "validation_mse": 3.5795001153775314,
+        "alpha": 100.0
+      },
+      {
+        "validation_mse": 3.576419335740546,
+        "alpha": 1000.0
+      },
+      {
+        "validation_mse": 3.736320177202782,
+        "alpha": 10000.0
+      }
+    ],
+    "cds_composition_plus_fold": [
+      {
+        "validation_mse": 3.490788886501293,
+        "alpha": 0.1
+      },
+      {
+        "validation_mse": 3.4901598488222856,
+        "alpha": 1.0
+      },
+      {
+        "validation_mse": 3.4865024617308635,
+        "alpha": 10.0
+      },
+      {
+        "validation_mse": 3.4707469825035733,
+        "alpha": 100.0
+      },
+      {
+        "validation_mse": 3.472750119909588,
+        "alpha": 1000.0
+      },
+      {
+        "validation_mse": 3.678557649111698,
+        "alpha": 10000.0
+      }
+    ]
+  },
+  "acceptance": "Ordinal cross-protein expression baseline, not functional-expression plus half-life verification"
+}

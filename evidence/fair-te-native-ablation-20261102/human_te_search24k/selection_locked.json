@@ -1,0 +1,56 @@
+{
+  "arm": "no_stats",
+  "validation_mean_per_seed": {
+    "no_stats": 0.625631019615845
+  },
+  "models": [
+    {
+      "status": "completed",
+      "arm": "no_stats",
+      "seed": 30101,
+      "best_step": 24000,
+      "validation_pearson": 0.6168047188490255,
+      "best_path": "F:\\科研实验复现\\新建文件夹\\runs\\te_stability_20261102\\te_24000\\models\\no_stats_30101\\best.pt",
+      "checkpoint_sha256": "6ac18fdba4d66e639a90660acdffd4ef04882375c349f9358f1e96da57cf4819",
+      "last_step": 24000,
+      "seen_transcripts": 135782
+    },
+    {
+      "status": "completed",
+      "arm": "no_stats",
+      "seed": 30102,
+      "best_step": 23000,
+      "validation_pearson": 0.6344573203826643,
+      "best_path": "F:\\科研实验复现\\新建文件夹\\runs\\te_stability_20261102\\te_24000\\models\\no_stats_30102\\best.pt",
+      "checkpoint_sha256": "0a57225c66b9f2f0825a3067718c7e9235d309a6b9d34d9c3b88d7a5fd13b910",
+      "last_step": 24000,
+      "seen_transcripts": 135852
+    }
+  ],
+  "selected_models": [
+    {
+      "status": "completed",
+      "arm": "no_stats",
+      "seed": 30101,
+      "best_step": 24000,
+      "validation_pearson": 0.6168047188490255,
+      "best_path": "F:\\科研实验复现\\新建文件夹\\runs\\te_stability_20261102\\te_24000\\models\\no_stats_30101\\best.pt",
+      "checkpoint_sha256": "6ac18fdba4d66e639a90660acdffd4ef04882375c349f9358f1e96da57cf4819",
+      "last_step": 24000,
+      "seen_transcripts": 135782
+    },
+    {
+      "status": "completed",
+      "arm": "no_stats",
+      "seed": 30102,
+      "best_step": 23000,
+      "validation_pearson": 0.6344573203826643,
+      "best_path": "F:\\科研实验复现\\新建文件夹\\runs\\te_stability_20261102\\te_24000\\models\\no_stats_30102\\best.pt",
+      "checkpoint_sha256": "0a57225c66b9f2f0825a3067718c7e9235d309a6b9d34d9c3b88d7a5fd13b910",
+      "last_step": 24000,
+      "seen_transcripts": 135852
+    }
+  ],
+  "test_predicted": false,
+  "protocol_sha256": "fb12276b155dd9a0335035e515d83fda062926be2da20ff914ca65c71fd121aa"
+}

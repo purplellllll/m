@@ -1,0 +1,33 @@
+{
+  "status": "completed",
+  "metrics": [
+    {
+      "model": "ours_width424_mRFP_finetune",
+      "n": 217,
+      "pearson": 0.8510130428660576,
+      "ci95": [
+        0.7990757451767841,
+        0.8946481649917997
+      ]
+    },
+    {
+      "model": "seq2ribo_native_mRFP_ipsc",
+      "n": 217,
+      "pearson": 0.9033417624519616,
+      "ci95": [
+        0.872361018924775,
+        0.9285072523454874
+      ]
+    },
+    {
+      "model": "RiboDecode_fixedRNA_human_proxy",
+      "n": 217,
+      "pearson": 0.29304970756775767,
+      "ci95": [
+        0.18207310612395874,
+        0.4010346906827226
+      ]
+    }
+  ],
+  "warning": "Different native training tasks, hosts and resources; no claim of fair architecture comparison"
+}
