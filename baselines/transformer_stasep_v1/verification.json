@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "baseline_id": "transformer_stasep_v1",
+  "weight_files": 4,
+  "metrics_recomputed": 6,
+  "maximum_pearson_error": 0.0,
+  "CPU_parity": [
+    {
+      "arm": "sequence",
+      "real_validation_sequences": 3,
+      "max_native_target_error": 1.3916807517944108e-05,
+      "strict_load": true
+    },
+    {
+      "arm": "dynamics",
+      "real_validation_sequences": 3,
+      "max_native_target_error": 7.95246144491557e-06,
+      "strict_load": true
+    }
+  ]
+}

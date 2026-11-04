@@ -12,3 +12,6 @@ models/20261102/** -text
 evidence/fair-te-native-ablation-20261102/** -text
 
 historical/fair-te-native-ablation-20261102/** -text
+
+# Frozen baseline evidence: preserve exact checksum bytes
+baselines/transformer_stasep_v1/** -text

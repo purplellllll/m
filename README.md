@@ -1,3 +1,11 @@
+# 固定研发基线：Transformer+sTASEP v1
+
+后续模型加减以[此固定基线](baselines/transformer_stasep_v1/README_中文.md)为起点。主模型表达Pearson **0.8675（约0.87）**；同时保留纯序列对照 **0.8720**。
+
+固定tag：`baseline-transformer-stasep-v1-20261105`。模型/指标/来源SHA：[BASELINE.json](baselines/transformer_stasep_v1/BASELINE.json)。以下内容为原历史研究归档。
+
+---
+
 [人源TE公平基线、三路消融与原生优化对照](docs/FAIR_TE_NATIVE_ABLATION_20261102_ZH.md)
 
 # RiboSeq scorer — human TE results and model handoff

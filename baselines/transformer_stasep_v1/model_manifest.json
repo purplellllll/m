@@ -1,0 +1,42 @@
+{
+  "models": [
+    {
+      "file": "profile/sequence_30101.pt",
+      "sha256": "5f47a3e353fc1fee9f30510c6c7fe63c81f846d32e105d7ae255820192ba783b",
+      "source_checkpoint_sha256": "a630e2bed6c048634a001ddcf32b6c331613ed2ec8b34c1244d1df4face248d5",
+      "seed": 30101,
+      "arm": "sequence",
+      "stage": "profile",
+      "selected_step": 6000
+    },
+    {
+      "file": "profile/sequence_30102.pt",
+      "sha256": "919c70a9cd3d2fb1586a06ee5d7497236acde5591a7735f997a6153d5558a66a",
+      "source_checkpoint_sha256": "058d4dc774dc5c13668f9a735a908fcf07e8af27622e222a344146b056158a0e",
+      "seed": 30102,
+      "arm": "sequence",
+      "stage": "profile",
+      "selected_step": 6000
+    },
+    {
+      "file": "profile/dynamics_30101.pt",
+      "sha256": "9eff116e945052972a577e87fc32cf9d45dc588073837392c5ae39dae818fa12",
+      "source_checkpoint_sha256": "8d714dd9970d16ea9f9db8387a9014cc7af27cdb4f3a227fab1850eb904bf52c",
+      "seed": 30101,
+      "arm": "dynamics",
+      "stage": "profile",
+      "selected_step": 6000
+    },
+    {
+      "file": "profile/dynamics_30102.pt",
+      "sha256": "140ddef12a9fa6fda5076ae7e0dd75adc093371d65d5a4730dcd3d2eaea31581",
+      "source_checkpoint_sha256": "2fbc20b31f6118220d0a511529bf6defe03520c9aeb04f78a866dc437f62638e",
+      "seed": 30102,
+      "arm": "dynamics",
+      "stage": "profile",
+      "selected_step": 6000
+    }
+  ],
+  "own_trained_weights_only": true,
+  "optimizer_and_raw_data_included": false
+}

@@ -1,0 +1,181 @@
+{
+  "baseline_id": "transformer_stasep_v1",
+  "frozen_date": "2026-11-05 Asia/Shanghai",
+  "branch": "baseline/transformer-stasep-v1",
+  "tag": "baseline-transformer-stasep-v1-20261105",
+  "source_commit": "7ac032ad09439e27f9eb32f2f3b495b5c0656b32",
+  "source_run": "multitask_profile_20261102",
+  "primary": {
+    "stage": "profile",
+    "arm": "dynamics",
+    "seeds": [
+      30101,
+      30102
+    ],
+    "ensemble": "arithmetic mean of both selected seeds"
+  },
+  "control": {
+    "stage": "profile",
+    "arm": "sequence",
+    "seeds": [
+      30101,
+      30102
+    ]
+  },
+  "architecture": "Width192 two-layer Transformer, codon/AA/host embeddings, native5/3UTR encoder and statistics; 12node+36global host-specific relative-occupancy sTASEP features. Four E/H/S/auxTE heads.",
+  "historical_metrics": [
+    {
+      "task": "expression",
+      "arm": "sequence",
+      "n": 217,
+      "pearson": 0.8719799409761604,
+      "ci95": [
+        0.8320613967853617,
+        0.9031100315278123
+      ]
+    },
+    {
+      "task": "expression",
+      "arm": "dynamics",
+      "n": 217,
+      "pearson": 0.8675300743338646,
+      "ci95": [
+        0.8250201277817774,
+        0.9011718839308772
+      ]
+    },
+    {
+      "task": "half_life",
+      "arm": "sequence",
+      "n": 601,
+      "pearson": 0.5734550146917209,
+      "ci95": [
+        0.5100058850282907,
+        0.6294748788708635
+      ]
+    },
+    {
+      "task": "half_life",
+      "arm": "dynamics",
+      "n": 601,
+      "pearson": 0.5749144371767623,
+      "ci95": [
+        0.5123724539465042,
+        0.6302627667312527
+      ]
+    },
+    {
+      "task": "solubility",
+      "arm": "sequence",
+      "n": 370,
+      "pearson": 0.7088808757463133,
+      "ci95": [
+        0.650065742225002,
+        0.7597792307530782
+      ]
+    },
+    {
+      "task": "solubility",
+      "arm": "dynamics",
+      "n": 370,
+      "pearson": 0.7075755981457301,
+      "ci95": [
+        0.6457326805581242,
+        0.7597497262718416
+      ]
+    }
+  ],
+  "predictions_file": "baselines/transformer_stasep_v1/predictions.csv",
+  "selected_checkpoints": [
+    {
+      "file": "profile/sequence_30101.pt",
+      "sha256": "5f47a3e353fc1fee9f30510c6c7fe63c81f846d32e105d7ae255820192ba783b",
+      "source_checkpoint_sha256": "a630e2bed6c048634a001ddcf32b6c331613ed2ec8b34c1244d1df4face248d5",
+      "seed": 30101,
+      "arm": "sequence",
+      "stage": "profile",
+      "selected_step": 6000
+    },
+    {
+      "file": "profile/sequence_30102.pt",
+      "sha256": "919c70a9cd3d2fb1586a06ee5d7497236acde5591a7735f997a6153d5558a66a",
+      "source_checkpoint_sha256": "058d4dc774dc5c13668f9a735a908fcf07e8af27622e222a344146b056158a0e",
+      "seed": 30102,
+      "arm": "sequence",
+      "stage": "profile",
+      "selected_step": 6000
+    },
+    {
+      "file": "profile/dynamics_30101.pt",
+      "sha256": "9eff116e945052972a577e87fc32cf9d45dc588073837392c5ae39dae818fa12",
+      "source_checkpoint_sha256": "8d714dd9970d16ea9f9db8387a9014cc7af27cdb4f3a227fab1850eb904bf52c",
+      "seed": 30101,
+      "arm": "dynamics",
+      "stage": "profile",
+      "selected_step": 6000
+    },
+    {
+      "file": "profile/dynamics_30102.pt",
+      "sha256": "140ddef12a9fa6fda5076ae7e0dd75adc093371d65d5a4730dcd3d2eaea31581",
+      "source_checkpoint_sha256": "2fbc20b31f6118220d0a511529bf6defe03520c9aeb04f78a866dc437f62638e",
+      "seed": 30102,
+      "arm": "dynamics",
+      "stage": "profile",
+      "selected_step": 6000
+    }
+  ],
+  "asset_file_sha256": {
+    "model_manifest.json": "9dc6eec7182fa12d26d171f59b3f884191bf10a16235f4276d5cc4a646a22673",
+    "profile/dynamics_30101.pt": "9eff116e945052972a577e87fc32cf9d45dc588073837392c5ae39dae818fa12",
+    "profile/dynamics_30102.pt": "140ddef12a9fa6fda5076ae7e0dd75adc093371d65d5a4730dcd3d2eaea31581",
+    "profile/ecoli_parameters.json": "1610ef7d4e98fb0900f92d08777264a32c5cd1b8aeecf43319e80544010c231c",
+    "profile/human_parameters.json": "8b86715282df84bc59bbe19987d59a4f0c59ea759b21865974f587c7f769893b",
+    "profile/input_scaler.npz": "78c9015f1bd4587996c19f0dcad8cb5c6116eef8c9f92f534cec721c1d13ac81",
+    "profile/sequence_30101.pt": "5f47a3e353fc1fee9f30510c6c7fe63c81f846d32e105d7ae255820192ba783b",
+    "profile/sequence_30102.pt": "919c70a9cd3d2fb1586a06ee5d7497236acde5591a7735f997a6153d5558a66a",
+    "profile/target_statistics.json": "d4b11fb8909b2119278e3ca8c10573eed74cbcc558e85449b8bca4f09a378f3a"
+  },
+  "frozen_code_sha256": {
+    "baselines/transformer_stasep_v1/predictions.csv": "09246baa14ce53fbdbfc8ed46036416da46137edbfa6592f0e24d0653b876d7b",
+    "historical/multitask-scorers-20261102/multitask_profile_20261102/dynamics_v2.py": "88d0f13d6907ab4b9020742b6f1730173624ed68a9dad0f775b02f0ee0d94f20",
+    "historical/multitask-scorers-20261102/multitask_profile_20261102/evaluate.py": "16bf83c278092751c5aa0a4a183a349e3b0ace78fc429e2c7ed85f10921ef979",
+    "historical/multitask-scorers-20261102/multitask_profile_20261102/features.py": "cd32c56f5c83b3436b01de527b102254ae63fff80ee5135939145d84702bbfd1",
+    "historical/multitask-scorers-20261102/multitask_profile_20261102/model.py": "ae558405f85259c3b266559fd303b3406e81aa5011108b96d5ee7870f9766d52",
+    "historical/multitask-scorers-20261102/multitask_profile_20261102/paired_external.py": "89083a996e103780aba9a5582c7cee479de0f4b34e54388a486a00c6e6af35e5",
+    "historical/multitask-scorers-20261102/multitask_profile_20261102/pipeline.py": "626cf4dfc08bc0a06a90c0700fee2cb7bcd9390392dd5a188f1b0d4329093baa",
+    "historical/multitask-scorers-20261102/multitask_profile_20261102/portable_runtime.py": "1c8538fc961190ea2af663f080233d6ed9123408562c4799b1d86ea58346fadc",
+    "historical/multitask-scorers-20261102/multitask_profile_20261102/predict.py": "d394293173ebe2881afd4eb3c1436c25e338d5499c93204b93f854527a8e7675",
+    "historical/multitask-scorers-20261102/multitask_profile_20261102/report.py": "c91613922c35aaa2ed32b1092002bcb97895baa5acc05ede4aba1041e84f9cfe",
+    "historical/multitask-scorers-20261102/multitask_profile_20261102/train.py": "4ac825bf9948c8ae5634fe8f0362b2d661500838b8d17c95fefff85632996baf",
+    "historical/multitask-scorers-20261102/multitask_profile_20261102/verify_results.py": "84020cb03b617df868f830608837377e950855e59bc3ca791c3e59496e1f4396",
+    "multitask_scorer/runtime/profile/dynamics_v2.py": "fa3c9d683efb9abcec2bce049ff75cc21d29ff5801345a1c1177c572c0a7a90b",
+    "multitask_scorer/runtime/profile/model.py": "ae558405f85259c3b266559fd303b3406e81aa5011108b96d5ee7870f9766d52",
+    "multitask_scorer/scorer.py": "1c8538fc961190ea2af663f080233d6ed9123408562c4799b1d86ea58346fadc"
+  },
+  "simulation": {
+    "seed": 20261102,
+    "n_runs": 2,
+    "burn_steps": 8192,
+    "observe_steps": 4096,
+    "initiation_rates": [
+      0.003,
+      0.01,
+      0.03
+    ],
+    "biological_seconds_calibrated": false
+  },
+  "semantics": {
+    "expression": "E.coli mRFP fluorescence;217 test",
+    "half_life": "HEK293 cellular mRNA mean log10(HL+1);601 genes; not protein half-life",
+    "solubility": "eSOL/PURE assay readout;370 test; not protein degradation",
+    "te": "Auxiliary human TE"
+  },
+  "future_changes": "Fork this tagged model; record baseline ID/commit, seeds, exact feature and supervision changes; compare dynamics and sequence control on identical held-out inputs. Do not overwrite frozen source/checkpoints or choose changes on historical test scores.",
+  "limits": [
+    "Historical panels previously inspected; not fresh blind validation",
+    "Not three endpoints measured on same constructs",
+    "Relative-occupancy proxy, not identified absolute kinetic rates",
+    "The physical increment did not establish a stable improvement over sequence control",
+    "Protein-degradation baseline and Saluki are separate tasks, not part of this frozen network"
+  ]
+}
